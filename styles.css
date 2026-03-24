@@ -160,70 +160,6 @@ a {
   white-space: nowrap;
 }
 
-.difficulty-view {
-  border: 1px solid var(--line);
-  border-radius: 22px;
-  background: linear-gradient(135deg, rgba(30, 203, 225, 0.12), rgba(255, 107, 53, 0.12));
-  box-shadow: var(--shadow);
-  padding: 18px 20px;
-  display: grid;
-  gap: 12px;
-}
-
-.difficulty-view h3 {
-  margin: 0;
-  font-family: "Bebas Neue", sans-serif;
-  letter-spacing: 0.02em;
-  font-size: clamp(36px, 4.2vw, 46px);
-  line-height: 0.95;
-}
-
-.difficulty-view p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 16px;
-}
-
-.difficulty-options {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-}
-
-.difficulty-option {
-  border: 1px solid var(--line);
-  border-radius: 14px;
-  background: rgba(9, 15, 31, 0.58);
-  color: var(--text);
-  display: grid;
-  gap: 4px;
-  justify-items: center;
-  padding: 12px 10px;
-  cursor: pointer;
-  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
-}
-
-.difficulty-option:hover {
-  transform: translateY(-1px);
-  border-color: rgba(30, 203, 225, 0.55);
-}
-
-.difficulty-option.active {
-  border-color: rgba(30, 203, 225, 0.8);
-  background: rgba(30, 203, 225, 0.18);
-}
-
-.difficulty-option strong {
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.difficulty-option span {
-  color: var(--muted);
-  font-size: 13px;
-}
-
 .layout {
   width: min(1520px, 94vw);
   margin: 40px auto 72px;
@@ -1258,6 +1194,80 @@ input:focus {
   min-width: 140px;
 }
 
+.difficulty-gate-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(2, 6, 16, 0.78);
+  backdrop-filter: blur(6px);
+  padding: 24px;
+  z-index: 62;
+}
+
+.difficulty-gate-modal.show {
+  display: flex;
+}
+
+.difficulty-gate-card {
+  width: min(560px, 94vw);
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  background: linear-gradient(140deg, rgba(30, 203, 225, 0.2), rgba(255, 107, 53, 0.18)), var(--bg-soft);
+  box-shadow: var(--shadow);
+  padding: 28px;
+  text-align: center;
+  display: grid;
+  gap: 14px;
+}
+
+.difficulty-gate-card h3 {
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(46px, 6.4vw, 64px);
+  line-height: 0.95;
+}
+
+.difficulty-gate-card p {
+  margin: 0;
+  color: var(--text);
+  font-size: clamp(18px, 2.3vw, 26px);
+}
+
+.difficulty-gate-label {
+  color: var(--muted);
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.difficulty-gate-select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(9, 15, 31, 0.88);
+  color: var(--text);
+  padding: 14px 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.difficulty-gate-select:disabled {
+  opacity: 0.78;
+  cursor: not-allowed;
+}
+
+.difficulty-gate-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.difficulty-gate-actions .btn {
+  min-width: 180px;
+}
+
 .reveal {
   animation: reveal 0.5s ease both;
 }
@@ -1355,10 +1365,6 @@ input:focus {
     align-items: center;
     justify-content: center;
     gap: 14px;
-  }
-
-  .difficulty-options {
-    grid-template-columns: 1fr;
   }
 
   .page-nav {

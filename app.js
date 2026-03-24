@@ -81,17 +81,26 @@
     { title: "American Psycho", year: 2000, genres: ["Crime", "Thriller", "Drama"], cast: ["Christian Bale"], popularity: 84, clue: "A Wall Street banker hides a violent double life." }
   ];
 
-  const fullCatalogMovies = resolveCatalogMovies(defaultMovies, window.CINECLASH_CATALOG);
-  const rankedMoviesByPoolPriority = fullCatalogMovies.slice().sort(compareMoviesByDifficultyScore);
-
   const urlParams = new URLSearchParams(window.location.search);
   const dayOverride = parseDayOverride(urlParams.get("day"));
   const variantOverride = parseVariantOverride(urlParams.get("variant"));
-  const difficultyFromUrl = parseDifficulty(urlParams.get("difficulty"));
-  const storedDifficulty = parseDifficulty(readLocalStorageSafe("cineclash-difficulty-v1"));
-  const difficulty = difficultyFromUrl || storedDifficulty || "medium";
-  writeLocalStorageSafe("cineclash-difficulty-v1", difficulty);
+  const today = dayOverride ? dateFromKey(dayOverride) : new Date();
+  const todayKey = formatDateKey(today);
+  const currentGameKey = pageToGameKey(page);
+  const gameDifficultyStoreKey = `cineclash-game-difficulty-v1-${todayKey}`;
+  const gameDifficultyState = loadGameDifficultyState(gameDifficultyStoreKey);
+  const requestedDifficulty = parseDifficulty(urlParams.get("difficulty"));
+  const lockedGameDifficulty = currentGameKey ? parseDifficulty(gameDifficultyState[currentGameKey]) : "";
+  if (currentGameKey && !lockedGameDifficulty && requestedDifficulty) {
+    gameDifficultyState[currentGameKey] = requestedDifficulty;
+    persistGameDifficultyState(gameDifficultyStoreKey, gameDifficultyState);
+  }
+  const selectedGameDifficulty = currentGameKey ? parseDifficulty(gameDifficultyState[currentGameKey]) : "";
+  const needsDifficultySelection = Boolean(currentGameKey && !selectedGameDifficulty);
+  const difficulty = selectedGameDifficulty || "medium";
 
+  const fullCatalogMovies = resolveCatalogMovies(defaultMovies, window.CINECLASH_CATALOG);
+  const rankedMoviesByPoolPriority = fullCatalogMovies.slice().sort(compareMoviesByDifficultyScore);
   const movies = resolveDifficultyMoviePool(rankedMoviesByPoolPriority, difficulty);
 
   const gridTemplates = [
@@ -182,9 +191,6 @@
   });
 
   const actorOptions = [...actorNameMap.values()].sort((a, b) => a.localeCompare(b));
-
-  const today = dayOverride ? dateFromKey(dayOverride) : new Date();
-  const todayKey = formatDateKey(today);
   const seedBase = `${todayKey}|${difficulty}`;
   const seedKey = variantOverride ? `${seedBase}|${variantOverride}` : seedBase;
   const prettyDateBase = today.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
@@ -245,7 +251,7 @@
   }
 
   const profileKey = "cineclash-profile-v1";
-  const dailyBaseKey = `cineclash-day-v2-${difficulty}-${todayKey}`;
+  const dailyBaseKey = `cineclash-day-v3-${todayKey}`;
   const dailyKey = variantOverride ? `${dailyBaseKey}-${variantOverride}` : dailyBaseKey;
 
   const defaultProfile = {
@@ -326,7 +332,7 @@
   if (!Array.isArray(daily.grid.answers) || daily.grid.answers.length !== 9) {
     daily.grid.answers = Array(9).fill("");
   }
-  if (daily.grid.signature !== gridSignature) {
+  if (page === "grid" && daily.grid.signature !== gridSignature) {
     daily.grid = {
       answers: Array(9).fill(""),
       attemptsLeft: 12,
@@ -390,7 +396,7 @@
   if (!daily.impostor.feedback || typeof daily.impostor.feedback !== "object") {
     daily.impostor.feedback = null;
   }
-  if (daily.impostor.signature !== impostorSignature) {
+  if (page === "spotlight" && daily.impostor.signature !== impostorSignature) {
     daily.impostor = {
       roundIndex: 0,
       selectedIndex: -1,
@@ -438,7 +444,7 @@
   if (typeof daily.impostorCast.status !== "string") {
     daily.impostorCast.status = "playing";
   }
-  if (daily.impostorCast.signature !== impostorCastSignature) {
+  if (page === "impostor-cast" && daily.impostorCast.signature !== impostorCastSignature) {
     daily.impostorCast = {
       selected: [],
       lockedCorrect: [],
@@ -461,7 +467,6 @@
 
   const challengeParams = new URLSearchParams();
   challengeParams.set("ref", profile.referralCode);
-  challengeParams.set("difficulty", difficulty);
   if (dayOverride) challengeParams.set("day", dayOverride);
   if (variantOverride) challengeParams.set("variant", variantOverride);
   const challengeLink = `${window.location.href.split("?")[0]}?${challengeParams.toString()}`;
@@ -535,6 +540,7 @@
   };
   let winModal = null;
   let surrenderConfirmModal = null;
+  let difficultyGateModal = null;
   let previousConnectionsRevealSet = new Set(daily.connections?.revealedGroupIds || daily.connections?.solvedGroupIds || []);
   let impostorAdvanceTimer = null;
 
@@ -542,13 +548,12 @@
     finalizeDailyRewards();
   }
 
-  mountGameDifficultyView();
-  applyDifficultyToNavigationLinks();
   applyReferralBonus();
   hydrateDatalist();
   wireEvents();
   tickLiveFeed();
   renderAll();
+  showDifficultySelectionGate();
 
   function renderAll() {
     renderTop();
@@ -571,84 +576,73 @@
     setText(dom.tierBadge, tierFromXP(profile.xp || 0));
   }
 
-  function mountGameDifficultyView() {
-    if (page === "home") return;
+  function ensureDifficultyGateModal() {
+    if (difficultyGateModal) return difficultyGateModal;
 
-    const layout = document.querySelector("main.layout");
-    if (!layout) return;
-    if (layout.querySelector(".difficulty-view")) return;
+    const overlay = document.createElement("div");
+    overlay.className = "difficulty-gate-modal";
+    overlay.innerHTML = `
+      <div class="difficulty-gate-card" role="dialog" aria-modal="true" aria-labelledby="difficulty-gate-title">
+        <h3 id="difficulty-gate-title">Choose Difficulty</h3>
+        <p id="difficulty-gate-text"></p>
+        <label class="difficulty-gate-label" for="difficulty-gate-select">Difficulty</label>
+        <select id="difficulty-gate-select" class="difficulty-gate-select">
+          <option value="easy">Easy - Top 400</option>
+          <option value="medium">Medium - Top 1000</option>
+          <option value="hard">Hard - All Movies</option>
+        </select>
+        <div class="difficulty-gate-actions">
+          <button type="button" class="btn btn-primary difficulty-gate-ok">OK</button>
+        </div>
+      </div>
+    `;
 
-    const panel = document.createElement("section");
-    panel.className = "difficulty-view reveal";
+    const textNode = overlay.querySelector("#difficulty-gate-text");
+    const selectNode = overlay.querySelector("#difficulty-gate-select");
+    const okBtn = overlay.querySelector(".difficulty-gate-ok");
 
-    const title = document.createElement("h3");
-    title.textContent = "Choose Difficulty";
+    if (okBtn && selectNode) {
+      okBtn.addEventListener("click", () => {
+        if (!currentGameKey) return;
+        if (needsDifficultySelection) {
+          const nextDifficulty = parseDifficulty(selectNode.value) || "medium";
+          gameDifficultyState[currentGameKey] = nextDifficulty;
+          persistGameDifficultyState(gameDifficultyStoreKey, gameDifficultyState);
 
-    const sub = document.createElement("p");
-    sub.textContent = "Easy: top 400 by popularity/votes. Medium: top 1000. Hard: all movies.";
-
-    const options = document.createElement("div");
-    options.className = "difficulty-options";
-
-    const levels = [
-      { value: "easy", label: "Easy", meta: "Top 400" },
-      { value: "medium", label: "Medium", meta: "Top 1000" },
-      { value: "hard", label: "Hard", meta: "All Movies" }
-    ];
-
-    levels.forEach((entry) => {
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "difficulty-option";
-      if (entry.value === difficulty) button.classList.add("active");
-      button.setAttribute("aria-pressed", entry.value === difficulty ? "true" : "false");
-      button.innerHTML = `<strong>${entry.label}</strong><span>${entry.meta}</span>`;
-      button.addEventListener("click", () => {
-        const next = parseDifficulty(entry.value) || "medium";
-        if (next === difficulty) return;
-        writeLocalStorageSafe("cineclash-difficulty-v1", next);
-
-        const nextUrl = new URL(window.location.href);
-        nextUrl.searchParams.set("difficulty", next);
-        window.location.assign(nextUrl.toString());
+          const nextUrl = new URL(window.location.href);
+          nextUrl.searchParams.set("difficulty", nextDifficulty);
+          window.location.replace(nextUrl.toString());
+          return;
+        }
+        overlay.classList.remove("show");
       });
-      options.appendChild(button);
-    });
-
-    panel.appendChild(title);
-    panel.appendChild(sub);
-    panel.appendChild(options);
-
-    const hero = layout.querySelector(".hero");
-    if (hero && hero.parentNode === layout) {
-      hero.insertAdjacentElement("afterend", panel);
-      return;
     }
-    layout.prepend(panel);
+
+    document.body.appendChild(overlay);
+    difficultyGateModal = { overlay, textNode, selectNode, okBtn };
+    return difficultyGateModal;
   }
 
-  function applyDifficultyToNavigationLinks() {
-    const links = document.querySelectorAll("a[href]");
-    links.forEach((link) => {
-      const href = link.getAttribute("href");
-      if (!href || href.startsWith("#")) return;
-      if (/^(mailto:|tel:|javascript:)/i.test(href)) return;
+  function showDifficultySelectionGate() {
+    if (!currentGameKey) return;
 
-      let url;
-      try {
-        url = new URL(href, window.location.href);
-      } catch (_error) {
-        return;
+    const modal = ensureDifficultyGateModal();
+    if (modal.textNode) {
+      modal.textNode.textContent = needsDifficultySelection
+        ? "Pick your challenge for this game. It stays locked here until tomorrow."
+        : `Today's difficulty is locked to ${difficulty.toUpperCase()} for this game.`;
+    }
+    if (modal.selectNode) {
+      modal.selectNode.disabled = !needsDifficultySelection;
+      modal.selectNode.value = needsDifficultySelection ? "medium" : difficulty;
+      if (typeof modal.selectNode.focus === "function") {
+        modal.selectNode.focus({ preventScroll: true });
       }
-
-      if (url.origin !== window.location.origin) return;
-      const isHtmlRoute = url.pathname === "/" || url.pathname.endsWith(".html");
-      if (!isHtmlRoute) return;
-
-      url.searchParams.set("difficulty", difficulty);
-      const relative = `${url.pathname}${url.search}${url.hash}`;
-      link.setAttribute("href", relative);
-    });
+    }
+    if (modal.okBtn) {
+      modal.okBtn.textContent = needsDifficultySelection ? "OK" : "Play";
+    }
+    modal.overlay.classList.add("show");
   }
 
   function renderHome() {
@@ -1579,6 +1573,7 @@
 
   function onMoviedleGlobalKeydown(event) {
     if (page !== "moviedle" || daily.moviedle.status !== "playing") return;
+    if (isDifficultyGateOpen()) return;
     if (event.ctrlKey || event.metaKey || event.altKey) return;
     if (event.target === dom.moviedleCapture) return;
 
@@ -1611,6 +1606,10 @@
     event.preventDefault();
     setMoviedleDraft(moviedleDraft + event.key);
     renderMoviedle();
+  }
+
+  function isDifficultyGateOpen() {
+    return Boolean(difficultyGateModal && difficultyGateModal.overlay && difficultyGateModal.overlay.classList.contains("show"));
   }
 
   function shouldUseMoviedleCaptureFocus() {
@@ -3524,17 +3523,17 @@
   }
 
   function compareMoviesByDifficultyScore(a, b) {
-    const popularityA = Number(a?.popularity) || 0;
-    const popularityB = Number(b?.popularity) || 0;
-    if (popularityB !== popularityA) return popularityB - popularityA;
+    const ratingA = parseRatingValue(a?.rating);
+    const ratingB = parseRatingValue(b?.rating);
+    if (ratingB !== ratingA) return ratingB - ratingA;
 
     const votesA = parseVotesValue(a?.votes);
     const votesB = parseVotesValue(b?.votes);
     if (votesB !== votesA) return votesB - votesA;
 
-    const ratingA = parseRatingValue(a?.rating);
-    const ratingB = parseRatingValue(b?.rating);
-    if (ratingB !== ratingA) return ratingB - ratingA;
+    const popularityA = Number(a?.popularity) || 0;
+    const popularityB = Number(b?.popularity) || 0;
+    if (popularityB !== popularityA) return popularityB - popularityA;
 
     const yearA = Number(a?.year) || 0;
     const yearB = Number(b?.year) || 0;
@@ -3921,17 +3920,46 @@
     return "";
   }
 
-  function readLocalStorageSafe(key) {
+  function pageToGameKey(pageName) {
+    const value = String(pageName || "");
+    if (value === "grid") return "grid";
+    if (value === "connections") return "connections";
+    if (value === "plotle") return "plotle";
+    if (value === "moviedle") return "moviedle";
+    if (value === "spotlight") return "impostor";
+    if (value === "impostor-cast") return "impostorCast";
+    return "";
+  }
+
+  function loadGameDifficultyState(storeKey) {
+    if (!storeKey) return {};
     try {
-      return localStorage.getItem(key);
+      const raw = localStorage.getItem(storeKey);
+      if (!raw) return {};
+      const parsed = JSON.parse(raw);
+      if (!parsed || typeof parsed !== "object" || Array.isArray(parsed)) return {};
+      const safe = {};
+      Object.entries(parsed).forEach(([key, value]) => {
+        const level = parseDifficulty(value);
+        if (level) safe[String(key)] = level;
+      });
+      return safe;
     } catch (_error) {
-      return "";
+      return {};
     }
   }
 
-  function writeLocalStorageSafe(key, value) {
+  function persistGameDifficultyState(storeKey, state) {
+    if (!storeKey) return;
+    const safe = {};
+    if (state && typeof state === "object") {
+      Object.entries(state).forEach(([key, value]) => {
+        const level = parseDifficulty(value);
+        if (level) safe[String(key)] = level;
+      });
+    }
     try {
-      localStorage.setItem(key, String(value));
+      localStorage.setItem(storeKey, JSON.stringify(safe));
     } catch (_error) {
       // no-op
     }
