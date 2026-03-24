@@ -973,6 +973,7 @@
 
     const movie = answerMovieMap.get(normalize(raw));
     if (!movie) return null;
+    if (isGridExcludedMovie(movie)) return null;
     return {
       type: "title",
       value: movie.title,
@@ -2407,7 +2408,11 @@
     const options =
       page === "grid" && gridPuzzle.answerType === "actor"
         ? actorOptions
-        : [...answerMovies.map((movie) => movie.title)].sort((a, b) => a.localeCompare(b));
+        : page === "grid"
+          ? [...answerMovies.filter((movie) => !isGridExcludedMovie(movie)).map((movie) => movie.title)].sort((a, b) =>
+              a.localeCompare(b)
+            )
+          : [...answerMovies.map((movie) => movie.title)].sort((a, b) => a.localeCompare(b));
     dom.movieOptions.innerHTML = options.map((item) => `<option value="${escapeHtml(item)}"></option>`).join("");
   }
 
@@ -2638,7 +2643,11 @@
       }
     }
 
-    const valid = intersections.every((entry) => entry.length > 0);
+    const hasRepeatedActorAxis =
+      rowType === "actor" &&
+      colType === "actor" &&
+      rows.some((rowActor) => cols.some((colActor) => normalize(rowActor) === normalize(colActor)));
+    const valid = !hasRepeatedActorAxis && intersections.every((entry) => entry.length > 0);
 
     return {
       valid,
@@ -2679,7 +2688,10 @@
     }
 
     const matchingTitles = answerMovies.filter(
-      (movie) => movieMatchesGridAxis(movie, rowType, rowValue) && movieMatchesGridAxis(movie, colType, colValue)
+      (movie) =>
+        !isGridExcludedMovie(movie) &&
+        movieMatchesGridAxis(movie, rowType, rowValue) &&
+        movieMatchesGridAxis(movie, colType, colValue)
     );
 
     if (answerType === "actor") {
@@ -2705,6 +2717,14 @@
       return normalize(movie.title) === normalize(axisValue);
     }
     return movie.cast.some((name) => normalize(name) === normalize(axisValue));
+  }
+
+  function isGridExcludedMovie(movie) {
+    if (!movie || !Array.isArray(movie.genres)) return false;
+    return movie.genres.some((genre) => {
+      const token = normalizeGenreToken(genre);
+      return token === "animation" || token === "anime" || token === "cartoon";
+    });
   }
 
   function actorPopularityScore(actorName) {
@@ -2737,17 +2757,20 @@
   }
 
   function buildEmergencyGridTemplate(movieCatalog) {
-    const source = movieCatalog.filter((movie) => Array.isArray(movie.cast) && movie.cast.length >= 3);
+    const source = movieCatalog
+      .filter((movie) => !isGridExcludedMovie(movie))
+      .filter((movie) => Array.isArray(movie.cast) && movie.cast.length >= 6)
+      .sort(compareMoviesByRank);
     if (source.length < 1) return null;
 
-    // Guaranteed actor columns + actor intersections: pick one ensemble title and reuse 3 cast members as both axes.
+    // Guaranteed non-repeated actor intersections: split a single ensemble cast into 3 row actors and 3 distinct column actors.
     const seedMovie = source[0];
-    const actors = [...new Set(seedMovie.cast)].slice(0, 3);
-    if (actors.length < 3) return null;
+    const actors = [...new Set(seedMovie.cast)];
+    if (actors.length < 6) return null;
 
     return {
-      rows: actors,
-      cols: actors,
+      rows: actors.slice(0, 3),
+      cols: actors.slice(3, 6),
       rowType: "actor",
       colType: "actor",
       answerType: "title"
@@ -2756,6 +2779,8 @@
 
   function buildDailyGridTemplate(movieCatalog, dayHash, fallbackTemplates, difficultyLevel = "medium") {
     const isEasyGrid = difficultyLevel === "easy";
+    const gridCatalogBase = movieCatalog.filter((movie) => !isGridExcludedMovie(movie));
+    const gridCatalog = gridCatalogBase.length >= 24 ? gridCatalogBase : movieCatalog;
     const actorGenreMap = new Map();
     const actorCoactorMap = new Map();
     const titleCoTitleMap = new Map();
@@ -2764,7 +2789,7 @@
     const genreCount = new Map();
     const titleCandidates = [];
 
-    movieCatalog.forEach((movie) => {
+    gridCatalog.forEach((movie) => {
       const uniqueActors = [...new Set(movie.cast)];
       const uniqueGenres = [...new Set(movie.genres)];
 
@@ -2946,22 +2971,49 @@
       return null;
     };
 
-    const modeOrder = [tryActorActorTemplate, tryGenreActorTemplate];
+    const modeOrder = [tryActorActorTemplate];
 
     for (const buildTemplate of modeOrder) {
       const candidate = buildTemplate();
       if (candidate) return candidate;
     }
 
-    const fallbackPool = fallbackTemplates.map((template) => ({
-      rows: template.cols.slice(0, 3),
-      cols: template.rows.slice(0, 3),
-      rowType: "genre",
+    const fallbackPool = fallbackTemplates
+      .map((template) => {
+        const rows = (template.rows || []).slice(0, 3).filter((name) => actorMovieCount.has(name));
+        if (rows.length < 3) return null;
+
+        const rowSet = new Set(rows.map((name) => normalize(name)));
+        const compatibleCols = actorOrder
+          .filter((actor) => !rowSet.has(normalize(actor)))
+          .filter((actor) => rows.every((rowActor) => actorCoactorMap.get(rowActor)?.has(actor)))
+          .sort((a, b) => (actorMovieCount.get(b) || 0) - (actorMovieCount.get(a) || 0) || a.localeCompare(b))
+          .slice(0, 3);
+
+        if (compatibleCols.length < 3) return null;
+        return {
+          rows,
+          cols: compatibleCols,
+          rowType: "actor",
+          colType: "actor",
+          answerType: "title"
+        };
+      })
+      .filter(Boolean);
+
+    const fallback = fallbackPool.find((template) => buildGridPuzzle(template).valid);
+    if (fallback) return fallback;
+
+    const emergency = buildEmergencyGridTemplate(gridCatalog.length ? gridCatalog : movieCatalog);
+    if (emergency && buildGridPuzzle(emergency).valid) return emergency;
+
+    return {
+      rows: actorOrder.slice(0, 3),
+      cols: actorOrder.slice(3, 6),
+      rowType: "actor",
       colType: "actor",
       answerType: "title"
-    }));
-    const fallback = fallbackPool.find((template) => buildGridPuzzle(template).valid);
-    return fallback || fallbackPool[dayHash % fallbackPool.length];
+    };
   }
 
   function buildDailyConnectionsPuzzle(movieCatalog, dayHash) {
