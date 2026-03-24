@@ -81,7 +81,18 @@
     { title: "American Psycho", year: 2000, genres: ["Crime", "Thriller", "Drama"], cast: ["Christian Bale"], popularity: 84, clue: "A Wall Street banker hides a violent double life." }
   ];
 
-  const movies = resolveCatalogMovies(defaultMovies, window.CINECLASH_CATALOG);
+  const fullCatalogMovies = resolveCatalogMovies(defaultMovies, window.CINECLASH_CATALOG);
+  const rankedMoviesByPoolPriority = fullCatalogMovies.slice().sort(compareMoviesByDifficultyScore);
+
+  const urlParams = new URLSearchParams(window.location.search);
+  const dayOverride = parseDayOverride(urlParams.get("day"));
+  const variantOverride = parseVariantOverride(urlParams.get("variant"));
+  const difficultyFromUrl = parseDifficulty(urlParams.get("difficulty"));
+  const storedDifficulty = parseDifficulty(readLocalStorageSafe("cineclash-difficulty-v1"));
+  const difficulty = difficultyFromUrl || storedDifficulty || "medium";
+  writeLocalStorageSafe("cineclash-difficulty-v1", difficulty);
+
+  const movies = resolveDifficultyMoviePool(rankedMoviesByPoolPriority, difficulty);
 
   const gridTemplates = [
     { rows: ["Leonardo DiCaprio", "Scarlett Johansson", "Brad Pitt"], cols: ["Drama", "Action", "Comedy"] },
@@ -172,13 +183,10 @@
 
   const actorOptions = [...actorNameMap.values()].sort((a, b) => a.localeCompare(b));
 
-  const urlParams = new URLSearchParams(window.location.search);
-  const dayOverride = parseDayOverride(urlParams.get("day"));
-  const variantOverride = parseVariantOverride(urlParams.get("variant"));
-
   const today = dayOverride ? dateFromKey(dayOverride) : new Date();
   const todayKey = formatDateKey(today);
-  const seedKey = variantOverride ? `${todayKey}|${variantOverride}` : todayKey;
+  const seedBase = `${todayKey}|${difficulty}`;
+  const seedKey = variantOverride ? `${seedBase}|${variantOverride}` : seedBase;
   const prettyDateBase = today.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
   const prettyDate = dayOverride || variantOverride ? `${prettyDateBase} (test)` : prettyDateBase;
   const daySeed = hashString(seedKey);
@@ -237,7 +245,8 @@
   }
 
   const profileKey = "cineclash-profile-v1";
-  const dailyKey = variantOverride ? `cineclash-day-v1-${todayKey}-${variantOverride}` : `cineclash-day-v1-${todayKey}`;
+  const dailyBaseKey = `cineclash-day-v2-${difficulty}-${todayKey}`;
+  const dailyKey = variantOverride ? `${dailyBaseKey}-${variantOverride}` : dailyBaseKey;
 
   const defaultProfile = {
     xp: 0,
@@ -452,6 +461,7 @@
 
   const challengeParams = new URLSearchParams();
   challengeParams.set("ref", profile.referralCode);
+  challengeParams.set("difficulty", difficulty);
   if (dayOverride) challengeParams.set("day", dayOverride);
   if (variantOverride) challengeParams.set("variant", variantOverride);
   const challengeLink = `${window.location.href.split("?")[0]}?${challengeParams.toString()}`;
@@ -532,6 +542,8 @@
     finalizeDailyRewards();
   }
 
+  mountGameDifficultyView();
+  applyDifficultyToNavigationLinks();
   applyReferralBonus();
   hydrateDatalist();
   wireEvents();
@@ -557,6 +569,86 @@
     setText(dom.dailyScoreValue, String(totalDailyScore()));
     setText(dom.referralValue, String((profile.referrals || []).length));
     setText(dom.tierBadge, tierFromXP(profile.xp || 0));
+  }
+
+  function mountGameDifficultyView() {
+    if (page === "home") return;
+
+    const layout = document.querySelector("main.layout");
+    if (!layout) return;
+    if (layout.querySelector(".difficulty-view")) return;
+
+    const panel = document.createElement("section");
+    panel.className = "difficulty-view reveal";
+
+    const title = document.createElement("h3");
+    title.textContent = "Choose Difficulty";
+
+    const sub = document.createElement("p");
+    sub.textContent = "Easy: top 400 by popularity/votes. Medium: top 1000. Hard: all movies.";
+
+    const options = document.createElement("div");
+    options.className = "difficulty-options";
+
+    const levels = [
+      { value: "easy", label: "Easy", meta: "Top 400" },
+      { value: "medium", label: "Medium", meta: "Top 1000" },
+      { value: "hard", label: "Hard", meta: "All Movies" }
+    ];
+
+    levels.forEach((entry) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "difficulty-option";
+      if (entry.value === difficulty) button.classList.add("active");
+      button.setAttribute("aria-pressed", entry.value === difficulty ? "true" : "false");
+      button.innerHTML = `<strong>${entry.label}</strong><span>${entry.meta}</span>`;
+      button.addEventListener("click", () => {
+        const next = parseDifficulty(entry.value) || "medium";
+        if (next === difficulty) return;
+        writeLocalStorageSafe("cineclash-difficulty-v1", next);
+
+        const nextUrl = new URL(window.location.href);
+        nextUrl.searchParams.set("difficulty", next);
+        window.location.assign(nextUrl.toString());
+      });
+      options.appendChild(button);
+    });
+
+    panel.appendChild(title);
+    panel.appendChild(sub);
+    panel.appendChild(options);
+
+    const hero = layout.querySelector(".hero");
+    if (hero && hero.parentNode === layout) {
+      hero.insertAdjacentElement("afterend", panel);
+      return;
+    }
+    layout.prepend(panel);
+  }
+
+  function applyDifficultyToNavigationLinks() {
+    const links = document.querySelectorAll("a[href]");
+    links.forEach((link) => {
+      const href = link.getAttribute("href");
+      if (!href || href.startsWith("#")) return;
+      if (/^(mailto:|tel:|javascript:)/i.test(href)) return;
+
+      let url;
+      try {
+        url = new URL(href, window.location.href);
+      } catch (_error) {
+        return;
+      }
+
+      if (url.origin !== window.location.origin) return;
+      const isHtmlRoute = url.pathname === "/" || url.pathname.endsWith(".html");
+      if (!isHtmlRoute) return;
+
+      url.searchParams.set("difficulty", difficulty);
+      const relative = `${url.pathname}${url.search}${url.hash}`;
+      link.setAttribute("href", relative);
+    });
   }
 
   function renderHome() {
@@ -3431,6 +3523,49 @@
     return String(a?.title || "").localeCompare(String(b?.title || ""));
   }
 
+  function compareMoviesByDifficultyScore(a, b) {
+    const popularityA = Number(a?.popularity) || 0;
+    const popularityB = Number(b?.popularity) || 0;
+    if (popularityB !== popularityA) return popularityB - popularityA;
+
+    const votesA = parseVotesValue(a?.votes);
+    const votesB = parseVotesValue(b?.votes);
+    if (votesB !== votesA) return votesB - votesA;
+
+    const ratingA = parseRatingValue(a?.rating);
+    const ratingB = parseRatingValue(b?.rating);
+    if (ratingB !== ratingA) return ratingB - ratingA;
+
+    const yearA = Number(a?.year) || 0;
+    const yearB = Number(b?.year) || 0;
+    if (yearB !== yearA) return yearB - yearA;
+
+    return String(a?.title || "").localeCompare(String(b?.title || ""));
+  }
+
+  function resolveDifficultyMoviePool(rankedCatalog, difficulty) {
+    const source = Array.isArray(rankedCatalog) ? rankedCatalog : [];
+    if (!source.length) return [];
+
+    const cap =
+      difficulty === "easy"
+        ? 400
+        : difficulty === "medium"
+          ? 1000
+          : source.length;
+    const capped = source.slice(0, Math.min(cap, source.length));
+
+    // Keep requested cap but avoid crashes if intersections become impossible.
+    if (hasViableGrid(capped) && hasViableConnections(capped)) {
+      return capped;
+    }
+    if (difficulty === "easy") {
+      const fallback = source.slice(0, Math.min(1000, source.length));
+      if (hasViableGrid(fallback) && hasViableConnections(fallback)) return fallback;
+    }
+    return source;
+  }
+
   function normalizeStarsList(stars) {
     const list = Array.isArray(stars) ? stars.map((name) => String(name || "").trim()).filter(Boolean) : [];
     const splitIndex = list.lastIndexOf("|");
@@ -3776,6 +3911,30 @@
       .toLowerCase()
       .replace(/[^a-z0-9_-]/g, "")
       .slice(0, 32);
+  }
+
+  function parseDifficulty(raw) {
+    const value = String(raw || "")
+      .trim()
+      .toLowerCase();
+    if (value === "easy" || value === "medium" || value === "hard") return value;
+    return "";
+  }
+
+  function readLocalStorageSafe(key) {
+    try {
+      return localStorage.getItem(key);
+    } catch (_error) {
+      return "";
+    }
+  }
+
+  function writeLocalStorageSafe(key, value) {
+    try {
+      localStorage.setItem(key, String(value));
+    } catch (_error) {
+      // no-op
+    }
   }
 
   function dateFromKey(dateKey) {

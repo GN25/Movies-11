@@ -2,9 +2,6 @@ const fs = require("node:fs/promises");
 const path = require("node:path");
 
 const SOURCE_PATH = path.join(process.cwd(), "data", "movies.json");
-const CORE_POOL_SIZE = Number.parseInt(process.env.CINECLASH_CORE_POOL_SIZE || "320", 10);
-const ROTATING_POOL_SIZE = Number.parseInt(process.env.CINECLASH_ROTATING_POOL_SIZE || "420", 10);
-const ROTATING_SOURCE_CAP = Number.parseInt(process.env.CINECLASH_ROTATING_SOURCE_CAP || "3500", 10);
 
 let cachedCatalog = null;
 let cachedMtimeMs = 0;
@@ -51,16 +48,7 @@ async function loadCatalog() {
 }
 
 function buildPublicCatalog(catalog, seedKey) {
-  const rng = rngFromSeed(seedKey);
-  const coreSize = clampInt(CORE_POOL_SIZE, 120, 2500);
-  const rotatingSize = clampInt(ROTATING_POOL_SIZE, 80, 2500);
-  const rotatingSourceCap = clampInt(ROTATING_SOURCE_CAP, coreSize + rotatingSize, catalog.length);
-
-  const core = catalog.slice(0, Math.min(coreSize, catalog.length));
-  const rotatingSource = catalog.slice(core.length, Math.min(rotatingSourceCap, catalog.length));
-  const rotating = shuffle(rotatingSource, rng).slice(0, Math.min(rotatingSize, rotatingSource.length));
-
-  const selected = dedupeCatalogByTitle([...core, ...rotating]).map((movie) => ({
+  const selected = dedupeCatalogByTitle(catalog).map((movie) => ({
     title: movie.title,
     year: movie.year,
     genres: movie.genres.slice(0, 4),
@@ -75,8 +63,6 @@ function buildPublicCatalog(catalog, seedKey) {
     catalog: selected,
     meta: {
       seedKey,
-      coreSize: core.length,
-      rotatingSize: rotating.length,
       total: selected.length
     }
   };
@@ -350,45 +336,6 @@ function normalize(value) {
     .replace(/&/g, "and")
     .replace(/[^a-z0-9]+/g, " ")
     .trim();
-}
-
-function clampInt(value, min, max) {
-  const n = Number.parseInt(value, 10);
-  if (!Number.isFinite(n)) return min;
-  return Math.max(min, Math.min(max, n));
-}
-
-function shuffle(items, rng) {
-  const output = items.slice();
-  for (let i = output.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(rng() * (i + 1));
-    [output[i], output[j]] = [output[j], output[i]];
-  }
-  return output;
-}
-
-function rngFromSeed(text) {
-  return mulberry32(hashString(text));
-}
-
-function mulberry32(seed) {
-  let t = seed >>> 0;
-  return function random() {
-    t += 0x6d2b79f5;
-    let x = Math.imul(t ^ (t >>> 15), 1 | t);
-    x ^= x + Math.imul(x ^ (x >>> 7), 61 | x);
-    return ((x ^ (x >>> 14)) >>> 0) / 4294967296;
-  };
-}
-
-function hashString(input) {
-  let hash = 2166136261;
-  const text = String(input || "");
-  for (let i = 0; i < text.length; i += 1) {
-    hash ^= text.charCodeAt(i);
-    hash = Math.imul(hash, 16777619);
-  }
-  return hash >>> 0;
 }
 
 function dateFromKey(dateKey) {

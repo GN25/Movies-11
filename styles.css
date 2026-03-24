@@ -160,6 +160,70 @@ a {
   white-space: nowrap;
 }
 
+.difficulty-view {
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  background: linear-gradient(135deg, rgba(30, 203, 225, 0.12), rgba(255, 107, 53, 0.12));
+  box-shadow: var(--shadow);
+  padding: 18px 20px;
+  display: grid;
+  gap: 12px;
+}
+
+.difficulty-view h3 {
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 0.02em;
+  font-size: clamp(36px, 4.2vw, 46px);
+  line-height: 0.95;
+}
+
+.difficulty-view p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 16px;
+}
+
+.difficulty-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.difficulty-option {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: rgba(9, 15, 31, 0.58);
+  color: var(--text);
+  display: grid;
+  gap: 4px;
+  justify-items: center;
+  padding: 12px 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+}
+
+.difficulty-option:hover {
+  transform: translateY(-1px);
+  border-color: rgba(30, 203, 225, 0.55);
+}
+
+.difficulty-option.active {
+  border-color: rgba(30, 203, 225, 0.8);
+  background: rgba(30, 203, 225, 0.18);
+}
+
+.difficulty-option strong {
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.difficulty-option span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .layout {
   width: min(1520px, 94vw);
   margin: 40px auto 72px;
@@ -1291,6 +1355,10 @@ input:focus {
     align-items: center;
     justify-content: center;
     gap: 14px;
+  }
+
+  .difficulty-options {
+    grid-template-columns: 1fr;
   }
 
   .page-nav {
