@@ -3,15 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CineClash | Spotlight</title>
-    <meta name="description" content="Play the daily Spotlight challenge on CineClash." />
+    <title>Spotlight - Daily Movie Cast Quiz | CineClash</title>
+    <meta
+      name="description"
+      content="Play Spotlight on CineClash: pick the one actor that matches each movie clue. One wrong answer ends the run."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#081427" />
+    <link rel="canonical" href="https://cineclashgame.vercel.app/impostor.html" />
+    <link rel="alternate" hreflang="en" href="https://cineclashgame.vercel.app/impostor.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CineClash" />
+    <meta property="og:title" content="Spotlight - Daily Movie Cast Quiz | CineClash" />
+    <meta property="og:description" content="Find the single correct actor for each clue and protect your streak." />
+    <meta property="og:url" content="https://cineclashgame.vercel.app/impostor.html" />
+    <meta property="og:image" content="https://cineclashgame.vercel.app/assets/impostor.svg" />
+    <meta property="og:image:alt" content="Spotlight game preview" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Spotlight - Daily Movie Cast Quiz | CineClash" />
+    <meta name="twitter:description" content="One wrong answer ends the round-based cast quiz." />
+    <meta name="twitter:image" content="https://cineclashgame.vercel.app/assets/impostor.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Spotlight - CineClash",
+        "url": "https://cineclashgame.vercel.app/impostor.html",
+        "description": "Daily clue-based actor selection game with round progression.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "CineClash",
+          "url": "https://cineclashgame.vercel.app/"
+        },
+        "inLanguage": "en"
+      }
+    </script>
   </head>
   <body data-page="spotlight">
     <div class="ambient ambient-a"></div>
@@ -90,11 +125,19 @@
 
     <footer class="footer">
       <p>Built for movie fans who keep receipts.</p>
+      <nav class="footer-links" aria-label="Game pages">
+        <a href="./index.html">Home</a>
+        <a href="./movie-grid.html">Movie Grid</a>
+        <a href="./cast-connections.html">Connections</a>
+        <a href="./plotle.html">Plotle</a>
+        <a href="./moviedle.html">Moviedle</a>
+        <a href="./impostor-cast.html">Impostor</a>
+      </nav>
     </footer>
 
     <div id="toast" class="toast"></div>
 
-    <script src="./data/catalog.js"></script>
-    <script src="./app.js"></script>
+    <script src="/api/daily-catalog.js" defer></script>
+    <script src="./app.js" defer></script>
   </body>
 </html>

@@ -6,7 +6,6 @@ import path from "node:path";
 const INPUT_CSV = path.resolve(process.env.IMDB_CSV_PATH || "imdb_movies.csv");
 const MOVIES_JSON = path.resolve("data/movies.json");
 const TV_SHOWS_JSON = path.resolve("data/tv-shows.json");
-const CATALOG_JS = path.resolve("data/catalog.js");
 const META_JSON = path.resolve("data/catalog.meta.json");
 
 run().catch((error) => {
@@ -82,13 +81,6 @@ async function run() {
   await fs.writeFile(TV_SHOWS_JSON, JSON.stringify(tvShows, null, 2) + "\n", "utf8");
 
   const generatedAt = new Date().toISOString();
-  const catalogJs = [
-    `/* Auto-generated from ${path.basename(INPUT_CSV)} on ${generatedAt}. */`,
-    "window.CINECLASH_CATALOG = ",
-    `${JSON.stringify(movies, null, 2)};`,
-    ""
-  ].join("\n");
-  await fs.writeFile(CATALOG_JS, catalogJs, "utf8");
 
   const uniqueCrew = new Set();
   movies.forEach((movie) => parseCrewMembers(movie.crew).forEach((person) => uniqueCrew.add(person)));
@@ -107,7 +99,6 @@ async function run() {
 
   console.log(`Wrote ${movies.length} movies to ${MOVIES_JSON}`);
   console.log(`Wrote ${tvShows.length} tv shows to ${TV_SHOWS_JSON}`);
-  console.log(`Wrote catalog JS to ${CATALOG_JS}`);
   console.log(`Wrote metadata to ${META_JSON}`);
 }
 

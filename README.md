@@ -1,7 +1,8 @@
 # CineClash Data Source
 
-The site reads movie data from `data/catalog.js`.
+The site reads movie data from `/api/daily-catalog.js` at runtime.
 
+- The API exposes only a rotated, gameplay-focused movie subset (not the full raw dataset).
 - If `window.CINECLASH_CATALOG` has enough records, the app uses it.
 - Otherwise it falls back to the built-in dataset in `app.js`.
 
@@ -11,7 +12,7 @@ Source file:
 
 - `IMBD.csv`
 
-Convert CSV into app datasets (movies + tv shows JSON, and movies catalog for the app):
+Convert CSV into app datasets (movies + tv shows JSON + metadata):
 
 ```bash
 node ./scripts/convert-imdb-csv.mjs
@@ -21,7 +22,6 @@ Generated files:
 
 - `data/movies.json` (movies only)
 - `data/tv-shows.json` (tv shows only)
-- `data/catalog.js` (movies only, consumed by the website)
 - `data/catalog.meta.json`
 
 The JSON records keep only these fields:
@@ -161,7 +161,6 @@ node ./scripts/update-tmdb-catalog.mjs
 
 Generated files:
 
-- `data/catalog.js`
 - `data/catalog.meta.json`
 - `data/movies.json`
 - `data/tv-shows.json`

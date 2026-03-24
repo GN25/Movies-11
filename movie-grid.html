@@ -3,15 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CineClash | Movie Grid</title>
-    <meta name="description" content="Play the daily Movie Grid challenge on CineClash." />
+    <title>Movie Grid - Daily Actor & Genre Movie Trivia | CineClash</title>
+    <meta
+      name="description"
+      content="Play CineClash Movie Grid: match actor + genre and actor + actor intersections in a daily 3x3 movie trivia puzzle."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="theme-color" content="#081427" />
+    <link rel="canonical" href="https://cineclashgame.vercel.app/movie-grid.html" />
+    <link rel="alternate" hreflang="en" href="https://cineclashgame.vercel.app/movie-grid.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="CineClash" />
+    <meta property="og:title" content="Movie Grid - Daily Movie Trivia | CineClash" />
+    <meta
+      property="og:description"
+      content="Fill every square with valid movie intersections and challenge friends with your score."
+    />
+    <meta property="og:url" content="https://cineclashgame.vercel.app/movie-grid.html" />
+    <meta property="og:image" content="https://cineclashgame.vercel.app/assets/movie-grid.svg" />
+    <meta property="og:image:alt" content="Movie Grid game preview" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Movie Grid - Daily Movie Trivia | CineClash" />
+    <meta name="twitter:description" content="Solve actor and genre intersections in today’s movie grid." />
+    <meta name="twitter:image" content="https://cineclashgame.vercel.app/assets/movie-grid.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="stylesheet" href="./styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Movie Grid - CineClash",
+        "url": "https://cineclashgame.vercel.app/movie-grid.html",
+        "description": "Daily 3x3 movie intersection puzzle based on actors and genres.",
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "CineClash",
+          "url": "https://cineclashgame.vercel.app/"
+        },
+        "inLanguage": "en"
+      }
+    </script>
   </head>
   <body data-page="grid">
     <div class="ambient ambient-a"></div>
@@ -91,11 +129,19 @@
 
     <footer class="footer">
       <p>Built for movie fans who keep receipts.</p>
+      <nav class="footer-links" aria-label="Game pages">
+        <a href="./index.html">Home</a>
+        <a href="./cast-connections.html">Connections</a>
+        <a href="./plotle.html">Plotle</a>
+        <a href="./moviedle.html">Moviedle</a>
+        <a href="./impostor.html">Spotlight</a>
+        <a href="./impostor-cast.html">Impostor</a>
+      </nav>
     </footer>
 
     <div id="toast" class="toast"></div>
 
-    <script src="./data/catalog.js"></script>
-    <script src="./app.js"></script>
+    <script src="/api/daily-catalog.js" defer></script>
+    <script src="./app.js" defer></script>
   </body>
 </html>

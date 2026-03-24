@@ -1,0 +1,17 @@
+{
+  "name": "CineClash",
+  "short_name": "CineClash",
+  "description": "Daily movie games: Grid, Connections, Plotle, Moviedle, Spotlight and Impostor.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#081427",
+  "theme_color": "#081427",
+  "icons": [
+    {
+      "src": "/assets/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

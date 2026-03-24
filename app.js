@@ -2203,12 +2203,18 @@
       <div class="win-modal-card" role="dialog" aria-modal="true" aria-labelledby="win-modal-title">
         <h3 id="win-modal-title">You won!</h3>
         <p id="win-modal-text"></p>
-        <button type="button" class="btn btn-primary win-modal-close">Close</button>
+        <div class="win-modal-actions">
+          <button type="button" class="btn btn-secondary win-modal-challenge">Challenge A Friend</button>
+          <button type="button" class="btn btn-primary win-modal-share">Share Result</button>
+          <button type="button" class="btn btn-ghost win-modal-close">Close</button>
+        </div>
       </div>
     `;
 
     const titleNode = overlay.querySelector("#win-modal-title");
     const textNode = overlay.querySelector("#win-modal-text");
+    const shareBtn = overlay.querySelector(".win-modal-share");
+    const challengeBtn = overlay.querySelector(".win-modal-challenge");
     const closeBtn = overlay.querySelector(".win-modal-close");
 
     const close = () => overlay.classList.remove("show");
@@ -2216,6 +2222,20 @@
       if (event.target === overlay) close();
     });
     if (closeBtn) closeBtn.addEventListener("click", close);
+    if (shareBtn) {
+      shareBtn.addEventListener("click", () => {
+        copyText(buildShareText());
+      });
+    }
+    if (challengeBtn) {
+      challengeBtn.addEventListener("click", async () => {
+        const text = "Beat my CineClash score today.";
+        const didShare = await shareWithNativeSheet(text, challengeLink);
+        if (!didShare) {
+          copyText(challengeLink);
+        }
+      });
+    }
     document.addEventListener("keydown", (event) => {
       if (event.key === "Escape" && overlay.classList.contains("show")) {
         close();
@@ -2253,6 +2273,17 @@
       modal.textNode.textContent = `${gameLabel} answers revealed.`;
     }
     modal.overlay.classList.add("show");
+  }
+
+  async function shareWithNativeSheet(text, url) {
+    if (!navigator.share) return false;
+    try {
+      await navigator.share({ title: "CineClash", text: String(text || ""), url: String(url || "") });
+      return true;
+    } catch (error) {
+      if (error && error.name === "AbortError") return true;
+      return false;
+    }
   }
 
   function renderHaulSummary() {

@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/data/:path*",
+      "destination": "/api/not-found"
+    },
+    {
+      "source": "/imdb_movies.csv",
+      "destination": "/api/not-found"
+    }
+  ]
+}
