@@ -46,6 +46,6 @@
     <text x="892" y="526">Burn</text>
   </g>
   <text x="130" y="78" fill="#EEF4FF" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">Group 4 related cards at a time</text>
-  <text x="131" y="627" fill="#EEF4FF" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800">Cast Connections</text>
-  <text x="478" y="627" fill="#8BB8FF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600">find all hidden sets before 4 mistakes</text>
+  <text x="131" y="619" fill="#EEF4FF" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800">Cast Connections</text>
+  <text x="131" y="650" fill="#8BB8FF" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="600">find all hidden sets before 4 mistakes</text>
 </svg>

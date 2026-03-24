@@ -2569,59 +2569,281 @@
   }
 
   function buildDailyConnectionsPuzzle(movieCatalog, dayHash) {
-    const voteThresholds = [50000, 30000, 20000, 10000, 5000];
-    const blockedPrimaryGenres = new Set(["documentary", "news", "talk show", "game show", "reality tv", "short", "music"]);
+    const voteThresholds = [50000, 30000, 20000, 10000, 5000, 2500];
+    const blockedGenres = new Set(["documentary", "news", "talk show", "game show", "reality tv", "short", "music"]);
+    const plans = [
+      ["genre", "genre", "actor", "decade"],
+      ["genre", "actor", "actor", "decade"],
+      ["genre", "genre", "actor", "actor"],
+      ["genre", "genre", "decade", "decade"],
+      ["genre", "actor", "decade", "genre"]
+    ];
 
     for (const minVotes of voteThresholds) {
-      const primaryGenreBuckets = new Map();
-      movieCatalog
+      const filtered = movieCatalog
         .filter((movie) => parseVotesValue(movie?.votes) >= minVotes)
         .filter((movie) => Array.isArray(movie?.cast) && movie.cast.length >= 2)
-        .filter((movie) => !isLikelyNonMovieSpecial(movie?.title, movie?.genres, movie?.description))
-        .forEach((movie) => {
-          const primaryGenre = movie.genres[0];
-          if (blockedPrimaryGenres.has(normalize(primaryGenre))) return;
-          if (!primaryGenre) return;
-          if (!primaryGenreBuckets.has(primaryGenre)) {
-            primaryGenreBuckets.set(primaryGenre, []);
-          }
-          primaryGenreBuckets.get(primaryGenre).push(movie.title);
-        });
+        .filter((movie) => !isLikelyNonMovieSpecial(movie?.title, movie?.genres, movie?.description));
+      if (filtered.length < 40) continue;
 
-      const genreEntries = [...primaryGenreBuckets.entries()].filter(([, titles]) => new Set(titles.map(normalize)).size >= 4);
-      if (genreEntries.length < 4) continue;
+      const rng = rngFromSeed(`${dayHash}-connections-mixed-${minVotes}`);
+      const candidateGroups = {
+        genre: buildConnectionGenreGroups(filtered, rng, blockedGenres),
+        actor: buildConnectionActorGroups(filtered, rng),
+        decade: buildConnectionDecadeGroups(filtered, rng)
+      };
 
-      const rng = rngFromSeed(`${dayHash}-connections-dynamic-${minVotes}`);
-      const shuffledGenres = shuffle(genreEntries, rng);
-      const groups = [];
-      const usedTitles = new Set();
-
-      for (const [genre, titles] of shuffledGenres) {
-        const uniqueTitles = [...new Set(titles)].filter((title) => !usedTitles.has(normalize(title)));
-        if (uniqueTitles.length < 4) continue;
-
-        const ranked = uniqueTitles
-          .map((title) => movieMap.get(normalize(title)))
-          .filter(Boolean)
-          .sort(compareMoviesByRank)
-          .slice(0, Math.min(24, uniqueTitles.length))
-          .map((movie) => movie.title);
-
-        if (ranked.length < 4) continue;
-
-        const picked = shuffle(ranked, rng).slice(0, 4);
-        picked.forEach((title) => usedTitles.add(normalize(title)));
-        groups.push({ name: `${genre} Titles`, items: picked });
-
-        if (groups.length === 4) break;
+      for (const plan of plans) {
+        const selection = selectConnectionsGroupsByPlan(candidateGroups, plan, rng);
+        if (!selection) continue;
+        return {
+          title: buildConnectionsPuzzleTitle(selection),
+          groups: selection.map((group) => ({ name: group.name, items: group.items }))
+        };
       }
 
-      if (groups.length === 4) {
-        return { title: "Genre Mix", groups };
+      const fallbackSelection = selectAnyMixedConnectionsGroups(candidateGroups, rng, 4);
+      if (fallbackSelection) {
+        return {
+          title: buildConnectionsPuzzleTitle(fallbackSelection),
+          groups: fallbackSelection.map((group) => ({ name: group.name, items: group.items }))
+        };
       }
     }
 
     return null;
+  }
+
+  function buildConnectionGenreGroups(movieCatalog, rng, blockedGenres) {
+    const buckets = new Map();
+
+    movieCatalog.forEach((movie) => {
+      const mainGenre = pickMainGenreForConnections(movie.genres);
+      const key = normalizeGenreToken(mainGenre);
+      if (!mainGenre || blockedGenres.has(key)) return;
+      if (!buckets.has(mainGenre)) buckets.set(mainGenre, []);
+      buckets.get(mainGenre).push(movie);
+    });
+
+    const groups = [];
+    buckets.forEach((entries, genre) => {
+      const items = pickConnectionItemsFromMovies(entries, rng);
+      if (!items) return;
+      groups.push({
+        type: "genre",
+        key: `genre:${normalizeGenreToken(genre)}`,
+        name: `${genre} Movies`,
+        items
+      });
+    });
+
+    return shuffle(groups, rng);
+  }
+
+  function buildConnectionActorGroups(movieCatalog, rng) {
+    const buckets = new Map();
+
+    movieCatalog.forEach((movie) => {
+      const uniqueCast = [...new Set((movie.cast || []).map((actor) => actorNameMap.get(normalize(actor)) || actor))];
+      uniqueCast.forEach((actor) => {
+        const key = normalize(actor);
+        if (!key) return;
+        if (!buckets.has(actor)) buckets.set(actor, []);
+        buckets.get(actor).push(movie);
+      });
+    });
+
+    const groups = [];
+    buckets.forEach((entries, actor) => {
+      const reuseCount = actorFrequency.get(normalize(actor)) || entries.length;
+      if (reuseCount < 4) return;
+      const items = pickConnectionItemsFromMovies(entries, rng);
+      if (!items) return;
+
+      groups.push({
+        type: "actor",
+        key: `actor:${normalize(actor)}`,
+        name: `Movies With ${actor}`,
+        items,
+        weight: reuseCount
+      });
+    });
+
+    return shuffle(
+      groups
+        .sort((a, b) => (b.weight || 0) - (a.weight || 0) || a.name.localeCompare(b.name))
+        .slice(0, 120)
+        .map(({ weight, ...group }) => group),
+      rng
+    );
+  }
+
+  function buildConnectionDecadeGroups(movieCatalog, rng) {
+    const buckets = new Map();
+
+    movieCatalog.forEach((movie) => {
+      const year = Number(movie?.year);
+      if (!Number.isFinite(year)) return;
+      const decade = Math.floor(year / 10) * 10;
+      if (decade < 1930 || decade > 2030) return;
+      const label = `${decade}s`;
+      if (!buckets.has(label)) buckets.set(label, []);
+      buckets.get(label).push(movie);
+    });
+
+    const groups = [];
+    buckets.forEach((entries, label) => {
+      const items = pickConnectionItemsFromMovies(entries, rng);
+      if (!items) return;
+      groups.push({
+        type: "decade",
+        key: `decade:${label}`,
+        name: `${label} Movies`,
+        items
+      });
+    });
+
+    return shuffle(groups, rng);
+  }
+
+  function pickConnectionItemsFromMovies(entries, rng) {
+    const ranked = dedupeCatalogByTitle(entries).sort(compareMoviesByRank);
+    if (ranked.length < 4) return null;
+    const pool = ranked.slice(0, Math.min(28, ranked.length));
+    const items = shuffle(pool.map((movie) => movie.title), rng).slice(0, 4);
+    if (items.length < 4) return null;
+    return items;
+  }
+
+  function selectConnectionsGroupsByPlan(candidatesByType, plan, rng) {
+    const selected = [];
+    const usedGroupKeys = new Set();
+    const usedTitles = new Set();
+    const poolByType = {};
+
+    [...new Set(plan)].forEach((type) => {
+      poolByType[type] = shuffle((candidatesByType[type] || []).slice(), rng);
+    });
+
+    function dfs(step) {
+      if (step >= plan.length) return true;
+      const type = plan[step];
+      const pool = poolByType[type] || [];
+      for (const group of pool) {
+        if (!group || usedGroupKeys.has(group.key)) continue;
+        const keys = group.items.map((title) => normalize(title));
+        if (keys.some((key) => usedTitles.has(key))) continue;
+
+        selected.push(group);
+        usedGroupKeys.add(group.key);
+        keys.forEach((key) => usedTitles.add(key));
+
+        if (dfs(step + 1)) return true;
+
+        selected.pop();
+        usedGroupKeys.delete(group.key);
+        keys.forEach((key) => usedTitles.delete(key));
+      }
+      return false;
+    }
+
+    return dfs(0) ? selected : null;
+  }
+
+  function selectAnyMixedConnectionsGroups(candidatesByType, rng, targetCount) {
+    const pool = shuffle(
+      [...(candidatesByType.genre || []), ...(candidatesByType.actor || []), ...(candidatesByType.decade || [])],
+      rng
+    );
+    const selected = [];
+    const usedTitles = new Set();
+
+    function dfs(index) {
+      if (selected.length >= targetCount) {
+        return selected.some((group) => group.type !== "genre");
+      }
+      if (index >= pool.length) return false;
+
+      for (let i = index; i < pool.length; i += 1) {
+        const group = pool[i];
+        const keys = group.items.map((title) => normalize(title));
+        if (keys.some((key) => usedTitles.has(key))) continue;
+
+        selected.push(group);
+        keys.forEach((key) => usedTitles.add(key));
+        if (dfs(i + 1)) return true;
+        selected.pop();
+        keys.forEach((key) => usedTitles.delete(key));
+      }
+
+      return false;
+    }
+
+    return dfs(0) ? selected : null;
+  }
+
+  function buildConnectionsPuzzleTitle(groups) {
+    const types = new Set((groups || []).map((group) => group.type));
+    if (types.has("genre") && types.has("actor") && types.has("decade")) return "Mixed Categories";
+    if (types.has("actor") && types.has("decade")) return "Cast & Era Mix";
+    if (types.has("actor")) return "Cast Mix";
+    if (types.has("decade")) return "Era Mix";
+    return "Genre Mix";
+  }
+
+  function pickMainGenreForConnections(genres) {
+    if (!Array.isArray(genres) || genres.length === 0) return "";
+
+    let best = "";
+    let bestScore = Number.POSITIVE_INFINITY;
+
+    genres.forEach((genre, idx) => {
+      const value = String(genre || "").trim();
+      if (!value) return;
+      const score = scoreConnectionGenrePriority(value, idx);
+      if (score < bestScore) {
+        best = value;
+        bestScore = score;
+      }
+    });
+
+    return best || String(genres[0] || "").trim();
+  }
+
+  function scoreConnectionGenrePriority(rawGenre, index) {
+    const token = normalizeGenreToken(rawGenre);
+    const ordered = {
+      drama: 1,
+      crime: 2,
+      thriller: 3,
+      mystery: 4,
+      comedy: 5,
+      romance: 6,
+      action: 7,
+      "sci fi": 8,
+      horror: 9,
+      animation: 10,
+      fantasy: 11,
+      family: 12,
+      biography: 13,
+      history: 14,
+      war: 15,
+      western: 16,
+      sport: 17,
+      musical: 18,
+      adventure: 19,
+      documentary: 20
+    };
+    const base = Object.prototype.hasOwnProperty.call(ordered, token) ? ordered[token] : 80;
+    return base * 10 + index;
+  }
+
+  function normalizeGenreToken(value) {
+    return String(value || "")
+      .toLowerCase()
+      .replace(/&/g, "and")
+      .replace(/[^a-z0-9]+/g, " ")
+      .trim();
   }
 
   function buildDailyImpostorPuzzle(movieCatalog, dayHash) {
@@ -2993,16 +3215,41 @@
   }
 
   function hasViableConnections(movieCatalog) {
-    const buckets = new Map();
+    const blockedGenres = new Set(["documentary", "news", "talk show", "game show", "reality tv", "short", "music"]);
+    const genreBuckets = new Map();
+    const decadeBuckets = new Map();
+    const actorBuckets = new Map();
+
     movieCatalog.forEach((movie) => {
-      const primary = movie.genres[0];
-      if (!primary) return;
-      if (!buckets.has(primary)) buckets.set(primary, new Set());
-      buckets.get(primary).add(movie.title);
+      if (!movie || !Array.isArray(movie.cast) || movie.cast.length < 2) return;
+      if (isLikelyNonMovieSpecial(movie.title, movie.genres, movie.description)) return;
+
+      const mainGenre = pickMainGenreForConnections(movie.genres);
+      const genreKey = normalizeGenreToken(mainGenre);
+      if (mainGenre && !blockedGenres.has(genreKey)) {
+        if (!genreBuckets.has(mainGenre)) genreBuckets.set(mainGenre, new Set());
+        genreBuckets.get(mainGenre).add(movie.title);
+      }
+
+      const year = Number(movie.year);
+      if (Number.isFinite(year)) {
+        const decade = `${Math.floor(year / 10) * 10}s`;
+        if (!decadeBuckets.has(decade)) decadeBuckets.set(decade, new Set());
+        decadeBuckets.get(decade).add(movie.title);
+      }
+
+      [...new Set(movie.cast)].forEach((actor) => {
+        if (!actorBuckets.has(actor)) actorBuckets.set(actor, new Set());
+        actorBuckets.get(actor).add(movie.title);
+      });
     });
 
-    const eligible = [...buckets.values()].filter((titles) => titles.size >= 4);
-    return eligible.length >= 4;
+    const genreEligible = [...genreBuckets.values()].filter((titles) => titles.size >= 4).length;
+    const decadeEligible = [...decadeBuckets.values()].filter((titles) => titles.size >= 4).length;
+    const actorEligible = [...actorBuckets.values()].filter((titles) => titles.size >= 4).length;
+    const nonGenreEligible = decadeEligible + actorEligible;
+
+    return (genreEligible >= 2 && nonGenreEligible >= 2) || genreEligible >= 4;
   }
 
   function buildConnectionsItems(puzzle, seedKey) {
