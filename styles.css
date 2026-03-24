@@ -1480,3 +1480,12 @@ input:focus {
     font-size: 14px;
   }
 }
+
+#grid-meta,
+#connections-meta,
+#plotle-meta,
+#moviedle-meta,
+#impostor-meta,
+#impostor-cast-meta {
+  display: none !important;
+}

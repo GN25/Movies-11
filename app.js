@@ -1900,7 +1900,7 @@
     if (state.status === "won") {
       dom.impostorCastMeta.textContent = `Solved ${needed}/${needed} in ${state.attempts} checks | Score ${state.score}`;
     } else if (state.status === "lost") {
-      dom.impostorCastMeta.textContent = `Wrong pick. Answers revealed | Found ${found}/${needed} | Score ${state.score}`;
+      dom.impostorCastMeta.textContent = "";
     } else {
       dom.impostorCastMeta.textContent = `Found ${found}/${needed} | Checks ${state.attempts} | Score ${state.score}`;
     }
@@ -2250,13 +2250,14 @@
   function showGameWinModal(gameName, streak) {
     const modal = ensureWinModal();
     const gameLabel = gameLabels[gameName] || "Game";
+    const score = gameScore(gameName);
     const card = modal.overlay.querySelector(".win-modal-card");
     if (card) card.classList.remove("lost");
     if (modal.titleNode) {
       modal.titleNode.textContent = "You won!";
     }
     if (modal.textNode) {
-      modal.textNode.textContent = `${gameLabel} streak: ${streak}`;
+      modal.textNode.textContent = `${gameLabel} streak: ${streak} | Score: ${score}`;
     }
     modal.overlay.classList.add("show");
   }
@@ -2264,13 +2265,14 @@
   function showGameLossModal(gameName) {
     const modal = ensureWinModal();
     const gameLabel = gameLabels[gameName] || "Game";
+    const score = gameScore(gameName);
     const card = modal.overlay.querySelector(".win-modal-card");
     if (card) card.classList.add("lost");
     if (modal.titleNode) {
       modal.titleNode.textContent = "You lost!";
     }
     if (modal.textNode) {
-      modal.textNode.textContent = `${gameLabel} answers revealed.`;
+      modal.textNode.textContent = `${gameLabel} score: ${score}`;
     }
     modal.overlay.classList.add("show");
   }
@@ -2515,6 +2517,12 @@
       (daily.impostor.score || 0) +
       (daily.impostorCast.score || 0)
     );
+  }
+
+  function gameScore(gameName) {
+    const value = Number(daily && daily[gameName] && daily[gameName].score);
+    if (!Number.isFinite(value)) return 0;
+    return Math.max(0, Math.round(value));
   }
 
   function buildGridPuzzle(template) {
