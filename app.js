@@ -96,6 +96,7 @@
   const fullCatalogMovies = resolveCatalogMovies(defaultMovies, window.CINECLASH_CATALOG);
   const rankedMoviesByPoolPriority = fullCatalogMovies.slice().sort(compareMoviesByDifficultyScore);
   const movies = resolveDifficultyMoviePool(rankedMoviesByPoolPriority, difficulty);
+  const answerMovies = fullCatalogMovies;
 
   const gridTemplates = [
     { rows: ["Leonardo DiCaprio", "Scarlett Johansson", "Brad Pitt"], cols: ["Drama", "Action", "Comedy"] },
@@ -172,10 +173,11 @@
   ];
 
   const movieMap = new Map(movies.map((movie) => [normalize(movie.title), movie]));
+  const answerMovieMap = new Map(answerMovies.map((movie) => [normalize(movie.title), movie]));
   const actorNameMap = new Map();
   const actorFrequency = new Map();
 
-  movies.forEach((movie) => {
+  answerMovies.forEach((movie) => {
     [...new Set(movie.cast)].forEach((actor) => {
       const key = normalize(actor);
       if (!key) return;
@@ -580,7 +582,7 @@
         <h3 id="difficulty-gate-title">Choose Difficulty</h3>
         <p id="difficulty-gate-text"></p>
         <div class="difficulty-gate-options" role="group" aria-label="Difficulty options">
-          <button type="button" class="difficulty-gate-option" data-difficulty="easy">Easy<br><span>Blockbusters (~350)</span></button>
+          <button type="button" class="difficulty-gate-option" data-difficulty="easy">Easy<br><span>Curated 320</span></button>
           <button type="button" class="difficulty-gate-option active" data-difficulty="medium">Medium<br><span>Top 500</span></button>
           <button type="button" class="difficulty-gate-option" data-difficulty="hard">Hard<br><span>All Movies</span></button>
         </div>
@@ -969,7 +971,7 @@
       };
     }
 
-    const movie = movieMap.get(normalize(raw));
+    const movie = answerMovieMap.get(normalize(raw));
     if (!movie) return null;
     return {
       type: "title",
@@ -1298,7 +1300,7 @@
     const raw = dom.plotleInput.value.trim();
     if (!raw) return;
 
-    const movie = movieMap.get(normalize(raw));
+    const movie = answerMovieMap.get(normalize(raw));
     if (!movie) {
       showToast("That title is not in the catalog.");
       return;
@@ -1505,12 +1507,12 @@
   }
 
   function resolveMoviedleGuess(raw, letters) {
-    const directMatch = movieMap.get(normalize(raw));
+    const directMatch = answerMovieMap.get(normalize(raw));
     if (directMatch && titleLetters(directMatch.title) === letters) {
       return directMatch;
     }
 
-    const letterMatches = movies
+    const letterMatches = answerMovies
       .filter((movie) => titleLetters(movie.title) === letters)
       .sort(compareMoviesByRank);
 
@@ -2405,7 +2407,7 @@
     const options =
       page === "grid" && gridPuzzle.answerType === "actor"
         ? actorOptions
-        : [...movies.map((movie) => movie.title)].sort((a, b) => a.localeCompare(b));
+        : [...answerMovies.map((movie) => movie.title)].sort((a, b) => a.localeCompare(b));
     dom.movieOptions.innerHTML = options.map((item) => `<option value="${escapeHtml(item)}"></option>`).join("");
   }
 
@@ -2676,7 +2678,7 @@
         .sort((a, b) => b.popularity - a.popularity);
     }
 
-    const matchingTitles = movies.filter(
+    const matchingTitles = answerMovies.filter(
       (movie) => movieMatchesGridAxis(movie, rowType, rowValue) && movieMatchesGridAxis(movie, colType, colValue)
     );
 
@@ -2735,17 +2737,20 @@
   }
 
   function buildEmergencyGridTemplate(movieCatalog) {
-    const withCast = movieCatalog.filter((movie) => Array.isArray(movie.cast) && movie.cast.length > 0);
-    if (withCast.length < 3) return null;
+    const source = movieCatalog.filter((movie) => Array.isArray(movie.cast) && movie.cast.length >= 3);
+    if (source.length < 1) return null;
 
-    // Guaranteed non-empty intersections: each title intersects with itself by cast.
-    const titles = withCast.slice(0, 3).map((movie) => movie.title);
+    // Guaranteed actor columns + actor intersections: pick one ensemble title and reuse 3 cast members as both axes.
+    const seedMovie = source[0];
+    const actors = [...new Set(seedMovie.cast)].slice(0, 3);
+    if (actors.length < 3) return null;
+
     return {
-      rows: titles,
-      cols: titles,
-      rowType: "title",
-      colType: "title",
-      answerType: "actor"
+      rows: actors,
+      cols: actors,
+      rowType: "actor",
+      colType: "actor",
+      answerType: "title"
     };
   }
 
@@ -2849,19 +2854,19 @@
     const actorOrder = shuffle(actorSeedPool, rng);
     const titleOrder = shuffle(titleSeedPool, rng);
 
-    const tryActorGenreTemplate = () => {
+    const tryGenreActorTemplate = () => {
       for (let attempt = 0; attempt < 24; attempt += 1) {
-        const cols = shuffle(genreOrder.slice(), rng).slice(0, 3);
-        if (cols.length < 3) continue;
+        const rows = shuffle(genreOrder.slice(), rng).slice(0, 3);
+        if (rows.length < 3) continue;
 
-        const compatibleActors = actorOrder.filter((actor) => cols.every((genre) => actorGenreMap.get(actor)?.has(genre)));
+        const compatibleActors = actorOrder.filter((actor) => rows.every((genre) => actorGenreMap.get(actor)?.has(genre)));
         if (compatibleActors.length < 3) continue;
 
         const rankedCompatibleActors = compatibleActors
           .slice()
           .sort((a, b) => (actorMovieCount.get(b) || 0) - (actorMovieCount.get(a) || 0) || a.localeCompare(b));
-        const rows = (isEasyGrid ? rankedCompatibleActors : compatibleActors).slice(0, 3);
-        const template = { rows, cols, rowType: "actor", colType: "genre" };
+        const cols = (isEasyGrid ? rankedCompatibleActors : compatibleActors).slice(0, 3);
+        const template = { rows, cols, rowType: "genre", colType: "actor" };
         if (buildGridPuzzle(template).valid) {
           return template;
         }
@@ -2936,9 +2941,7 @@
       return null;
     };
 
-    const modeOrder = isEasyGrid
-      ? [tryActorGenreTemplate, tryActorActorTemplate, tryTitleTitleTemplate]
-      : [tryTitleTitleTemplate, tryActorActorTemplate, tryActorGenreTemplate];
+    const modeOrder = [tryActorActorTemplate];
 
     for (const buildTemplate of modeOrder) {
       const candidate = buildTemplate();
@@ -2946,9 +2949,10 @@
     }
 
     const fallbackPool = fallbackTemplates.map((template) => ({
-      ...template,
+      rows: template.rows.slice(0, 3),
+      cols: template.rows.slice(0, 3),
       rowType: "actor",
-      colType: "genre",
+      colType: "actor",
       answerType: "title"
     }));
     const fallback = fallbackPool.find((template) => buildGridPuzzle(template).valid);
@@ -3405,6 +3409,7 @@
       cast: cast.slice(0, 6),
       popularity: safePopularity,
       knownness: safeKnownness,
+      easyTier: record.easy === true || record.easy === 1 || String(record.easy || "").toLowerCase() === "true",
       clue
     };
   }
@@ -3755,8 +3760,9 @@
       return source;
     }
 
-    const cap = difficulty === "easy" ? 360 : 500;
     const knownRanked = source.slice().sort(compareMoviesByKnownness);
+
+    const cap = difficulty === "easy" ? 320 : 500;
     const actorFrequency = new Map();
     source.forEach((movie) => {
       if (!movie || !Array.isArray(movie.cast)) return;
@@ -3772,75 +3778,58 @@
         .map((name) => normalize(name))
         .filter((actor) => actor && (actorFrequency.get(actor) || 0) >= minActorFrequency).length;
 
-    const config =
-      difficulty === "easy"
-        ? { minKnownness: 90, minRating: 6.5, minVotes: 120000000, minKnownCast: 2, castFrequencyFloor: 5 }
-        : { minKnownness: 48, minRating: 6.8, minVotes: 5000000, minKnownCast: 1, castFrequencyFloor: 3 };
+    if (difficulty === "easy") {
+      const manualEasy = knownRanked.filter((movie) => {
+        const isManual = movie?.easyTier === true;
+        if (!isManual) return false;
+        if (isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres)) return false;
+        if (isLikelyNicheEasyTitle(movie.title, movie.description || movie.clue, movie.genres)) return false;
+        return true;
+      });
 
-    const primary = knownRanked.filter((movie) => {
-      const knownness = resolveMovieKnownness(movie);
-      const rating = parseRatingValue(movie.rating);
-      const votes = parseVotesValue(movie.votes);
-      const castScore = knownCastCount(movie, config.castFrequencyFloor);
-      const isBlockbusterHit = difficulty !== "easy" || (knownness >= 90 && votes >= 120000000);
-      const easyExclusion =
-        difficulty === "easy" && isLikelyNicheEasyTitle(movie.title, movie.description || movie.clue, movie.genres);
-      return (
-        knownness >= config.minKnownness &&
-        rating >= config.minRating &&
-        votes >= config.minVotes &&
-        !isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres) &&
-        !easyExclusion &&
-        isBlockbusterHit &&
-        castScore >= config.minKnownCast
+      const mainstreamFill = knownRanked.filter((movie) => {
+        if (isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres)) return false;
+        if (isLikelyNicheEasyTitle(movie.title, movie.description || movie.clue, movie.genres)) return false;
+        const rating = parseRatingValue(movie.rating);
+        const knownness = resolveMovieKnownness(movie);
+        return rating >= 6.4 && knownness >= 62 && knownCastCount(movie, 4) >= 1;
+      });
+
+      const candidatePool = takeUniqueMoviesByTitle(
+        [...manualEasy, ...mainstreamFill, ...knownRanked],
+        Math.min(cap, source.length)
       );
-    });
+      if (hasViableGrid(candidatePool) && hasViableConnections(candidatePool)) return candidatePool;
 
-    const secondary = knownRanked.filter((movie) => {
-      const knownness = resolveMovieKnownness(movie);
-      const rating = parseRatingValue(movie.rating);
-      const votes = parseVotesValue(movie.votes);
-      const castScore = knownCastCount(movie, Math.max(2, config.castFrequencyFloor - 1));
-      const easyExclusion =
-        difficulty === "easy" && isLikelyNicheEasyTitle(movie.title, movie.description || movie.clue, movie.genres);
-      if (difficulty === "easy") {
-        return (
-          knownness >= config.minKnownness - 3 &&
-          rating >= config.minRating - 0.2 &&
-          votes >= Math.round(config.minVotes * 0.85) &&
-          !isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres) &&
-          !easyExclusion &&
-          castScore >= config.minKnownCast
-        );
+      const fallbackManual = takeUniqueMoviesByTitle([...manualEasy, ...mainstreamFill], Math.min(cap, source.length));
+      if (fallbackManual.length >= 220 && hasViableGrid(fallbackManual) && hasViableConnections(fallbackManual)) {
+        return fallbackManual;
       }
 
-      return (
-        knownness >= config.minKnownness - 8 &&
-        rating >= config.minRating - 0.4 &&
-        votes >= Math.round(config.minVotes * 0.5) &&
-        !isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres) &&
-        !easyExclusion &&
-        castScore >= Math.max(1, config.minKnownCast - 1)
-      );
+      return candidatePool;
+    }
+
+    const mediumPrimary = knownRanked.filter((movie) => {
+      if (isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres)) return false;
+      const rating = parseRatingValue(movie.rating);
+      const knownness = resolveMovieKnownness(movie);
+      return rating >= 6.3 && knownness >= 46;
     });
 
-    const rankedFallback = difficulty === "easy"
-      ? knownRanked.filter(
-          (movie) =>
-            !isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres) &&
-            !isLikelyNicheEasyTitle(movie.title, movie.description || movie.clue, movie.genres)
-        )
-      : knownRanked;
+    const mediumSecondary = knownRanked.filter((movie) => {
+      if (isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres)) return false;
+      return parseRatingValue(movie.rating) >= 6.0;
+    });
 
-    const candidatePool = takeUniqueMoviesByTitle([...primary, ...secondary, ...rankedFallback], Math.min(cap, source.length));
+    const candidatePool = takeUniqueMoviesByTitle(
+      [...mediumPrimary, ...mediumSecondary, ...knownRanked],
+      Math.min(cap, source.length)
+    );
     if (hasViableGrid(candidatePool) && hasViableConnections(candidatePool)) return candidatePool;
 
-    const widerFallback = rankedFallback.slice(0, Math.min(Math.max(cap + 250, 1200), rankedFallback.length));
+    const widerFallback = knownRanked.slice(0, Math.min(Math.max(cap + 200, 900), knownRanked.length));
     if (hasViableGrid(widerFallback) && hasViableConnections(widerFallback)) return widerFallback;
 
-    if (rankedFallback.length >= cap) {
-      return rankedFallback.slice(0, cap);
-    }
     return source.slice(0, Math.min(cap, source.length));
   }
 

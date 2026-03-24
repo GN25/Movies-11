@@ -3,21 +3,25 @@ const path = require("node:path");
 
 const SOURCE_PATH = path.join(process.cwd(), "data", "movies.json");
 const SOURCE_CSV_PATH = path.join(process.cwd(), "imdb_movies.csv");
+const SOURCE_EASY_PATH = path.join(process.cwd(), "data", "easy-manual.json");
 
 let cachedCatalog = null;
 let cachedMtimeMs = 0;
 let cachedKnownnessMap = null;
 let cachedKnownnessMtimeMs = 0;
+let cachedEasyTitlesSet = null;
+let cachedEasyTitlesMtimeMs = 0;
 
 module.exports = async function handler(req, res) {
   try {
     const catalog = await loadCatalog();
+    const easyTitlesSet = await loadEasyTitlesSet();
     const dayOverride = parseDayOverride(queryValue(req.query?.day));
     const variantOverride = parseVariantOverride(queryValue(req.query?.variant));
     const todayKey = dayOverride || formatDateKey(new Date());
     const seedKey = variantOverride ? `${todayKey}|${variantOverride}` : todayKey;
 
-    const payload = buildPublicCatalog(catalog, seedKey);
+    const payload = buildPublicCatalog(catalog, seedKey, easyTitlesSet);
 
     res.setHeader("Content-Type", "application/javascript; charset=utf-8");
     res.setHeader("Cache-Control", "public, s-maxage=300, stale-while-revalidate=600");
@@ -56,7 +60,7 @@ async function loadCatalog() {
   return sanitized;
 }
 
-function buildPublicCatalog(catalog, seedKey) {
+function buildPublicCatalog(catalog, seedKey, easyTitlesSet) {
   const MAX_CLUE_LENGTH = 240;
   const selected = dedupeCatalogByTitle(catalog).map((movie) => ({
     title: movie.title,
@@ -66,6 +70,7 @@ function buildPublicCatalog(catalog, seedKey) {
     rating: movie.rating,
     votes: movie.votes,
     popularity: movie.popularity,
+    easy: easyTitlesSet.has(normalize(movie.title)),
     clue: String(movie.clue || "").slice(0, MAX_CLUE_LENGTH).trim()
   }));
 
@@ -73,9 +78,34 @@ function buildPublicCatalog(catalog, seedKey) {
     catalog: selected,
     meta: {
       seedKey,
-      total: selected.length
+      total: selected.length,
+      easyCount: selected.filter((movie) => movie.easy).length
     }
   };
+}
+
+async function loadEasyTitlesSet() {
+  try {
+    const stats = await fs.stat(SOURCE_EASY_PATH);
+    if (cachedEasyTitlesSet && cachedEasyTitlesMtimeMs === stats.mtimeMs) {
+      return cachedEasyTitlesSet;
+    }
+
+    const raw = await fs.readFile(SOURCE_EASY_PATH, "utf8");
+    const parsed = JSON.parse(raw);
+    const list = Array.isArray(parsed) ? parsed : [];
+    const nextSet = new Set(
+      list
+        .map((value) => normalize(value))
+        .filter(Boolean)
+    );
+
+    cachedEasyTitlesSet = nextSet;
+    cachedEasyTitlesMtimeMs = stats.mtimeMs;
+    return nextSet;
+  } catch (_error) {
+    return new Set();
+  }
 }
 
 function sanitizeMovieRecord(record) {
