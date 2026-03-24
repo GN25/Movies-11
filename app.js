@@ -201,7 +201,7 @@
     impostorCast: "Impostor"
   };
 
-  let gridTemplate = buildDailyGridTemplate(movies, daySeed, gridTemplates);
+  let gridTemplate = buildDailyGridTemplate(movies, daySeed, gridTemplates, difficulty);
   let gridPuzzle = buildGridPuzzle(gridTemplate);
   if (!gridPuzzle.valid) {
     const emergencyTemplate = buildEmergencyGridTemplate(movies);
@@ -581,7 +581,7 @@
         <p id="difficulty-gate-text"></p>
         <div class="difficulty-gate-options" role="group" aria-label="Difficulty options">
           <button type="button" class="difficulty-gate-option" data-difficulty="easy">Easy<br><span>Blockbusters (~350)</span></button>
-          <button type="button" class="difficulty-gate-option active" data-difficulty="medium">Medium<br><span>Top 1000</span></button>
+          <button type="button" class="difficulty-gate-option active" data-difficulty="medium">Medium<br><span>Top 500</span></button>
           <button type="button" class="difficulty-gate-option" data-difficulty="hard">Hard<br><span>All Movies</span></button>
         </div>
         <div class="difficulty-gate-actions">
@@ -2749,7 +2749,8 @@
     };
   }
 
-  function buildDailyGridTemplate(movieCatalog, dayHash, fallbackTemplates) {
+  function buildDailyGridTemplate(movieCatalog, dayHash, fallbackTemplates, difficultyLevel = "medium") {
+    const isEasyGrid = difficultyLevel === "easy";
     const actorGenreMap = new Map();
     const actorCoactorMap = new Map();
     const titleCoTitleMap = new Map();
@@ -2793,11 +2794,15 @@
       }
     });
 
-    const rankedTitleCandidates = [...new Set(titleCandidates)]
+    let rankedTitleCandidates = [...new Set(titleCandidates)]
       .map((title) => movieMap.get(normalize(title)))
       .filter(Boolean)
       .sort(compareMoviesByRank)
       .map((movie) => movie.title);
+
+    if (isEasyGrid) {
+      rankedTitleCandidates = rankedTitleCandidates.slice(0, Math.min(260, rankedTitleCandidates.length));
+    }
 
     const rankedTitleSet = new Set(rankedTitleCandidates.map((title) => normalize(title)));
     rankedTitleCandidates.forEach((title) => titleCoTitleMap.set(title, new Set()));
@@ -2817,19 +2822,32 @@
       }
     });
 
+    const minGenreFrequency = isEasyGrid ? 10 : 6;
     const genreCandidates = [...genreCount.entries()]
-      .filter(([, count]) => count >= 6)
+      .filter(([, count]) => count >= minGenreFrequency)
+      .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
       .map(([genre]) => genre);
 
+    const minActorFrequency = isEasyGrid ? 6 : 3;
     const actorCandidates = [...actorMovieCount.entries()]
-      .filter(([, count]) => count >= 3)
+      .filter(([, count]) => count >= minActorFrequency)
       .sort((a, b) => b[1] - a[1])
       .map(([actor]) => actor);
 
     const rng = rngFromSeed(`${dayHash}-grid-template`);
-    const genreOrder = shuffle(genreCandidates, rng);
-    const actorOrder = shuffle(actorCandidates, rng);
-    const titleOrder = shuffle(rankedTitleCandidates.slice(), rng);
+    const genreSeedPool = isEasyGrid
+      ? genreCandidates.slice(0, Math.min(10, genreCandidates.length))
+      : genreCandidates.slice();
+    const actorSeedPool = isEasyGrid
+      ? actorCandidates.slice(0, Math.min(120, actorCandidates.length))
+      : actorCandidates.slice();
+    const titleSeedPool = isEasyGrid
+      ? rankedTitleCandidates.slice(0, Math.min(220, rankedTitleCandidates.length))
+      : rankedTitleCandidates.slice();
+
+    const genreOrder = shuffle(genreSeedPool, rng);
+    const actorOrder = shuffle(actorSeedPool, rng);
+    const titleOrder = shuffle(titleSeedPool, rng);
 
     const tryActorGenreTemplate = () => {
       for (let attempt = 0; attempt < 24; attempt += 1) {
@@ -2839,7 +2857,10 @@
         const compatibleActors = actorOrder.filter((actor) => cols.every((genre) => actorGenreMap.get(actor)?.has(genre)));
         if (compatibleActors.length < 3) continue;
 
-        const rows = compatibleActors.slice(0, 3);
+        const rankedCompatibleActors = compatibleActors
+          .slice()
+          .sort((a, b) => (actorMovieCount.get(b) || 0) - (actorMovieCount.get(a) || 0) || a.localeCompare(b));
+        const rows = (isEasyGrid ? rankedCompatibleActors : compatibleActors).slice(0, 3);
         const template = { rows, cols, rowType: "actor", colType: "genre" };
         if (buildGridPuzzle(template).valid) {
           return template;
@@ -2850,20 +2871,29 @@
 
     const tryActorActorTemplate = () => {
       for (let attempt = 0; attempt < 30; attempt += 1) {
-        const rows = shuffle(actorOrder.slice(), rng).slice(0, 3);
+        const rowPool = isEasyGrid
+          ? actorOrder.slice(0, Math.min(24, actorOrder.length))
+          : actorOrder.slice();
+        const rows = shuffle(rowPool, rng).slice(0, 3);
         if (rows.length < 3) continue;
 
         const rowSet = new Set(rows.map((name) => normalize(name)));
-        const cols = actorOrder.filter((actor) => {
+        const compatibleCols = actorOrder.filter((actor) => {
           if (rowSet.has(normalize(actor))) return false;
           return rows.every((rowActor) => actorCoactorMap.get(rowActor)?.has(actor));
         });
 
-        if (cols.length < 3) continue;
+        if (compatibleCols.length < 3) continue;
+        const cols = isEasyGrid
+          ? compatibleCols
+              .slice()
+              .sort((a, b) => (actorMovieCount.get(b) || 0) - (actorMovieCount.get(a) || 0) || a.localeCompare(b))
+              .slice(0, 3)
+          : shuffle(compatibleCols.slice(), rng).slice(0, 3);
 
         const template = {
           rows,
-          cols: shuffle(cols.slice(), rng).slice(0, 3),
+          cols,
           rowType: "actor",
           colType: "actor"
         };
@@ -2876,12 +2906,15 @@
     };
 
     const tryTitleTitleTemplate = () => {
+      const titleSearchPool = isEasyGrid
+        ? titleOrder.slice(0, Math.min(120, titleOrder.length))
+        : titleOrder;
       for (let attempt = 0; attempt < 40; attempt += 1) {
-        const rows = shuffle(titleOrder.slice(), rng).slice(0, 3);
+        const rows = shuffle(titleSearchPool.slice(), rng).slice(0, 3);
         if (rows.length < 3) continue;
 
         const rowSet = new Set(rows.map((title) => normalize(title)));
-        const cols = titleOrder.filter((title) => {
+        const cols = titleSearchPool.filter((title) => {
           if (rowSet.has(normalize(title))) return false;
           return rows.every((rowTitle) => titleCoTitleMap.get(rowTitle)?.has(title));
         });
@@ -2903,7 +2936,9 @@
       return null;
     };
 
-    const modeOrder = [tryTitleTitleTemplate, tryActorActorTemplate, tryActorGenreTemplate];
+    const modeOrder = isEasyGrid
+      ? [tryActorGenreTemplate, tryActorActorTemplate, tryTitleTitleTemplate]
+      : [tryTitleTitleTemplate, tryActorActorTemplate, tryActorGenreTemplate];
 
     for (const buildTemplate of modeOrder) {
       const candidate = buildTemplate();
@@ -3498,6 +3533,98 @@
     return false;
   }
 
+  const EASY_BLOCKBUSTER_TITLE_EXCLUSIONS = new Set(
+    [
+      "Scooby-Doo! and the Gourmet Ghost",
+      "New Initial D the Movie - Legend 1: Awakening",
+      "Scooby-Doo! Music of the Vampire",
+      "Scooby-Doo! Legend of the Phantosaur",
+      "Scooby-Doo! and the Samurai Sword",
+      "Teasing Master Takagi-san: The Movie",
+      "Doraemon: Nobita and the Galaxy Super-express",
+      "Dragon Ball: The Path to Power",
+      "Scooby-Doo! Moon Monster Madness",
+      "Sailor Moon SuperS: The Movie: Black Dream Hole",
+      "Scooby-Doo! Pirates Ahoy!",
+      "Scooby-Doo! Stage Fright",
+      "Ranma ½: The Movie — The Battle of Nekonron: The Fight to Break the Rules!",
+      "Monster High: Boo York, Boo York",
+      "Scooby-Doo on Zombie Island",
+      "Big Top Scooby-Doo!",
+      "Scooby-Doo! Abracadabra-Doo",
+      "Inuyasha the Movie 2: The Castle Beyond the Looking Glass",
+      "Scooby-Doo! The Sword and the Scoob",
+      "Doraemon: Nobita and the New Steel Troops: Winged Angels",
+      "Gurren Lagann the Movie: The Lights in the Sky Are Stars",
+      "Heaven's Lost Property Final – The Movie: Eternally My Master",
+      "Cowboy Bebop: The Movie",
+      "Naruto 20th Anniversary - Road of Naruto",
+      "Inuyasha the Movie 4: Fire on the Mystic Island",
+      "Scooby-Doo! Shaggy's Showdown",
+      "Monster High: Scaris City of Frights",
+      "Barbie and the Magic of Pegasus",
+      "Chill Out, Scooby-Doo!",
+      "Fairy Tail: Phoenix Priestess",
+      "Straight Outta Nowhere: Scooby-Doo! Meets Courage the Cowardly Dog",
+      "Monster High: Escape from Skull Shores",
+      "Barbie as Rapunzel",
+      "Pixie Hollow Games",
+      "Barbie of Swan Lake",
+      "Dragon Ball Z: Plan to Eradicate the Super Saiyans",
+      "Escaflowne: The Movie",
+      "Phineas and Ferb: The Movie: Candace Against the Universe",
+      "One Piece: The Movie",
+      "Stitch! The Movie",
+      "Aloha Scooby-Doo!",
+      "Pokémon the Movie: Volcanion and the Mechanical Marvel",
+      "Mickey, Donald, Goofy: The Three Musketeers",
+      "Wizards of Waverly Place: The Movie",
+      "Barbie: Dolphin Magic",
+      "Tinker Bell and the Great Fairy Rescue",
+      "Barbie Mariposa & the Fairy Princess",
+      "Barbie Mariposa",
+      "New Initial D the Movie - Legend 2: Racer",
+      "Monster High: Why Do Ghouls Fall in Love?",
+      "Cardcaptor Sakura: The Movie",
+      "Lilo & Stitch 2: Stitch Has a Glitch",
+      "Tom and Jerry: Shiver Me Whiskers",
+      "Madly Madagascar",
+      "Leroy & Stitch",
+      "Legend of the BoneKnapper Dragon",
+      "K: Seven Stories Movie 1 - R:B - Blaze",
+      "Mike's New Car",
+      "Welcome to the Club",
+      "The Smurfs: The Legend of Smurfy Hollow",
+      "Daisy Quokka: World’s Scariest Animal",
+      "Night at the Museum: Kahmunrah Rises Again",
+      "Tom and Jerry: The Fast and the Furry",
+      "Stewie Griffin: The Untold Story",
+      "LEGO DC Comics Super Heroes: Justice League - Attack of the Legion of Doom!",
+      "Final Fantasy VII: Advent Children",
+      "Seobok: Project Clone",
+      "Kuroko's Basketball - Movie: Winter Cup - Shadow and Light",
+      "Megamind: The Button of Doom",
+      "Ted Bundy: American Boogeyman",
+      "Justice League vs. the Fatal Five",
+      "Battle Angel",
+      "Along for the Ride",
+      "Against the Ice"
+    ].map((title) => normalize(title))
+  );
+
+  function isLikelyNicheEasyTitle(title, description, genres) {
+    const key = normalize(title);
+    if (EASY_BLOCKBUSTER_TITLE_EXCLUSIONS.has(key)) return true;
+
+    const text = `${String(title || "")} ${String(description || "")}`.toLowerCase();
+    const genreText = Array.isArray(genres) ? genres.join(" ").toLowerCase() : String(genres || "").toLowerCase();
+    const franchiseSpecialPattern =
+      /\b(?:scooby(?:-doo)?|monster high|barbie|doraemon|inuyasha|ranma|phineas and ferb|wizards of waverly place|tinker bell|pixie hollow|stitch|tom and jerry|stewie griffin|kuroko's basketball|futurama)\b/i;
+    if (franchiseSpecialPattern.test(text)) return true;
+    if (/\b(tv movie|direct to video|special)\b/i.test(`${text} ${genreText}`)) return true;
+    return false;
+  }
+
   function parseVotesValue(value) {
     if (Number.isFinite(Number(value))) return Math.max(0, Math.round(Number(value)));
     const digits = String(value || "").replace(/[^0-9]/g, "");
@@ -3611,7 +3738,7 @@
       return source;
     }
 
-    const cap = difficulty === "easy" ? 360 : 1000;
+    const cap = difficulty === "easy" ? 360 : 500;
     const knownRanked = source.slice().sort(compareMoviesByKnownness);
     const actorFrequency = new Map();
     source.forEach((movie) => {
@@ -3639,11 +3766,14 @@
       const votes = parseVotesValue(movie.votes);
       const castScore = knownCastCount(movie, config.castFrequencyFloor);
       const isBlockbusterHit = difficulty !== "easy" || (knownness >= 90 && votes >= 120000000);
+      const easyExclusion =
+        difficulty === "easy" && isLikelyNicheEasyTitle(movie.title, movie.description || movie.clue, movie.genres);
       return (
         knownness >= config.minKnownness &&
         rating >= config.minRating &&
         votes >= config.minVotes &&
         !isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres) &&
+        !easyExclusion &&
         isBlockbusterHit &&
         castScore >= config.minKnownCast
       );
@@ -3654,12 +3784,15 @@
       const rating = parseRatingValue(movie.rating);
       const votes = parseVotesValue(movie.votes);
       const castScore = knownCastCount(movie, Math.max(2, config.castFrequencyFloor - 1));
+      const easyExclusion =
+        difficulty === "easy" && isLikelyNicheEasyTitle(movie.title, movie.description || movie.clue, movie.genres);
       if (difficulty === "easy") {
         return (
           knownness >= config.minKnownness - 3 &&
           rating >= config.minRating - 0.2 &&
           votes >= Math.round(config.minVotes * 0.85) &&
           !isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres) &&
+          !easyExclusion &&
           castScore >= config.minKnownCast
         );
       }
@@ -3669,16 +3802,28 @@
         rating >= config.minRating - 0.4 &&
         votes >= Math.round(config.minVotes * 0.5) &&
         !isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres) &&
+        !easyExclusion &&
         castScore >= Math.max(1, config.minKnownCast - 1)
       );
     });
 
-    const candidatePool = takeUniqueMoviesByTitle([...primary, ...secondary, ...knownRanked], Math.min(cap, source.length));
+    const rankedFallback = difficulty === "easy"
+      ? knownRanked.filter(
+          (movie) =>
+            !isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres) &&
+            !isLikelyNicheEasyTitle(movie.title, movie.description || movie.clue, movie.genres)
+        )
+      : knownRanked;
+
+    const candidatePool = takeUniqueMoviesByTitle([...primary, ...secondary, ...rankedFallback], Math.min(cap, source.length));
     if (hasViableGrid(candidatePool) && hasViableConnections(candidatePool)) return candidatePool;
 
-    const widerFallback = knownRanked.slice(0, Math.min(Math.max(cap + 250, 1200), knownRanked.length));
+    const widerFallback = rankedFallback.slice(0, Math.min(Math.max(cap + 250, 1200), rankedFallback.length));
     if (hasViableGrid(widerFallback) && hasViableConnections(widerFallback)) return widerFallback;
 
+    if (rankedFallback.length >= cap) {
+      return rankedFallback.slice(0, cap);
+    }
     return source.slice(0, Math.min(cap, source.length));
   }
 
