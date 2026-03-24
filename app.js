@@ -3639,6 +3639,15 @@
     return Math.max(0, Math.min(100, Math.round(numeric)));
   }
 
+  function resolveMovieKnownness(movie) {
+    const explicit = parseKnownnessValue(movie?.knownness);
+    if (Number.isFinite(explicit)) return explicit;
+    const rating = parseRatingValue(movie?.rating);
+    const votes = parseVotesValue(movie?.votes);
+    const popularity = Number(movie?.popularity) || 0;
+    return scoreKnownnessFromSignals(rating, votes, popularity);
+  }
+
   function scorePopularityFromRatingVotes(rating, votes) {
     const voteScore = Math.min(100, Math.round((Math.log10(Math.max(1, votes) + 1) / 6) * 100));
     const ratingScore = Math.min(100, Math.max(0, Math.round((rating / 10) * 100)));
@@ -3693,8 +3702,8 @@
   }
 
   function compareMoviesByKnownness(a, b) {
-    const knownnessA = parseKnownnessValue(a?.knownness);
-    const knownnessB = parseKnownnessValue(b?.knownness);
+    const knownnessA = resolveMovieKnownness(a);
+    const knownnessB = resolveMovieKnownness(b);
     if (knownnessB !== knownnessA) return knownnessB - knownnessA;
 
     const votesA = parseVotesValue(a?.votes);
@@ -3761,7 +3770,7 @@
         : { minKnownness: 48, minRating: 6.8, minVotes: 5000000, minKnownCast: 1, castFrequencyFloor: 3 };
 
     const primary = knownRanked.filter((movie) => {
-      const knownness = parseKnownnessValue(movie.knownness);
+      const knownness = resolveMovieKnownness(movie);
       const rating = parseRatingValue(movie.rating);
       const votes = parseVotesValue(movie.votes);
       const castScore = knownCastCount(movie, config.castFrequencyFloor);
@@ -3780,7 +3789,7 @@
     });
 
     const secondary = knownRanked.filter((movie) => {
-      const knownness = parseKnownnessValue(movie.knownness);
+      const knownness = resolveMovieKnownness(movie);
       const rating = parseRatingValue(movie.rating);
       const votes = parseVotesValue(movie.votes);
       const castScore = knownCastCount(movie, Math.max(2, config.castFrequencyFloor - 1));

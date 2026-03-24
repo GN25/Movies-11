@@ -57,6 +57,7 @@ async function loadCatalog() {
 }
 
 function buildPublicCatalog(catalog, seedKey) {
+  const MAX_CLUE_LENGTH = 240;
   const selected = dedupeCatalogByTitle(catalog).map((movie) => ({
     title: movie.title,
     year: movie.year,
@@ -65,8 +66,7 @@ function buildPublicCatalog(catalog, seedKey) {
     rating: movie.rating,
     votes: movie.votes,
     popularity: movie.popularity,
-    knownness: movie.knownness,
-    clue: movie.clue
+    clue: String(movie.clue || "").slice(0, MAX_CLUE_LENGTH).trim()
   }));
 
   return {
