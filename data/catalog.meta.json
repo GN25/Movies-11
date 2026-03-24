@@ -1,20 +1,20 @@
 {
-  "source": "IMBD.csv",
-  "generatedAt": "2026-03-24T12:16:34.141Z",
+  "source": "imdb_movies.csv",
+  "generatedAt": "2026-03-24T13:00:37.402Z",
   "format": "csv-to-json",
   "outputColumns": [
-    "title",
-    "year",
-    "duration",
+    "names",
+    "movie name",
+    "date_x",
+    "score",
     "genre",
-    "rating",
-    "description",
-    "stars",
-    "votes"
+    "overview",
+    "crew",
+    "budbet_x"
   ],
-  "tvSeriesRule": "Series/special if award-event/news markers OR year range OR (TV certificate AND episodic runtime/keywords).",
-  "crossTypeConflictsRemovedFromMovies": 107,
-  "moviesCount": 4493,
-  "tvShowsCount": 2910,
-  "uniqueMovieStars": 12457
+  "tvSeriesRule": "Series/special if status/title/overview indicate episodic content or special/event records.",
+  "crossTypeConflictsRemovedFromMovies": 0,
+  "moviesCount": 9629,
+  "tvShowsCount": 354,
+  "uniqueMovieCrewMembers": 37928
 }

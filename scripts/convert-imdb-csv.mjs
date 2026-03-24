@@ -3,7 +3,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-const INPUT_CSV = path.resolve(process.env.IMDB_CSV_PATH || "IMBD.csv");
+const INPUT_CSV = path.resolve(process.env.IMDB_CSV_PATH || "imdb_movies.csv");
 const MOVIES_JSON = path.resolve("data/movies.json");
 const TV_SHOWS_JSON = path.resolve("data/tv-shows.json");
 const CATALOG_JS = path.resolve("data/catalog.js");
@@ -22,7 +22,7 @@ async function run() {
   }
 
   const header = rows[0].map((value) => String(value || "").trim().toLowerCase());
-  const required = ["title", "year", "duration", "genre", "rating", "description", "stars", "votes", "certificate"];
+  const required = ["names", "date_x", "score", "genre", "overview", "crew", "budget_x"];
   for (const column of required) {
     if (!header.includes(column)) {
       throw new Error(`CSV missing expected column: ${column}`);
@@ -33,35 +33,37 @@ async function run() {
   const works = [];
 
   for (const row of rows.slice(1)) {
-    const title = cleanCell(row[indexByColumn.get("title")]);
-    if (!title) continue;
+    const names = cleanCell(row[indexByColumn.get("names")]);
+    if (!names) continue;
 
-    const yearRaw = cleanCell(row[indexByColumn.get("year")]);
-    const certificate = cleanCell(row[indexByColumn.get("certificate")]);
-    const year = parseFirstYear(yearRaw);
-    if (!Number.isFinite(year)) continue;
-
-    const duration = cleanCell(row[indexByColumn.get("duration")]);
+    const movieName =
+      cleanCell(row[indexByColumn.get("movie name")]) ||
+      cleanCell(row[indexByColumn.get("orig_title")]) ||
+      names;
+    const dateX = cleanCell(row[indexByColumn.get("date_x")]);
+    const year = parseFirstYear(dateX);
     const genre = normalizeGenre(cleanCell(row[indexByColumn.get("genre")]));
-    const rating = parseRating(cleanCell(row[indexByColumn.get("rating")]));
-    const description = normalizeDescription(cleanCell(row[indexByColumn.get("description")]));
-    const stars = parseStars(cleanCell(row[indexByColumn.get("stars")]));
-    const votes = parseVotes(cleanCell(row[indexByColumn.get("votes")]));
+    const score = parseScore(cleanCell(row[indexByColumn.get("score")]));
+    const overview = normalizeDescription(cleanCell(row[indexByColumn.get("overview")]));
+    const crew = normalizeCrew(cleanCell(row[indexByColumn.get("crew")]));
+    const budbetX = parseBudget(cleanCell(row[indexByColumn.get("budget_x")]));
+    const status = cleanCell(row[indexByColumn.get("status")]);
 
     const record = {
-      title,
-      year,
-      duration,
+      names,
+      "movie name": movieName,
+      date_x: dateX,
+      score,
       genre,
-      rating,
-      description,
-      stars,
-      votes
+      overview,
+      crew,
+      budbet_x: budbetX
     };
 
     works.push({
       record,
-      isTvShow: detectTvShow(title, yearRaw, certificate, duration, genre, description)
+      year,
+      isTvShow: detectTvShow(names, movieName, dateX, genre, overview, status)
     });
   }
 
@@ -88,18 +90,18 @@ async function run() {
   ].join("\n");
   await fs.writeFile(CATALOG_JS, catalogJs, "utf8");
 
-  const uniqueStars = new Set();
-  movies.forEach((movie) => movie.stars.forEach((star) => uniqueStars.add(star)));
+  const uniqueCrew = new Set();
+  movies.forEach((movie) => parseCrewMembers(movie.crew).forEach((person) => uniqueCrew.add(person)));
   const meta = {
     source: path.basename(INPUT_CSV),
     generatedAt,
     format: "csv-to-json",
-    outputColumns: ["title", "year", "duration", "genre", "rating", "description", "stars", "votes"],
-    tvSeriesRule: "Series/special if award-event/news markers OR year range OR (TV certificate AND episodic runtime/keywords).",
+    outputColumns: ["names", "movie name", "date_x", "score", "genre", "overview", "crew", "budbet_x"],
+    tvSeriesRule: "Series/special if status/title/overview indicate episodic content or special/event records.",
     crossTypeConflictsRemovedFromMovies: moviesRaw.length - moviesRawWithoutSeriesKeys.length,
     moviesCount: movies.length,
     tvShowsCount: tvShows.length,
-    uniqueMovieStars: uniqueStars.size
+    uniqueMovieCrewMembers: uniqueCrew.size
   };
   await fs.writeFile(META_JSON, JSON.stringify(meta, null, 2) + "\n", "utf8");
 
@@ -187,57 +189,58 @@ function normalizeGenre(rawGenre) {
     .join(", ");
 }
 
-function parseRating(rawRating) {
-  const value = Number(String(rawRating || "").replace(",", "."));
+function parseScore(rawScore) {
+  const value = Number(String(rawScore || "").replace(",", "."));
   if (!Number.isFinite(value)) return 0;
-  return Math.max(0, Math.min(10, Number(value.toFixed(1))));
+  return Number(value.toFixed(1));
 }
 
-function parseVotes(rawVotes) {
-  const digits = String(rawVotes || "").replace(/[^0-9]/g, "");
+function parseBudget(rawBudget) {
+  const digits = String(rawBudget || "").replace(/[^0-9.-]/g, "");
   const value = Number(digits);
-  return Number.isFinite(value) ? value : 0;
+  if (!Number.isFinite(value)) return 0;
+  return Math.max(0, Math.round(value));
 }
 
-function parseStars(rawStars) {
-  const text = String(rawStars || "").trim();
-  if (!text) return [];
-
-  const values = [];
-  const regex = /'((?:\\'|[^'])*)'/g;
-  let match = regex.exec(text);
-  while (match) {
-    const value = cleanCell(String(match[1] || "").replace(/\\'/g, "'").replace(/,\s*$/g, ""));
-    if (value) values.push(value);
-    match = regex.exec(text);
-  }
-
-  if (values.length === 0) {
-    return normalizeStars(
-      text
-        .replace(/^\[/, "")
-        .replace(/\]$/, "")
-        .split(",")
-        .map((part) => cleanCell(part.replace(/^['"]|['"]$/g, "")))
-        .filter(Boolean)
-    );
-  }
-
-  return normalizeStars(values);
+function normalizeCrew(rawCrew) {
+  return cleanCell(rawCrew);
 }
 
-function detectTvShow(title, rawYear, certificate, duration, genre, description) {
-  if (isLikelyNonMovieSpecial(title, genre, description)) return true;
+function parseCrewMembers(rawCrew) {
+  const parts = String(rawCrew || "")
+    .split(",")
+    .map((part) => cleanCell(part))
+    .filter(Boolean);
 
-  const yearText = String(rawYear || "").replace(/[()]/g, "").trim();
-  const cert = String(certificate || "").toUpperCase();
-  if (/\d{4}\s*[–-]\s*(\d{4}|$)/.test(yearText)) return true;
-  if (!cert.startsWith("TV-")) return false;
+  if (!parts.length) return [];
+  if (parts.length >= 4) {
+    const even = parts.filter((_part, index) => index % 2 === 0);
+    if (even.length >= 2) return [...new Set(even)];
+  }
 
-  const minutes = parseDurationMinutes(duration);
-  if (Number.isFinite(minutes) && (minutes <= 70 || minutes >= 220)) return true;
+  return [...new Set(parts)];
+}
 
-  const text = String(description || "").toLowerCase();
+function parseComparableScore(rawScore) {
+  const numeric = Number(String(rawScore || "").replace(",", "."));
+  if (!Number.isFinite(numeric)) return 0;
+  if (numeric > 10) {
+    return Math.max(0, Math.min(10, Number((numeric / 10).toFixed(1))));
+  }
+  return Math.max(0, Math.min(10, Number(numeric.toFixed(1))));
+}
+
+function detectTvShow(name, movieName, rawDate, genre, overview, status) {
+  if (isLikelyNonMovieSpecial(name, genre, overview)) return true;
+  if (isLikelyNonMovieSpecial(movieName, genre, overview)) return true;
+
+  const statusText = String(status || "").toLowerCase();
+  if (/\b(series|returning|in production|pilot|miniseries)\b/.test(statusText)) return true;
+
+  const dateText = String(rawDate || "").trim();
+  if (/\d{4}\s*[–-]\s*(\d{4}|$)/.test(dateText)) return true;
+
+  const text = `${String(name || "")} ${String(movieName || "")} ${String(overview || "")}`.toLowerCase();
   if (/\b(series|episodes?|season|seasons|miniseries|sitcom|anthology)\b/.test(text)) return true;
 
   return false;
@@ -286,9 +289,11 @@ function dedupeWorks(records) {
     }
 
     if (
-      record.votes > current.votes ||
-      (record.votes === current.votes && record.rating > current.rating) ||
-      (record.votes === current.votes && record.rating === current.rating && record.description.length > current.description.length)
+      Number(record.budbet_x || 0) > Number(current.budbet_x || 0) ||
+      (Number(record.budbet_x || 0) === Number(current.budbet_x || 0) && parseComparableScore(record.score) > parseComparableScore(current.score)) ||
+      (Number(record.budbet_x || 0) === Number(current.budbet_x || 0) &&
+        parseComparableScore(record.score) === parseComparableScore(current.score) &&
+        String(record.overview || "").length > String(current.overview || "").length)
     ) {
       bestByKey.set(key, record);
     }
@@ -298,7 +303,7 @@ function dedupeWorks(records) {
 }
 
 function buildRecordKey(record) {
-  return `${normalizeKey(record?.title)}|${record?.year}`;
+  return `${normalizeKey(record?.names)}|${parseFirstYear(record?.date_x) || 0}`;
 }
 
 function normalizeKey(value) {
@@ -309,28 +314,17 @@ function normalizeKey(value) {
 }
 
 function compareByPopularity(a, b) {
-  if (b.votes !== a.votes) return b.votes - a.votes;
-  if (b.rating !== a.rating) return b.rating - a.rating;
-  if (b.year !== a.year) return b.year - a.year;
-  return a.title.localeCompare(b.title);
-}
+  const budgetA = Number(a.budbet_x || 0);
+  const budgetB = Number(b.budbet_x || 0);
+  if (budgetB !== budgetA) return budgetB - budgetA;
 
-function parseDurationMinutes(value) {
-  const match = String(value || "").match(/(\d+)/);
-  return match ? Number(match[1]) : NaN;
-}
+  const scoreA = parseComparableScore(a.score);
+  const scoreB = parseComparableScore(b.score);
+  if (scoreB !== scoreA) return scoreB - scoreA;
 
-function normalizeStars(stars) {
-  const list = Array.isArray(stars) ? stars.map((star) => cleanCell(star)).filter(Boolean) : [];
-  const splitIndex = list.lastIndexOf("|");
-  const candidateList = splitIndex >= 0 ? list.slice(splitIndex + 1) : list;
+  const yearA = parseFirstYear(a.date_x) || 0;
+  const yearB = parseFirstYear(b.date_x) || 0;
+  if (yearB !== yearA) return yearB - yearA;
 
-  return [...new Set(
-    candidateList.filter((value) => {
-      const lower = String(value || "").toLowerCase().replace(/:$/, "");
-      if (!value || value === "|") return false;
-      if (lower === "star" || lower === "stars" || lower === "director" || lower === "directors") return false;
-      return true;
-    })
-  )];
+  return String(a.names || "").localeCompare(String(b.names || ""));
 }

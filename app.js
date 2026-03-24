@@ -480,15 +480,18 @@
     gridSelected: q("grid-selected"),
     gridInput: q("grid-input"),
     gridSubmitBtn: q("grid-submit-btn"),
+    gridSurrenderBtn: q("grid-surrender-btn"),
     gridMeta: q("grid-meta"),
     connectionsBoard: q("connections-board"),
     connectionsSubmitBtn: q("connections-submit-btn"),
     connectionsClearBtn: q("connections-clear-btn"),
+    connectionsSurrenderBtn: q("connections-surrender-btn"),
     connectionsMeta: q("connections-meta"),
     connectionsSolved: q("connections-solved"),
     plotleClues: q("plotle-clues"),
     plotleInput: q("plotle-input"),
     plotleSubmitBtn: q("plotle-submit-btn"),
+    plotleSurrenderBtn: q("plotle-surrender-btn"),
     plotleMeta: q("plotle-meta"),
     plotleGuesses: q("plotle-guesses"),
     moviedleClue: q("moviedle-clue"),
@@ -498,6 +501,7 @@
     moviedleCapture: q("moviedle-capture"),
     moviedleInput: q("moviedle-input"),
     moviedleSubmitBtn: q("moviedle-submit-btn"),
+    moviedleSurrenderBtn: q("moviedle-surrender-btn"),
     moviedleMeta: q("moviedle-meta"),
     impostorSection: q("impostor-section"),
     impostorProgress: q("impostor-progress"),
@@ -506,6 +510,7 @@
     impostorOptions: q("impostor-options"),
     impostorCheckBtn: q("impostor-check-btn"),
     impostorClearBtn: q("impostor-clear-btn"),
+    impostorSurrenderBtn: q("impostor-surrender-btn"),
     impostorMeta: q("impostor-meta"),
     impostorCastSection: q("impostor-cast-section"),
     impostorCastTitle: q("impostor-cast-title"),
@@ -513,9 +518,11 @@
     impostorCastOptions: q("impostor-cast-options"),
     impostorCastCheckBtn: q("impostor-cast-check-btn"),
     impostorCastClearBtn: q("impostor-cast-clear-btn"),
+    impostorCastSurrenderBtn: q("impostor-cast-surrender-btn"),
     impostorCastMeta: q("impostor-cast-meta")
   };
   let winModal = null;
+  let surrenderConfirmModal = null;
   let previousConnectionsRevealSet = new Set(daily.connections?.revealedGroupIds || daily.connections?.solvedGroupIds || []);
   let impostorAdvanceTimer = null;
 
@@ -646,7 +653,7 @@
     if (state.status === "won") {
       dom.gridMeta.textContent = `${baseMeta} | Perfect board`;
     } else if (state.status === "lost") {
-      dom.gridMeta.textContent = `${baseMeta} | Board locked`;
+      dom.gridMeta.textContent = `${baseMeta} | Answers revealed (one valid answer per square)`;
     } else if (state.selectedIndex >= 0) {
       const options = intersections[state.selectedIndex];
       dom.gridMeta.textContent = `${baseMeta} | ${options.length} valid answers`;
@@ -655,6 +662,9 @@
     }
 
     dom.gridSubmitBtn.disabled = state.status !== "playing";
+    if (dom.gridSurrenderBtn) {
+      dom.gridSurrenderBtn.disabled = state.status !== "playing";
+    }
 
     if (state.wrongPulse >= 0) {
       window.clearTimeout(state.wrongTimer);
@@ -762,6 +772,105 @@
       showToast("Grid locked for today.");
     }
 
+    persistDaily();
+    renderAll();
+  }
+
+  function ensureSurrenderConfirmModal() {
+    if (surrenderConfirmModal) return surrenderConfirmModal;
+
+    const overlay = document.createElement("div");
+    overlay.className = "confirm-modal";
+    overlay.innerHTML = `
+      <div class="confirm-modal-card" role="dialog" aria-modal="true" aria-labelledby="confirm-modal-title">
+        <h3 id="confirm-modal-title">Surrender game?</h3>
+        <p id="confirm-modal-text"></p>
+        <div class="guess-actions confirm-modal-actions">
+          <button type="button" class="btn btn-surrender confirm-modal-confirm">Surrender</button>
+          <button type="button" class="btn btn-ghost confirm-modal-cancel">Cancel</button>
+        </div>
+      </div>
+    `;
+
+    const titleNode = overlay.querySelector("#confirm-modal-title");
+    const textNode = overlay.querySelector("#confirm-modal-text");
+    const confirmBtn = overlay.querySelector(".confirm-modal-confirm");
+    const cancelBtn = overlay.querySelector(".confirm-modal-cancel");
+
+    const resolveAndClose = (accepted) => {
+      overlay.classList.remove("show");
+      const resolver = overlay._confirmResolve;
+      overlay._confirmResolve = null;
+      if (typeof resolver === "function") {
+        resolver(Boolean(accepted));
+      }
+    };
+
+    overlay.addEventListener("click", (event) => {
+      if (event.target === overlay) {
+        resolveAndClose(false);
+      }
+    });
+
+    if (confirmBtn) {
+      confirmBtn.addEventListener("click", () => resolveAndClose(true));
+    }
+
+    if (cancelBtn) {
+      cancelBtn.addEventListener("click", () => resolveAndClose(false));
+    }
+
+    document.addEventListener("keydown", (event) => {
+      if (!overlay.classList.contains("show")) return;
+      if (event.key === "Escape") {
+        event.preventDefault();
+        resolveAndClose(false);
+      }
+    });
+
+    document.body.appendChild(overlay);
+    surrenderConfirmModal = { overlay, titleNode, textNode, confirmBtn };
+    return surrenderConfirmModal;
+  }
+
+  function confirmSurrender(gameLabel) {
+    const label = String(gameLabel || "this game");
+    const modal = ensureSurrenderConfirmModal();
+
+    if (typeof modal.overlay._confirmResolve === "function") {
+      modal.overlay._confirmResolve(false);
+      modal.overlay._confirmResolve = null;
+    }
+
+    if (modal.titleNode) {
+      modal.titleNode.textContent = `Surrender ${label}?`;
+    }
+    if (modal.textNode) {
+      modal.textNode.textContent = `You will lose ${label} and reveal its answers for today.`;
+    }
+
+    modal.overlay.classList.add("show");
+    if (modal.confirmBtn && typeof modal.confirmBtn.focus === "function") {
+      modal.confirmBtn.focus({ preventScroll: true });
+    }
+
+    return new Promise((resolve) => {
+      modal.overlay._confirmResolve = resolve;
+    });
+  }
+
+  async function surrenderGrid() {
+    const state = daily.grid;
+    if (state.status !== "playing") return;
+    if (!(await confirmSurrender("Movie Grid"))) return;
+
+    state.status = "lost";
+    state.selectedIndex = -1;
+    solveGridBoard();
+    recordGameLoss("grid");
+    completeGame("grid");
+    showGameLossModal("grid");
+    showToast("You surrendered. Grid answers revealed.");
     persistDaily();
     renderAll();
   }
@@ -875,6 +984,9 @@
 
     dom.connectionsSubmitBtn.disabled = state.status !== "playing" || visibleCount === 0;
     dom.connectionsClearBtn.disabled = state.status !== "playing" || visibleCount === 0;
+    if (dom.connectionsSurrenderBtn) {
+      dom.connectionsSurrenderBtn.disabled = state.status !== "playing";
+    }
     animateConnectionsReflow(previousRects);
     previousConnectionsRevealSet = new Set(revealedGroupIds);
   }
@@ -1032,6 +1144,22 @@
     state.selected = [];
   }
 
+  async function surrenderConnections() {
+    const state = daily.connections;
+    if (state.status !== "playing") return;
+    if (!(await confirmSurrender("Cast Connections"))) return;
+
+    state.status = "lost";
+    state.score = Math.max(10, state.solvedGroupIds.length * 18);
+    solveConnectionsBoard();
+    recordGameLoss("connections");
+    completeGame("connections");
+    showGameLossModal("connections");
+    showToast("You surrendered. Connections answers revealed.");
+    persistDaily();
+    renderAll();
+  }
+
   function renderPlotle() {
     if (!dom.plotleClues || !dom.plotleMeta || !dom.plotleGuesses || !dom.plotleSubmitBtn) return;
 
@@ -1075,6 +1203,9 @@
     }
 
     dom.plotleSubmitBtn.disabled = state.status !== "playing";
+    if (dom.plotleSurrenderBtn) {
+      dom.plotleSurrenderBtn.disabled = state.status !== "playing";
+    }
   }
 
   function submitPlotle() {
@@ -1134,6 +1265,22 @@
     }
   }
 
+  async function surrenderPlotle() {
+    const state = daily.plotle;
+    if (state.status !== "playing") return;
+    if (!(await confirmSurrender("Plotle"))) return;
+
+    state.status = "lost";
+    state.score = 0;
+    solvePlotleAnswer();
+    recordGameLoss("plotle");
+    completeGame("plotle");
+    showGameLossModal("plotle");
+    showToast("You surrendered. Plotle answer revealed.");
+    persistDaily();
+    renderAll();
+  }
+
   function renderMoviedle() {
     if (!dom.moviedleBoard || !dom.moviedleMeta || !dom.moviedleClue) return;
 
@@ -1182,6 +1329,9 @@
     syncMoviedleCapture();
     if (dom.moviedleSubmitBtn) {
       dom.moviedleSubmitBtn.disabled = state.status !== "playing";
+    }
+    if (dom.moviedleSurrenderBtn) {
+      dom.moviedleSurrenderBtn.disabled = state.status !== "playing";
     }
     renderMoviedleKeyboard();
   }
@@ -1244,6 +1394,22 @@
     daily.moviedle.revealedAnswer = true;
     moviedleDraft = "";
     syncMoviedleCapture();
+  }
+
+  async function surrenderMoviedle() {
+    const state = daily.moviedle;
+    if (state.status !== "playing") return;
+    if (!(await confirmSurrender("Moviedle"))) return;
+
+    state.status = "lost";
+    state.score = 0;
+    solveMoviedleAnswer();
+    recordGameLoss("moviedle");
+    completeGame("moviedle");
+    showGameLossModal("moviedle");
+    showToast("You surrendered. Moviedle answer revealed.");
+    persistDaily();
+    renderAll();
   }
 
   function buildMoviedleAnswerGuess() {
@@ -1483,6 +1649,7 @@
       dom.impostorMeta.textContent = "No puzzle generated.";
       dom.impostorCheckBtn.disabled = true;
       dom.impostorClearBtn.disabled = true;
+      if (dom.impostorSurrenderBtn) dom.impostorSurrenderBtn.disabled = true;
       return;
     }
 
@@ -1507,6 +1674,7 @@
       dom.impostorMeta.textContent = `Score ${state.score}`;
       dom.impostorCheckBtn.disabled = true;
       dom.impostorClearBtn.disabled = true;
+      if (dom.impostorSurrenderBtn) dom.impostorSurrenderBtn.disabled = true;
       return;
     }
 
@@ -1544,6 +1712,7 @@
     dom.impostorMeta.textContent = `Solved ${state.solvedRounds.length}/${totalRounds} | Score ${state.score}`;
     dom.impostorCheckBtn.disabled = !canInteract || state.selectedIndex < 0;
     dom.impostorClearBtn.disabled = !canInteract || state.selectedIndex < 0;
+    if (dom.impostorSurrenderBtn) dom.impostorSurrenderBtn.disabled = !canInteract;
   }
 
   function onImpostorOptionClick(event) {
@@ -1655,6 +1824,24 @@
     state.feedback = null;
   }
 
+  async function surrenderImpostor() {
+    const state = daily.impostor;
+    if (state.status !== "playing") return;
+    if (!(await confirmSurrender("Spotlight"))) return;
+
+    state.status = "lost";
+    state.score = Math.max(8, state.solvedRounds.length * 20);
+    solveImpostorGame();
+    window.clearTimeout(impostorAdvanceTimer);
+    impostorAdvanceTimer = null;
+    recordGameLoss("impostor");
+    completeGame("impostor");
+    showGameLossModal("impostor");
+    showToast("You surrendered. Spotlight answers revealed.");
+    persistDaily();
+    renderAll();
+  }
+
   function renderImpostorCast() {
     if (
       !dom.impostorCastOptions ||
@@ -1720,6 +1907,7 @@
 
     dom.impostorCastCheckBtn.disabled = state.status !== "playing" || selectedSet.size === 0;
     dom.impostorCastClearBtn.disabled = state.status !== "playing" || selectedSet.size === 0;
+    if (dom.impostorCastSurrenderBtn) dom.impostorCastSurrenderBtn.disabled = state.status !== "playing";
   }
 
   function onImpostorCastOptionClick(event) {
@@ -1811,6 +1999,23 @@
       showToast("Those picks were already confirmed.");
     }
 
+    persistDaily();
+    renderAll();
+  }
+
+  async function surrenderImpostorCast() {
+    const state = daily.impostorCast;
+    if (state.status !== "playing") return;
+    if (!(await confirmSurrender("Impostor"))) return;
+
+    state.status = "lost";
+    state.selected = [];
+    state.wrongSelection = [];
+    state.score = Math.max(12, uniqueNormalizedValues(state.lockedCorrect).length * 18);
+    recordGameLoss("impostorCast");
+    completeGame("impostorCast");
+    showGameLossModal("impostorCast");
+    showToast("You surrendered. Impostor cast answers revealed.");
     persistDaily();
     renderAll();
   }
@@ -2087,6 +2292,9 @@
     if (dom.gridSubmitBtn) {
       dom.gridSubmitBtn.addEventListener("click", submitGridGuess);
     }
+    if (dom.gridSurrenderBtn) {
+      dom.gridSurrenderBtn.addEventListener("click", surrenderGrid);
+    }
     if (dom.gridInput) {
       dom.gridInput.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
@@ -2102,9 +2310,15 @@
     if (dom.connectionsClearBtn) {
       dom.connectionsClearBtn.addEventListener("click", clearConnectionSelection);
     }
+    if (dom.connectionsSurrenderBtn) {
+      dom.connectionsSurrenderBtn.addEventListener("click", surrenderConnections);
+    }
 
     if (dom.plotleSubmitBtn) {
       dom.plotleSubmitBtn.addEventListener("click", submitPlotle);
+    }
+    if (dom.plotleSurrenderBtn) {
+      dom.plotleSurrenderBtn.addEventListener("click", surrenderPlotle);
     }
     if (dom.plotleInput) {
       dom.plotleInput.addEventListener("keydown", (event) => {
@@ -2117,6 +2331,9 @@
 
     if (dom.moviedleSubmitBtn) {
       dom.moviedleSubmitBtn.addEventListener("click", submitMoviedle);
+    }
+    if (dom.moviedleSurrenderBtn) {
+      dom.moviedleSurrenderBtn.addEventListener("click", surrenderMoviedle);
     }
     if (dom.moviedleInput) {
       dom.moviedleInput.addEventListener("keydown", (event) => {
@@ -2134,11 +2351,17 @@
     if (dom.impostorClearBtn) {
       dom.impostorClearBtn.addEventListener("click", clearImpostorSelection);
     }
+    if (dom.impostorSurrenderBtn) {
+      dom.impostorSurrenderBtn.addEventListener("click", surrenderImpostor);
+    }
     if (dom.impostorCastCheckBtn) {
       dom.impostorCastCheckBtn.addEventListener("click", submitImpostorCast);
     }
     if (dom.impostorCastClearBtn) {
       dom.impostorCastClearBtn.addEventListener("click", clearImpostorCastSelection);
+    }
+    if (dom.impostorCastSurrenderBtn) {
+      dom.impostorCastSurrenderBtn.addEventListener("click", surrenderImpostorCast);
     }
 
     if (dom.copyHaulBtn) {
@@ -2957,23 +3180,39 @@
 
   function sanitizeMovieRecord(record) {
     if (!record || typeof record !== "object") return null;
-    if (typeof record.title !== "string") return null;
-    const title = record.title.trim();
+    const rawTitle =
+      typeof record.title === "string"
+        ? record.title
+        : typeof record.names === "string"
+          ? record.names
+          : typeof record["movie name"] === "string"
+            ? record["movie name"]
+            : "";
+    const title = rawTitle.trim();
     if (!title) return null;
 
-    const year = Number(parseYearValue(record.year));
+    const year = Number(parseYearValue(record.year ?? record.date_x));
     const safeYear = Number.isFinite(year) ? Math.max(1900, Math.min(2100, Math.round(year))) : 2000;
 
     const genres = parseGenreList(record.genre ?? record.genres);
-    const cast = parseStarsList(record.stars ?? record.cast);
+    const cast =
+      record.stars != null || record.cast != null
+        ? parseStarsList(record.stars ?? record.cast)
+        : parseCrewMembersList(record.crew);
 
     if (!genres.length || !cast.length) return null;
 
     const duration = typeof record.duration === "string" ? record.duration.trim() : "";
-    const safeRating = parseRatingValue(record.rating);
-    const safeVotes = parseVotesValue(record.votes);
+    const safeRating = parseRatingValue(record.rating ?? record.score);
+    const safeVotes = parseVotesValue(record.votes ?? record.budbet_x ?? record.budget_x);
     const rawDescription =
-      typeof record.description === "string" ? record.description.trim() : typeof record.clue === "string" ? record.clue.trim() : "";
+      typeof record.description === "string"
+        ? record.description.trim()
+        : typeof record.overview === "string"
+          ? record.overview.trim()
+          : typeof record.clue === "string"
+            ? record.clue.trim()
+            : "";
     const description = normalizeDescriptionText(rawDescription);
     if (isLikelyNonMovieSpecial(title, genres, description)) return null;
 
@@ -3056,9 +3295,31 @@
     );
   }
 
+  function parseCrewMembersList(input) {
+    const raw = String(input || "").trim();
+    if (!raw) return [];
+
+    const parts = raw
+      .replace(/^\[/, "")
+      .replace(/\]$/, "")
+      .split(",")
+      .map((name) => String(name || "").replace(/^['"]|['"]$/g, "").trim())
+      .filter(Boolean);
+
+    if (parts.length >= 4) {
+      const evenParts = parts.filter((_value, index) => index % 2 === 0);
+      if (evenParts.length >= 2) return normalizeStarsList(evenParts);
+    }
+
+    return normalizeStarsList(parts);
+  }
+
   function parseRatingValue(value) {
     const numeric = Number(String(value || "").replace(",", "."));
     if (!Number.isFinite(numeric)) return 0;
+    if (numeric > 10) {
+      return Math.max(0, Math.min(10, Number((numeric / 10).toFixed(1))));
+    }
     return Math.max(0, Math.min(10, Number(numeric.toFixed(1))));
   }
 
