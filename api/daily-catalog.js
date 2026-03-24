@@ -2,9 +2,12 @@ const fs = require("node:fs/promises");
 const path = require("node:path");
 
 const SOURCE_PATH = path.join(process.cwd(), "data", "movies.json");
+const SOURCE_CSV_PATH = path.join(process.cwd(), "imdb_movies.csv");
 
 let cachedCatalog = null;
 let cachedMtimeMs = 0;
+let cachedKnownnessMap = null;
+let cachedKnownnessMtimeMs = 0;
 
 module.exports = async function handler(req, res) {
   try {
@@ -34,13 +37,19 @@ async function loadCatalog() {
     return cachedCatalog;
   }
 
+  const knownnessMap = await loadKnownnessMap();
   const raw = await fs.readFile(SOURCE_PATH, "utf8");
   const parsed = JSON.parse(raw);
   const sanitized = dedupeCatalogByTitle(
     (Array.isArray(parsed) ? parsed : [])
       .map(sanitizeMovieRecord)
       .filter(Boolean)
-  ).sort(compareMoviesByRank);
+  )
+    .map((movie) => ({
+      ...movie,
+      knownness: resolveKnownnessForMovie(movie, knownnessMap)
+    }))
+    .sort(compareMoviesByRank);
 
   cachedCatalog = sanitized;
   cachedMtimeMs = stats.mtimeMs;
@@ -56,6 +65,7 @@ function buildPublicCatalog(catalog, seedKey) {
     rating: movie.rating,
     votes: movie.votes,
     popularity: movie.popularity,
+    knownness: movie.knownness,
     clue: movie.clue
   }));
 
@@ -112,6 +122,10 @@ function sanitizeMovieRecord(record) {
   const safePopularity = Number.isFinite(popularity)
     ? Math.max(1, Math.min(100, Math.round(popularity)))
     : scorePopularityFromRatingVotes(safeRating, safeVotes);
+  const knownnessFromRecord = parseKnownnessValue(record.knownness);
+  const safeKnownness = Number.isFinite(knownnessFromRecord)
+    ? knownnessFromRecord
+    : scoreKnownnessFromSignals(safeRating, safeVotes, safePopularity);
 
   const clue =
     description ||
@@ -125,6 +139,7 @@ function sanitizeMovieRecord(record) {
     rating: safeRating,
     votes: safeVotes,
     popularity: safePopularity,
+    knownness: safeKnownness,
     clue
   };
 }
@@ -218,6 +233,12 @@ function parseVotesValue(value) {
   return Math.max(0, Math.round(numeric));
 }
 
+function parseKnownnessValue(value) {
+  const numeric = Number(value);
+  if (!Number.isFinite(numeric)) return NaN;
+  return Math.max(0, Math.min(100, Math.round(numeric)));
+}
+
 function normalizeDescriptionText(value) {
   const text = String(value || "").replace(/\s+/g, " ").trim();
   return text.replace(/\s*(?:\.{3}|…)?\s*see\s+full\s+(?:summary|synopsis)\s*»?\s*$/i, "").trim();
@@ -255,6 +276,164 @@ function scorePopularityFromRatingVotes(rating, votes) {
   const voteScore = Math.min(100, Math.round((Math.log10(Math.max(1, votes) + 1) / 6) * 100));
   const ratingScore = Math.min(100, Math.max(0, Math.round((rating / 10) * 100)));
   return Math.max(1, Math.min(100, Math.round(voteScore * 0.7 + ratingScore * 0.3)));
+}
+
+function scoreKnownnessFromSignals(rating, votes, popularity) {
+  const voteScore = Math.min(100, Math.round((Math.log10(Math.max(1, votes) + 1) / 7.4) * 100));
+  const ratingScore = Math.min(100, Math.max(0, Math.round((parseRatingValue(rating) / 10) * 100)));
+  const popularityScore = Math.min(100, Math.max(0, Math.round(Number(popularity) || 0)));
+  return Math.max(1, Math.min(100, Math.round(voteScore * 0.55 + ratingScore * 0.2 + popularityScore * 0.25)));
+}
+
+function scoreKnownnessFromRevenueSignals(rating, budget, revenue) {
+  const ratingScore = Math.min(100, Math.max(0, Math.round((parseRatingValue(rating) / 10) * 100)));
+  const budgetScore = Math.min(100, Math.round((Math.log10(Math.max(1, budget) + 1) / 8.6) * 100));
+  const revenueScore = Math.min(100, Math.round((Math.log10(Math.max(1, revenue) + 1) / 9.2) * 100));
+
+  let knownness = Math.round(revenueScore * 0.58 + budgetScore * 0.24 + ratingScore * 0.18);
+  if (revenue >= 500000000) knownness += 8;
+  else if (revenue >= 200000000) knownness += 5;
+  else if (revenue >= 100000000) knownness += 3;
+
+  return Math.max(0, Math.min(100, knownness));
+}
+
+async function loadKnownnessMap() {
+  try {
+    const stats = await fs.stat(SOURCE_CSV_PATH);
+    if (cachedKnownnessMap && cachedKnownnessMtimeMs === stats.mtimeMs) {
+      return cachedKnownnessMap;
+    }
+
+    const raw = await fs.readFile(SOURCE_CSV_PATH, "utf8");
+    const rows = parseCsv(raw);
+    if (!rows.length) {
+      cachedKnownnessMap = new Map();
+      cachedKnownnessMtimeMs = stats.mtimeMs;
+      return cachedKnownnessMap;
+    }
+
+    const header = rows[0].map((value) => String(value || "").trim().toLowerCase());
+    const indexByColumn = new Map(header.map((column, index) => [column, index]));
+    const namesIndex = indexByColumn.get("names");
+    const dateIndex = indexByColumn.get("date_x");
+    const scoreIndex = indexByColumn.get("score");
+    const budgetIndex = indexByColumn.get("budget_x");
+    const revenueIndex = indexByColumn.get("revenue");
+    if (
+      !Number.isInteger(namesIndex) ||
+      !Number.isInteger(dateIndex) ||
+      !Number.isInteger(scoreIndex) ||
+      !Number.isInteger(budgetIndex) ||
+      !Number.isInteger(revenueIndex)
+    ) {
+      cachedKnownnessMap = new Map();
+      cachedKnownnessMtimeMs = stats.mtimeMs;
+      return cachedKnownnessMap;
+    }
+
+    const knownnessMap = new Map();
+    rows.slice(1).forEach((row) => {
+      const title = cleanCell(row[namesIndex]);
+      if (!title) return;
+
+      const year = parseYearValue(cleanCell(row[dateIndex])) || 0;
+      const rating = parseRatingValue(cleanCell(row[scoreIndex]));
+      const budget = parseVotesValue(cleanCell(row[budgetIndex]));
+      const revenue = parseVotesValue(cleanCell(row[revenueIndex]));
+      const knownness = scoreKnownnessFromRevenueSignals(rating, budget, revenue);
+
+      const keyWithYear = buildKnownnessKey(title, year);
+      const keyByTitle = buildKnownnessKey(title, 0);
+
+      if (knownness > (knownnessMap.get(keyWithYear) || 0)) knownnessMap.set(keyWithYear, knownness);
+      if (knownness > (knownnessMap.get(keyByTitle) || 0)) knownnessMap.set(keyByTitle, knownness);
+    });
+
+    cachedKnownnessMap = knownnessMap;
+    cachedKnownnessMtimeMs = stats.mtimeMs;
+    return knownnessMap;
+  } catch (_error) {
+    return new Map();
+  }
+}
+
+function resolveKnownnessForMovie(movie, knownnessMap) {
+  const byYear = knownnessMap.get(buildKnownnessKey(movie.title, movie.year));
+  if (Number.isFinite(byYear)) {
+    return Math.max(0, Math.min(100, Math.round(byYear)));
+  }
+
+  const byTitle = knownnessMap.get(buildKnownnessKey(movie.title, 0));
+  if (Number.isFinite(byTitle)) {
+    return Math.max(0, Math.min(100, Math.round(byTitle)));
+  }
+
+  return scoreKnownnessFromSignals(movie.rating, movie.votes, movie.popularity);
+}
+
+function buildKnownnessKey(title, year) {
+  const safeYear = Number.isFinite(Number(year)) ? Math.max(0, Math.round(Number(year))) : 0;
+  return `${normalize(title)}|${safeYear}`;
+}
+
+function cleanCell(value) {
+  return String(value || "").replace(/\s+/g, " ").trim();
+}
+
+function parseCsv(input) {
+  const rows = [];
+  let row = [];
+  let field = "";
+  let inQuotes = false;
+
+  for (let i = 0; i < input.length; i += 1) {
+    const char = input[i];
+    const next = input[i + 1];
+
+    if (inQuotes) {
+      if (char === '"') {
+        if (next === '"') {
+          field += '"';
+          i += 1;
+        } else {
+          inQuotes = false;
+        }
+      } else {
+        field += char;
+      }
+      continue;
+    }
+
+    if (char === '"') {
+      inQuotes = true;
+      continue;
+    }
+    if (char === ",") {
+      row.push(field);
+      field = "";
+      continue;
+    }
+    if (char === "\n") {
+      row.push(field);
+      rows.push(row);
+      row = [];
+      field = "";
+      continue;
+    }
+    if (char === "\r") {
+      continue;
+    }
+
+    field += char;
+  }
+
+  if (field.length > 0 || row.length > 0) {
+    row.push(field);
+    rows.push(row);
+  }
+
+  return rows;
 }
 
 function normalizeStarsList(stars) {

@@ -3347,6 +3347,10 @@
     const safePopularity = Number.isFinite(popularity)
       ? Math.max(1, Math.min(100, Math.round(popularity)))
       : scorePopularityFromRatingVotes(safeRating, safeVotes);
+    const knownnessFromRecord = parseKnownnessValue(record.knownness);
+    const safeKnownness = Number.isFinite(knownnessFromRecord)
+      ? knownnessFromRecord
+      : scoreKnownnessFromSignals(safeRating, safeVotes, safePopularity);
 
     let clue = description;
     if (!clue) {
@@ -3365,6 +3369,7 @@
       genres: genres.slice(0, 4),
       cast: cast.slice(0, 6),
       popularity: safePopularity,
+      knownness: safeKnownness,
       clue
     };
   }
@@ -3483,6 +3488,16 @@
     return false;
   }
 
+  function isLikelyAdultTitle(title, description, genres) {
+    const text = `${String(title || "")} ${String(description || "")}`.toLowerCase();
+    const genreText = Array.isArray(genres) ? genres.join(" ").toLowerCase() : String(genres || "").toLowerCase();
+    const explicitPattern =
+      /\b(?:porn|porno|erotic|busty|boob(?:s)?|nude|xxx|brothel|prostitute|sex tape|sexual|hardcore|softcore|fetish|incest)\b/i;
+    if (explicitPattern.test(text)) return true;
+    if (/\b(adult)\b/i.test(genreText)) return true;
+    return false;
+  }
+
   function parseVotesValue(value) {
     if (Number.isFinite(Number(value))) return Math.max(0, Math.round(Number(value)));
     const digits = String(value || "").replace(/[^0-9]/g, "");
@@ -3491,10 +3506,23 @@
     return Math.max(0, Math.round(numeric));
   }
 
+  function parseKnownnessValue(value) {
+    const numeric = Number(value);
+    if (!Number.isFinite(numeric)) return NaN;
+    return Math.max(0, Math.min(100, Math.round(numeric)));
+  }
+
   function scorePopularityFromRatingVotes(rating, votes) {
     const voteScore = Math.min(100, Math.round((Math.log10(Math.max(1, votes) + 1) / 6) * 100));
     const ratingScore = Math.min(100, Math.max(0, Math.round((rating / 10) * 100)));
     return Math.max(1, Math.min(100, Math.round(voteScore * 0.7 + ratingScore * 0.3)));
+  }
+
+  function scoreKnownnessFromSignals(rating, votes, popularity) {
+    const voteScore = Math.min(100, Math.round((Math.log10(Math.max(1, votes) + 1) / 7.4) * 100));
+    const ratingScore = Math.min(100, Math.max(0, Math.round((parseRatingValue(rating) / 10) * 100)));
+    const popularityScore = Math.min(100, Math.max(0, Math.round(Number(popularity) || 0)));
+    return Math.max(1, Math.min(100, Math.round(voteScore * 0.55 + ratingScore * 0.2 + popularityScore * 0.25)));
   }
 
   function compareMoviesByRank(a, b) {
@@ -3537,27 +3565,109 @@
     return String(a?.title || "").localeCompare(String(b?.title || ""));
   }
 
+  function compareMoviesByKnownness(a, b) {
+    const knownnessA = parseKnownnessValue(a?.knownness);
+    const knownnessB = parseKnownnessValue(b?.knownness);
+    if (knownnessB !== knownnessA) return knownnessB - knownnessA;
+
+    const votesA = parseVotesValue(a?.votes);
+    const votesB = parseVotesValue(b?.votes);
+    if (votesB !== votesA) return votesB - votesA;
+
+    const ratingA = parseRatingValue(a?.rating);
+    const ratingB = parseRatingValue(b?.rating);
+    if (ratingB !== ratingA) return ratingB - ratingA;
+
+    const popularityA = Number(a?.popularity) || 0;
+    const popularityB = Number(b?.popularity) || 0;
+    if (popularityB !== popularityA) return popularityB - popularityA;
+
+    const yearA = Number(a?.year) || 0;
+    const yearB = Number(b?.year) || 0;
+    if (yearB !== yearA) return yearB - yearA;
+
+    return String(a?.title || "").localeCompare(String(b?.title || ""));
+  }
+
+  function takeUniqueMoviesByTitle(list, limit) {
+    const out = [];
+    const seen = new Set();
+    for (const movie of list) {
+      if (!movie || typeof movie !== "object") continue;
+      const key = normalize(movie.title);
+      if (!key || seen.has(key)) continue;
+      seen.add(key);
+      out.push(movie);
+      if (out.length >= limit) break;
+    }
+    return out;
+  }
+
   function resolveDifficultyMoviePool(rankedCatalog, difficulty) {
     const source = Array.isArray(rankedCatalog) ? rankedCatalog : [];
     if (!source.length) return [];
 
-    const cap =
-      difficulty === "easy"
-        ? 400
-        : difficulty === "medium"
-          ? 1000
-          : source.length;
-    const capped = source.slice(0, Math.min(cap, source.length));
+    if (difficulty === "hard") {
+      return source;
+    }
 
-    // Keep requested cap but avoid crashes if intersections become impossible.
-    if (hasViableGrid(capped) && hasViableConnections(capped)) {
-      return capped;
-    }
-    if (difficulty === "easy") {
-      const fallback = source.slice(0, Math.min(1000, source.length));
-      if (hasViableGrid(fallback) && hasViableConnections(fallback)) return fallback;
-    }
-    return source;
+    const cap = difficulty === "easy" ? 400 : 1000;
+    const knownRanked = source.slice().sort(compareMoviesByKnownness);
+    const actorFrequency = new Map();
+    source.forEach((movie) => {
+      if (!movie || !Array.isArray(movie.cast)) return;
+      [...new Set(movie.cast)]
+        .map((name) => normalize(name))
+        .filter(Boolean)
+        .forEach((actor) => {
+          actorFrequency.set(actor, (actorFrequency.get(actor) || 0) + 1);
+        });
+    });
+    const knownCastCount = (movie, minActorFrequency) =>
+      [...new Set(Array.isArray(movie?.cast) ? movie.cast : [])]
+        .map((name) => normalize(name))
+        .filter((actor) => actor && (actorFrequency.get(actor) || 0) >= minActorFrequency).length;
+
+    const config =
+      difficulty === "easy"
+        ? { minKnownness: 62, minRating: 7.1, minVotes: 12000000, minKnownCast: 2, castFrequencyFloor: 4 }
+        : { minKnownness: 48, minRating: 6.8, minVotes: 5000000, minKnownCast: 1, castFrequencyFloor: 3 };
+
+    const primary = knownRanked.filter((movie) => {
+      const knownness = parseKnownnessValue(movie.knownness);
+      const rating = parseRatingValue(movie.rating);
+      const votes = parseVotesValue(movie.votes);
+      const castScore = knownCastCount(movie, config.castFrequencyFloor);
+      return (
+        knownness >= config.minKnownness &&
+        rating >= config.minRating &&
+        votes >= config.minVotes &&
+        !isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres) &&
+        castScore >= config.minKnownCast
+      );
+    });
+
+    const secondary = knownRanked.filter((movie) => {
+      const knownness = parseKnownnessValue(movie.knownness);
+      const rating = parseRatingValue(movie.rating);
+      const votes = parseVotesValue(movie.votes);
+      const castScore = knownCastCount(movie, Math.max(2, config.castFrequencyFloor - 1));
+      return (
+        knownness >= config.minKnownness - 8 &&
+        rating >= config.minRating - 0.4 &&
+        votes >= Math.round(config.minVotes * 0.5) &&
+        !isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres) &&
+        castScore >= Math.max(1, config.minKnownCast - 1)
+      );
+    });
+
+    const candidatePool = takeUniqueMoviesByTitle([...primary, ...secondary, ...knownRanked], Math.min(cap, source.length));
+    if (hasViableGrid(candidatePool) && hasViableConnections(candidatePool)) return candidatePool;
+
+    const widerFallback = knownRanked.slice(0, Math.min(Math.max(cap + 250, 1200), knownRanked.length));
+    if (hasViableGrid(widerFallback) && hasViableConnections(widerFallback)) return widerFallback;
+
+    return source.slice(0, Math.min(cap, source.length));
   }
 
   function normalizeStarsList(stars) {
