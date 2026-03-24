@@ -2403,6 +2403,7 @@
     const actorGenreMap = new Map();
     const actorCoactorMap = new Map();
     const titleCoTitleMap = new Map();
+    const actorTitleMap = new Map();
     const actorMovieCount = new Map();
     const genreCount = new Map();
     const titleCandidates = [];
@@ -2424,6 +2425,10 @@
           actorCoactorMap.set(actor, new Set());
         }
         uniqueGenres.forEach((genre) => actorGenreMap.get(actor).add(genre));
+
+        const actorKey = normalize(actor);
+        if (!actorTitleMap.has(actorKey)) actorTitleMap.set(actorKey, new Set());
+        actorTitleMap.get(actorKey).add(movie.title);
       });
 
       uniqueActors.forEach((actor) => {
@@ -2438,30 +2443,28 @@
       }
     });
 
-    const maxTitleCandidates = 520;
     const rankedTitleCandidates = [...new Set(titleCandidates)]
       .map((title) => movieMap.get(normalize(title)))
       .filter(Boolean)
       .sort(compareMoviesByRank)
-      .slice(0, maxTitleCandidates)
       .map((movie) => movie.title);
 
-    rankedTitleCandidates.forEach((title) => {
-      titleCoTitleMap.set(title, new Set());
-    });
+    const rankedTitleSet = new Set(rankedTitleCandidates.map((title) => normalize(title)));
+    rankedTitleCandidates.forEach((title) => titleCoTitleMap.set(title, new Set()));
 
-    rankedTitleCandidates.forEach((titleA) => {
-      const movieA = movieMap.get(normalize(titleA));
-      if (!movieA) return;
-      const castA = new Set(movieA.cast.map((name) => normalize(name)));
+    actorTitleMap.forEach((titles) => {
+      const candidateTitles = [...titles].filter((title) => rankedTitleSet.has(normalize(title)));
+      if (candidateTitles.length < 2) return;
 
-      rankedTitleCandidates.forEach((titleB) => {
-        if (normalize(titleA) === normalize(titleB)) return;
-        const movieB = movieMap.get(normalize(titleB));
-        if (!movieB) return;
-        const sharesActor = movieB.cast.some((name) => castA.has(normalize(name)));
-        if (sharesActor) titleCoTitleMap.get(titleA)?.add(titleB);
-      });
+      for (let i = 0; i < candidateTitles.length - 1; i += 1) {
+        const titleA = candidateTitles[i];
+        for (let j = i + 1; j < candidateTitles.length; j += 1) {
+          const titleB = candidateTitles[j];
+          if (normalize(titleA) === normalize(titleB)) continue;
+          titleCoTitleMap.get(titleA)?.add(titleB);
+          titleCoTitleMap.get(titleB)?.add(titleA);
+        }
+      }
     });
 
     const genreCandidates = [...genreCount.entries()]
@@ -2471,7 +2474,6 @@
     const actorCandidates = [...actorMovieCount.entries()]
       .filter(([, count]) => count >= 3)
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 2000)
       .map(([actor]) => actor);
 
     const rng = rngFromSeed(`${dayHash}-grid-template`);
