@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineClash | Daily Movie &amp; Series Games</title>
+    <meta
+      name="description"
+      content="Play daily movie and series games: Movie Grid, Cast Connections, Plotle, Moviedle, Spotlight, and Impostor. Build streaks, share scores, and challenge friends."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="home">
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+
+    <header class="topbar">
+      <div class="brand-wrap">
+        <p class="eyebrow">Daily Challenge</p>
+        <h1 class="brand">CineClash</h1>
+      </div>
+      <nav class="page-nav">
+        <a class="nav-link active" href="./index.html">Home</a>
+        <a class="nav-link" href="./movie-grid.html">Movie Grid</a>
+        <a class="nav-link" href="./cast-connections.html">Connections</a>
+        <a class="nav-link" href="./plotle.html">Plotle</a>
+        <a class="nav-link" href="./moviedle.html">Moviedle</a>
+        <a class="nav-link" href="./impostor.html">Spotlight</a>
+        <a class="nav-link" href="./impostor-cast.html">Impostor</a>
+      </nav>
+      <div class="topbar-actions">
+        <button id="copy-link-btn" class="btn btn-ghost">Copy Invite Link</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="hero reveal">
+        <div class="hero-main">
+          <p class="hero-kicker">Movie + Series Trivia That Actually Feels Competitive</p>
+          <h2>Six separate game pages. One daily score.</h2>
+          <p class="hero-sub">
+            Play each daily challenge on its own page, then share your combined score card with your group chat.
+          </p>
+          <div class="hero-actions">
+            <a href="./movie-grid.html" class="btn btn-primary">Start Movie Grid</a>
+            <button id="copy-haul-btn" class="btn btn-secondary">Copy Daily Score</button>
+          </div>
+        </div>
+        <aside class="stat-card">
+          <p class="stat-label">Today</p>
+          <p id="today-date" class="stat-main">-</p>
+          <div class="stat-grid">
+            <div>
+              <p class="stat-label">Streak</p>
+              <p id="streak-value" class="stat-value">0</p>
+            </div>
+            <div>
+              <p class="stat-label">XP</p>
+              <p id="xp-value" class="stat-value">0</p>
+            </div>
+            <div>
+              <p class="stat-label">Daily Score</p>
+              <p id="daily-score-value" class="stat-value">0</p>
+            </div>
+            <div>
+              <p class="stat-label">Referrals</p>
+              <p id="referral-value" class="stat-value">0</p>
+            </div>
+          </div>
+          <p id="tier-badge" class="tier-badge">Rookie Critic</p>
+        </aside>
+      </section>
+
+      <section class="hub-grid reveal">
+        <article class="hub-card">
+          <img class="game-preview" src="./assets/movie-grid.svg" alt="Illustration for Movie Grid game" />
+          <h3>Movie Grid</h3>
+          <p>Pick titles that match actor + genre or actor + actor intersections.</p>
+          <p id="home-grid-status" class="mini">Not started</p>
+          <a class="btn btn-primary" href="./movie-grid.html">Play Grid</a>
+        </article>
+        <article class="hub-card">
+          <img class="game-preview" src="./assets/cast-connections.svg" alt="Illustration for Cast Connections game" />
+          <h3>Cast Connections</h3>
+          <p>Find hidden groups of four related titles.</p>
+          <p id="home-connections-status" class="mini">Not started</p>
+          <a class="btn btn-primary" href="./cast-connections.html">Play Connections</a>
+        </article>
+        <article class="hub-card">
+          <img class="game-preview" src="./assets/plotle.svg" alt="Illustration for Plotle game" />
+          <h3>Plotle</h3>
+          <p>Guess the mystery title with progressive clues.</p>
+          <p id="home-plotle-status" class="mini">Not started</p>
+          <a class="btn btn-primary" href="./plotle.html">Play Plotle</a>
+        </article>
+        <article class="hub-card">
+          <img class="game-preview" src="./assets/moviedle.svg" alt="Illustration for Moviedle game" />
+          <h3>Moviedle</h3>
+          <p>Wordle style title guessing with per-letter feedback.</p>
+          <p id="home-moviedle-status" class="mini">Not started</p>
+          <a class="btn btn-primary" href="./moviedle.html">Play Moviedle</a>
+        </article>
+        <article class="hub-card">
+          <img class="game-preview" src="./assets/impostor.svg" alt="Illustration for Spotlight game" />
+          <h3>Spotlight</h3>
+          <p>Pick the actor that truly matches the clue. One miss ends the run.</p>
+          <p id="home-spotlight-status" class="mini">Not started</p>
+          <a class="btn btn-primary" href="./impostor.html">Play Spotlight</a>
+        </article>
+        <article class="hub-card">
+          <img class="game-preview" src="./assets/impostor-cast.svg" alt="Illustration for Impostor cast game" />
+          <h3>Impostor</h3>
+          <p>Select only the real cast members for the fixed movie or series.</p>
+          <p id="home-impostor-status" class="mini">Not started</p>
+          <a class="btn btn-primary" href="./impostor-cast.html">Play Impostor</a>
+        </article>
+      </section>
+
+      <section class="share reveal">
+        <h3>Daily Score Card</h3>
+        <p id="haul-summary">Complete all six game pages to unlock your final score card.</p>
+        <div class="share-actions">
+          <button id="copy-final-btn" class="btn btn-primary">Copy Score Card</button>
+          <button id="challenge-btn" class="btn btn-secondary">Challenge Friends</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built for movie and series fans who keep receipts.</p>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="./data/catalog.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

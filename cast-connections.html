@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CineClash | Cast Connections</title>
+    <meta name="description" content="Play the daily Cast Connections challenge on CineClash." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body data-page="connections">
+    <div class="ambient ambient-a"></div>
+    <div class="ambient ambient-b"></div>
+
+    <header class="topbar">
+      <div class="brand-wrap">
+        <p class="eyebrow">Daily Challenge</p>
+        <h1 class="brand">CineClash</h1>
+      </div>
+      <nav class="page-nav">
+        <a class="nav-link" href="./index.html">Home</a>
+        <a class="nav-link" href="./movie-grid.html">Movie Grid</a>
+        <a class="nav-link active" href="./cast-connections.html">Connections</a>
+        <a class="nav-link" href="./plotle.html">Plotle</a>
+        <a class="nav-link" href="./moviedle.html">Moviedle</a>
+        <a class="nav-link" href="./impostor.html">Spotlight</a>
+        <a class="nav-link" href="./impostor-cast.html">Impostor</a>
+      </nav>
+      <div class="topbar-actions">
+        <button id="copy-link-btn" class="btn btn-ghost">Copy Invite Link</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="hero reveal">
+        <div class="hero-main">
+          <p class="hero-kicker">Game 2 of 6</p>
+          <h2>Cast Connections</h2>
+          <p class="hero-sub">Find all hidden groups before you run out of mistakes.</p>
+          <div class="hero-actions">
+            <a href="./plotle.html" class="btn btn-secondary">Next: Plotle</a>
+          </div>
+        </div>
+        <aside class="stat-card">
+          <p class="stat-label">Today</p>
+          <p id="today-date" class="stat-main">-</p>
+          <div class="stat-grid">
+            <div>
+              <p class="stat-label">Streak</p>
+              <p id="streak-value" class="stat-value">0</p>
+            </div>
+            <div>
+              <p class="stat-label">XP</p>
+              <p id="xp-value" class="stat-value">0</p>
+            </div>
+            <div>
+              <p class="stat-label">Daily Score</p>
+              <p id="daily-score-value" class="stat-value">0</p>
+            </div>
+            <div>
+              <p class="stat-label">Referrals</p>
+              <p id="referral-value" class="stat-value">0</p>
+            </div>
+          </div>
+          <p id="tier-badge" class="tier-badge">Rookie Critic</p>
+        </aside>
+      </section>
+
+      <article class="game-card reveal single-game" id="connections-section">
+        <div class="game-head">
+          <h3>Daily Cast Connections</h3>
+          <p>Select 4 titles that belong to the same hidden category.</p>
+        </div>
+        <div id="connections-board" class="connections-board"></div>
+        <div class="panel">
+          <div class="guess-actions">
+            <button id="connections-submit-btn" class="btn btn-primary">Submit Group</button>
+            <button id="connections-clear-btn" class="btn btn-ghost">Clear</button>
+          </div>
+          <p id="connections-meta" class="mini"></p>
+          <ul id="connections-solved" class="solved-list"></ul>
+        </div>
+      </article>
+
+      <section class="share reveal">
+        <h3>Daily Score Card</h3>
+        <p id="haul-summary">Finish all six games to unlock your final score card.</p>
+        <div class="share-actions">
+          <button id="copy-final-btn" class="btn btn-primary">Copy Score Card</button>
+          <button id="challenge-btn" class="btn btn-secondary">Challenge Friends</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Built for movie and series fans who keep receipts.</p>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="./data/catalog.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>

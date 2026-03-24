@@ -1,0 +1,51 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgB" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#10243F"/>
+      <stop offset="1" stop-color="#2E213F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="42" fill="url(#bgB)"/>
+  <circle cx="1068" cy="106" r="122" fill="#33CDE2" fill-opacity=".14"/>
+  <circle cx="131" cy="572" r="162" fill="#FF6B35" fill-opacity=".15"/>
+  <rect x="131" y="114" width="938" height="456" rx="24" fill="#0C1630" fill-opacity=".88" stroke="#B39BFF" stroke-opacity=".32" stroke-width="2"/>
+  <g>
+    <rect x="176" y="166" width="210" height="84" rx="12" fill="#243B66"/>
+    <rect x="406" y="166" width="210" height="84" rx="12" fill="#243B66"/>
+    <rect x="636" y="166" width="210" height="84" rx="12" fill="#243B66"/>
+    <rect x="866" y="166" width="158" height="84" rx="12" fill="#243B66"/>
+    <rect x="176" y="268" width="210" height="84" rx="12" fill="#29466C"/>
+    <rect x="406" y="268" width="210" height="84" rx="12" fill="#29466C"/>
+    <rect x="636" y="268" width="210" height="84" rx="12" fill="#29466C"/>
+    <rect x="866" y="268" width="158" height="84" rx="12" fill="#29466C"/>
+    <rect x="176" y="370" width="210" height="84" rx="12" fill="#1F6A57"/>
+    <rect x="406" y="370" width="210" height="84" rx="12" fill="#1F6A57"/>
+    <rect x="636" y="370" width="210" height="84" rx="12" fill="#1F6A57"/>
+    <rect x="866" y="370" width="158" height="84" rx="12" fill="#1F6A57"/>
+    <rect x="176" y="472" width="210" height="84" rx="12" fill="#775D1E"/>
+    <rect x="406" y="472" width="210" height="84" rx="12" fill="#775D1E"/>
+    <rect x="636" y="472" width="210" height="84" rx="12" fill="#775D1E"/>
+    <rect x="866" y="472" width="158" height="84" rx="12" fill="#775D1E"/>
+  </g>
+  <g fill="#F1F6FF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">
+    <text x="214" y="220">Inception</text>
+    <text x="460" y="220">Interstellar</text>
+    <text x="699" y="220">Matrix</text>
+    <text x="903" y="220">2049</text>
+    <text x="233" y="322">Heat</text>
+    <text x="451" y="322">Goodfellas</text>
+    <text x="690" y="322">Pulp Fiction</text>
+    <text x="893" y="322">Day</text>
+    <text x="215" y="424">La La Land</text>
+    <text x="454" y="424">Notebook</text>
+    <text x="700" y="424">Titanic</text>
+    <text x="883" y="424">Proposal</text>
+    <text x="203" y="526">Barbie</text>
+    <text x="445" y="526">Mamma Mia</text>
+    <text x="680" y="526">Intern</text>
+    <text x="892" y="526">Burn</text>
+  </g>
+  <text x="130" y="78" fill="#EEF4FF" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="800">Group 4 related cards at a time</text>
+  <text x="131" y="627" fill="#EEF4FF" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800">Cast Connections</text>
+  <text x="478" y="627" fill="#8BB8FF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600">find all hidden sets before 4 mistakes</text>
+</svg>

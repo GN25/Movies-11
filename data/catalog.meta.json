@@ -1,0 +1,30 @@
+{
+  "source": "Wikidata",
+  "generatedAt": "2026-03-24T08:26:47.383Z",
+  "endpoints": [
+    "https://query.wikidata.org/sparql",
+    "https://qlever.dev/api/wikidata"
+  ],
+  "wikidataApiUrl": "https://www.wikidata.org/w/api.php",
+  "minYear": 1950,
+  "maxYear": 2026,
+  "minSitelinks": 6,
+  "queryLimit": 100,
+  "maxMovies": 700,
+  "minActorReuse": 1,
+  "yearStep": 3,
+  "maxRetries": 12,
+  "requestDelayMs": 350,
+  "includeSeries": true,
+  "claimsBatchSize": 30,
+  "labelsBatchSize": 50,
+  "timeoutMs": 28000,
+  "poolFactor": 4,
+  "apiMinIntervalMs": 1300,
+  "entityTypes": [
+    "movie",
+    "series"
+  ],
+  "movieCount": 700,
+  "uniqueActors": 3043
+}

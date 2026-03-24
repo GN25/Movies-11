@@ -1,0 +1,50 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgA" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0C1A38"/>
+      <stop offset="1" stop-color="#1E2C54"/>
+    </linearGradient>
+    <linearGradient id="chipA" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FF7A47"/>
+      <stop offset="1" stop-color="#FFAE66"/>
+    </linearGradient>
+    <linearGradient id="chipB" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#29D1E6"/>
+      <stop offset="1" stop-color="#1799AE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="42" fill="url(#bgA)"/>
+  <circle cx="143" cy="106" r="112" fill="#34D2E5" fill-opacity=".16"/>
+  <circle cx="1083" cy="590" r="156" fill="#FF7A47" fill-opacity=".14"/>
+  <rect x="111" y="123" width="978" height="429" rx="22" fill="#0A1631" fill-opacity=".85" stroke="#8AB8FF" stroke-opacity=".3" stroke-width="2"/>
+  <rect x="152" y="164" width="896" height="347" rx="14" fill="#101F40" fill-opacity=".95"/>
+  <g fill="#DDE7FF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700">
+    <text x="201" y="211">Actor × Genre</text>
+    <text x="477" y="211">Drama</text>
+    <text x="678" y="211">Action</text>
+    <text x="878" y="211">Comedy</text>
+  </g>
+  <g fill="#B8C9F4" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700">
+    <text x="201" y="301">Leonardo</text>
+    <text x="201" y="392">Scarlett</text>
+    <text x="201" y="482">Brad Pitt</text>
+  </g>
+  <g>
+    <rect x="407" y="238" width="175" height="70" rx="10" fill="#1E355E"/>
+    <rect x="607" y="238" width="175" height="70" rx="10" fill="url(#chipA)"/>
+    <rect x="807" y="238" width="175" height="70" rx="10" fill="#1E355E"/>
+    <rect x="407" y="329" width="175" height="70" rx="10" fill="url(#chipB)"/>
+    <rect x="607" y="329" width="175" height="70" rx="10" fill="#1E355E"/>
+    <rect x="807" y="329" width="175" height="70" rx="10" fill="#1E355E"/>
+    <rect x="407" y="419" width="175" height="70" rx="10" fill="#1E355E"/>
+    <rect x="607" y="419" width="175" height="70" rx="10" fill="#1E355E"/>
+    <rect x="807" y="419" width="175" height="70" rx="10" fill="url(#chipA)"/>
+  </g>
+  <g fill="#F6FBFF" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700">
+    <text x="658" y="280">Django</text>
+    <text x="447" y="371">Lucy</text>
+    <text x="854" y="461">Burn After</text>
+  </g>
+  <text x="111" y="608" fill="#EAF0FF" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800">Movie Grid</text>
+  <text x="351" y="608" fill="#8EC0FF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600">fill 9 intersections before attempts run out</text>
+</svg>

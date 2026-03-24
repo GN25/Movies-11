@@ -1,0 +1,51 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgM" x1="0" y1="0" x2="1200" y2="675" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12284A"/>
+      <stop offset="1" stop-color="#302146"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" rx="42" fill="url(#bgM)"/>
+  <circle cx="190" cy="135" r="132" fill="#28CEE5" fill-opacity=".15"/>
+  <circle cx="1044" cy="568" r="160" fill="#FF7A46" fill-opacity=".15"/>
+  <rect x="138" y="116" width="924" height="448" rx="24" fill="#0C1631" fill-opacity=".88" stroke="#8DB7FF" stroke-opacity=".34" stroke-width="2"/>
+  <g>
+    <rect x="220" y="186" width="84" height="84" rx="10" fill="#1B6F57"/>
+    <rect x="316" y="186" width="84" height="84" rx="10" fill="#79621F"/>
+    <rect x="412" y="186" width="84" height="84" rx="10" fill="#233049"/>
+    <rect x="508" y="186" width="84" height="84" rx="10" fill="#1B6F57"/>
+    <rect x="604" y="186" width="84" height="84" rx="10" fill="#233049"/>
+    <rect x="700" y="186" width="84" height="84" rx="10" fill="#233049"/>
+    <rect x="796" y="186" width="84" height="84" rx="10" fill="#79621F"/>
+  </g>
+  <g fill="#ECF4FF" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="800">
+    <text x="246" y="242">T</text>
+    <text x="342" y="242">I</text>
+    <text x="436" y="242">T</text>
+    <text x="532" y="242">A</text>
+    <text x="625" y="242">N</text>
+    <text x="721" y="242">I</text>
+    <text x="816" y="242">C</text>
+  </g>
+  <g>
+    <rect x="220" y="288" width="84" height="84" rx="10" fill="#233049"/>
+    <rect x="316" y="288" width="84" height="84" rx="10" fill="#233049"/>
+    <rect x="412" y="288" width="84" height="84" rx="10" fill="#233049"/>
+    <rect x="508" y="288" width="84" height="84" rx="10" fill="#233049"/>
+    <rect x="604" y="288" width="84" height="84" rx="10" fill="#233049"/>
+    <rect x="700" y="288" width="84" height="84" rx="10" fill="#233049"/>
+    <rect x="796" y="288" width="84" height="84" rx="10" fill="#233049"/>
+  </g>
+  <g>
+    <rect x="220" y="390" width="84" height="84" rx="10" fill="#233049"/>
+    <rect x="316" y="390" width="84" height="84" rx="10" fill="#233049"/>
+    <rect x="412" y="390" width="84" height="84" rx="10" fill="#233049"/>
+    <rect x="508" y="390" width="84" height="84" rx="10" fill="#233049"/>
+    <rect x="604" y="390" width="84" height="84" rx="10" fill="#233049"/>
+    <rect x="700" y="390" width="84" height="84" rx="10" fill="#233049"/>
+    <rect x="796" y="390" width="84" height="84" rx="10" fill="#233049"/>
+  </g>
+  <text x="220" y="160" fill="#EAF2FF" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700">7 letters • 6 guesses</text>
+  <text x="138" y="626" fill="#ECF4FF" font-family="Arial, Helvetica, sans-serif" font-size="42" font-weight="800">Moviedle</text>
+  <text x="336" y="626" fill="#8EBEFF" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600">wordle style movie title challenge</text>
+</svg>
