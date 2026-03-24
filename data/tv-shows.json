@@ -2312,6 +2312,21 @@
     "votes": 83805
   },
   {
+    "title": "An Inconvenient Truth",
+    "year": 2006,
+    "duration": "96 min",
+    "genre": "Documentary, News",
+    "rating": 7.4,
+    "description": "Filmmaker Davis Guggenheim follows Al Gore on the lecture circuit, as the former presidential candidate campaigns to raise public awareness of the dangers of global warming and calls for immediate action to curb its destructive effects on the environment.",
+    "stars": [
+      "Al Gore",
+      "Billy West",
+      "George Bush",
+      "George W. Bush"
+    ],
+    "votes": 83432
+  },
+  {
     "title": "Narcos: Mexico",
     "year": 2018,
     "duration": "50 min",
@@ -3456,6 +3471,21 @@
       "Park Solomon"
     ],
     "votes": 47580
+  },
+  {
+    "title": "Fyre",
+    "year": 2018,
+    "duration": "97 min",
+    "genre": "Documentary, Crime, Music",
+    "rating": 7.2,
+    "description": "An exclusive behind the scenes look at the infamous unraveling of the Fyre music festival.",
+    "stars": [
+      "Billy McFarland",
+      "Jason Bell",
+      "Gabrielle Bluestone",
+      "Shiyuan Deng"
+    ],
+    "votes": 47128
   },
   {
     "title": "Utopia",
@@ -5382,6 +5412,18 @@
     "votes": 24323
   },
   {
+    "title": "Open Season 2",
+    "year": 2008,
+    "duration": "76 min",
+    "genre": "Animation, Adventure, Comedy",
+    "rating": 5.5,
+    "description": "After falling head over hooves in love with Giselle, Elliot's road to the altar takes a slight detour when Mr. Weenie is kidnapped by a group of pampered pets determined to return him to his owners.",
+    "stars": [
+      "Callaghan, \""
+    ],
+    "votes": 24277
+  },
+  {
     "title": "Barbarians",
     "year": 2020,
     "duration": "280 min",
@@ -7222,7 +7264,7 @@
     "duration": "24 min",
     "genre": "Animation, Comedy, Drama",
     "rating": 8,
-    "description": "Ryuji Takasu lives in a falling down house with his mother, and although being a nice guy is cursed with the evil look of his father causing people to avoid him. Taiga Aisaka is a tiny,self... See full summary »",
+    "description": "Ryuji Takasu lives in a falling down house with his mother, and although being a nice guy is cursed with the evil look of his father causing people to avoid him. Taiga Aisaka is a tiny,self",
     "stars": [
       "Rie Kugimiya",
       "Junji Majima",
@@ -7695,7 +7737,7 @@
     "duration": "24 min",
     "genre": "Animation, Action, Adventure",
     "rating": 8,
-    "description": "In a world rife with deadly creatures called \"youma\", a young silver eyed woman, Clare, works on behalf of an organization that trains female youma halfbreeds into warriors with the ability... See full summary »",
+    "description": "In a world rife with deadly creatures called \"youma\", a young silver eyed woman, Clare, works on behalf of an organization that trains female youma halfbreeds into warriors with the ability",
     "stars": [
       "Todd Haberkorn",
       "Stephanie Young",
@@ -7710,7 +7752,7 @@
     "duration": "24 min",
     "genre": "Animation, Action, Adventure",
     "rating": 8.5,
-    "description": "One day, 14-year-old Yusuke Urameshi suddenly finds himself dead, having died pushing a child out of the way of oncoming traffic. Since he has such a bad personality, even the Spirit World ... See full summary »",
+    "description": "One day, 14-year-old Yusuke Urameshi suddenly finds himself dead, having died pushing a child out of the way of oncoming traffic. Since he has such a bad personality, even the Spirit World",
     "stars": [
       "Nozomu Sasaki",
       "Justin Cook",
@@ -7770,7 +7812,7 @@
     "duration": "90 min",
     "genre": "Drama, Romance",
     "rating": 7.6,
-    "description": "Having lost his wife eleven years ago, Adnan devoted all his attention to his daughter Nihal and his son Bülent. Adnan, who lives in one of the most prominent mansions along the Bosporus in... See full summary »",
+    "description": "Having lost his wife eleven years ago, Adnan devoted all his attention to his daughter Nihal and his son Bülent. Adnan, who lives in one of the most prominent mansions along the Bosporus in",
     "stars": [
       "Beren Saat",
       "Kivanç Tatlitug",
@@ -7910,6 +7952,21 @@
       "Erica Mendez"
     ],
     "votes": 13071
+  },
+  {
+    "title": "Gaga: Five Foot Two",
+    "year": 2017,
+    "duration": "100 min",
+    "genre": "Documentary, Music",
+    "rating": 7,
+    "description": "This documentary goes behind the scenes with pop provocateur Lady Gaga as she releases a bold new album and prepares for her Super Bowl halftime show.",
+    "stars": [
+      "Sandra Amador",
+      "Michael Bearden",
+      "Tony Bennett",
+      "BloodPop"
+    ],
+    "votes": 13068
   },
   {
     "title": "Fate/Zero",
@@ -8481,6 +8538,21 @@
     "votes": 11319
   },
   {
+    "title": "Jackass 4.5",
+    "year": 2022,
+    "duration": "90 min",
+    "genre": "Action, Comedy, Reality-TV",
+    "rating": 6.5,
+    "description": "Through outrageous, never-before-seen footage, witness the making of the Jackass crew's last go at wild stunts.",
+    "stars": [
+      "Johnny Knoxville",
+      "Steve-O",
+      "Chris Pontius",
+      "Dave England"
+    ],
+    "votes": 11266
+  },
+  {
     "title": "Trinkets",
     "year": 2019,
     "duration": "30 min",
@@ -8703,6 +8775,21 @@
       "Frédéric Diefenthal"
     ],
     "votes": 10638
+  },
+  {
+    "title": "House of Secrets: The Burari Deaths",
+    "year": 2021,
+    "duration": "135 min",
+    "genre": "Documentary, Crime, History",
+    "rating": 7.4,
+    "description": "Suicide, murder or something else? This docuseries examines chilling truths and theories around the deaths of 11 members of a Delhi family.",
+    "stars": [
+      "Manoj Kumar",
+      "Naresh Bhatia",
+      "Vishal Anand",
+      "Mukesh Sengar"
+    ],
+    "votes": 10573
   },
   {
     "title": "Tabula Rasa",
@@ -8977,7 +9064,7 @@
     "duration": "57 min",
     "genre": "Comedy",
     "rating": 3.1,
-    "description": "Three minutes into her set, Amy Schumer claims that all good comedians have a \"leather special,\" where they wear all leather and regret it later in their careers--this is hers. Amy muses on... See full summary »",
+    "description": "Three minutes into her set, Amy Schumer claims that all good comedians have a \"leather special,\" where they wear all leather and regret it later in their careers--this is hers. Amy muses on",
     "stars": [
       "Amy Schumer",
       "Kim Caramele"
@@ -9013,6 +9100,21 @@
       "Seol In-ah"
     ],
     "votes": 9892
+  },
+  {
+    "title": "Requiem for the American Dream",
+    "year": 2015,
+    "duration": "73 min",
+    "genre": "Documentary, Biography, News",
+    "rating": 8.1,
+    "description": "Renowned academic and author Noam Chomsky elucidates 10 principles of concentration of wealth and power that have led to unprecedented inequality and the hollowing out of the American middle class.",
+    "stars": [
+      "Noam Chomsky",
+      "Alan Greenspan",
+      "Malcolm X",
+      "Richard Nixon"
+    ],
+    "votes": 9838
   },
   {
     "title": "Biohackers",
@@ -9941,7 +10043,7 @@
     "duration": "60 min",
     "genre": "Drama",
     "rating": 7.4,
-    "description": "A middle-aged Mary Ann returns to San Francisco and reunites with the eccentric friends she left behind. \"Tales of the City\" focuses primarily on the people who live in a boardinghouse turned apartment complex owned by Anna Madrigal at 28 Barbary Lane, all of whom quickly become part of what Maupin coined a \"logical family\". It's no longer a secret that Mrs. Madrigal is transgender. Instead, she ... See full summary »",
+    "description": "A middle-aged Mary Ann returns to San Francisco and reunites with the eccentric friends she left behind. \"Tales of the City\" focuses primarily on the people who live in a boardinghouse turned apartment complex owned by Anna Madrigal at 28 Barbary Lane, all of whom quickly become part of what Maupin coined a \"logical family\". It's no longer a secret that Mrs. Madrigal is transgender. Instead, she",
     "stars": [
       "Laura Linney",
       "Elliot Page",
@@ -10008,6 +10110,21 @@
       "Carole Shelley"
     ],
     "votes": 8027
+  },
+  {
+    "title": "Let's Be Evil",
+    "year": 2016,
+    "duration": "82 min",
+    "genre": "Horror, Reality-TV, Sci-Fi",
+    "rating": 4.3,
+    "description": "A vision of augmented reality.",
+    "stars": [
+      "Sophie Willis",
+      "Jules Brown",
+      "Elizabeth Morris",
+      "Chase Bowman"
+    ],
+    "votes": 7998
   },
   {
     "title": "Unsolved: The Murders of Tupac and the Notorious B.I.G.",
@@ -10630,6 +10747,21 @@
     "votes": 7115
   },
   {
+    "title": "Challenger: The Final Flight",
+    "year": 2020,
+    "duration": "179 min",
+    "genre": "Documentary, History",
+    "rating": 7.8,
+    "description": "Four-part docuseries on the 1986 Challenger space shuttle disaster, unpacking an indelible moment for a generation of Americans.",
+    "stars": [
+      "June Scobee Rodgers",
+      "William Harwood",
+      "Frederick D. Gregory",
+      "John Zarrella"
+    ],
+    "votes": 7056
+  },
+  {
     "title": "Equinox",
     "year": 2020,
     "duration": "43 min",
@@ -10688,6 +10820,21 @@
       "Morgan Decker"
     ],
     "votes": 7005
+  },
+  {
+    "title": "The Puppet Master: Hunting the Ultimate Conman",
+    "year": 2022,
+    "duration": "127 min",
+    "genre": "Documentary, Crime",
+    "rating": 7,
+    "description": "In this harrowing docuseries, a cruel conman masquerading as a British spy manipulates and steals from his victims, leaving ruined families in his wake.",
+    "stars": [
+      "Stephen Corrall",
+      "Charlie Ives",
+      "Sophie Clifton",
+      "Jake Clifton"
+    ],
+    "votes": 7000
   },
   {
     "title": "Last Chance U",
@@ -10920,7 +11067,7 @@
     "duration": "60 min",
     "genre": "Drama, Romance, Thriller",
     "rating": 7.8,
-    "description": "Kim Je Ha is a former soldier for hire. He is also called K2. He is hired as a bodyguard by Choi Yoo Jin. Choi Yoo Jin is the wife of Jang Se Joon, who is running for president. Meanwhile, ... See full summary »",
+    "description": "Kim Je Ha is a former soldier for hire. He is also called K2. He is hired as a bodyguard by Choi Yoo Jin. Choi Yoo Jin is the wife of Jang Se Joon, who is running for president. Meanwhile,",
     "stars": [
       "Ji Chang-Wook",
       "Song Yun-ah",
@@ -11292,7 +11439,7 @@
     "duration": "24 min",
     "genre": "Animation, Action, Comedy",
     "rating": 7.8,
-    "description": "Nakajima Atsushi was kicked out of his orphanage, and now he has no place to go and no food. While he is standing by a river, on the brink of starvation, he rescues a man whimsically ... See full summary »",
+    "description": "Nakajima Atsushi was kicked out of his orphanage, and now he has no place to go and no food. While he is standing by a river, on the brink of starvation, he rescues a man whimsically",
     "stars": [
       "Kaiji Tang",
       "Mamoru Miyano",
@@ -11367,7 +11514,7 @@
     "duration": "24 min",
     "genre": "Animation, Action, Adventure",
     "rating": 6.8,
-    "description": "Guts, \"The Black Swordsman\", is pursued by demons who are attracted to him, due to a demonic brand on his neck. His goal is to free himself, and his lover Casca, of this inescapable curse. ... See full summary »",
+    "description": "Guts, \"The Black Swordsman\", is pursued by demons who are attracted to him, due to a demonic brand on his neck. His goal is to free himself, and his lover Casca, of this inescapable curse.",
     "stars": [
       "Max Mittelman",
       "Sarah Anne Williams",
@@ -12518,7 +12665,7 @@
     "duration": "23 min",
     "genre": "Animation, Action, Romance",
     "rating": 7,
-    "description": "After the outbreak of the unidentified virus \"Lost Christmas\" in 2029, Japan has been under the control of a multi-nation organization called GHQ. Ohma Shu is a 17 year old boy who has a ... See full summary »",
+    "description": "After the outbreak of the unidentified virus \"Lost Christmas\" in 2029, Japan has been under the control of a multi-nation organization called GHQ. Ohma Shu is a 17 year old boy who has a",
     "stars": [
       "Yûki Kaji",
       "Ai Kayano",
@@ -12882,7 +13029,7 @@
     "duration": "30 min",
     "genre": "Drama, Mystery, Thriller",
     "rating": 8.2,
-    "description": "Everyone wants something. There is a mysterious figure who sits in the booth at the end, who you make a deal with to get what you want. You do the task or you don't - that is up to you, but... See full summary »",
+    "description": "Everyone wants something. There is a mysterious figure who sits in the booth at the end, who you make a deal with to get what you want. You do the task or you don't - that is up to you, but",
     "stars": [
       "Xander Berkeley",
       "Jennifer Del Rosario",
@@ -13365,6 +13512,21 @@
     "votes": 4333
   },
   {
+    "title": "Crime Scene: The Times Square Killer",
+    "year": 2021,
+    "duration": "147 min",
+    "genre": "Documentary, Crime, History",
+    "rating": 6.5,
+    "description": "In 1970s NYC, the \"Torso Killer\" preys on women to fulfill his grotesque fantasies while eluding police. A docuseries dive into crime's darkest places.",
+    "stars": [
+      "Vernon Geberth",
+      "Malcolm Reiman",
+      "Peter Vronsky",
+      "Melinda Chateauvert"
+    ],
+    "votes": 4305
+  },
+  {
     "title": "I Am a Killer",
     "year": 2018,
     "duration": "52 min",
@@ -13620,7 +13782,7 @@
     "duration": "83 min",
     "genre": "Animation, Adventure, Drama",
     "rating": 8,
-    "description": "Kenshin and Kaoru are married. Kenshin leaves Kaoru with their son, Kenji, to lead a revolution in China. But both of them suffer from a seemingly incurable disease. 15 years later, Kenshin... See full summary »",
+    "description": "Kenshin and Kaoru are married. Kenshin leaves Kaoru with their son, Kenji, to lead a revolution in China. But both of them suffer from a seemingly incurable disease. 15 years later, Kenshin",
     "stars": [
       "Mayo Suzukaze",
       "Miki Fujitani",
@@ -13837,7 +13999,7 @@
     "duration": "52 min",
     "genre": "Drama, Thriller",
     "rating": 7.2,
-    "description": "Alain Delambre is a senior executive worn out and humiliated by six years of unemployment. So when a prestigious company selects him as a candidate, he is prepared to alienate his wife, ... See full summary »",
+    "description": "Alain Delambre is a senior executive worn out and humiliated by six years of unemployment. So when a prestigious company selects him as a candidate, he is prepared to alienate his wife,",
     "stars": [
       "Eric Cantona",
       "Suzanne Clément",
@@ -14318,6 +14480,21 @@
     "votes": 3721
   },
   {
+    "title": "The Culture High",
+    "year": 2014,
+    "duration": "120 min",
+    "genre": "Documentary, News",
+    "rating": 8.2,
+    "description": "Scours the deep-seated roots of this morally induced Marijuana campaign and reveal the fascinating path it has taken to get to where it is today.",
+    "stars": [
+      "Joe Rogan",
+      "Ronald Reagan",
+      "Snoop Dogg",
+      "Penn Jillette"
+    ],
+    "votes": 3688
+  },
+  {
     "title": "Anthony Jeselnik: Fire in the Maternity Ward",
     "year": 2019,
     "duration": "64 min",
@@ -14440,7 +14617,7 @@
     "duration": "26 min",
     "genre": "Comedy",
     "rating": 7.7,
-    "description": "1960: the French intelligence service hires the 23-year-old André Merlaux. Handsome, well raised, intelligent but impressionable, Merlaux has much to learn to serve and defend the interests... See full summary »",
+    "description": "1960: the French intelligence service hires the 23-year-old André Merlaux. Handsome, well raised, intelligent but impressionable, Merlaux has much to learn to serve and defend the interests",
     "stars": [
       "Hugo Becker",
       "Wilfred Benaïche",
@@ -14448,6 +14625,21 @@
       "Karim Barras"
     ],
     "votes": 3655
+  },
+  {
+    "title": "Norm Macdonald Has a Show",
+    "year": 2018,
+    "duration": "30 min",
+    "genre": "Comedy, Talk-Show",
+    "rating": 8.5,
+    "description": "Based on his podcast, comedian and former Saturday Night Live (1975) alumni Norm Macdonald and his sidekick Adam Eget sit down and chat with celebrity guests about their life, career and views in a somewhat unconventional and often irreverent way.",
+    "stars": [
+      "Norm MacDonald",
+      "Adam Eget",
+      "Michael Keaton",
+      "Drew Barrymore"
+    ],
+    "votes": 3643
   },
   {
     "title": "Wolfblood",
@@ -14635,7 +14827,7 @@
     "duration": "23 min",
     "genre": "Animation, Comedy, Romance",
     "rating": 7.6,
-    "description": "High school student Chiyo Sakura has a crush on schoolmate Umetarou Nozaki, but when she confesses her love to him, he mistakes her for a fan and gives her an autograph. When she says that ... See full summary »",
+    "description": "High school student Chiyo Sakura has a crush on schoolmate Umetarou Nozaki, but when she confesses her love to him, he mistakes her for a fan and gives her an autograph. When she says that",
     "stars": [
       "Yûichi Nakamura",
       "Ari Ozawa",
@@ -14827,7 +15019,7 @@
     "duration": "21 min",
     "genre": "Reality-TV",
     "rating": 7.7,
-    "description": "RuPaul's Drag Race: Untucked! is the access-all-areas pass to the drama that you didn't see on the runway--the backstage bitchiness, the catfights, the struggles, the tears and the secrets.... See full summary »",
+    "description": "RuPaul's Drag Race: Untucked! is the access-all-areas pass to the drama that you didn't see on the runway--the backstage bitchiness, the catfights, the struggles, the tears and the secrets.",
     "stars": [
       "RuPaul",
       "Michelle Visage",
@@ -15578,7 +15770,7 @@
     "duration": "24 min",
     "genre": "Animation, Comedy, Drama",
     "rating": 7.4,
-    "description": "Free! revolves around members of a high school boy's swimming team. Four boys-Haruka, Makoto, Nagisa and Rin-all participated in a swimming tournament shortly before graduating elementary ... See full summary »",
+    "description": "Free! revolves around members of a high school boy's swimming team. Four boys-Haruka, Makoto, Nagisa and Rin-all participated in a swimming tournament shortly before graduating elementary",
     "stars": [
       "Jamie Marchi",
       "Johnny Yong Bosch",
@@ -15586,6 +15778,21 @@
       "Nobunaga Shimazaki"
     ],
     "votes": 3154
+  },
+  {
+    "title": "Alive Inside: A Story of Music and Memory",
+    "year": 2014,
+    "duration": "78 min",
+    "genre": "Documentary, Music, News",
+    "rating": 8.2,
+    "description": "Dan Cohen, founder of the nonprofit organization Music & Memory, fights against a broken healthcare system to demonstrate music's ability to combat memory loss and restore a deep sense of self to those suffering from it.",
+    "stars": [
+      "Dan Cohen",
+      "Louise Dueno",
+      "Nell Hardie",
+      "Norman Hardie"
+    ],
+    "votes": 3146
   },
   {
     "title": "Bling Empire",
@@ -15929,7 +16136,7 @@
     "duration": "23 min",
     "genre": "Animation, Action, Adventure",
     "rating": 7.1,
-    "description": "Seventeen-year-old Hajime Nagumo is your average, everyday otaku. However, his simple life of pulling all-nighters and sleeping in school is suddenly turned upside down when he, along with ... See full summary »",
+    "description": "Seventeen-year-old Hajime Nagumo is your average, everyday otaku. However, his simple life of pulling all-nighters and sleeping in school is suddenly turned upside down when he, along with",
     "stars": [
       "Tia Lynn Ballard",
       "Matt Shipman",
@@ -15944,7 +16151,7 @@
     "duration": "43 min",
     "genre": "Crime, Drama, Mystery",
     "rating": 7.4,
-    "description": "After a long sick leave and recovery police detective Peter Wendel is back on duty. He is commissioned to form a new team to reopen unresolved murder cases, however he soon finds himself ... See full summary »",
+    "description": "After a long sick leave and recovery police detective Peter Wendel is back on duty. He is commissioned to form a new team to reopen unresolved murder cases, however he soon finds himself",
     "stars": [
       "Robert Gustafsson",
       "Louise Peterhoff",
@@ -16401,7 +16608,7 @@
     "duration": "23 min",
     "genre": "Animation, Action, Fantasy",
     "rating": 7.2,
-    "description": "In the 21st century, where the existence of humanoid animals that have been living in the darkness for centuries have been revealed to the world. One day, Michiru, who was a normal ... See full summary »",
+    "description": "In the 21st century, where the existence of humanoid animals that have been living in the darkness for centuries have been revealed to the world. One day, Michiru, who was a normal",
     "stars": [
       "Sumire Morohoshi",
       "Yoshimasa Hosoya",
@@ -16409,6 +16616,21 @@
       "Cherami Leigh"
     ],
     "votes": 2700
+  },
+  {
+    "title": "Sense8: Creating the World",
+    "year": 2015,
+    "duration": "26 min",
+    "genre": "Documentary, Short, Sci-Fi",
+    "rating": 8.5,
+    "description": "Go behind the scenes and around the world with the \"Sense8\" cast and crew in this in-depth look at how the hit series is made.",
+    "stars": [
+      "Freema Agyeman",
+      "Aml Ameen",
+      "Naveen Andrews",
+      "Crispin Buxton"
+    ],
+    "votes": 2690
   },
   {
     "title": "Michael Che Matters",
@@ -16576,7 +16798,7 @@
     "duration": "60 min",
     "genre": "Comedy, Fantasy, Horror",
     "rating": 7.6,
-    "description": "A cohabitation comedy about a ghost of a high school girl who has been dead for 5 years and an exorcist college boy with the ability to see and hear ghosts. What he's discovered over the ... See full summary »",
+    "description": "A cohabitation comedy about a ghost of a high school girl who has been dead for 5 years and an exorcist college boy with the ability to see and hear ghosts. What he's discovered over the",
     "stars": [
       "Taecyeon",
       "Kim So-Hyun",
@@ -16606,7 +16828,7 @@
     "duration": "23 min",
     "genre": "Animation, Action, Adventure",
     "rating": 7.4,
-    "description": "The goddess Rista summons a hero to help her hard mode video game-like world. The hero, Seiya, is exceptional in every way, but he is incredibly cautious. He does things like buy three sets... See full summary »",
+    "description": "The goddess Rista summons a hero to help her hard mode video game-like world. The hero, Seiya, is exceptional in every way, but he is incredibly cautious. He does things like buy three sets",
     "stars": [
       "Yuichiro Umehara",
       "Aki Toyosaki",
@@ -16828,7 +17050,7 @@
     "duration": "",
     "genre": "Comedy, Horror, Reality-TV",
     "rating": 6.7,
-    "description": "The show, just the latest in a string of \"reality based programming\" will feature \"Candid Camera\" like stunts inspired by scenes from Science fiction television programs and movies. The \"... See full summary »",
+    "description": "The show, just the latest in a string of \"reality based programming\" will feature \"Candid Camera\" like stunts inspired by scenes from Science fiction television programs and movies. The \"",
     "stars": [
       "Shannen Doherty",
       "Lauren Ash",
@@ -16885,7 +17107,7 @@
     "duration": "60 min",
     "genre": "Drama, Romance",
     "rating": 7.8,
-    "description": "The Reyes brothers were three honest and good-natured men until the day a shocking, unforgettable tragedy sends them in search of revenge. Their plan takes an unexpected turn when they meet... See full summary »",
+    "description": "The Reyes brothers were three honest and good-natured men until the day a shocking, unforgettable tragedy sends them in search of revenge. Their plan takes an unexpected turn when they meet",
     "stars": [
       "Juan Alfonso Baptista",
       "Paola Rey",
@@ -16908,6 +17130,18 @@
       "Kwon Soo-Hyeon"
     ],
     "votes": 2506
+  },
+  {
+    "title": "Salt Fat Acid Heat",
+    "year": 2018,
+    "duration": "",
+    "genre": "Documentary",
+    "rating": 7.7,
+    "description": "Docuseries, based on the award-winning book, explores the essence of cooking and the vital ingredients at the heart of a great dish.",
+    "stars": [
+      "Samin Nosrat"
+    ],
+    "votes": 2505
   },
   {
     "title": "Floor Is Lava",
@@ -17431,6 +17665,21 @@
     "votes": 2355
   },
   {
+    "title": "Room 2806: The Accusation",
+    "year": 2020,
+    "duration": "197 min",
+    "genre": "Documentary, Crime",
+    "rating": 7,
+    "description": "This docuseries follows the 2011 sexual assault case involving french politician Dominique Strauss-Kahn at the height of his career.",
+    "stars": [
+      "Nafissatou Diallo",
+      "Raphaëlle Bacqué",
+      "Élisabeth Guigou",
+      "Paul Browne"
+    ],
+    "votes": 2348
+  },
+  {
     "title": "Cells at Work!",
     "year": 2018,
     "duration": "24 min",
@@ -17539,7 +17788,7 @@
     "duration": "92 min",
     "genre": "Horror, Thriller",
     "rating": 4.4,
-    "description": "When former LAPD officer Brett Anderson takes a job as head of security at an old apartment building in Bulgaria's capital, Sofia, he soon begins to experience a series of bizarre and ... See full summary »",
+    "description": "When former LAPD officer Brett Anderson takes a job as head of security at an old apartment building in Bulgaria's capital, Sofia, he soon begins to experience a series of bizarre and",
     "stars": [
       "Jason London",
       "Robert Englund",
@@ -17554,7 +17803,7 @@
     "duration": "50 min",
     "genre": "Comedy, Drama",
     "rating": 7.7,
-    "description": "Pol Rubio starts to study Philosophy at the University of Barcelona while the relationship between Bruno and him begins to strengthen. Pol will meet new friends, new colleagues and new ... See full summary »",
+    "description": "Pol Rubio starts to study Philosophy at the University of Barcelona while the relationship between Bruno and him begins to strengthen. Pol will meet new friends, new colleagues and new",
     "stars": [
       "Carlos Cuevas",
       "María Pujalte",
@@ -17800,7 +18049,7 @@
     "duration": "288 min",
     "genre": "Drama, History, Thriller",
     "rating": 6.8,
-    "description": "In 1900, A rich newcomer with a shady past arrives in Munich determined to crash the local Oktoberfest with his own brewery. But when his daughter falls in love with the heir to a rival ... See full summary »",
+    "description": "In 1900, A rich newcomer with a shady past arrives in Munich determined to crash the local Oktoberfest with his own brewery. But when his daughter falls in love with the heir to a rival",
     "stars": [
       "Misel Maticevic",
       "Martina Gedeck",
@@ -17838,6 +18087,21 @@
       "Ari Ozawa"
     ],
     "votes": 2221
+  },
+  {
+    "title": "Elize Matsunaga: Once Upon a Crime",
+    "year": 2021,
+    "duration": "197 min",
+    "genre": "Documentary, Biography, Crime",
+    "rating": 5.9,
+    "description": "The crime shocked Brazil: Elize Matsunaga shot and dismembered her rich husband. Featuring her first interview, this docuseries dives deep into the case.",
+    "stars": [
+      "Stephanie Sherry",
+      "Elize Matsunaga",
+      "Luciano Santoro",
+      "Flávio Varella"
+    ],
+    "votes": 2216
   },
   {
     "title": "Dolly Parton's Heartstrings",
@@ -17918,7 +18182,7 @@
     "duration": "30 min",
     "genre": "Action, Comedy",
     "rating": 6.5,
-    "description": "Javier is going through a bad patch: he can hardly make it to the end of the month, his business of T-shirts with de-motivational slogans is not quite getting the attention, and his ... See full summary »",
+    "description": "Javier is going through a bad patch: he can hardly make it to the end of the month, his business of T-shirts with de-motivational slogans is not quite getting the attention, and his",
     "stars": [
       "Quim Gutiérrez",
       "Clara Lago",
@@ -18015,6 +18279,21 @@
       "Kittipat Kaewcharoen"
     ],
     "votes": 2164
+  },
+  {
+    "title": "The Oscars",
+    "year": 2016,
+    "duration": "175 min",
+    "genre": "Music",
+    "rating": 6.4,
+    "description": "The 88th Academy Awards ceremony honors achievement in film in 2015.",
+    "stars": [
+      "Chris Rock",
+      "Emily Blunt",
+      "Charlize Theron",
+      "Tom McCarthy"
+    ],
+    "votes": 2159
   },
   {
     "title": "Angels of Death",
@@ -18197,12 +18476,27 @@
     "votes": 2114
   },
   {
+    "title": "First Team: Juventus",
+    "year": 2018,
+    "duration": "40 min",
+    "genre": "Documentary, Reality-TV, Sport",
+    "rating": 7.2,
+    "description": "Follow renowned soccer club Juventus on and off the pitch as they attempt to win a seventh straight Italian title and achieve Champions League glory.",
+    "stars": [
+      "D.B. Sweeney",
+      "Juventus F.C.",
+      "Gianluigi Buffon",
+      "Alex Sandro"
+    ],
+    "votes": 2107
+  },
+  {
     "title": "The Asterisk War",
     "year": 2015,
     "duration": "23 min",
     "genre": "Animation, Action, Comedy",
     "rating": 6.8,
-    "description": "The Academy City on the water, Rikka (also known as Asterisk) is the world's largest stage for the integrated battle entertainment, \"Star Wars Festival.\" The young boys and girls of the \"... See full summary »",
+    "description": "The Academy City on the water, Rikka (also known as Asterisk) is the world's largest stage for the integrated battle entertainment, \"Star Wars Festival.\" The young boys and girls of the \"",
     "stars": [
       "Atsushi Tamaru",
       "Ai Kakuma",
@@ -18480,6 +18774,16 @@
     "votes": 2025
   },
   {
+    "title": "Stranger Things: Spotlight",
+    "year": 2018,
+    "duration": "",
+    "genre": "Talk-Show",
+    "rating": 8.9,
+    "description": "The upside down is back, with a new monster The mind flayer that posses people for revenge, and The kids decide it's time that they fight back.",
+    "stars": [],
+    "votes": 2023
+  },
+  {
     "title": "Unnatural Selection",
     "year": 2019,
     "duration": "66 min",
@@ -18628,7 +18932,7 @@
     "duration": "25 min",
     "genre": "Animation, Action, History",
     "rating": 6.8,
-    "description": "Imperial Capital, 1930. A strange group of people carrying musical instrument cases landed on Tokyo station. They are called the \"Jaegers\", who came to hunt vampires. Amongst them, there ... See full summary »",
+    "description": "Imperial Capital, 1930. A strange group of people carrying musical instrument cases landed on Tokyo station. They are called the \"Jaegers\", who came to hunt vampires. Amongst them, there",
     "stars": [
       "Yûto Uemura",
       "yû Horiuchi, \""
@@ -18641,7 +18945,7 @@
     "duration": "23 min",
     "genre": "Animation, Action, Comedy",
     "rating": 6.8,
-    "description": "Index is still a fugitive and many powerful Magical organizations and individuals want to take her to use the books in her memory eliminating her in the process. War between those ... See full summary »",
+    "description": "Index is still a fugitive and many powerful Magical organizations and individuals want to take her to use the books in her memory eliminating her in the process. War between those",
     "stars": [
       "Monica Rial",
       "Micah Solusod",
@@ -18966,6 +19270,21 @@
     "votes": 1894
   },
   {
+    "title": "Dirty John, The Dirty Truth",
+    "year": 2019,
+    "duration": "88 min",
+    "genre": "Documentary, Crime",
+    "rating": 6.1,
+    "description": "Docuseries of \"Dirty\" John Meehan, based on the true crime podcast.",
+    "stars": [
+      "Debra Newell",
+      "Christopher Goffard",
+      "Terra Newell",
+      "Joe Loeffler"
+    ],
+    "votes": 1892
+  },
+  {
     "title": "The Ultimatum: Marry or Move On",
     "year": 2022,
     "duration": "60 min",
@@ -19084,7 +19403,7 @@
     "duration": "330 min",
     "genre": "Drama, Romance",
     "rating": 7.9,
-    "description": "In this sequel to the controversial PBS mini-series, Mona Ramsey is on a cross-country trip that takes her to a brothel which may hold a secret about her past. Michael \"Mouse\" Tolliver and ... See full summary »",
+    "description": "In this sequel to the controversial PBS mini-series, Mona Ramsey is on a cross-country trip that takes her to a brothel which may hold a secret about her past. Michael \"Mouse\" Tolliver and",
     "stars": [
       "Olympia Dukakis",
       "Laura Linney",
@@ -19419,7 +19738,7 @@
     "duration": "",
     "genre": "Drama, Romance",
     "rating": 7.9,
-    "description": "On Tine and Sarawat's second year as a couple, they face several circumstances that would test their relationship, including those that involve their responsibilities as the leaders of the ... See full summary »",
+    "description": "On Tine and Sarawat's second year as a couple, they face several circumstances that would test their relationship, including those that involve their responsibilities as the leaders of the",
     "stars": [
       "Metawin Opas-Iamkajorn",
       "Vachirawit Chivaaree",
@@ -19449,7 +19768,7 @@
     "duration": "25 min",
     "genre": "Animation, Action, Comedy",
     "rating": 6.9,
-    "description": "Ayumu has no pulse and very little luck. He was murdered by a serial killer and has been brought back to life. Sort of. He has come back as a zombie in servitude to the cute necromancer who... See full summary »",
+    "description": "Ayumu has no pulse and very little luck. He was murdered by a serial killer and has been brought back to life. Sort of. He has come back as a zombie in servitude to the cute necromancer who",
     "stars": [
       "Cherami Leigh",
       "Austin Tindle",
@@ -19554,7 +19873,7 @@
     "duration": "46 min",
     "genre": "Documentary",
     "rating": 8.2,
-    "description": "Chef's Table, French edition, goes inside the lives and kitchens of some of the world's most renowned French chefs. Each episode focuses on a single chef and their unique look at their ... See full summary »",
+    "description": "Chef's Table, French edition, goes inside the lives and kitchens of some of the world's most renowned French chefs. Each episode focuses on a single chef and their unique look at their",
     "stars": [
       "Alexandre Couillon",
       "Alain Passard"
@@ -19590,6 +19909,21 @@
       "Sophie Mounicot"
     ],
     "votes": 1746
+  },
+  {
+    "title": "The Cabin with Bert Kreischer",
+    "year": 2020,
+    "duration": "",
+    "genre": "Comedy, Reality-TV",
+    "rating": 6.9,
+    "description": "After years on the grind, Bert Kreischer sets out on a purifying retreat to a remote cabin.",
+    "stars": [
+      "Bert Kreischer",
+      "LeeAnn Kreischer",
+      "Al Kreischer",
+      "Kaley Cuoco"
+    ],
+    "votes": 1745
   },
   {
     "title": "Medal of Honor",
@@ -19739,7 +20073,7 @@
     "duration": "47 min",
     "genre": "Documentary, Crime",
     "rating": 5.6,
-    "description": "Series 1: In June 1985 Carole Packman, a wife and mother mysteriously disappeared and has never been seen since. Her husband Russell Causley is now serving a life sentence for her murder, ... See full summary »",
+    "description": "Series 1: In June 1985 Carole Packman, a wife and mother mysteriously disappeared and has never been seen since. Her husband Russell Causley is now serving a life sentence for her murder,",
     "stars": [
       "Mark Williams-Thomas",
       "Rick Warden",
@@ -19784,7 +20118,7 @@
     "duration": "22 min",
     "genre": "Animation, Action, Adventure",
     "rating": 6.9,
-    "description": "Eli Shane is determined to be the greatest Slugslinging hero of them all! Only by collecting, training and dueling with little critters called SLUGS can Eli and his team hope to defeat the ... See full summary »",
+    "description": "Eli Shane is determined to be the greatest Slugslinging hero of them all! Only by collecting, training and dueling with little critters called SLUGS can Eli and his team hope to defeat the",
     "stars": [
       "Lee Tockar",
       "Sam Vincent",
@@ -20250,6 +20584,21 @@
     "votes": 1635
   },
   {
+    "title": "Dancing Queen",
+    "year": 2018,
+    "duration": "45 min",
+    "genre": "Music, Reality-TV",
+    "rating": 7,
+    "description": "A docu-series that follows Justin Johnson, aka drag superstar Alyssa Edwards, as he juggles his dance life, drag life, family life, and love life.",
+    "stars": [
+      "Alyssa Edwards",
+      "Atlee Millard",
+      "Marcella Raneri",
+      "Shangela"
+    ],
+    "votes": 1630
+  },
+  {
     "title": "Rhythm + Flow",
     "year": 2019,
     "duration": "52 min",
@@ -20409,7 +20758,7 @@
     "duration": "45 min",
     "genre": "Reality-TV",
     "rating": 7.3,
-    "description": "A reality television series which began airing on the Seven Network, Australia and now a Netflix original series. The series follows homeowners who have transformed their homes into hotels ... See full summary »",
+    "description": "A reality television series which began airing on the Seven Network, Australia and now a Netflix original series. The series follows homeowners who have transformed their homes into hotels",
     "stars": [
       "Juliet Ashworth",
       "Luke Jacobz",
@@ -20417,6 +20766,21 @@
       "Anita Bocquee"
     ],
     "votes": 1578
+  },
+  {
+    "title": "The Oscars",
+    "year": 2018,
+    "duration": "187 min",
+    "genre": "Music",
+    "rating": 5.7,
+    "description": "The 90th Annual Academy Awards ceremony, hosted by Jimmy Kimmel, celebrates the film industry's biggest achievements for the year 2017.",
+    "stars": [
+      "Jimmy Kimmel",
+      "Helen Mirren",
+      "Viola Davis",
+      "Willem Dafoe"
+    ],
+    "votes": 1575
   },
   {
     "title": "Don't Watch This",
@@ -20454,7 +20818,7 @@
     "duration": "180 min",
     "genre": "Drama, Mystery, Romance",
     "rating": 7.6,
-    "description": "This third installment to \"Tales of the City\" finds Mary Ann Singleton struggling to advance in her new career as a TV personality, while Michael Tolliver is playing the field after his ... See full summary »",
+    "description": "This third installment to \"Tales of the City\" finds Mary Ann Singleton struggling to advance in her new career as a TV personality, while Michael Tolliver is playing the field after his",
     "stars": [
       "Olympia Dukakis",
       "Paul Hopkins",
@@ -20689,7 +21053,7 @@
     "duration": "54 min",
     "genre": "Drama, Mystery, Sci-Fi",
     "rating": 6.5,
-    "description": "When Julia finds herself at an amnesia treatment center in the aftermath of a terrible accident that killed her family, she begins to form bonds with other patients who have experienced ... See full summary »",
+    "description": "When Julia finds herself at an amnesia treatment center in the aftermath of a terrible accident that killed her family, she begins to form bonds with other patients who have experienced",
     "stars": [
       "Maria Wawreniuk",
       "Ignacy Liss",
@@ -20734,7 +21098,7 @@
     "duration": "24 min",
     "genre": "Animation, Action, Fantasy",
     "rating": 7.3,
-    "description": "The story first starts off around Favaro Leone who is a bounty hunter, collecting money off of bounties he collects (demons). Favaro Leone soon runs into Amira who has no clue what is ... See full summary »",
+    "description": "The story first starts off around Favaro Leone who is a bounty hunter, collecting money off of bounties he collects (demons). Favaro Leone soon runs into Amira who has no clue what is",
     "stars": [
       "Tia Lynn Ballard",
       "Chris Rager",
@@ -20951,6 +21315,21 @@
     "votes": 1472
   },
   {
+    "title": "The Road to El Camino: Behind the Scenes of El Camino: A Breaking Bad Movie",
+    "year": 2019,
+    "duration": "13 min",
+    "genre": "Documentary, Short",
+    "rating": 7.1,
+    "description": "A look behind the scenes of El Camino: A Breaking Bad Movie (2019), with interviews of those involved.",
+    "stars": [
+      "Charles Baker",
+      "Jonathan Banks",
+      "Melissa Bernstein",
+      "Michael Bofshever"
+    ],
+    "votes": 1469
+  },
+  {
     "title": "Angela's Christmas Wish",
     "year": 2020,
     "duration": "47 min",
@@ -21016,7 +21395,7 @@
     "duration": "25 min",
     "genre": "Animation, Action, Adventure",
     "rating": 6.3,
-    "description": "In the immediate future, a giant meteorite has collided with earth. All living organisms, including mankind, have been wiped off the face of the planet. The government, who had foreseen ... See full summary »",
+    "description": "In the immediate future, a giant meteorite has collided with earth. All living organisms, including mankind, have been wiped off the face of the planet. The government, who had foreseen",
     "stars": [
       "Alejandro Saab",
       "Jad Saxton",
@@ -21046,7 +21425,7 @@
     "duration": "24 min",
     "genre": "Animation, Comedy, Romance",
     "rating": 6.7,
-    "description": "This is a story that revolves around certain students and one hobby. Amano Keita is our lonely protagonist who has a passion for gaming and is friends with Uehara Tasuku, who is secretly a ... See full summary »",
+    "description": "This is a story that revolves around certain students and one hobby. Amano Keita is our lonely protagonist who has a passion for gaming and is friends with Uehara Tasuku, who is secretly a",
     "stars": [
       "Megumi Han",
       "Brandon McInnis",
@@ -21191,7 +21570,7 @@
     "duration": "24 min",
     "genre": "Animation, Drama, Romance",
     "rating": 7.8,
-    "description": "Yuu has always loved shoujo manga and awaits the day she gets a love confession that sends her heart aflutter with bubbles and blushes, and yet when a junior high classmate confesses his ... See full summary »",
+    "description": "Yuu has always loved shoujo manga and awaits the day she gets a love confession that sends her heart aflutter with bubbles and blushes, and yet when a junior high classmate confesses his",
     "stars": [
       "Luci Christian",
       "Amber Lee Connors",
@@ -21308,7 +21687,7 @@
     "duration": "21 min",
     "genre": "Action, Adventure, Family",
     "rating": 6.4,
-    "description": "On prehistoric Earth, an alien entrusted powerful Energems to 10 dinosaurs, but when the dinosaurs went extinct, the Energems were lost. Now an intergalactic bounty hunter is determined to ... See full summary »",
+    "description": "On prehistoric Earth, an alien entrusted powerful Energems to 10 dinosaurs, but when the dinosaurs went extinct, the Energems were lost. Now an intergalactic bounty hunter is determined to",
     "stars": [
       "Brennan Mejia",
       "Camille Hyde",
@@ -21772,7 +22151,7 @@
     "duration": "23 min",
     "genre": "Animation, Comedy, Sport",
     "rating": 8.4,
-    "description": "Kakeru, a former elite runner at high school, is chased for stealing food. He is saved by a Kansei University student Haiji, who is also a runner. Haiji persuades Kakeru to live in the old ... See full summary »",
+    "description": "Kakeru, a former elite runner at high school, is chased for stealing food. He is saved by a Kansei University student Haiji, who is also a runner. Haiji persuades Kakeru to live in the old",
     "stars": [
       "Mike Haimoto",
       "Kelly Greenshield",
@@ -21918,7 +22297,7 @@
     "duration": "70 min",
     "genre": "Comedy",
     "rating": 6.4,
-    "description": "Welcome to Ireland, where Ventriloquist Jeff Dunham is back with his gang of dolls, revealing some relative secrets. The Netflix special stars Walter (Jeff Dunham), Bubba J (Jeff Dunham), ... See full summary »",
+    "description": "Welcome to Ireland, where Ventriloquist Jeff Dunham is back with his gang of dolls, revealing some relative secrets. The Netflix special stars Walter (Jeff Dunham), Bubba J (Jeff Dunham),",
     "stars": [
       "Jeff Dunham"
     ],
@@ -21945,7 +22324,7 @@
     "duration": "24 min",
     "genre": "Animation, Comedy, Drama",
     "rating": 7.3,
-    "description": "Gosick is set in the fictional European country of Sauville in the 1920s. Kazuya Kujo is a transfer student to St. Marguerite Academy, a place where myths and superstitions are abundant. ... See full summary »",
+    "description": "Gosick is set in the fictional European country of Sauville in the 1920s. Kazuya Kujo is a transfer student to St. Marguerite Academy, a place where myths and superstitions are abundant.",
     "stars": [
       "Aoi Yûki",
       "Takuya Eguchi",
@@ -22097,6 +22476,21 @@
     "votes": 1263
   },
   {
+    "title": "Neurons to Nirvana",
+    "year": 2013,
+    "duration": "85 min",
+    "genre": "Documentary, History, News",
+    "rating": 7.6,
+    "description": "A stylish, in depth look at the renaissance in psychedelic drug research in light of current scientific, medical and cultural knowledge.",
+    "stars": [
+      "Lesley Ewen",
+      "Dennis J. McKenna",
+      "David Healy",
+      "David E. Nichols"
+    ],
+    "votes": 1263
+  },
+  {
     "title": "Tiny Creatures",
     "year": 2020,
     "duration": "",
@@ -22162,7 +22556,7 @@
     "duration": "30 min",
     "genre": "Documentary, Comedy",
     "rating": 6.9,
-    "description": "Conducting a different social experiment in each episode -- including only spending money in the black community for three days, helping the Crips cash in on its personal brand by launching... See full summary »",
+    "description": "Conducting a different social experiment in each episode -- including only spending money in the black community for three days, helping the Crips cash in on its personal brand by launching",
     "stars": [
       "Killer Mike",
       "Mario Alberto Pagan",
@@ -22177,7 +22571,7 @@
     "duration": "24 min",
     "genre": "Animation, Action, Crime",
     "rating": 6.8,
-    "description": "Vampires seem to be living among humans. Of course the government does not know of their existence, because their appearance does not differ from humans. They also do not need to drink ... See full summary »",
+    "description": "Vampires seem to be living among humans. Of course the government does not know of their existence, because their appearance does not differ from humans. They also do not need to drink",
     "stars": [
       "Luci Christian",
       "Yoshitsugu Matsuoka",
@@ -22207,7 +22601,7 @@
     "duration": "70 min",
     "genre": "Drama, Romance",
     "rating": 7.6,
-    "description": "Lee Kang is a neurosurgeon, who once dreamed of becoming a chef. As a child, Moon Cha Young once met Lee Kang at a small restaurant in the seaside town. There, Lee Kang cooked and gave her ... See full summary »",
+    "description": "Lee Kang is a neurosurgeon, who once dreamed of becoming a chef. As a child, Moon Cha Young once met Lee Kang at a small restaurant in the seaside town. There, Lee Kang cooked and gave her",
     "stars": [
       "Ha Ji-Won",
       "Yoon Kyesang",
@@ -22311,7 +22705,7 @@
     "duration": "",
     "genre": "Animation, Fantasy",
     "rating": 6.6,
-    "description": "Explore the fantastic land of Gearbolt as we follow a motley crew of travelers on an unforgettable journey to reunite 2 best friends. S.A.M. is a high-end, friendship robot determined to ... See full summary »",
+    "description": "Explore the fantastic land of Gearbolt as we follow a motley crew of travelers on an unforgettable journey to reunite 2 best friends. S.A.M. is a high-end, friendship robot determined to",
     "stars": [
       "Stephanie Sheh",
       "Kenny Blank",
@@ -22471,6 +22865,21 @@
     "votes": 1200
   },
   {
+    "title": "The Oscars",
+    "year": 2020,
+    "duration": "170 min",
+    "genre": "Music",
+    "rating": 6.5,
+    "description": "The 92nd Academy Awards for film achievements in 2019 are presented by the Academy of Motion Picture Arts and Sciences.",
+    "stars": [
+      "Florence Pugh",
+      "Taika Waititi",
+      "Margot Robbie",
+      "Natalie Portman"
+    ],
+    "votes": 1194
+  },
+  {
     "title": "Baking Impossible",
     "year": 2021,
     "duration": "",
@@ -22550,7 +22959,7 @@
     "duration": "43 min",
     "genre": "Reality-TV",
     "rating": 7.1,
-    "description": "Tiny House Nation takes renovation experts John Weisbarth and Zack Giffin across America to help design and construct tiny dream homes in spaces under 500 square feet. Tiny House Nation ... See full summary »",
+    "description": "Tiny House Nation takes renovation experts John Weisbarth and Zack Giffin across America to help design and construct tiny dream homes in spaces under 500 square feet. Tiny House Nation",
     "stars": [
       "John Weisbarth",
       "Zack Giffin",
@@ -22580,7 +22989,7 @@
     "duration": "45 min",
     "genre": "Drama, Romance, Sport",
     "rating": 7.8,
-    "description": "This is a sweet love story about how a straight-A girl student with high IQ pursues a former prince charming as well as an inspirational story about a hero who comes back to regain dream ... See full summary »",
+    "description": "This is a sweet love story about how a straight-A girl student with high IQ pursues a former prince charming as well as an inspirational story about a hero who comes back to regain dream",
     "stars": [
       "Zi Yang",
       "Xian Li",
@@ -22823,7 +23232,7 @@
     "duration": "80 min",
     "genre": "Documentary, Comedy",
     "rating": 6.6,
-    "description": "Def Comedy Jam 25 celebrates the impact and legacy of the groundbreaking HBO comedy series Def Comedy Jam, which debut 25-years ago running from 1992 to 1997. Def Comedy Jam 25 celebrates ... See full summary »",
+    "description": "Def Comedy Jam 25 celebrates the impact and legacy of the groundbreaking HBO comedy series Def Comedy Jam, which debut 25-years ago running from 1992 to 1997. Def Comedy Jam 25 celebrates",
     "stars": [
       "Dave Chappelle",
       "Tiffany Haddish",
@@ -22846,6 +23255,20 @@
       "Jo Wyatt"
     ],
     "votes": 1121
+  },
+  {
+    "title": "Stay Here",
+    "year": 2018,
+    "duration": "",
+    "genre": "Reality-TV",
+    "rating": 7.5,
+    "description": "Designer Genevieve Gorder and real estate expert Peter Lorimer show property owners how to turn their short-term rentals into moneymaking showstoppers.",
+    "stars": [
+      "Genevieve Gorder",
+      "Peter Lorimer",
+      "Michelle Young"
+    ],
+    "votes": 1119
   },
   {
     "title": "Michael Che: Shame the Devil",
@@ -22935,7 +23358,7 @@
     "duration": "58 min",
     "genre": "Comedy",
     "rating": 6.9,
-    "description": "The ventriloquist, Jeff Dunham, taped his second Netflix special in his hometown of Dallas, TX in the American Airlines Center. He returns with his normal cast of characters including ... See full summary »",
+    "description": "The ventriloquist, Jeff Dunham, taped his second Netflix special in his hometown of Dallas, TX in the American Airlines Center. He returns with his normal cast of characters including",
     "stars": [
       "Jeff Dunham"
     ],
@@ -22957,6 +23380,36 @@
     "votes": 1109
   },
   {
+    "title": "The Case Against 8",
+    "year": 2014,
+    "duration": "109 min",
+    "genre": "Documentary, Biography, News",
+    "rating": 7.4,
+    "description": "A behind-the-scenes look inside the case to overturn California's ban on same-sex marriage. Shot over five years, the film follows the unlikely team that took the first federal marriage equality lawsuit to the U.S. Supreme Court.",
+    "stars": [
+      "Ted Olson",
+      "Christopher D. Dusseault",
+      "Jeffrey J. Zarrillo",
+      "Paul T. Katami"
+    ],
+    "votes": 1108
+  },
+  {
+    "title": "Cooking with Paris",
+    "year": 2021,
+    "duration": "",
+    "genre": "Reality-TV",
+    "rating": 5.3,
+    "description": "Paris Hilton can cook...kind of. And she’s turning the traditional cooking show upside down. She’s not a trained chef and she’s not trying to be.",
+    "stars": [
+      "Paris Hilton",
+      "Demi Lovato",
+      "Nikki Glaser",
+      "Kim Kardashian"
+    ],
+    "votes": 1104
+  },
+  {
     "title": "The Most Assassinated Woman in the World",
     "year": 2018,
     "duration": "102 min",
@@ -22970,6 +23423,21 @@
       "Julie Recoing"
     ],
     "votes": 1104
+  },
+  {
+    "title": "RuPaul's Drag Race Holi-Slay Spectacular",
+    "year": 2018,
+    "duration": "41 min",
+    "genre": "Reality-TV",
+    "rating": 4.8,
+    "description": "'RuPaul's Drag Race' brings back eight fan favorites to compete for the title of America's first \"Drag Race Xmas Queen.\"",
+    "stars": [
+      "RuPaul",
+      "Michelle Visage",
+      "Ross Mathews",
+      "Todrick Hall"
+    ],
+    "votes": 1103
   },
   {
     "title": "Aggressive Retsuko",
@@ -23128,7 +23596,7 @@
     "duration": "60 min",
     "genre": "Comedy, Drama",
     "rating": 7.9,
-    "description": "Chief Kim is an eccentric, flamboyant accountant genius working in the underground and trying to save up enough money to travel abroad until he accidentally gets employed by one of the most... See full summary »",
+    "description": "Chief Kim is an eccentric, flamboyant accountant genius working in the underground and trying to save up enough money to travel abroad until he accidentally gets employed by one of the most",
     "stars": [
       "Min Namkoong",
       "Sang-mi Nam",
@@ -23327,7 +23795,7 @@
     "duration": "52 min",
     "genre": "Documentary, Crime",
     "rating": 5.4,
-    "description": "Inside the Criminal Mind- a gripping exploration exposing the psychological machinations and immoral behavior that define the most nefarious criminal types. Every episode of the series ... See full summary »",
+    "description": "Inside the Criminal Mind- a gripping exploration exposing the psychological machinations and immoral behavior that define the most nefarious criminal types. Every episode of the series",
     "stars": [
       "Antonio Pedro",
       "Olina Valdmanova",
@@ -23402,7 +23870,7 @@
     "duration": "44 min",
     "genre": "Drama",
     "rating": 6,
-    "description": "In the cutthroat world of pro soccer, a club lives and dies by the stars on its under-21 team. They are the future and lifeblood of any franchise, but most will never make it. 21 THUNDER is... See full summary »",
+    "description": "In the cutthroat world of pro soccer, a club lives and dies by the stars on its under-21 team. They are the future and lifeblood of any franchise, but most will never make it. 21 THUNDER is",
     "stars": [
       "Stephanie Bennett",
       "Emmanuel Kabongo",
@@ -23440,6 +23908,21 @@
       "Azusa Babazono"
     ],
     "votes": 1024
+  },
+  {
+    "title": "Crazy Delicious",
+    "year": 2020,
+    "duration": "",
+    "genre": "Documentary, Game-Show",
+    "rating": 6.7,
+    "description": "Carla Hall, Niklas Ekstedt and Heston Blumenthal will judge as three cooks will battle it out to create the best feast.The set will be entirely edible and will contain edible blossom, chocolate soil, and a drinkable babbling brook.",
+    "stars": [
+      "Jayde Adams",
+      "Heston Blumenthal",
+      "Niklas Ekstedt",
+      "Carla Hall"
+    ],
+    "votes": 1019
   },
   {
     "title": "Playing with Fire",
@@ -23643,7 +24126,7 @@
     "duration": "",
     "genre": "Animation, Comedy, Drama",
     "rating": 8,
-    "description": "Aoi will never forget how she felt the day her high school animation club's labor of love was shown at the cultural festival. The sense of awe and the feeling of accomplishment that came ... See full summary »",
+    "description": "Aoi will never forget how she felt the day her high school animation club's labor of love was shown at the cultural festival. The sense of awe and the feeling of accomplishment that came",
     "stars": [
       "Juri Kimura",
       "Hiroyuki Yoshino",
@@ -23790,7 +24273,7 @@
     "duration": "39 min",
     "genre": "Documentary, Short",
     "rating": 7.4,
-    "description": "On 8th November, 2018, a fire broke out in California near the town of Paradise. Over the course of a few hours, the Camp Fire grew into the country's deadliest wildfire in over a century. ... See full summary »",
+    "description": "On 8th November, 2018, a fire broke out in California near the town of Paradise. Over the course of a few hours, the Camp Fire grew into the country's deadliest wildfire in over a century.",
     "stars": [
       "Joy Beeson",
       "Beth Bowersox",
@@ -23860,6 +24343,18 @@
     "votes": 967
   },
   {
+    "title": "Animals on the Loose: A You vs. Wild Movie",
+    "year": 2021,
+    "duration": "90 min",
+    "genre": "Adventure, Reality-TV",
+    "rating": 5.8,
+    "description": "The protective fence surrounding a wildlife sanctuary has mysteriously suffered a breach. Bear is called in to help rescue a mischievous baboon, track down a hungry lion, and fix the fence before any more animals get out.",
+    "stars": [
+      "Bear Grylls"
+    ],
+    "votes": 967
+  },
+  {
     "title": "Almost Happy",
     "year": 2020,
     "duration": "",
@@ -23880,7 +24375,7 @@
     "duration": "63 min",
     "genre": "Comedy, Drama, Musical",
     "rating": 8.1,
-    "description": "Exactly one year after the release of the one man show, \"Bo Burnham: Inside\" (made in one room, by one person, throughout the pandemic,) comes a series of unseen outtakes, deleted scenes, ... See full summary »",
+    "description": "Exactly one year after the release of the one man show, \"Bo Burnham: Inside\" (made in one room, by one person, throughout the pandemic,) comes a series of unseen outtakes, deleted scenes,",
     "stars": [
       "Bo Burnham",
       "David The Spider",
@@ -23979,12 +24474,27 @@
     "votes": 950
   },
   {
+    "title": "Escape the Undertaker",
+    "year": 2021,
+    "duration": "31 min",
+    "genre": "Short, Comedy, Game-Show",
+    "rating": 4.2,
+    "description": "Can The New Day survive the surprises at The Undertaker's spooky mansion? You can decide their fate!",
+    "stars": [
+      "Mark Calaway",
+      "Ettore Ewen",
+      "Kofi Kingston",
+      "Austin Watson"
+    ],
+    "votes": 949
+  },
+  {
     "title": "Historia de un clan",
     "year": 2015,
     "duration": "50 min",
     "genre": "Biography, Crime, Drama",
     "rating": 7.7,
-    "description": "The Puccio are apparently a family like any other: Archimedes, the father has a plan in hand, for which he needs the help of his family. He gathers his children to help him carry out the ... See full summary »",
+    "description": "The Puccio are apparently a family like any other: Archimedes, the father has a plan in hand, for which he needs the help of his family. He gathers his children to help him carry out the",
     "stars": [
       "Alejandro Awada",
       "Chino Darín",
@@ -24086,7 +24596,7 @@
     "duration": "",
     "genre": "Comedy, Drama, Romance",
     "rating": 7.6,
-    "description": "A well-produced, feel-good drama, Pasta is the story of Seo Yoo Kyung, who has endured the grueling job of kitchen assistant at high-class restaurant La Sfera for two years in hopes of ... See full summary »",
+    "description": "A well-produced, feel-good drama, Pasta is the story of Seo Yoo Kyung, who has endured the grueling job of kitchen assistant at high-class restaurant La Sfera for two years in hopes of",
     "stars": [
       "Kong Hyo-Jin",
       "Lee Sun-kyun",
@@ -24101,7 +24611,7 @@
     "duration": "55 min",
     "genre": "Comedy, Romance",
     "rating": 7.5,
-    "description": "Na Ae-ra (Lee Min-jung) and Cha Jung-woo (Joo Sang-wook) got married young. Ae-ra wanted to have steady life but Jung-woo business led them to lots of debt and hard work so she broke off ... See full summary »",
+    "description": "Na Ae-ra (Lee Min-jung) and Cha Jung-woo (Joo Sang-wook) got married young. Ae-ra wanted to have steady life but Jung-woo business led them to lots of debt and hard work so she broke off",
     "stars": [
       "Lee Min-Jung",
       "Sang-uk Joo",
@@ -24150,6 +24660,21 @@
       "Nico Greetham",
       "Zoë Robins",
       "Peter Adrian Sudarso"
+    ],
+    "votes": 932
+  },
+  {
+    "title": "I Am A Killer: Released",
+    "year": 2020,
+    "duration": "104 min",
+    "genre": "Documentary, Crime",
+    "rating": 5.2,
+    "description": "Three-part docuseries following Dale Wayne Sigler, a murderer, as he is released from prison after 30 years behind bars.",
+    "stars": [
+      "Dale Wayne Sigler",
+      "Carole Whitworth",
+      "Forest Allen Zeltner",
+      "John Harlan Zeltner"
     ],
     "votes": 932
   },
@@ -24303,7 +24828,7 @@
     "duration": "23 min",
     "genre": "Animation, Drama, Music",
     "rating": 7.9,
-    "description": "Since the graduation of the senior members of the club, Takezou ends up being the sole member of the \"Koto\" (traditional Japanese string instrument) club. Now that the new school year has ... See full summary »",
+    "description": "Since the graduation of the senior members of the club, Takezou ends up being the sole member of the \"Koto\" (traditional Japanese string instrument) club. Now that the new school year has",
     "stars": [
       "Amber Lee Connors",
       "Alejandro Saab",
@@ -24326,6 +24851,21 @@
       "Tôru Ohkawa"
     ],
     "votes": 914
+  },
+  {
+    "title": "71st Golden Globe Awards",
+    "year": 2014,
+    "duration": "",
+    "genre": "News",
+    "rating": 7.2,
+    "description": "The Hollywood Foreign Press Association's 71 annual event honoring excellence in film and television.",
+    "stars": [
+      "Tina Fey",
+      "Amy Poehler",
+      "Jennifer Lawrence",
+      "Jacqueline Bisset"
+    ],
+    "votes": 912
   },
   {
     "title": "Dive Club",
@@ -24573,6 +25113,21 @@
     "votes": 874
   },
   {
+    "title": "2020 Golden Globe Awards",
+    "year": 2020,
+    "duration": "134 min",
+    "genre": "Comedy",
+    "rating": 7.2,
+    "description": "Comedian Ricky Gervais brutally roasts Hollywood and exposes their hypocrisy.",
+    "stars": [
+      "Ricky Gervais",
+      "Jennifer Aniston",
+      "Reese Witherspoon",
+      "Michael Douglas"
+    ],
+    "votes": 874
+  },
+  {
     "title": "Selling Tampa",
     "year": 2021,
     "duration": "45 min",
@@ -24679,7 +25234,7 @@
     "duration": "23 min",
     "genre": "Animation, Action, Adventure",
     "rating": 6.5,
-    "description": "Yotsuya Yuusuke along with his classmates Shindou Iu and Hakozaki Kusue have been transported to a strange and unknown world inhabited by mythological creatures. As soon as they arrive, ... See full summary »",
+    "description": "Yotsuya Yuusuke along with his classmates Shindou Iu and Hakozaki Kusue have been transported to a strange and unknown world inhabited by mythological creatures. As soon as they arrive,",
     "stars": [
       "Toshiyuki Toyonaga",
       "Yûto Uemura",
@@ -24855,7 +25410,7 @@
     "duration": "65 min",
     "genre": "Drama, Romance",
     "rating": 7.6,
-    "description": "The drama revolves around a guy and a girl, who both experience a painful end to their first loves at the tender age of 15, and then meet again as adults by playing game of love hide and ... See full summary »",
+    "description": "The drama revolves around a guy and a girl, who both experience a painful end to their first loves at the tender age of 15, and then meet again as adults by playing game of love hide and",
     "stars": [
       "Yu Chun Park",
       "Yun Eun-hye",
@@ -25014,7 +25569,7 @@
     "duration": "49 min",
     "genre": "Documentary",
     "rating": 8.6,
-    "description": "The deep sea, which gets darker with increasing depth until no more sunlight penetrates at about a kilometer depth, and ever colder closer to the bottom of the ocean, covers most of the ... See full summary »",
+    "description": "The deep sea, which gets darker with increasing depth until no more sunlight penetrates at about a kilometer depth, and ever colder closer to the bottom of the ocean, covers most of the",
     "stars": [
       "David Attenborough",
       "Pierce Brosnan"
@@ -25192,7 +25747,7 @@
     "duration": "",
     "genre": "Comedy, Crime, Drama",
     "rating": 6.7,
-    "description": "Kang Pil Sung works as a detective. His instincts as a detective are excellent and he is foul-mouthed. He is both lazy and rough, but he is also soft-hearted. Hong Seo Jung has excellent ... See full summary »",
+    "description": "Kang Pil Sung works as a detective. His instincts as a detective are excellent and he is foul-mouthed. He is both lazy and rough, but he is also soft-hearted. Hong Seo Jung has excellent",
     "stars": [
       "Sae-byeok Song",
       "Han Sun Jo",
@@ -25400,7 +25955,7 @@
     "duration": "24 min",
     "genre": "Animation, Drama, Fantasy",
     "rating": 7.1,
-    "description": "Five hundred years have passed since the humans went extinct at the hands of the fearsome and mysterious 'Beasts.' The surviving races now make their homes up on floating islands in the sky... See full summary »",
+    "description": "Five hundred years have passed since the humans went extinct at the hands of the fearsome and mysterious 'Beasts.' The surviving races now make their homes up on floating islands in the sky",
     "stars": [
       "Ryôhei Arai",
       "Azusa Tadokoro",
@@ -25442,7 +25997,7 @@
     "duration": "",
     "genre": "Action, Crime, Drama",
     "rating": 8,
-    "description": "Two good friends join the underground world of drug-trafficking to make fast money and improve their lifestyles. The illegal-drug-trafficking world looks attractive to all these ... See full summary »",
+    "description": "Two good friends join the underground world of drug-trafficking to make fast money and improve their lifestyles. The illegal-drug-trafficking world looks attractive to all these",
     "stars": [
       "Jesus Chaver",
       "Vivian Ossa",
@@ -25517,7 +26072,7 @@
     "duration": "35 min",
     "genre": "Drama, Mystery, Thriller",
     "rating": 7.6,
-    "description": "Doctor Prisoner centers around an ace doctor in a university hospital's emergency care center, a skilled professional who treats his patients with full devotion and without discrimination. ... See full summary »",
+    "description": "Doctor Prisoner centers around an ace doctor in a university hospital's emergency care center, a skilled professional who treats his patients with full devotion and without discrimination.",
     "stars": [
       "Byeong-cheol Kim",
       "Min Namkoong",
@@ -25553,6 +26108,33 @@
       "Michelle Kwan"
     ],
     "votes": 770
+  },
+  {
+    "title": "Made in Mexico",
+    "year": 2018,
+    "duration": "49 min",
+    "genre": "Reality-TV",
+    "rating": 3.9,
+    "description": "Get to know the opulent lifestyles and famous families of Mexico City's socialites and the expats vying for a spot in their exclusive social order.",
+    "stars": [
+      "Carlos Giron Longoria",
+      "Chantal Trujillo",
+      "Hanna Jaff",
+      "Roby Checa"
+    ],
+    "votes": 770
+  },
+  {
+    "title": "Win the Wilderness: Alaska",
+    "year": 2020,
+    "duration": "60 min",
+    "genre": "Documentary, Adventure, Game-Show",
+    "rating": 6.9,
+    "description": "Six British couples compete to impress the current, elderly owners of a remote yet breathtaking property in Alaska. The winners will win the property deep within the Alaskan wilderness.",
+    "stars": [
+      "Nicolas Tennant"
+    ],
+    "votes": 767
   },
   {
     "title": "Selling the OC",
@@ -25620,12 +26202,27 @@
     "duration": "45 min",
     "genre": "Drama, Horror, Thriller",
     "rating": 6.4,
-    "description": "Set over a long hot summer following high school, the teens' friendships are infiltrated by the Red Rose app, which blooms on their smartphones, threatening them with dangerous consequences... See full summary »",
+    "description": "Set over a long hot summer following high school, the teens' friendships are infiltrated by the Red Rose app, which blooms on their smartphones, threatening them with dangerous consequences",
     "stars": [
       "Amelia Clarkson",
       "Natalie Blair",
       "Ellis Howard",
       "Ali Khan"
+    ],
+    "votes": 761
+  },
+  {
+    "title": "Under Suspicion: Uncovering the Wesphael Case",
+    "year": 2021,
+    "duration": "180 min",
+    "genre": "Documentary, Crime",
+    "rating": 6.3,
+    "description": "This docuseries examines the story of Belgian politician Bernard Wesphael, who was accused of murdering his wife, Véronique Pirotton, in 2013. She had been found dead in a hotel room in Ostend.",
+    "stars": [
+      "Nadine Pirotton",
+      "Bernard Sohet",
+      "Bernard Wesphael",
+      "Luc Gochel"
     ],
     "votes": 761
   },
@@ -25904,6 +26501,21 @@
     "votes": 732
   },
   {
+    "title": "Flinch",
+    "year": 2019,
+    "duration": "25 min",
+    "genre": "Game-Show",
+    "rating": 4.3,
+    "description": "Faced with various frightening and uncomfortable events, contestants in this game show had better not flinch - or they'll suffer painful consequences.",
+    "stars": [
+      "Seann Walsh",
+      "Lloyd Griffith",
+      "Desiree Burch",
+      "John McGinn"
+    ],
+    "votes": 732
+  },
+  {
     "title": "All About the Washingtons",
     "year": 2018,
     "duration": "25 min",
@@ -25939,7 +26551,7 @@
     "duration": "50 min",
     "genre": "Documentary",
     "rating": 5.2,
-    "description": "The war on terror is everywhere and anywhere. In this series, we learn about the deadly terrorist attacks that almost happened or were not as deadly as planned. Each episodes explores a ... See full summary »",
+    "description": "The war on terror is everywhere and anywhere. In this series, we learn about the deadly terrorist attacks that almost happened or were not as deadly as planned. Each episodes explores a",
     "stars": [
       "Dylan Berry",
       "Dusan Kis",
@@ -26007,6 +26619,21 @@
       "Deepak Parulekar"
     ],
     "votes": 717
+  },
+  {
+    "title": "Two Catalonias",
+    "year": 2018,
+    "duration": "116 min",
+    "genre": "Documentary, History, News",
+    "rating": 6.4,
+    "description": "A documentary that tackles the ideological conflicts surrounding the December 21 election in the country, to the push for sovereignty and subsequent parliamentary declaration of independence and the aftermath.",
+    "stars": [
+      "Luis María Anson",
+      "Inés Arrimadas",
+      "Elsa Artadi",
+      "Antoni Bassas"
+    ],
+    "votes": 716
   },
   {
     "title": "Baby Fever",
@@ -26454,6 +27081,21 @@
     "votes": 667
   },
   {
+    "title": "The 74th Annual Golden Globe Awards 2017",
+    "year": 2017,
+    "duration": "180 min",
+    "genre": "News",
+    "rating": 5.5,
+    "description": "Comic Jimmy Fallon hosts a celebration of achievements in television and film, with actors Steve Carell, Anna Kendrick, Sofía Vergara and Brie Larson presenting awards and Golden Globe",
+    "stars": [
+      "Jimmy Fallon",
+      "Nicole Kidman",
+      "Amy Adams",
+      "Sarah Paulson"
+    ],
+    "votes": 666
+  },
+  {
     "title": "Military Prosecutor Do Bae Man",
     "year": 2022,
     "duration": "",
@@ -26546,7 +27188,7 @@
     "duration": "23 min",
     "genre": "Animation, Fantasy, Romance",
     "rating": 6.9,
-    "description": "After a long and treacherous journey, our Hero finally arrives at the Dark Lady's castle only to find himself being asked for help. The Hero explains how the war that the demons have ... See full summary »",
+    "description": "After a long and treacherous journey, our Hero finally arrives at the Dark Lady's castle only to find himself being asked for help. The Hero explains how the war that the demons have",
     "stars": [
       "Yûki Kaji",
       "Hiroshi Kamiya",
@@ -26803,7 +27445,7 @@
     "duration": "29 min",
     "genre": "Comedy, Horror",
     "rating": 3.2,
-    "description": "After self-righteous rock star Jonny Splatter puts a bullet in his own head, only five people are chosen to attend the reading of Splatter's will: the manager, the shrink, the guitarist, ... See full summary »",
+    "description": "After self-righteous rock star Jonny Splatter puts a bullet in his own head, only five people are chosen to attend the reading of Splatter's will: the manager, the shrink, the guitarist,",
     "stars": [
       "Corey Feldman",
       "Tony Todd",
@@ -26813,12 +27455,27 @@
     "votes": 634
   },
   {
+    "title": "The Emperor: Owner of the Mask",
+    "year": 2017,
+    "duration": "",
+    "genre": "Drama, History, Romance",
+    "rating": 7.4,
+    "description": "Set in the 18th-century Joseon, it tells the story of Crown Prince Lee Sun and his fight against a powerful and wealthy organization Pyunsoo hwe, who controls the country behind the scenes.",
+    "stars": [
+      "Yoo Seung-ho",
+      "Kim So-Hyun",
+      "Hyun-soo Shin",
+      "Myung-Soo Kim"
+    ],
+    "votes": 633
+  },
+  {
     "title": "Pokémon Journeys: The Series",
     "year": 2019,
     "duration": "",
     "genre": "Animation, Adventure, Comedy",
     "rating": 6.9,
-    "description": "With his partner Go and his Pokémon Scorbunny in the Galar region, Ash with his Pikachu tries to capture Mew and all the Pokémon. Meanwhile, the three members of Team Rocket Jessie, James ... See full summary »",
+    "description": "With his partner Go and his Pokémon Scorbunny in the Galar region, Ash with his Pikachu tries to capture Mew and all the Pokémon. Meanwhile, the three members of Team Rocket Jessie, James",
     "stars": [
       "Ikue Ôtani",
       "Rica Matsumoto",
@@ -26945,7 +27602,7 @@
     "duration": "50 min",
     "genre": "Comedy, Romance",
     "rating": 7.7,
-    "description": "Four single people: happily divorced paralegal Lee Soo-kyung (Lee Soo-kyung), mysterious gourmand Goo Dae-young (Yoon Doo-joon), design student and former rich girl Yoon Jin-yi (Yoon So-hee... See full summary »",
+    "description": "Four single people: happily divorced paralegal Lee Soo-kyung (Lee Soo-kyung), mysterious gourmand Goo Dae-young (Yoon Doo-joon), design student and former rich girl Yoon Jin-yi (Yoon So-hee",
     "stars": [
       "Doo-Joon Yoon",
       "Hyeon-jin Seo",
@@ -27020,7 +27677,7 @@
     "duration": "",
     "genre": "Animation, Sport",
     "rating": 7.4,
-    "description": "He's short, weak, and has just transferred to a new school. Kurumatani Sora is the main character in this story who loves basketball. He has been shooting hoops ever since he was little and... See full summary »",
+    "description": "He's short, weak, and has just transferred to a new school. Kurumatani Sora is the main character in this story who loves basketball. He has been shooting hoops ever since he was little and",
     "stars": [
       "Yûki Kaji",
       "Christina Marie Kelly",
@@ -27454,7 +28111,7 @@
     "duration": "",
     "genre": "Drama",
     "rating": 7.1,
-    "description": "Set in an alternate universe, in which Korea is a constitutional monarchy in 2018, Oh Sunny is a bright and vivacious musical actress who marries the emperor. She becomes involved in the ... See full summary »",
+    "description": "Set in an alternate universe, in which Korea is a constitutional monarchy in 2018, Oh Sunny is a bright and vivacious musical actress who marries the emperor. She becomes involved in the",
     "stars": [
       "Jang Na-ra",
       "Choi Jin-Hyuk",
@@ -27523,6 +28180,21 @@
     "votes": 577
   },
   {
+    "title": "Chief of Staff",
+    "year": 2019,
+    "duration": "60 min",
+    "genre": "Drama",
+    "rating": 7.9,
+    "description": "As a chief of staff in the National Assembly, Jang Tae-jun influences power behind the scenes while pursuing his own ambitions to rise to the top.",
+    "stars": [
+      "Lee Jung-jae",
+      "Shin Min-a",
+      "Dong-jun Kim",
+      "Kim Kap-su"
+    ],
+    "votes": 576
+  },
+  {
     "title": "Followers",
     "year": 2020,
     "duration": "40 min",
@@ -27536,6 +28208,21 @@
       "Yuka Itaya"
     ],
     "votes": 576
+  },
+  {
+    "title": "Sustainable",
+    "year": 2016,
+    "duration": "92 min",
+    "genre": "Documentary, History, News",
+    "rating": 7.3,
+    "description": "America is facing a food crisis driven by profitability and a lack of consumer education. While the window to transforming our heartland continues to shrink, passionate individuals have",
+    "stars": [
+      "Marty Travis",
+      "Dan Barber",
+      "Rick Bayless",
+      "Mark Bittman"
+    ],
+    "votes": 573
   },
   {
     "title": "The Great Robbery of Brazil's Central Bank",
@@ -27720,6 +28407,21 @@
     "votes": 552
   },
   {
+    "title": "Exatlon Turkey (2020)",
+    "year": 2020,
+    "duration": "46 min",
+    "genre": "Game-Show, Reality-TV, Sport",
+    "rating": 3.9,
+    "description": "Orkun Isitmak hosts an epic sports challenge pitting Turkey's influencers against each other. Who will party - and who will be punished?",
+    "stars": [
+      "Oguzhan Ugur",
+      "Yagmur Karabal",
+      "Aleyna Sen",
+      "Uras Benlioglu"
+    ],
+    "votes": 549
+  },
+  {
     "title": "Wild Babies",
     "year": 2022,
     "duration": "30 min",
@@ -27758,6 +28460,21 @@
       "Thai Nguyen",
       "Gabriele Bertaccini",
       "Randy Caplinger"
+    ],
+    "votes": 544
+  },
+  {
+    "title": "The Crystal Calls - Making the Dark Crystal: Age of Resistance",
+    "year": 2019,
+    "duration": "82 min",
+    "genre": "Documentary",
+    "rating": 7.5,
+    "description": "The Crystal Calls: Making The Dark Crystal: Age of Resistance takes viewers behind the scenes of a new world with unprecedented access, revealing the vision, artistry and talent required to bring an entirely handcrafted universe to life.",
+    "stars": [
+      "Taron Egerton",
+      "Stephen Christy",
+      "Natalie Dormer",
+      "Jeffrey Addiss"
     ],
     "votes": 544
   },
@@ -27809,7 +28526,7 @@
     "duration": "",
     "genre": "Drama",
     "rating": 6.6,
-    "description": "In 2023 in Tokyo, Prime Minister Eiichi Higashiyama (Toru Nakamura) pushes for COMS at the World Environment Conference. COMS is a method to liquify pollutants and store it in the crack of ... See full summary »",
+    "description": "In 2023 in Tokyo, Prime Minister Eiichi Higashiyama (Toru Nakamura) pushes for COMS at the World Environment Conference. COMS is a method to liquify pollutants and store it in the crack of",
     "stars": [
       "Jun Kunimura",
       "Shun Oguri",
@@ -27853,7 +28570,7 @@
     "duration": "21 min",
     "genre": "Comedy",
     "rating": 6.6,
-    "description": "Childhood stars and friends Jodie Sweetin (Full House (1987), Christine Lakin (Step by Step (1991) and Beverley Mitchell (7th Heaven (1996) play exaggerated versions of themselves in their ... See full summary »",
+    "description": "Childhood stars and friends Jodie Sweetin (Full House (1987), Christine Lakin (Step by Step (1991) and Beverley Mitchell (7th Heaven (1996) play exaggerated versions of themselves in their",
     "stars": [
       "Beverley Mitchell",
       "Jodie Sweetin",
@@ -27881,7 +28598,7 @@
     "duration": "",
     "genre": "Family",
     "rating": 6.6,
-    "description": "Welcome to a secret world where pups learn to be a human's best friend: PUP ACADEMY. Follow three unlikely puppies - and their human friends - as they work together to discover the power of... See full summary »",
+    "description": "Welcome to a secret world where pups learn to be a human's best friend: PUP ACADEMY. Follow three unlikely puppies - and their human friends - as they work together to discover the power of",
     "stars": [
       "Christian Convery",
       "Chance Hurstfield",
@@ -27968,7 +28685,7 @@
     "duration": "31 min",
     "genre": "Comedy",
     "rating": 6.8,
-    "description": "Husband-and-wife comics Moshe Kasher and Natasha Leggero share their terror and reluctance on becoming new parents; she wonders why men are needed at this point; he recalls a story from his... See full summary »",
+    "description": "Husband-and-wife comics Moshe Kasher and Natasha Leggero share their terror and reluctance on becoming new parents; she wonders why men are needed at this point; he recalls a story from his",
     "stars": [
       "Moshe Kasher",
       "Natasha Leggero"
@@ -28071,7 +28788,7 @@
     "duration": "45 min",
     "genre": "Drama, Romance",
     "rating": 8.1,
-    "description": "Shen Ruo Xin is a thirty-something professional who decides to take a stand against unfair societal expectations At her workplace she finds herself drawn to two different men - one her ... See full summary »",
+    "description": "Shen Ruo Xin is a thirty-something professional who decides to take a stand against unfair societal expectations At her workplace she finds herself drawn to two different men - one her",
     "stars": [
       "Dylan Wang",
       "Lan Qin",
@@ -28086,7 +28803,7 @@
     "duration": "30 min",
     "genre": "Animation, Fantasy, Sci-Fi",
     "rating": 6.9,
-    "description": "When a young girl with a personality disorder meets a dragon, her life is set on a new course. To learn how to fly this dragon and work on her disorder (to accidentally say innocent things ... See full summary »",
+    "description": "When a young girl with a personality disorder meets a dragon, her life is set on a new course. To learn how to fly this dragon and work on her disorder (to accidentally say innocent things",
     "stars": [
       "Misaki Kuno",
       "Tomoyo Kurosawa",
@@ -28201,7 +28918,7 @@
     "duration": "24 min",
     "genre": "Animation, Action, Comedy",
     "rating": 7.5,
-    "description": "Humans are complex biological robots that are made up of trillion of cells, each with their own structure and function. Even a single cell cannot slack off. Scientists have come a long way ... See full summary »",
+    "description": "Humans are complex biological robots that are made up of trillion of cells, each with their own structure and function. Even a single cell cannot slack off. Scientists have come a long way",
     "stars": [
       "Allegra Clark",
       "Andrew Russell",
@@ -28238,6 +28955,19 @@
     "votes": 499
   },
   {
+    "title": "Hank: 5 Years from the Brink",
+    "year": 2013,
+    "duration": "85 min",
+    "genre": "Documentary, Biography, News",
+    "rating": 6.6,
+    "description": "For three weeks in September 2008, one person was charged with preventing the collapse of the global economy. No one understood the financial markets better than Hank Paulson, the former",
+    "stars": [
+      "Henry Paulson",
+      "Wendy Paulson"
+    ],
+    "votes": 499
+  },
+  {
     "title": "Waffles + Mochi",
     "year": 2021,
     "duration": "",
@@ -28264,6 +28994,18 @@
       "Nam Mi-Jung",
       "Taecyeon",
       "Kim Hye-Yoon"
+    ],
+    "votes": 496
+  },
+  {
+    "title": "Mr. Good: Cop or Crook?",
+    "year": 2022,
+    "duration": "200 min",
+    "genre": "Documentary, Crime",
+    "rating": 6.9,
+    "description": "In this riveting docuseries, when Norway's top cop is suspected of drug trafficking, investigators must ask: Is he a good officer or a major criminal?",
+    "stars": [
+      "Tommy Hyving"
     ],
     "votes": 496
   },
@@ -28446,7 +29188,7 @@
     "duration": "60 min",
     "genre": "Comedy",
     "rating": 7.5,
-    "description": "Veteran New York City comic Dave Attell is back with his Comedy Central stand-up special \"Road Work.\" This unique special cuts together multiple performances from Attell's past tour. From ... See full summary »",
+    "description": "Veteran New York City comic Dave Attell is back with his Comedy Central stand-up special \"Road Work.\" This unique special cuts together multiple performances from Attell's past tour. From",
     "stars": [
       "Dave Attell"
     ],
@@ -28458,7 +29200,7 @@
     "duration": "16 min",
     "genre": "Animation, Short, Comedy",
     "rating": 5.5,
-    "description": "Our team of apocalyptic survivors find themselves on a remote island. They drop their guard and the woman begin to have a much needed break while the men search for food. While waiting for ... See full summary »",
+    "description": "Our team of apocalyptic survivors find themselves on a remote island. They drop their guard and the woman begin to have a much needed break while the men search for food. While waiting for",
     "stars": [
       "ichi Suwabe, \""
     ],
@@ -28485,7 +29227,7 @@
     "duration": "12 min",
     "genre": "Animation, Short, Comedy",
     "rating": 6.6,
-    "description": "Interactive Tex Avery-inspired cartoon where the viewer answers questions with a scenario about a guard dog named Peanut protecting a priceless work of art and a cat burglar named Rowdy ... See full summary »",
+    "description": "Interactive Tex Avery-inspired cartoon where the viewer answers questions with a scenario about a guard dog named Peanut protecting a priceless work of art and a cat burglar named Rowdy",
     "stars": [
       "Alan Lee",
       "James Adomian",
@@ -28612,7 +29354,7 @@
     "duration": "26 min",
     "genre": "Animation, Action, Adventure",
     "rating": 7.2,
-    "description": "LoliRock follows the journey of young Iris, a spirited teenage girl with a beautiful voice and an unending desire to help others. When Iris joins the girl group LoliRock, her life is ... See full summary »",
+    "description": "LoliRock follows the journey of young Iris, a spirited teenage girl with a beautiful voice and an unending desire to help others. When Iris joins the girl group LoliRock, her life is",
     "stars": [
       "Kazumi Evans",
       "Kelly Sheridan",
@@ -28703,6 +29445,20 @@
       "Richard Ian Cox",
       "Ashleigh Ball",
       "Brian Drummond"
+    ],
+    "votes": 468
+  },
+  {
+    "title": "Inside the Freemasons",
+    "year": 2017,
+    "duration": "44 min",
+    "genre": "Documentary, Reality-TV",
+    "rating": 5.4,
+    "description": "With unique and unprecedented access to one of the world's oldest social networking societies this series asks who are the Freemasons and what do they do?",
+    "stars": [
+      "Peter Lowndes",
+      "Garry Hacking",
+      "Chris Noon"
     ],
     "votes": 468
   },
@@ -28858,7 +29614,7 @@
     "duration": "54 min",
     "genre": "Drama",
     "rating": 7.1,
-    "description": "The hero, nearly killed by carbon monoxide poisoning while on a solo assignment in another city, loses his memory and can no longer recognize his own family. Unconsciously, his feet carry ... See full summary »",
+    "description": "The hero, nearly killed by carbon monoxide poisoning while on a solo assignment in another city, loses his memory and can no longer recognize his own family. Unconsciously, his feet carry",
     "stars": [
       "Takuya Kimura",
       "Aya Ueto",
@@ -28960,7 +29716,7 @@
     "duration": "24 min",
     "genre": "Animation, Action, Comedy",
     "rating": 6.9,
-    "description": "Accelerator is considered the most powerful psychic in Academy City and one of a few able to shift to the level 6. He, however, now lives a peaceful life and tries to recover from the past ... See full summary »",
+    "description": "Accelerator is considered the most powerful psychic in Academy City and one of a few able to shift to the level 6. He, however, now lives a peaceful life and tries to recover from the past",
     "stars": [
       "Amber Lee Connors",
       "Brittney Karbowski",
@@ -29154,7 +29910,7 @@
     "duration": "",
     "genre": "Fantasy, Romance",
     "rating": 6.6,
-    "description": "Black Knight is a love story between a woman who is waiting for the love of her life and a man who is willing to do anything to protect his love. The story spans over two hundred years. ... See full summary »",
+    "description": "Black Knight is a love story between a woman who is waiting for the love of her life and a man who is willing to do anything to protect his love. The story spans over two hundred years.",
     "stars": [
       "Seo Ji-hye",
       "Shin Se-Kyung",
@@ -29257,7 +30013,7 @@
     "duration": "47 min",
     "genre": "Drama",
     "rating": 6.7,
-    "description": "A tight-knit and headstrong group of firefighters gets shook up by an abrupt change of leadership. After a fatal error during an intervention they come under scrutiny and have to fight for ... See full summary »",
+    "description": "A tight-knit and headstrong group of firefighters gets shook up by an abrupt change of leadership. After a fatal error during an intervention they come under scrutiny and have to fight for",
     "stars": [
       "Louis Talpe",
       "Lien De Graeve",
@@ -29521,7 +30277,7 @@
     "duration": "",
     "genre": "Documentary, Sport",
     "rating": 6.6,
-    "description": "The world's most popular sport. The biggest event on earth. The most coveted trophy. Only 8 countries have ever won it. Never before has this been covered. This Series explores each of the ... See full summary »",
+    "description": "The world's most popular sport. The biggest event on earth. The most coveted trophy. Only 8 countries have ever won it. Never before has this been covered. This Series explores each of the",
     "stars": [],
     "votes": 412
   },
@@ -29576,7 +30332,7 @@
     "duration": "24 min",
     "genre": "Animation, Action, Adventure",
     "rating": 6.2,
-    "description": "Once upon a time, there was a kingdom of fairy tales called \"Märchenland\", where many fairy tale characters live together in joy. Suddenly, the evil emperor Pierrot made an invasion on ... See full summary »",
+    "description": "Once upon a time, there was a kingdom of fairy tales called \"Märchenland\", where many fairy tale characters live together in joy. Suddenly, the evil emperor Pierrot made an invasion on",
     "stars": [
       "Misato Fukuen",
       "Marina Inoue",
@@ -29650,7 +30406,7 @@
     "duration": "",
     "genre": "Adventure, Reality-TV",
     "rating": 8.1,
-    "description": "Leon is a man with a mission. Counting solely on the kindness of strangers for food, shelter and fuel, he travels around the world on a vintage motorcycle looking for the good in humanity. ... See full summary »",
+    "description": "Leon is a man with a mission. Counting solely on the kindness of strangers for food, shelter and fuel, he travels around the world on a vintage motorcycle looking for the good in humanity.",
     "stars": [
       "Leon Logothetis"
     ],
@@ -29735,7 +30491,7 @@
     "duration": "",
     "genre": "Animation, Action, Adventure",
     "rating": 4.7,
-    "description": "The series centers around brother and sister team Juni and Carmen Cortez as they attend Spy Kids Academy, a top secret spy school for kid agents. When a new counter-spy agency threatens the... See full summary »",
+    "description": "The series centers around brother and sister team Juni and Carmen Cortez as they attend Spy Kids Academy, a top secret spy school for kid agents. When a new counter-spy agency threatens the",
     "stars": [
       "Nicholas Coombe",
       "Ashley Bornancin",
@@ -29834,7 +30590,7 @@
     "duration": "30 min",
     "genre": "Comedy",
     "rating": 7.5,
-    "description": "An Israeli police comedy. Danny Konfino is a police officer serving in a suburban police station. Although his quick temper often gets him into trouble, he is as honest as one can get and a... See full summary »",
+    "description": "An Israeli police comedy. Danny Konfino is a police officer serving in a suburban police station. Although his quick temper often gets him into trouble, he is as honest as one can get and a",
     "stars": [
       "Yuval Semo",
       "Liora Rivlin",
@@ -29849,7 +30605,7 @@
     "duration": "",
     "genre": "Action, Crime, Drama",
     "rating": 6.4,
-    "description": "Kusano has a bright future with his fancy university degree and new job. yet, it is not to be. The blood sucking financial giant which he works at goes broke and leaves him on the pavement.... See full summary »",
+    "description": "Kusano has a bright future with his fancy university degree and new job. yet, it is not to be. The blood sucking financial giant which he works at goes broke and leaves him on the pavement.",
     "stars": [
       "Yôsuke Sugino",
       "Maika Yamamoto",
@@ -29899,6 +30655,19 @@
       "Joel Kim Booster"
     ],
     "votes": 390
+  },
+  {
+    "title": "Extreme Engagement",
+    "year": 2019,
+    "duration": "",
+    "genre": "Reality-TV",
+    "rating": 5.6,
+    "description": "An engaged couple travels the world for a year to explore marriage customs in diverse cultures. Will the journey bring them closer or tear them apart?",
+    "stars": [
+      "PJ Madam",
+      "Tim Noonan"
+    ],
+    "votes": 389
   },
   {
     "title": "Sparking Joy with Marie Kondo",
@@ -29963,7 +30732,7 @@
     "duration": "11 min",
     "genre": "Animation, Short, Action",
     "rating": 6.6,
-    "description": "The series focuses on the adventures of Bumblebee; having damaged his memory chips, he and Windblade must recover his missing memories in order to help him remember his mission on Earth. ... See full summary »",
+    "description": "The series focuses on the adventures of Bumblebee; having damaged his memory chips, he and Windblade must recover his missing memories in order to help him remember his mission on Earth.",
     "stars": [
       "Jeremy Levy",
       "Jake Foushee",
@@ -29986,6 +30755,16 @@
     "votes": 376
   },
   {
+    "title": "Fire Chasers",
+    "year": 2017,
+    "duration": "",
+    "genre": "Documentary",
+    "rating": 6.6,
+    "description": "As the 2016 fire season rages in California, The brave backcountry firefighters race to put out the flames, save lives and protect homes in this docuseries.",
+    "stars": [],
+    "votes": 375
+  },
+  {
     "title": "Natalie Palamides: Nate - A One Man Show",
     "year": 2020,
     "duration": "59 min",
@@ -30003,7 +30782,7 @@
     "duration": "24 min",
     "genre": "Animation, Action, Adventure",
     "rating": 6.9,
-    "description": "\"Dear diary - I got reincarnated as a slime\". Even in another world, lives aren't always on the line. There's plenty of work to be done, from feeding the community and forging the items the... See full summary »",
+    "description": "\"Dear diary - I got reincarnated as a slime\". Even in another world, lives aren't always on the line. There's plenty of work to be done, from feeding the community and forging the items the",
     "stars": [
       "Miho Okasaki",
       "Makoto Furukawa",
@@ -30073,6 +30852,20 @@
     "votes": 371
   },
   {
+    "title": "Styling Hollywood",
+    "year": 2019,
+    "duration": "",
+    "genre": "Reality-TV",
+    "rating": 6.6,
+    "description": "Stylist and interior designer Jason Bolden and husband Adair Curtis of JSN Studio make the magic happen on the red carpet and at home for A-listers.",
+    "stars": [
+      "Melinda Elvenes",
+      "Adair Curtis",
+      "Jason Bolden"
+    ],
+    "votes": 369
+  },
+  {
     "title": "Scaredy Cats",
     "year": 2021,
     "duration": "",
@@ -30138,7 +30931,7 @@
     "duration": "",
     "genre": "Reality-TV",
     "rating": 6.5,
-    "description": "Cooked with Cannabis is a competitive cooking show where three chefs make cannabis infused meals for a chance to win $10,000. Co-hots Kelis and Leather Storrs judge the contestants with the... See full summary »",
+    "description": "Cooked with Cannabis is a competitive cooking show where three chefs make cannabis infused meals for a chance to win $10,000. Co-hots Kelis and Leather Storrs judge the contestants with the",
     "stars": [
       "Kelis",
       "Leather Storrs",
@@ -30168,7 +30961,7 @@
     "duration": "54 min",
     "genre": "Drama",
     "rating": 7.4,
-    "description": "Ishikawa Ango is a very capable detective that lives only for his job. One day, while investigating a crime scene, he gets shot in the head by the criminal that was still lurking about. ... See full summary »",
+    "description": "Ishikawa Ango is a very capable detective that lives only for his job. One day, while investigating a crime scene, he gets shot in the head by the criminal that was still lurking about.",
     "stars": [
       "Shun Oguri",
       "Munetaka Aoki",
@@ -30209,7 +31002,7 @@
     "duration": "24 min",
     "genre": "Animation, Drama, Sport",
     "rating": 6.3,
-    "description": "Ayano Hanesaki, a first-year student at Kanagawa Prefectural Kitakomachi High School, has a badminton ability able to surpass others effortlessly yet avoids playing the sport. She meets ... See full summary »",
+    "description": "Ayano Hanesaki, a first-year student at Kanagawa Prefectural Kitakomachi High School, has a badminton ability able to surpass others effortlessly yet avoids playing the sport. She meets",
     "stars": [
       "Hitomi Ôwada",
       "Miyuri Shimabukuro",
@@ -30312,7 +31105,7 @@
     "duration": "43 min",
     "genre": "Action, Crime, Drama",
     "rating": 6.1,
-    "description": "The series tells the story of a warrior from one of the poorest and most dangerous neighborhoods in Mexico City, whose beauty and nobility contrast with the gray and desolate environment in... See full summary »",
+    "description": "The series tells the story of a warrior from one of the poorest and most dangerous neighborhoods in Mexico City, whose beauty and nobility contrast with the gray and desolate environment in",
     "stars": [
       "Bárbara de Regil",
       "Sebastian Martínez",
@@ -30372,7 +31165,7 @@
     "duration": "45 min",
     "genre": "Drama",
     "rating": 6.5,
-    "description": "A War sparks with a piece of information. The programmer genius Karam El Sayed eventful youth has left him in disbelief of people and their view of the truth. To ensure the accuracy of ... See full summary »",
+    "description": "A War sparks with a piece of information. The programmer genius Karam El Sayed eventful youth has left him in disbelief of people and their view of the truth. To ensure the accuracy of",
     "stars": [
       "Maxim Khalil",
       "Abdulmohsen Alnemr",
@@ -30417,7 +31210,7 @@
     "duration": "65 min",
     "genre": "Comedy, Drama, Romance",
     "rating": 7.9,
-    "description": "Drama series follows the daily lives of a chaotic family. Moon Tae-Joo (Kim Sang-Kyung) is the second highest ranking employee at Daeoh Company. He thinks he's better than most other people... See full summary »",
+    "description": "Drama series follows the daily lives of a chaotic family. Moon Tae-Joo (Kim Sang-Kyung) is the second highest ranking employee at Daeoh Company. He thinks he's better than most other people",
     "stars": [
       "Dong-Geun Yoo",
       "Kim Hyun-joo",
@@ -30447,7 +31240,7 @@
     "duration": "46 min",
     "genre": "Documentary",
     "rating": 6.9,
-    "description": "When winter hits, the heavy recovery operators of Southern Ontario fight to clear wrecks and keep drivers moving on the busiest stretch of highway in the world. Up to 400,000 vehicles ... See full summary »",
+    "description": "When winter hits, the heavy recovery operators of Southern Ontario fight to clear wrecks and keep drivers moving on the busiest stretch of highway in the world. Up to 400,000 vehicles",
     "stars": [
       "Dave Pettitt",
       "Kerry Schmidt",
@@ -30516,7 +31309,7 @@
     "duration": "",
     "genre": "Animation, Action, Fantasy",
     "rating": 6.7,
-    "description": "In 1939 C.E., the imperialist nation of Germania invaded a neighboring country. All at once, that war spread throughout Europe, and the era was dragged into a spiral of a great war. Then, ... See full summary »",
+    "description": "In 1939 C.E., the imperialist nation of Germania invaded a neighboring country. All at once, that war spread throughout Europe, and the era was dragged into a spiral of a great war. Then,",
     "stars": [
       "Saori Hayami",
       "Amber Lee Connors",
@@ -30716,7 +31509,7 @@
     "duration": "22 min",
     "genre": "Comedy, Family",
     "rating": 3.6,
-    "description": "That Girl Lay Lay follows Lay Lay, the perfect hype girl and best friend that anyone could ever want from their personal affirmation app. Struggling to make her mark at school and needing a... See full summary »",
+    "description": "That Girl Lay Lay follows Lay Lay, the perfect hype girl and best friend that anyone could ever want from their personal affirmation app. Struggling to make her mark at school and needing a",
     "stars": [
       "Gabrielle Nevaeh Green",
       "Alaya High",
@@ -30731,7 +31524,7 @@
     "duration": "45 min",
     "genre": "Drama",
     "rating": 5.2,
-    "description": "A scout patrol stumbles upon diamonds during a camp. Torn between give them back, sharing them, or keeping them, each member questions his own morality. Meanwhile, there is a danger for the... See full summary »",
+    "description": "A scout patrol stumbles upon diamonds during a camp. Torn between give them back, sharing them, or keeping them, each member questions his own morality. Meanwhile, there is a danger for the",
     "stars": [
       "Olivia Castanho",
       "Andria Kozica",
@@ -30776,7 +31569,7 @@
     "duration": "",
     "genre": "Animation, Short, Adventure",
     "rating": 4,
-    "description": "Get ready to love your veggies! The beloved faith-based brand has a fresh new look as Bob the Tomato, Larry the Cucumber and all their Veggie friends venture off the countertop for the ... See full summary »",
+    "description": "Get ready to love your veggies! The beloved faith-based brand has a fresh new look as Bob the Tomato, Larry the Cucumber and all their Veggie friends venture off the countertop for the",
     "stars": [
       "Phil Vischer",
       "Mike Nawrocki",
@@ -30799,6 +31592,35 @@
       "Sairi Itô"
     ],
     "votes": 318
+  },
+  {
+    "title": "The 69th Primetime Emmy Awards",
+    "year": 2017,
+    "duration": "133 min",
+    "genre": "News",
+    "rating": 5.1,
+    "description": "The 69th Annual Primetime Emmy Awards will honor the best in U.S. prime time television programming from June 1, 2016 until May 31, 2017, as chosen by the Academy of Television Arts and Sciences.",
+    "stars": [
+      "Tatiana Maslany",
+      "Emmy Rossum",
+      "Claire Foy",
+      "Tessa Thompson"
+    ],
+    "votes": 318
+  },
+  {
+    "title": "Night on Earth: Shot in the Dark",
+    "year": 2020,
+    "duration": "59 min",
+    "genre": "Documentary",
+    "rating": 7.7,
+    "description": "This look behind the scenes shows how worldwide camera crews climbed, dived and froze to capture the documentary's groundbreaking night footage.\"",
+    "stars": [
+      "Alessandra Mastronardi",
+      "Beren Saat",
+      "Samira Wiley"
+    ],
+    "votes": 316
   },
   {
     "title": "Erax",
@@ -30947,7 +31769,7 @@
     "duration": "",
     "genre": "Romance",
     "rating": 7.4,
-    "description": "Based on the online Thai BL novel \"LOVE SICK: The Chaotic Lives of Blue Shorts Guys\", Phun has a girlfriend but his father wants him to date his friend's daughter. Phun's little sister, ... See full summary »",
+    "description": "Based on the online Thai BL novel \"LOVE SICK: The Chaotic Lives of Blue Shorts Guys\", Phun has a girlfriend but his father wants him to date his friend's daughter. Phun's little sister,",
     "stars": [
       "Chonlathorn Kongyingyong",
       "Nawat Phumphothingam",
@@ -31005,7 +31827,7 @@
     "duration": "",
     "genre": "Animation, Adventure, Comedy",
     "rating": 6.7,
-    "description": "Set in 2012, three years before the events of the Jurassic World movie, LEGO Jurassic World: Legend of Isla Nublar picks up where the story left off from LEGO Jurassic World: The Secret ... See full summary »",
+    "description": "Set in 2012, three years before the events of the Jurassic World movie, LEGO Jurassic World: Legend of Isla Nublar picks up where the story left off from LEGO Jurassic World: The Secret",
     "stars": [
       "Ian Hanlin",
       "Dhirendra",
@@ -31075,7 +31897,7 @@
     "duration": "",
     "genre": "Drama",
     "rating": 7.5,
-    "description": "\"Money Flower\" tells the story of people who are driven by greed. Kang Pil-Joo (Jang Hyuk) grew up at an orphanage, but he now works as a managing director of a legal team at a corporation.... See full summary »",
+    "description": "\"Money Flower\" tells the story of people who are driven by greed. Kang Pil-Joo (Jang Hyuk) grew up at an orphanage, but he now works as a managing director of a legal team at a corporation.",
     "stars": [
       "Seung-jo Jang",
       "Han So-hee",
@@ -31119,7 +31941,7 @@
     "duration": "54 min",
     "genre": "Drama",
     "rating": 7.5,
-    "description": "Can a family hope to recover after losing their mother to suicide? Keiichi Asuda serves his wife, Nagiko divorce papers after he tells her that he intends to marry his mistress. The ... See full summary »",
+    "description": "Can a family hope to recover after losing their mother to suicide? Keiichi Asuda serves his wife, Nagiko divorce papers after he tells her that he intends to marry his mistress. The",
     "stars": [
       "Nanako Matsushima",
       "Hiroki Hasegawa",
@@ -31134,7 +31956,7 @@
     "duration": "28 min",
     "genre": "Documentary",
     "rating": 6.5,
-    "description": "Ask the Doctor addresses the latest in medical treatments and the future of health care as we know it. From how to treat the common cold to the future of genetics, our medical experts ... See full summary »",
+    "description": "Ask the Doctor addresses the latest in medical treatments and the future of health care as we know it. From how to treat the common cold to the future of genetics, our medical experts",
     "stars": [
       "Shalin Naik",
       "Sandro Demaio",
@@ -31221,7 +32043,7 @@
     "duration": "21 min",
     "genre": "Animation, Action, Adventure",
     "rating": 8.5,
-    "description": "A boy accidentally becomes a MATA agent after using Infinity Retinal Intelligent System (I.R.I.S) which is a prototype device created by Meta Advance Tactical Agency (M.A.T.A). The I.R.I.S.... See full summary »",
+    "description": "A boy accidentally becomes a MATA agent after using Infinity Retinal Intelligent System (I.R.I.S) which is a prototype device created by Meta Advance Tactical Agency (M.A.T.A). The I.R.I.S.",
     "stars": [
       "Ida Rahayu",
       "Noorhayati Maslini",
@@ -31257,6 +32079,21 @@
       "Sarah Natochenny",
       "Keira Johnson",
       "Joy Salaretti"
+    ],
+    "votes": 290
+  },
+  {
+    "title": "Milk?",
+    "year": 2012,
+    "duration": "64 min",
+    "genre": "Documentary, News",
+    "rating": 5.8,
+    "description": "An inquisitive man sets out to find the facts about milk and discovers more about the growing controversy surrounding it. Throughout the journey, he is left with more and more questions",
+    "stars": [
+      "Sebastian Howard",
+      "Neal Barnard",
+      "T. Colin Campbell",
+      "Robert Cohen"
     ],
     "votes": 290
   },
@@ -31357,6 +32194,21 @@
     "votes": 286
   },
   {
+    "title": "Life of Ryan: Caretaker Manager",
+    "year": 2014,
+    "duration": "81 min",
+    "genre": "Documentary, Biography, Sport",
+    "rating": 7.2,
+    "description": "A film that follows Ryan Giggs through the 2013/14 Premiership season, as the greatest ever Manchester Utd player became the clubs manager and allowed unprecedented access behind the scenes at Old Trafford.",
+    "stars": [
+      "David Beckham",
+      "Diego Maradona",
+      "Ryan Giggs",
+      "Alex Ferguson"
+    ],
+    "votes": 285
+  },
+  {
     "title": "Takki",
     "year": 2012,
     "duration": "",
@@ -31402,6 +32254,21 @@
     "votes": 284
   },
   {
+    "title": "Argon",
+    "year": 2017,
+    "duration": "",
+    "genre": "Drama",
+    "rating": 7.3,
+    "description": "ARGON shows the struggles behind the scenes in the competitive world or daily news. Work, play, love, hate, trust and betrayal are on the headlines every episode.",
+    "stars": [
+      "Ju-hyuk Kim",
+      "Woo-hee Chun",
+      "Lee Kyung-young",
+      "Hyeon-bin Shin"
+    ],
+    "votes": 282
+  },
+  {
     "title": "Vendetta: Guerra nell'antimafia",
     "year": 2021,
     "duration": "",
@@ -31415,6 +32282,32 @@
       "Mauro Terranova"
     ],
     "votes": 281
+  },
+  {
+    "title": "The Atomic States of America",
+    "year": 2012,
+    "duration": "95 min",
+    "genre": "Documentary, History, News",
+    "rating": 6.3,
+    "description": "A documentary on growing up in Shirley, Long Island -- a nuclear-reactor community.",
+    "stars": [
+      "Michelle Catts",
+      "Kelly McMasters"
+    ],
+    "votes": 281
+  },
+  {
+    "title": "Cabins in the Wild with Dick Strawbridge",
+    "year": 2017,
+    "duration": "",
+    "genre": "Reality-TV",
+    "rating": 6.7,
+    "description": "Dick Strawbridge and Will Hardie follow a competition to build a portable pop-up hotel in the wild comprised of eight stunning and unique themed cabins.",
+    "stars": [
+      "William Hardie",
+      "Dick Strawbridge"
+    ],
+    "votes": 279
   },
   {
     "title": "What the Love! with Karan Johar",
@@ -31485,6 +32378,20 @@
       "Hyun-Jung Go",
       "Hyeon-bin Shin",
       "Su-an Kim"
+    ],
+    "votes": 274
+  },
+  {
+    "title": "Capital C",
+    "year": 2014,
+    "duration": "87 min",
+    "genre": "Documentary, News",
+    "rating": 6.7,
+    "description": "CAPITAL C is the first documentary about crowdfunding. It follows the hopes and dreams as well as the fears and pitfalls of a whole new generation of independent creators, who reach out to the crowd in order to change their lives forever.",
+    "stars": [
+      "Zach Crain",
+      "Brian Fargo",
+      "Jackson Robinson"
     ],
     "votes": 274
   },
@@ -31609,6 +32516,20 @@
     "votes": 264
   },
   {
+    "title": "Derren Brown: Infamous",
+    "year": 2014,
+    "duration": "71 min",
+    "genre": "Reality-TV",
+    "rating": 7.5,
+    "description": "Derren Brown's sixth live stage show which toured the U.K. in 2013-2014.",
+    "stars": [
+      "Carl Barma",
+      "Derren Brown",
+      "Benjayx Murphy"
+    ],
+    "votes": 263
+  },
+  {
     "title": "King of Boys: The Return of the King",
     "year": 2021,
     "duration": "439 min",
@@ -31650,6 +32571,21 @@
       "Henry Koperski"
     ],
     "votes": 261
+  },
+  {
+    "title": "13 Reasons Why: Season 2 Date Announcement Commercial",
+    "year": 2018,
+    "duration": "1 min",
+    "genre": "Short, Drama",
+    "rating": 7.2,
+    "description": "Add a Plot",
+    "stars": [
+      "Alisha Boe",
+      "Tommy Dorfman",
+      "Katherine Langford",
+      "Derek Luke"
+    ],
+    "votes": 260
   },
   {
     "title": "Hozuki's Coolheadedness",
@@ -31735,7 +32671,7 @@
     "duration": "",
     "genre": "Documentary",
     "rating": 6.1,
-    "description": "Regarded as the nations best, Bethune-Cookman University's marching band always has a lot at stake. In Stage 13 Original MARCHING ORDERS, meet the incoming class trying to keep the legacy ... See full summary »",
+    "description": "Regarded as the nations best, Bethune-Cookman University's marching band always has a lot at stake. In Stage 13 Original MARCHING ORDERS, meet the incoming class trying to keep the legacy",
     "stars": [],
     "votes": 257
   },
@@ -31745,7 +32681,7 @@
     "duration": "54 min",
     "genre": "Comedy",
     "rating": 6.8,
-    "description": "One day, the current prime minister of Japan, Muto Taizan, and his useless son, Sho, suddenly discover that they have switched bodies. With no known cause or solution at hand, Sho ... See full summary »",
+    "description": "One day, the current prime minister of Japan, Muto Taizan, and his useless son, Sho, suddenly discover that they have switched bodies. With no known cause or solution at hand, Sho",
     "stars": [
       "ichi Endô, \""
     ],
@@ -31784,7 +32720,7 @@
     "duration": "45 min",
     "genre": "Drama, Musical",
     "rating": 7.2,
-    "description": "The inspiring and poignant story will follow in the footsteps of Jenni Rivera towards a dream of fame; An autobiographical journey from birth, based on her book \"Unbreakable\", as well as ... See full summary »",
+    "description": "The inspiring and poignant story will follow in the footsteps of Jenni Rivera towards a dream of fame; An autobiographical journey from birth, based on her book \"Unbreakable\", as well as",
     "stars": [
       "Gabriel Porras",
       "Rosalinda Rodríguez",
@@ -31863,6 +32799,20 @@
     "votes": 240
   },
   {
+    "title": "Honor Diaries",
+    "year": 2013,
+    "duration": "61 min",
+    "genre": "Documentary, Crime, News",
+    "rating": 7.8,
+    "description": "Several Muslim women activists discuss their stories and the state of women's rights in Muslim-majority nations.",
+    "stars": [
+      "Raheel Raza",
+      "Raquel Evita Saraswati",
+      "Juliana Taimoorazy"
+    ],
+    "votes": 239
+  },
+  {
     "title": "Patton Oswalt: We All Scream",
     "year": 2022,
     "duration": "58 min",
@@ -31917,6 +32867,21 @@
     "votes": 237
   },
   {
+    "title": "A Final Cut for Orson: 40 Years in the Making",
+    "year": 2018,
+    "duration": "38 min",
+    "genre": "Documentary, Short",
+    "rating": 7.2,
+    "description": "A glimpse behind the scenes into the complicated process of recovering and completing the final film of legendary director Orson Welles.",
+    "stars": [
+      "Frank Marshall",
+      "Peter Bogdanovich",
+      "Filip Jan Rymsza",
+      "Ruth Hasty"
+    ],
+    "votes": 236
+  },
+  {
     "title": "Bakugan: Battle Planet",
     "year": 2018,
     "duration": "24 min",
@@ -31937,7 +32902,7 @@
     "duration": "60 min",
     "genre": "Reality-TV",
     "rating": 6.4,
-    "description": "This season of My Fair Wedding gives viewers an up close look into David Tutera's world unlike anything we've seen on the show before. We're peeling back the veil and letting fans see the ... See full summary »",
+    "description": "This season of My Fair Wedding gives viewers an up close look into David Tutera's world unlike anything we've seen on the show before. We're peeling back the veil and letting fans see the",
     "stars": [
       "David Tutera",
       "Sarah Lafleur",
@@ -31952,7 +32917,7 @@
     "duration": "24 min",
     "genre": "Animation, Comedy, Drama",
     "rating": 6.8,
-    "description": "Fujito Chiyuki has a dream: to become a Paris Collection model. The problem is, she's too short to be a model, and everyone around her tells her so. But no matter what they say, she won't ... See full summary »",
+    "description": "Fujito Chiyuki has a dream: to become a Paris Collection model. The problem is, she's too short to be a model, and everyone around her tells her so. But no matter what they say, she won't",
     "stars": [
       "Natsuki Hanae",
       "Yumiri Hanamori",
@@ -32036,7 +33001,7 @@
     "duration": "45 min",
     "genre": "Drama, Romance",
     "rating": 7.7,
-    "description": "A love story between an accomplished career woman and a younger man. He Fan Xing's company is at risk of being acquired while her relationship with Yuan Song faces societal pressures due to... See full summary »",
+    "description": "A love story between an accomplished career woman and a younger man. He Fan Xing's company is at risk of being acquired while her relationship with Yuan Song faces societal pressures due to",
     "stars": [
       "Victoria Song",
       "Weilong Song",
@@ -32081,7 +33046,7 @@
     "duration": "40 min",
     "genre": "Reality-TV",
     "rating": 6.6,
-    "description": "While this Japanese reality dating show borrows heavily from American and British staples such as Love Island, Paradise Hotel, and Bachelor in Paradise, the would-be lovers also possess \"... See full summary »",
+    "description": "While this Japanese reality dating show borrows heavily from American and British staples such as Love Island, Paradise Hotel, and Bachelor in Paradise, the would-be lovers also possess \"",
     "stars": [
       "Mari Yaguchi",
       "Atsushi Tamura"
@@ -32194,7 +33159,7 @@
     "duration": "",
     "genre": "Comedy",
     "rating": 7,
-    "description": "Yang Jung Kook is a veteran conman, but he has never been arrested. One day, his girlfriend suddenly runs off with the money they were going to use for their marriage. Yang Jung Kook is ... See full summary »",
+    "description": "Yang Jung Kook is a veteran conman, but he has never been arrested. One day, his girlfriend suddenly runs off with the money they were going to use for their marriage. Yang Jung Kook is",
     "stars": [
       "Min-Jung Kim",
       "Si Won Choi",
@@ -32291,7 +33256,7 @@
     "duration": "44 min",
     "genre": "Documentary, History",
     "rating": 6.3,
-    "description": "Dinosaurs were the ultimate prehistoric survival machines, ruling the earth for 120 Million years. Until now we've seen them as skeletons and robotic models. Dino Body takes a new look at ... See full summary »",
+    "description": "Dinosaurs were the ultimate prehistoric survival machines, ruling the earth for 120 Million years. Until now we've seen them as skeletons and robotic models. Dino Body takes a new look at",
     "stars": [
       "Jason Hildebrandt",
       "Robert Bakker",
@@ -32335,7 +33300,7 @@
     "duration": "70 min",
     "genre": "Comedy, Drama, Family",
     "rating": 6.4,
-    "description": "Lee Young Kook is a widower with three children. He decides to hire Park Dan Dan as a live-in tutor for his kids and he becomes attracted to her despite the age difference. Probably because... See full summary »",
+    "description": "Lee Young Kook is a widower with three children. He decides to hire Park Dan Dan as a live-in tutor for his kids and he becomes attracted to her despite the age difference. Probably because",
     "stars": [
       "Garrison Michael Farquharson-Keener",
       "Lee Se-Hee",
@@ -32560,7 +33525,7 @@
     "duration": "45 min",
     "genre": "Drama, Romance",
     "rating": 7,
-    "description": "Irene, the lead singer of the market place band 'Los Milagrosos', meets Joaquin the mechanic, when he arrives in the city carrying nothing but the clothes he is wearing. As they fight for ... See full summary »",
+    "description": "Irene, the lead singer of the market place band 'Los Milagrosos', meets Joaquin the mechanic, when he arrives in the city carrying nothing but the clothes he is wearing. As they fight for",
     "stars": [
       "Vilma Vera",
       "Alex Paez",
@@ -32650,7 +33615,7 @@
     "duration": "75 min",
     "genre": "Drama",
     "rating": 7.7,
-    "description": "Black Dog is about a story of a young woman who gets a short-term teaching position and does her best to fight for students' dreams in school. The drama will take a deep look into the lives... See full summary »",
+    "description": "Black Dog is about a story of a young woman who gets a short-term teaching position and does her best to fight for students' dreams in school. The drama will take a deep look into the lives",
     "stars": [
       "Hyeon-jin Seo",
       "Ra Mi-ran",
@@ -32828,7 +33793,7 @@
     "duration": "54 min",
     "genre": "Comedy",
     "rating": 6.8,
-    "description": "30-year-old Kamata Rinko is single and a struggling scriptwriter. She has no boyfriend and keeps having night outs at drinking spots with her girlfriends Kaori and Koyuki. \"If I become ... See full summary »",
+    "description": "30-year-old Kamata Rinko is single and a struggling scriptwriter. She has no boyfriend and keeps having night outs at drinking spots with her girlfriends Kaori and Koyuki. \"If I become",
     "stars": [
       "Yuriko Yoshitaka",
       "Nana Eikura",
@@ -32843,7 +33808,7 @@
     "duration": "2 min",
     "genre": "Animation, Short, Comedy",
     "rating": 6.3,
-    "description": "Meet Blues Jake, Jay and Jim, rambunctious bluebird triplets with big ideas that wildly succeed or hilariously fail. But no matter what happens, this fun feathered trio ALWAYS bounces back ... See full summary »",
+    "description": "Meet Blues Jake, Jay and Jim, rambunctious bluebird triplets with big ideas that wildly succeed or hilariously fail. But no matter what happens, this fun feathered trio ALWAYS bounces back",
     "stars": [],
     "votes": 187
   },
@@ -32883,7 +33848,7 @@
     "duration": "50 min",
     "genre": "Drama, History",
     "rating": 6.4,
-    "description": "This is the story of Catalina, the indigenous woman who gave away her soul, her heart and her life to a conqueror. \"The Queen and the Conqueror\" rebuilds one of the first love stories that ... See full summary »",
+    "description": "This is the story of Catalina, the indigenous woman who gave away her soul, her heart and her life to a conqueror. \"The Queen and the Conqueror\" rebuilds one of the first love stories that",
     "stars": [
       "Emmanuel Esparza",
       "Essined Aponte",
@@ -32940,7 +33905,7 @@
     "duration": "22 min",
     "genre": "Animation",
     "rating": 6.5,
-    "description": "Four curious young dinosaur friends explore the mystery of Gigantosaurus, the largest, fiercest dinosaur of all, as they face their individual fears and work together to solve problems ... See full summary »",
+    "description": "Four curious young dinosaur friends explore the mystery of Gigantosaurus, the largest, fiercest dinosaur of all, as they face their individual fears and work together to solve problems",
     "stars": [
       "Dylan Schombing",
       "Áine Sunderland",
@@ -32955,7 +33920,7 @@
     "duration": "60 min",
     "genre": "Drama",
     "rating": 6.9,
-    "description": "The friendship, motherhood, and growth of five mothers. Each of them have their own issues that they could not overcome. They who had come to think of themselves only as \"mother,\" will ... See full summary »",
+    "description": "The friendship, motherhood, and growth of five mothers. Each of them have their own issues that they could not overcome. They who had come to think of themselves only as \"mother,\" will",
     "stars": [
       "Laura Fitch Yang",
       "Yo-won Lee",
@@ -33134,7 +34099,7 @@
     "duration": "23 min",
     "genre": "Animation, Comedy",
     "rating": 6.2,
-    "description": "Takanashi Misha is a second grade elementary school girl whose father is Japanese and mother was Russian. After she lost her mother at an early age, she has lived alone with her father. One... See full summary »",
+    "description": "Takanashi Misha is a second grade elementary school girl whose father is Japanese and mother was Russian. After she lost her mother at an early age, she has lived alone with her father. One",
     "stars": [
       "Haruka Shiraishi",
       "Manami Numakura",
@@ -33297,7 +34262,7 @@
     "duration": "",
     "genre": "Drama",
     "rating": 5.5,
-    "description": "The show follows an ambitious young Arab female lawyer who got her law degree in the US and instead of joining her father's law firm back at home (UAE) she decides to go out on her own as a... See full summary »",
+    "description": "The show follows an ambitious young Arab female lawyer who got her law degree in the US and instead of joining her father's law firm back at home (UAE) she decides to go out on her own as a",
     "stars": [
       "Mansoor Al-Fili",
       "Fatima Al Taei",
@@ -33340,7 +34305,7 @@
     "duration": "",
     "genre": "Drama, History, Romance",
     "rating": 6.8,
-    "description": "Ma Fuya is a princess of the Chu state in 10th-century China. In this time of warring kingdoms and political upheaval, Fuya's uncle usurps the throne, and brutally wipes out her family. ... See full summary »",
+    "description": "Ma Fuya is a princess of the Chu state in 10th-century China. In this time of warring kingdoms and political upheaval, Fuya's uncle usurps the throne, and brutally wipes out her family.",
     "stars": [
       "Ruby Lin",
       "Yikuan Yan",
@@ -33380,7 +34345,7 @@
     "duration": "60 min",
     "genre": "Comedy, Drama, Romance",
     "rating": 4.3,
-    "description": "Centered around 3 couples lives in Argentina as they deal with life, personal problems, and each other. Three boys work in the same office and each of their girlfriends end up becoming ... See full summary »",
+    "description": "Centered around 3 couples lives in Argentina as they deal with life, personal problems, and each other. Three boys work in the same office and each of their girlfriends end up becoming",
     "stars": [
       "Laura Laprida",
       "Johanna Francella",
@@ -33425,7 +34390,7 @@
     "duration": "25 min",
     "genre": "Comedy, Drama, History",
     "rating": 7.8,
-    "description": "The well known folklore characters, Akbar and Birbal have been extremely popular with the kids for their combined wit and wisdom. The show is a fresh, comic take on the relation between ... See full summary »",
+    "description": "The well known folklore characters, Akbar and Birbal have been extremely popular with the kids for their combined wit and wisdom. The show is a fresh, comic take on the relation between",
     "stars": [
       "Kiku Sharda",
       "Vishal Kotian",
@@ -33512,7 +34477,7 @@
     "duration": "11 min",
     "genre": "Animation, Comedy, Family",
     "rating": 5.3,
-    "description": "In a big city where various vehicles are happily living together, our little bus Tayo has just started learning his route in the city. There is lots more to learn for Tayo. Tayo and his ... See full summary »",
+    "description": "In a big city where various vehicles are happily living together, our little bus Tayo has just started learning his route in the city. There is lots more to learn for Tayo. Tayo and his",
     "stars": [
       "Patricia Kalis",
       "Jul Kohler",
@@ -33554,7 +34519,7 @@
     "duration": "",
     "genre": "Romance",
     "rating": 8.4,
-    "description": "Taohu is a giant white teddy bear and has been Nat's object of comfort for ten years. However, he isn't an ordinary teddy bear, he has the ability to communicate with other objects and ... See full summary »",
+    "description": "Taohu is a giant white teddy bear and has been Nat's object of comfort for ten years. However, he isn't an ordinary teddy bear, he has the ability to communicate with other objects and",
     "stars": [
       "Job Thuchapon",
       "Sarin Inpitar Ronnakiat"
@@ -34001,7 +34966,7 @@
     "duration": "46 min",
     "genre": "Drama",
     "rating": 7.8,
-    "description": "This is the story of \"La Chiqui\", the youngest daughter of a family of truckers. In this universe of trucks, where macho men, popular music, and roadside love stories rule, \"La Chiqui\" gets... See full summary »",
+    "description": "This is the story of \"La Chiqui\", the youngest daughter of a family of truckers. In this universe of trucks, where macho men, popular music, and roadside love stories rule, \"La Chiqui\" gets",
     "stars": [
       "Juan Manuel Restrepo",
       "Linda Lucía Callejas",
@@ -34112,7 +35077,7 @@
     "duration": "",
     "genre": "Drama",
     "rating": 6.2,
-    "description": "Three Japanese men in their thirties and forties are professionals working in law, dentistry and banking. The friends are trusting of one another and enjoy each others' fellowship. Aside ... See full summary »",
+    "description": "Three Japanese men in their thirties and forties are professionals working in law, dentistry and banking. The friends are trusting of one another and enjoy each others' fellowship. Aside",
     "stars": [
       "Mayu Miyamoto",
       "Lisa Naitô",
@@ -34171,7 +35136,7 @@
     "duration": "60 min",
     "genre": "Documentary, Music",
     "rating": 6.1,
-    "description": "Pink breaks the mold once again, bringing her career to a new level in 2013 with a world tour that entertains unlike ever before! Get inside access to \"the girl who got the party started\" ... See full summary »",
+    "description": "Pink breaks the mold once again, bringing her career to a new level in 2013 with a world tour that entertains unlike ever before! Get inside access to \"the girl who got the party started\"",
     "stars": [
       "Adele",
       "Christina Aguilera",
@@ -34191,6 +35156,21 @@
       "Dieter Truppel"
     ],
     "votes": 134
+  },
+  {
+    "title": "The Apprentice: ONE Championship Edition",
+    "year": 2021,
+    "duration": "",
+    "genre": "Reality-TV",
+    "rating": 7.5,
+    "description": "Sixteen candidates from all over the world compete in a high-stakes game involving business and physical challenges for a chance to become One Championship Chairman and CEO Chatri Sityodtong's protégé.",
+    "stars": [
+      "Chatri Sityodtong",
+      "Dominic Lau",
+      "Justin Bratton",
+      "Yumika Hoskin"
+    ],
+    "votes": 133
   },
   {
     "title": "The Witcher Bestiary",
@@ -34243,12 +35223,22 @@
     "votes": 131
   },
   {
+    "title": "Master of None: Season 1 Electronic Press Kit",
+    "year": 2015,
+    "duration": "",
+    "genre": "Comedy",
+    "rating": 7.7,
+    "description": "Add a Plot",
+    "stars": [],
+    "votes": 130
+  },
+  {
     "title": "The Gymnastics Samurai",
     "year": 2020,
     "duration": "",
     "genre": "Animation, Drama, Sport",
     "rating": 7.1,
-    "description": "Year 2002. Japan's gymnastics world was once strong. Former Japanese representative Shoutarou Aragaki (29), who devoted his time to gymnastics, was unable to perform as expected. Even so, ... See full summary »",
+    "description": "Year 2002. Japan's gymnastics world was once strong. Former Japanese representative Shoutarou Aragaki (29), who devoted his time to gymnastics, was unable to perform as expected. Even so,",
     "stars": [
       "Jill Harris",
       "Christopher Wehkamp",
@@ -34263,7 +35253,7 @@
     "duration": "43 min",
     "genre": "Comedy, Drama, Music",
     "rating": 6.7,
-    "description": "Season 1: El Vato and his friends land in Beverly Hills with a juicy contract signed with the prestigious record company of Regional Mexican Music (RMM) Principe Records. Nevertheless, when... See full summary »",
+    "description": "Season 1: El Vato and his friends land in Beverly Hills with a juicy contract signed with the prestigious record company of Regional Mexican Music (RMM) Principe Records. Nevertheless, when",
     "stars": [
       "El Dasa",
       "Cristina Rodlo",
@@ -34278,7 +35268,7 @@
     "duration": "22 min",
     "genre": "Animation, Adventure, Comedy",
     "rating": 5.9,
-    "description": "Polly is often told she is \"TOO LITTLE\" to do the things she wants to do, but Polly proves what every kid knows - that being little isn't a limitation; IT'S HER GREATEST STRENGTH. When ... See full summary »",
+    "description": "Polly is often told she is \"TOO LITTLE\" to do the things she wants to do, but Polly proves what every kid knows - that being little isn't a limitation; IT'S HER GREATEST STRENGTH. When",
     "stars": [
       "Emily Tennant",
       "Shannon Chan-Kent",
@@ -34494,7 +35484,7 @@
     "duration": "7 min",
     "genre": "Animation, Comedy, Family",
     "rating": 7.4,
-    "description": "Who says the world works the way grown ups think it should? Things can always be different if you just imagine. Monty is a spirited boy of six, with a vivid imagination and his best friend ... See full summary »",
+    "description": "Who says the world works the way grown ups think it should? Things can always be different if you just imagine. Monty is a spirited boy of six, with a vivid imagination and his best friend",
     "stars": [
       "Teresa Gallagher",
       "Reece Pockney",
@@ -34589,6 +35579,21 @@
     "votes": 120
   },
   {
+    "title": "The Big Fat Quiz of the Year",
+    "year": 2021,
+    "duration": "92 min",
+    "genre": "Comedy, Game-Show",
+    "rating": 6.8,
+    "description": "Jimmy Carr host's the annual quiz of the year. Participants for this year include Sarah Millican, James Acaster, Jonathan Ross, Judi Love and Guz Khan. A host of celebrities also cameo to ask their own questions.",
+    "stars": [
+      "Jimmy Carr",
+      "James Acaster",
+      "Guz Khan",
+      "Judi Love"
+    ],
+    "votes": 120
+  },
+  {
     "title": "Lego Friends: Girls on A Mission",
     "year": 2018,
     "duration": "11 min",
@@ -34667,7 +35672,7 @@
     "duration": "",
     "genre": "Drama",
     "rating": 6.3,
-    "description": "Meet Zuri. She's living a fabulous life. Great car, gorgeous apartment, well paid job. Meet Zuri. Broken down car, an apartment she cant afford, a job she's about to lose. What's a broke ... See full summary »",
+    "description": "Meet Zuri. She's living a fabulous life. Great car, gorgeous apartment, well paid job. Meet Zuri. Broken down car, an apartment she cant afford, a job she's about to lose. What's a broke",
     "stars": [
       "Osas Ighodaro",
       "Ini Dima Okojie",
@@ -34832,6 +35837,21 @@
     "votes": 112
   },
   {
+    "title": "DeMarcus Family Rules",
+    "year": 2020,
+    "duration": "",
+    "genre": "Reality-TV",
+    "rating": 6.4,
+    "description": "Rascal Flatts bassist Jay DeMarcus and ex-beauty queen Allison DeMarcus write their own rules for juggling family and fun in this reality show.",
+    "stars": [
+      "Allison DeMarcus",
+      "Jay DeMarcus",
+      "Paige Dennis",
+      "Jane Alderson"
+    ],
+    "votes": 112
+  },
+  {
     "title": "Spirit Riding Free: Riding Academy",
     "year": 2020,
     "duration": "",
@@ -34864,7 +35884,7 @@
     "duration": "6 min",
     "genre": "Animation",
     "rating": 7.2,
-    "description": "Stella - the fierce and feisty bird from Angry Birds - joins her best friends Dahlia, Poppy, Willow and Luca for some fun new adventures! Together they explore, create, rock out and laugh..... See full summary »",
+    "description": "Stella - the fierce and feisty bird from Angry Birds - joins her best friends Dahlia, Poppy, Willow and Luca for some fun new adventures! Together they explore, create, rock out and laugh..",
     "stars": [
       "Heljä Heikkinen",
       "Saara Lehtonen",
@@ -34952,7 +35972,7 @@
     "duration": "",
     "genre": "Romance",
     "rating": 7,
-    "description": "Tsugumi Kawana becomes an office lady who works at an interior design firm. She is young, excited and single. Coincidence brings her back in the company of her early high school crush ... See full summary »",
+    "description": "Tsugumi Kawana becomes an office lady who works at an interior design firm. She is young, excited and single. Coincidence brings her back in the company of her early high school crush",
     "stars": [
       "Mizuki Yamamoto",
       "Tôri Matsuzaka",
@@ -34977,6 +35997,19 @@
     "votes": 105
   },
   {
+    "title": "Behind the Scenes with Jane Campion",
+    "year": 2022,
+    "duration": "17 min",
+    "genre": "Documentary, Short",
+    "rating": 6.5,
+    "description": "A rare glimpse into the creative process of Academy Award-winning filmmaker Jane Campion as she shares her memories of making \"The Power of the Dog.\"",
+    "stars": [
+      "Prisca Bouchet",
+      "Nick Mayow"
+    ],
+    "votes": 105
+  },
+  {
     "title": "Once Upon a Small Town",
     "year": 2022,
     "duration": "",
@@ -34997,7 +36030,7 @@
     "duration": "",
     "genre": "Drama",
     "rating": 7.5,
-    "description": "The Governor\" is the riveting tale of Angela Ochello, the Deputy Governor of Savannah State, who with no governorship ambitions finds herself suddenly entangled in a web of political ... See full summary »",
+    "description": "The Governor\" is the riveting tale of Angela Ochello, the Deputy Governor of Savannah State, who with no governorship ambitions finds herself suddenly entangled in a web of political",
     "stars": [
       "Caroline Chikezie",
       "Samuel Abiola Robinson",
@@ -35069,7 +36102,7 @@
     "duration": "",
     "genre": "Comedy, Crime, Drama",
     "rating": 7.8,
-    "description": "\"The Good Bandit\" introduces the new narco-comedy genre that, for the first time, presents a drug lord who repents of the choices he has made, willing to change his life away from the ... See full summary »",
+    "description": "\"The Good Bandit\" introduces the new narco-comedy genre that, for the first time, presents a drug lord who repents of the choices he has made, willing to change his life away from the",
     "stars": [
       "Ana María Arango",
       "Katherine Porto",
@@ -35171,7 +36204,7 @@
     "duration": "7 min",
     "genre": "Animation, Family",
     "rating": 8,
-    "description": "Cleo & Cuquin follows the adventures of Cleo, Cuquin, and their siblings. They will resolve minor conflicts by playing at being something: gardener, astronaut... at the end of each chapter,... See full summary »",
+    "description": "Cleo & Cuquin follows the adventures of Cleo, Cuquin, and their siblings. They will resolve minor conflicts by playing at being something: gardener, astronaut... at the end of each chapter,",
     "stars": [
       "Kenna Pickard",
       "Ruben Ray",
@@ -35216,7 +36249,7 @@
     "duration": "45 min",
     "genre": "Drama",
     "rating": 7.3,
-    "description": "Nao Yoshino is a girl who fails the entrance exams of her target high school. She winds up enrolling in a technical high school called Kenritsu Asuka Kougyou Koukou, also known by the ... See full summary »",
+    "description": "Nao Yoshino is a girl who fails the entrance exams of her target high school. She winds up enrolling in a technical high school called Kenritsu Asuka Kougyou Koukou, also known by the",
     "stars": [
       "Emi Takei",
       "Tôri Matsuzaka",
@@ -35306,7 +36339,7 @@
     "duration": "23 min",
     "genre": "Animation, Fantasy",
     "rating": 5.5,
-    "description": "When the two girls meet, magic begins. Hazuki Kagimura loves stories, an orthodox girl who is overly imaginative. Because her relationship with her new family does not go well, the ... See full summary »",
+    "description": "When the two girls meet, magic begins. Hazuki Kagimura loves stories, an orthodox girl who is overly imaginative. Because her relationship with her new family does not go well, the",
     "stars": [
       "Tomori Kusunoki",
       "Lynn",
@@ -35314,6 +36347,21 @@
       "Hikaru Akao"
     ],
     "votes": 98
+  },
+  {
+    "title": "2006 Independent Spirit Awards",
+    "year": 2006,
+    "duration": "109 min",
+    "genre": "",
+    "rating": 6.5,
+    "description": "Add a Plot",
+    "stars": [
+      "Sarah Silverman",
+      "Hany Abu-Assad",
+      "Amy Adams",
+      "Shohreh Aghdashloo"
+    ],
+    "votes": 97
   },
   {
     "title": "Robozuna",
@@ -35373,6 +36421,33 @@
     "votes": 95
   },
   {
+    "title": "Ugly Duckling Series: Don't",
+    "year": 2015,
+    "duration": "50 min",
+    "genre": "Drama, Romance",
+    "rating": 8.1,
+    "description": "After confessing her love in elementary school to her crush, Maewnam is literally crushed when he rejects her in front of all his friends. He calls her ugly and it's at that moment that she",
+    "stars": [
+      "Korapat Kirdpan",
+      "Puttichai Kasetsin",
+      "Jirakit Thawornwong",
+      "Wiraporn Jiravechsoontornkul"
+    ],
+    "votes": 94
+  },
+  {
+    "title": "Wet Hot American Summer: First Day of Camp - Featurette",
+    "year": 2015,
+    "duration": "",
+    "genre": "Documentary, Short",
+    "rating": 7.9,
+    "description": "Add a Plot",
+    "stars": [
+      "Josh Oreck"
+    ],
+    "votes": 93
+  },
+  {
     "title": "Robot Trains",
     "year": 2017,
     "duration": "14 min",
@@ -35414,6 +36489,21 @@
       "Dean Petriw",
       "Terry Klassen",
       "Sam Vincent"
+    ],
+    "votes": 92
+  },
+  {
+    "title": "The 21st Annual Screen Actors Guild Awards",
+    "year": 2015,
+    "duration": "",
+    "genre": "News",
+    "rating": 6.6,
+    "description": "Add a Plot",
+    "stars": [
+      "Robert Duvall",
+      "Mahershala Ali",
+      "Uzo Aduba",
+      "Jennifer Aniston"
     ],
     "votes": 92
   },
@@ -35467,7 +36557,7 @@
     "duration": "50 min",
     "genre": "Action, Comedy, Drama",
     "rating": 5.6,
-    "description": "Wang Da Dong (Jiro Wang), a student at Ba Le High School, leads a group of delinquents who possess special powers that are ranked according to their \"battle level\" on the \"KO chart.\" Wang ... See full summary »",
+    "description": "Wang Da Dong (Jiro Wang), a student at Ba Le High School, leads a group of delinquents who possess special powers that are ranked according to their \"battle level\" on the \"KO chart.\" Wang",
     "stars": [
       "Hao-Ming Chang",
       "Wei-hsun Na",
@@ -35696,6 +36786,21 @@
     "votes": 87
   },
   {
+    "title": "SunGanges",
+    "year": 2019,
+    "duration": "75 min",
+    "genre": "Documentary, Adventure, News",
+    "rating": 7.8,
+    "description": "A panoptic film on water, energy and climate, SunGanges (SuryaGanga) is a wild and intense ride three filmmakers take across the vast Indian landscape in an attempt to connect the dots",
+    "stars": [
+      "Naseeruddin Shah",
+      "Himanshu Thakkar",
+      "Parineeta Dandekar",
+      "Shripad Dharmadhikary"
+    ],
+    "votes": 86
+  },
+  {
     "title": "Frank Elstner: Just One Last Question",
     "year": 2019,
     "duration": "",
@@ -35731,7 +36836,7 @@
     "duration": "",
     "genre": "Romance",
     "rating": 6.6,
-    "description": "Benjamin lives alone, with his family living in America pressuring him to move there with him. He learns his old neighbor and childhood friend, Jimson, is moving back home to spend Enhanced... See full summary »",
+    "description": "Benjamin lives alone, with his family living in America pressuring him to move there with him. He learns his old neighbor and childhood friend, Jimson, is moving back home to spend Enhanced",
     "stars": [
       "Jerome Ponce",
       "Teejay Marquez",
@@ -35761,7 +36866,7 @@
     "duration": "",
     "genre": "Documentary",
     "rating": 8.7,
-    "description": "The Indian army is a family of several regiments, each of whom have their own history, identity, and glorious traditions. Regiment Diaries is a tale of the Indian Army - a living chronicle ... See full summary »",
+    "description": "The Indian army is a family of several regiments, each of whom have their own history, identity, and glorious traditions. Regiment Diaries is a tale of the Indian Army - a living chronicle",
     "stars": [],
     "votes": 84
   },
@@ -35811,6 +36916,21 @@
     "votes": 83
   },
   {
+    "title": "Fate: The Winx Saga - The Afterparty",
+    "year": 2021,
+    "duration": "",
+    "genre": "Comedy, Fantasy, Reality-TV",
+    "rating": 6.2,
+    "description": "Join the stars of Netflix's hit series \"Fate: : The Winx Saga\" as they discuss the show's magic, play trivia and eat hot wings.",
+    "stars": [
+      "David Spade",
+      "Fortune Feimster",
+      "London Hughes",
+      "Abigail Cowen"
+    ],
+    "votes": 83
+  },
+  {
     "title": "No Time for Shame",
     "year": 2019,
     "duration": "",
@@ -35831,7 +36951,7 @@
     "duration": "",
     "genre": "Family",
     "rating": 7.4,
-    "description": "While she was at high school, Momoko and her three siblings parents' died due to an accident. Being the oldest, she was left in charge, she gave up on her own plans and further education ... See full summary »",
+    "description": "While she was at high school, Momoko and her three siblings parents' died due to an accident. Being the oldest, she was left in charge, she gave up on her own plans and further education",
     "stars": [
       "Atsuko Anami",
       "Kasumi Arimura",
@@ -35901,7 +37021,7 @@
     "duration": "11 min",
     "genre": "Animation, Adventure, Comedy",
     "rating": 6.5,
-    "description": "Rainbow Ruby comes to the rescue whenever a doll friend needs help! When Choco's heart starts to glow, she knows it's time for a magical journey into Rainbow Village. With the help of her ... See full summary »",
+    "description": "Rainbow Ruby comes to the rescue whenever a doll friend needs help! When Choco's heart starts to glow, she knows it's time for a magical journey into Rainbow Village. With the help of her",
     "stars": [
       "Johnny Yong Bosch",
       "Shaughnessey, \""
@@ -36043,7 +37163,7 @@
     "duration": "30 min",
     "genre": "Comedy, Drama, Romance",
     "rating": 8.8,
-    "description": "Lurdinha, Violeta and Maria Antônia are friends for a long time. All three are the same age, studied in the same school, and live in the same neighborhood, Higienópolis, an icon district of... See full summary »",
+    "description": "Lurdinha, Violeta and Maria Antônia are friends for a long time. All three are the same age, studied in the same school, and live in the same neighborhood, Higienópolis, an icon district of",
     "stars": [
       "Alejandra Sampaio",
       "Keila Taschini",
@@ -36293,7 +37413,7 @@
     "duration": "",
     "genre": "Game-Show, Reality-TV",
     "rating": 7.3,
-    "description": "NBC's \"STRONG\" is a competition show like no other. Contestants are embarking on a transformative journey in order to reach their full potential. As they will learn, it's not necessarily ... See full summary »",
+    "description": "NBC's \"STRONG\" is a competition show like no other. Contestants are embarking on a transformative journey in order to reach their full potential. As they will learn, it's not necessarily",
     "stars": [
       "Gabrielle Reece"
     ],
@@ -36320,7 +37440,7 @@
     "duration": "20 min",
     "genre": "Reality-TV",
     "rating": 5.1,
-    "description": "Plastic surgeons to Hollywood. Drs. Robert Rey and Jason Diamond are joined by Dr. David Amron, Dr. Kevin Sands, & Dr. Craig Ziering. Reality tv that follows the lives of four of the best ... See full summary »",
+    "description": "Plastic surgeons to Hollywood. Drs. Robert Rey and Jason Diamond are joined by Dr. David Amron, Dr. Kevin Sands, & Dr. Craig Ziering. Reality tv that follows the lives of four of the best",
     "stars": [
       "Robert M. Rey",
       "David Amron",
@@ -36452,7 +37572,7 @@
     "duration": "",
     "genre": "Animation",
     "rating": 5.9,
-    "description": "Popples is an animated high-energy children's comedy series about an amazing species of creatures that can pop into and out of a ball. The story is driven by the optimistic comedic ... See full summary »",
+    "description": "Popples is an animated high-energy children's comedy series about an amazing species of creatures that can pop into and out of a ball. The story is driven by the optimistic comedic",
     "stars": [
       "Erin Fitzgerald",
       "Cassandra Lee Morris",
@@ -36467,7 +37587,7 @@
     "duration": "50 min",
     "genre": "Documentary",
     "rating": 6.4,
-    "description": "Explore the impressive underwater landscapes and fascinating species of one of the biggest wonders on our planet-The Red Sea. Filmed in stunning 4K, this mesmerizing nautical journey ... See full summary »",
+    "description": "Explore the impressive underwater landscapes and fascinating species of one of the biggest wonders on our planet-The Red Sea. Filmed in stunning 4K, this mesmerizing nautical journey",
     "stars": [
       "Michael Diekmann"
     ],
@@ -36479,7 +37599,7 @@
     "duration": "",
     "genre": "Documentary, Crime",
     "rating": 6.8,
-    "description": "UK is the most surveilled place in the world. It is home to more than 6 million CCTV cameras -- about 1 for every 14 people -- that operate 24/7 and generate more than 1 billion hours of ... See full summary »",
+    "description": "UK is the most surveilled place in the world. It is home to more than 6 million CCTV cameras -- about 1 for every 14 people -- that operate 24/7 and generate more than 1 billion hours of",
     "stars": [
       "Nick Wallis",
       "Callum Roy",
@@ -36494,7 +37614,7 @@
     "duration": "75 min",
     "genre": "Comedy",
     "rating": 5.9,
-    "description": "Lifelong friends, Guan Yu (George Hu) and Zhang Fei (David Bo-Yen Lin), who have gotten kicked out of one school after another for starting fights, find themselves hard pressed to find a ... See full summary »",
+    "description": "Lifelong friends, Guan Yu (George Hu) and Zhang Fei (David Bo-Yen Lin), who have gotten kicked out of one school after another for starting fights, find themselves hard pressed to find a",
     "stars": [
       "Monkey Shao",
       "Jiro Wang",
@@ -36509,7 +37629,7 @@
     "duration": "",
     "genre": "Comedy",
     "rating": 5.5,
-    "description": "A show on a mission to to proving that persona is more crucial than physicality when it comes to the attraction of both sexes. Top-of-the-range hollywood prosthetics are used to disguise ... See full summary »",
+    "description": "A show on a mission to to proving that persona is more crucial than physicality when it comes to the attraction of both sexes. Top-of-the-range hollywood prosthetics are used to disguise",
     "stars": [
       "Rob Delaney",
       "Dan Frigolette",
@@ -36554,7 +37674,7 @@
     "duration": "22 min",
     "genre": "Animation, Family, Fantasy",
     "rating": 6.3,
-    "description": "Luna Petunia is a new animated Netflix original series for preschool kids developed by Saban Brands and Cirque du Soleil Média. Inspired by the Cirque du Soleil brand of creativity and ... See full summary »",
+    "description": "Luna Petunia is a new animated Netflix original series for preschool kids developed by Saban Brands and Cirque du Soleil Média. Inspired by the Cirque du Soleil brand of creativity and",
     "stars": [
       "Neil Crone",
       "Jonah Wineberg",
@@ -36569,7 +37689,7 @@
     "duration": "75 min",
     "genre": "Romance",
     "rating": 6.2,
-    "description": "Chou Kai-Ting, Ma Li-Sha, and Wang Ching-Ching are women in their thirties, working as top managers in an e-commerce cosmetic website \"Love U Shop\". They have beautiful appearances, perfect... See full summary »",
+    "description": "Chou Kai-Ting, Ma Li-Sha, and Wang Ching-Ching are women in their thirties, working as top managers in an e-commerce cosmetic website \"Love U Shop\". They have beautiful appearances, perfect",
     "stars": [
       "Aviis Zhong",
       "Ben Wu",
@@ -36594,12 +37714,27 @@
     "votes": 55
   },
   {
+    "title": "Ugly Duckling Series: Perfect Match",
+    "year": 2015,
+    "duration": "50 min",
+    "genre": "Drama, Romance",
+    "rating": 7.4,
+    "description": "Junita, nicknamed Junior, did plastic surgery because people said her face was fat. Without knowing that she was allergic to chemicals, it ruined her face by causing acne everywhere. It",
+    "stars": [
+      "Onnicha Akkharasewaya",
+      "Worranit Thawornwong",
+      "Sonia Couling",
+      "Nicole Theriault"
+    ],
+    "votes": 54
+  },
+  {
     "title": "Sab Jholmaal Hai",
     "year": 2017,
     "duration": "",
     "genre": "Animation",
     "rating": 6.7,
-    "description": "The story revolves around the adventures of pets who live in a cozy house, owned by Miss Katkar. When the owner is away, the pets set off on fun and crazy adventures together. While they ... See full summary »",
+    "description": "The story revolves around the adventures of pets who live in a cozy house, owned by Miss Katkar. When the owner is away, the pets set off on fun and crazy adventures together. While they",
     "stars": [
       "Dolly Lopes",
       "Mubeen Saudagar"
@@ -36657,7 +37792,7 @@
     "duration": "",
     "genre": "Animation, Comedy, Family",
     "rating": 8.8,
-    "description": "In a cozy kitchen, in the spotlight meet everyone's favorite, Booba. Today he's a chef and co-hosting a cooking show. Gather in front of the screen with your parents or friends and cook ... See full summary »",
+    "description": "In a cozy kitchen, in the spotlight meet everyone's favorite, Booba. Today he's a chef and co-hosting a cooking show. Gather in front of the screen with your parents or friends and cook",
     "stars": [
       "Elena Solovieva",
       "Artyom Kretov",
@@ -36697,7 +37832,7 @@
     "duration": "12 min",
     "genre": "Animation, Action, Adventure",
     "rating": 7.2,
-    "description": "Jin Ari, the main character, is a cheerful 12 year old girl that loves art, fashion, beauty and making people happy. With her friends Sunwoo Min, a tomboy, and U Suha, a proper lady, they ... See full summary »",
+    "description": "Jin Ari, the main character, is a cheerful 12 year old girl that loves art, fashion, beauty and making people happy. With her friends Sunwoo Min, a tomboy, and U Suha, a proper lady, they",
     "stars": [
       "Nancy Kim",
       "Jacqueline Youn",
@@ -36757,7 +37892,7 @@
     "duration": "11 min",
     "genre": "Animation, Adventure, Comedy",
     "rating": 5.2,
-    "description": "In a far away forgotten valley, heaped with long abandoned junk, a timeless battle rages between good and evil - and also between squashy and scaly, happy and grumpy, clever and wily, ... See full summary »",
+    "description": "In a far away forgotten valley, heaped with long abandoned junk, a timeless battle rages between good and evil - and also between squashy and scaly, happy and grumpy, clever and wily,",
     "stars": [
       "Robbie Daymond",
       "Ray Chase",
@@ -36787,7 +37922,7 @@
     "duration": "60 min",
     "genre": "Reality-TV",
     "rating": 7.8,
-    "description": "Joe Zee - Creative Director for Elle - is always one step ahead of the trends. Now, Joe is using his style smarts and eye for detail to guide struggling fashion designers back on the road ... See full summary »",
+    "description": "Joe Zee - Creative Director for Elle - is always one step ahead of the trends. Now, Joe is using his style smarts and eye for detail to guide struggling fashion designers back on the road",
     "stars": [
       "Joe Zee",
       "Melissa Stetten",
@@ -36872,7 +38007,7 @@
     "duration": "",
     "genre": "Drama, Romance",
     "rating": 7.5,
-    "description": "Story revolves around three sworn brothers namely Yu Hao, Shan Zi and Yang Xiong Qi. They are delinquents, fighting to gain what they want, though they have never officially joined any ... See full summary »",
+    "description": "Story revolves around three sworn brothers namely Yu Hao, Shan Zi and Yang Xiong Qi. They are delinquents, fighting to gain what they want, though they have never officially joined any",
     "stars": [
       "Dylan Kuo",
       "Ady An",
@@ -36923,6 +38058,16 @@
       "Lucia Chen"
     ],
     "votes": 45
+  },
+  {
+    "title": "The Mosque Next Door",
+    "year": 2017,
+    "duration": "",
+    "genre": "Reality-TV",
+    "rating": 7.7,
+    "description": "For many non-Muslim Australians, the mosque is a symbol of growing fears that Islam is antithetical to the Australian way of life, even dangerous. But many Australians have never stepped",
+    "stars": [],
+    "votes": 44
   },
   {
     "title": "Girls Who Like Boys Who Like Boys",
@@ -36994,12 +38139,27 @@
     "votes": 43
   },
   {
+    "title": "The 2014 Film Independent Spirit Awards",
+    "year": 2014,
+    "duration": "",
+    "genre": "",
+    "rating": 5.9,
+    "description": "Add a Plot",
+    "stars": [
+      "Patton Oswalt",
+      "Matthew McConaughey",
+      "Reese Witherspoon",
+      "Lake Bell"
+    ],
+    "votes": 43
+  },
+  {
     "title": "Lostorage incited Wixoss",
     "year": 2016,
     "duration": "24 min",
     "genre": "Animation, Drama, Fantasy",
     "rating": 5.8,
-    "description": "High school student Homura Suzuko has returned to Ikebukuro, the town where she grew up. \"We're friends forever!\" She treasures her memories of her old friend from when she was little, ... See full summary »",
+    "description": "High school student Homura Suzuko has returned to Ikebukuro, the town where she grew up. \"We're friends forever!\" She treasures her memories of her old friend from when she was little,",
     "stars": [
       "Yuka Iguchi",
       "Chinami Hashimoto",
@@ -37182,7 +38342,7 @@
     "duration": "30 min",
     "genre": "Documentary, Sport",
     "rating": 8,
-    "description": "A sports documentary of the most iconic performances at The Open Championship, one of golf's most prestigious tournaments on the PGA tour. A selective group of legendary champions of the ... See full summary »",
+    "description": "A sports documentary of the most iconic performances at The Open Championship, one of golf's most prestigious tournaments on the PGA tour. A selective group of legendary champions of the",
     "stars": [
       "Tiger Woods",
       "Jack Nicklaus",
@@ -37197,7 +38357,7 @@
     "duration": "",
     "genre": "Romance, Sport",
     "rating": 7.2,
-    "description": "Anomalies in the Earth's atmosphere cause irregularities in telecommunications that affect one man's future. Feng Ying is an internationally-renowned cyclist and a star in the sports world.... See full summary »",
+    "description": "Anomalies in the Earth's atmosphere cause irregularities in telecommunications that affect one man's future. Feng Ying is an internationally-renowned cyclist and a star in the sports world.",
     "stars": [
       "Hans Chung",
       "Mini Tsai",
@@ -37299,7 +38459,7 @@
     "duration": "",
     "genre": "Family",
     "rating": 7.5,
-    "description": "A man dreams of writing script for shows as he watched television and falls for the stories. Not making headway he begins working at a real-estate agency where he meets his single mother ... See full summary »",
+    "description": "A man dreams of writing script for shows as he watched television and falls for the stories. Not making headway he begins working at a real-estate agency where he meets his single mother",
     "stars": [
       "Masaki Okada",
       "Anna Yamada",
@@ -37314,7 +38474,7 @@
     "duration": "",
     "genre": "Animation, Sport",
     "rating": 6.6,
-    "description": "Barangay 143 follows the coming of age story of a young man in search of a father and how he finds an unlikely family in a team of misfits trying to bring glory to their hometown. It's a ... See full summary »",
+    "description": "Barangay 143 follows the coming of age story of a young man in search of a father and how he finds an unlikely family in a team of misfits trying to bring glory to their hometown. It's a",
     "stars": [
       "Migo Adecer",
       "Julie Anne San Jose",
@@ -37329,7 +38489,7 @@
     "duration": "",
     "genre": "Documentary",
     "rating": 6.2,
-    "description": "History's Greatest Hoaxes looks at some of the most spectacular hoaxes that show that you can fool some of the people some of the time, but not all of the people all of the time. It looks ... See full summary »",
+    "description": "History's Greatest Hoaxes looks at some of the most spectacular hoaxes that show that you can fool some of the people some of the time, but not all of the people all of the time. It looks",
     "stars": [
       "Tom Ward",
       "Guy Walters",
@@ -37430,7 +38590,7 @@
     "duration": "",
     "genre": "Drama",
     "rating": 7.4,
-    "description": "There is a new directive that stipulates all interrogations by the cops should be recorded. The cops gather at their headquarters to ostensibly be trained on what this means for their work.... See full summary »",
+    "description": "There is a new directive that stipulates all interrogations by the cops should be recorded. The cops gather at their headquarters to ostensibly be trained on what this means for their work.",
     "stars": [
       "Fumiyo Kohinata",
       "Yûki Amami",
@@ -37445,7 +38605,7 @@
     "duration": "23 min",
     "genre": "Animation, Action, Adventure",
     "rating": 6,
-    "description": "The story is set in legendary China. A beautiful female fox spirit named Dakki is controlling the emperor Chu-o and the ruling In dynasty, and is using her power over him to do evil in the ... See full summary »",
+    "description": "The story is set in legendary China. A beautiful female fox spirit named Dakki is controlling the emperor Chu-o and the ruling In dynasty, and is using her power over him to do evil in the",
     "stars": [
       "Josh Grelle",
       "Tyler Walker",
@@ -37460,7 +38620,7 @@
     "duration": "",
     "genre": "Drama",
     "rating": 7.8,
-    "description": "This is a drama series about the lives of three rich, entitled, passionate and ambitious young men: Kalifah, Nuhu and Diko. Elections are fast approaching and there's a tussle for the ... See full summary »",
+    "description": "This is a drama series about the lives of three rich, entitled, passionate and ambitious young men: Kalifah, Nuhu and Diko. Elections are fast approaching and there's a tussle for the",
     "stars": [
       "Rahama Sadau",
       "Mofe Duncan",
@@ -37495,6 +38655,18 @@
     "votes": 33
   },
   {
+    "title": "Virunga: Gorillas in Peril",
+    "year": 2015,
+    "duration": "28 min",
+    "genre": "Documentary",
+    "rating": 6.5,
+    "description": "A behind the scenes look at the Academy Award nominated original documentary, Virunga, from Executive Producer Leonardo DiCaprio. Hosted by Soledad O'Brien, go inside the incredible, true",
+    "stars": [
+      "Brien, \""
+    ],
+    "votes": 32
+  },
+  {
     "title": "Paprika",
     "year": 2018,
     "duration": "11 min",
@@ -37514,7 +38686,7 @@
     "duration": "22 min",
     "genre": "Reality-TV",
     "rating": 7.7,
-    "description": "Take a behind the scenes look at two of Canada's busiest Hospital Emergency Rooms in this reality style series. Follow along with the patients, their families, and hospital staff as they ... See full summary »",
+    "description": "Take a behind the scenes look at two of Canada's busiest Hospital Emergency Rooms in this reality style series. Follow along with the patients, their families, and hospital staff as they",
     "stars": [],
     "votes": 31
   },
@@ -37539,7 +38711,7 @@
     "duration": "50 min",
     "genre": "Romance",
     "rating": 8.5,
-    "description": "CRAZY, LOVELY, COOL is a coming-of-age TV series that takes a fond look at the lives, joys and struggles of a group of charismatic students whose paths cross on the campus of Nigeria's ... See full summary »",
+    "description": "CRAZY, LOVELY, COOL is a coming-of-age TV series that takes a fond look at the lives, joys and struggles of a group of charismatic students whose paths cross on the campus of Nigeria's",
     "stars": [
       "Enyinna Nwigwe",
       "Adesua Etomi-Wellington",
@@ -37554,7 +38726,7 @@
     "duration": "",
     "genre": "Thriller",
     "rating": 7.2,
-    "description": "A childhood accident left Irin with a unique ability for frequency and sound which most people cannot decipher. Her skills were tested when she took an emergency call at the precinct and ... See full summary »",
+    "description": "A childhood accident left Irin with a unique ability for frequency and sound which most people cannot decipher. Her skills were tested when she took an emergency call at the precinct and",
     "stars": [
       "Akkarapol Akkaravetchyothin",
       "Fonpa Pramoj Na Ayudh",
@@ -37655,7 +38827,7 @@
     "duration": "22 min",
     "genre": "Animation, Family, Music",
     "rating": 7.8,
-    "description": "Join your favourite Hi-5 friends in a brand new adventure as they welcome you into their Hi-5 House - it's the place to be... and it's where dreams really can come true! Lauren, Stevie, ... See full summary »",
+    "description": "Join your favourite Hi-5 friends in a brand new adventure as they welcome you into their Hi-5 House - it's the place to be... and it's where dreams really can come true! Lauren, Stevie,",
     "stars": [
       "Ellen Wright Folan",
       "Kellie Crawford",
@@ -37670,7 +38842,7 @@
     "duration": "47 min",
     "genre": "Drama",
     "rating": 6.3,
-    "description": "It was with much difficulty that Ai-Ching (Cyndi Wang) was able to save enough money and arrive in her dream place, Paris. As a result, she was extremely happy about this. At the same time,... See full summary »",
+    "description": "It was with much difficulty that Ai-Ching (Cyndi Wang) was able to save enough money and arrive in her dream place, Paris. As a result, she was extremely happy about this. At the same time,",
     "stars": [
       "Cyndi Wang",
       "Leon Jay Williams",
@@ -37685,7 +38857,7 @@
     "duration": "",
     "genre": "Comedy",
     "rating": 8.7,
-    "description": "On the real is a unique format combining pseudo reality-come-drama that incorporates running commentary by all cast members. This edgy series follows the lives of 5 young Nigerian reality ... See full summary »",
+    "description": "On the real is a unique format combining pseudo reality-come-drama that incorporates running commentary by all cast members. This edgy series follows the lives of 5 young Nigerian reality",
     "stars": [
       "Ada Afoluwake Ogunkeye",
       "Chy Nwakanma",
@@ -37700,7 +38872,7 @@
     "duration": "",
     "genre": "Animation, Action, Fantasy",
     "rating": 7,
-    "description": "While investigating the legend of the mythical Pokémon Arceus, Ash, Goh and 'Damn' uncover a plot by Team Galactic that threatens the world. Get ready to enjoy the return once again, of one... See full summary »",
+    "description": "While investigating the legend of the mythical Pokémon Arceus, Ash, Goh and 'Damn' uncover a plot by Team Galactic that threatens the world. Get ready to enjoy the return once again, of one",
     "stars": [],
     "votes": 27
   },
@@ -37745,12 +38917,27 @@
     "votes": 26
   },
   {
+    "title": "Model",
+    "year": 2020,
+    "duration": "",
+    "genre": "Reality-TV",
+    "rating": 5.9,
+    "description": "MODEL, is a 10 part series that delves into the world of the fashion industry. Talented models and wild cards from around SA audition in this year's competition to try and cement their",
+    "stars": [
+      "Christia Visser",
+      "Pieter Black",
+      "Coenraad de Mol",
+      "Kholofelo Mabusela"
+    ],
+    "votes": 26
+  },
+  {
     "title": "Grego Rossello: Disculpe Las Molestias",
     "year": 2019,
     "duration": "65 min",
     "genre": "Comedy",
     "rating": 4.7,
-    "description": "Gregorio Rosello is a stand up comedian. In his show he told with the audience about parts of his life and very common things that happened in Argentina. The show is incredible but in my ... See full summary »",
+    "description": "Gregorio Rosello is a stand up comedian. In his show he told with the audience about parts of his life and very common things that happened in Argentina. The show is incredible but in my",
     "stars": [
       "Grego Rossello"
     ],
@@ -37812,6 +38999,33 @@
     "votes": 25
   },
   {
+    "title": "Fuller House Featurette",
+    "year": 2016,
+    "duration": "",
+    "genre": "Short",
+    "rating": 8.3,
+    "description": "Add a Plot",
+    "stars": [
+      "Twain Taylor"
+    ],
+    "votes": 24
+  },
+  {
+    "title": "La Tarotista",
+    "year": 2021,
+    "duration": "",
+    "genre": "Short, Comedy, Talk-Show",
+    "rating": 7.6,
+    "description": "A humored Netflix special sketch starring Yolanda Ramos playing a tarot reader who predicts the upcoming attractions from the streaming platform, presenting the new TV shows and miniseries",
+    "stars": [
+      "Yolanda Ramos",
+      "Omar Ayuso",
+      "Martina Cariddi",
+      "Mario Casas"
+    ],
+    "votes": 23
+  },
+  {
     "title": "Only for Love",
     "year": 2022,
     "duration": "60 min",
@@ -37852,6 +39066,21 @@
     "votes": 23
   },
   {
+    "title": "Ugly Duckling Series: Boy's Paradise",
+    "year": 2015,
+    "duration": "60 min",
+    "genre": "Drama, Romance",
+    "rating": 7.2,
+    "description": "Happily living alone in her family's pension, Mami vows to die before dating a man, after her mother catches on to her secret girl crush. So her mother rents out the house to three guys in",
+    "stars": [
+      "Esther Supreeleela",
+      "Korn Khunatipapisiri",
+      "Kitkasem McFadden",
+      "Sean Jindachot"
+    ],
+    "votes": 22
+  },
+  {
     "title": "Strongland",
     "year": 2018,
     "duration": "",
@@ -37877,12 +39106,27 @@
     "votes": 21
   },
   {
+    "title": "Ugly Duckling Series: Pity Girl",
+    "year": 2015,
+    "duration": "50 min",
+    "genre": "Drama, Romance",
+    "rating": 6.4,
+    "description": "After falling from a tree 6 months ago Alice now suffers having \"goldfish memory\". She's in fact so forgetful that she doesn't even remember her boyfriend breaking up with her 14 times",
+    "stars": [
+      "Onnicha Akkharasewaya",
+      "Sonia Couling",
+      "Nicole Theriault",
+      "Niti Chaichitatorn"
+    ],
+    "votes": 21
+  },
+  {
     "title": "Miniforce X",
     "year": 2019,
     "duration": "",
     "genre": "Animation",
     "rating": 6.3,
-    "description": "Zenos who was once defeated by space cops, is not dead yet. Hundreds of years later, a space pirate gang DanDanDan (Kara, Dante, and Dancho) finds Zenos being confined in Asteroid Crete. ... See full summary »",
+    "description": "Zenos who was once defeated by space cops, is not dead yet. Hundreds of years later, a space pirate gang DanDanDan (Kara, Dante, and Dancho) finds Zenos being confined in Asteroid Crete.",
     "stars": [
       "Connie Fernandez",
       "Rayner Gabriel",
@@ -37922,7 +39166,7 @@
     "duration": "",
     "genre": "Documentary",
     "rating": 7.6,
-    "description": "This series is a relatively deep quantitative analysis of chances of life (both intelligent and simple) plus living/extinct) in our Milky Way galaxy centered on the Drake equation. It also ... See full summary »",
+    "description": "This series is a relatively deep quantitative analysis of chances of life (both intelligent and simple) plus living/extinct) in our Milky Way galaxy centered on the Drake equation. It also",
     "stars": [
       "Laird Close"
     ],
@@ -38014,7 +39258,7 @@
     "duration": "44 min",
     "genre": "Talk-Show",
     "rating": 6,
-    "description": "In the inaugural episode of The Drew Barrymore Show, Drew will introduces her new segment \"Drew's News,\" interview with co-stars Cameron Diaz and Lucy Liu, then learns how to cook Chef ... See full summary »",
+    "description": "In the inaugural episode of The Drew Barrymore Show, Drew will introduces her new segment \"Drew's News,\" interview with co-stars Cameron Diaz and Lucy Liu, then learns how to cook Chef",
     "stars": [
       "Drew Barrymore",
       "Cameron Diaz",
@@ -38133,12 +39377,27 @@
     "votes": 16
   },
   {
+    "title": "Tudum",
+    "year": 2021,
+    "duration": "",
+    "genre": "Talk-Show",
+    "rating": 7.6,
+    "description": "Netflix first-ever global fan event to entertain and honor fans from around the world.",
+    "stars": [
+      "Jennifer Aniston",
+      "Radhika Apte",
+      "Jonathan Bailey",
+      "Jason Bateman"
+    ],
+    "votes": 15
+  },
+  {
     "title": "Homemade love story",
     "year": 2020,
     "duration": "",
     "genre": "Comedy, Drama, Romance",
     "rating": 6.9,
-    "description": "Three families live under one roof at a boarding house called Samkwang Villa. Soon Jung's family lives a pure and simple life and doesn't have a lot of money. Jung Ho's family is rich but ... See full summary »",
+    "description": "Three families live under one roof at a boarding house called Samkwang Villa. Soon Jung's family lives a pure and simple life and doesn't have a lot of money. Jung Ho's family is rich but",
     "stars": [
       "Kim Sun-young",
       "Kim Ji-yeon",
@@ -38207,7 +39466,7 @@
     "duration": "",
     "genre": "Animation, Action, Adventure",
     "rating": 8.3,
-    "description": "When someone is in trouble in Storia Town, Super Zach jumps into action. Super Zach is a little superhero powered by food energy. When he eats his mother's food, he gains \"Super Yum-Yum ... See full summary »",
+    "description": "When someone is in trouble in Storia Town, Super Zach jumps into action. Super Zach is a little superhero powered by food energy. When he eats his mother's food, he gains \"Super Yum-Yum",
     "stars": [
       "Chelan Simmons",
       "Brian Drummond",
@@ -38286,7 +39545,7 @@
     "duration": "",
     "genre": "Animation",
     "rating": 6.4,
-    "description": "A little sausage becomes a monkey, an egg becomes a rabbit, a radish becomes a hippo, a cucumber becomes a crocodile and a carrot becomes a donkey. These unique characters express the fun ... See full summary »",
+    "description": "A little sausage becomes a monkey, an egg becomes a rabbit, a radish becomes a hippo, a cucumber becomes a crocodile and a carrot becomes a donkey. These unique characters express the fun",
     "stars": [],
     "votes": 12
   },
@@ -38341,7 +39600,7 @@
     "duration": "",
     "genre": "Drama, Romance",
     "rating": 6.8,
-    "description": "A man who is striving to break out of his mental and talent limitations as a craftsman and artist falls for a girl who is not very good at dating. They care for each other, but their past ... See full summary »",
+    "description": "A man who is striving to break out of his mental and talent limitations as a craftsman and artist falls for a girl who is not very good at dating. They care for each other, but their past",
     "stars": [
       "Satomi Tezuka",
       "Nao Honda",
@@ -38351,12 +39610,26 @@
     "votes": 10
   },
   {
+    "title": "Unbreakable Kimmy Schmidt: Season 2 for Your Consideration Featurette",
+    "year": 2016,
+    "duration": "",
+    "genre": "",
+    "rating": 5.8,
+    "description": "Add a Plot",
+    "stars": [
+      "Drew Beasley",
+      "Sammy Voit",
+      "Alberto Vazquez"
+    ],
+    "votes": 10
+  },
+  {
     "title": "The Chef in a Truck",
     "year": 2020,
     "duration": "",
     "genre": "Documentary",
     "rating": 7.9,
-    "description": "French pastry Chef François Perret leaves the kitchen of the luxurious Ritz Paris hotel for a two-week culinary journey in a Californian Food Truck. This travel will challenge his ability ... See full summary »",
+    "description": "French pastry Chef François Perret leaves the kitchen of the luxurious Ritz Paris hotel for a two-week culinary journey in a Californian Food Truck. This travel will challenge his ability",
     "stars": [
       "François Perret",
       "Dominique Ansel",
@@ -38386,7 +39659,7 @@
     "duration": "45 min",
     "genre": "Documentary, Action, Crime",
     "rating": 6.5,
-    "description": "The St. Valentine's Day Massacre of 1929 is a legendary event in US History. However, the story of that day in urban Chicago, Illinois remains largely unsolved. Take a closer look, ... See full summary »",
+    "description": "The St. Valentine's Day Massacre of 1929 is a legendary event in US History. However, the story of that day in urban Chicago, Illinois remains largely unsolved. Take a closer look,",
     "stars": [
       "Johnny Fratto",
       "Jimmy Fisher"
@@ -38438,7 +39711,7 @@
     "duration": "15 min",
     "genre": "Animation, Short",
     "rating": 6.5,
-    "description": "A meek young boy, Manzini (voiced by Themba Ntuli), is attacked by three bullies on his way home from school in an incident that almost costs him his life. Manzini confesses to his Gogo (... See full summary »",
+    "description": "A meek young boy, Manzini (voiced by Themba Ntuli), is attacked by three bullies on his way home from school in an incident that almost costs him his life. Manzini confesses to his Gogo (",
     "stars": [
       "Ayanda Borotho",
       "Mr. Boy",
@@ -38511,6 +39784,21 @@
       "Enzo Pineda",
       "Sofia Andres",
       "Diego Loyzaga"
+    ],
+    "votes": 6
+  },
+  {
+    "title": "Sergio over de grens",
+    "year": 2022,
+    "duration": "",
+    "genre": "Reality-TV",
+    "rating": 7.2,
+    "description": "Add a Plot",
+    "stars": [
+      "Sergio Herman",
+      "Ella Leyers",
+      "Kürt Rogiers",
+      "Axel Daeseleire"
     ],
     "votes": 6
   },
@@ -38595,7 +39883,7 @@
     "duration": "23 min",
     "genre": "Animation, Adventure, Comedy",
     "rating": 0,
-    "description": "\"Dew Drop Diaries\" follows a group of three-inch tall family fairies - or Dew Drops, as they're known in the fairy world - who live inside teensy fairy houses on brownstone balcony gardens ... See full summary »",
+    "description": "\"Dew Drop Diaries\" follows a group of three-inch tall family fairies - or Dew Drops, as they're known in the fairy world - who live inside teensy fairy houses on brownstone balcony gardens",
     "stars": [],
     "votes": 0
   },
@@ -38648,7 +39936,7 @@
     "duration": "",
     "genre": "Animation, Action, Adventure",
     "rating": 0,
-    "description": "Fifty years in the future, after a terrifying alien species attacked our planet, teenager Stanford Yu works as a janitor at the Sky Corps Military Academy. But he's only dreamed of one ... See full summary »",
+    "description": "Fifty years in the future, after a terrifying alien species attacked our planet, teenager Stanford Yu works as a janitor at the Sky Corps Military Academy. But he's only dreamed of one",
     "stars": [
       "James Yaegashi"
     ],
@@ -38804,6 +40092,16 @@
     "votes": 0
   },
   {
+    "title": "Aftershock: Everest and the Nepal Earthquake",
+    "year": 2022,
+    "duration": "",
+    "genre": "Documentary",
+    "rating": 0,
+    "description": "Survivors' firsthand accounts and actual footage fuel this emotional docuseries about the deadly 2015 earthquake that shook Nepal.",
+    "stars": [],
+    "votes": 0
+  },
+  {
     "title": "Agent King",
     "year": 2022,
     "duration": "",
@@ -38897,6 +40195,19 @@
       "Melissa Fumero",
       "Randall Park",
       "J.B. Smoove"
+    ],
+    "votes": 0
+  },
+  {
+    "title": "CheNetflix: El podcast",
+    "year": 2022,
+    "duration": "",
+    "genre": "Talk-Show",
+    "rating": 0,
+    "description": "Add a Plot",
+    "stars": [
+      "Agustin Eme",
+      "Papryka"
     ],
     "votes": 0
   },
@@ -39053,6 +40364,21 @@
     "votes": 0
   },
   {
+    "title": "Film School Friday: Pushing the Boundaries in Production",
+    "year": 2022,
+    "duration": "49 min",
+    "genre": "Talk-Show",
+    "rating": 0,
+    "description": "Add a Plot",
+    "stars": [
+      "Charles Rivkin",
+      "Vans Stevenson",
+      "Tobias Anderberg",
+      "Ryan Reagan"
+    ],
+    "votes": 0
+  },
+  {
     "title": "First Love",
     "year": 2022,
     "duration": "",
@@ -39181,6 +40507,18 @@
       "Álex García",
       "Laura Laprida",
       "José Emilio Vera"
+    ],
+    "votes": 0
+  },
+  {
+    "title": "Human Playground",
+    "year": 2022,
+    "duration": "",
+    "genre": "Documentary",
+    "rating": 0,
+    "description": "This docuseries explores the origins and evolution of play across the globe, from age-old rituals to billion-dollar businesses.",
+    "stars": [
+      "Idris Elba"
     ],
     "votes": 0
   },
@@ -39713,6 +41051,16 @@
     "votes": 0
   },
   {
+    "title": "The Last Movie Ever Made: The Don't Look Up podcast",
+    "year": 2022,
+    "duration": "",
+    "genre": "Talk-Show",
+    "rating": 0,
+    "description": "In early 2020, Adam McKay set out to make a comedy. It was called Don't Look Up, and it was meant to make fun of, and point to, the forces stopping people from saving themselves from climate change. 2020, of course, had other plans.",
+    "stars": [],
+    "votes": 0
+  },
+  {
     "title": "The Law According to Lidia Poet",
     "year": 2022,
     "duration": "",
@@ -39885,6 +41233,18 @@
     "votes": 0
   },
   {
+    "title": "Un domingo de Ramos. Un podcast de Netflix",
+    "year": 2022,
+    "duration": "",
+    "genre": "Talk-Show",
+    "rating": 0,
+    "description": "Add a Plot",
+    "stars": [
+      "Yolanda Ramos"
+    ],
+    "votes": 0
+  },
+  {
     "title": "Untitled Andy Warhol Netflix Documentary Project",
     "year": 2022,
     "duration": "",
@@ -39908,14 +41268,14 @@
     "title": "Untitled Noah Centineo/Netflix Spy Project",
     "year": 2022,
     "duration": "",
-    "genre": "Action, Adventure, Drama",
+    "genre": "Drama, Thriller",
     "rating": 0,
-    "description": "Centineo will play a fledgling lawyer at the CIA who becomes enmeshed in dangerous international power politics when a former asset threatens to expose the nature of her long-term ... See full summary »",
+    "description": "Follows a lawyer at the CIA who gets entangled in dangerous international power politics when a former asset threatens to expose the nature of her long-term relationship with the agency.",
     "stars": [
-      "Liliane Zillner",
-      "Ahmed El-Mawas",
-      "Jeroen Engelsman",
-      "Tom Hanslmaier"
+      "Katharine King So",
+      "Alexandra Petrachuk",
+      "Amanda Ip",
+      "Jamaal Grant"
     ],
     "votes": 0
   },
@@ -39974,6 +41334,21 @@
     "votes": 0
   },
   {
+    "title": "Celebrating Greatness: Canada's Walk of Fame Special",
+    "year": 2021,
+    "duration": "",
+    "genre": "News",
+    "rating": 0,
+    "description": "Honoring exceptional Canadians with distinctive accomplishments in philanthropy, advocacy, and contributions towards the greater good.",
+    "stars": [
+      "Eric McCormack",
+      "Traci Melchor",
+      "Salome Bey",
+      "Jully Black"
+    ],
+    "votes": 0
+  },
+  {
     "title": "Freedom",
     "year": 2021,
     "duration": "",
@@ -40000,6 +41375,21 @@
       "Julissa Calderon",
       "Lee Rodriguez",
       "Annie Gonzalez"
+    ],
+    "votes": 0
+  },
+  {
+    "title": "Kate: Stunts Social Featurette",
+    "year": 2021,
+    "duration": "",
+    "genre": "Documentary, Short",
+    "rating": 0,
+    "description": "Add a Plot",
+    "stars": [
+      "Jonathan Eusebio",
+      "Miku Patricia Martineau",
+      "Miyavi",
+      "Cedric Nicolas-Troyan"
     ],
     "votes": 0
   },
@@ -40066,7 +41456,7 @@
     "duration": "60 min",
     "genre": "Action, Adventure, Drama",
     "rating": 0,
-    "description": "Sixteen-year-old Nathan is the illegitimate son of the world's most feared witch. He's spent his whole life being monitored for signs he may follow the same destructive path as his father. ... See full summary »",
+    "description": "Sixteen-year-old Nathan is the illegitimate son of the world's most feared witch. He's spent his whole life being monitored for signs he may follow the same destructive path as his father.",
     "stars": [
       "Jay Lycurgo",
       "Nadia Parkes",
@@ -40088,12 +41478,27 @@
     "votes": 0
   },
   {
+    "title": "What 16 Movies Looked Like Behind the Scenes in 2021",
+    "year": 2021,
+    "duration": "15 min",
+    "genre": "Documentary, Short",
+    "rating": 0,
+    "description": "2021 began with a lot of uncertainty about delayed releases and how we would be able to consume blockbuster movies. Regardless of whether you watched at the theaters or from the comfort of",
+    "stars": [
+      "Abby Tang",
+      "Andy Gill",
+      "Emma Stone",
+      "Jenny Beavan"
+    ],
+    "votes": 0
+  },
+  {
     "title": "Wo shi zhen de ai ni",
     "year": 2021,
     "duration": "",
     "genre": "Drama",
     "rating": 0,
-    "description": "As a strong, independent, hard-working woman, Xiao Yan (Liu Tao) has never backed down from a challenge in her life. Determined to become a senior-ranking executive of Xiya Group, Xiao Yan ... See full summary »",
+    "description": "As a strong, independent, hard-working woman, Xiao Yan (Liu Tao) has never backed down from a challenge in her life. Determined to become a senior-ranking executive of Xiya Group, Xiao Yan",
     "stars": [
       "Tao Liu",
       "Yuanke Wang",
@@ -40103,12 +41508,27 @@
     "votes": 0
   },
   {
+    "title": "Året der gik",
+    "year": 2020,
+    "duration": "134 min",
+    "genre": "History, Music, Talk-Show",
+    "rating": 0,
+    "description": "Add a Plot",
+    "stars": [
+      "Stéphanie Surrugue",
+      "Kåre Hjøllund Quist",
+      "Søren Brostrøm",
+      "Mette Frederiksen"
+    ],
+    "votes": 0
+  },
+  {
     "title": "Cap Revolution Bottleman",
     "year": 2020,
     "duration": "5 min",
     "genre": "Animation, Action, Comedy",
     "rating": 0,
-    "description": "The anime centers around a boy named Kouta Kouka \"Kouka Kouta in Japanese name order, an apparent wordplay on Coca-Cola\". Kouta strives to be the world's best Bottle King at the Bottle ... See full summary »",
+    "description": "The anime centers around a boy named Kouta Kouka \"Kouka Kouta in Japanese name order, an apparent wordplay on Coca-Cola\". Kouta strives to be the world's best Bottle King at the Bottle",
     "stars": [],
     "votes": 0
   },
@@ -40118,10 +41538,37 @@
     "duration": "135 min",
     "genre": "Reality-TV",
     "rating": 0,
-    "description": "The plot of this show is filmed with hidden cameras set up in each of the celebrities' actual home. In each episode, as the show moves from one family to the next, a brief analysis by the ... See full summary »",
+    "description": "The plot of this show is filmed with hidden cameras set up in each of the celebrities' actual home. In each episode, as the show moves from one family to the next, a brief analysis by the",
     "stars": [
       "Jang Do-Youn",
       "Park Mi-Sun"
+    ],
+    "votes": 0
+  },
+  {
+    "title": "Film School Friday: Creating for an Authentic Future",
+    "year": 2020,
+    "duration": "60 min",
+    "genre": "Talk-Show",
+    "rating": 0,
+    "description": "Add a Plot",
+    "stars": [
+      "Charles Rivkin",
+      "David Cicilline",
+      "John Gibson",
+      "Laverne Cox"
+    ],
+    "votes": 0
+  },
+  {
+    "title": "Know It All",
+    "year": 2020,
+    "duration": "",
+    "genre": "Talk-Show",
+    "rating": 0,
+    "description": "Know It All is the Netflix podcast hosted by OnlyJayus. Every Friday, Jayus will look for the answers to all the questions that come up while watching Netflix shows.",
+    "stars": [
+      "Bella Avila"
     ],
     "votes": 0
   },
@@ -40138,6 +41585,21 @@
     "votes": 0
   },
   {
+    "title": "New York State Multicultural Creativity Summit - Tuesday, November 17, 2020",
+    "year": 2020,
+    "duration": "181 min",
+    "genre": "Talk-Show",
+    "rating": 0,
+    "description": "Add a Plot",
+    "stars": [
+      "John Gibson",
+      "Charles Rivkin",
+      "Eric Gertler",
+      "Brett King"
+    ],
+    "votes": 0
+  },
+  {
     "title": "Northernlight",
     "year": 2020,
     "duration": "",
@@ -40149,6 +41611,33 @@
       "Agathe Lula",
       "Sebastien Ratto",
       "Sarah Ann"
+    ],
+    "votes": 0
+  },
+  {
+    "title": "Okay, Now Listen",
+    "year": 2020,
+    "duration": "",
+    "genre": "Talk-Show",
+    "rating": 0,
+    "description": "Okay, Now Listen is a bi-weekly podcast hosted by Scottie Beam and Sylvia Obell. They share what's on their minds, what they're binging and what's blowing up their timelines.",
+    "stars": [
+      "Scottie Beam",
+      "Sylvia Obell"
+    ],
+    "votes": 0
+  },
+  {
+    "title": "Revolution by Design",
+    "year": 2020,
+    "duration": "10 min",
+    "genre": "Documentary, Short",
+    "rating": 0,
+    "description": "Spike Lee gives an unprecedented look behind the scenes at creating the movie posters for his latest joint, Da 5 Bloods. This short documentary features Kenny Gravillis, art director for",
+    "stars": [
+      "Emory Douglas",
+      "Kenny Gravillis",
+      "Spike Lee"
     ],
     "votes": 0
   },
@@ -40232,7 +41721,7 @@
     "duration": "",
     "genre": "Animation",
     "rating": 0,
-    "description": "The Birthday Kingdom is a special place where children are invited to during their birthday to celebrate, greeted by the kingdom's Crown Princess, Princess Pring. She herself listens to the... See full summary »",
+    "description": "The Birthday Kingdom is a special place where children are invited to during their birthday to celebrate, greeted by the kingdom's Crown Princess, Princess Pring. She herself listens to the",
     "stars": [
       "Courtney Shaw",
       "Hyeon-ji Kim",
@@ -40253,6 +41742,43 @@
       "Shiga Lin",
       "Ava Liu",
       "Kelly Chen"
+    ],
+    "votes": 0
+  },
+  {
+    "title": "Strong Black Legends",
+    "year": 2019,
+    "duration": "",
+    "genre": "Talk-Show",
+    "rating": 0,
+    "description": "Strong Black Legends is a weekly show that honors the best of black Hollywood. Host Tracy Clayton sits down with the legends that paved the way for black representation both on and off screen.",
+    "stars": [
+      "Tracy Clayton"
+    ],
+    "votes": 0
+  },
+  {
+    "title": "The Crown: The Official Podcast",
+    "year": 2019,
+    "duration": "",
+    "genre": "",
+    "rating": 0,
+    "description": "Hosted by Edith Bowman, the podcast follows the show episode by episode, diving deep into the stories and taking listeners behind the scenes with insights from many of the people involved in making the show.",
+    "stars": [
+      "Edith Bowman"
+    ],
+    "votes": 0
+  },
+  {
+    "title": "The Geeked Podcast",
+    "year": 2019,
+    "duration": "",
+    "genre": "Talk-Show",
+    "rating": 0,
+    "description": "Are you a self proclaimed geek looking for a safe haven? Look no more. Hosts and total superfans Princess Weekes and Tessa Netting give you your weekly energy boost of the worlds, fandoms and stories you love.",
+    "stars": [
+      "Tessa Netting",
+      "Princess Weekes"
     ],
     "votes": 0
   },
@@ -40384,6 +41910,36 @@
     "votes": 0
   },
   {
+    "title": "Yass, Australia!",
+    "year": 2018,
+    "duration": "20 min",
+    "genre": "Short, Reality-TV",
+    "rating": 0,
+    "description": "Add a Plot",
+    "stars": [
+      "Bobby Berk",
+      "Karamo Brown",
+      "Tan France",
+      "Antoni Porowski"
+    ],
+    "votes": 0
+  },
+  {
+    "title": "You Can't Make This Up",
+    "year": 2018,
+    "duration": "",
+    "genre": "Talk-Show",
+    "rating": 0,
+    "description": "You Can't Make This Up is branded film and television podcast that digs into the real stories behind Netflix Original true stories. The program is hosted by Rebecca Lavoie who discusses how",
+    "stars": [
+      "Rebecca Lavoie",
+      "Chapman Way",
+      "Maclain Way",
+      "Lindsey Weber"
+    ],
+    "votes": 0
+  },
+  {
     "title": "#differentnotless",
     "year": 2017,
     "duration": "30 min",
@@ -40404,17 +41960,109 @@
     "votes": 0
   },
   {
+    "title": "GLOW Featurette",
+    "year": 2017,
+    "duration": "",
+    "genre": "Comedy",
+    "rating": 0,
+    "description": "Add a Plot",
+    "stars": [],
+    "votes": 0
+  },
+  {
+    "title": "Unbreakable Kimmy Schmidt Season 3 Featurette",
+    "year": 2017,
+    "duration": "2 min",
+    "genre": "Short, Comedy",
+    "rating": 0,
+    "description": "Add a Plot",
+    "stars": [
+      "Tituss Burgess",
+      "Carol Kane",
+      "Ellie Kemper",
+      "Jane Krakowski"
+    ],
+    "votes": 0
+  },
+  {
+    "title": "Fuller House Season 2 Electronic Press Kit",
+    "year": 2016,
+    "duration": "",
+    "genre": "Short",
+    "rating": 0,
+    "description": "Add a Plot",
+    "stars": [],
+    "votes": 0
+  },
+  {
+    "title": "Fuller House Season 2: Behind the Scenes with New Kids on the Block",
+    "year": 2016,
+    "duration": "",
+    "genre": "Short",
+    "rating": 0,
+    "description": "Add a Plot",
+    "stars": [],
+    "votes": 0
+  },
+  {
+    "title": "Gilmore Girls: A Year in the Life Electronic Press Kit",
+    "year": 2016,
+    "duration": "",
+    "genre": "Short",
+    "rating": 0,
+    "description": "Add a Plot",
+    "stars": [],
+    "votes": 0
+  },
+  {
+    "title": "Netflix: The Making of 'Mr Bear: Then & Now'",
+    "year": 2016,
+    "duration": "",
+    "genre": "Short",
+    "rating": 0,
+    "description": "This 'behind the scenes' film follows the team at Netflix who have created an open source connected device for the holidays, in time for Fuller House's second season.",
+    "stars": [
+      "Ryan Collier-Woodford"
+    ],
+    "votes": 0
+  },
+  {
+    "title": "The Little Prince Animation Featurette",
+    "year": 2016,
+    "duration": "",
+    "genre": "Animation, Short",
+    "rating": 0,
+    "description": "Add a Plot",
+    "stars": [],
+    "votes": 0
+  },
+  {
     "title": "Bhaage Re Mann",
     "year": 2015,
     "duration": "",
     "genre": "Comedy",
     "rating": 0,
-    "description": "Padmini has run away from conforming to her duties all her life. What happens when she comes home to her brother's house and tragedy strikes? Something for which she feels guilty? Will be ... See full summary »",
+    "description": "Padmini has run away from conforming to her duties all her life. What happens when she comes home to her brother's house and tragedy strikes? Something for which she feels guilty? Will be",
     "stars": [
       "Ved Thappar",
       "Nupur Alankar",
       "Kanika Shivpuri",
       "Arshima Thapar"
+    ],
+    "votes": 0
+  },
+  {
+    "title": "House of Cards: Season 3 - Behind the Scenes",
+    "year": 2015,
+    "duration": "",
+    "genre": "Documentary",
+    "rating": 0,
+    "description": "Add a Plot",
+    "stars": [
+      "Steve Beauchamp",
+      "Marta Bota",
+      "Jason Delgado",
+      "Andrea Leigh"
     ],
     "votes": 0
   },
@@ -40459,7 +42107,7 @@
     "duration": "",
     "genre": "Animation, Action, Adventure",
     "rating": 0,
-    "description": "Paboo is a young yet curious panda boy who lives in a magical land called Mojies Town. One day, he found a magical book up the Moji Tree and decides to get it. After he got the book, a ... See full summary »",
+    "description": "Paboo is a young yet curious panda boy who lives in a magical land called Mojies Town. One day, he found a magical book up the Moji Tree and decides to get it. After he got the book, a",
     "stars": [
       "Johnny Yong Bosch",
       "Chelan Simmons",
@@ -40488,7 +42136,7 @@
     "duration": "",
     "genre": "Animation",
     "rating": 0,
-    "description": "Four friendly creatures, a spaceship, and the whole wide universe to explore. Together Des, Guagua, Lili and Ponk will discover uncharted planets, meet new friends, and overcome ... See full summary »",
+    "description": "Four friendly creatures, a spaceship, and the whole wide universe to explore. Together Des, Guagua, Lili and Ponk will discover uncharted planets, meet new friends, and overcome",
     "stars": [],
     "votes": 0
   },

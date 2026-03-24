@@ -895,16 +895,13 @@ input:focus {
 }
 
 .moviedle-hidden-input {
-  position: fixed;
-  top: 0;
-  left: 0;
+  position: absolute;
   width: 1px;
   height: 1px;
   opacity: 0;
   pointer-events: none;
   border: 0;
   padding: 0;
-  transform: translate(-200vw, -200vh);
 }
 
 .moviedle-keyboard {
@@ -931,6 +928,7 @@ input:focus {
   font-weight: 700;
   text-transform: lowercase;
   cursor: pointer;
+  touch-action: manipulation;
   transition: transform 0.1s ease, filter 0.1s ease;
 }
 

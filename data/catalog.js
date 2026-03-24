@@ -1,4 +1,4 @@
-/* Auto-generated from IMBD.csv on 2026-03-24T11:51:59.205Z. */
+/* Auto-generated from IMBD.csv on 2026-03-24T12:16:34.141Z. */
 window.CINECLASH_CATALOG = 
 [
   {
@@ -4188,21 +4188,6 @@ window.CINECLASH_CATALOG =
     "votes": 83980
   },
   {
-    "title": "An Inconvenient Truth",
-    "year": 2006,
-    "duration": "96 min",
-    "genre": "Documentary, News",
-    "rating": 7.4,
-    "description": "Filmmaker Davis Guggenheim follows Al Gore on the lecture circuit, as the former presidential candidate campaigns to raise public awareness of the dangers of global warming and calls for immediate action to curb its destructive effects on the environment.",
-    "stars": [
-      "Al Gore",
-      "Billy West",
-      "George Bush",
-      "George W. Bush"
-    ],
-    "votes": 83432
-  },
-  {
     "title": "The Midnight Sky",
     "year": 2020,
     "duration": "118 min",
@@ -6220,21 +6205,6 @@ window.CINECLASH_CATALOG =
     "votes": 47480
   },
   {
-    "title": "Fyre",
-    "year": 2018,
-    "duration": "97 min",
-    "genre": "Documentary, Crime, Music",
-    "rating": 7.2,
-    "description": "An exclusive behind the scenes look at the infamous unraveling of the Fyre music festival.",
-    "stars": [
-      "Billy McFarland",
-      "Jason Bell",
-      "Gabrielle Bluestone",
-      "Shiyuan Deng"
-    ],
-    "votes": 47128
-  },
-  {
     "title": "Mongol: The Rise of Genghis Khan",
     "year": 2007,
     "duration": "126 min",
@@ -6360,7 +6330,7 @@ window.CINECLASH_CATALOG =
     "duration": "139 min",
     "genre": "Documentary, Comedy",
     "rating": 9.1,
-    "description": "The funny little details of everyday life; the simple things that makes us laugh. An unforgettable performance from Cem Yilmaz. Yilmaz captures the audience with his hilarious stories about... See full summary »",
+    "description": "The funny little details of everyday life; the simple things that makes us laugh. An unforgettable performance from Cem Yilmaz. Yilmaz captures the audience with his hilarious stories about",
     "stars": [
       "Cem Yilmaz"
     ],
@@ -7704,7 +7674,7 @@ window.CINECLASH_CATALOG =
     "duration": "134 min",
     "genre": "Comedy, Drama, Romance",
     "rating": 7.3,
-    "description": "Pirated DVD seller Zafer who is formerly an extra in movies; swore to give up illegal works when his wife wanted to get divorce. To win his family back, he and his old-fashioned crew ... See full summary »",
+    "description": "Pirated DVD seller Zafer who is formerly an extra in movies; swore to give up illegal works when his wife wanted to get divorce. To win his family back, he and his old-fashioned crew",
     "stars": [
       "Cem Yilmaz",
       "Tülin Özen",
@@ -9183,18 +9153,6 @@ window.CINECLASH_CATALOG =
       "Kelly Macdonald"
     ],
     "votes": 24467
-  },
-  {
-    "title": "Open Season 2",
-    "year": 2008,
-    "duration": "76 min",
-    "genre": "Animation, Adventure, Comedy",
-    "rating": 5.5,
-    "description": "After falling head over hooves in love with Giselle, Elliot's road to the altar takes a slight detour when Mr. Weenie is kidnapped by a group of pampered pets determined to return him to his owners.",
-    "stars": [
-      "Callaghan, \""
-    ],
-    "votes": 24277
   },
   {
     "title": "Rim of the World",
@@ -11785,7 +11743,7 @@ window.CINECLASH_CATALOG =
     "duration": "119 min",
     "genre": "Action, Drama",
     "rating": 5.7,
-    "description": "In Istanbul, terrorists abduct executives, blow-up the car of a journalist and plan five great attacks to the city. The violent police officer Firat Baran interrogates a terrorist and ... See full summary »",
+    "description": "In Istanbul, terrorists abduct executives, blow-up the car of a journalist and plan five great attacks to the city. The violent police officer Firat Baran interrogates a terrorist and",
     "stars": [
       "Haluk Bilginer",
       "Danny Glover",
@@ -12533,7 +12491,7 @@ window.CINECLASH_CATALOG =
     "duration": "94 min",
     "genre": "Drama, Romance",
     "rating": 6.5,
-    "description": "On a night of despair after being turned down continuously for the scripts he writes, Metin ends up in a bar where he meets a girl named Duygu. After spending the night together, she walks ... See full summary »",
+    "description": "On a night of despair after being turned down continuously for the scripts he writes, Metin ends up in a bar where he meets a girl named Duygu. After spending the night together, she walks",
     "stars": [
       "Sezai Paracikoglu",
       "Melike Güner",
@@ -12584,21 +12542,6 @@ window.CINECLASH_CATALOG =
       "Stanislav Yanevski"
     ],
     "votes": 13092
-  },
-  {
-    "title": "Gaga: Five Foot Two",
-    "year": 2017,
-    "duration": "100 min",
-    "genre": "Documentary, Music",
-    "rating": 7,
-    "description": "This documentary goes behind the scenes with pop provocateur Lady Gaga as she releases a bold new album and prepares for her Super Bowl halftime show.",
-    "stars": [
-      "Sandra Amador",
-      "Michael Bearden",
-      "Tony Bennett",
-      "BloodPop"
-    ],
-    "votes": 13068
   },
   {
     "title": "Howl",
@@ -13560,21 +13503,6 @@ window.CINECLASH_CATALOG =
     "votes": 11304
   },
   {
-    "title": "Jackass 4.5",
-    "year": 2022,
-    "duration": "90 min",
-    "genre": "Action, Comedy, Reality-TV",
-    "rating": 6.5,
-    "description": "Through outrageous, never-before-seen footage, witness the making of the Jackass crew's last go at wild stunts.",
-    "stars": [
-      "Johnny Knoxville",
-      "Steve-O",
-      "Chris Pontius",
-      "Dave England"
-    ],
-    "votes": 11266
-  },
-  {
     "title": "Athlete A",
     "year": 2020,
     "duration": "103 min",
@@ -13932,21 +13860,6 @@ window.CINECLASH_CATALOG =
     "votes": 10604
   },
   {
-    "title": "House of Secrets: The Burari Deaths",
-    "year": 2021,
-    "duration": "135 min",
-    "genre": "Documentary, Crime, History",
-    "rating": 7.4,
-    "description": "Suicide, murder or something else? This docuseries examines chilling truths and theories around the deaths of 11 members of a Delhi family.",
-    "stars": [
-      "Manoj Kumar",
-      "Naresh Bhatia",
-      "Vishal Anand",
-      "Mukesh Sengar"
-    ],
-    "votes": 10573
-  },
-  {
     "title": "W",
     "year": 2016,
     "duration": "60 min",
@@ -13967,7 +13880,7 @@ window.CINECLASH_CATALOG =
     "duration": "112 min",
     "genre": "Comedy",
     "rating": 6.3,
-    "description": "After seeing his son married in the first movie of the series, Ismail is now having stress over his grandson's circumcision. When the old crew reunites, Ismail finds himself in all kinds of... See full summary »",
+    "description": "After seeing his son married in the first movie of the series, Ismail is now having stress over his grandson's circumcision. When the old crew reunites, Ismail finds himself in all kinds of",
     "stars": [
       "Ahmet Kural",
       "Murat Cemcir",
@@ -14313,21 +14226,6 @@ window.CINECLASH_CATALOG =
       "Lieke van Lexmond"
     ],
     "votes": 9848
-  },
-  {
-    "title": "Requiem for the American Dream",
-    "year": 2015,
-    "duration": "73 min",
-    "genre": "Documentary, Biography, News",
-    "rating": 8.1,
-    "description": "Renowned academic and author Noam Chomsky elucidates 10 principles of concentration of wealth and power that have led to unprecedented inequality and the hollowing out of the American middle class.",
-    "stars": [
-      "Noam Chomsky",
-      "Alan Greenspan",
-      "Malcolm X",
-      "Richard Nixon"
-    ],
-    "votes": 9838
   },
   {
     "title": "Annaatthe",
@@ -15160,7 +15058,7 @@ window.CINECLASH_CATALOG =
     "duration": "97 min",
     "genre": "Documentary",
     "rating": 7.5,
-    "description": "100 pounds overweight, loaded up on steroids and suffering from a debilitating autoimmune disease, Joe Cross is at the end of his rope and the end of his hope. In the mirror he saw a 310lb ... See full summary »",
+    "description": "100 pounds overweight, loaded up on steroids and suffering from a debilitating autoimmune disease, Joe Cross is at the end of his rope and the end of his hope. In the mirror he saw a 310lb",
     "stars": [
       "Joe Cross",
       "Amy Badberg",
@@ -15773,21 +15671,6 @@ window.CINECLASH_CATALOG =
     "votes": 8020
   },
   {
-    "title": "Let's Be Evil",
-    "year": 2016,
-    "duration": "82 min",
-    "genre": "Horror, Reality-TV, Sci-Fi",
-    "rating": 4.3,
-    "description": "A vision of augmented reality.",
-    "stars": [
-      "Sophie Willis",
-      "Jules Brown",
-      "Elizabeth Morris",
-      "Chase Bowman"
-    ],
-    "votes": 7998
-  },
-  {
     "title": "We Steal Secrets",
     "year": 2013,
     "duration": "130 min",
@@ -16211,7 +16094,7 @@ window.CINECLASH_CATALOG =
     "duration": "80 min",
     "genre": "Action, Thriller, War",
     "rating": 8,
-    "description": "Turkey in the spring of 2014. A time when the enemies are growing on the border, the circle of danger inside is becoming narrower. The Republic of Turkey faces the greatest threats of ... See full summary »",
+    "description": "Turkey in the spring of 2014. A time when the enemies are growing on the border, the circle of danger inside is becoming narrower. The Republic of Turkey faces the greatest threats of",
     "stars": [
       "Ahu Türkpençe",
       "Serkan Çayoglu",
@@ -16402,7 +16285,7 @@ window.CINECLASH_CATALOG =
     "duration": "217 min",
     "genre": "Documentary, Crime",
     "rating": 7.7,
-    "description": "In 1999, after losing his son in a drug-related shooting in New Orleans and lacking answers from police, a small town pharmacist - Dan Schneider - beats the odds when he embarks on a dogged... See full summary »",
+    "description": "In 1999, after losing his son in a drug-related shooting in New Orleans and lacking answers from police, a small town pharmacist - Dan Schneider - beats the odds when he embarks on a dogged",
     "stars": [],
     "votes": 7440
   },
@@ -16854,21 +16737,6 @@ window.CINECLASH_CATALOG =
     "votes": 7063
   },
   {
-    "title": "Challenger: The Final Flight",
-    "year": 2020,
-    "duration": "179 min",
-    "genre": "Documentary, History",
-    "rating": 7.8,
-    "description": "Four-part docuseries on the 1986 Challenger space shuttle disaster, unpacking an indelible moment for a generation of Americans.",
-    "stars": [
-      "June Scobee Rodgers",
-      "William Harwood",
-      "Frederick D. Gregory",
-      "John Zarrella"
-    ],
-    "votes": 7056
-  },
-  {
     "title": "Mandela",
     "year": 2021,
     "duration": "140 min",
@@ -16985,21 +16853,6 @@ window.CINECLASH_CATALOG =
       "Corinne Mestemacher"
     ],
     "votes": 7014
-  },
-  {
-    "title": "The Puppet Master: Hunting the Ultimate Conman",
-    "year": 2022,
-    "duration": "127 min",
-    "genre": "Documentary, Crime",
-    "rating": 7,
-    "description": "In this harrowing docuseries, a cruel conman masquerading as a British spy manipulates and steals from his victims, leaving ruined families in his wake.",
-    "stars": [
-      "Stephen Corrall",
-      "Charlie Ives",
-      "Sophie Clifton",
-      "Jake Clifton"
-    ],
-    "votes": 7000
   },
   {
     "title": "Night in Paradise",
@@ -17124,7 +16977,7 @@ window.CINECLASH_CATALOG =
     "duration": "109 min",
     "genre": "Comedy, Romance",
     "rating": 6,
-    "description": "Sinan is sent to Capadocia by his boss, Isfendiyar to write a screenplay. As he waits for inspiration, Sinan finds himself running first into Eylul, the daughter of Izzet, who owns the ... See full summary »",
+    "description": "Sinan is sent to Capadocia by his boss, Isfendiyar to write a screenplay. As he waits for inspiration, Sinan finds himself running first into Eylul, the daughter of Izzet, who owns the",
     "stars": [
       "Tolga Çevik",
       "Ezgi Mola",
@@ -17625,7 +17478,7 @@ window.CINECLASH_CATALOG =
     "duration": "75 min",
     "genre": "Drama, Romance",
     "rating": 8.1,
-    "description": "Yoon Jin Ah is a woman in her mid-30s who doesn't know yet what it's like to date a man. She's been dumped by a man many times because of her clumsy, reckless and foolish behavior. And ... See full summary »",
+    "description": "Yoon Jin Ah is a woman in her mid-30s who doesn't know yet what it's like to date a man. She's been dumped by a man many times because of her clumsy, reckless and foolish behavior. And",
     "stars": [
       "Son Ye-jin",
       "Jung Hae-In",
@@ -17700,7 +17553,7 @@ window.CINECLASH_CATALOG =
     "duration": "70 min",
     "genre": "Comedy, Romance",
     "rating": 8.1,
-    "description": "Ko Dong Man, a high school Taekwondo champion who is now pursuing a career in the UFC, and Choi Ae Ra, a dynamic girl whose desire is to become a famous announcer, have been best friends ... See full summary »",
+    "description": "Ko Dong Man, a high school Taekwondo champion who is now pursuing a career in the UFC, and Choi Ae Ra, a dynamic girl whose desire is to become a famous announcer, have been best friends",
     "stars": [
       "Park Seo-joon",
       "Kim Ji-Won",
@@ -18269,7 +18122,7 @@ window.CINECLASH_CATALOG =
     "duration": "83 min",
     "genre": "Comedy, Crime, Mystery",
     "rating": 6.1,
-    "description": "Ray is a fledgling entrepreneur who specializes in high-end simulated abductions. He jumps at the chance when a mysterious client contracts him for a weekend kidnapping with a handsome ... See full summary »",
+    "description": "Ray is a fledgling entrepreneur who specializes in high-end simulated abductions. He jumps at the chance when a mysterious client contracts him for a weekend kidnapping with a handsome",
     "stars": [
       "Pat Healy",
       "Taylor Schilling",
@@ -18808,7 +18661,7 @@ window.CINECLASH_CATALOG =
     "duration": "100 min",
     "genre": "Comedy",
     "rating": 7.3,
-    "description": "Wael (Kheiron) a former street child, makes a living from small scams with his adoptive mother and partner-in-crime Monique (Catherine Deneuve). When this unconventional duo swindles the ... See full summary »",
+    "description": "Wael (Kheiron) a former street child, makes a living from small scams with his adoptive mother and partner-in-crime Monique (Catherine Deneuve). When this unconventional duo swindles the",
     "stars": [
       "Kheiron",
       "Catherine Deneuve",
@@ -18823,7 +18676,7 @@ window.CINECLASH_CATALOG =
     "duration": "105 min",
     "genre": "Action, Crime, Drama",
     "rating": 6.6,
-    "description": "Bank-robber Franck Adrien is serving a prison sentence after robbing a national bank. Before he was caught he managed to hide the money but now it's not just the police who are looking for ... See full summary »",
+    "description": "Bank-robber Franck Adrien is serving a prison sentence after robbing a national bank. Before he was caught he managed to hide the money but now it's not just the police who are looking for",
     "stars": [
       "Albert Dupontel",
       "Alice Taglioni",
@@ -18868,7 +18721,7 @@ window.CINECLASH_CATALOG =
     "duration": "62 min",
     "genre": "Romance",
     "rating": 8,
-    "description": "Cha Eun Ho is a successful and handsome writer who is also the youngest chief editor at a publishing company. He has a calm demeanor and remains reasonable at work. He then becomes involved... See full summary »",
+    "description": "Cha Eun Ho is a successful and handsome writer who is also the youngest chief editor at a publishing company. He has a calm demeanor and remains reasonable at work. He then becomes involved",
     "stars": [
       "Lee Na-young",
       "Lee Jong-Suk",
@@ -19397,7 +19250,7 @@ window.CINECLASH_CATALOG =
     "duration": "139 min",
     "genre": "Action, Sci-Fi",
     "rating": 5.9,
-    "description": "Set in the distant future where both North and South Koreas agree to establish a joint government, which has been in preparation for a duration of 7 years, the plot focuses on political ... See full summary »",
+    "description": "Set in the distant future where both North and South Koreas agree to establish a joint government, which has been in preparation for a duration of 7 years, the plot focuses on political",
     "stars": [
       "Dong-won Gang",
       "Han Hyo-joo",
@@ -19963,7 +19816,7 @@ window.CINECLASH_CATALOG =
     "duration": "108 min",
     "genre": "Drama",
     "rating": 6.2,
-    "description": "Naples. At almost fifty years old Sandro is the leader of the Apache, a group of ultras with whom he has spent his whole life at the stadium: a life of violence, clashes, passions, and ... See full summary »",
+    "description": "Naples. At almost fifty years old Sandro is the leader of the Apache, a group of ultras with whom he has spent his whole life at the stadium: a life of violence, clashes, passions, and",
     "stars": [
       "Aniello Arena",
       "Ciro Nacca",
@@ -20080,7 +19933,7 @@ window.CINECLASH_CATALOG =
     "duration": "108 min",
     "genre": "Documentary, Biography, Sport",
     "rating": 8.2,
-    "description": "Fifteen years of verite footage show the epic rivalry between half-pipe legends Shaun White and Kevin Pearce, childhood friends who become number one and two in the world leading up to the ... See full summary »",
+    "description": "Fifteen years of verite footage show the epic rivalry between half-pipe legends Shaun White and Kevin Pearce, childhood friends who become number one and two in the world leading up to the",
     "stars": [
       "Kevin Pearce",
       "Shaun White",
@@ -20284,7 +20137,7 @@ window.CINECLASH_CATALOG =
     "duration": "84 min",
     "genre": "Drama, Family, Fantasy",
     "rating": 5.9,
-    "description": "Sara Thomas is the type of woman who prefers to sit on the sidelines at work, but when her big idea for a Christmas initiative is stolen, she makes a wish to Santa that she'll finally have ... See full summary »",
+    "description": "Sara Thomas is the type of woman who prefers to sit on the sidelines at work, but when her big idea for a Christmas initiative is stolen, she makes a wish to Santa that she'll finally have",
     "stars": [
       "Lacey Chabert",
       "Paul Greene",
@@ -20448,7 +20301,7 @@ window.CINECLASH_CATALOG =
     "duration": "92 min",
     "genre": "Documentary, Biography, History",
     "rating": 7.1,
-    "description": "In 1976, Karen and Barry Mason had fallen on hard times and were looking for a way to support their young family when they answered an ad in the Los Angeles Times. Larry Flynt was seeking ... See full summary »",
+    "description": "In 1976, Karen and Barry Mason had fallen on hard times and were looking for a way to support their young family when they answered an ad in the Los Angeles Times. Larry Flynt was seeking",
     "stars": [
       "Karen Mason",
       "Barry Mason",
@@ -20493,7 +20346,7 @@ window.CINECLASH_CATALOG =
     "duration": "94 min",
     "genre": "Action, Crime, Thriller",
     "rating": 5,
-    "description": "Roland Sallinger is an LA cop who after nearly being killed by his greedy partner, and eventually being forced to retire for medical reasons, flees to San Antonio, Texas, after being asked ... See full summary »",
+    "description": "Roland Sallinger is an LA cop who after nearly being killed by his greedy partner, and eventually being forced to retire for medical reasons, flees to San Antonio, Texas, after being asked",
     "stars": [
       "Steven Seagal",
       "Liezl Carstens",
@@ -20553,7 +20406,7 @@ window.CINECLASH_CATALOG =
     "duration": "103 min",
     "genre": "Documentary, Music",
     "rating": 7.9,
-    "description": "Telling harsh truths about the modern music business, this riveting and award-winning documentary gives intimate access to singer/actor Jared Leto (\"Requiem for a Dream,\" \"Dallas Buyers ... See full summary »",
+    "description": "Telling harsh truths about the modern music business, this riveting and award-winning documentary gives intimate access to singer/actor Jared Leto (\"Requiem for a Dream,\" \"Dallas Buyers",
     "stars": [
       "Jared Leto",
       "Shannon Leto",
@@ -20744,7 +20597,7 @@ window.CINECLASH_CATALOG =
     "duration": "94 min",
     "genre": "Crime, Drama, Romance",
     "rating": 7.1,
-    "description": "The film follows the story of Duncan, a fourteen-year-old misfit farm boy trying to fill the void and alleviate the numbness left by his mother's passing. Unable to let her go quite yet, ... See full summary »",
+    "description": "The film follows the story of Duncan, a fourteen-year-old misfit farm boy trying to fill the void and alleviate the numbness left by his mother's passing. Unable to let her go quite yet,",
     "stars": [
       "Emile Hirsch",
       "Richard Jenkins",
@@ -20921,7 +20774,7 @@ window.CINECLASH_CATALOG =
     "duration": "139 min",
     "genre": "Action, Crime, Drama",
     "rating": 6.2,
-    "description": "An event from the past separates the fate of three friends. Unexpectedly, in the life of David (Mateusz Banasiuk) she appears again. Dzika (Weronika Ksiazkiewicz) - once the love of his ... See full summary »",
+    "description": "An event from the past separates the fate of three friends. Unexpectedly, in the life of David (Mateusz Banasiuk) she appears again. Dzika (Weronika Ksiazkiewicz) - once the love of his",
     "stars": [
       "Mateusz Banasiuk",
       "Weronika Ksiazkiewicz",
@@ -21050,7 +20903,7 @@ window.CINECLASH_CATALOG =
     "duration": "115 min",
     "genre": "Documentary",
     "rating": 6.6,
-    "description": "TONY ROBBINS: I AM NOT YOUR GURU, a feature documentary film about internationally renowned life and business strategist Tony Robbins, is a revelatory cinéma vérité film that goes behind ... See full summary »",
+    "description": "TONY ROBBINS: I AM NOT YOUR GURU, a feature documentary film about internationally renowned life and business strategist Tony Robbins, is a revelatory cinéma vérité film that goes behind",
     "stars": [
       "Sage Bonnie Humphrey",
       "Steven Kronick",
@@ -21377,7 +21230,7 @@ window.CINECLASH_CATALOG =
     "duration": "101 min",
     "genre": "Action, Comedy, Crime",
     "rating": 6,
-    "description": "After failing to save his wife from 'The Doctor', Kit Li is working as a bodyguard and secret stunt double for the cowardly martial arts film star Frankie Lane. Frankie attends an ... See full summary »",
+    "description": "After failing to save his wife from 'The Doctor', Kit Li is working as a bodyguard and secret stunt double for the cowardly martial arts film star Frankie Lane. Frankie attends an",
     "stars": [
       "Jet Li",
       "Chingmy Yau",
@@ -21452,7 +21305,7 @@ window.CINECLASH_CATALOG =
     "duration": "103 min",
     "genre": "Drama, Romance",
     "rating": 6,
-    "description": "After losing the woman he loves in the original Fig Jam, Metin (Halil Sezai Paracikoglu) finds himself seriously alone. His life is a repetitive round of singing at a bar and grieving for ... See full summary »",
+    "description": "After losing the woman he loves in the original Fig Jam, Metin (Halil Sezai Paracikoglu) finds himself seriously alone. His life is a repetitive round of singing at a bar and grieving for",
     "stars": [
       "Sezai Paracikoglu",
       "Safak Pekdemir",
@@ -21460,21 +21313,6 @@ window.CINECLASH_CATALOG =
       "Mehmet Selim Akgul"
     ],
     "votes": 4308
-  },
-  {
-    "title": "Crime Scene: The Times Square Killer",
-    "year": 2021,
-    "duration": "147 min",
-    "genre": "Documentary, Crime, History",
-    "rating": 6.5,
-    "description": "In 1970s NYC, the \"Torso Killer\" preys on women to fulfill his grotesque fantasies while eluding police. A docuseries dive into crime's darkest places.",
-    "stars": [
-      "Vernon Geberth",
-      "Malcolm Reiman",
-      "Peter Vronsky",
-      "Melinda Chateauvert"
-    ],
-    "votes": 4305
   },
   {
     "title": "Battle",
@@ -21887,7 +21725,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Documentary",
     "rating": 6.5,
-    "description": "The trial between Hulk Hogan and Gawker Media pitted privacy rights against freedom of the press, and raised important questions about how big money can silence media. This film is an ... See full summary »",
+    "description": "The trial between Hulk Hogan and Gawker Media pitted privacy rights against freedom of the press, and raised important questions about how big money can silence media. This film is an",
     "stars": [
       "A.J. Daulerio",
       "Hulk Hogan",
@@ -22140,7 +21978,7 @@ window.CINECLASH_CATALOG =
     "duration": "108 min",
     "genre": "Comedy",
     "rating": 6.2,
-    "description": "Zafer, a sailor living with his mother Döndü in a coastal village in Izmir, has just broke up with his girlfriend Mehtap whose father is also a sailor. While Döndü and her friend, Fahriye ... See full summary »",
+    "description": "Zafer, a sailor living with his mother Döndü in a coastal village in Izmir, has just broke up with his girlfriend Mehtap whose father is also a sailor. While Döndü and her friend, Fahriye",
     "stars": [
       "Ata Demirer",
       "Tuvana Türkay",
@@ -22182,7 +22020,7 @@ window.CINECLASH_CATALOG =
     "duration": "60 min",
     "genre": "Comedy, Romance",
     "rating": 7.3,
-    "description": "This drama series shows the delicate relationship between a female university student Hong Seol (Kim Go-Eun) and her senior Yoo Jung (Park Hae-Jin). Hong-Seol works a part-time job since ... See full summary »",
+    "description": "This drama series shows the delicate relationship between a female university student Hong Seol (Kim Go-Eun) and her senior Yoo Jung (Park Hae-Jin). Hong-Seol works a part-time job since",
     "stars": [
       "Park Hae-Jin",
       "Kim Go-eun",
@@ -22563,7 +22401,7 @@ window.CINECLASH_CATALOG =
     "duration": "100 min",
     "genre": "Horror, Mystery, Thriller",
     "rating": 5.4,
-    "description": "Hendrik is sixteen, a big city kid, and vexed to learn that his mother is moving with him and his little brother Eddi to a village in the south of Austria. To make matters worse, the locals... See full summary »",
+    "description": "Hendrik is sixteen, a big city kid, and vexed to learn that his mother is moving with him and his little brother Eddi to a village in the south of Austria. To make matters worse, the locals",
     "stars": [
       "León Orlandianyi",
       "Benno Rosskopf",
@@ -22593,7 +22431,7 @@ window.CINECLASH_CATALOG =
     "duration": "120 min",
     "genre": "Drama",
     "rating": 7.4,
-    "description": "In a patriarchal society, an ordinary Georgian family lives with three generations under one roof. All are shocked when 52-year-old Manana decides to move out from her parents' home and ... See full summary »",
+    "description": "In a patriarchal society, an ordinary Georgian family lives with three generations under one roof. All are shocked when 52-year-old Manana decides to move out from her parents' home and",
     "stars": [
       "Ia Shugliashvili",
       "Merab Ninidze",
@@ -23173,7 +23011,7 @@ window.CINECLASH_CATALOG =
     "duration": "110 min",
     "genre": "Drama",
     "rating": 6.6,
-    "description": "Coming of age film that takes place in the Swedish archipelago during 70s about young Martin (Bill Skarsgård) who gets a summer job working at a hotel. The hotel manager Gösta (Peter Dalle)... See full summary »",
+    "description": "Coming of age film that takes place in the Swedish archipelago during 70s about young Martin (Bill Skarsgård) who gets a summer job working at a hotel. The hotel manager Gösta (Peter Dalle)",
     "stars": [
       "Bill Skarsgård",
       "Peter Dalle",
@@ -23188,7 +23026,7 @@ window.CINECLASH_CATALOG =
     "duration": "101 min",
     "genre": "Action, Adventure, Fantasy",
     "rating": 5.8,
-    "description": "Months after bloody combats leave behind thousands of dead in the trenches. Jan Lozano, Captain of the Fifth Brigade has fallen prisoner by an opponent's platoon along with a young driver ... See full summary »",
+    "description": "Months after bloody combats leave behind thousands of dead in the trenches. Jan Lozano, Captain of the Fifth Brigade has fallen prisoner by an opponent's platoon along with a young driver",
     "stars": [
       "Miki Esparbé",
       "Aura Garrido",
@@ -23256,21 +23094,6 @@ window.CINECLASH_CATALOG =
       "Gina Philips"
     ],
     "votes": 3695
-  },
-  {
-    "title": "The Culture High",
-    "year": 2014,
-    "duration": "120 min",
-    "genre": "Documentary, News",
-    "rating": 8.2,
-    "description": "Scours the deep-seated roots of this morally induced Marijuana campaign and reveal the fascinating path it has taken to get to where it is today.",
-    "stars": [
-      "Joe Rogan",
-      "Ronald Reagan",
-      "Snoop Dogg",
-      "Penn Jillette"
-    ],
-    "votes": 3688
   },
   {
     "title": "Hot Bot",
@@ -23348,21 +23171,6 @@ window.CINECLASH_CATALOG =
     "votes": 3652
   },
   {
-    "title": "Norm Macdonald Has a Show",
-    "year": 2018,
-    "duration": "30 min",
-    "genre": "Comedy, Talk-Show",
-    "rating": 8.5,
-    "description": "Based on his podcast, comedian and former Saturday Night Live (1975) alumni Norm Macdonald and his sidekick Adam Eget sit down and chat with celebrity guests about their life, career and views in a somewhat unconventional and often irreverent way.",
-    "stars": [
-      "Norm MacDonald",
-      "Adam Eget",
-      "Michael Keaton",
-      "Drew Barrymore"
-    ],
-    "votes": 3643
-  },
-  {
     "title": "Loose Change 9/11: An American Coup",
     "year": 2009,
     "duration": "99 min",
@@ -23383,7 +23191,7 @@ window.CINECLASH_CATALOG =
     "duration": "39 min",
     "genre": "Short, Documentary",
     "rating": 6.3,
-    "description": "Lead Me Home is a short film that follows several people living on the streets in West Coast cities. Conceived to be a cinematic study of contrasts, the film will be familiar and shocking; ... See full summary »",
+    "description": "Lead Me Home is a short film that follows several people living on the streets in West Coast cities. Conceived to be a cinematic study of contrasts, the film will be familiar and shocking;",
     "stars": [
       "Pedro Kos",
       "Jon Shenk"
@@ -23525,7 +23333,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Thriller",
     "rating": 4.3,
-    "description": "Ray, an ex-con, is starting a new life looking to stay out of trouble. One evening, on Ray's watch, the nightclub he works for is robbed and the owner's son is shot dead. As his criminal ... See full summary »",
+    "description": "Ray, an ex-con, is starting a new life looking to stay out of trouble. One evening, on Ray's watch, the nightclub he works for is robbed and the owner's son is shot dead. As his criminal",
     "stars": [
       "Dave Bautista",
       "Amy Smart",
@@ -24002,7 +23810,7 @@ window.CINECLASH_CATALOG =
     "duration": "60 min",
     "genre": "Comedy, Romance",
     "rating": 7.6,
-    "description": "A romance between a lawyer and a top actress, whose life goes downhill after becoming caught up in a scandal with a third generation chaebol. She fakes her position to become the lawyer's ... See full summary »",
+    "description": "A romance between a lawyer and a top actress, whose life goes downhill after becoming caught up in a scandal with a third generation chaebol. She fakes her position to become the lawyer's",
     "stars": [
       "Lee Dong-Wook",
       "Sang-woo Lee",
@@ -24077,7 +23885,7 @@ window.CINECLASH_CATALOG =
     "duration": "100 min",
     "genre": "Documentary, Biography, Drama",
     "rating": 8.5,
-    "description": "As though life is imitating art, actor and sex-symbol, Andy Whitfield, had just become a star as the lead in the hit television series,'Spartacus,' when he is faced with his biggest ... See full summary »",
+    "description": "As though life is imitating art, actor and sex-symbol, Andy Whitfield, had just become a star as the lead in the hit television series,'Spartacus,' when he is faced with his biggest",
     "stars": [
       "Jai Courtney",
       "Andy Whitfield",
@@ -24520,7 +24328,7 @@ window.CINECLASH_CATALOG =
     "duration": "100 min",
     "genre": "Biography, Drama, Music",
     "rating": 6.2,
-    "description": "In the late 80s/ early 1990s, the most feared battle MC in Queens, New York, was a fierce teenage girl with the weight of the world on her shoulders. At the age of 14, Lolita \"Roxanne ... See full summary »",
+    "description": "In the late 80s/ early 1990s, the most feared battle MC in Queens, New York, was a fierce teenage girl with the weight of the world on her shoulders. At the age of 14, Lolita \"Roxanne",
     "stars": [
       "Chanté Adams",
       "Nia Long",
@@ -24535,7 +24343,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Comedy, Romance",
     "rating": 5.6,
-    "description": "If four couples meet at the same party, and a honey-sweet relationship begins between them, a surreal love out of nowhere - If every phase of the relationship is a situation comedy, where ... See full summary »",
+    "description": "If four couples meet at the same party, and a honey-sweet relationship begins between them, a surreal love out of nowhere - If every phase of the relationship is a situation comedy, where",
     "stars": [
       "Aylin Kontante",
       "Bülent Emrah Parlak",
@@ -24700,7 +24508,7 @@ window.CINECLASH_CATALOG =
     "duration": "73 min",
     "genre": "Documentary",
     "rating": 6.8,
-    "description": "SAVING CAPITALISM is a documentary film that follows former Secretary of Labor and Professor, Robert Reich, as he takes his book and his views to the heart of conservative America to speak ... See full summary »",
+    "description": "SAVING CAPITALISM is a documentary film that follows former Secretary of Labor and Professor, Robert Reich, as he takes his book and his views to the heart of conservative America to speak",
     "stars": [
       "Robert Reich",
       "Darvin Bentlage",
@@ -24730,7 +24538,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Action, Crime, Drama",
     "rating": 4.1,
-    "description": "\"In the deep jungles of South East Asia a blood thirsty mercenary Sebastian, hunts for the thrill of the chase and victims to sell into slavery. In one operation he kills a peaceful local ... See full summary »",
+    "description": "\"In the deep jungles of South East Asia a blood thirsty mercenary Sebastian, hunts for the thrill of the chase and victims to sell into slavery. In one operation he kills a peaceful local",
     "stars": [
       "Danny Trejo",
       "Gary Daniels",
@@ -25084,21 +24892,6 @@ window.CINECLASH_CATALOG =
     "votes": 3155
   },
   {
-    "title": "Alive Inside: A Story of Music and Memory",
-    "year": 2014,
-    "duration": "78 min",
-    "genre": "Documentary, Music, News",
-    "rating": 8.2,
-    "description": "Dan Cohen, founder of the nonprofit organization Music & Memory, fights against a broken healthcare system to demonstrate music's ability to combat memory loss and restore a deep sense of self to those suffering from it.",
-    "stars": [
-      "Dan Cohen",
-      "Louise Dueno",
-      "Nell Hardie",
-      "Norman Hardie"
-    ],
-    "votes": 3146
-  },
-  {
     "title": "Photocopier",
     "year": 2021,
     "duration": "130 min",
@@ -25119,7 +24912,7 @@ window.CINECLASH_CATALOG =
     "duration": "21 min",
     "genre": "Short, Adventure, Comedy",
     "rating": 4.3,
-    "description": "A science fiction short film set in the seventies, tells the story of a missing airplane that crashes in an isolated desert area. After countless failed attempts by the survivors to ... See full summary »",
+    "description": "A science fiction short film set in the seventies, tells the story of a missing airplane that crashes in an isolated desert area. After countless failed attempts by the survivors to",
     "stars": [
       "Hgm Moejione Mohammed Gaber",
       "Sohayb Godus",
@@ -25251,7 +25044,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Comedy",
     "rating": 6.1,
-    "description": "Alice lives in a beautiful villa. She has a husband who makes a lot of money, a nine-year-old son, and three servants who happen to be immigrants. She is superficial, haughty, and racist. ... See full summary »",
+    "description": "Alice lives in a beautiful villa. She has a husband who makes a lot of money, a nine-year-old son, and three servants who happen to be immigrants. She is superficial, haughty, and racist.",
     "stars": [
       "Paola Cortellesi",
       "Raoul Bova",
@@ -25266,7 +25059,7 @@ window.CINECLASH_CATALOG =
     "duration": "120 min",
     "genre": "Comedy, Drama, Romance",
     "rating": 5.9,
-    "description": "\"Heidi (Osment), who initially left her small town of Pleasant Valley with the dream of one day becoming a successful painter, has put her own art on hold to excel as an art gallery curator... See full summary »",
+    "description": "\"Heidi (Osment), who initially left her small town of Pleasant Valley with the dream of one day becoming a successful painter, has put her own art on hold to excel as an art gallery curator",
     "stars": [
       "Emily Osment",
       "Ryan Rottman",
@@ -25673,7 +25466,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Animation, Action, Adventure",
     "rating": 5.7,
-    "description": "In the land of Orlais, where battles are fought with swords and magic, a young heroine rises as templars, mages, and dragons clash. Cassandra, a brash and beautiful Seeker, must stop a ... See full summary »",
+    "description": "In the land of Orlais, where battles are fought with swords and magic, a young heroine rises as templars, mages, and dragons clash. Cassandra, a brash and beautiful Seeker, must stop a",
     "stars": [
       "Colleen Clinkenbeard",
       "J. Michael Tatum",
@@ -25718,7 +25511,7 @@ window.CINECLASH_CATALOG =
     "duration": "70 min",
     "genre": "Comedy, Fantasy, Romance",
     "rating": 6.9,
-    "description": "The Water God Habaek visits earth to fulfill his mission with the help of his servant in the human world, named psychiatrist Yoon So Ah, whose ancestor have promised to serve The Water God ... See full summary »",
+    "description": "The Water God Habaek visits earth to fulfill his mission with the help of his servant in the human world, named psychiatrist Yoon So Ah, whose ancestor have promised to serve The Water God",
     "stars": [
       "Nam Joo-hyuk",
       "Shin Se-Kyung",
@@ -25748,7 +25541,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Action",
     "rating": 3.5,
-    "description": "Former special-forces soldier John Gold is given the opportunity to bring Sean Teague - the man who betrayed his team on their final mission in Eastern Europe several years ago - to justice... See full summary »",
+    "description": "Former special-forces soldier John Gold is given the opportunity to bring Sean Teague - the man who betrayed his team on their final mission in Eastern Europe several years ago - to justice",
     "stars": [
       "Stu Bennett",
       "Vinnie Jones",
@@ -26384,7 +26177,7 @@ window.CINECLASH_CATALOG =
     "duration": "93 min",
     "genre": "Action, Crime, Thriller",
     "rating": 6.6,
-    "description": "A group of criminals would like to sell some weapons for an undercover policeman. Johan Falk's team is watching the operation meanwhile Frank Wagner is also in the game. Rydell, the gang ... See full summary »",
+    "description": "A group of criminals would like to sell some weapons for an undercover policeman. Johan Falk's team is watching the operation meanwhile Frank Wagner is also in the game. Rydell, the gang",
     "stars": [
       "Jakob Eklund",
       "Joel Kinnaman",
@@ -26414,7 +26207,7 @@ window.CINECLASH_CATALOG =
     "duration": "100 min",
     "genre": "Comedy, Drama",
     "rating": 7.3,
-    "description": "The biggest Israeli blockbuster since 1986 . Steve and Chuma , two criminals are the sole survivors of a terrorist attack at a restaurant in Jerusalem. They decide to change their ways and ... See full summary »",
+    "description": "The biggest Israeli blockbuster since 1986 . Steve and Chuma , two criminals are the sole survivors of a terrorist attack at a restaurant in Jerusalem. They decide to change their ways and",
     "stars": [
       "Guy Amir",
       "Hanan Savyon",
@@ -26621,7 +26414,7 @@ window.CINECLASH_CATALOG =
     "duration": "110 min",
     "genre": "Comedy, Drama, Romance",
     "rating": 6.4,
-    "description": "Bolbol, a rich man who is trying to take the hard decision of his future wife, meets the women who he believes is the perfect one for him but after a while he finds out she is not that good... See full summary »",
+    "description": "Bolbol, a rich man who is trying to take the hard decision of his future wife, meets the women who he believes is the perfect one for him but after a while he finds out she is not that good",
     "stars": [
       "Ahmed Helmy",
       "Zeina",
@@ -26681,7 +26474,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Drama, Fantasy, Romance",
     "rating": 8,
-    "description": "The story of the secret love between Lee Hwon, a fictional king of Joseon, and Wol, a female shaman. Wol was born as Heo Yeon Woo, the daughter of a noble family who won the love of the ... See full summary »",
+    "description": "The story of the secret love between Lee Hwon, a fictional king of Joseon, and Wol, a female shaman. Wol was born as Heo Yeon Woo, the daughter of a noble family who won the love of the",
     "stars": [
       "Mi-seon Jeon",
       "Mi-kyeong Yang",
@@ -26821,21 +26614,6 @@ window.CINECLASH_CATALOG =
       "Topher Grace"
     ],
     "votes": 2694
-  },
-  {
-    "title": "Sense8: Creating the World",
-    "year": 2015,
-    "duration": "26 min",
-    "genre": "Documentary, Short, Sci-Fi",
-    "rating": 8.5,
-    "description": "Go behind the scenes and around the world with the \"Sense8\" cast and crew in this in-depth look at how the hit series is made.",
-    "stars": [
-      "Freema Agyeman",
-      "Aml Ameen",
-      "Naveen Andrews",
-      "Crispin Buxton"
-    ],
-    "votes": 2690
   },
   {
     "title": "Joan Didion: The Center Will Not Hold",
@@ -27035,7 +26813,7 @@ window.CINECLASH_CATALOG =
     "duration": "94 min",
     "genre": "Drama",
     "rating": 6.7,
-    "description": "Fred Daly returns to Ireland with nowhere to live but his car. Then dope-smoking 21-year-old Cathal parks beside him and brightens up his lonely world. Encouraged by Cathal, Fred meets ... See full summary »",
+    "description": "Fred Daly returns to Ireland with nowhere to live but his car. Then dope-smoking 21-year-old Cathal parks beside him and brightens up his lonely world. Encouraged by Cathal, Fred meets",
     "stars": [
       "Colin Morgan",
       "Colm Meaney",
@@ -27185,7 +26963,7 @@ window.CINECLASH_CATALOG =
     "duration": "125 min",
     "genre": "Comedy, Fantasy, Horror",
     "rating": 6.6,
-    "description": "Phobia 2 is composed of five short movie segments directed by five of the best directors of Thai horror films. A teenager who committed a crime goes to a sacred place for meditation and ... See full summary »",
+    "description": "Phobia 2 is composed of five short movie segments directed by five of the best directors of Thai horror films. A teenager who committed a crime goes to a sacred place for meditation and",
     "stars": [
       "Jirayu La-ongmanee",
       "Ray MacDonald",
@@ -27451,7 +27229,7 @@ window.CINECLASH_CATALOG =
     "duration": "107 min",
     "genre": "Comedy, Drama, Fantasy",
     "rating": 5.8,
-    "description": "Oscar comes to light on a stormy night, in the hospital of a small town and immediately we understand that there is something extraordinary in him : Does not obey the law of gravity. It ... See full summary »",
+    "description": "Oscar comes to light on a stormy night, in the hospital of a small town and immediately we understand that there is something extraordinary in him : Does not obey the law of gravity. It",
     "stars": [
       "Elio Germano",
       "Michela Cescon",
@@ -27582,7 +27360,7 @@ window.CINECLASH_CATALOG =
     "duration": "96 min",
     "genre": "Action, Crime, Thriller",
     "rating": 6.5,
-    "description": "It has been two years since John Falk and Frank Wagner broke their cooperation and Frank stopped working undercover for the police. Frank has just had: Re-opening of his bar when his former... See full summary »",
+    "description": "It has been two years since John Falk and Frank Wagner broke their cooperation and Frank stopped working undercover for the police. Frank has just had: Re-opening of his bar when his former",
     "stars": [
       "Jakob Eklund",
       "Joel Kinnaman",
@@ -27685,7 +27463,7 @@ window.CINECLASH_CATALOG =
     "duration": "125 min",
     "genre": "Drama, Thriller",
     "rating": 7.4,
-    "description": "Cristian, a young idealistic prosecutor whose career is on the rise, tries to crack a case against a senior colleague accused of corruption. The dilemma of choosing between his career and ... See full summary »",
+    "description": "Cristian, a young idealistic prosecutor whose career is on the rise, tries to crack a case against a senior colleague accused of corruption. The dilemma of choosing between his career and",
     "stars": [
       "Emilian Oprea",
       "Mihai Constantin",
@@ -27780,18 +27558,6 @@ window.CINECLASH_CATALOG =
       "Felipe García Vélez"
     ],
     "votes": 2509
-  },
-  {
-    "title": "Salt Fat Acid Heat",
-    "year": 2018,
-    "duration": "",
-    "genre": "Documentary",
-    "rating": 7.7,
-    "description": "Docuseries, based on the award-winning book, explores the essence of cooking and the vital ingredients at the heart of a great dish.",
-    "stars": [
-      "Samin Nosrat"
-    ],
-    "votes": 2505
   },
   {
     "title": "Generation Iron 2",
@@ -28039,7 +27805,7 @@ window.CINECLASH_CATALOG =
     "duration": "117 min",
     "genre": "Animation, Action, Adventure",
     "rating": 7.9,
-    "description": "The story focuses on the Holy Grail War and explores the relationship between Shirou Emiya and Sakura Matou, two teenagers participating in this conflict. The story continues immediately ... See full summary »",
+    "description": "The story focuses on the Holy Grail War and explores the relationship between Shirou Emiya and Sakura Matou, two teenagers participating in this conflict. The story continues immediately",
     "stars": [
       "Yu Asakawa",
       "Michael Donovan",
@@ -28099,7 +27865,7 @@ window.CINECLASH_CATALOG =
     "duration": "96 min",
     "genre": "Comedy",
     "rating": 5.8,
-    "description": "After getting fired from his current job as a pilot and dumped by his wife, he seeks to find a new job. Out of desperation on the job market he disguises himself as a woman in order to get ... See full summary »",
+    "description": "After getting fired from his current job as a pilot and dumped by his wife, he seeks to find a new job. Out of desperation on the job market he disguises himself as a woman in order to get",
     "stars": [
       "Jonas Karlsson",
       "Marie Robertson",
@@ -28318,7 +28084,7 @@ window.CINECLASH_CATALOG =
     "duration": "136 min",
     "genre": "Crime, Drama",
     "rating": 7,
-    "description": "Kenji Yamamoto's father died from using a stimulant drug. His life fell into desperation. Kenji then joined a crime syndicate. There, he meets the gang's boss Hiroshi Shibasaki. Hiroshi ... See full summary »",
+    "description": "Kenji Yamamoto's father died from using a stimulant drug. His life fell into desperation. Kenji then joined a crime syndicate. There, he meets the gang's boss Hiroshi Shibasaki. Hiroshi",
     "stars": [
       "Gô Ayano",
       "Naoyuki Fernandez",
@@ -28520,21 +28286,6 @@ window.CINECLASH_CATALOG =
     "votes": 2350
   },
   {
-    "title": "Room 2806: The Accusation",
-    "year": 2020,
-    "duration": "197 min",
-    "genre": "Documentary, Crime",
-    "rating": 7,
-    "description": "This docuseries follows the 2011 sexual assault case involving french politician Dominique Strauss-Kahn at the height of his career.",
-    "stars": [
-      "Nafissatou Diallo",
-      "Raphaëlle Bacqué",
-      "Élisabeth Guigou",
-      "Paul Browne"
-    ],
-    "votes": 2348
-  },
-  {
     "title": "Seized",
     "year": 2020,
     "duration": "85 min",
@@ -28555,7 +28306,7 @@ window.CINECLASH_CATALOG =
     "duration": "35 min",
     "genre": "Comedy, Drama, Romance",
     "rating": 7.9,
-    "description": "Nam Shin is a son from a family who runs a large company. After an unexpected accident, he falls into a coma. His mother Oh Ro Ra is an authority on brain science and artificial ... See full summary »",
+    "description": "Nam Shin is a son from a family who runs a large company. After an unexpected accident, he falls into a coma. His mother Oh Ro Ra is an authority on brain science and artificial",
     "stars": [
       "Seo Kang-Joon",
       "Gong Seung-Yeon",
@@ -28615,7 +28366,7 @@ window.CINECLASH_CATALOG =
     "duration": "125 min",
     "genre": "Drama, Horror, Mystery",
     "rating": 6.2,
-    "description": "When a family moves to Laddaland, an upscale housing development with large, beautiful homes, they discover life in their new neighborhood isn't so perfect when they encounter a series of ... See full summary »",
+    "description": "When a family moves to Laddaland, an upscale housing development with large, beautiful homes, they discover life in their new neighborhood isn't so perfect when they encounter a series of",
     "stars": [
       "Saharat Sangkapreecha",
       "Piyathida Woramusik",
@@ -28675,7 +28426,7 @@ window.CINECLASH_CATALOG =
     "duration": "82 min",
     "genre": "Horror",
     "rating": 3.2,
-    "description": "Karl, a man who suffers a demonic possession, together with Tomás, a priest with addiction problems, embark on a hunt for demons, finding the case of Camila, a girl who attacks her family ... See full summary »",
+    "description": "Karl, a man who suffers a demonic possession, together with Tomás, a priest with addiction problems, embark on a hunt for demons, finding the case of Camila, a girl who attacks her family",
     "stars": [
       "Eduardo Noriega",
       "Eivaut Rischen",
@@ -28807,7 +28558,7 @@ window.CINECLASH_CATALOG =
     "duration": "88 min",
     "genre": "Documentary, Action, History",
     "rating": 6.4,
-    "description": "What does it mean to lead men in war? What does it mean to come home? Hell and Back Again is a cinematically revolutionary film that asks and answers these questions with a power and ... See full summary »",
+    "description": "What does it mean to lead men in war? What does it mean to come home? Hell and Back Again is a cinematically revolutionary film that asks and answers these questions with a power and",
     "stars": [
       "Nathan Harris",
       "Ashley Harris",
@@ -28867,7 +28618,7 @@ window.CINECLASH_CATALOG =
     "duration": "23 min",
     "genre": "Animation, Adventure, Comedy",
     "rating": 8.2,
-    "description": "Mari Tamaki is in her second year of high school and wants to start something. It's then that she meets Shirase, a girl with few friends who's considered weirdo by the rest of the class and... See full summary »",
+    "description": "Mari Tamaki is in her second year of high school and wants to start something. It's then that she meets Shirase, a girl with few friends who's considered weirdo by the rest of the class and",
     "stars": [
       "Inori Minase",
       "Kana Hanazawa",
@@ -29061,7 +28812,7 @@ window.CINECLASH_CATALOG =
     "duration": "92 min",
     "genre": "Action, Crime, Thriller",
     "rating": 6.5,
-    "description": "A firefight between two rival gangs breaks out in a Gothenburg city park, and when the conflict escalates the GSI group is called into it. A new gang is about to make its way in the Swedish... See full summary »",
+    "description": "A firefight between two rival gangs breaks out in a Gothenburg city park, and when the conflict escalates the GSI group is called into it. A new gang is about to make its way in the Swedish",
     "stars": [
       "Jakob Eklund",
       "Joel Kinnaman",
@@ -29076,7 +28827,7 @@ window.CINECLASH_CATALOG =
     "duration": "45 min",
     "genre": "Comedy, Drama",
     "rating": 7.6,
-    "description": "Shuji (Kamenashi Kazuya) is one of the most popular guys in school. He tries to avoid Akira (Tomohisa Yamashita), because of his constant annoyance. But Kame isn't just like that. At home, ... See full summary »",
+    "description": "Shuji (Kamenashi Kazuya) is one of the most popular guys in school. He tries to avoid Akira (Tomohisa Yamashita), because of his constant annoyance. But Kame isn't just like that. At home,",
     "stars": [
       "Kazuya Kamenashi",
       "Tomohisa Yamashita",
@@ -29181,7 +28932,7 @@ window.CINECLASH_CATALOG =
     "duration": "91 min",
     "genre": "Documentary",
     "rating": 8.2,
-    "description": "To many, Don McCullin is the greatest living war photographer, often cited as an inspiration for today's photojournalists. For the first time, McCullin speaks candidly about his ... See full summary »",
+    "description": "To many, Don McCullin is the greatest living war photographer, often cited as an inspiration for today's photojournalists. For the first time, McCullin speaks candidly about his",
     "stars": [
       "Harold Evans",
       "Don McCullin",
@@ -29211,7 +28962,7 @@ window.CINECLASH_CATALOG =
     "duration": "94 min",
     "genre": "Action, Crime, Thriller",
     "rating": 6.6,
-    "description": "Police management gives Johan Falk and his colleagues at the group for specific action orders to deploy all means against organized crime when a female prosecutor subjected to an explosive ... See full summary »",
+    "description": "Police management gives Johan Falk and his colleagues at the group for specific action orders to deploy all means against organized crime when a female prosecutor subjected to an explosive",
     "stars": [
       "Jakob Eklund",
       "Joel Kinnaman",
@@ -29264,21 +29015,6 @@ window.CINECLASH_CATALOG =
     "votes": 2218
   },
   {
-    "title": "Elize Matsunaga: Once Upon a Crime",
-    "year": 2021,
-    "duration": "197 min",
-    "genre": "Documentary, Biography, Crime",
-    "rating": 5.9,
-    "description": "The crime shocked Brazil: Elize Matsunaga shot and dismembered her rich husband. Featuring her first interview, this docuseries dives deep into the case.",
-    "stars": [
-      "Stephanie Sherry",
-      "Elize Matsunaga",
-      "Luciano Santoro",
-      "Flávio Varella"
-    ],
-    "votes": 2216
-  },
-  {
     "title": "Justin Timberlake + the Tennessee Kids",
     "year": 2016,
     "duration": "90 min",
@@ -29327,7 +29063,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Documentary",
     "rating": 7.2,
-    "description": "When Hurricane Katrina ravaged America's Gulf Coast, it laid bare an uncomfortable reality-America is not only far from the world's wealthiest nation; it is crumbling beneath a staggering ... See full summary »",
+    "description": "When Hurricane Katrina ravaged America's Gulf Coast, it laid bare an uncomfortable reality-America is not only far from the world's wealthiest nation; it is crumbling beneath a staggering",
     "stars": [
       "Beth Naef",
       "Mike Hudson",
@@ -29357,7 +29093,7 @@ window.CINECLASH_CATALOG =
     "duration": "100 min",
     "genre": "Drama",
     "rating": 7.6,
-    "description": "Caterina Schöllack runs a dance school in Berlin in 1956. It is her goal to give her three daughters the best possible opportunity, meaning to ensure that they marry well, but until then ... See full summary »",
+    "description": "Caterina Schöllack runs a dance school in Berlin in 1956. It is her goal to give her three daughters the best possible opportunity, meaning to ensure that they marry well, but until then",
     "stars": [
       "Sonja Gerhardt",
       "Claudia Michelsen",
@@ -29447,7 +29183,7 @@ window.CINECLASH_CATALOG =
     "duration": "129 min",
     "genre": "Drama, Romance",
     "rating": 6.6,
-    "description": "Lee Jeok-yo is a 70ish year old man who is a respected poet. He cares fondly for his 30ish year old disciple Seo Ji-woo. The world of these two men are shaken when 17-year-old high school ... See full summary »",
+    "description": "Lee Jeok-yo is a 70ish year old man who is a respected poet. He cares fondly for his 30ish year old disciple Seo Ji-woo. The world of these two men are shaken when 17-year-old high school",
     "stars": [
       "Park Hae-il",
       "Mu-Yeol Kim",
@@ -29462,7 +29198,7 @@ window.CINECLASH_CATALOG =
     "duration": "110 min",
     "genre": "Comedy, Drama",
     "rating": 6.9,
-    "description": "Yakup and Semsa are Syriac families living in Berlin with their three children and grandchildren. Twenty-five years ago they migrated from Mardin to Berlin. One day, a call comes from ... See full summary »",
+    "description": "Yakup and Semsa are Syriac families living in Berlin with their three children and grandchildren. Twenty-five years ago they migrated from Mardin to Berlin. One day, a call comes from",
     "stars": [
       "Kadir Inanir",
       "Vahide Perçin",
@@ -29535,7 +29271,7 @@ window.CINECLASH_CATALOG =
     "duration": "97 min",
     "genre": "Action, Crime, Thriller",
     "rating": 6.8,
-    "description": "Some men infiltrate the retired chief engineer Arthur Jönsson's home. They look through the residence for a few drawings. Some time later the same men, who turn out to be former Swedish ... See full summary »",
+    "description": "Some men infiltrate the retired chief engineer Arthur Jönsson's home. They look through the residence for a few drawings. Some time later the same men, who turn out to be former Swedish",
     "stars": [
       "Jakob Eklund",
       "Jens Hultén",
@@ -29650,21 +29386,6 @@ window.CINECLASH_CATALOG =
     "votes": 2161
   },
   {
-    "title": "The Oscars",
-    "year": 2016,
-    "duration": "175 min",
-    "genre": "Music",
-    "rating": 6.4,
-    "description": "The 88th Academy Awards ceremony honors achievement in film in 2015.",
-    "stars": [
-      "Chris Rock",
-      "Emily Blunt",
-      "Charlize Theron",
-      "Tom McCarthy"
-    ],
-    "votes": 2159
-  },
-  {
     "title": "Johan Falk: Organizatsija Karayan",
     "year": 2012,
     "duration": "97 min",
@@ -29685,7 +29406,7 @@ window.CINECLASH_CATALOG =
     "duration": "35 min",
     "genre": "Comedy, Drama, History",
     "rating": 8.1,
-    "description": "Set in the early 19th century. Goo Hae Ryung works as a historian. Female historians like Goo Hae Ryung are generally looked down upon because of their gender. Yet, Goo Hae Ryung fulfills ... See full summary »",
+    "description": "Set in the early 19th century. Goo Hae Ryung works as a historian. Female historians like Goo Hae Ryung are generally looked down upon because of their gender. Yet, Goo Hae Ryung fulfills",
     "stars": [
       "Shin Se-Kyung",
       "Cha Eun-Woo",
@@ -29700,7 +29421,7 @@ window.CINECLASH_CATALOG =
     "duration": "116 min",
     "genre": "Crime, Drama, Mystery",
     "rating": 6.6,
-    "description": "Francois always despised the textile barons who ruled his local town. But he fell in love with the family heiress Gilberte. Ten years ago, he would have married her. Now only hatred holds them together. Francois is accused of murder. A hooker and a football star lie slaughtered. He thinks he has been framed by the mob. Going underground, he finds that the trail leads all the way to the top - to ... See full summary »",
+    "description": "Francois always despised the textile barons who ruled his local town. But he fell in love with the family heiress Gilberte. Ten years ago, he would have married her. Now only hatred holds them together. Francois is accused of murder. A hooker and a football star lie slaughtered. He thinks he has been framed by the mob. Going underground, he finds that the trail leads all the way to the top - to",
     "stars": [
       "Jean-Paul Belmondo",
       "Bernard Blier",
@@ -29775,7 +29496,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Action, Crime, Thriller",
     "rating": 5.8,
-    "description": "The police unit \"GSI\" of Gothenburg city have been ordered to identify and arrest the people responsible for importing young women into Sweden from Eastern Europe for the purpose of ... See full summary »",
+    "description": "The police unit \"GSI\" of Gothenburg city have been ordered to identify and arrest the people responsible for importing young women into Sweden from Eastern Europe for the purpose of",
     "stars": [
       "Jakob Eklund",
       "Henrik Norlén",
@@ -29880,7 +29601,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Romance",
     "rating": 6.2,
-    "description": "Single father and Deli owner Daan tries to find love online. Katje a beautiful yet self absorbed designer opens a store next door, they instantly dislike each other. Daan daughter Saar ... See full summary »",
+    "description": "Single father and Deli owner Daan tries to find love online. Katje a beautiful yet self absorbed designer opens a store next door, they instantly dislike each other. Daan daughter Saar",
     "stars": [
       "Marwan Kenzari",
       "Bracha van Doesburgh",
@@ -29918,21 +29639,6 @@ window.CINECLASH_CATALOG =
       "Ahn Jae-Hyun"
     ],
     "votes": 2112
-  },
-  {
-    "title": "First Team: Juventus",
-    "year": 2018,
-    "duration": "40 min",
-    "genre": "Documentary, Reality-TV, Sport",
-    "rating": 7.2,
-    "description": "Follow renowned soccer club Juventus on and off the pitch as they attempt to win a seventh straight Italian title and achieve Champions League glory.",
-    "stars": [
-      "D.B. Sweeney",
-      "Juventus F.C.",
-      "Gianluigi Buffon",
-      "Alex Sandro"
-    ],
-    "votes": 2107
   },
   {
     "title": "Monsoon",
@@ -29985,7 +29691,7 @@ window.CINECLASH_CATALOG =
     "duration": "106 min",
     "genre": "Documentary, Biography, Comedy",
     "rating": 7.5,
-    "description": "Barry Crimmins is pissed. His hellfire brand of comedy has rained verbal lightning bolts on American audiences and politicians for decades, yet you've probably never heard of him. But once ... See full summary »",
+    "description": "Barry Crimmins is pissed. His hellfire brand of comedy has rained verbal lightning bolts on American audiences and politicians for decades, yet you've probably never heard of him. But once",
     "stars": [
       "Barry Crimmins",
       "Jack Gallagher",
@@ -30074,7 +29780,7 @@ window.CINECLASH_CATALOG =
     "duration": "53 min",
     "genre": "Action, Drama, Thriller",
     "rating": 7,
-    "description": "An attack of a yihadist nature in the Old Town of Bilbao ends up with the lives of seven people and leaves malwounds to more than one thirteenth, many of them gravity. Victims and ... See full summary »",
+    "description": "An attack of a yihadist nature in the Old Town of Bilbao ends up with the lives of seven people and leaves malwounds to more than one thirteenth, many of them gravity. Victims and",
     "stars": [
       "César Mateo",
       "María de Nati",
@@ -30149,7 +29855,7 @@ window.CINECLASH_CATALOG =
     "duration": "50 min",
     "genre": "Biography, Drama, History",
     "rating": 7.1,
-    "description": "In May 1940, on the outskirts of Mexico City, a detachment of Mexican Communists dressed as policemen attack the house of the former leader of the Russian revolution, Leon Trotsky. By an ... See full summary »",
+    "description": "In May 1940, on the outskirts of Mexico City, a detachment of Mexican Communists dressed as policemen attack the house of the former leader of the Russian revolution, Leon Trotsky. By an",
     "stars": [
       "Konstantin Khabenskiy",
       "Mikhail Porechenkov",
@@ -30361,16 +30067,6 @@ window.CINECLASH_CATALOG =
     "votes": 2027
   },
   {
-    "title": "Stranger Things: Spotlight",
-    "year": 2018,
-    "duration": "",
-    "genre": "Talk-Show",
-    "rating": 8.9,
-    "description": "The upside down is back, with a new monster The mind flayer that posses people for revenge, and The kids decide it's time that they fight back.",
-    "stars": [],
-    "votes": 2023
-  },
-  {
     "title": "The Getaway King",
     "year": 2021,
     "duration": "100 min",
@@ -30436,7 +30132,7 @@ window.CINECLASH_CATALOG =
     "duration": "83 min",
     "genre": "Horror, Thriller",
     "rating": 4.4,
-    "description": "When Simon, Rich, and Eva head out on an eagerly anticipated road trip, they bring along a video camera to record their journey. What starts out as a carefree adventure slowly becomes a ... See full summary »",
+    "description": "When Simon, Rich, and Eva head out on an eagerly anticipated road trip, they bring along a video camera to record their journey. What starts out as a carefree adventure slowly becomes a",
     "stars": [
       "Rob Scattergood",
       "Amber Lewis",
@@ -30451,7 +30147,7 @@ window.CINECLASH_CATALOG =
     "duration": "78 min",
     "genre": "Documentary",
     "rating": 6.4,
-    "description": "Meet the Mormons examines the very diverse lives of six devout members of the Church of Jesus Christ of Latter-day Saints. Filmed on location and across the globe, Meet the Mormons takes ... See full summary »",
+    "description": "Meet the Mormons examines the very diverse lives of six devout members of the Church of Jesus Christ of Latter-day Saints. Filmed on location and across the globe, Meet the Mormons takes",
     "stars": [
       "Jermaine Sullivan",
       "Ken Niumatalolo",
@@ -30553,7 +30249,7 @@ window.CINECLASH_CATALOG =
     "duration": "126 min",
     "genre": "Action, Drama, Thriller",
     "rating": 6.3,
-    "description": "The events revolve around a special operations officer who deals with more than one terrorist operation and is hunting down terrorist cells. The film shows security forces' efforts to ... See full summary »",
+    "description": "The events revolve around a special operations officer who deals with more than one terrorist operation and is hunting down terrorist cells. The film shows security forces' efforts to",
     "stars": [
       "Ahmed Ezz",
       "Samer al Masri",
@@ -30598,7 +30294,7 @@ window.CINECLASH_CATALOG =
     "duration": "103 min",
     "genre": "Action, Crime, Thriller",
     "rating": 7.7,
-    "description": "In the final movie about Swedish special force policeman Johan Falk, he tries to solve the problem with the Eastern European mafia, who is threatening his family. Meanwhile, his co-workers ... See full summary »",
+    "description": "In the final movie about Swedish special force policeman Johan Falk, he tries to solve the problem with the Eastern European mafia, who is threatening his family. Meanwhile, his co-workers",
     "stars": [
       "Jakob Eklund",
       "Jens Hultén",
@@ -30628,7 +30324,7 @@ window.CINECLASH_CATALOG =
     "duration": "102 min",
     "genre": "Comedy, Romance",
     "rating": 6.7,
-    "description": "Pie is a sweet girl who moves into a new college dorm room where she finds out that her new roommate Kim, is a tomboy who looks and dress like a boy. As their friendship develops, Pie and ... See full summary »",
+    "description": "Pie is a sweet girl who moves into a new college dorm room where she finds out that her new roommate Kim, is a tomboy who looks and dress like a boy. As their friendship develops, Pie and",
     "stars": [
       "Sushar Manaying",
       "Supanart Jittaleela",
@@ -30843,7 +30539,7 @@ window.CINECLASH_CATALOG =
     "duration": "35 min",
     "genre": "Comedy, Romance",
     "rating": 7.9,
-    "description": "Woo Seo Ri, a violin prodigy at 17 who was about to study in Germany, got into a bus accident and fell into a coma waking up 13 years later. Mentally she is still only 17, while physically ... See full summary »",
+    "description": "Woo Seo Ri, a violin prodigy at 17 who was about to study in Germany, got into a bus accident and fell into a coma waking up 13 years later. Mentally she is still only 17, while physically",
     "stars": [
       "Hye-Sun Shin",
       "Yang Se-Jong",
@@ -31044,7 +30740,7 @@ window.CINECLASH_CATALOG =
     "duration": "157 min",
     "genre": "Action, Adventure, Drama",
     "rating": 7,
-    "description": "The events revolve around four eras, namely the Pharaonic and Abbasid era and the Kingdom era. The events revolve around corruption and the level of some clerics through the ages on power ... See full summary »",
+    "description": "The events revolve around four eras, namely the Pharaonic and Abbasid era and the Kingdom era. The events revolve around corruption and the level of some clerics through the ages on power",
     "stars": [
       "Hind Sabri",
       "Ahmed Amin",
@@ -31194,7 +30890,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Comedy",
     "rating": 7.3,
-    "description": "Marc Maron returns to his old stomping grounds for an intimate special in which he takes stock of himself. More than ever, Maron is raw and hilariously honest as he dissects his own ... See full summary »",
+    "description": "Marc Maron returns to his old stomping grounds for an intimate special in which he takes stock of himself. More than ever, Maron is raw and hilariously honest as he dissects his own",
     "stars": [
       "Marc Maron",
       "Sam Lipsyte",
@@ -31238,7 +30934,7 @@ window.CINECLASH_CATALOG =
     "duration": "60 min",
     "genre": "Action, Drama, Thriller",
     "rating": 7.6,
-    "description": "A \"gangster lawyer\" who doesn't trust the law and feels free to use his fists. He takes advantage of loopholes in the law and boasts an excellent win rate. Other lawyers may consider the ... See full summary »",
+    "description": "A \"gangster lawyer\" who doesn't trust the law and feels free to use his fists. He takes advantage of loopholes in the law and boasts an excellent win rate. Other lawyers may consider the",
     "stars": [
       "Lee Joon-Gi",
       "Seo Ye-Ji",
@@ -31275,21 +30971,6 @@ window.CINECLASH_CATALOG =
     "votes": 1896
   },
   {
-    "title": "Dirty John, The Dirty Truth",
-    "year": 2019,
-    "duration": "88 min",
-    "genre": "Documentary, Crime",
-    "rating": 6.1,
-    "description": "Docuseries of \"Dirty\" John Meehan, based on the true crime podcast.",
-    "stars": [
-      "Debra Newell",
-      "Christopher Goffard",
-      "Terra Newell",
-      "Joe Loeffler"
-    ],
-    "votes": 1892
-  },
-  {
     "title": "18 Again",
     "year": 2020,
     "duration": "70 min",
@@ -31310,7 +30991,7 @@ window.CINECLASH_CATALOG =
     "duration": "65 min",
     "genre": "Drama",
     "rating": 7.6,
-    "description": "The story of Oh Soo, a well known gambler and that of Oh Young, the blind heiress of a large corporation. Oh Soo decides to impersonate Oh Young's lost brother in order to get enough money ... See full summary »",
+    "description": "The story of Oh Soo, a well known gambler and that of Oh Young, the blind heiress of a large corporation. Oh Soo decides to impersonate Oh Young's lost brother in order to get enough money",
     "stars": [
       "Jung-Hyun Han",
       "Zo In-sung",
@@ -31454,7 +31135,7 @@ window.CINECLASH_CATALOG =
     "duration": "32 min",
     "genre": "Drama, Mystery, Romance",
     "rating": 7.1,
-    "description": "Kwon Shi Hyun, Choi Soo Ji and Lee Se Joo are a collection of messy ties, all from backgrounds of privilege and wealth. Kwon Shi Hyun and Choi Soo Ji are best friends and she is the current... See full summary »",
+    "description": "Kwon Shi Hyun, Choi Soo Ji and Lee Se Joo are a collection of messy ties, all from backgrounds of privilege and wealth. Kwon Shi Hyun and Choi Soo Ji are best friends and she is the current",
     "stars": [
       "Woo Do-Hwan",
       "Soo-Young Park",
@@ -31614,7 +31295,7 @@ window.CINECLASH_CATALOG =
     "duration": "122 min",
     "genre": "Drama, Horror, Romance",
     "rating": 6.4,
-    "description": "In a far-away village, lived an innocent teenage girl, \"Sai\" who later discovered herself inheriting the curse of \"Krasue\". At night, her head would detach from her body and hunts for flesh... See full summary »",
+    "description": "In a far-away village, lived an innocent teenage girl, \"Sai\" who later discovered herself inheriting the curse of \"Krasue\". At night, her head would detach from her body and hunts for flesh",
     "stars": [
       "Phantira Pipityakorn",
       "Oabnithi Wiwattanawarang",
@@ -31808,7 +31489,7 @@ window.CINECLASH_CATALOG =
     "duration": "82 min",
     "genre": "Comedy, Crime",
     "rating": 4.7,
-    "description": "A dead body is found and police detective Mårten Späck draws the conclusion that a serial suicide killer is at large. Späck with his colleagues Grünvald Karlsson and Irene Snusk suspect a ... See full summary »",
+    "description": "A dead body is found and police detective Mårten Späck draws the conclusion that a serial suicide killer is at large. Späck with his colleagues Grünvald Karlsson and Irene Snusk suspect a",
     "stars": [
       "Leif Andrée",
       "Johan Hedenberg",
@@ -31883,7 +31564,7 @@ window.CINECLASH_CATALOG =
     "duration": "80 min",
     "genre": "Drama, Horror, Thriller",
     "rating": 4.7,
-    "description": "A small European town, where sisters Ayia and Mirra live, gets struck down by an unknown disease which takes many lives. Following their mother's death, the younger sister falls ill. Having... See full summary »",
+    "description": "A small European town, where sisters Ayia and Mirra live, gets struck down by an unknown disease which takes many lives. Following their mother's death, the younger sister falls ill. Having",
     "stars": [
       "Polina Davydova",
       "Lyubov Ignatushko",
@@ -31943,7 +31624,7 @@ window.CINECLASH_CATALOG =
     "duration": "88 min",
     "genre": "Drama, Fantasy",
     "rating": 5.5,
-    "description": "Good Samaritan Sarah Fitzpatrick has a fatal accident just before Christmas, and finds herself in the lobby before the gates of Heaven. Certain that she will be let in, she is shocked to ... See full summary »",
+    "description": "Good Samaritan Sarah Fitzpatrick has a fatal accident just before Christmas, and finds herself in the lobby before the gates of Heaven. Certain that she will be let in, she is shocked to",
     "stars": [
       "Lindsey Gort",
       "Derek Theler",
@@ -32003,7 +31684,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Action, Comedy, Fantasy",
     "rating": 8,
-    "description": "A melodrama epic about the great deal of trouble Choi Kang Chi, born as a half-human-half-mythical-creature (or human werefox half-breed), who goes through in order to become human and a ... See full summary »",
+    "description": "A melodrama epic about the great deal of trouble Choi Kang Chi, born as a half-human-half-mythical-creature (or human werefox half-breed), who goes through in order to become human and a",
     "stars": [
       "Jo Sung-ha",
       "Sung-Jae Lee",
@@ -32018,7 +31699,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Comedy",
     "rating": 5.4,
-    "description": "The Yildiz brothers - Celal, Sami and Mesut - still live under one roof - despite their differences. The family bridal shop is doing really badly and they each yearn for a different life: ... See full summary »",
+    "description": "The Yildiz brothers - Celal, Sami and Mesut - still live under one roof - despite their differences. The family bridal shop is doing really badly and they each yearn for a different life:",
     "stars": [
       "Kida Khodr Ramadan",
       "Eko Fresh",
@@ -32063,7 +31744,7 @@ window.CINECLASH_CATALOG =
     "duration": "94 min",
     "genre": "Action, Crime, Thriller",
     "rating": 6.3,
-    "description": "When Johan and his colleagues are watching Seth and his gang member Jack, they stumble on a larger case than they expected. Seth is selling arms to terrorists, but without Jack's knowledge,... See full summary »",
+    "description": "When Johan and his colleagues are watching Seth and his gang member Jack, they stumble on a larger case than they expected. Seth is selling arms to terrorists, but without Jack's knowledge,",
     "stars": [
       "Jakob Eklund",
       "Jens Hultén",
@@ -32285,7 +31966,7 @@ window.CINECLASH_CATALOG =
     "duration": "109 min",
     "genre": "Documentary",
     "rating": 6.3,
-    "description": "West Perrine, Florida is a suburban ghetto in Southwest Miami-Dade County. Over 73% of its residents are African-American and more than a third of them are unemployed. Violent crimes occur ... See full summary »",
+    "description": "West Perrine, Florida is a suburban ghetto in Southwest Miami-Dade County. Over 73% of its residents are African-American and more than a third of them are unemployed. Violent crimes occur",
     "stars": [
       "Alex Caceres",
       "Dhafir Harris",
@@ -32294,27 +31975,12 @@ window.CINECLASH_CATALOG =
     "votes": 1746
   },
   {
-    "title": "The Cabin with Bert Kreischer",
-    "year": 2020,
-    "duration": "",
-    "genre": "Comedy, Reality-TV",
-    "rating": 6.9,
-    "description": "After years on the grind, Bert Kreischer sets out on a purifying retreat to a remote cabin.",
-    "stars": [
-      "Bert Kreischer",
-      "LeeAnn Kreischer",
-      "Al Kreischer",
-      "Kaley Cuoco"
-    ],
-    "votes": 1745
-  },
-  {
     "title": "The Lost Brother",
     "year": 2017,
     "duration": "112 min",
     "genre": "Crime, Drama, Thriller",
     "rating": 6.5,
-    "description": "Cetarti, a public employee who has just been fired, travels from Buenos Aires to Lapachito, a lonely town in the Chaco province. He must take care of the corpses of his mother and brother ... See full summary »",
+    "description": "Cetarti, a public employee who has just been fired, travels from Buenos Aires to Lapachito, a lonely town in the Chaco province. He must take care of the corpses of his mother and brother",
     "stars": [
       "Leonardo Sbaraglia",
       "Daniel Hendler",
@@ -32329,7 +31995,7 @@ window.CINECLASH_CATALOG =
     "duration": "98 min",
     "genre": "Action, Crime, Thriller",
     "rating": 6.7,
-    "description": "Johan Falk is with the wife of a dead mob boss down to Latvia to try to solve a mystery that has eluded him for three years. What Johan finds downstairs in a cottage outside Riga shocks not... See full summary »",
+    "description": "Johan Falk is with the wife of a dead mob boss down to Latvia to try to solve a mystery that has eluded him for three years. What Johan finds downstairs in a cottage outside Riga shocks not",
     "stars": [
       "Jakob Eklund",
       "Jens Hultén",
@@ -32445,7 +32111,7 @@ window.CINECLASH_CATALOG =
     "duration": "87 min",
     "genre": "Drama",
     "rating": 6.9,
-    "description": "Hector has been living on the motorways for years. His once-comfortable family life has been replaced by a never-ending tour of service stations that offer him shelter, anonymity, washing ... See full summary »",
+    "description": "Hector has been living on the motorways for years. His once-comfortable family life has been replaced by a never-ending tour of service stations that offer him shelter, anonymity, washing",
     "stars": [
       "Peter Mullan",
       "Keith Allen",
@@ -32504,7 +32170,7 @@ window.CINECLASH_CATALOG =
     "duration": "86 min",
     "genre": "Comedy, Romance",
     "rating": 5.4,
-    "description": "When a driven HR exec loses her high-powered job, she travels to Puerto Rico in an attempt to save her career at a business conference. But as the trip quickly becomes a disaster and a ... See full summary »",
+    "description": "When a driven HR exec loses her high-powered job, she travels to Puerto Rico in an attempt to save her career at a business conference. But as the trip quickly becomes a disaster and a",
     "stars": [
       "Vanessa Marcil",
       "James Denton",
@@ -32575,7 +32241,7 @@ window.CINECLASH_CATALOG =
     "duration": "78 min",
     "genre": "Documentary, Biography, Drama",
     "rating": 6.9,
-    "description": "S Is For Stanley is the story of Emilio D'Alessandro, Stanley Kubrick's personal driver. A Friendship that lasted through 30 years of their lives, helped create four cinema masterpieces, ... See full summary »",
+    "description": "S Is For Stanley is the story of Emilio D'Alessandro, Stanley Kubrick's personal driver. A Friendship that lasted through 30 years of their lives, helped create four cinema masterpieces,",
     "stars": [
       "Alessandro, \""
     ],
@@ -32602,7 +32268,7 @@ window.CINECLASH_CATALOG =
     "duration": "105 min",
     "genre": "Crime, Drama, Mystery",
     "rating": 6.9,
-    "description": "Police inspector Léonetti, a tough, efficient policeman, has been sent to a second-rate police station after being reprimanded. There he is given a partner, young and beautiful Jeanne Dumas... See full summary »",
+    "description": "Police inspector Léonetti, a tough, efficient policeman, has been sent to a second-rate police station after being reprimanded. There he is given a partner, young and beautiful Jeanne Dumas",
     "stars": [
       "Lino Ventura",
       "Marlène Jobert",
@@ -32647,7 +32313,7 @@ window.CINECLASH_CATALOG =
     "duration": "70 min",
     "genre": "Comedy, Drama, Romance",
     "rating": 7.2,
-    "description": "Eun Hwan-Ki is the CEO of a public relation company but he's extremely shy. Due to his personality, his employees don't know him well. Chae Ro-Woon begins work at Hwan-Ki's company. She's ... See full summary »",
+    "description": "Eun Hwan-Ki is the CEO of a public relation company but he's extremely shy. Due to his personality, his employees don't know him well. Chae Ro-Woon begins work at Hwan-Ki's company. She's",
     "stars": [
       "Gong Seung-Yeon",
       "Woo-jin Yeon",
@@ -32734,7 +32400,7 @@ window.CINECLASH_CATALOG =
     "duration": "65 min",
     "genre": "Fantasy, Mystery, Romance",
     "rating": 7.7,
-    "description": "A boy who is able to read the secrets of those whose skin comes into contact with him, and a girl who does everything she can to hide her pain. In the drama, the boy and girl will meet and ... See full summary »",
+    "description": "A boy who is able to read the secrets of those whose skin comes into contact with him, and a girl who does everything she can to hide her pain. In the drama, the boy and girl will meet and",
     "stars": [
       "Park Jin-young",
       "Ye-Eun Shin",
@@ -32809,7 +32475,7 @@ window.CINECLASH_CATALOG =
     "duration": "58 min",
     "genre": "Documentary",
     "rating": 2.6,
-    "description": "It is a documentary aimed at newcomers to anime, and follows anime newbie, Alex Burunova, as she dives into the mysterious world of the genre. The documentary features some of the biggest ... See full summary »",
+    "description": "It is a documentary aimed at newcomers to anime, and follows anime newbie, Alex Burunova, as she dives into the mysterious world of the genre. The documentary features some of the biggest",
     "stars": [
       "Shinji Aramaki",
       "Kôzô Morishita",
@@ -32839,7 +32505,7 @@ window.CINECLASH_CATALOG =
     "duration": "99 min",
     "genre": "Action, Crime",
     "rating": 6.3,
-    "description": "A group of honest police is sent to a country town to solve the problem of high crime. Soon they solve the problem while newcomer Francis (Cléo Pires) must overcome their limits to prove ... See full summary »",
+    "description": "A group of honest police is sent to a country town to solve the problem of high crime. Soon they solve the problem while newcomer Francis (Cléo Pires) must overcome their limits to prove",
     "stars": [
       "Cleo",
       "Fabrício Boliveira",
@@ -32914,7 +32580,7 @@ window.CINECLASH_CATALOG =
     "duration": "85 min",
     "genre": "Drama, Horror, Thriller",
     "rating": 3.7,
-    "description": "Based on Aileen Wuornos's early life, America's most notorious female serial killer, back in 1976 a young Aileen arrives in Florida searching for a new life that will help her escape her ... See full summary »",
+    "description": "Based on Aileen Wuornos's early life, America's most notorious female serial killer, back in 1976 a young Aileen arrives in Florida searching for a new life that will help her escape her",
     "stars": [
       "Peyton List",
       "Tobin Bell",
@@ -33206,21 +32872,6 @@ window.CINECLASH_CATALOG =
     "votes": 1635
   },
   {
-    "title": "Dancing Queen",
-    "year": 2018,
-    "duration": "45 min",
-    "genre": "Music, Reality-TV",
-    "rating": 7,
-    "description": "A docu-series that follows Justin Johnson, aka drag superstar Alyssa Edwards, as he juggles his dance life, drag life, family life, and love life.",
-    "stars": [
-      "Alyssa Edwards",
-      "Atlee Millard",
-      "Marcella Raneri",
-      "Shangela"
-    ],
-    "votes": 1630
-  },
-  {
     "title": "Cyber Hell: Exposing an Internet Horror",
     "year": 2022,
     "duration": "105 min",
@@ -33361,7 +33012,7 @@ window.CINECLASH_CATALOG =
     "duration": "75 min",
     "genre": "Horror",
     "rating": 5.8,
-    "description": "In the Nineteenth Century, in London, the psychologist Charles Marlowe researches a new drug capable to release inhibitions and uses his patients as guinea pigs. He discusses the principles... See full summary »",
+    "description": "In the Nineteenth Century, in London, the psychologist Charles Marlowe researches a new drug capable to release inhibitions and uses his patients as guinea pigs. He discusses the principles",
     "stars": [
       "Christopher Lee",
       "Peter Cushing",
@@ -33433,7 +33084,7 @@ window.CINECLASH_CATALOG =
     "duration": "99 min",
     "genre": "Documentary, Sport",
     "rating": 7.3,
-    "description": "The best 7 year old golfers from around the world descend on the world famous Pinehurst Golf course in North Carolina to determine the next world champion and who might become golf's next ... See full summary »",
+    "description": "The best 7 year old golfers from around the world descend on the world famous Pinehurst Golf course in North Carolina to determine the next world champion and who might become golf's next",
     "stars": [
       "Amari Avery",
       "Jed Dy",
@@ -33448,7 +33099,7 @@ window.CINECLASH_CATALOG =
     "duration": "92 min",
     "genre": "Documentary, Crime, History",
     "rating": 6.8,
-    "description": "OUR GODFATHER is a feature-length documentary about Tommaso Buscetta, the first high-ranking Italian mafia boss ever to turn against Cosa Nostra. Buscetta helped convict more than 400 ... See full summary »",
+    "description": "OUR GODFATHER is a feature-length documentary about Tommaso Buscetta, the first high-ranking Italian mafia boss ever to turn against Cosa Nostra. Buscetta helped convict more than 400",
     "stars": [
       "Tommaso Buscetta",
       "Paul Castellano",
@@ -33478,7 +33129,7 @@ window.CINECLASH_CATALOG =
     "duration": "105 min",
     "genre": "Comedy, Thriller",
     "rating": 5.4,
-    "description": "Magda, who long ago abandoned her career for the sake of her family, lives in Podkowa Lesna, near Warsaw. One evening, she accidentally discovers the body of a murdered woman in a park. The... See full summary »",
+    "description": "Magda, who long ago abandoned her career for the sake of her family, lives in Podkowa Lesna, near Warsaw. One evening, she accidentally discovers the body of a murdered woman in a park. The",
     "stars": [
       "Anna Smolowik",
       "Pawel Domagala",
@@ -33488,27 +33139,12 @@ window.CINECLASH_CATALOG =
     "votes": 1579
   },
   {
-    "title": "The Oscars",
-    "year": 2018,
-    "duration": "187 min",
-    "genre": "Music",
-    "rating": 5.7,
-    "description": "The 90th Annual Academy Awards ceremony, hosted by Jimmy Kimmel, celebrates the film industry's biggest achievements for the year 2017.",
-    "stars": [
-      "Jimmy Kimmel",
-      "Helen Mirren",
-      "Viola Davis",
-      "Willem Dafoe"
-    ],
-    "votes": 1575
-  },
-  {
     "title": "Joshua: Teenager vs. Superpower",
     "year": 2017,
     "duration": "79 min",
     "genre": "Documentary",
     "rating": 7.3,
-    "description": "When the Chinese Communist Party backtracks on its promise of autonomy to Hong Kong, teenager Joshua Wong decides to save his city. Rallying thousands of kids to skip school and occupy the ... See full summary »",
+    "description": "When the Chinese Communist Party backtracks on its promise of autonomy to Hong Kong, teenager Joshua Wong decides to save his city. Rallying thousands of kids to skip school and occupy the",
     "stars": [
       "Agnes Chow",
       "Chi-Fung"
@@ -33656,7 +33292,7 @@ window.CINECLASH_CATALOG =
     "duration": "59 min",
     "genre": "Documentary, Biography",
     "rating": 7.1,
-    "description": "Concerned by a rising rock-n-roll influence on a growing liberal fanbase, President Nixon invited Johnny Cash to the White House to solidify his base in the traditionally more conservative ... See full summary »",
+    "description": "Concerned by a rising rock-n-roll influence on a growing liberal fanbase, President Nixon invited Johnny Cash to the White House to solidify his base in the traditionally more conservative",
     "stars": [
       "Johnny Cash",
       "Richard Nixon",
@@ -33699,7 +33335,7 @@ window.CINECLASH_CATALOG =
     "duration": "70 min",
     "genre": "Crime, Drama, Mystery",
     "rating": 8.2,
-    "description": "Park Jeong Woo is a prosecutor at Seoul Central District Prosecutors' Office. One day, he wakes up and finds himself a convict on death row. Suffering from temporary amnesia, Jeong Woo has ... See full summary »",
+    "description": "Park Jeong Woo is a prosecutor at Seoul Central District Prosecutors' Office. One day, he wakes up and finds himself a convict on death row. Suffering from temporary amnesia, Jeong Woo has",
     "stars": [
       "Seong Ji",
       "Ki-joon Uhm",
@@ -33936,7 +33572,7 @@ window.CINECLASH_CATALOG =
     "duration": "76 min",
     "genre": "Comedy",
     "rating": 2.2,
-    "description": "Sean Banan is heading of to Africa, the world's coolest place. With him is the singing diva Kikki Danielsson Aka Kikki Dee, they are going to record a music video. Everything was supposed ... See full summary »",
+    "description": "Sean Banan is heading of to Africa, the world's coolest place. With him is the singing diva Kikki Danielsson Aka Kikki Dee, they are going to record a music video. Everything was supposed",
     "stars": [
       "Sean Banan",
       "Kikki Danielsson",
@@ -33996,7 +33632,7 @@ window.CINECLASH_CATALOG =
     "duration": "152 min",
     "genre": "Documentary, Crime, History",
     "rating": 7.6,
-    "description": "In the 1980s, ruthless Colombian cocaine barons invaded Miami with a brand of violence unseen in this country since Prohibition-era Chicago. Cocaine Cowboys is the true story of how Miami ... See full summary »",
+    "description": "In the 1980s, ruthless Colombian cocaine barons invaded Miami with a brand of violence unseen in this country since Prohibition-era Chicago. Cocaine Cowboys is the true story of how Miami",
     "stars": [
       "Nelson Andreu",
       "Edna Buchanan",
@@ -34098,7 +33734,7 @@ window.CINECLASH_CATALOG =
     "duration": "104 min",
     "genre": "Crime, Drama",
     "rating": 7,
-    "description": "Little Manda is found raped and dumped in a trash heap near her slum. Her parents are more concerned with survival than dignity. The cops are powerless to help as the rapist is a local ... See full summary »",
+    "description": "Little Manda is found raped and dumped in a trash heap near her slum. Her parents are more concerned with survival than dignity. The cops are powerless to help as the rapist is a local",
     "stars": [
       "Sushama Deshpande",
       "Smita Tambe",
@@ -34158,7 +33794,7 @@ window.CINECLASH_CATALOG =
     "duration": "80 min",
     "genre": "Action, Crime",
     "rating": 3.5,
-    "description": "Ho Mei Fong is a young woman in trouble, running from a gang of criminals with something of importance hidden in her purse. She dies in Chien Chen's taxi while trying to escape, but not ... See full summary »",
+    "description": "Ho Mei Fong is a young woman in trouble, running from a gang of criminals with something of importance hidden in her purse. She dies in Chien Chen's taxi while trying to escape, but not",
     "stars": [
       "Charlie Chin",
       "Qiu Yuen",
@@ -34218,7 +33854,7 @@ window.CINECLASH_CATALOG =
     "duration": "64 min",
     "genre": "Documentary",
     "rating": 7,
-    "description": "In 2000, David Wain and Michael Showalter set out to make their first film Wet Hot American Summer. It was a low budget independent film and they cast their friends and a handful of unknown... See full summary »",
+    "description": "In 2000, David Wain and Michael Showalter set out to make their first film Wet Hot American Summer. It was a low budget independent film and they cast their friends and a handful of unknown",
     "stars": [
       "Elizabeth Banks",
       "Michael Ian Black",
@@ -34481,21 +34117,6 @@ window.CINECLASH_CATALOG =
     "votes": 1470
   },
   {
-    "title": "The Road to El Camino: Behind the Scenes of El Camino: A Breaking Bad Movie",
-    "year": 2019,
-    "duration": "13 min",
-    "genre": "Documentary, Short",
-    "rating": 7.1,
-    "description": "A look behind the scenes of El Camino: A Breaking Bad Movie (2019), with interviews of those involved.",
-    "stars": [
-      "Charles Baker",
-      "Jonathan Banks",
-      "Melissa Bernstein",
-      "Michael Bofshever"
-    ],
-    "votes": 1469
-  },
-  {
     "title": "Real",
     "year": 2017,
     "duration": "137 min",
@@ -34561,7 +34182,7 @@ window.CINECLASH_CATALOG =
     "duration": "70 min",
     "genre": "Drama, Romance",
     "rating": 7.8,
-    "description": "Bae Ta Mi works as a director for a big web portal company. She is in her late 30s and is quite competitive. With her competitiveness, Ta Mi enjoys success. The methods she uses to win has ... See full summary »",
+    "description": "Bae Ta Mi works as a director for a big web portal company. She is in her late 30s and is quite competitive. With her competitiveness, Ta Mi enjoys success. The methods she uses to win has",
     "stars": [
       "Lim Soo-jung",
       "Hye-jin Jeon",
@@ -34621,7 +34242,7 @@ window.CINECLASH_CATALOG =
     "duration": "109 min",
     "genre": "Comedy, Drama, Family",
     "rating": 5.9,
-    "description": "Joseph, passionate dancer of hip-hop, refuses to enter the company of his father to try his luck in Paris. With his girlfriend Emma and his best friend Karim, he joins the Paris crew of ... See full summary »",
+    "description": "Joseph, passionate dancer of hip-hop, refuses to enter the company of his father to try his luck in Paris. With his girlfriend Emma and his best friend Karim, he joins the Paris crew of",
     "stars": [
       "Rayane Bensetti",
       "Alexia Giordano",
@@ -34883,7 +34504,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Drama, Family, Sport",
     "rating": 6.6,
-    "description": "An 11 year old talented soccerplayer, Remco, has one big dream: to be selected for the national team under 12 years. His father Erik coaches him and everything seems to work out fine, until... See full summary »",
+    "description": "An 11 year old talented soccerplayer, Remco, has one big dream: to be selected for the national team under 12 years. His father Erik coaches him and everything seems to work out fine, until",
     "stars": [
       "Yannick van de Velde",
       "Thomas Acda",
@@ -35063,7 +34684,7 @@ window.CINECLASH_CATALOG =
     "duration": "75 min",
     "genre": "Comedy, Drama, Romance",
     "rating": 7.8,
-    "description": "Focuses on the life events of the residents of a boarding house in '90's Seoul. The plot revolves around the passion and vigor of being a young adult; the challenges of moving to a new ... See full summary »",
+    "description": "Focuses on the life events of the residents of a boarding house in '90's Seoul. The plot revolves around the passion and vigor of being a young adult; the challenges of moving to a new",
     "stars": [
       "Go Ara",
       "Woo Jung",
@@ -35302,7 +34923,7 @@ window.CINECLASH_CATALOG =
     "duration": "79 min",
     "genre": "Documentary",
     "rating": 6.6,
-    "description": "I'll Sleep When I'm Dead, directed by Justin Krook, is a heart-pumping yet heart-wrenching documentary about one of the most eminent DJs working today: Steve Aoki. In the lead-up to Aoki's ... See full summary »",
+    "description": "I'll Sleep When I'm Dead, directed by Justin Krook, is a heart-pumping yet heart-wrenching documentary about one of the most eminent DJs working today: Steve Aoki. In the lead-up to Aoki's",
     "stars": [
       "Devon Aoki",
       "Benji Madden",
@@ -35332,7 +34953,7 @@ window.CINECLASH_CATALOG =
     "duration": "122 min",
     "genre": "Comedy",
     "rating": 6.3,
-    "description": "Fueled by anger after getting fired from his bank job, a lazy banker (Saleh) joins forces with his co-worker (Amr) and their weird friend (Ze'ro) by turning to robbery in order to fulfill ... See full summary »",
+    "description": "Fueled by anger after getting fired from his bank job, a lazy banker (Saleh) joins forces with his co-worker (Amr) and their weird friend (Ze'ro) by turning to robbery in order to fulfill",
     "stars": [
       "Mohamed Mamdouh",
       "Mohammed Tharwat",
@@ -35389,7 +35010,7 @@ window.CINECLASH_CATALOG =
     "duration": "101 min",
     "genre": "Drama, Thriller",
     "rating": 6,
-    "description": "Tessa opens her luxurious clinic with a big party. She is smart, beautiful, savvy, and happily married with an intelligent adolescent son. But appearances are deceptive. In reality, her ... See full summary »",
+    "description": "Tessa opens her luxurious clinic with a big party. She is smart, beautiful, savvy, and happily married with an intelligent adolescent son. But appearances are deceptive. In reality, her",
     "stars": [
       "Tjitske Reidinga",
       "Mark Rietman",
@@ -35449,7 +35070,7 @@ window.CINECLASH_CATALOG =
     "duration": "98 min",
     "genre": "Comedy, Drama",
     "rating": 6.3,
-    "description": "Thomas and Thomas are going through a rough patch: they are both thirty-something actors living in Paris. They randomly decide to leave the city and fly away to Kullorsuaq, one of the most ... See full summary »",
+    "description": "Thomas and Thomas are going through a rough patch: they are both thirty-something actors living in Paris. They randomly decide to leave the city and fly away to Kullorsuaq, one of the most",
     "stars": [
       "Thomas Blanchard",
       "Thomas Scimeca",
@@ -35901,7 +35522,7 @@ window.CINECLASH_CATALOG =
     "duration": "30 min",
     "genre": "Action, Comedy, History",
     "rating": 7.8,
-    "description": "Jeon Nok Du is a man with extraordinary ambition to experience the big, wide world. With looks, brains, and athletic abilities, he is the epitome of perfection. After being swept up in an ... See full summary »",
+    "description": "Jeon Nok Du is a man with extraordinary ambition to experience the big, wide world. With looks, brains, and athletic abilities, he is the epitome of perfection. After being swept up in an",
     "stars": [
       "Dong-Yoon Jang",
       "Kim So-Hyun",
@@ -35990,7 +35611,7 @@ window.CINECLASH_CATALOG =
     "duration": "35 min",
     "genre": "Drama, History, Music",
     "rating": 7.6,
-    "description": "Kim Woo Jin is a stage drama writer while Korea is under Japanese occupation. He is married, but he falls in love with Yun Shim Deok. Shim Deok is the first Korean soprano. She records the ... See full summary »",
+    "description": "Kim Woo Jin is a stage drama writer while Korea is under Japanese occupation. He is married, but he falls in love with Yun Shim Deok. Shim Deok is the first Korean soprano. She records the",
     "stars": [
       "Lee Jong-Suk",
       "Hye-Sun Shin",
@@ -36047,7 +35668,7 @@ window.CINECLASH_CATALOG =
     "duration": "83 min",
     "genre": "Documentary, Biography, History",
     "rating": 7.7,
-    "description": "This is an unashamedly opinionated film. In Gore Vidal's America, the political coup has already happened. The right have triumphed and the human values of the liberals have been consigned ... See full summary »",
+    "description": "This is an unashamedly opinionated film. In Gore Vidal's America, the political coup has already happened. The right have triumphed and the human values of the liberals have been consigned",
     "stars": [
       "Gore Vidal",
       "Howard Auster",
@@ -36062,7 +35683,7 @@ window.CINECLASH_CATALOG =
     "duration": "58 min",
     "genre": "Documentary, Comedy",
     "rating": 7.2,
-    "description": "Regardless of Joe Rogan's success on television with the Ultimate Fighting Championship or hosting Fear Factor or co-starring in NewsRadio, his true love is stand-up comedy. With more than ... See full summary »",
+    "description": "Regardless of Joe Rogan's success on television with the Ultimate Fighting Championship or hosting Fear Factor or co-starring in NewsRadio, his true love is stand-up comedy. With more than",
     "stars": [
       "Joe Rogan",
       "Joey Diaz"
@@ -36105,7 +35726,7 @@ window.CINECLASH_CATALOG =
     "duration": "107 min",
     "genre": "Comedy, Romance",
     "rating": 4.5,
-    "description": "Dineo is the definition of serial monogamist. She dates to fall in love; she falls in love to get married. But she never gets married. She always ends up being dumped. When she meets Lunga ... See full summary »",
+    "description": "Dineo is the definition of serial monogamist. She dates to fall in love; she falls in love to get married. But she never gets married. She always ends up being dumped. When she meets Lunga",
     "stars": [
       "Fulu Mugovhani",
       "Thabo Malema",
@@ -36135,7 +35756,7 @@ window.CINECLASH_CATALOG =
     "duration": "96 min",
     "genre": "Comedy",
     "rating": 4.7,
-    "description": "Upon the illness of Cevahir's grandmother Hafize; a treasure map passes by the hand of Cevahir who is trying to find enough money for the treatment. Bilal, the enemy of Cevahir, picks up ... See full summary »",
+    "description": "Upon the illness of Cevahir's grandmother Hafize; a treasure map passes by the hand of Cevahir who is trying to find enough money for the treatment. Bilal, the enemy of Cevahir, picks up",
     "stars": [
       "Ufuk Özkan",
       "Firat Tanis",
@@ -36205,21 +35826,6 @@ window.CINECLASH_CATALOG =
     "votes": 1266
   },
   {
-    "title": "Neurons to Nirvana",
-    "year": 2013,
-    "duration": "85 min",
-    "genre": "Documentary, History, News",
-    "rating": 7.6,
-    "description": "A stylish, in depth look at the renaissance in psychedelic drug research in light of current scientific, medical and cultural knowledge.",
-    "stars": [
-      "Lesley Ewen",
-      "Dennis J. McKenna",
-      "David Healy",
-      "David E. Nichols"
-    ],
-    "votes": 1263
-  },
-  {
     "title": "Bright Night",
     "year": 2014,
     "duration": "86 min",
@@ -36270,7 +35876,7 @@ window.CINECLASH_CATALOG =
     "duration": "135 min",
     "genre": "Crime, Drama, Thriller",
     "rating": 6.3,
-    "description": "26 years ago, state troops were ordered to open fire on civilians in the city of Gwangju who were demonstrating as apart of a democratic movement. Thousands of civilians were killed. Now, a... See full summary »",
+    "description": "26 years ago, state troops were ordered to open fire on civilians in the city of Gwangju who were demonstrating as apart of a democratic movement. Thousands of civilians were killed. Now, a",
     "stars": [
       "Jin Goo",
       "Hye-jin Han",
@@ -36718,7 +36324,7 @@ window.CINECLASH_CATALOG =
     "duration": "112 min",
     "genre": "Comedy, Drama",
     "rating": 5.3,
-    "description": "Claire, a beautiful young woman works at her late father's hotel that is now managed by her evil stepmother Maud. Claire unwittingly sparks uncontrollable jealousy in Maud, whose young ... See full summary »",
+    "description": "Claire, a beautiful young woman works at her late father's hotel that is now managed by her evil stepmother Maud. Claire unwittingly sparks uncontrollable jealousy in Maud, whose young",
     "stars": [
       "Lou de Laâge",
       "Isabelle Huppert",
@@ -36748,7 +36354,7 @@ window.CINECLASH_CATALOG =
     "duration": "85 min",
     "genre": "Animation, Action, Adventure",
     "rating": 5.4,
-    "description": "A retro-futuristic epic of steampunk battle set in 1914. It has been 15 years since the original H.G. Wells Martian invasion. Fearing another attack, the human race has prepared itself. ... See full summary »",
+    "description": "A retro-futuristic epic of steampunk battle set in 1914. It has been 15 years since the original H.G. Wells Martian invasion. Fearing another attack, the human race has prepared itself.",
     "stars": [
       "Adam Baldwin",
       "Beau Billingslea",
@@ -36771,21 +36377,6 @@ window.CINECLASH_CATALOG =
       "Jerrie Cobb"
     ],
     "votes": 1196
-  },
-  {
-    "title": "The Oscars",
-    "year": 2020,
-    "duration": "170 min",
-    "genre": "Music",
-    "rating": 6.5,
-    "description": "The 92nd Academy Awards for film achievements in 2019 are presented by the Academy of Motion Picture Arts and Sciences.",
-    "stars": [
-      "Florence Pugh",
-      "Taika Waititi",
-      "Margot Robbie",
-      "Natalie Portman"
-    ],
-    "votes": 1194
   },
   {
     "title": "Antoine Griezmann: The Making of a Legend",
@@ -36890,7 +36481,7 @@ window.CINECLASH_CATALOG =
     "duration": "98 min",
     "genre": "Documentary",
     "rating": 7.4,
-    "description": "Truck mechanic, husband and father of two, Eddie Hall wants to be the World's Strongest Man. This feature documentary vividly illustrates the sacrifices that this extremely driven man must ... See full summary »",
+    "description": "Truck mechanic, husband and father of two, Eddie Hall wants to be the World's Strongest Man. This feature documentary vividly illustrates the sacrifices that this extremely driven man must",
     "stars": [
       "Hafþór Júlíus Björnsson",
       "Colin Bryce",
@@ -36920,7 +36511,7 @@ window.CINECLASH_CATALOG =
     "duration": "91 min",
     "genre": "Drama, Romance",
     "rating": 6.4,
-    "description": "A gay Brit living in New York is deprived of his immigration status and risks losing his family and life in the U.S. He marries his lesbian best friend to remain in the country and stay ... See full summary »",
+    "description": "A gay Brit living in New York is deprived of his immigration status and risks losing his family and life in the U.S. He marries his lesbian best friend to remain in the country and stay",
     "stars": [
       "Jamie-Lynn Sigler",
       "Alicia Witt",
@@ -37348,7 +36939,7 @@ window.CINECLASH_CATALOG =
     "duration": "96 min",
     "genre": "Drama",
     "rating": 6.7,
-    "description": "Because he wanted to protect his little brother from a father too violent, Teddy, a young man without history, is accused of the murder of his father and is sent to a closed educational ... See full summary »",
+    "description": "Because he wanted to protect his little brother from a father too violent, Teddy, a young man without history, is accused of the murder of his father and is sent to a closed educational",
     "stars": [
       "MHD",
       "Darren Muselet",
@@ -37386,20 +36977,6 @@ window.CINECLASH_CATALOG =
       "John Dunsworth"
     ],
     "votes": 1123
-  },
-  {
-    "title": "Stay Here",
-    "year": 2018,
-    "duration": "",
-    "genre": "Reality-TV",
-    "rating": 7.5,
-    "description": "Designer Genevieve Gorder and real estate expert Peter Lorimer show property owners how to turn their short-term rentals into moneymaking showstoppers.",
-    "stars": [
-      "Genevieve Gorder",
-      "Peter Lorimer",
-      "Michelle Young"
-    ],
-    "votes": 1119
   },
   {
     "title": "Juhong geulshi",
@@ -37497,7 +37074,7 @@ window.CINECLASH_CATALOG =
     "duration": "89 min",
     "genre": "Comedy",
     "rating": 5.4,
-    "description": "Go inside the business world to follow the misadventures of César (Luis Callejo), the CEO of a very successful company valued at many thousands of euros, who from one moment to the next ... See full summary »",
+    "description": "Go inside the business world to follow the misadventures of César (Luis Callejo), the CEO of a very successful company valued at many thousands of euros, who from one moment to the next",
     "stars": [
       "Luis Callejo",
       "Juana Acosta",
@@ -37511,7 +37088,7 @@ window.CINECLASH_CATALOG =
     "duration": "92 min",
     "genre": "Comedy",
     "rating": 5.2,
-    "description": "Matt's life is racing out of control - all he wants to do is pass the bar exam and win back his girlfriend, but his boss wants him to house-sit while he's studying, the boss's kids want a ... See full summary »",
+    "description": "Matt's life is racing out of control - all he wants to do is pass the bar exam and win back his girlfriend, but his boss wants him to house-sit while he's studying, the boss's kids want a",
     "stars": [
       "Justin T. Bowler",
       "Sarah Horvath",
@@ -37566,21 +37143,6 @@ window.CINECLASH_CATALOG =
     "votes": 1109
   },
   {
-    "title": "The Case Against 8",
-    "year": 2014,
-    "duration": "109 min",
-    "genre": "Documentary, Biography, News",
-    "rating": 7.4,
-    "description": "A behind-the-scenes look inside the case to overturn California's ban on same-sex marriage. Shot over five years, the film follows the unlikely team that took the first federal marriage equality lawsuit to the U.S. Supreme Court.",
-    "stars": [
-      "Ted Olson",
-      "Christopher D. Dusseault",
-      "Jeffrey J. Zarrillo",
-      "Paul T. Katami"
-    ],
-    "votes": 1108
-  },
-  {
     "title": "The Day I Met El Chapo: The Kate Del Castillo Story",
     "year": 2017,
     "duration": "60 min",
@@ -37626,47 +37188,17 @@ window.CINECLASH_CATALOG =
     "votes": 1105
   },
   {
-    "title": "Cooking with Paris",
-    "year": 2021,
-    "duration": "",
-    "genre": "Reality-TV",
-    "rating": 5.3,
-    "description": "Paris Hilton can cook...kind of. And she’s turning the traditional cooking show upside down. She’s not a trained chef and she’s not trying to be.",
-    "stars": [
-      "Paris Hilton",
-      "Demi Lovato",
-      "Nikki Glaser",
-      "Kim Kardashian"
-    ],
-    "votes": 1104
-  },
-  {
     "title": "Monty Python's Flying Circus: Live at Aspen",
     "year": 1998,
     "duration": "58 min",
     "genre": "Documentary, Comedy",
     "rating": 7.8,
-    "description": "This reunion show features the five surviving members of Monty Python, with Graham Chapman's ashes in attendance. The Pythons look back at their work and receive an American Film Industry ... See full summary »",
+    "description": "This reunion show features the five surviving members of Monty Python, with Graham Chapman's ashes in attendance. The Pythons look back at their work and receive an American Film Industry",
     "stars": [
       "Robert Klein",
       "John Cleese",
       "Terry Gilliam",
       "Eric Idle"
-    ],
-    "votes": 1103
-  },
-  {
-    "title": "RuPaul's Drag Race Holi-Slay Spectacular",
-    "year": 2018,
-    "duration": "41 min",
-    "genre": "Reality-TV",
-    "rating": 4.8,
-    "description": "'RuPaul's Drag Race' brings back eight fan favorites to compete for the title of America's first \"Drag Race Xmas Queen.\"",
-    "stars": [
-      "RuPaul",
-      "Michelle Visage",
-      "Ross Mathews",
-      "Todrick Hall"
     ],
     "votes": 1103
   },
@@ -37706,7 +37238,7 @@ window.CINECLASH_CATALOG =
     "duration": "60 min",
     "genre": "Documentary",
     "rating": 7.5,
-    "description": "For years the Mossad, Israel's legendary foreign intelligence agency, has been sealed off to the media. Now, for the first time since its founding, a dozen of Mossad's former spies give us ... See full summary »",
+    "description": "For years the Mossad, Israel's legendary foreign intelligence agency, has been sealed off to the media. Now, for the first time since its founding, a dozen of Mossad's former spies give us",
     "stars": [
       "Ram Ben Barak",
       "Gad Shimron",
@@ -37736,7 +37268,7 @@ window.CINECLASH_CATALOG =
     "duration": "98 min",
     "genre": "Crime, Drama, Thriller",
     "rating": 6.1,
-    "description": "Three teenagers, brought together by bullying, indulge in petty theft, sex and drugs. They inevitably realize they can resort to violence to take revenge on everyone who has humiliated them: students, teachers and other outcasts. One of them escalates to killing, and desires to kill again. Anyone can become his next victim. The other two face the question: should they resort to violence to stop ... See full summary »",
+    "description": "Three teenagers, brought together by bullying, indulge in petty theft, sex and drugs. They inevitably realize they can resort to violence to take revenge on everyone who has humiliated them: students, teachers and other outcasts. One of them escalates to killing, and desires to kill again. Anyone can become his next victim. The other two face the question: should they resort to violence to stop",
     "stars": [
       "Emilio Palacios",
       "Jorge Clemente",
@@ -37781,7 +37313,7 @@ window.CINECLASH_CATALOG =
     "duration": "97 min",
     "genre": "Action, Thriller, War",
     "rating": 3.2,
-    "description": "Port City North Carolina: During a routine camp out, a local vagrant, a former marine discovers plans for an invasion in America. When he tries to notify the local Sheriff about his ... See full summary »",
+    "description": "Port City North Carolina: During a routine camp out, a local vagrant, a former marine discovers plans for an invasion in America. When he tries to notify the local Sheriff about his",
     "stars": [
       "Kenny Johnson",
       "William Forsythe",
@@ -37896,7 +37428,7 @@ window.CINECLASH_CATALOG =
     "duration": "106 min",
     "genre": "Comedy, Family",
     "rating": 6.2,
-    "description": "In Waldek's life, filled mainly with computer games, there is a real earthquake. During her absence, mum stays under the care of a crazy and unpredictable aunt, who introduces discipline ... See full summary »",
+    "description": "In Waldek's life, filled mainly with computer games, there is a real earthquake. During her absence, mum stays under the care of a crazy and unpredictable aunt, who introduces discipline",
     "stars": [
       "Maciej Karas",
       "Amelia Fijalkowska",
@@ -38031,7 +37563,7 @@ window.CINECLASH_CATALOG =
     "duration": "35 min",
     "genre": "Comedy, Romance",
     "rating": 7.3,
-    "description": "Do Min Ik is an intelligent, perfectionist man with a heart of stone , and the Chief of Team 1 at T&T Mobile Media who always relies on his secretary, the hot-tempered Jung Gal Hee. ... See full summary »",
+    "description": "Do Min Ik is an intelligent, perfectionist man with a heart of stone , and the Chief of Team 1 at T&T Mobile Media who always relies on his secretary, the hot-tempered Jung Gal Hee.",
     "stars": [
       "Kim Young-kwang",
       "Ki-joo Jin",
@@ -38147,7 +37679,7 @@ window.CINECLASH_CATALOG =
     "duration": "122 min",
     "genre": "Drama",
     "rating": 4.5,
-    "description": "Emiliano looks at his life with the eyes of a film director, mixing the objective reality with the processes of the artistic creation. The story he is filming flounders with his daily life,... See full summary »",
+    "description": "Emiliano looks at his life with the eyes of a film director, mixing the objective reality with the processes of the artistic creation. The story he is filming flounders with his daily life,",
     "stars": [
       "Hugo Catalán",
       "Gabino Rodríguez",
@@ -38491,7 +38023,7 @@ window.CINECLASH_CATALOG =
     "duration": "100 min",
     "genre": "Action, Adventure, Fantasy",
     "rating": 3.6,
-    "description": "In the world of MIDNIGHT, it is a time of overwhelming darkness. After three ages of scheming and war, the dark god Izrador has finally defeated the heroes and armies of the free races. Now... See full summary »",
+    "description": "In the world of MIDNIGHT, it is a time of overwhelming darkness. After three ages of scheming and war, the dark god Izrador has finally defeated the heroes and armies of the free races. Now",
     "stars": [
       "Charles Hubbell",
       "Matt Amendt",
@@ -38549,7 +38081,7 @@ window.CINECLASH_CATALOG =
     "duration": "77 min",
     "genre": "Documentary",
     "rating": 6.5,
-    "description": "In League of Legends Origins, Academy Award nominated Director, Leslie Iwerks explores the history of the community that has made League of Legends one of the most-played PC game in history... See full summary »",
+    "description": "In League of Legends Origins, Academy Award nominated Director, Leslie Iwerks explores the history of the community that has made League of Legends one of the most-played PC game in history",
     "stars": [
       "Nick Allen",
       "Pokimane",
@@ -38587,21 +38119,6 @@ window.CINECLASH_CATALOG =
       "Rick Gonzalez"
     ],
     "votes": 1020
-  },
-  {
-    "title": "Crazy Delicious",
-    "year": 2020,
-    "duration": "",
-    "genre": "Documentary, Game-Show",
-    "rating": 6.7,
-    "description": "Carla Hall, Niklas Ekstedt and Heston Blumenthal will judge as three cooks will battle it out to create the best feast.The set will be entirely edible and will contain edible blossom, chocolate soil, and a drinkable babbling brook.",
-    "stars": [
-      "Jayde Adams",
-      "Heston Blumenthal",
-      "Niklas Ekstedt",
-      "Carla Hall"
-    ],
-    "votes": 1019
   },
   {
     "title": "Dry Martina",
@@ -38861,7 +38378,7 @@ window.CINECLASH_CATALOG =
     "duration": "92 min",
     "genre": "Comedy, Romance",
     "rating": 4.8,
-    "description": "Four women in the Miller family: teen daughter Eva, her mother Judith, aunt Barbara and older half-sister Anna, work their way through the chaos called love. The result is a roller coaster ... See full summary »",
+    "description": "Four women in the Miller family: teen daughter Eva, her mother Judith, aunt Barbara and older half-sister Anna, work their way through the chaos called love. The result is a roller coaster",
     "stars": [
       "Susan Visser",
       "Anna Drijver",
@@ -38876,7 +38393,7 @@ window.CINECLASH_CATALOG =
     "duration": "73 min",
     "genre": "Horror",
     "rating": 3.7,
-    "description": "After a nuclear attack in Tokyo, the female population is attacked by infected males who have become sex-crazed zombies, hungry for human flesh. Officeworker Momoko and nurse Nozomi seek ... See full summary »",
+    "description": "After a nuclear attack in Tokyo, the female population is attacked by infected males who have become sex-crazed zombies, hungry for human flesh. Officeworker Momoko and nurse Nozomi seek",
     "stars": [
       "Rina Aikawa",
       "Yui Aikawa",
@@ -39036,18 +38553,6 @@ window.CINECLASH_CATALOG =
     "votes": 967
   },
   {
-    "title": "Animals on the Loose: A You vs. Wild Movie",
-    "year": 2021,
-    "duration": "90 min",
-    "genre": "Adventure, Reality-TV",
-    "rating": 5.8,
-    "description": "The protective fence surrounding a wildlife sanctuary has mysteriously suffered a breach. Bear is called in to help rescue a mischievous baboon, track down a hungry lion, and fix the fence before any more animals get out.",
-    "stars": [
-      "Bear Grylls"
-    ],
-    "votes": 967
-  },
-  {
     "title": "Meskina",
     "year": 2021,
     "duration": "98 min",
@@ -39178,21 +38683,6 @@ window.CINECLASH_CATALOG =
     "votes": 951
   },
   {
-    "title": "Escape the Undertaker",
-    "year": 2021,
-    "duration": "31 min",
-    "genre": "Short, Comedy, Game-Show",
-    "rating": 4.2,
-    "description": "Can The New Day survive the surprises at The Undertaker's spooky mansion? You can decide their fate!",
-    "stars": [
-      "Mark Calaway",
-      "Ettore Ewen",
-      "Kofi Kingston",
-      "Austin Watson"
-    ],
-    "votes": 949
-  },
-  {
     "title": "The Secret of Happiness",
     "year": 2018,
     "duration": "90 min",
@@ -39212,7 +38702,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Action, Fantasy, History",
     "rating": 7.2,
-    "description": "Set in an alternate Joseon dynasty, Jo Yang-sun (Lee Yu Bi) is the daughter of a nobleman whose family loses everything when her father is framed for treason. To make ends meet, Yang-sun ... See full summary »",
+    "description": "Set in an alternate Joseon dynasty, Jo Yang-sun (Lee Yu Bi) is the daughter of a nobleman whose family loses everything when her father is framed for treason. To make ends meet, Yang-sun",
     "stars": [
       "Lee Joon-Gi",
       "Lee Soo-hyuk",
@@ -39257,7 +38747,7 @@ window.CINECLASH_CATALOG =
     "duration": "107 min",
     "genre": "Comedy, Drama, Romance",
     "rating": 5.2,
-    "description": "She graduated from a prestigious high school in Warsaw and entered medicine in London. He works as a kitesurfing instructor at the seaside, thanks to which he combines earning money and ... See full summary »",
+    "description": "She graduated from a prestigious high school in Warsaw and entered medicine in London. He works as a kitesurfing instructor at the seaside, thanks to which he combines earning money and",
     "stars": [
       "Sonia Mietielica",
       "Jakub Sasak",
@@ -39272,7 +38762,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Action, Adventure, Drama",
     "rating": 7.4,
-    "description": "Chi Ming-sing is a former disciple of a gang run by overlord Yoh Xi-hung. Yoh's disciples hunt Chi relentlessly as he travels on a soul-searching journey. He comes to the aid of a seemingly... See full summary »",
+    "description": "Chi Ming-sing is a former disciple of a gang run by overlord Yoh Xi-hung. Yoh's disciples hunt Chi relentlessly as he travels on a soul-searching journey. He comes to the aid of a seemingly",
     "stars": [
       "Sheng Fu",
       "Lung Ti",
@@ -39371,7 +38861,7 @@ window.CINECLASH_CATALOG =
     "duration": "70 min",
     "genre": "Drama, Romance",
     "rating": 6.7,
-    "description": "About an actor who's showcase family is famous and a radio writer who fell in love with radio after her mother became blind when she was a teen. She gets the actor to become her DJ not ... See full summary »",
+    "description": "About an actor who's showcase family is famous and a radio writer who fell in love with radio after her mother became blind when she was a teen. She gets the actor to become her DJ not",
     "stars": [
       "Doo-Joon Yoon",
       "Kim So-Hyun",
@@ -39386,7 +38876,7 @@ window.CINECLASH_CATALOG =
     "duration": "85 min",
     "genre": "Family",
     "rating": 6.2,
-    "description": "Fat adolescent Dik Trom enjoys growing up in a hedonistic town devoted to food and fun. When a restaurant chain offers his father the life-long-dreamed opportunity to run his own, the Trom ... See full summary »",
+    "description": "Fat adolescent Dik Trom enjoys growing up in a hedonistic town devoted to food and fun. When a restaurant chain offers his father the life-long-dreamed opportunity to run his own, the Trom",
     "stars": [
       "Michael Nierse",
       "Eva van der Gucht",
@@ -39416,7 +38906,7 @@ window.CINECLASH_CATALOG =
     "duration": "104 min",
     "genre": "Drama",
     "rating": 6.2,
-    "description": "'The World Is Mine' is about a teenager's drama in the 2000s, focusing on the story of Larisa (Ana Maria Guran), a regular teenager from Constanta, Romania. Larisa wants a lot from life: ... See full summary »",
+    "description": "'The World Is Mine' is about a teenager's drama in the 2000s, focusing on the story of Larisa (Ana Maria Guran), a regular teenager from Constanta, Romania. Larisa wants a lot from life:",
     "stars": [
       "Ana Maria Guran",
       "Crina Muresan",
@@ -39424,21 +38914,6 @@ window.CINECLASH_CATALOG =
       "Ana Vatamanu"
     ],
     "votes": 934
-  },
-  {
-    "title": "I Am A Killer: Released",
-    "year": 2020,
-    "duration": "104 min",
-    "genre": "Documentary, Crime",
-    "rating": 5.2,
-    "description": "Three-part docuseries following Dale Wayne Sigler, a murderer, as he is released from prison after 30 years behind bars.",
-    "stars": [
-      "Dale Wayne Sigler",
-      "Carole Whitworth",
-      "Forest Allen Zeltner",
-      "John Harlan Zeltner"
-    ],
-    "votes": 932
   },
   {
     "title": "Carnaval",
@@ -39517,7 +38992,7 @@ window.CINECLASH_CATALOG =
     "duration": "91 min",
     "genre": "Documentary, Sport",
     "rating": 6.7,
-    "description": "The seasoned pro. The Olympic hopeful. The young up-and-comer. The ring is their home, and the titles are their dream. As boxing' popularity wanes, three fighters at different stages of ... See full summary »",
+    "description": "The seasoned pro. The Olympic hopeful. The young up-and-comer. The ring is their home, and the titles are their dream. As boxing' popularity wanes, three fighters at different stages of",
     "stars": [
       "Oscar De La Hoya",
       "David Diamante",
@@ -39644,21 +39119,6 @@ window.CINECLASH_CATALOG =
       "Fedja van Huêt"
     ],
     "votes": 914
-  },
-  {
-    "title": "71st Golden Globe Awards",
-    "year": 2014,
-    "duration": "",
-    "genre": "News",
-    "rating": 7.2,
-    "description": "The Hollywood Foreign Press Association's 71 annual event honoring excellence in film and television.",
-    "stars": [
-      "Tina Fey",
-      "Amy Poehler",
-      "Jennifer Lawrence",
-      "Jacqueline Bisset"
-    ],
-    "votes": 912
   },
   {
     "title": "Kingdom of Us",
@@ -39792,7 +39252,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Animation, Adventure, Comedy",
     "rating": 7.8,
-    "description": "Eleven years after the introduction of internet-connected, augmented reality eyeglasses and visors, Yuuko Okonogi moves with her family to Daikoku City, the technological center of the ... See full summary »",
+    "description": "Eleven years after the introduction of internet-connected, augmented reality eyeglasses and visors, Yuuko Okonogi moves with her family to Daikoku City, the technological center of the",
     "stars": [
       "Hilary Haag",
       "Monica Rial",
@@ -39807,7 +39267,7 @@ window.CINECLASH_CATALOG =
     "duration": "88 min",
     "genre": "Documentary, War",
     "rating": 7.1,
-    "description": "When atrocities are committed in countries held hostage by ruthless dictators, Human Rights Watch sends in the E-Team (Emergencies Team), a collection of fiercely intelligent individuals ... See full summary »",
+    "description": "When atrocities are committed in countries held hostage by ruthless dictators, Human Rights Watch sends in the E-Team (Emergencies Team), a collection of fiercely intelligent individuals",
     "stars": [
       "Anna Neistat",
       "Ole Solvang",
@@ -39897,7 +39357,7 @@ window.CINECLASH_CATALOG =
     "duration": "94 min",
     "genre": "Comedy, Crime",
     "rating": 6.4,
-    "description": "The deputy manager of a London bank has worked out a way to rob the branch of £200,000. When he becomes involved with the attractive Lady Dorset he decides to go ahead with his plan. He ... See full summary »",
+    "description": "The deputy manager of a London bank has worked out a way to rob the branch of £200,000. When he becomes involved with the attractive Lady Dorset he decides to go ahead with his plan. He",
     "stars": [
       "Ursula Andress",
       "Stanley Baker",
@@ -39972,7 +39432,7 @@ window.CINECLASH_CATALOG =
     "duration": "85 min",
     "genre": "Comedy",
     "rating": 4.8,
-    "description": "The story of J whose goal is to be world master at playing Nintendo. He struggles with his traditional Jewish family and non-Jewish girlfriend who demand that he grow up and get a job. Real... See full summary »",
+    "description": "The story of J whose goal is to be world master at playing Nintendo. He struggles with his traditional Jewish family and non-Jewish girlfriend who demand that he grow up and get a job. Real",
     "stars": [
       "Sunil Munshi",
       "Jan Malmsjö",
@@ -40002,7 +39462,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Documentary",
     "rating": 7.3,
-    "description": "CNN's award-winning journalist, Christiane Amanpour travels around the world to talk with women about the rules of engagement in relationships and intimacy. In this six-part documentary ... See full summary »",
+    "description": "CNN's award-winning journalist, Christiane Amanpour travels around the world to talk with women about the rules of engagement in relationships and intimacy. In this six-part documentary",
     "stars": [
       "Christiane Amanpour"
     ],
@@ -40117,7 +39577,7 @@ window.CINECLASH_CATALOG =
     "duration": "112 min",
     "genre": "Comedy",
     "rating": 6.7,
-    "description": "In this very funny comedy show, Maz mainly focuses on current political environment especially by telling jokes about Donald Trump and his anti-immigrant politics. During the show he talks ... See full summary »",
+    "description": "In this very funny comedy show, Maz mainly focuses on current political environment especially by telling jokes about Donald Trump and his anti-immigrant politics. During the show he talks",
     "stars": [
       "Maz Jobrani"
     ],
@@ -40137,21 +39597,6 @@ window.CINECLASH_CATALOG =
       "Juan Pablo Medina"
     ],
     "votes": 875
-  },
-  {
-    "title": "2020 Golden Globe Awards",
-    "year": 2020,
-    "duration": "134 min",
-    "genre": "Comedy",
-    "rating": 7.2,
-    "description": "Comedian Ricky Gervais brutally roasts Hollywood and exposes their hypocrisy.",
-    "stars": [
-      "Ricky Gervais",
-      "Jennifer Aniston",
-      "Reese Witherspoon",
-      "Michael Douglas"
-    ],
-    "votes": 874
   },
   {
     "title": "John of God: The Crimes of a Spiritual Healer",
@@ -40189,7 +39634,7 @@ window.CINECLASH_CATALOG =
     "duration": "102 min",
     "genre": "Comedy",
     "rating": 6.1,
-    "description": "G.J. Echternkamp tells the story of his relationship with his parents: his mother Cindy (Russo) and his stepfather Frank (Platt), who used to be a member of OXO, a 1980s band that scored a ... See full summary »",
+    "description": "G.J. Echternkamp tells the story of his relationship with his parents: his mother Cindy (Russo) and his stepfather Frank (Platt), who used to be a member of OXO, a 1980s band that scored a",
     "stars": [
       "Rene Russo",
       "Oliver Platt",
@@ -40279,7 +39724,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Documentary",
     "rating": 6.2,
-    "description": "To many in bodybuilding, Calum Von Moger is seen as the future of the sport. A 2x Mr. Universe champion, Calum was catapulted into social media stardom. Known for his resemblance to Arnold ... See full summary »",
+    "description": "To many in bodybuilding, Calum Von Moger is seen as the future of the sport. A 2x Mr. Universe champion, Calum was catapulted into social media stardom. Known for his resemblance to Arnold",
     "stars": [
       "Calum Von Moger",
       "Vlad Yudin",
@@ -40354,7 +39799,7 @@ window.CINECLASH_CATALOG =
     "duration": "150 min",
     "genre": "Drama, History, Romance",
     "rating": 6.3,
-    "description": "The film tells the story of the Prussian family von Krauss living in the Puck area, as well as the love between the Kashubian boy Mateusz and the German aristocrat Marita and is set between... See full summary »",
+    "description": "The film tells the story of the Prussian family von Krauss living in the Puck area, as well as the love between the Kashubian boy Mateusz and the German aristocrat Marita and is set between",
     "stars": [
       "Janusz Gajos",
       "Anna Radwan",
@@ -40369,7 +39814,7 @@ window.CINECLASH_CATALOG =
     "duration": "68 min",
     "genre": "Action, Comedy, Family",
     "rating": 4.8,
-    "description": "It's summer again, and everyone's favorite Junior Rescuers, The Flounders, are back at Tower 2. With the International Junior Rescue Championships headed to Southern California, the eyes of... See full summary »",
+    "description": "It's summer again, and everyone's favorite Junior Rescuers, The Flounders, are back at Tower 2. With the International Junior Rescue Championships headed to Southern California, the eyes of",
     "stars": [
       "Ricardo Hurtado",
       "Jackie R. Jacobson",
@@ -40477,7 +39922,7 @@ window.CINECLASH_CATALOG =
     "duration": "92 min",
     "genre": "Action",
     "rating": 4.5,
-    "description": "A young British Asian, Mo is a fast-rising police officer who goes under cover infiltrating Shadwell's resurgent hooligan element, who are fired up by Shadwells's takeover by a Russian ... See full summary »",
+    "description": "A young British Asian, Mo is a fast-rising police officer who goes under cover infiltrating Shadwell's resurgent hooligan element, who are fired up by Shadwells's takeover by a Russian",
     "stars": [
       "Simon Rivers",
       "Linus Roache",
@@ -40522,7 +39967,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Documentary, Adventure, Drama",
     "rating": 6.7,
-    "description": "Do you know how to turn ordinary water into a billion-dollar business? In Switzerland there's a company which has developed the art to perfection - Nestlé. This company dominates the global... See full summary »",
+    "description": "Do you know how to turn ordinary water into a billion-dollar business? In Switzerland there's a company which has developed the art to perfection - Nestlé. This company dominates the global",
     "stars": [
       "Peter Brabeck",
       "Res Gehriger",
@@ -40684,7 +40129,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Music, Romance",
     "rating": 6.8,
-    "description": "Lee Hyun Woo (Moorim School, The Technicians) and Joy (from K-pop group Red Velvet) star in an adaptation of the runaway hit Japanese manga. When a genius composer with a hidden identity ... See full summary »",
+    "description": "Lee Hyun Woo (Moorim School, The Technicians) and Joy (from K-pop group Red Velvet) star in an adaptation of the runaway hit Japanese manga. When a genius composer with a hidden identity",
     "stars": [
       "Hyun-Woo Lee",
       "Soo-Young Park",
@@ -40801,7 +40246,7 @@ window.CINECLASH_CATALOG =
     "duration": "24 min",
     "genre": "Animation, Action, Fantasy",
     "rating": 6.6,
-    "description": "The 12th Twelve Tournament that gets held every twelve years - Twelve brave warriors who bear the names of the signs of the zodiac fight each other for the lives and souls. The participants... See full summary »",
+    "description": "The 12th Twelve Tournament that gets held every twelve years - Twelve brave warriors who bear the names of the signs of the zodiac fight each other for the lives and souls. The participants",
     "stars": [
       "Ian Sinclair",
       "Mark Stoddard",
@@ -40816,7 +40261,7 @@ window.CINECLASH_CATALOG =
     "duration": "109 min",
     "genre": "Drama",
     "rating": 4.7,
-    "description": "Are you ready to watch a love story full of adrenaline? Ese, a biker who wants to be the regional champion, and Deniz, who believes that she'll be taken away from the world by the UFOs one ... See full summary »",
+    "description": "Are you ready to watch a love story full of adrenaline? Ese, a biker who wants to be the regional champion, and Deniz, who believes that she'll be taken away from the world by the UFOs one",
     "stars": [
       "Ipek Filiz Yazici",
       "Mert Ramazan Demir",
@@ -40873,7 +40318,7 @@ window.CINECLASH_CATALOG =
     "duration": "125 min",
     "genre": "Drama, History, Thriller",
     "rating": 6.6,
-    "description": "A man named Jacques Mornard arrives in Mexico in 1940, claiming to be a Belgian who is fleeing the war in Europe to join his girlfriend, one of refugee Leon Trotsky's secretaries. But ... See full summary »",
+    "description": "A man named Jacques Mornard arrives in Mexico in 1940, claiming to be a Belgian who is fleeing the war in Europe to join his girlfriend, one of refugee Leon Trotsky's secretaries. But",
     "stars": [
       "Alfonso Herrera",
       "Hannah Murray",
@@ -40918,7 +40363,7 @@ window.CINECLASH_CATALOG =
     "duration": "24 min",
     "genre": "Animation, Action, Fantasy",
     "rating": 5.4,
-    "description": "Waking up in a strange virtual world with no recollection of the past, Hakuno finds himself forced to fight for survival in a war he does not understand for a prize beyond value; the ... See full summary »",
+    "description": "Waking up in a strange virtual world with no recollection of the past, Hakuno finds himself forced to fight for survival in a war he does not understand for a prize beyond value; the",
     "stars": [
       "Cherami Leigh",
       "Vic Mignogna",
@@ -40933,7 +40378,7 @@ window.CINECLASH_CATALOG =
     "duration": "104 min",
     "genre": "Documentary, Biography, History",
     "rating": 6.7,
-    "description": "Danny Says is a documentary on the life and times of Danny Fields. Since 1966, Danny Fields has played a pivotal role in music and \"culture\" of the late 20th century: working for the Doors,... See full summary »",
+    "description": "Danny Says is a documentary on the life and times of Danny Fields. Since 1966, Danny Fields has played a pivotal role in music and \"culture\" of the late 20th century: working for the Doors,",
     "stars": [
       "Mx Justin Vivian Bond",
       "John Cale",
@@ -41053,7 +40498,7 @@ window.CINECLASH_CATALOG =
     "duration": "149 min",
     "genre": "Action, Crime, Drama",
     "rating": 6.1,
-    "description": "Roshni Chadha is the only child of Sharda Chhadha, and has no knowledge of the whereabouts of her absconding dad, Prakash Chhadha. Roshni is introduced to Rahul Malhotra and both are ... See full summary »",
+    "description": "Roshni Chadha is the only child of Sharda Chhadha, and has no knowledge of the whereabouts of her absconding dad, Prakash Chhadha. Roshni is introduced to Rahul Malhotra and both are",
     "stars": [
       "Sanjay Dutt",
       "Sridevi",
@@ -41113,7 +40558,7 @@ window.CINECLASH_CATALOG =
     "duration": "109 min",
     "genre": "Action, Crime, Drama",
     "rating": 6.2,
-    "description": "Zambrano is a juvenile offender that when arrives to the penitentiary only longs to join a football team, Los Perros. Such illusion ends up involving him with the organized crime under the ... See full summary »",
+    "description": "Zambrano is a juvenile offender that when arrives to the penitentiary only longs to join a football team, Los Perros. Such illusion ends up involving him with the organized crime under the",
     "stars": [
       "Adrian Ladron",
       "Andoni Gracia",
@@ -41317,7 +40762,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Documentary",
     "rating": 7.3,
-    "description": "In Cracked Up we witness the effects adverse childhood experiences can have across a lifetime through the incredible story of actor, comedian, master impressionist and Saturday Night Live ... See full summary »",
+    "description": "In Cracked Up we witness the effects adverse childhood experiences can have across a lifetime through the incredible story of actor, comedian, master impressionist and Saturday Night Live",
     "stars": [
       "Darrell Hammond",
       "Larry Laskowski",
@@ -41374,7 +40819,7 @@ window.CINECLASH_CATALOG =
     "duration": "87 min",
     "genre": "Drama",
     "rating": 6,
-    "description": "Ely is 17 years old. After school, she works few hours at a pet shop. When Ely learns that she is pregnant, her inner world explodes even though she tries to go on with her daily routine as... See full summary »",
+    "description": "Ely is 17 years old. After school, she works few hours at a pet shop. When Ely learns that she is pregnant, her inner world explodes even though she tries to go on with her daily routine as",
     "stars": [
       "Mora Arenillas",
       "Mara Bestelli",
@@ -41419,7 +40864,7 @@ window.CINECLASH_CATALOG =
     "duration": "100 min",
     "genre": "Documentary",
     "rating": 7.2,
-    "description": "Following his Oscar winning The White Helmets, Orlando von Einsiedel turns his camera on his own family as they attempt to cope with a devastating loss. When his brother, newly diagnosed as... See full summary »",
+    "description": "Following his Oscar winning The White Helmets, Orlando von Einsiedel turns his camera on his own family as they attempt to cope with a devastating loss. When his brother, newly diagnosed as",
     "stars": [
       "Orlando von Einsiedel"
     ],
@@ -41506,7 +40951,7 @@ window.CINECLASH_CATALOG =
     "duration": "91 min",
     "genre": "Family, Fantasy, Musical",
     "rating": 6.1,
-    "description": "On a quest to find a new home young Pluk in his little red crane wagon end up in the Petteflet. He moves in to a little deserted tower room and quickly befriends some of the inhabitants and... See full summary »",
+    "description": "On a quest to find a new home young Pluk in his little red crane wagon end up in the Petteflet. He moves in to a little deserted tower room and quickly befriends some of the inhabitants and",
     "stars": [
       "Janieck van de Polder",
       "Suzanne Zuiderwijk",
@@ -41521,7 +40966,7 @@ window.CINECLASH_CATALOG =
     "duration": "86 min",
     "genre": "Drama, Horror, Thriller",
     "rating": 5.6,
-    "description": "In a typical American suburb filled with middle class morals, a lonely 59-year-old, Stan, contributes to society by offering cremation services from his basement. In fact, Stan murders ... See full summary »",
+    "description": "In a typical American suburb filled with middle class morals, a lonely 59-year-old, Stan, contributes to society by offering cremation services from his basement. In fact, Stan murders",
     "stars": [
       "Brad Dourif",
       "Jeremy Sumpter",
@@ -41551,7 +40996,7 @@ window.CINECLASH_CATALOG =
     "duration": "83 min",
     "genre": "Animation, Action, Adventure",
     "rating": 5.7,
-    "description": "The Winx Club is struggling with a terrible mystery that will make your heart beat faster! The archenemies of the Winx Club, the Trix witches, team up with the evil nymph Politea and find ... See full summary »",
+    "description": "The Winx Club is struggling with a terrible mystery that will make your heart beat faster! The archenemies of the Winx Club, the Trix witches, team up with the evil nymph Politea and find",
     "stars": [
       "Alberto Bognanni",
       "Letizia Ciampa",
@@ -41565,7 +41010,7 @@ window.CINECLASH_CATALOG =
     "duration": "75 min",
     "genre": "Drama",
     "rating": 7.5,
-    "description": "Ji-Hoon (Lee Seo-Jin) has a cynical personality due to his family background. Even though he comes from a rich family, his mother had an affair with a married man and they had Ji-Hoon. From... See full summary »",
+    "description": "Ji-Hoon (Lee Seo-Jin) has a cynical personality due to his family background. Even though he comes from a rich family, his mother had an affair with a married man and they had Ji-Hoon. From",
     "stars": [
       "Seo-jin Lee",
       "Kim You-Jin",
@@ -41590,27 +41035,12 @@ window.CINECLASH_CATALOG =
     "votes": 770
   },
   {
-    "title": "Made in Mexico",
-    "year": 2018,
-    "duration": "49 min",
-    "genre": "Reality-TV",
-    "rating": 3.9,
-    "description": "Get to know the opulent lifestyles and famous families of Mexico City's socialites and the expats vying for a spot in their exclusive social order.",
-    "stars": [
-      "Carlos Giron Longoria",
-      "Chantal Trujillo",
-      "Hanna Jaff",
-      "Roby Checa"
-    ],
-    "votes": 770
-  },
-  {
     "title": "3 Geezers!",
     "year": 2013,
     "duration": "81 min",
     "genre": "Comedy",
     "rating": 3.3,
-    "description": "Follow actor J Kimball as he researches what it's like to be old for a role in an upcoming movie. When he meets the residents at The Coconuts convalescent home, he quickly discovers that ... See full summary »",
+    "description": "Follow actor J Kimball as he researches what it's like to be old for a role in an upcoming movie. When he meets the residents at The Coconuts convalescent home, he quickly discovers that",
     "stars": [
       "J.K. Simmons",
       "Tim Allen",
@@ -41633,18 +41063,6 @@ window.CINECLASH_CATALOG =
       "Ana Wagener"
     ],
     "votes": 768
-  },
-  {
-    "title": "Win the Wilderness: Alaska",
-    "year": 2020,
-    "duration": "60 min",
-    "genre": "Documentary, Adventure, Game-Show",
-    "rating": 6.9,
-    "description": "Six British couples compete to impress the current, elderly owners of a remote yet breathtaking property in Alaska. The winners will win the property deep within the Alaskan wilderness.",
-    "stars": [
-      "Nicolas Tennant"
-    ],
-    "votes": 767
   },
   {
     "title": "This Earth of Mankind",
@@ -41697,7 +41115,7 @@ window.CINECLASH_CATALOG =
     "duration": "115 min",
     "genre": "Comedy",
     "rating": 5,
-    "description": "When charismatic stripper Jorrit is single again, his best friend Bas convinces him to open a strip club in Miami. But they could use some extra hands and so their friend Thijs also flies ... See full summary »",
+    "description": "When charismatic stripper Jorrit is single again, his best friend Bas convinces him to open a strip club in Miami. But they could use some extra hands and so their friend Thijs also flies",
     "stars": [
       "Jim Bakkum",
       "Martijn Fischer",
@@ -41742,7 +41160,7 @@ window.CINECLASH_CATALOG =
     "duration": "30 min",
     "genre": "Comedy, Fantasy",
     "rating": 7.6,
-    "description": "Yoo Hyun-Jae is a member of a popular idol group. He has a lot of fans and he is a scandal maker. Meanwhile, Lee Ji-Hoon is an aspiring singer. He pretends to be studying for his civil ... See full summary »",
+    "description": "Yoo Hyun-Jae is a member of a popular idol group. He has a lot of fans and he is a scandal maker. Meanwhile, Lee Ji-Hoon is an aspiring singer. He pretends to be studying for his civil",
     "stars": [
       "Min-Jae Kim",
       "Tae-Hyun Cha",
@@ -41780,21 +41198,6 @@ window.CINECLASH_CATALOG =
       "Kamala Jones"
     ],
     "votes": 762
-  },
-  {
-    "title": "Under Suspicion: Uncovering the Wesphael Case",
-    "year": 2021,
-    "duration": "180 min",
-    "genre": "Documentary, Crime",
-    "rating": 6.3,
-    "description": "This docuseries examines the story of Belgian politician Bernard Wesphael, who was accused of murdering his wife, Véronique Pirotton, in 2013. She had been found dead in a hotel room in Ostend.",
-    "stars": [
-      "Nadine Pirotton",
-      "Bernard Sohet",
-      "Bernard Wesphael",
-      "Luc Gochel"
-    ],
-    "votes": 761
   },
   {
     "title": "The Memory of Water",
@@ -42129,7 +41532,7 @@ window.CINECLASH_CATALOG =
     "duration": "10 min",
     "genre": "Short, Drama, Music",
     "rating": 6.6,
-    "description": "A free-spirited singer whose love of music has him performing on the streets, Kang In Soo's life revolves completely around music. Supported by his friends, In Soo hopes to someday turn his... See full summary »",
+    "description": "A free-spirited singer whose love of music has him performing on the streets, Kang In Soo's life revolves completely around music. Supported by his friends, In Soo hopes to someday turn his",
     "stars": [
       "Kang In Soo",
       "Sang Lee",
@@ -42215,7 +41618,7 @@ window.CINECLASH_CATALOG =
     "duration": "89 min",
     "genre": "Documentary",
     "rating": 6.7,
-    "description": "In the heart of America's opioid epidemic, four men attempt to reinvent their lives and reenter society sober after years of drug abuse. Recovery Boys, from Academy Award nominated director... See full summary »",
+    "description": "In the heart of America's opioid epidemic, four men attempt to reinvent their lives and reenter society sober after years of drug abuse. Recovery Boys, from Academy Award nominated director",
     "stars": [
       "Elaine McMillion Sheldon"
     ],
@@ -42227,7 +41630,7 @@ window.CINECLASH_CATALOG =
     "duration": "63 min",
     "genre": "Comedy",
     "rating": 3.6,
-    "description": "The App that Stole Christmas is a story about Felix Rhome, an inventor, who has created a super powerful App that eases the shopping craze during Christmas by the click of a button. His ... See full summary »",
+    "description": "The App that Stole Christmas is a story about Felix Rhome, an inventor, who has created a super powerful App that eases the shopping craze during Christmas by the click of a button. His",
     "stars": [
       "Ray J",
       "Jackie Long",
@@ -42248,21 +41651,6 @@ window.CINECLASH_CATALOG =
       "Soleh Solihun",
       "Prilly Latuconsina",
       "Gading Marten"
-    ],
-    "votes": 732
-  },
-  {
-    "title": "Flinch",
-    "year": 2019,
-    "duration": "25 min",
-    "genre": "Game-Show",
-    "rating": 4.3,
-    "description": "Faced with various frightening and uncomfortable events, contestants in this game show had better not flinch - or they'll suffer painful consequences.",
-    "stars": [
-      "Seann Walsh",
-      "Lloyd Griffith",
-      "Desiree Burch",
-      "John McGinn"
     ],
     "votes": 732
   },
@@ -42314,7 +41702,7 @@ window.CINECLASH_CATALOG =
     "duration": "89 min",
     "genre": "Documentary, Biography",
     "rating": 6.8,
-    "description": "Examines the tumultuous life of legendary Chicago pimp Iceberg Slim (1918-1992) and how he reinvented himself from pimp to author of 7 groundbreaking books. These books were the birth of ... See full summary »",
+    "description": "Examines the tumultuous life of legendary Chicago pimp Iceberg Slim (1918-1992) and how he reinvented himself from pimp to author of 7 groundbreaking books. These books were the birth of",
     "stars": [
       "Betty Beck",
       "Camille Beck",
@@ -42344,7 +41732,7 @@ window.CINECLASH_CATALOG =
     "duration": "60 min",
     "genre": "Crime, Drama, Thriller",
     "rating": 7.7,
-    "description": "Choi Kang-woo, a former police and leader of Taeyang Insurance's investigators team, decides to create his own investigation team, after an airplane crash that took the life of his wife and... See full summary »",
+    "description": "Choi Kang-woo, a former police and leader of Taeyang Insurance's investigators team, decides to create his own investigation team, after an airplane crash that took the life of his wife and",
     "stars": [
       "Baek Ji-won",
       "Soo-Hyun Hong",
@@ -42389,7 +41777,7 @@ window.CINECLASH_CATALOG =
     "duration": "21 min",
     "genre": "Comedy",
     "rating": 6.9,
-    "description": "Hasmukh operates a small IT Consulting company \"Shree Ganesh Computers Limited Inc\" in Queens, NY. Staffed by a disinterested and lazy cast of characters, his business flounders. His home ... See full summary »",
+    "description": "Hasmukh operates a small IT Consulting company \"Shree Ganesh Computers Limited Inc\" in Queens, NY. Staffed by a disinterested and lazy cast of characters, his business flounders. His home",
     "stars": [
       "Rajeev Varma",
       "Shenaz Treasury",
@@ -42419,7 +41807,7 @@ window.CINECLASH_CATALOG =
     "duration": "126 min",
     "genre": "Action, Drama",
     "rating": 6.4,
-    "description": "Thakur Avadh Narayan Singh rules Shekhapur village.Due to his fear villagers don't dare to go against him for his wrong doings.His son Bhola and Bacchu are also to follow his part who spend... See full summary »",
+    "description": "Thakur Avadh Narayan Singh rules Shekhapur village.Due to his fear villagers don't dare to go against him for his wrong doings.His son Bhola and Bacchu are also to follow his part who spend",
     "stars": [
       "Sanjay Dutt",
       "Nandita Das",
@@ -42479,7 +41867,7 @@ window.CINECLASH_CATALOG =
     "duration": "32 min",
     "genre": "Documentary, Short",
     "rating": 6.4,
-    "description": "Journey from the depths of the Pacific Ocean into the far reaches of space on a quest to find something that changes everything...signs of life, somewhere else in the universe. With ... See full summary »",
+    "description": "Journey from the depths of the Pacific Ocean into the far reaches of space on a quest to find something that changes everything...signs of life, somewhere else in the universe. With",
     "stars": [
       "Lisa Kaltenegger",
       "Malcolm McDowell",
@@ -42493,7 +41881,7 @@ window.CINECLASH_CATALOG =
     "duration": "93 min",
     "genre": "Horror, Thriller",
     "rating": 4.8,
-    "description": "Marta used to be a recognized and successful psychic, but after a dramatic experience, she loses faith in her gift and develops agoraphobia. She couldn't see the devilish side of her rapist... See full summary »",
+    "description": "Marta used to be a recognized and successful psychic, but after a dramatic experience, she loses faith in her gift and develops agoraphobia. She couldn't see the devilish side of her rapist",
     "stars": [
       "Paz Vega",
       "Johanna Murillo",
@@ -42501,21 +41889,6 @@ window.CINECLASH_CATALOG =
       "Maya Zapata"
     ],
     "votes": 717
-  },
-  {
-    "title": "Two Catalonias",
-    "year": 2018,
-    "duration": "116 min",
-    "genre": "Documentary, History, News",
-    "rating": 6.4,
-    "description": "A documentary that tackles the ideological conflicts surrounding the December 21 election in the country, to the push for sovereignty and subsequent parliamentary declaration of independence and the aftermath.",
-    "stars": [
-      "Luis María Anson",
-      "Inés Arrimadas",
-      "Elsa Artadi",
-      "Antoni Bassas"
-    ],
-    "votes": 716
   },
   {
     "title": "X: Past Is Present",
@@ -42580,7 +41953,7 @@ window.CINECLASH_CATALOG =
     "duration": "39 min",
     "genre": "Documentary, Short, Family",
     "rating": 6.8,
-    "description": "From documentarian Hao Wu comes a heartfelt portrait of how he created a thoroughly modern family in America, only to face the dilemma of introducing his same-sex partner and their children... See full summary »",
+    "description": "From documentarian Hao Wu comes a heartfelt portrait of how he created a thoroughly modern family in America, only to face the dilemma of introducing his same-sex partner and their children",
     "stars": [
       "Hao Wu"
     ],
@@ -42592,7 +41965,7 @@ window.CINECLASH_CATALOG =
     "duration": "125 min",
     "genre": "Drama",
     "rating": 7,
-    "description": "A self-absorbed Black American fashion model on a photo shoot in Africa is spiritually transported back to a plantation in the West Indies where she experiences first-hand the physical and ... See full summary »",
+    "description": "A self-absorbed Black American fashion model on a photo shoot in Africa is spiritually transported back to a plantation in the West Indies where she experiences first-hand the physical and",
     "stars": [
       "Kofi Ghanaba",
       "Oyafunmike Ogunlano",
@@ -42649,7 +42022,7 @@ window.CINECLASH_CATALOG =
     "duration": "83 min",
     "genre": "Comedy",
     "rating": 6.5,
-    "description": "At the Bucharest Circus, the new young manager is trying to solve the major financial issues of the company by selling its only bear (old and about to die soon) to German hunters. But the ... See full summary »",
+    "description": "At the Bucharest Circus, the new young manager is trying to solve the major financial issues of the company by selling its only bear (old and about to die soon) to German hunters. But the",
     "stars": [
       "Serban Pavlu",
       "Claudiu Bleont",
@@ -42709,7 +42082,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Comedy",
     "rating": 5.9,
-    "description": "Trailer Park Boys actors John Paul Tremblay, Robb Wells and Mike Smith as fictionalized versions of themselves. The fictional trio are starring in a new sketch comedy series, Happy Funtime ... See full summary »",
+    "description": "Trailer Park Boys actors John Paul Tremblay, Robb Wells and Mike Smith as fictionalized versions of themselves. The fictional trio are starring in a new sketch comedy series, Happy Funtime",
     "stars": [
       "Robb Wells",
       "John Paul Tremblay",
@@ -42769,7 +42142,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Comedy, Crime, Mystery",
     "rating": 6.7,
-    "description": "The Marquis Galeazzo di Torre Alta is murdered by a mysterious killer who calls himself Diabolicus. His heirs are his three brothers and a sister, but all of them except Monsignor Antonino ... See full summary »",
+    "description": "The Marquis Galeazzo di Torre Alta is murdered by a mysterious killer who calls himself Diabolicus. His heirs are his three brothers and a sister, but all of them except Monsignor Antonino",
     "stars": [
       "Totò",
       "Raimondo Vianello",
@@ -42827,7 +42200,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Documentary, Biography, Romance",
     "rating": 7.2,
-    "description": "On the eve of the 40th anniversary of the Gay Rights Movement, the film explores the drama, struggle and enduring legacy of the first-ever gay play and subsequent Hollywood movie to ... See full summary »",
+    "description": "On the eve of the 40th anniversary of the Gay Rights Movement, the film explores the drama, struggle and enduring legacy of the first-ever gay play and subsequent Hollywood movie to",
     "stars": [
       "Edward Albee",
       "Joe Allen",
@@ -42857,7 +42230,7 @@ window.CINECLASH_CATALOG =
     "duration": "120 min",
     "genre": "Action, Fantasy, Sci-Fi",
     "rating": 4,
-    "description": "The story of Daemonium begins in an alternate universe to ours, in which Magic and Technology Coexist with Humans and Demons. In Daemonium we see Razor rise to power! (He will be the new ... See full summary »",
+    "description": "The story of Daemonium begins in an alternate universe to ours, in which Magic and Technology Coexist with Humans and Demons. In Daemonium we see Razor rise to power! (He will be the new",
     "stars": [
       "Caro Angus",
       "Dany Casco",
@@ -42887,7 +42260,7 @@ window.CINECLASH_CATALOG =
     "duration": "49 min",
     "genre": "Drama",
     "rating": 7.5,
-    "description": "The family Paixão runs a farm for wedding parties, but the business is not going well. While the love between the parents, Vanessa and Daniel appears to have ended, the grandparents, Luisa ... See full summary »",
+    "description": "The family Paixão runs a farm for wedding parties, but the business is not going well. While the love between the parents, Vanessa and Daniel appears to have ended, the grandparents, Luisa",
     "stars": [
       "Rita Loureiro",
       "Dinarte Branco",
@@ -42992,7 +42365,7 @@ window.CINECLASH_CATALOG =
     "duration": "110 min",
     "genre": "Mystery, Thriller",
     "rating": 5,
-    "description": "Boi is a young man starting out in a new job as a chauffeur. While anxiously waiting for news from his girlfriend regarding a decision that could change both their lives, he must accompany ... See full summary »",
+    "description": "Boi is a young man starting out in a new job as a chauffeur. While anxiously waiting for news from his girlfriend regarding a decision that could change both their lives, he must accompany",
     "stars": [
       "Bernat Quintana",
       "Lisa",
@@ -43079,7 +42452,7 @@ window.CINECLASH_CATALOG =
     "duration": "88 min",
     "genre": "Fantasy, Horror, Sci-Fi",
     "rating": 4.4,
-    "description": "When the Haskin family seeks refuge from Y2K hysteria in the isolated forests of the Sierra Diablos mountains, madness and terror find them there. Abducted by a vicious hillbilly clan, the ... See full summary »",
+    "description": "When the Haskin family seeks refuge from Y2K hysteria in the isolated forests of the Sierra Diablos mountains, madness and terror find them there. Abducted by a vicious hillbilly clan, the",
     "stars": [
       "John Charles Meyer",
       "Jessica Postrozny",
@@ -43193,7 +42566,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Comedy",
     "rating": 5.5,
-    "description": "Four childhood friends, all married with no passion left, get together in a high school reunion dinner. Between laughs and drinks, they all agree that they love their wives but no longer ... See full summary »",
+    "description": "Four childhood friends, all married with no passion left, get together in a high school reunion dinner. Between laughs and drinks, they all agree that they love their wives but no longer",
     "stars": [
       "Fele Martínez",
       "Hovik Keuchkerian",
@@ -43208,7 +42581,7 @@ window.CINECLASH_CATALOG =
     "duration": "94 min",
     "genre": "Documentary",
     "rating": 7.5,
-    "description": "\"HEROES: SILENCIO Y ROCK AND ROLL\" tells the story of spanish rock band Héroes del Silencio since their very begining to their rise to stardom. It's a movie about friendship, music and ... See full summary »",
+    "description": "\"HEROES: SILENCIO Y ROCK AND ROLL\" tells the story of spanish rock band Héroes del Silencio since their very begining to their rise to stardom. It's a movie about friendship, music and",
     "stars": [
       "Pedro Andreu",
       "Enrique Bunbury",
@@ -43323,7 +42696,7 @@ window.CINECLASH_CATALOG =
     "duration": "50 min",
     "genre": "Documentary, Comedy",
     "rating": 7.2,
-    "description": "Fans old and new have cause for celebration with the release of Sam Kinison: Breaking All The Rules, HBO Special. Along with being voted onto Comedy Central's All-Time Top 20 Stand-Up ... See full summary »",
+    "description": "Fans old and new have cause for celebration with the release of Sam Kinison: Breaking All The Rules, HBO Special. Along with being voted onto Comedy Central's All-Time Top 20 Stand-Up",
     "stars": [
       "Sam Kinison",
       "Florence Marie Marney",
@@ -43402,21 +42775,6 @@ window.CINECLASH_CATALOG =
     "votes": 667
   },
   {
-    "title": "The 74th Annual Golden Globe Awards 2017",
-    "year": 2017,
-    "duration": "180 min",
-    "genre": "News",
-    "rating": 5.5,
-    "description": "Comic Jimmy Fallon hosts a celebration of achievements in television and film, with actors Steve Carell, Anna Kendrick, Sofía Vergara and Brie Larson presenting awards and Golden Globe ... See full summary »",
-    "stars": [
-      "Jimmy Fallon",
-      "Nicole Kidman",
-      "Amy Adams",
-      "Sarah Paulson"
-    ],
-    "votes": 666
-  },
-  {
     "title": "Cagaster of an Insect Cage",
     "year": 2020,
     "duration": "29 min",
@@ -43452,7 +42810,7 @@ window.CINECLASH_CATALOG =
     "duration": "105 min",
     "genre": "Documentary, Crime, Thriller",
     "rating": 7.9,
-    "description": "On March 19th 2010, the Mexican government announced the death of two hitmen, armed to the teeth, in the city of Monterrey, Nuevo León. Days later, it was discovered that they were in fact ... See full summary »",
+    "description": "On March 19th 2010, the Mexican government announced the death of two hitmen, armed to the teeth, in the city of Monterrey, Nuevo León. Days later, it was discovered that they were in fact",
     "stars": [
       "Alberto Saúl Arnaut Estrada"
     ],
@@ -43580,7 +42938,7 @@ window.CINECLASH_CATALOG =
     "duration": "60 min",
     "genre": "Comedy, Romance",
     "rating": 7,
-    "description": "A superstitious woman is told, by a fortune teller, that her sister will come out of coma if she spends the night with a man born in 1986. Later, she finds out that her boss, who is an ... See full summary »",
+    "description": "A superstitious woman is told, by a fortune teller, that her sister will come out of coma if she spends the night with a man born in 1986. Later, she finds out that her boss, who is an",
     "stars": [
       "Hwang Jeong-eum",
       "Lee Soo-hyuk",
@@ -43670,7 +43028,7 @@ window.CINECLASH_CATALOG =
     "duration": "76 min",
     "genre": "Comedy",
     "rating": 5.5,
-    "description": "From Jerry Seinfeld to Leslie Jones, Kevin Hart to Hannah Gadsby, laugh along with the funniest bits from Netflix's 2020 stand-up comedy specials. Unnecessary milk substitutes. Bad ... See full summary »",
+    "description": "From Jerry Seinfeld to Leslie Jones, Kevin Hart to Hannah Gadsby, laugh along with the funniest bits from Netflix's 2020 stand-up comedy specials. Unnecessary milk substitutes. Bad",
     "stars": [
       "Eric André",
       "Michelle Buteau",
@@ -43700,7 +43058,7 @@ window.CINECLASH_CATALOG =
     "duration": "98 min",
     "genre": "Drama",
     "rating": 6.8,
-    "description": "1985. Georges is a born market vendor. As a driven salesman he can sell anything to any one, at any time. When he hears the Pope is coming to Belgium, he spots an opportunity. In close ... See full summary »",
+    "description": "1985. Georges is a born market vendor. As a driven salesman he can sell anything to any one, at any time. When he hears the Pope is coming to Belgium, he spots an opportunity. In close",
     "stars": [
       "Chloë Daxhelet",
       "Wim Opbrouck",
@@ -43715,7 +43073,7 @@ window.CINECLASH_CATALOG =
     "duration": "89 min",
     "genre": "Comedy",
     "rating": 6.1,
-    "description": "Recently-divorced fortysomething Doris lives in Amsterdam with her two teenagers. Ever since her ex-husband started his new life, she has been dreaming of her lifelong best friend Tim. ... See full summary »",
+    "description": "Recently-divorced fortysomething Doris lives in Amsterdam with her two teenagers. Ever since her ex-husband started his new life, she has been dreaming of her lifelong best friend Tim.",
     "stars": [
       "Tjitske Reidinga",
       "Guy Clemens",
@@ -43760,7 +43118,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Action, Adventure, Comedy",
     "rating": 7.9,
-    "description": "The story of twin brothers who separated at birth but grew up to be supreme martial artists. Raised to take revenge on each other they soon find themselves becoming good friends. Together ... See full summary »",
+    "description": "The story of twin brothers who separated at birth but grew up to be supreme martial artists. Raised to take revenge on each other they soon find themselves becoming good friends. Together",
     "stars": [
       "Zheyuan Chen",
       "Yitian Hu",
@@ -43954,7 +43312,7 @@ window.CINECLASH_CATALOG =
     "duration": "86 min",
     "genre": "Crime, Drama, Thriller",
     "rating": 6.2,
-    "description": "Five members of the Missing Persons Task Force investigate the mysterious disappearance of 17-year-old Evi. While unraveling the girl's troubled relationship with her parents, which leaves ... See full summary »",
+    "description": "Five members of the Missing Persons Task Force investigate the mysterious disappearance of 17-year-old Evi. While unraveling the girl's troubled relationship with her parents, which leaves",
     "stars": [
       "Cem Akkanat",
       "Steven Boen",
@@ -44004,21 +43362,6 @@ window.CINECLASH_CATALOG =
       "Go Kyung-Pyo"
     ],
     "votes": 634
-  },
-  {
-    "title": "The Emperor: Owner of the Mask",
-    "year": 2017,
-    "duration": "",
-    "genre": "Drama, History, Romance",
-    "rating": 7.4,
-    "description": "Set in the 18th-century Joseon, it tells the story of Crown Prince Lee Sun and his fight against a powerful and wealthy organization Pyunsoo hwe, who controls the country behind the scenes.... See full summary »",
-    "stars": [
-      "Yoo Seung-ho",
-      "Kim So-Hyun",
-      "Hyun-soo Shin",
-      "Myung-Soo Kim"
-    ],
-    "votes": 633
   },
   {
     "title": "Brian Regan: On the Rocks",
@@ -44097,7 +43440,7 @@ window.CINECLASH_CATALOG =
     "duration": "98 min",
     "genre": "Horror, Thriller",
     "rating": 3.7,
-    "description": "When a mysterious tragedy traumatizes his family, the young Lucas Vidal wakes up to a challenging mission of fighting against the biggest enemy of God and of mankind: The Devil himself. The... See full summary »",
+    "description": "When a mysterious tragedy traumatizes his family, the young Lucas Vidal wakes up to a challenging mission of fighting against the biggest enemy of God and of mankind: The Devil himself. The",
     "stars": [
       "Renato Siqueira",
       "Fábio Tomasini",
@@ -44289,7 +43632,7 @@ window.CINECLASH_CATALOG =
     "duration": "70 min",
     "genre": "Fantasy",
     "rating": 6.9,
-    "description": "Our heroine will have the unfortunate ability to see the \"life clocks\" of everyone around her, including herself, and the hero will somehow be able to stop her \"time\" without lifting a ... See full summary »",
+    "description": "Our heroine will have the unfortunate ability to see the \"life clocks\" of everyone around her, including herself, and the hero will somehow be able to stop her \"time\" without lifting a",
     "stars": [
       "Kim Ro Woon",
       "Lee Song-Kyoung",
@@ -44304,7 +43647,7 @@ window.CINECLASH_CATALOG =
     "duration": "93 min",
     "genre": "Documentary",
     "rating": 6.2,
-    "description": "ENLIGHTEN US: THE RISE AND FALL OF JAMES ARTHUR RAY is the story of the motivational rock star's meteoric rise, fall and return to the $11 billion self-help industry after his negligent ... See full summary »",
+    "description": "ENLIGHTEN US: THE RISE AND FALL OF JAMES ARTHUR RAY is the story of the motivational rock star's meteoric rise, fall and return to the $11 billion self-help industry after his negligent",
     "stars": [
       "James Arthur Ray"
     ],
@@ -44356,7 +43699,7 @@ window.CINECLASH_CATALOG =
     "duration": "107 min",
     "genre": "Comedy, Crime, Drama",
     "rating": 5.8,
-    "description": "Don Oscar, if he wanted, could have been the next Escobar, but instead he sits on the ruins of his decrepit little drug empire. And let's face it, there is not much left to sit on. Only a ... See full summary »",
+    "description": "Don Oscar, if he wanted, could have been the next Escobar, but instead he sits on the ruins of his decrepit little drug empire. And let's face it, there is not much left to sit on. Only a",
     "stars": [
       "Jose Marino Angulo",
       "Juan Martin Arancedo",
@@ -44386,7 +43729,7 @@ window.CINECLASH_CATALOG =
     "duration": "85 min",
     "genre": "Comedy, Drama",
     "rating": 5.5,
-    "description": "Leroy Lowe, grand dragon of the Texas Ku Klux Klan confronts everything he's been taught to hate when he's sentenced to three years of hard labor on a prison work farm, where Warden ... See full summary »",
+    "description": "Leroy Lowe, grand dragon of the Texas Ku Klux Klan confronts everything he's been taught to hate when he's sentenced to three years of hard labor on a prison work farm, where Warden",
     "stars": [
       "Tom Sizemore",
       "Stacy Keach",
@@ -44446,7 +43789,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Horror",
     "rating": 4.7,
-    "description": "Liu Chenchen, a free-spirited young woman, rebels against her wealthy family and elopes with her boyfriend to join a cruise-bond treasure hunt. But what began as an innocent game with ... See full summary »",
+    "description": "Liu Chenchen, a free-spirited young woman, rebels against her wealthy family and elopes with her boyfriend to join a cruise-bond treasure hunt. But what began as an innocent game with",
     "stars": [
       "Ruby Lin",
       "Peter Ho",
@@ -44506,7 +43849,7 @@ window.CINECLASH_CATALOG =
     "duration": "98 min",
     "genre": "Mystery, Thriller",
     "rating": 3.9,
-    "description": "A once-famous, now-washed-up Hollywood screenwriter, is fighting to finish his latest script with an unrealistic deadline. He finds himself in the center of a murder investigation involving... See full summary »",
+    "description": "A once-famous, now-washed-up Hollywood screenwriter, is fighting to finish his latest script with an unrealistic deadline. He finds himself in the center of a murder investigation involving",
     "stars": [
       "Robert Miano",
       "Danny Glover",
@@ -44667,7 +44010,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Comedy",
     "rating": 5.2,
-    "description": "Nina is an uncompromising idealist. She believes in what she does and is convinced that she can fight for a better world. Giulio is a wealthy, arrogant heir and pretty much her polar ... See full summary »",
+    "description": "Nina is an uncompromising idealist. She believes in what she does and is convinced that she can fight for a better world. Giulio is a wealthy, arrogant heir and pretty much her polar",
     "stars": [
       "Valentina Lodovini",
       "Alessandro Preziosi",
@@ -44682,7 +44025,7 @@ window.CINECLASH_CATALOG =
     "duration": "80 min",
     "genre": "Horror",
     "rating": 4,
-    "description": "In January, 1996 Unsolved Mysteries featured a story on landowner Bert Wall's 'real-life' interactions with the spirits that roamed the Devil's Backbone. Nearly twenty years later, Wall ... See full summary »",
+    "description": "In January, 1996 Unsolved Mysteries featured a story on landowner Bert Wall's 'real-life' interactions with the spirits that roamed the Devil's Backbone. Nearly twenty years later, Wall",
     "stars": [
       "Avery Atchley",
       "Savannah Atchley",
@@ -44846,7 +44189,7 @@ window.CINECLASH_CATALOG =
     "duration": "89 min",
     "genre": "Drama, Family",
     "rating": 4.6,
-    "description": "When a seventeen-year old aspiring dancer is uprooted mid-semester of her senior year, she finds herself in a small East Coast high school where her heart will be divided between two boys, ... See full summary »",
+    "description": "When a seventeen-year old aspiring dancer is uprooted mid-semester of her senior year, she finds herself in a small East Coast high school where her heart will be divided between two boys,",
     "stars": [
       "Lexi Giovagnoli",
       "Justin Ray",
@@ -44901,27 +44244,12 @@ window.CINECLASH_CATALOG =
     "votes": 577
   },
   {
-    "title": "Chief of Staff",
-    "year": 2019,
-    "duration": "60 min",
-    "genre": "Drama",
-    "rating": 7.9,
-    "description": "As a chief of staff in the National Assembly, Jang Tae-jun influences power behind the scenes while pursuing his own ambitions to rise to the top.",
-    "stars": [
-      "Lee Jung-jae",
-      "Shin Min-a",
-      "Dong-jun Kim",
-      "Kim Kap-su"
-    ],
-    "votes": 576
-  },
-  {
     "title": "Spark: A Burning Man Story",
     "year": 2013,
     "duration": "90 min",
     "genre": "Documentary, Action, Biography",
     "rating": 6.2,
-    "description": "Each year, 60,000 people from around the globe gather in a dusty windswept Nevada desert to build a temporary city, collaborating on large-scale art and partying for a week before burning a... See full summary »",
+    "description": "Each year, 60,000 people from around the globe gather in a dusty windswept Nevada desert to build a temporary city, collaborating on large-scale art and partying for a week before burning a",
     "stars": [
       "Harley K. Dubois",
       "Marian Goodell",
@@ -44959,21 +44287,6 @@ window.CINECLASH_CATALOG =
       "Taryn Manning"
     ],
     "votes": 575
-  },
-  {
-    "title": "Sustainable",
-    "year": 2016,
-    "duration": "92 min",
-    "genre": "Documentary, History, News",
-    "rating": 7.3,
-    "description": "America is facing a food crisis driven by profitability and a lack of consumer education. While the window to transforming our heartland continues to shrink, passionate individuals have ... See full summary »",
-    "stars": [
-      "Marty Travis",
-      "Dan Barber",
-      "Rick Bayless",
-      "Mark Bittman"
-    ],
-    "votes": 573
   },
   {
     "title": "Chevolution",
@@ -45188,7 +44501,7 @@ window.CINECLASH_CATALOG =
     "duration": "91 min",
     "genre": "Documentary, Drama, Family",
     "rating": 6.9,
-    "description": "The film follows seven wine-making families in the Burgundy region of France through the course of a full year, and delves into the cultural and creative process of making wine, as well as ... See full summary »",
+    "description": "The film follows seven wine-making families in the Burgundy region of France through the course of a full year, and delves into the cultural and creative process of making wine, as well as",
     "stars": [
       "Martine Saunier"
     ],
@@ -45290,7 +44603,7 @@ window.CINECLASH_CATALOG =
     "duration": "66 min",
     "genre": "Comedy, Drama, Family",
     "rating": 8.2,
-    "description": "Ahn Joong-Hee (Lee Joon) is an actor who used to be a member of an idol group. One day, he appears in front of a family who consists Byun Han-Soo and Na Young-Sil and their 4 children ... See full summary »",
+    "description": "Ahn Joong-Hee (Lee Joon) is an actor who used to be a member of an idol group. One day, he appears in front of a family who consists Byun Han-Soo and Na Young-Sil and their 4 children",
     "stars": [
       "Yeong-cheol Kim",
       "Kim Hae-sook",
@@ -45395,7 +44708,7 @@ window.CINECLASH_CATALOG =
     "duration": "25 min",
     "genre": "Animation, Action, Sci-Fi",
     "rating": 7,
-    "description": "A young man whose parents became casualties of war. He is taken in by his uncle Zack, and it is there that Levius begins to immerse himself in the world of metal boxing as if led by fate ... See full summary »",
+    "description": "A young man whose parents became casualties of war. He is taken in by his uncle Zack, and it is there that Levius begins to immerse himself in the world of metal boxing as if led by fate",
     "stars": [
       "Sean Burgos",
       "Zach Aguilar",
@@ -45410,7 +44723,7 @@ window.CINECLASH_CATALOG =
     "duration": "69 min",
     "genre": "Documentary",
     "rating": 6.7,
-    "description": "In a country of 1.2 billion people and in a sport with billions of fans worldwide, there has yet to be a single Indian-born player drafted in the NBA. One in a Billion follows the global ... See full summary »",
+    "description": "In a country of 1.2 billion people and in a sport with billions of fans worldwide, there has yet to be a single Indian-born player drafted in the NBA. One in a Billion follows the global",
     "stars": [
       "Dan Barto",
       "Balbir Singh Bhamara",
@@ -45425,7 +44738,7 @@ window.CINECLASH_CATALOG =
     "duration": "91 min",
     "genre": "Drama",
     "rating": 6.6,
-    "description": "Dirty Fred (Justin Rice) and Bruho (Leo Fitzpatrick) are free-wheeling squatters with a taste for off-season vacation homes in the Catskills. Their commitment to the lifestyle is challenged... See full summary »",
+    "description": "Dirty Fred (Justin Rice) and Bruho (Leo Fitzpatrick) are free-wheeling squatters with a taste for off-season vacation homes in the Catskills. Their commitment to the lifestyle is challenged",
     "stars": [
       "Leo Fitzpatrick",
       "Justin Rice",
@@ -45440,7 +44753,7 @@ window.CINECLASH_CATALOG =
     "duration": "74 min",
     "genre": "Documentary, Crime, Drama",
     "rating": 7.6,
-    "description": "This film follows the first class of students at a remarkable leadership center in the Eastern Democratic Republic of Congo, a region often referred to as \"the worst place in the world to ... See full summary »",
+    "description": "This film follows the first class of students at a remarkable leadership center in the Eastern Democratic Republic of Congo, a region often referred to as \"the worst place in the world to",
     "stars": [
       "Christine Schuler-Deschryver",
       "Denis Mukwege Mukengere",
@@ -45552,21 +44865,6 @@ window.CINECLASH_CATALOG =
     "votes": 549
   },
   {
-    "title": "Exatlon Turkey (2020)",
-    "year": 2020,
-    "duration": "46 min",
-    "genre": "Game-Show, Reality-TV, Sport",
-    "rating": 3.9,
-    "description": "Orkun Isitmak hosts an epic sports challenge pitting Turkey's influencers against each other. Who will party - and who will be punished?",
-    "stars": [
-      "Oguzhan Ugur",
-      "Yagmur Karabal",
-      "Aleyna Sen",
-      "Uras Benlioglu"
-    ],
-    "votes": 549
-  },
-  {
     "title": "Glass Onion: A Knives Out Mystery",
     "year": 2022,
     "duration": "139 min",
@@ -45632,7 +44930,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Drama, Romance",
     "rating": 7.7,
-    "description": "Kyung is the daughter of a powerful politician during the Joseon Dynasty. She falls in love with Crown Prince Lee Yuk, who lives under the tyranny of his half-brother, King Yeon San Gun. ... See full summary »",
+    "description": "Kyung is the daughter of a powerful politician during the Joseon Dynasty. She falls in love with Crown Prince Lee Yuk, who lives under the tyranny of his half-brother, King Yeon San Gun.",
     "stars": [
       "Dong-geon Lee",
       "Hyun-Sung Jang",
@@ -45669,21 +44967,6 @@ window.CINECLASH_CATALOG =
     "votes": 545
   },
   {
-    "title": "The Crystal Calls - Making the Dark Crystal: Age of Resistance",
-    "year": 2019,
-    "duration": "82 min",
-    "genre": "Documentary",
-    "rating": 7.5,
-    "description": "The Crystal Calls: Making The Dark Crystal: Age of Resistance takes viewers behind the scenes of a new world with unprecedented access, revealing the vision, artistry and talent required to bring an entirely handcrafted universe to life.",
-    "stars": [
-      "Taron Egerton",
-      "Stephen Christy",
-      "Natalie Dormer",
-      "Jeffrey Addiss"
-    ],
-    "votes": 544
-  },
-  {
     "title": "Sin hijos",
     "year": 2020,
     "duration": "95 min",
@@ -45704,7 +44987,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Comedy, Horror",
     "rating": 2.7,
-    "description": "A secret government has been trying to create the ultimate killer using the DNA of infamous killers Jeffrey Dahmer and John Wayne Gacy, but there's one big problem: they've escaped! Bloody ... See full summary »",
+    "description": "A secret government has been trying to create the ultimate killer using the DNA of infamous killers Jeffrey Dahmer and John Wayne Gacy, but there's one big problem: they've escaped! Bloody",
     "stars": [
       "Ford Austin",
       "Art LaFleur",
@@ -45732,7 +45015,7 @@ window.CINECLASH_CATALOG =
     "duration": "87 min",
     "genre": "Thriller",
     "rating": 4.4,
-    "description": "Nicole Turner has seen better times. Having just survived a health scare and painful breakup with her boyfriend Kyle, she is now facing eviction. When she finds a room for rent with former ... See full summary »",
+    "description": "Nicole Turner has seen better times. Having just survived a health scare and painful breakup with her boyfriend Kyle, she is now facing eviction. When she finds a room for rent with former",
     "stars": [
       "Stacy Haiduk",
       "Richard Speight Jr.",
@@ -45747,7 +45030,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Comedy, Family",
     "rating": 5.3,
-    "description": "The film takes place in the context of a comedy about the young Ismail , who works in a beauty center, and accidentally discover that one of the directors of the search for a new face, ... See full summary »",
+    "description": "The film takes place in the context of a comedy about the young Ismail , who works in a beauty center, and accidentally discover that one of the directors of the search for a new face,",
     "stars": [
       "Adel Abdulnabi",
       "Adel Abdulsalam",
@@ -45777,7 +45060,7 @@ window.CINECLASH_CATALOG =
     "duration": "70 min",
     "genre": "Comedy, Drama",
     "rating": 7.6,
-    "description": "This drama is about Jo Gang-ja, a mother who was known as a tough girl in high school. Her daughter Ah-ran is bullied at school and when Gang-ja finds out, she makes it her responsibility ... See full summary »",
+    "description": "This drama is about Jo Gang-ja, a mother who was known as a tough girl in high school. Her daughter Ah-ran is bullied at school and when Gang-ja finds out, she makes it her responsibility",
     "stars": [
       "Kim Hee-seon",
       "Kim Yoo-jeong",
@@ -45792,7 +45075,7 @@ window.CINECLASH_CATALOG =
     "duration": "115 min",
     "genre": "Drama",
     "rating": 6.8,
-    "description": "Chen Chen, a high school student, finds the love affair of her mother just before the college entrance exam and gets depressed. After the unsuccessful exam, Chen gets acquainted with Zheng ... See full summary »",
+    "description": "Chen Chen, a high school student, finds the love affair of her mother just before the college entrance exam and gets depressed. After the unsuccessful exam, Chen gets acquainted with Zheng",
     "stars": [
       "Zifeng Zhang",
       "Lei Wu",
@@ -45807,7 +45090,7 @@ window.CINECLASH_CATALOG =
     "duration": "76 min",
     "genre": "Documentary",
     "rating": 6.1,
-    "description": "Perú: tesoro escondido is a documentary genre film about the secrets of Perú. The millinery culture of their ancestors, the beautiful landscapes, the tourist places and other places not yet... See full summary »",
+    "description": "Perú: tesoro escondido is a documentary genre film about the secrets of Perú. The millinery culture of their ancestors, the beautiful landscapes, the tourist places and other places not yet",
     "stars": [
       "Luis Ara"
     ],
@@ -45967,7 +45250,7 @@ window.CINECLASH_CATALOG =
     "duration": "100 min",
     "genre": "Comedy, Drama",
     "rating": 6.5,
-    "description": "Petru is a professor of mathematics at the Polytechnic University of Bucharest and leads a carefree life. He's in an open relationship with Irina, who overlooks that he sleeps with other ... See full summary »",
+    "description": "Petru is a professor of mathematics at the Polytechnic University of Bucharest and leads a carefree life. He's in an open relationship with Irina, who overlooks that he sleeps with other",
     "stars": [
       "Adrian Anghel",
       "Iulia Ciochina",
@@ -45997,7 +45280,7 @@ window.CINECLASH_CATALOG =
     "duration": "96 min",
     "genre": "Thriller",
     "rating": 5,
-    "description": "Abel (Daniel Grao) is a politician dedicated to the struggle for the most disadvantaged and Nora (Natalia Molina), his wife, is the unconditional support for him and who keeps an important ... See full summary »",
+    "description": "Abel (Daniel Grao) is a politician dedicated to the struggle for the most disadvantaged and Nora (Natalia Molina), his wife, is the unconditional support for him and who keeps an important",
     "stars": [
       "Natalia de Molina",
       "Daniel Grao",
@@ -46066,7 +45349,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Drama, History",
     "rating": 8.2,
-    "description": "A series of murders occurred during the reign of King Sejong. As Kang Chae Yoon who is investigating these cases gets closer to the root of the truth, he finds himself embroiled in a ... See full summary »",
+    "description": "A series of murders occurred during the reign of King Sejong. As Kang Chae Yoon who is investigating these cases gets closer to the root of the truth, he finds himself embroiled in a",
     "stars": [
       "Ahn Suk-hwan",
       "Yeo Jin-gu",
@@ -46171,7 +45454,7 @@ window.CINECLASH_CATALOG =
     "duration": "87 min",
     "genre": "Comedy, Romance",
     "rating": 4.4,
-    "description": "Before finalizing their divorce on Christmas Day, Regina returns to the Chesterton Hotel where Franklin and she were originally married, only to meet an eccentric millionaire whose ... See full summary »",
+    "description": "Before finalizing their divorce on Christmas Day, Regina returns to the Chesterton Hotel where Franklin and she were originally married, only to meet an eccentric millionaire whose",
     "stars": [
       "Erica Ash",
       "Redaric Williams",
@@ -46186,7 +45469,7 @@ window.CINECLASH_CATALOG =
     "duration": "85 min",
     "genre": "Documentary, Music",
     "rating": 6.7,
-    "description": "Hilariously entertaining, NERDCORE RISING introduces a new wave of hip-hop to the world called \"Nerdcore\" where computer obsesses geeks bust rhymes about the hard knock life of nerdom. The ... See full summary »",
+    "description": "Hilariously entertaining, NERDCORE RISING introduces a new wave of hip-hop to the world called \"Nerdcore\" where computer obsesses geeks bust rhymes about the hard knock life of nerdom. The",
     "stars": [
       "Damian Hess",
       "Gaby Alter",
@@ -46216,7 +45499,7 @@ window.CINECLASH_CATALOG =
     "duration": "3 min",
     "genre": "Animation, Short, Adventure",
     "rating": 6.3,
-    "description": "Two street performers dream of bringing their 'Picture and Sound Show'to life. When they discover a magical contraption inside an old theatre, they embark on a cinematic adventure of sight ... See full summary »",
+    "description": "Two street performers dream of bringing their 'Picture and Sound Show'to life. When they discover a magical contraption inside an old theatre, they embark on a cinematic adventure of sight",
     "stars": [
       "Limbert Fabian",
       "Brandon Oldenburg"
@@ -46281,19 +45564,6 @@ window.CINECLASH_CATALOG =
     "votes": 501
   },
   {
-    "title": "Hank: 5 Years from the Brink",
-    "year": 2013,
-    "duration": "85 min",
-    "genre": "Documentary, Biography, News",
-    "rating": 6.6,
-    "description": "For three weeks in September 2008, one person was charged with preventing the collapse of the global economy. No one understood the financial markets better than Hank Paulson, the former ... See full summary »",
-    "stars": [
-      "Henry Paulson",
-      "Wendy Paulson"
-    ],
-    "votes": 499
-  },
-  {
     "title": "Indie Game: Life After",
     "year": 2016,
     "duration": "125 min",
@@ -46349,18 +45619,6 @@ window.CINECLASH_CATALOG =
       "Raleigh Cain"
     ],
     "votes": 497
-  },
-  {
-    "title": "Mr. Good: Cop or Crook?",
-    "year": 2022,
-    "duration": "200 min",
-    "genre": "Documentary, Crime",
-    "rating": 6.9,
-    "description": "In this riveting docuseries, when Norway's top cop is suspected of drug trafficking, investigators must ask: Is he a good officer or a major criminal?",
-    "stars": [
-      "Tommy Hyving"
-    ],
-    "votes": 496
   },
   {
     "title": "Keramat",
@@ -46443,7 +45701,7 @@ window.CINECLASH_CATALOG =
     "duration": "88 min",
     "genre": "Adventure, Comedy, Romance",
     "rating": 4.8,
-    "description": "On an observatory set high on a mountain, astronomers make a stunning discovery somewhere out in the galaxy. A flying object in the depths of the cosmos is showing signs of life, emitting an intelligent signal. The UFO has just landed on Earth somewhere in the midst of a rainforest. Margot, the enthusiastic young woman heading up the research team, decides to go to the spot and check out this ... See full summary »",
+    "description": "On an observatory set high on a mountain, astronomers make a stunning discovery somewhere out in the galaxy. A flying object in the depths of the cosmos is showing signs of life, emitting an intelligent signal. The UFO has just landed on Earth somewhere in the midst of a rainforest. Margot, the enthusiastic young woman heading up the research team, decides to go to the spot and check out this",
     "stars": [
       "Jean-Paul Belmondo",
       "Arielle Dombasle",
@@ -46473,7 +45731,7 @@ window.CINECLASH_CATALOG =
     "duration": "80 min",
     "genre": "Drama",
     "rating": 6.8,
-    "description": "The Unsaved is a drama about about a Sancho Panza and not a Don Quijote. It's about the every day's non-hero facing circumstances and not adventures, it's about Viorel, a 25-year-old ... See full summary »",
+    "description": "The Unsaved is a drama about about a Sancho Panza and not a Don Quijote. It's about the every day's non-hero facing circumstances and not adventures, it's about Viorel, a 25-year-old",
     "stars": [
       "Igor Babiac",
       "Sergiu Voloc",
@@ -46488,7 +45746,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Documentary, Comedy",
     "rating": 6.7,
-    "description": "Bill Cosby is \"Far From Finished.\" In his first special in thirty years, he leaves the audience asking, \"How did he get inside our house?\" Whether he's talking about friendship, love or ... See full summary »",
+    "description": "Bill Cosby is \"Far From Finished.\" In his first special in thirty years, he leaves the audience asking, \"How did he get inside our house?\" Whether he's talking about friendship, love or",
     "stars": [
       "Bill Cosby",
       "Deana J. Becker",
@@ -46588,7 +45846,7 @@ window.CINECLASH_CATALOG =
     "duration": "93 min",
     "genre": "Horror",
     "rating": 4.6,
-    "description": "Facing goodbyes and graduation, Naomi Nakashima, her childhood friend Satoshi Mochida, and their classmates, are clearing up after their last ever cultural festival, when horror buff class ... See full summary »",
+    "description": "Facing goodbyes and graduation, Naomi Nakashima, her childhood friend Satoshi Mochida, and their classmates, are clearing up after their last ever cultural festival, when horror buff class",
     "stars": [
       "Ryôsuke Ikeoka",
       "Rina Ikoma",
@@ -46630,7 +45888,7 @@ window.CINECLASH_CATALOG =
     "duration": "45 min",
     "genre": "Romance",
     "rating": 7.3,
-    "description": "The story is about the romance between Xue Shan Shan, a young office lady and her boss Feng Teng. One night, Shan Shan got an urgent call from hospital. She was asked to give Feng Yue, her ... See full summary »",
+    "description": "The story is about the romance between Xue Shan Shan, a young office lady and her boss Feng Teng. One night, Shan Shan got an urgent call from hospital. She was asked to give Feng Yue, her",
     "stars": [
       "Hans Zhang",
       "Zanilia Zhao",
@@ -46719,7 +45977,7 @@ window.CINECLASH_CATALOG =
     "duration": "119 min",
     "genre": "Drama",
     "rating": 4.4,
-    "description": "Hatsumi and her family live normal lives until she is used by Ryoki who begins to bully and intimidate her. Azusa is a friend in the area and also good looking. He has the hots for Hatsumi ... See full summary »",
+    "description": "Hatsumi and her family live normal lives until she is used by Ryoki who begins to bully and intimidate her. Azusa is a friend in the area and also good looking. He has the hots for Hatsumi",
     "stars": [
       "Miona Hori",
       "Mizuki Itagaki",
@@ -46813,20 +46071,6 @@ window.CINECLASH_CATALOG =
     "votes": 468
   },
   {
-    "title": "Inside the Freemasons",
-    "year": 2017,
-    "duration": "44 min",
-    "genre": "Documentary, Reality-TV",
-    "rating": 5.4,
-    "description": "With unique and unprecedented access to one of the world's oldest social networking societies this series asks who are the Freemasons and what do they do?",
-    "stars": [
-      "Peter Lowndes",
-      "Garry Hacking",
-      "Chris Noon"
-    ],
-    "votes": 468
-  },
-  {
     "title": "The Entitled",
     "year": 2022,
     "duration": "90 min",
@@ -46847,7 +46091,7 @@ window.CINECLASH_CATALOG =
     "duration": "115 min",
     "genre": "Action, Comedy, Crime",
     "rating": 5.9,
-    "description": "Mrs. Hong is the crime boss for a large mafia group. She orders her two sons, Kyung-Jae and Suk-Jae to find an elite wife for her eldest son In-Jae. In-Jae then meets beautiful Jin-Kyung, ... See full summary »",
+    "description": "Mrs. Hong is the crime boss for a large mafia group. She orders her two sons, Kyung-Jae and Suk-Jae to find an elite wife for her eldest son In-Jae. In-Jae then meets beautiful Jin-Kyung,",
     "stars": [
       "Hyeon-yeong",
       "Hyo-jin Kim",
@@ -46862,7 +46106,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Drama, Family, Fantasy",
     "rating": 5.8,
-    "description": "Hume Cronyn, Joan Gregson and Tegan Moss star in this dramatic fantasy about a teenage girl who wants to swim the English Channel. She soon meets an elderly couple who offer her advice, not... See full summary »",
+    "description": "Hume Cronyn, Joan Gregson and Tegan Moss star in this dramatic fantasy about a teenage girl who wants to swim the English Channel. She soon meets an elderly couple who offer her advice, not",
     "stars": [
       "Hume Cronyn",
       "Joan Gregson",
@@ -47010,7 +46254,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Documentary, Biography, War",
     "rating": 7.5,
-    "description": "HONDROS follows the life and career of famous war photographer Chris Hondros by exploring the poignant and often surprising stories behind this award-winning photojournalist's best-known ... See full summary »",
+    "description": "HONDROS follows the life and career of famous war photographer Chris Hondros by exploring the poignant and often surprising stories behind this award-winning photojournalist's best-known",
     "stars": [
       "Marmar Alhilali",
       "Pancho Bernasconi",
@@ -47040,7 +46284,7 @@ window.CINECLASH_CATALOG =
     "duration": "78 min",
     "genre": "Mystery, Thriller",
     "rating": 5.6,
-    "description": "Marina and her boyfriend have an argument while on a trip in France. While driving with the car among the cliffs, he starts speeding and the car falls into the sea. Marina can jump out of ... See full summary »",
+    "description": "Marina and her boyfriend have an argument while on a trip in France. While driving with the car among the cliffs, he starts speeding and the car falls into the sea. Marina can jump out of",
     "stars": [
       "Romy Schneider",
       "Maurice Ronet",
@@ -47055,7 +46299,7 @@ window.CINECLASH_CATALOG =
     "duration": "26 min",
     "genre": "Documentary, Short, Sport",
     "rating": 6.9,
-    "description": "After years of nightmares, depression, and seizures, Iraq war veteran Bobby Lane could see no way out of his trauma other than suicide. Then he met Van Curaza, a former big wave surfer who ... See full summary »",
+    "description": "After years of nightmares, depression, and seizures, Iraq war veteran Bobby Lane could see no way out of his trauma other than suicide. Then he met Van Curaza, a former big wave surfer who",
     "stars": [
       "Bobby Lane",
       "Van Curaza",
@@ -47341,7 +46585,7 @@ window.CINECLASH_CATALOG =
     "duration": "87 min",
     "genre": "Action, Drama, Thriller",
     "rating": 4.7,
-    "description": "Lauren's life is on a positive trajectory, until she is falsely accused of murder. Discovering that an obsessive serial killer with her exact DNA match has been knowingly implicating her in... See full summary »",
+    "description": "Lauren's life is on a positive trajectory, until she is falsely accused of murder. Discovering that an obsessive serial killer with her exact DNA match has been knowingly implicating her in",
     "stars": [
       "Taylor Cole",
       "Billy Miller",
@@ -47371,7 +46615,7 @@ window.CINECLASH_CATALOG =
     "duration": "63 min",
     "genre": "Documentary",
     "rating": 3.9,
-    "description": "Many people think of Space as a quiet and desolate vacuum of emptiness, but new evidence reveals that space is rife with activity beyond our comprehension. Just as we sent Voyager and ... See full summary »",
+    "description": "Many people think of Space as a quiet and desolate vacuum of emptiness, but new evidence reveals that space is rife with activity beyond our comprehension. Just as we sent Voyager and",
     "stars": [
       "J. Michael Long",
       "Bill Mecca",
@@ -47386,7 +46630,7 @@ window.CINECLASH_CATALOG =
     "duration": "67 min",
     "genre": "Horror",
     "rating": 3.4,
-    "description": "After a nuclear attack, a strange virus has turned 90% of the male population of the world into lust-filled zombies. However, in Akihabara, Japan, some males have been found who are ... See full summary »",
+    "description": "After a nuclear attack, a strange virus has turned 90% of the male population of the world into lust-filled zombies. However, in Akihabara, Japan, some males have been found who are",
     "stars": [
       "Hayato Abe",
       "Yui Aikawa",
@@ -47413,7 +46657,7 @@ window.CINECLASH_CATALOG =
     "duration": "94 min",
     "genre": "Comedy",
     "rating": 6.6,
-    "description": "The Duke Gagliardo della Forcoletta, penniless and expert in horse-races, finds out he has a daughter, Emma Marini, who works in the bar Aurora. The Duke decides to participate in \"Lascia o... See full summary »",
+    "description": "The Duke Gagliardo della Forcoletta, penniless and expert in horse-races, finds out he has a daughter, Emma Marini, who works in the bar Aurora. The Duke decides to participate in \"Lascia o",
     "stars": [
       "Totò",
       "Mike Bongiorno",
@@ -47569,7 +46813,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Comedy",
     "rating": 3.5,
-    "description": "Diane Blaine has the face of a movie star. Unfortunately, fallen star/tabloid queen Jamie Stephens already made it famous. Hollywoods constant rejection due to what Diane refers to as \"TJS\"... See full summary »",
+    "description": "Diane Blaine has the face of a movie star. Unfortunately, fallen star/tabloid queen Jamie Stephens already made it famous. Hollywoods constant rejection due to what Diane refers to as \"TJS\"",
     "stars": [
       "Pamela Anderson",
       "Debrae Barensfeld",
@@ -47612,7 +46856,7 @@ window.CINECLASH_CATALOG =
     "duration": "75 min",
     "genre": "Documentary",
     "rating": 7.8,
-    "description": "\"Salam\" is a feature length documentary about the Nobel prize winning Pakistani physicist, Abdus Salam. The film reveals the extraordinary life of the charismatic Abdus Salam, in all its ... See full summary »",
+    "description": "\"Salam\" is a feature length documentary about the Nobel prize winning Pakistani physicist, Abdus Salam. The film reveals the extraordinary life of the charismatic Abdus Salam, in all its",
     "stars": [
       "Anand Kamalakar"
     ],
@@ -47778,7 +47022,7 @@ window.CINECLASH_CATALOG =
     "duration": "63 min",
     "genre": "Documentary",
     "rating": 6.1,
-    "description": "Nick Broomfield met Hsiao Hung Pai, a journalist who was working for the Guardian, when making his feature film 'Ghosts' (about the Morecambe Bay Chinese Cockle Pickers ). As an experiment ... See full summary »",
+    "description": "Nick Broomfield met Hsiao Hung Pai, a journalist who was working for the Guardian, when making his feature film 'Ghosts' (about the Morecambe Bay Chinese Cockle Pickers ). As an experiment",
     "stars": [
       "Nick Broomfield",
       "Hsiao-Hung Pai"
@@ -47878,7 +47122,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Comedy, Family",
     "rating": 5.4,
-    "description": "The representative of a tourist company living in a popular area is in love with a Japanese diplomat called Sakura. They marry and have twins, and in the difficult living conditions she ... See full summary »",
+    "description": "The representative of a tourist company living in a popular area is in love with a Japanese diplomat called Sakura. They marry and have twins, and in the difficult living conditions she",
     "stars": [
       "Mohamed Abdelmoaty",
       "Mahmoud Abdelnaser",
@@ -48025,7 +47269,7 @@ window.CINECLASH_CATALOG =
     "duration": "92 min",
     "genre": "Sci-Fi",
     "rating": 1.7,
-    "description": "On October 30, 2009 an independent filmmaker and his cast and crew are reported missing a month before the release of their controversial film predicting the end of the world. Authorities ... See full summary »",
+    "description": "On October 30, 2009 an independent filmmaker and his cast and crew are reported missing a month before the release of their controversial film predicting the end of the world. Authorities",
     "stars": [
       "Shy Pilgreen",
       "Dan Gruenberg",
@@ -48140,7 +47384,7 @@ window.CINECLASH_CATALOG =
     "duration": "50 min",
     "genre": "Animation, Adventure, Sci-Fi",
     "rating": 5,
-    "description": "Quantum Quest centers on the story of Dave, a young photon, who is forced out of the Sun on a journey of discovery. He must get to the Cassini Space Craft and save it from the forces of the... See full summary »",
+    "description": "Quantum Quest centers on the story of Dave, a young photon, who is forced out of the Sun on a journey of discovery. He must get to the Cassini Space Craft and save it from the forces of the",
     "stars": [
       "Chris Pine",
       "Amanda Peet",
@@ -48230,7 +47474,7 @@ window.CINECLASH_CATALOG =
     "duration": "114 min",
     "genre": "Action",
     "rating": 5.1,
-    "description": "Zhang Ning, a hitman and underground boxer fleeing through the Gobi with his pregnant girlfriend, Sun Jing. Several nemeses are hot on their trail, including a pair of ruthless killers and ... See full summary »",
+    "description": "Zhang Ning, a hitman and underground boxer fleeing through the Gobi with his pregnant girlfriend, Sun Jing. Several nemeses are hot on their trail, including a pair of ruthless killers and",
     "stars": [
       "Yihong Duan",
       "Dahong Ni",
@@ -48290,7 +47534,7 @@ window.CINECLASH_CATALOG =
     "duration": "52 min",
     "genre": "Documentary, Adventure",
     "rating": 6.4,
-    "description": "On a quest for spiritual awakening and healing, a naturopathic doctor and an accountant join others in the Amazon to drink a hallucinogenic brew called ayahuasca or 'Vine of the Soul'. ... See full summary »",
+    "description": "On a quest for spiritual awakening and healing, a naturopathic doctor and an accountant join others in the Amazon to drink a hallucinogenic brew called ayahuasca or 'Vine of the Soul'.",
     "stars": [
       "Guillermo Arévalo",
       "Gabor Maté",
@@ -48320,7 +47564,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Action, Crime, Thriller",
     "rating": 2.5,
-    "description": "The town of Westbrick is a rough place to live in. It is here that the young rookie cop Matthew lives with his wife. Meanwhile, notorious serial killers Billy and Barbara embark on a ... See full summary »",
+    "description": "The town of Westbrick is a rough place to live in. It is here that the young rookie cop Matthew lives with his wife. Meanwhile, notorious serial killers Billy and Barbara embark on a",
     "stars": [
       "Sami Darr",
       "Anna Bård",
@@ -48410,7 +47654,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Adventure, Mystery",
     "rating": 6.9,
-    "description": "People from Legend Entertainment fly on a private plane to a concert. The 9 people consists of entertainers and staff members. The plane then becomes involved in a mysterious crash. The 9 ... See full summary »",
+    "description": "People from Legend Entertainment fly on a private plane to a concert. The 9 people consists of entertainers and staff members. The plane then becomes involved in a mysterious crash. The 9",
     "stars": [
       "Jin-hee Baek",
       "Jung Kyung-ho",
@@ -48435,19 +47679,6 @@ window.CINECLASH_CATALOG =
     "votes": 389
   },
   {
-    "title": "Extreme Engagement",
-    "year": 2019,
-    "duration": "",
-    "genre": "Reality-TV",
-    "rating": 5.6,
-    "description": "An engaged couple travels the world for a year to explore marriage customs in diverse cultures. Will the journey bring them closer or tear them apart?",
-    "stars": [
-      "PJ Madam",
-      "Tim Noonan"
-    ],
-    "votes": 389
-  },
-  {
     "title": "American Bully",
     "year": 2009,
     "duration": "85 min",
@@ -48465,7 +47696,7 @@ window.CINECLASH_CATALOG =
     "duration": "80 min",
     "genre": "Thriller",
     "rating": 4.3,
-    "description": "MARGARET POWERS, a middle aged, middle class doctor of pathology, seeks a path of vengeance when she captures and tortures the young man she believes murdered her son, but in a bid to ... See full summary »",
+    "description": "MARGARET POWERS, a middle aged, middle class doctor of pathology, seeks a path of vengeance when she captures and tortures the young man she believes murdered her son, but in a bid to",
     "stars": [
       "David Hayman",
       "Josh Herdman",
@@ -48552,7 +47783,7 @@ window.CINECLASH_CATALOG =
     "duration": "110 min",
     "genre": "Drama",
     "rating": 4.9,
-    "description": "Pediatrician by day, single mom by night, Sarah invites her estranged husband, Pete, back to their suburban home for the Holidays on one condition: he must reconcile with their daughters ... See full summary »",
+    "description": "Pediatrician by day, single mom by night, Sarah invites her estranged husband, Pete, back to their suburban home for the Holidays on one condition: he must reconcile with their daughters",
     "stars": [
       "Barry Bostwick",
       "Cheryl Ladd",
@@ -48567,7 +47798,7 @@ window.CINECLASH_CATALOG =
     "duration": "88 min",
     "genre": "Crime, Horror, Mystery",
     "rating": 3.5,
-    "description": "Five teenagers : Joke (the gang-leader), transvestite Ake, Mued the junkie, Kai the big mouth and June, insolently rob a kindergarten. During the police chase, their get-away car swerves ... See full summary »",
+    "description": "Five teenagers : Joke (the gang-leader), transvestite Ake, Mued the junkie, Kai the big mouth and June, insolently rob a kindergarten. During the police chase, their get-away car swerves",
     "stars": [
       "Kett Tharntup",
       "Savika Chaiyadej",
@@ -48597,7 +47828,7 @@ window.CINECLASH_CATALOG =
     "duration": "35 min",
     "genre": "Romance",
     "rating": 6.9,
-    "description": "Hospital ship is a romantic drama series with twists and turns at every episode . It's the story about doctors who work in the hospital ship that provides free health facilities to the ... See full summary »",
+    "description": "Hospital ship is a romantic drama series with twists and turns at every episode . It's the story about doctors who work in the hospital ship that provides free health facilities to the",
     "stars": [
       "Ha Ji-Won",
       "Kim Kwang-gyu",
@@ -48612,7 +47843,7 @@ window.CINECLASH_CATALOG =
     "duration": "82 min",
     "genre": "Comedy, Romance",
     "rating": 4.8,
-    "description": "A young attorney looks to gain a position at a prestigious law firm while secretly dating his boss' daughter, who he's hoping to marry; but when his loving girlfriend decides to arrange a ... See full summary »",
+    "description": "A young attorney looks to gain a position at a prestigious law firm while secretly dating his boss' daughter, who he's hoping to marry; but when his loving girlfriend decides to arrange a",
     "stars": [
       "Marques Houston",
       "Karrueche Tran",
@@ -48715,7 +47946,7 @@ window.CINECLASH_CATALOG =
     "duration": "106 min",
     "genre": "Comedy, Romance",
     "rating": 5.5,
-    "description": "In 'Gek van Geluk', Plien van Bennekom steps into the role of single mum Lena, who writes love songs but is stumped with writer's block because she has no romance in her life. Her best ... See full summary »",
+    "description": "In 'Gek van Geluk', Plien van Bennekom steps into the role of single mum Lena, who writes love songs but is stumped with writer's block because she has no romance in her life. Her best",
     "stars": [
       "Plien van Bennekom",
       "Matteo van der Grijn",
@@ -48725,22 +47956,12 @@ window.CINECLASH_CATALOG =
     "votes": 376
   },
   {
-    "title": "Fire Chasers",
-    "year": 2017,
-    "duration": "",
-    "genre": "Documentary",
-    "rating": 6.6,
-    "description": "As the 2016 fire season rages in California, The brave backcountry firefighters race to put out the flames, save lives and protect homes in this docuseries.",
-    "stars": [],
-    "votes": 375
-  },
-  {
     "title": "Kids on the Block",
     "year": 2019,
     "duration": "103 min",
     "genre": "Comedy, Family",
     "rating": 5.7,
-    "description": "Children who play constantly with their phones now seem to have forgotten to play on the street. At the insistence of new friends, children decide to play in the park again to end this ... See full summary »",
+    "description": "Children who play constantly with their phones now seem to have forgotten to play on the street. At the insistence of new friends, children decide to play in the park again to end this",
     "stars": [
       "Selim Bayraktar",
       "Berat Efe Parlar",
@@ -48856,7 +48077,7 @@ window.CINECLASH_CATALOG =
     "duration": "104 min",
     "genre": "Horror",
     "rating": 4.7,
-    "description": "Jia-min, who was born sensitive to the paranormal, tries to summon \"Yi-A-Gu\" with two streamers. Huo-ge helps Jia-min subdue the spirit when the situation goes out of hand. Huo-ge possesses... See full summary »",
+    "description": "Jia-min, who was born sensitive to the paranormal, tries to summon \"Yi-A-Gu\" with two streamers. Huo-ge helps Jia-min subdue the spirit when the situation goes out of hand. Huo-ge possesses",
     "stars": [
       "Kang-sheng Lee",
       "Wilson Hsu",
@@ -48881,20 +48102,6 @@ window.CINECLASH_CATALOG =
     "votes": 370
   },
   {
-    "title": "Styling Hollywood",
-    "year": 2019,
-    "duration": "",
-    "genre": "Reality-TV",
-    "rating": 6.6,
-    "description": "Stylist and interior designer Jason Bolden and husband Adair Curtis of JSN Studio make the magic happen on the red carpet and at home for A-listers.",
-    "stars": [
-      "Melinda Elvenes",
-      "Adair Curtis",
-      "Jason Bolden"
-    ],
-    "votes": 369
-  },
-  {
     "title": "Ivana the Terrible",
     "year": 2019,
     "duration": "89 min",
@@ -48915,7 +48122,7 @@ window.CINECLASH_CATALOG =
     "duration": "104 min",
     "genre": "Comedy, Drama, Romance",
     "rating": 5.9,
-    "description": "Have you just been dumped? What if there was a website that could get your loved one back? There is ! It is called BreakUpClub.asia. All you have to do is break up another couple that are ... See full summary »",
+    "description": "Have you just been dumped? What if there was a website that could get your loved one back? There is ! It is called BreakUpClub.asia. All you have to do is break up another couple that are",
     "stars": [
       "Jaycee Chan",
       "Fiona Sit",
@@ -48930,7 +48137,7 @@ window.CINECLASH_CATALOG =
     "duration": "100 min",
     "genre": "Horror, Thriller",
     "rating": 4.3,
-    "description": "An omnibus film of four stories pulled straight from Thailand's most gruesome headlines. In \"Flame\", a man is haunted by regret and a ghost after he survives a nightclub fire that killed ... See full summary »",
+    "description": "An omnibus film of four stories pulled straight from Thailand's most gruesome headlines. In \"Flame\", a man is haunted by regret and a ghost after he survives a nightclub fire that killed",
     "stars": [
       "Mai Charoenpura",
       "Akara Amarttayakul",
@@ -49106,7 +48313,7 @@ window.CINECLASH_CATALOG =
     "duration": "101 min",
     "genre": "Comedy",
     "rating": 6.8,
-    "description": "After their boss' death, two clerks eagerly await the arrival of the next one, each one of them hoping to become the apple of his eye. They compete in every possible way to impress him, ... See full summary »",
+    "description": "After their boss' death, two clerks eagerly await the arrival of the next one, each one of them hoping to become the apple of his eye. They compete in every possible way to impress him,",
     "stars": [
       "Totò",
       "Peppino De Filippo",
@@ -49266,7 +48473,7 @@ window.CINECLASH_CATALOG =
     "duration": "22 min",
     "genre": "Documentary, Short, History",
     "rating": 6,
-    "description": "In the wake of the 2012 Sandy Hook Elementary School massacre that took the lives of 20 first graders and their teachers, local clergymen Father Bob Weiss receives a letter from a fellow ... See full summary »",
+    "description": "In the wake of the 2012 Sandy Hook Elementary School massacre that took the lives of 20 first graders and their teachers, local clergymen Father Bob Weiss receives a letter from a fellow",
     "stars": [
       "Kim A. Snyder"
     ],
@@ -49291,7 +48498,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Animation, Adventure, Drama",
     "rating": 7.4,
-    "description": "With the Storybook of Legends still in Wonderland, Raven attempts to teleport her friends there despite still getting the hand of her powers. Apple, Raven, Briar, Lizzie, Kitty and Maddie ... See full summary »",
+    "description": "With the Storybook of Legends still in Wonderland, Raven attempts to teleport her friends there despite still getting the hand of her powers. Apple, Raven, Briar, Lizzie, Kitty and Maddie",
     "stars": [
       "Robbie Daymond",
       "Jonquil Goode",
@@ -49351,7 +48558,7 @@ window.CINECLASH_CATALOG =
     "duration": "62 min",
     "genre": "Drama",
     "rating": 7.6,
-    "description": "38-year-old Ha No-Ra (Choi Ji-Woo) dreamed of becoming a dancer when she was younger. She met her future husband, Kim Woo-Cheol, when she was only 19-years-old and became a mother ... See full summary »",
+    "description": "38-year-old Ha No-Ra (Choi Ji-Woo) dreamed of becoming a dancer when she was younger. She met her future husband, Kim Woo-Cheol, when she was only 19-years-old and became a mother",
     "stars": [
       "Choi Ji-woo",
       "Lee Sang-yoon",
@@ -49381,7 +48588,7 @@ window.CINECLASH_CATALOG =
     "duration": "94 min",
     "genre": "Comedy",
     "rating": 5.2,
-    "description": "A beauty professional (Hani), a jihadist who recently joined an Islamic extremist group (Biboo), and a drug dealer (Samir) come across each other during a trip to Lebanon. Unintentionally, ... See full summary »",
+    "description": "A beauty professional (Hani), a jihadist who recently joined an Islamic extremist group (Biboo), and a drug dealer (Samir) come across each other during a trip to Lebanon. Unintentionally,",
     "stars": [
       "Umar Abdullah",
       "Ahmad Abdulsalam",
@@ -49525,7 +48732,7 @@ window.CINECLASH_CATALOG =
     "duration": "70 min",
     "genre": "Drama",
     "rating": 5.8,
-    "description": "Two girls begin to chat about another girl, a former lover of both. As they grow closer, the gap between them widens, as one them is looking for answers and love while safely closeted. A ... See full summary »",
+    "description": "Two girls begin to chat about another girl, a former lover of both. As they grow closer, the gap between them widens, as one them is looking for answers and love while safely closeted. A",
     "stars": [
       "Silvana Mihai",
       "Florentina Nastase",
@@ -49583,7 +48790,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Comedy, Drama, Romance",
     "rating": 7.5,
-    "description": "Kang Gun Woo is a world renowned orchestra maestro who is a perfectionist in his work. He is not an easy person to work with and is feared by all his players. By chance, he comes across Du ... See full summary »",
+    "description": "Kang Gun Woo is a world renowned orchestra maestro who is a perfectionist in his work. He is not an easy person to work with and is feared by all his players. By chance, he comes across Du",
     "stars": [
       "Myung-Min Kim",
       "Ji-Ah Lee",
@@ -49610,7 +48817,7 @@ window.CINECLASH_CATALOG =
     "duration": "73 min",
     "genre": "Comedy, Drama, Family",
     "rating": 6.4,
-    "description": "Teacher (\"Mees\") Kees and his class must perform a play on stage in a nearby elderly-home. Instead of performing the original play written by the headmistress, they decide to improvise, ... See full summary »",
+    "description": "Teacher (\"Mees\") Kees and his class must perform a play on stage in a nearby elderly-home. Instead of performing the original play written by the headmistress, they decide to improvise,",
     "stars": [
       "Hannah Hoekstra",
       "Cas Jansen",
@@ -49760,7 +48967,7 @@ window.CINECLASH_CATALOG =
     "duration": "50 min",
     "genre": "Drama",
     "rating": 8,
-    "description": "Tears on Fire is a rare production featuring firefighting profession in Taiwan, which portrays the life stories of four firefighters. From their daily work of firefighting, rescuing and ... See full summary »",
+    "description": "Tears on Fire is a rare production featuring firefighting profession in Taiwan, which portrays the life stories of four firefighters. From their daily work of firefighting, rescuing and",
     "stars": [
       "Annie Chen",
       "Kuan-Ting Liu",
@@ -49902,7 +49109,7 @@ window.CINECLASH_CATALOG =
     "duration": "107 min",
     "genre": "Biography, Drama, Thriller",
     "rating": 6.6,
-    "description": "After the events of June 16th, Mamelodi township schoolboy-hawker Solomon Mahlangu joins the military wing of the ANC to fight against the brutal oppression of the Apartheid regime, and he ... See full summary »",
+    "description": "After the events of June 16th, Mamelodi township schoolboy-hawker Solomon Mahlangu joins the military wing of the ANC to fight against the brutal oppression of the Apartheid regime, and he",
     "stars": [
       "Thabo Rametsi",
       "Thabo Malema",
@@ -49991,7 +49198,7 @@ window.CINECLASH_CATALOG =
     "duration": "128 min",
     "genre": "Drama, History, War",
     "rating": 7.2,
-    "description": "Inspired by true events in 1948. Hassanin, an Egyptian filmmaker, is tasked with documenting a raid on the isolated kibbutz Nitzanim. When the kibbutz learns of the impending army raid, ... See full summary »",
+    "description": "Inspired by true events in 1948. Hassanin, an Egyptian filmmaker, is tasked with documenting a raid on the isolated kibbutz Nitzanim. When the kibbutz learns of the impending army raid,",
     "stars": [
       "Joy Rieger",
       "Amir Khoury",
@@ -50006,7 +49213,7 @@ window.CINECLASH_CATALOG =
     "duration": "100 min",
     "genre": "Romance",
     "rating": 6.4,
-    "description": "Everyone in the Osayande family worries about Isoken. She's beautiful, successful, and surrounded by great family and friends, but she's still single at 34--a serious cause for concern in a... See full summary »",
+    "description": "Everyone in the Osayande family worries about Isoken. She's beautiful, successful, and surrounded by great family and friends, but she's still single at 34--a serious cause for concern in a",
     "stars": [
       "Dakore Akande",
       "Joseph Benjamin",
@@ -50036,7 +49243,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Animation, Adventure, Drama",
     "rating": 7.3,
-    "description": "Crystal Winter is the daughter of the Snow Queen and will someday rule over winter, however, Jackie Frost and North Wind have other ideas it is to curse the King and Queen. Crystal runs ... See full summary »",
+    "description": "Crystal Winter is the daughter of the Snow Queen and will someday rule over winter, however, Jackie Frost and North Wind have other ideas it is to curse the King and Queen. Crystal runs",
     "stars": [
       "Valerie Arem",
       "Ciara Caneega",
@@ -50066,7 +49273,7 @@ window.CINECLASH_CATALOG =
     "duration": "72 min",
     "genre": "Documentary, History",
     "rating": 7.1,
-    "description": "80 years ago antibiotics revolutionized medicine. Only now are we realizing the potentially catastrophic consequences of these miracle drugs. The question is: have we reached a point where ... See full summary »",
+    "description": "80 years ago antibiotics revolutionized medicine. Only now are we realizing the potentially catastrophic consequences of these miracle drugs. The question is: have we reached a point where",
     "stars": [
       "Michael Graziano"
     ],
@@ -50093,7 +49300,7 @@ window.CINECLASH_CATALOG =
     "duration": "35 min",
     "genre": "Comedy, Fantasy, Romance",
     "rating": 7.1,
-    "description": "Dan Dan, is a woman who works as a special effects make-up artist but has a very cold-heart. She then, unexpectedly, falls in love with Yeong Goo, a humanoid robot programmed to be a ... See full summary »",
+    "description": "Dan Dan, is a woman who works as a special effects make-up artist but has a very cold-heart. She then, unexpectedly, falls in love with Yeong Goo, a humanoid robot programmed to be a",
     "stars": [
       "Yeo Jin-gu",
       "Min-ah Bang",
@@ -50153,7 +49360,7 @@ window.CINECLASH_CATALOG =
     "duration": "91 min",
     "genre": "Family",
     "rating": 5.8,
-    "description": "Bruno Walton and Melvin \"Boots\" O'Neal are the most infamous troublemakers at MacDonald Hall - a supposedly prestigious school for boys. Bruno, the brains behind the operation, has managed ... See full summary »",
+    "description": "Bruno Walton and Melvin \"Boots\" O'Neal are the most infamous troublemakers at MacDonald Hall - a supposedly prestigious school for boys. Bruno, the brains behind the operation, has managed",
     "stars": [
       "Jonny Gray",
       "Callan Potter",
@@ -50168,7 +49375,7 @@ window.CINECLASH_CATALOG =
     "duration": "109 min",
     "genre": "Comedy, Drama, Romance",
     "rating": 4.8,
-    "description": "Businessman Badran Kamel is exposed to a financial crisis and gets his son Hazem, a spoiled young man known for his multiple relationships with females, to agree to marry Salma, the bank ... See full summary »",
+    "description": "Businessman Badran Kamel is exposed to a financial crisis and gets his son Hazem, a spoiled young man known for his multiple relationships with females, to agree to marry Salma, the bank",
     "stars": [
       "Aimi Samir Ghanem",
       "Hassan Hosny",
@@ -50253,21 +49460,6 @@ window.CINECLASH_CATALOG =
     "votes": 318
   },
   {
-    "title": "The 69th Primetime Emmy Awards",
-    "year": 2017,
-    "duration": "133 min",
-    "genre": "News",
-    "rating": 5.1,
-    "description": "The 69th Annual Primetime Emmy Awards will honor the best in U.S. prime time television programming from June 1, 2016 until May 31, 2017, as chosen by the Academy of Television Arts and Sciences.",
-    "stars": [
-      "Tatiana Maslany",
-      "Emmy Rossum",
-      "Claire Foy",
-      "Tessa Thompson"
-    ],
-    "votes": 318
-  },
-  {
     "title": "Hallo Bungalow",
     "year": 2015,
     "duration": "91 min",
@@ -50328,26 +49520,12 @@ window.CINECLASH_CATALOG =
     "votes": 317
   },
   {
-    "title": "Night on Earth: Shot in the Dark",
-    "year": 2020,
-    "duration": "59 min",
-    "genre": "Documentary",
-    "rating": 7.7,
-    "description": "This look behind the scenes shows how worldwide camera crews climbed, dived and froze to capture the documentary's groundbreaking night footage.\"",
-    "stars": [
-      "Alessandra Mastronardi",
-      "Beren Saat",
-      "Samira Wiley"
-    ],
-    "votes": 316
-  },
-  {
     "title": "Nasha Natasha",
     "year": 2020,
     "duration": "83 min",
     "genre": "Documentary, Biography, Music",
     "rating": 6.4,
-    "description": "Natalia Oreiro's story is absolutely unique. She is the only performer from Rio de la Plata and one of the very few Latin American performers who, despite language and cultural barriers, ... See full summary »",
+    "description": "Natalia Oreiro's story is absolutely unique. She is the only performer from Rio de la Plata and one of the very few Latin American performers who, despite language and cultural barriers,",
     "stars": [
       "Natalia Oreiro",
       "Merlín Atahualpa Mollo Oreiro",
@@ -50377,7 +49555,7 @@ window.CINECLASH_CATALOG =
     "duration": "99 min",
     "genre": "Action, Crime, Drama",
     "rating": 6.2,
-    "description": "When the godson of San Francisco's crime lord asks permission to leave \"the business,\" Don Antonio agrees, but reluctantly. Such behavior by either one is a violation of the code, and a ... See full summary »",
+    "description": "When the godson of San Francisco's crime lord asks permission to leave \"the business,\" Don Antonio agrees, but reluctantly. Such behavior by either one is a violation of the code, and a",
     "stars": [
       "Tomas Milian",
       "Martin Balsam",
@@ -50407,7 +49585,7 @@ window.CINECLASH_CATALOG =
     "duration": "96 min",
     "genre": "Comedy, Crime, Drama",
     "rating": 6.2,
-    "description": "A black-out occurs during the meeting of a gang of criminals. When the light is back one of them is found killed with a stab on his back and all the clues point to a penniless man who had ... See full summary »",
+    "description": "A black-out occurs during the meeting of a gang of criminals. When the light is back one of them is found killed with a stab on his back and all the clues point to a penniless man who had",
     "stars": [
       "Tomas Milian",
       "Marina Ripa di Meana",
@@ -50437,7 +49615,7 @@ window.CINECLASH_CATALOG =
     "duration": "97 min",
     "genre": "Comedy",
     "rating": 5.1,
-    "description": "Elena toma la decisión de compartirle a la familia su testamento. Su hijo y sus cuatros nietos al enterarse que la casa de Cuernavaca está en juego, harán cualquier tipo de artimaña para ... See full summary »",
+    "description": "Elena toma la decisión de compartirle a la familia su testamento. Su hijo y sus cuatros nietos al enterarse que la casa de Cuernavaca está en juego, harán cualquier tipo de artimaña para",
     "stars": [
       "Susana Alexander",
       "Luis Arrieta",
@@ -50495,7 +49673,7 @@ window.CINECLASH_CATALOG =
     "duration": "68 min",
     "genre": "Documentary, Biography",
     "rating": 6.6,
-    "description": "Mr. Angel chronicles the extraordinary life of transgender activist and porn pioneer, Buck Angel. He survived addiction, prostitution, and suicide and now tells a moving story of a man's ... See full summary »",
+    "description": "Mr. Angel chronicles the extraordinary life of transgender activist and porn pioneer, Buck Angel. He survived addiction, prostitution, and suicide and now tells a moving story of a man's",
     "stars": [
       "Lux Alptraum",
       "Buck Angel",
@@ -50609,7 +49787,7 @@ window.CINECLASH_CATALOG =
     "duration": "88 min",
     "genre": "Horror",
     "rating": 3.8,
-    "description": "Set in Iquitos, the story follows Andrea (Airam Galliani), a 15-years-ago teenage girl, who suffers the death of her father. With the help of her friends from school, they encourage her to ... See full summary »",
+    "description": "Set in Iquitos, the story follows Andrea (Airam Galliani), a 15-years-ago teenage girl, who suffers the death of her father. With the help of her friends from school, they encourage her to",
     "stars": [
       "Jürgen Gömez",
       "Marisol Aguirre",
@@ -50684,7 +49862,7 @@ window.CINECLASH_CATALOG =
     "duration": "35 min",
     "genre": "Comedy, Drama, Horror",
     "rating": 6.3,
-    "description": "Philip and Eul-Soon seem to share fate. If one person is happy, the other person is unhappy. Philip is a top star. Eul-Soon is drama series screenwriter. They begin to work together for a ... See full summary »",
+    "description": "Philip and Eul-Soon seem to share fate. If one person is happy, the other person is unhappy. Philip is a top star. Eul-Soon is drama series screenwriter. They begin to work together for a",
     "stars": [
       "Song Ji-Hyo",
       "Shi-hoo Park",
@@ -50714,7 +49892,7 @@ window.CINECLASH_CATALOG =
     "duration": "79 min",
     "genre": "Horror",
     "rating": 3.2,
-    "description": "Several years after a deadly struggle with her serial killer aunt, Jordan works to escape her troubled history. But when her aunt's revenge-seeking specter surfaces to join forces with a ... See full summary »",
+    "description": "Several years after a deadly struggle with her serial killer aunt, Jordan works to escape her troubled history. But when her aunt's revenge-seeking specter surfaces to join forces with a",
     "stars": [
       "Laura Flannery",
       "James Cavlo",
@@ -50744,7 +49922,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Action, Comedy, Crime",
     "rating": 5.5,
-    "description": "An ex policeman, now working for Interpol, and his ex assistant find themselves caught up in a Mafia war. With the help of a large dose of luck, two sexy women and the timely arrival of ... See full summary »",
+    "description": "An ex policeman, now working for Interpol, and his ex assistant find themselves caught up in a Mafia war. With the help of a large dose of luck, two sexy women and the timely arrival of",
     "stars": [
       "Tomas Milian",
       "Enzo Cannavale",
@@ -50774,7 +49952,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Action, Adventure, Comedy",
     "rating": 7.3,
-    "description": "A story that follows Wang Lu, a young genius, who enters the Spirit Blade Sect and embarks on an unconventional journey towards immortal cultivation. The Spirit Blade Sect was established ... See full summary »",
+    "description": "A story that follows Wang Lu, a young genius, who enters the Spirit Blade Sect and embarks on an unconventional journey towards immortal cultivation. The Spirit Blade Sect was established",
     "stars": [
       "Kai Xu",
       "Yuanbing Zhu",
@@ -50804,7 +49982,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Comedy, Drama, Horror",
     "rating": 5.9,
-    "description": "Attempting suicide, sultry but down-on-her-luck swindler Liz is rescued by lonely tow truck driver Aiden. But instead of rushing her to the hospital, Liz's savior abducts her to his remote ... See full summary »",
+    "description": "Attempting suicide, sultry but down-on-her-luck swindler Liz is rescued by lonely tow truck driver Aiden. But instead of rushing her to the hospital, Liz's savior abducts her to his remote",
     "stars": [
       "Nadia Townsend",
       "Bernard Curry",
@@ -50819,7 +49997,7 @@ window.CINECLASH_CATALOG =
     "duration": "45 min",
     "genre": "Documentary",
     "rating": 8.1,
-    "description": "This epic new four-part series is Joanna Lumley's grandest and most challenging journey yet, a breath-taking odyssey from Venice to the Chinese border along the veins of the ancient Silk ... See full summary »",
+    "description": "This epic new four-part series is Joanna Lumley's grandest and most challenging journey yet, a breath-taking odyssey from Venice to the Chinese border along the veins of the ancient Silk",
     "stars": [
       "Joanna Lumley"
     ],
@@ -50843,7 +50021,7 @@ window.CINECLASH_CATALOG =
     "duration": "109 min",
     "genre": "Drama, Fantasy, Horror",
     "rating": 6.4,
-    "description": "A new teacher arrives at a small village in rural Thailand. He has just left the monkhood and has taken a job at the local school in a quest to discover life outside the monastery. He finds... See full summary »",
+    "description": "A new teacher arrives at a small village in rural Thailand. He has just left the monkhood and has taken a job at the local school in a quest to discover life outside the monastery. He finds",
     "stars": [
       "Wannasa Wintawong",
       "Tanapol Kamkunkam",
@@ -50969,21 +50147,6 @@ window.CINECLASH_CATALOG =
     "votes": 290
   },
   {
-    "title": "Milk?",
-    "year": 2012,
-    "duration": "64 min",
-    "genre": "Documentary, News",
-    "rating": 5.8,
-    "description": "An inquisitive man sets out to find the facts about milk and discovers more about the growing controversy surrounding it. Throughout the journey, he is left with more and more questions ... See full summary »",
-    "stars": [
-      "Sebastian Howard",
-      "Neal Barnard",
-      "T. Colin Campbell",
-      "Robert Cohen"
-    ],
-    "votes": 290
-  },
-  {
     "title": "Ladronas de Almas",
     "year": 2015,
     "duration": "88 min",
@@ -51057,7 +50220,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Drama, Romance",
     "rating": 7.3,
-    "description": "Set in the Goryeo dynasty, it tells the story of a young and ambitious monarch Won (Im Si-wan) with a desire to conquer, and two people who shape his destiny; childhood friend Rin (Hong ... See full summary »",
+    "description": "Set in the Goryeo dynasty, it tells the story of a young and ambitious monarch Won (Im Si-wan) with a desire to conquer, and two people who shape his destiny; childhood friend Rin (Hong",
     "stars": [
       "Im Yoon-ah",
       "Ji-Hyun Park",
@@ -51072,7 +50235,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Drama",
     "rating": 6.6,
-    "description": "Set against the backdrop of crystal meth abuse, Most High is a painfully intimate examination of a young man in crisis. Drugs are incidental. Nonjudgmental yet brutally honest, Most High ... See full summary »",
+    "description": "Set against the backdrop of crystal meth abuse, Most High is a painfully intimate examination of a young man in crisis. Drugs are incidental. Nonjudgmental yet brutally honest, Most High",
     "stars": [
       "Marty Sader",
       "Laura Keys",
@@ -51102,7 +50265,7 @@ window.CINECLASH_CATALOG =
     "duration": "99 min",
     "genre": "Comedy",
     "rating": 4.7,
-    "description": "'Chief Daddy' tells the story of billionaire industrialist Chief Beecroft, a flamboyant benefactor to a large extended family of relatives, household staff, and assorted mistresses. Chief ... See full summary »",
+    "description": "'Chief Daddy' tells the story of billionaire industrialist Chief Beecroft, a flamboyant benefactor to a large extended family of relatives, household staff, and assorted mistresses. Chief",
     "stars": [
       "Bisola Aiyeola",
       "Dakore Akande",
@@ -51112,27 +50275,12 @@ window.CINECLASH_CATALOG =
     "votes": 286
   },
   {
-    "title": "Life of Ryan: Caretaker Manager",
-    "year": 2014,
-    "duration": "81 min",
-    "genre": "Documentary, Biography, Sport",
-    "rating": 7.2,
-    "description": "A film that follows Ryan Giggs through the 2013/14 Premiership season, as the greatest ever Manchester Utd player became the clubs manager and allowed unprecedented access behind the scenes at Old Trafford.",
-    "stars": [
-      "David Beckham",
-      "Diego Maradona",
-      "Ryan Giggs",
-      "Alex Ferguson"
-    ],
-    "votes": 285
-  },
-  {
     "title": "El sendero de la anaconda",
     "year": 2019,
     "duration": "73 min",
     "genre": "Documentary",
     "rating": 6.7,
-    "description": "The Path of the Anaconda narrates memories and reflections about the jungle, but also the final effort to save the northern Amazon forest from destruction, establishing an ecological ... See full summary »",
+    "description": "The Path of the Anaconda narrates memories and reflections about the jungle, but also the final effort to save the northern Amazon forest from destruction, establishing an ecological",
     "stars": [
       "Alessandro Angulo"
     ],
@@ -51216,7 +50364,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Documentary, Biography",
     "rating": 6.1,
-    "description": "CHASING BEAUTY provides a rare glimpse into the intriguing and complex world of modeling. Behind the glossy covers of Vogue and Glamour lie the rarely talked about, uncensored stories of ... See full summary »",
+    "description": "CHASING BEAUTY provides a rare glimpse into the intriguing and complex world of modeling. Behind the glossy covers of Vogue and Glamour lie the rarely talked about, uncensored stories of",
     "stars": [
       "Kelly Anderson",
       "Jo Baker",
@@ -51276,27 +50424,12 @@ window.CINECLASH_CATALOG =
     "duration": "13 min",
     "genre": "Short",
     "rating": 8.3,
-    "description": "This video short follows Aang as he wanders the spirit world looking for his past lives while he was unconscious from when he was electrocuted by Azula (in between seasons 2 and 3). He ... See full summary »",
+    "description": "This video short follows Aang as he wanders the spirit world looking for his past lives while he was unconscious from when he was electrocuted by Azula (in between seasons 2 and 3). He",
     "stars": [
       "Zach Tyler Eisen",
       "Mae Whitman",
       "Jack De Sena",
       "Michaela Jill Murphy"
-    ],
-    "votes": 282
-  },
-  {
-    "title": "Argon",
-    "year": 2017,
-    "duration": "",
-    "genre": "Drama",
-    "rating": 7.3,
-    "description": "ARGON shows the struggles behind the scenes in the competitive world or daily news. Work, play, love, hate, trust and betrayal are on the headlines every episode.",
-    "stars": [
-      "Ju-hyuk Kim",
-      "Woo-hee Chun",
-      "Lee Kyung-young",
-      "Hyeon-bin Shin"
     ],
     "votes": 282
   },
@@ -51313,19 +50446,6 @@ window.CINECLASH_CATALOG =
       "Robin Wiltshire"
     ],
     "votes": 282
-  },
-  {
-    "title": "The Atomic States of America",
-    "year": 2012,
-    "duration": "95 min",
-    "genre": "Documentary, History, News",
-    "rating": 6.3,
-    "description": "A documentary on growing up in Shirley, Long Island -- a nuclear-reactor community.",
-    "stars": [
-      "Michelle Catts",
-      "Kelly McMasters"
-    ],
-    "votes": 281
   },
   {
     "title": "French Dirty",
@@ -51348,7 +50468,7 @@ window.CINECLASH_CATALOG =
     "duration": "96 min",
     "genre": "Drama, Romance",
     "rating": 6.7,
-    "description": "A young man meets his childhood love one rainy night in the city of dreams. When they both realise that the desire for more can ruin what is special between them do they listen to their ... See full summary »",
+    "description": "A young man meets his childhood love one rainy night in the city of dreams. When they both realise that the desire for more can ruin what is special between them do they listen to their",
     "stars": [
       "Sruthi Hariharan",
       "Vicky Vijai",
@@ -51393,7 +50513,7 @@ window.CINECLASH_CATALOG =
     "duration": "92 min",
     "genre": "Horror, Romance",
     "rating": 5.3,
-    "description": "1965, Malaysia. A small village helps Khalid and Siti prepare for their wedding day. Soon after, a great darkness falls upon the village as a string of horrific deaths and supernatural ... See full summary »",
+    "description": "1965, Malaysia. A small village helps Khalid and Siti prepare for their wedding day. Soon after, a great darkness falls upon the village as a string of horrific deaths and supernatural",
     "stars": [
       "Nur Fazura",
       "Remy Ishak",
@@ -51414,19 +50534,6 @@ window.CINECLASH_CATALOG =
       "Matthias Brandt",
       "Jeff Burrell",
       "Samuel Finzi"
-    ],
-    "votes": 279
-  },
-  {
-    "title": "Cabins in the Wild with Dick Strawbridge",
-    "year": 2017,
-    "duration": "",
-    "genre": "Reality-TV",
-    "rating": 6.7,
-    "description": "Dick Strawbridge and Will Hardie follow a competition to build a portable pop-up hotel in the wild comprised of eight stunning and unique themed cabins.",
-    "stars": [
-      "William Hardie",
-      "Dick Strawbridge"
     ],
     "votes": 279
   },
@@ -51508,26 +50615,12 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Action, Drama, Romance",
     "rating": 7.4,
-    "description": "Based on the biblical story of Adam and Eve's first two sons, Cain and Abel is about Cain's jealousy towards his brother Abel. Lee Cho In is a very gifted doctor who has everything that he ... See full summary »",
+    "description": "Based on the biblical story of Adam and Eve's first two sons, Cain and Abel is about Cain's jealousy towards his brother Abel. Lee Cho In is a very gifted doctor who has everything that he",
     "stars": [
       "So Ji-seob",
       "Hyeon-jun Shin",
       "Han Ji-min",
       "Jeong-an Chae"
-    ],
-    "votes": 274
-  },
-  {
-    "title": "Capital C",
-    "year": 2014,
-    "duration": "87 min",
-    "genre": "Documentary, News",
-    "rating": 6.7,
-    "description": "CAPITAL C is the first documentary about crowdfunding. It follows the hopes and dreams as well as the fears and pitfalls of a whole new generation of independent creators, who reach out to the crowd in order to change their lives forever.",
-    "stars": [
-      "Zach Crain",
-      "Brian Fargo",
-      "Jackson Robinson"
     ],
     "votes": 274
   },
@@ -51552,7 +50645,7 @@ window.CINECLASH_CATALOG =
     "duration": "96 min",
     "genre": "Comedy, Crime",
     "rating": 5,
-    "description": "Patricia, a journalist, is fed up with all the stupid chores and being ridiculed by her colleagues. To show her talent, she challenges her director Eugenio to test her. She will write a ... See full summary »",
+    "description": "Patricia, a journalist, is fed up with all the stupid chores and being ridiculed by her colleagues. To show her talent, she challenges her director Eugenio to test her. She will write a",
     "stars": [
       "Edwige Fenech",
       "Diego Abatantuono",
@@ -51594,7 +50687,7 @@ window.CINECLASH_CATALOG =
     "duration": "112 min",
     "genre": "Comedy, Drama",
     "rating": 5.6,
-    "description": "Kathir works as an IT professional at Dindigul and visited his village on a holiday in order to attend his elder brother's wedding but only to realise that the wedding has been cancelled. ... See full summary »",
+    "description": "Kathir works as an IT professional at Dindigul and visited his village on a holiday in order to attend his elder brother's wedding but only to realise that the wedding has been cancelled.",
     "stars": [
       "Kathir",
       "Soori",
@@ -51609,7 +50702,7 @@ window.CINECLASH_CATALOG =
     "duration": "88 min",
     "genre": "Action, Comedy, Drama",
     "rating": 3.7,
-    "description": "Roberto, Condoro and Papitas are three childhood best friends separated by time and brought back together by the dying wish of Papitas, the developmentally disabled wheelchair bound heir to... See full summary »",
+    "description": "Roberto, Condoro and Papitas are three childhood best friends separated by time and brought back together by the dying wish of Papitas, the developmentally disabled wheelchair bound heir to",
     "stars": [
       "Ariel Levy",
       "Nicolás Martínez",
@@ -51624,7 +50717,7 @@ window.CINECLASH_CATALOG =
     "duration": "67 min",
     "genre": "Comedy",
     "rating": 6.6,
-    "description": "Larry the Cable Guy is back to Git R Done. Remain Seated, his latest solo special, will show you why this Grammy nominated, multi-platinum recording artist, and Billboard award winner is at... See full summary »",
+    "description": "Larry the Cable Guy is back to Git R Done. Remain Seated, his latest solo special, will show you why this Grammy nominated, multi-platinum recording artist, and Billboard award winner is at",
     "stars": [
       "Larry the Cable Guy"
     ],
@@ -51660,7 +50753,7 @@ window.CINECLASH_CATALOG =
     "duration": "99 min",
     "genre": "Drama",
     "rating": 4.7,
-    "description": "Hazing (Novatos) a feature film based on the director's true story. The story of Alex, a fresher who rejects hazing, and Carla, a fresher who doesn't care too much about it. Between them, ... See full summary »",
+    "description": "Hazing (Novatos) a feature film based on the director's true story. The story of Alex, a fresher who rejects hazing, and Carla, a fresher who doesn't care too much about it. Between them,",
     "stars": [
       "Nicolás Coronado",
       "Javier Butler",
@@ -51814,7 +50907,7 @@ window.CINECLASH_CATALOG =
     "duration": "78 min",
     "genre": "Drama, Romance",
     "rating": 5.2,
-    "description": "The turbulent relationship between Oskar and Alex ends in a big blaze, Alex has set in Oskar's apartment. So Oskar decides that everything shall be different with the next one and he makes ... See full summary »",
+    "description": "The turbulent relationship between Oskar and Alex ends in a big blaze, Alex has set in Oskar's apartment. So Oskar decides that everything shall be different with the next one and he makes",
     "stars": [
       "Amelie Kiefer",
       "Tom Lass",
@@ -51829,7 +50922,7 @@ window.CINECLASH_CATALOG =
     "duration": "85 min",
     "genre": "Action, Comedy, Drama",
     "rating": 3.1,
-    "description": "(Faleh) youth levels graduated from the Faculty of Law, brokered by his father to help him in the search for a job, to be appointed in a tourist resorts as an individual security, during ... See full summary »",
+    "description": "(Faleh) youth levels graduated from the Faculty of Law, brokered by his father to help him in the search for a job, to be appointed in a tourist resorts as an individual security, during",
     "stars": [
       "Mohamad Ramadan",
       "Randa Al Behery",
@@ -51866,26 +50959,12 @@ window.CINECLASH_CATALOG =
     "votes": 264
   },
   {
-    "title": "Derren Brown: Infamous",
-    "year": 2014,
-    "duration": "71 min",
-    "genre": "Reality-TV",
-    "rating": 7.5,
-    "description": "Derren Brown's sixth live stage show which toured the U.K. in 2013-2014.",
-    "stars": [
-      "Carl Barma",
-      "Derren Brown",
-      "Benjayx Murphy"
-    ],
-    "votes": 263
-  },
-  {
     "title": "CRISIS: Special Security Squad",
     "year": 2017,
     "duration": "54 min",
     "genre": "Action",
     "rating": 6.8,
-    "description": "The Special Investigation Unit is a secret force of specialists in various fields. The unit is under the direct control of the head of the Tokyo Metropolitan Police Department Security ... See full summary »",
+    "description": "The Special Investigation Unit is a secret force of specialists in various fields. The unit is under the direct control of the head of the Tokyo Metropolitan Police Department Security",
     "stars": [
       "Shun Oguri",
       "Hidetoshi Nishijima",
@@ -51900,7 +50979,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Drama, Mystery, Romance",
     "rating": 6.6,
-    "description": "Bookkeeper Jacob newest client is the talented and flamboyant actress Anne. They first meet each other on her houseboat, the morning after the premiere of Anne's new theatrical play. Jacob ... See full summary »",
+    "description": "Bookkeeper Jacob newest client is the talented and flamboyant actress Anne. They first meet each other on her houseboat, the morning after the premiere of Anne's new theatrical play. Jacob",
     "stars": [
       "Manon Alving",
       "Cheryl Ashruf",
@@ -51953,21 +51032,6 @@ window.CINECLASH_CATALOG =
       "Abdullah Bin Haider"
     ],
     "votes": 261
-  },
-  {
-    "title": "13 Reasons Why: Season 2 Date Announcement Commercial",
-    "year": 2018,
-    "duration": "1 min",
-    "genre": "Short, Drama",
-    "rating": 7.2,
-    "description": "Add a Plot",
-    "stars": [
-      "Alisha Boe",
-      "Tommy Dorfman",
-      "Katherine Langford",
-      "Derek Luke"
-    ],
-    "votes": 260
   },
   {
     "title": "Amit Tandon: Family Tandoncies",
@@ -52030,7 +51094,7 @@ window.CINECLASH_CATALOG =
     "duration": "80 min",
     "genre": "Documentary",
     "rating": 5.1,
-    "description": "After hearing that some people get paid $5000 for posting a picture on Instagram, broke and out of work director, Asri Bendacha sets out on a journey to become a social media influencer and... See full summary »",
+    "description": "After hearing that some people get paid $5000 for posting a picture on Instagram, broke and out of work director, Asri Bendacha sets out on a journey to become a social media influencer and",
     "stars": [
       "Asri Bendacha"
     ],
@@ -52042,7 +51106,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Documentary",
     "rating": 6.4,
-    "description": "Vidal Sassoon is more than just a hairdresser-he's a rock star, an artist, a craftsman who \"changed the world with a pair of scissors.\" With the geometric, Bauhaus-inspired hairdos he ... See full summary »",
+    "description": "Vidal Sassoon is more than just a hairdresser-he's a rock star, an artist, a craftsman who \"changed the world with a pair of scissors.\" With the geometric, Bauhaus-inspired hairdos he",
     "stars": [
       "Beverly Adams",
       "Elgin Charles",
@@ -52072,7 +51136,7 @@ window.CINECLASH_CATALOG =
     "duration": "39 min",
     "genre": "Documentary, Short",
     "rating": 7.8,
-    "description": "An intimate journey of a 37-year-old Cristina, as fate brings to her life both a new love and an unbeatable challenge. Determined to pass on a message of hope and a 'live in the now' ... See full summary »",
+    "description": "An intimate journey of a 37-year-old Cristina, as fate brings to her life both a new love and an unbeatable challenge. Determined to pass on a message of hope and a 'live in the now'",
     "stars": [
       "Bruce Franklin",
       "Cristina Weigmann"
@@ -52098,7 +51162,7 @@ window.CINECLASH_CATALOG =
     "duration": "120 min",
     "genre": "Horror, Thriller",
     "rating": 4.3,
-    "description": "The synopsis of The Figurine (Araromire) shows that it is a story of two buddies and a girl...all down on their luck have their lives changed when one of them discovers 'Araromire' a ... See full summary »",
+    "description": "The synopsis of The Figurine (Araromire) shows that it is a story of two buddies and a girl...all down on their luck have their lives changed when one of them discovers 'Araromire' a",
     "stars": [
       "Wale Adebayo",
       "Kate Adepegba",
@@ -52165,7 +51229,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Fantasy, Romance",
     "rating": 7.2,
-    "description": "Sung Hae Sung (Yeo Jin Goo, Circle: Two Worlds Connected) is a cheery high school student. Being the eldest sibling, he wants to provide for his family instead of going to college. On the ... See full summary »",
+    "description": "Sung Hae Sung (Yeo Jin Goo, Circle: Two Worlds Connected) is a cheery high school student. Being the eldest sibling, he wants to provide for his family instead of going to college. On the",
     "stars": [
       "Yeo Jin-gu",
       "Yeon-hee Lee",
@@ -52338,7 +51402,7 @@ window.CINECLASH_CATALOG =
     "duration": "85 min",
     "genre": "Drama",
     "rating": 5.6,
-    "description": "A glorious weekend in the waning days of summer. The protagonist, Rosa, is a guardian of the lakes in the magical hinterland north of Berlin and a professional fisher. Her lover Kirsten ... See full summary »",
+    "description": "A glorious weekend in the waning days of summer. The protagonist, Rosa, is a guardian of the lakes in the magical hinterland north of Berlin and a professional fisher. Her lover Kirsten",
     "stars": [
       "Nele Rosetz",
       "Therese Hämer",
@@ -52413,7 +51477,7 @@ window.CINECLASH_CATALOG =
     "duration": "45 min",
     "genre": "Drama, Fantasy",
     "rating": 7.3,
-    "description": "Provoked by the actions of a seemingly sly human, an ancient snake spirit takes on a human form, in order to prove him a fraud. Convinced she's doing the world a favor, Bai Su Zhen ... See full summary »",
+    "description": "Provoked by the actions of a seemingly sly human, an ancient snake spirit takes on a human form, in order to prove him a fraud. Convinced she's doing the world a favor, Bai Su Zhen",
     "stars": [
       "Jingyi Ju",
       "Menglong Yu",
@@ -52497,7 +51561,7 @@ window.CINECLASH_CATALOG =
     "duration": "85 min",
     "genre": "Adventure",
     "rating": 4.7,
-    "description": "A lad jousting with his tutor is kidnaped and carried to the Bastille where his head is locked in an iron mask. Jump ten years: Musketeers return from war in Morocco to find Paris starving ... See full summary »",
+    "description": "A lad jousting with his tutor is kidnaped and carried to the Bastille where his head is locked in an iron mask. Jump ten years: Musketeers return from war in Morocco to find Paris starving",
     "stars": [
       "Edward Albert",
       "Dana Barron",
@@ -52527,7 +51591,7 @@ window.CINECLASH_CATALOG =
     "duration": "112 min",
     "genre": "Drama",
     "rating": 5.4,
-    "description": "Siva, a Singaporean-Indian man is released after in prison for contraband smuggling. Unable to find forgiveness form his mother, he begins a quest to locate his ex-wife and daughter. Just ... See full summary »",
+    "description": "Siva, a Singaporean-Indian man is released after in prison for contraband smuggling. Unable to find forgiveness form his mother, he begins a quest to locate his ex-wife and daughter. Just",
     "stars": [
       "Sivakumar Palakrishnan",
       "Lu Huang",
@@ -52542,7 +51606,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Drama, Romance, Thriller",
     "rating": 5.3,
-    "description": "During Carnival in San Paulo, a young man and young woman who knew each other as children meet again after many years and social barriers have kept them apart. On the day of the festival, ... See full summary »",
+    "description": "During Carnival in San Paulo, a young man and young woman who knew each other as children meet again after many years and social barriers have kept them apart. On the day of the festival,",
     "stars": [
       "Jesuíta Barbosa",
       "Laura Neiva",
@@ -52550,20 +51614,6 @@ window.CINECLASH_CATALOG =
       "Paulo Américo"
     ],
     "votes": 240
-  },
-  {
-    "title": "Honor Diaries",
-    "year": 2013,
-    "duration": "61 min",
-    "genre": "Documentary, Crime, News",
-    "rating": 7.8,
-    "description": "Several Muslim women activists discuss their stories and the state of women's rights in Muslim-majority nations.",
-    "stars": [
-      "Raheel Raza",
-      "Raquel Evita Saraswati",
-      "Juliana Taimoorazy"
-    ],
-    "votes": 239
   },
   {
     "title": "Vessel",
@@ -52601,7 +51651,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Horror",
     "rating": 4.6,
-    "description": "A handsome tourist travelling through the desert comes at night upon a lavish Moorish castle wherein he is entertained by a mysterious wealthy woman. He departs and returns in the morning ... See full summary »",
+    "description": "A handsome tourist travelling through the desert comes at night upon a lavish Moorish castle wherein he is entertained by a mysterious wealthy woman. He departs and returns in the morning",
     "stars": [
       "William Sylvester",
       "Diane Clare",
@@ -52683,21 +51733,6 @@ window.CINECLASH_CATALOG =
     "votes": 237
   },
   {
-    "title": "A Final Cut for Orson: 40 Years in the Making",
-    "year": 2018,
-    "duration": "38 min",
-    "genre": "Documentary, Short",
-    "rating": 7.2,
-    "description": "A glimpse behind the scenes into the complicated process of recovering and completing the final film of legendary director Orson Welles.",
-    "stars": [
-      "Frank Marshall",
-      "Peter Bogdanovich",
-      "Filip Jan Rymsza",
-      "Ruth Hasty"
-    ],
-    "votes": 236
-  },
-  {
     "title": "Live",
     "year": 2015,
     "duration": "97 min",
@@ -52718,7 +51753,7 @@ window.CINECLASH_CATALOG =
     "duration": "81 min",
     "genre": "Documentary, Comedy",
     "rating": 6.9,
-    "description": "Lavell Crawford is quickly climbing the comedic ranks, taking second place in NBC's Last Comic Standing, he one of the fastest rising stars in Comedy. In \"Can a Brother Get Some Love\" ... See full summary »",
+    "description": "Lavell Crawford is quickly climbing the comedic ranks, taking second place in NBC's Last Comic Standing, he one of the fastest rising stars in Comedy. In \"Can a Brother Get Some Love\"",
     "stars": [
       "Lavell Crawford",
       "Kareem Taylor"
@@ -52817,7 +51852,7 @@ window.CINECLASH_CATALOG =
     "duration": "72 min",
     "genre": "Drama",
     "rating": 5.8,
-    "description": "Teenagers' leisure at full swing: a group of friends spend their holidays at parties, having sex, boozing, and partaking in any adventure that brings them a boost of adrenaline. As they use... See full summary »",
+    "description": "Teenagers' leisure at full swing: a group of friends spend their holidays at parties, having sex, boozing, and partaking in any adventure that brings them a boost of adrenaline. As they use",
     "stars": [
       "Máximo Hollander",
       "Sebastián Aguirre",
@@ -52877,7 +51912,7 @@ window.CINECLASH_CATALOG =
     "duration": "70 min",
     "genre": "Drama, Romance",
     "rating": 6.7,
-    "description": "Han Seung Joo is a single woman in her mid 30's and she works as a PD at a broadcasting station. She does well at her job, but she is not nearly as good when it comes to housework. Han ... See full summary »",
+    "description": "Han Seung Joo is a single woman in her mid 30's and she works as a PD at a broadcasting station. She does well at her job, but she is not nearly as good when it comes to housework. Han",
     "stars": [
       "Kang-woo Kim",
       "Kim You-Jin",
@@ -52892,7 +51927,7 @@ window.CINECLASH_CATALOG =
     "duration": "100 min",
     "genre": "Drama",
     "rating": 6.4,
-    "description": "Ivan Semciuc (a journalist), is a charismatic man nonetheless guilty of cynicism and lack of compassion. A seemingly meaningless sexual encounter with a translator in a hotel room in Kabul ... See full summary »",
+    "description": "Ivan Semciuc (a journalist), is a charismatic man nonetheless guilty of cynicism and lack of compassion. A seemingly meaningless sexual encounter with a translator in a hotel room in Kabul",
     "stars": [
       "Ilona Brezoianu",
       "Cristina Florea",
@@ -52937,7 +51972,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Sport",
     "rating": 7.6,
-    "description": "A year 10 student returns to China with the aim of beating his tennis genius father. However over time, despite trying to remain aloof, he learns there a better things to strive for thanks ... See full summary »",
+    "description": "A year 10 student returns to China with the aim of beating his tennis genius father. However over time, despite trying to remain aloof, he learns there a better things to strive for thanks",
     "stars": [
       "Yiren Song",
       "Yuchang Peng",
@@ -52982,7 +52017,7 @@ window.CINECLASH_CATALOG =
     "duration": "86 min",
     "genre": "Documentary, Sport",
     "rating": 7.1,
-    "description": "Against a backdrop of war and poverty, Out of the Ashes, traces the extraordinary journey of a team of young, Afghan men, as they chase a seemingly impossible dream, shedding new light on a... See full summary »",
+    "description": "Against a backdrop of war and poverty, Out of the Ashes, traces the extraordinary journey of a team of young, Afghan men, as they chase a seemingly impossible dream, shedding new light on a",
     "stars": [
       "Hasti Gul Abid",
       "Taj Malik Aleem",
@@ -52997,7 +52032,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Drama, Mystery, Thriller",
     "rating": 5.4,
-    "description": "Jamie, a young American exchange student in rural France, finds herself in the middle of a love triangle as she and the host family's wayward daughter fall for the same boy. As dangerous ... See full summary »",
+    "description": "Jamie, a young American exchange student in rural France, finds herself in the middle of a love triangle as she and the host family's wayward daughter fall for the same boy. As dangerous",
     "stars": [
       "Hande Kodja",
       "Pierre Boulanger",
@@ -53012,7 +52047,7 @@ window.CINECLASH_CATALOG =
     "duration": "64 min",
     "genre": "Action, Adventure, Sport",
     "rating": 7,
-    "description": "Valhalla, Sweetgrass Productions' fourth feature film, is the tale of one man's search to rediscover the freedom of his youth. Beyond action sports-- with Valhalla's totally unique style ... See full summary »",
+    "description": "Valhalla, Sweetgrass Productions' fourth feature film, is the tale of one man's search to rediscover the freedom of his youth. Beyond action sports-- with Valhalla's totally unique style",
     "stars": [
       "Cody Barnhill",
       "Casey Ogle",
@@ -53258,7 +52293,7 @@ window.CINECLASH_CATALOG =
     "duration": "85 min",
     "genre": "Drama",
     "rating": 5.9,
-    "description": "Kacper, who works as a foreman, has an affair with the wife of his best friend Oskar, also a miner. To meet his mistress, he assigns Oskar to the distant and dangerous coal seams. As the ... See full summary »",
+    "description": "Kacper, who works as a foreman, has an affair with the wife of his best friend Oskar, also a miner. To meet his mistress, he assigns Oskar to the distant and dangerous coal seams. As the",
     "stars": [
       "Julia Kijowska",
       "Bartlomiej Topa",
@@ -53273,7 +52308,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Comedy",
     "rating": 7.8,
-    "description": "Towako Omameda recently became the president of the construction company \"Shirokuma Housing\". She has experienced three divorces and is currently living with her 15-year-old daughter, Uta. ... See full summary »",
+    "description": "Towako Omameda recently became the president of the construction company \"Shirokuma Housing\". She has experienced three divorces and is currently living with her 15-year-old daughter, Uta.",
     "stars": [
       "Masaki Okada",
       "Takako Matsu",
@@ -53447,7 +52482,7 @@ window.CINECLASH_CATALOG =
     "duration": "81 min",
     "genre": "Drama",
     "rating": 5.7,
-    "description": "Bullying. Humiliation. An ugly truth. She's standing up for her friend. But her retaliatory quest is about to unravel. After a sex video subjects her friend to mockery and bullying, a ... See full summary »",
+    "description": "Bullying. Humiliation. An ugly truth. She's standing up for her friend. But her retaliatory quest is about to unravel. After a sex video subjects her friend to mockery and bullying, a",
     "stars": [
       "Yi-Ruei Chen",
       "Teng-Hung Hsia",
@@ -53477,7 +52512,7 @@ window.CINECLASH_CATALOG =
     "duration": "104 min",
     "genre": "Documentary",
     "rating": 6.7,
-    "description": "André and His Olive Tree follows Chef André as he prepares to close his beloved Restaurant André on Valentine's Day of 2018, and return those coveted Michelin stars. This of course creates ... See full summary »",
+    "description": "André and His Olive Tree follows Chef André as he prepares to close his beloved Restaurant André on Valentine's Day of 2018, and return those coveted Michelin stars. This of course creates",
     "stars": [
       "Andre Chiang"
     ],
@@ -53489,7 +52524,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Adventure, Family",
     "rating": 5.2,
-    "description": "When Kassie and her friends stumble across an old, broken pocket watch they begin an unexpected journey to unlock the secret of the legendary Garrison Gold. They'll have to solve riddles ... See full summary »",
+    "description": "When Kassie and her friends stumble across an old, broken pocket watch they begin an unexpected journey to unlock the secret of the legendary Garrison Gold. They'll have to solve riddles",
     "stars": [
       "Luke Perry",
       "Brooke Langton",
@@ -53774,7 +52809,7 @@ window.CINECLASH_CATALOG =
     "duration": "97 min",
     "genre": "Drama",
     "rating": 6.4,
-    "description": "A young girl gets involved in a family drama when she starts a secret friendship with a prison inmate. All parts involved, inside and outside, will have to deal with the consequences of ... See full summary »",
+    "description": "A young girl gets involved in a family drama when she starts a secret friendship with a prison inmate. All parts involved, inside and outside, will have to deal with the consequences of",
     "stars": [
       "Natalia Arias",
       "Leynar Gomez",
@@ -53804,7 +52839,7 @@ window.CINECLASH_CATALOG =
     "duration": "24 min",
     "genre": "Animation, Sport",
     "rating": 6,
-    "description": "Konomi Kasahara, a junior high school girl, has made a big name after winning numerous competitive puzzle game tournaments. The story begins when she finds a sports climbing club in her ... See full summary »",
+    "description": "Konomi Kasahara, a junior high school girl, has made a big name after winning numerous competitive puzzle game tournaments. The story begins when she finds a sports climbing club in her",
     "stars": [
       "Sumire Uesaka",
       "Yui Ishikawa",
@@ -53898,7 +52933,7 @@ window.CINECLASH_CATALOG =
     "duration": "91 min",
     "genre": "Documentary",
     "rating": 6.2,
-    "description": "A Week in Watts is a feature length documentary that tells the story of six students in Watts, Los Angeles, involved in a program called Operation Progress - which gives youth scholarships ... See full summary »",
+    "description": "A Week in Watts is a feature length documentary that tells the story of six students in Watts, Los Angeles, involved in a program called Operation Progress - which gives youth scholarships",
     "stars": [
       "Emada Tingirides",
       "John Coughlin",
@@ -53928,7 +52963,7 @@ window.CINECLASH_CATALOG =
     "duration": "108 min",
     "genre": "Romance",
     "rating": 6.6,
-    "description": "Riko Shirono doesn't have any big expectations for a man in her life, but she works as a love simulation game planner. She receives a request for a new love game from app company TIMEIS. ... See full summary »",
+    "description": "Riko Shirono doesn't have any big expectations for a man in her life, but she works as a love simulation game planner. She receives a request for a new love game from app company TIMEIS.",
     "stars": [
       "Mikako Tabe",
       "Issey Takahashi",
@@ -53967,7 +53002,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Comedy, Drama",
     "rating": 6.7,
-    "description": "Hwang Ji An is the top shoe designer in a major shoe company. She is in her 30s, successful and single. One night, she makes a horrible mistake and sleeps with Park Tae Gang, a good-looking... See full summary »",
+    "description": "Hwang Ji An is the top shoe designer in a major shoe company. She is in her 30s, successful and single. One night, she makes a horrible mistake and sleeps with Park Tae Gang, a good-looking",
     "stars": [
       "Soo-hyang Im",
       "Kim Seon-a",
@@ -53982,7 +53017,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Drama",
     "rating": 7.1,
-    "description": "Shin Young Joo is a female detective, a section chief with charisma, although she spends most of her time with petty criminals. She has to pay the debt of her family and often speaks ... See full summary »",
+    "description": "Shin Young Joo is a female detective, a section chief with charisma, although she spends most of her time with petty criminals. She has to pay the debt of her family and often speaks",
     "stars": [
       "Lee Bo-young",
       "Lee Sang-yoon",
@@ -54009,7 +53044,7 @@ window.CINECLASH_CATALOG =
     "duration": "83 min",
     "genre": "Documentary, Crime, Mystery",
     "rating": 6.9,
-    "description": "\"The Karma Killings,\" is a modern-day crime thriller mixed in with Indian mythology and class warfare. The documentary delves into India's most infamous serial killings and its impact on a ... See full summary »",
+    "description": "\"The Karma Killings,\" is a modern-day crime thriller mixed in with Indian mythology and class warfare. The documentary delves into India's most infamous serial killings and its impact on a",
     "stars": [
       "Ram Devineni",
       "Tushar Prakash"
@@ -54052,7 +53087,7 @@ window.CINECLASH_CATALOG =
     "duration": "56 min",
     "genre": "Documentary",
     "rating": 6.1,
-    "description": "Documents the lineage of Adolf Hitlers descendants, focusing on William Patrick Hitler, the nephew of Adolf Hitler. Cataloguing his attempts to use Hitlers celebrity in the early years, his... See full summary »",
+    "description": "Documents the lineage of Adolf Hitlers descendants, focusing on William Patrick Hitler, the nephew of Adolf Hitler. Cataloguing his attempts to use Hitlers celebrity in the early years, his",
     "stars": [
       "Florian M. Beierl",
       "Almeida, \""
@@ -54136,7 +53171,7 @@ window.CINECLASH_CATALOG =
     "duration": "45 min",
     "genre": "Action, Drama, Fantasy",
     "rating": 7.8,
-    "description": "Xiao Feng (Peng Xiao Ran) is the beloved princess of Western Liang when she is arranged to marry the crown prince Li Cheng Yin (Chen Xing Xu). Loved by her people immensely, she sets off on... See full summary »",
+    "description": "Xiao Feng (Peng Xiao Ran) is the beloved princess of Western Liang when she is arranged to marry the crown prince Li Cheng Yin (Chen Xing Xu). Loved by her people immensely, she sets off on",
     "stars": [
       "Xingxu Chen",
       "Xiaoran Peng",
@@ -54166,7 +53201,7 @@ window.CINECLASH_CATALOG =
     "duration": "79 min",
     "genre": "Drama",
     "rating": 6.5,
-    "description": "An emotionally powerful coming-of-age drama set in Little Armenia. When 12 year-old Armenian boy, Aram, is suddenly uprooted from his home and sent to live with his Grandfather in America, ... See full summary »",
+    "description": "An emotionally powerful coming-of-age drama set in Little Armenia. When 12 year-old Armenian boy, Aram, is suddenly uprooted from his home and sent to live with his Grandfather in America,",
     "stars": [
       "John Roohinian",
       "Levon Sharafyan",
@@ -54181,7 +53216,7 @@ window.CINECLASH_CATALOG =
     "duration": "82 min",
     "genre": "Drama, Family",
     "rating": 5.5,
-    "description": "Megan has a special relationship with discarded jumping horse Whitestar. When it turns out that Whitestar still has special talents, the owner takes him away from Megan for competitions, ... See full summary »",
+    "description": "Megan has a special relationship with discarded jumping horse Whitestar. When it turns out that Whitestar still has special talents, the owner takes him away from Megan for competitions,",
     "stars": [
       "Victoria Koblenko",
       "Valentijn Avé",
@@ -54226,7 +53261,7 @@ window.CINECLASH_CATALOG =
     "duration": "126 min",
     "genre": "Drama",
     "rating": 5.1,
-    "description": "Max returns to her slum turned into the vocalist of a rock band. There, the memories await, the latest news and the truths that were silent for years: Sonia is a voice that speaks from the ... See full summary »",
+    "description": "Max returns to her slum turned into the vocalist of a rock band. There, the memories await, the latest news and the truths that were silent for years: Sonia is a voice that speaks from the",
     "stars": [
       "Ximena Romo",
       "Mabel Cadena",
@@ -54256,7 +53291,7 @@ window.CINECLASH_CATALOG =
     "duration": "77 min",
     "genre": "Thriller",
     "rating": 2.9,
-    "description": "At his home in a rundown American suburb, detective Edward Sutton hears noises from his basement. As he explores the sounds he soon discovers that something terrible is going on. His ... See full summary »",
+    "description": "At his home in a rundown American suburb, detective Edward Sutton hears noises from his basement. As he explores the sounds he soon discovers that something terrible is going on. His",
     "stars": [
       "Robert Prowse",
       "Jennifer Lila",
@@ -54301,7 +53336,7 @@ window.CINECLASH_CATALOG =
     "duration": "105 min",
     "genre": "Action",
     "rating": 5.1,
-    "description": "Jay Zulkarnain is an assault leader for Malaysia's elite and deadly special force known as the UTK (Unit Tindakhas), and he and his squad of operatives are every terrorist's worst nightmare... See full summary »",
+    "description": "Jay Zulkarnain is an assault leader for Malaysia's elite and deadly special force known as the UTK (Unit Tindakhas), and he and his squad of operatives are every terrorist's worst nightmare",
     "stars": [
       "Zul Ariffin",
       "Nur Fazura",
@@ -54358,7 +53393,7 @@ window.CINECLASH_CATALOG =
     "duration": "112 min",
     "genre": "Drama, Family",
     "rating": 6,
-    "description": "\"Found\" is the story of an innocent teenage boy raised up in the Appalachian Mountains on a small old fashioned homestead devoid of modern conveniences and tucked away from the broader ... See full summary »",
+    "description": "\"Found\" is the story of an innocent teenage boy raised up in the Appalachian Mountains on a small old fashioned homestead devoid of modern conveniences and tucked away from the broader",
     "stars": [
       "Joseph Stam",
       "Wendy Mitchell Piper",
@@ -54373,7 +53408,7 @@ window.CINECLASH_CATALOG =
     "duration": "101 min",
     "genre": "Crime, Drama",
     "rating": 5.9,
-    "description": "Two French paras who had lived through deadly situations in Algeria, meet again in civil life. Frapier is a newspaper reporter, and one day finds his friend Porte - surrounded by the police... See full summary »",
+    "description": "Two French paras who had lived through deadly situations in Algeria, meet again in civil life. Frapier is a newspaper reporter, and one day finds his friend Porte - surrounded by the police",
     "stars": [
       "Jean-Paul Belmondo",
       "Alexandra Stewart",
@@ -54497,7 +53532,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Drama, Romance",
     "rating": 7.3,
-    "description": "A physics student who's also a substitute teacher catches a English student cheating on a test. She sets out to prove she didn't cheat and he finally believes her. She doesn't like him at ... See full summary »",
+    "description": "A physics student who's also a substitute teacher catches a English student cheating on a test. She sets out to prove she didn't cheat and he finally believes her. She doesn't like him at",
     "stars": [
       "Chao Zhang",
       "Tingting Li",
@@ -54540,7 +53575,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Animation, Action, Drama",
     "rating": 4.7,
-    "description": "The battle for succession that continued for three generations of shogun in the Keichou era culminated in a gruesome battle of ninja arts between the Kouga and Iga clans. Amidst a rain of ... See full summary »",
+    "description": "The battle for succession that continued for three generations of shogun in the Keichou era culminated in a gruesome battle of ninja arts between the Kouga and Iga clans. Amidst a rain of",
     "stars": [
       "Amber Lee Connors",
       "Ricco Fajardo",
@@ -54585,7 +53620,7 @@ window.CINECLASH_CATALOG =
     "duration": "88 min",
     "genre": "Documentary",
     "rating": 7.1,
-    "description": "The collapse of the Soviet Union led to a volatile but highly advantageous environment for young Russian businessmen eager to build the fledgling market economy by any means necessary. ... See full summary »",
+    "description": "The collapse of the Soviet Union led to a volatile but highly advantageous environment for young Russian businessmen eager to build the fledgling market economy by any means necessary.",
     "stars": [
       "Cathryn Collins"
     ],
@@ -54699,7 +53734,7 @@ window.CINECLASH_CATALOG =
     "duration": "93 min",
     "genre": "Drama",
     "rating": 5.3,
-    "description": "Petru, a drilling engineer living in a community of oil industry workers, has a conflict. On the one hand he is about to get married to his pregnant girlfriend, Laura, and on the other he ... See full summary »",
+    "description": "Petru, a drilling engineer living in a community of oil industry workers, has a conflict. On the one hand he is about to get married to his pregnant girlfriend, Laura, and on the other he",
     "stars": [
       "Valeriu Andriuta",
       "Madalina Constantin",
@@ -54783,7 +53818,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Romance",
     "rating": 6.4,
-    "description": "The eldest daughter of the distinguished head family of the famous Tsukishima style of flower arrangement, 29-year-old Momo Tsukishima has everything - beauty, talent, career and wealth. ... See full summary »",
+    "description": "The eldest daughter of the distinguished head family of the famous Tsukishima style of flower arrangement, 29-year-old Momo Tsukishima has everything - beauty, talent, career and wealth.",
     "stars": [
       "Yûdai Chiba",
       "Yûko Fueki",
@@ -54813,7 +53848,7 @@ window.CINECLASH_CATALOG =
     "duration": "82 min",
     "genre": "Documentary, Biography",
     "rating": 6.1,
-    "description": "This incredible documentary features in-depth contributions from wives Yoko Ono and Cynthia Lennon, son Julian Lennon and many previously unseen interviews with John himself. Through rare ... See full summary »",
+    "description": "This incredible documentary features in-depth contributions from wives Yoko Ono and Cynthia Lennon, son Julian Lennon and many previously unseen interviews with John himself. Through rare",
     "stars": [
       "The Beatles",
       "Bruce Channel",
@@ -54828,7 +53863,7 @@ window.CINECLASH_CATALOG =
     "duration": "43 min",
     "genre": "Documentary",
     "rating": 5.9,
-    "description": "On June 30th, 1908, 7:14 am, the largest explosion recorded in human history reverberated throughout our planet, two thousand times the force of the Hiroshima nuclear bomb. To this day, ... See full summary »",
+    "description": "On June 30th, 1908, 7:14 am, the largest explosion recorded in human history reverberated throughout our planet, two thousand times the force of the Hiroshima nuclear bomb. To this day,",
     "stars": [
       "Amartscha",
       "Mark Boslough",
@@ -54858,7 +53893,7 @@ window.CINECLASH_CATALOG =
     "duration": "29 min",
     "genre": "Documentary, Short, Comedy",
     "rating": 7.5,
-    "description": "Set during the kaleidoscopic backdrop of the kite-flying festival in India, 'Amdavad Ma Famous', witnesses the transformation of an 11-year-old Zaid from a boy next door to an aggressive ... See full summary »",
+    "description": "Set during the kaleidoscopic backdrop of the kite-flying festival in India, 'Amdavad Ma Famous', witnesses the transformation of an 11-year-old Zaid from a boy next door to an aggressive",
     "stars": [
       "Hardik Mehta"
     ],
@@ -54870,7 +53905,7 @@ window.CINECLASH_CATALOG =
     "duration": "74 min",
     "genre": "Documentary",
     "rating": 6.9,
-    "description": "\"TED: The future we will create\" gives you an all-access pass inside the world of TED to what Wired Magazine refers to as \"arguably the hottest gathering around.\" Every year for four days, ... See full summary »",
+    "description": "\"TED: The future we will create\" gives you an all-access pass inside the world of TED to what Wired Magazine refers to as \"arguably the hottest gathering around.\" Every year for four days,",
     "stars": [
       "Daphne Zuniga",
       "Al Gore",
@@ -54900,7 +53935,7 @@ window.CINECLASH_CATALOG =
     "duration": "28 min",
     "genre": "Documentary, Short, Crime",
     "rating": 7.3,
-    "description": "The conflict in the Democratic Republic of the Congo has cost more lives than any other since World War II. THE TESTIMONY chronicles the largest rape tribunal in Congo's history, offering ... See full summary »",
+    "description": "The conflict in the Democratic Republic of the Congo has cost more lives than any other since World War II. THE TESTIMONY chronicles the largest rape tribunal in Congo's history, offering",
     "stars": [
       "Vanessa Block"
     ],
@@ -55057,7 +54092,7 @@ window.CINECLASH_CATALOG =
     "duration": "100 min",
     "genre": "Comedy, Drama",
     "rating": 6.2,
-    "description": "'Mokalik' follows the career of an 11-year-old boy, Ponmile, from the middle-class suburbs who spends the day as a lowly apprentice at a mechanic workshop in order to view life from the ... See full summary »",
+    "description": "'Mokalik' follows the career of an 11-year-old boy, Ponmile, from the middle-class suburbs who spends the day as a lowly apprentice at a mechanic workshop in order to view life from the",
     "stars": [
       "Tooni Afolayan",
       "Simi Ogunleye",
@@ -55117,7 +54152,7 @@ window.CINECLASH_CATALOG =
     "duration": "83 min",
     "genre": "Horror, Thriller",
     "rating": 2.5,
-    "description": "A group of LA twenty-somethings are lured out of the city and out into the wilderness in search of a rave, a hot girl, and good times. Instead, they encounter an ancient evil; a demon ... See full summary »",
+    "description": "A group of LA twenty-somethings are lured out of the city and out into the wilderness in search of a rave, a hot girl, and good times. Instead, they encounter an ancient evil; a demon",
     "stars": [
       "Kevin Lowe",
       "Luke Gannon",
@@ -55147,7 +54182,7 @@ window.CINECLASH_CATALOG =
     "duration": "87 min",
     "genre": "Documentary",
     "rating": 7.3,
-    "description": "Colombia is the center of the new global gold rush and Marmato, a historic mining town, is the new frontier. Filmed over the course of nearly 6 years, MARMATO chronicles how the townspeople... See full summary »",
+    "description": "Colombia is the center of the new global gold rush and Marmato, a historic mining town, is the new frontier. Filmed over the course of nearly 6 years, MARMATO chronicles how the townspeople",
     "stars": [
       "Mark Grieco"
     ],
@@ -55215,7 +54250,7 @@ window.CINECLASH_CATALOG =
     "duration": "34 min",
     "genre": "Documentary, Short",
     "rating": 6.7,
-    "description": "Stand up comedy legend 'Bill Hicks' is recalled by his brother, Steve, in this documentary. Steve tells the story of the family's religious family roots, in a film that examines Hicks' ... See full summary »",
+    "description": "Stand up comedy legend 'Bill Hicks' is recalled by his brother, Steve, in this documentary. Steve tells the story of the family's religious family roots, in a film that examines Hicks'",
     "stars": [
       "Steve Hicks",
       "Bill Hicks"
@@ -55228,7 +54263,7 @@ window.CINECLASH_CATALOG =
     "duration": "97 min",
     "genre": "Comedy",
     "rating": 6.2,
-    "description": "Damiano and Chicco are twin brothers. One is an unscrupulous manager and the other is a free spirit who earns his living as a horseman. Their father, Cesare, forces them to switch roles: in... See full summary »",
+    "description": "Damiano and Chicco are twin brothers. One is an unscrupulous manager and the other is a free spirit who earns his living as a horseman. Their father, Cesare, forces them to switch roles: in",
     "stars": [
       "Alessandro Tiberi",
       "Aurora Ruffino",
@@ -55284,7 +54319,7 @@ window.CINECLASH_CATALOG =
     "duration": "80 min",
     "genre": "Documentary",
     "rating": 6.8,
-    "description": "Judy Irving (\"The Wild Parrots of Telegraph Hill\") follows a wayward California pelican from her \"arrest\" on the Golden Gate Bridge into care at a rehab facility and explores nesting ... See full summary »",
+    "description": "Judy Irving (\"The Wild Parrots of Telegraph Hill\") follows a wayward California pelican from her \"arrest\" on the Golden Gate Bridge into care at a rehab facility and explores nesting",
     "stars": [
       "Mark Bittner",
       "Laura Corsiglia",
@@ -55314,7 +54349,7 @@ window.CINECLASH_CATALOG =
     "duration": "137 min",
     "genre": "Drama, Music, Romance",
     "rating": 5.8,
-    "description": "Lara and the Beat is a coming of age movie about the young and beautiful Giwa sisters caught in the center of a financial scandal with their late parents' Media Empire. The sisters are ... See full summary »",
+    "description": "Lara and the Beat is a coming of age movie about the young and beautiful Giwa sisters caught in the center of a financial scandal with their late parents' Media Empire. The sisters are",
     "stars": [
       "Ademola Adedoyin",
       "Kemi Lala Akindoju",
@@ -55344,7 +54379,7 @@ window.CINECLASH_CATALOG =
     "duration": "99 min",
     "genre": "Drama",
     "rating": 5.5,
-    "description": "\"Up North\" explores love, friendship, and family politics, which all collide when the rebellious young scion of a wealthy family is sent away to National Service in Northern Nigeria. ... See full summary »",
+    "description": "\"Up North\" explores love, friendship, and family politics, which all collide when the rebellious young scion of a wealthy family is sent away to National Service in Northern Nigeria.",
     "stars": [
       "Adzi Adamu",
       "David Aisekhaleye",
@@ -55374,7 +54409,7 @@ window.CINECLASH_CATALOG =
     "duration": "81 min",
     "genre": "Comedy",
     "rating": 4.9,
-    "description": "A talented singer and her singer-songwriter boyfriend get the chance to represent their school in the biggest music competition for students in which the grand prize is a record deal. But ... See full summary »",
+    "description": "A talented singer and her singer-songwriter boyfriend get the chance to represent their school in the biggest music competition for students in which the grand prize is a record deal. But",
     "stars": [
       "Djamila",
       "Niek Roozen",
@@ -55419,7 +54454,7 @@ window.CINECLASH_CATALOG =
     "duration": "91 min",
     "genre": "Family",
     "rating": 5.8,
-    "description": "Set around 1900, Apenstreken (Monkey Business) tells the story of orphan Wim, who badly wants to go to school, instead of spending his time doing forced labor in the city's factory. By his ... See full summary »",
+    "description": "Set around 1900, Apenstreken (Monkey Business) tells the story of orphan Wim, who badly wants to go to school, instead of spending his time doing forced labor in the city's factory. By his",
     "stars": [
       "Tygo Bussemakers",
       "Lars Henckens",
@@ -55551,7 +54586,7 @@ window.CINECLASH_CATALOG =
     "duration": "88 min",
     "genre": "Comedy, Romance",
     "rating": 3.8,
-    "description": "Roos does not believe in one-night stands. True love is all that matters to her. When its major competitor threatens to swallow her mother's cosmetics company whole, love seems more absent ... See full summary »",
+    "description": "Roos does not believe in one-night stands. True love is all that matters to her. When its major competitor threatens to swallow her mother's cosmetics company whole, love seems more absent",
     "stars": [
       "Dorien Rose Duinker",
       "Sophie Bouquet",
@@ -55635,7 +54670,7 @@ window.CINECLASH_CATALOG =
     "duration": "84 min",
     "genre": "Drama",
     "rating": 5.6,
-    "description": "'Amok' tells 48 hours of the live of Lorenz Fuchs, a middle aged gray accountant who believes his triste and monotonous life being meaningless and absurd. For him the outside world was ... See full summary »",
+    "description": "'Amok' tells 48 hours of the live of Lorenz Fuchs, a middle aged gray accountant who believes his triste and monotonous life being meaningless and absurd. For him the outside world was",
     "stars": [
       "Tilo Nest",
       "Charly Hübner",
@@ -55722,7 +54757,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Drama",
     "rating": 6.7,
-    "description": "Shoko Takanashi is a former lawyer who had her license revoked. Prior to her disbarment, there were dark rumors that she punched her boss and that she was extorting in collaboration with ... See full summary »",
+    "description": "Shoko Takanashi is a former lawyer who had her license revoked. Prior to her disbarment, there were dark rumors that she punched her boss and that she was extorting in collaboration with",
     "stars": [
       "Nanao",
       "Ryôko Yonekura",
@@ -55794,7 +54829,7 @@ window.CINECLASH_CATALOG =
     "duration": "91 min",
     "genre": "Drama, Family, Romance",
     "rating": 5.6,
-    "description": "George, a scientist living in Rotterdam is growing wary of the world of academia. The sudden death of an old friend is the incentive he needs to return to his African roots where he takes ... See full summary »",
+    "description": "George, a scientist living in Rotterdam is growing wary of the world of academia. The sudden death of an old friend is the incentive he needs to return to his African roots where he takes",
     "stars": [
       "Isaach De Bankolé",
       "Juliet Landau",
@@ -55839,7 +54874,7 @@ window.CINECLASH_CATALOG =
     "duration": "106 min",
     "genre": "Action, Comedy",
     "rating": 4.9,
-    "description": "Four rich men (the Merry Men) seduce powerful women, get contracts from the political elite, steal from the rich, give to the poor and have sex with the hottest women in town. They face ... See full summary »",
+    "description": "Four rich men (the Merry Men) seduce powerful women, get contracts from the political elite, steal from the rich, give to the poor and have sex with the hottest women in town. They face",
     "stars": [
       "Abbey Chile Abuede",
       "Damilola Adegbite",
@@ -55869,7 +54904,7 @@ window.CINECLASH_CATALOG =
     "duration": "114 min",
     "genre": "Drama",
     "rating": 6,
-    "description": "The film narrates the incidents in the life of a gynaecologist and five women who come into his life each with unconventional/illegitimate pregnancies. Lal acts as the gynaecologist and ... See full summary »",
+    "description": "The film narrates the incidents in the life of a gynaecologist and five women who come into his life each with unconventional/illegitimate pregnancies. Lal acts as the gynaecologist and",
     "stars": [
       "Lal",
       "Asha Sharath",
@@ -55938,7 +54973,7 @@ window.CINECLASH_CATALOG =
     "duration": "77 min",
     "genre": "Drama",
     "rating": 5.2,
-    "description": "A secluded Polish village is the setting for a love story between a scrapper and a young woman. Seen through the monotony of everyday life, the film depicts the hardships of a rural ... See full summary »",
+    "description": "A secluded Polish village is the setting for a love story between a scrapper and a young woman. Seen through the monotony of everyday life, the film depicts the hardships of a rural",
     "stars": [
       "Marcin Czarnik",
       "Piotr Nowak",
@@ -56117,27 +55152,12 @@ window.CINECLASH_CATALOG =
     "votes": 134
   },
   {
-    "title": "The Apprentice: ONE Championship Edition",
-    "year": 2021,
-    "duration": "",
-    "genre": "Reality-TV",
-    "rating": 7.5,
-    "description": "Sixteen candidates from all over the world compete in a high-stakes game involving business and physical challenges for a chance to become One Championship Chairman and CEO Chatri Sityodtong's protégé.",
-    "stars": [
-      "Chatri Sityodtong",
-      "Dominic Lau",
-      "Justin Bratton",
-      "Yumika Hoskin"
-    ],
-    "votes": 133
-  },
-  {
     "title": "John Caparulo: Come Inside Me",
     "year": 2013,
     "duration": "71 min",
     "genre": "Documentary, Comedy",
     "rating": 7.1,
-    "description": "The working-class hero of Chelsea Lately's Roundtable is all dressed up for an all-new 70 minutes of adorable profanity! John Caparulo has the stage all to himself at The South Point Hotel ... See full summary »",
+    "description": "The working-class hero of Chelsea Lately's Roundtable is all dressed up for an all-new 70 minutes of adorable profanity! John Caparulo has the stage all to himself at The South Point Hotel",
     "stars": [
       "John Caparulo"
     ],
@@ -56209,7 +55229,7 @@ window.CINECLASH_CATALOG =
     "duration": "124 min",
     "genre": "Drama",
     "rating": 5.9,
-    "description": "She is a good woman living a fulfilling life. Or so it seems. A caring mother, a capable housewife and a successful career woman, she looks after her mother with dementia on her own. What ... See full summary »",
+    "description": "She is a good woman living a fulfilling life. Or so it seems. A caring mother, a capable housewife and a successful career woman, she looks after her mother with dementia on her own. What",
     "stars": [
       "Hee Ching Paw",
       "Shih-Hsun Kou",
@@ -56236,7 +55256,7 @@ window.CINECLASH_CATALOG =
     "duration": "96 min",
     "genre": "Action, Adventure, Thriller",
     "rating": 3.1,
-    "description": "M.D. Selig's feature thriller, SOUTHERN JUSTICE throws ex-military sniper Slim Manning into the gritty underworld of a small southern town where fundamentalist religion moves into the ... See full summary »",
+    "description": "M.D. Selig's feature thriller, SOUTHERN JUSTICE throws ex-military sniper Slim Manning into the gritty underworld of a small southern town where fundamentalist religion moves into the",
     "stars": [
       "M.D. Selig",
       "Michael Childers",
@@ -56244,16 +55264,6 @@ window.CINECLASH_CATALOG =
       "Rico Cymone"
     ],
     "votes": 131
-  },
-  {
-    "title": "Master of None: Season 1 Electronic Press Kit",
-    "year": 2015,
-    "duration": "",
-    "genre": "Comedy",
-    "rating": 7.7,
-    "description": "Add a Plot",
-    "stars": [],
-    "votes": 130
   },
   {
     "title": "Wanderlust",
@@ -56650,7 +55660,7 @@ window.CINECLASH_CATALOG =
     "duration": "79 min",
     "genre": "Documentary",
     "rating": 7.1,
-    "description": "\"Highway of Tears\" is about the missing or murdered women along a 724 kilometer stretch of highway in northern British Columbia. None of the 18 cold-cases had been solved since 1969, until ... See full summary »",
+    "description": "\"Highway of Tears\" is about the missing or murdered women along a 724 kilometer stretch of highway in northern British Columbia. None of the 18 cold-cases had been solved since 1969, until",
     "stars": [
       "Nathan Fillion",
       "Terry Teegee",
@@ -56658,21 +55668,6 @@ window.CINECLASH_CATALOG =
       "Mary Teegee"
     ],
     "votes": 121
-  },
-  {
-    "title": "The Big Fat Quiz of the Year",
-    "year": 2021,
-    "duration": "92 min",
-    "genre": "Comedy, Game-Show",
-    "rating": 6.8,
-    "description": "Jimmy Carr host's the annual quiz of the year. Participants for this year include Sarah Millican, James Acaster, Jonathan Ross, Judi Love and Guz Khan. A host of celebrities also cameo to ask their own questions.",
-    "stars": [
-      "Jimmy Carr",
-      "James Acaster",
-      "Guz Khan",
-      "Judi Love"
-    ],
-    "votes": 120
   },
   {
     "title": "The White Cat",
@@ -56695,7 +55690,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Documentary, Sport",
     "rating": 7.2,
-    "description": "A character-based feature documentary that portrays the transcendent power of soccer in modern Africa - a game that is helping to change the lives of individuals and communities across the ... See full summary »",
+    "description": "A character-based feature documentary that portrays the transcendent power of soccer in modern Africa - a game that is helping to change the lives of individuals and communities across the",
     "stars": [
       "Victor Buhler"
     ],
@@ -56737,7 +55732,7 @@ window.CINECLASH_CATALOG =
     "duration": "101 min",
     "genre": "Comedy, Musical",
     "rating": 4.7,
-    "description": "Professor Serafino Benvenuti is a master of classical music who has the passion of the orchestra director. However, the young audience of the 1960s does not appreciate classical composers ... See full summary »",
+    "description": "Professor Serafino Benvenuti is a master of classical music who has the passion of the orchestra director. However, the young audience of the 1960s does not appreciate classical composers",
     "stars": [
       "Totò",
       "Rita Pavone",
@@ -56895,7 +55890,7 @@ window.CINECLASH_CATALOG =
     "duration": "94 min",
     "genre": "Documentary",
     "rating": 7.4,
-    "description": "In medieval centuries, a handful of nutmegs worth more than a crate of gold in European Markets. Monopoly of the Arab and the crusade wars brought European countries in the race to find ... See full summary »",
+    "description": "In medieval centuries, a handful of nutmegs worth more than a crate of gold in European Markets. Monopoly of the Arab and the crusade wars brought European countries in the race to find",
     "stars": [
       "Ario Bayu",
       "Reza Rahadian"
@@ -56926,21 +55921,6 @@ window.CINECLASH_CATALOG =
       "Erica Jong",
       "Tom Schiller",
       "Georg Stefan Troller"
-    ],
-    "votes": 112
-  },
-  {
-    "title": "DeMarcus Family Rules",
-    "year": 2020,
-    "duration": "",
-    "genre": "Reality-TV",
-    "rating": 6.4,
-    "description": "Rascal Flatts bassist Jay DeMarcus and ex-beauty queen Allison DeMarcus write their own rules for juggling family and fun in this reality show.",
-    "stars": [
-      "Allison DeMarcus",
-      "Jay DeMarcus",
-      "Paige Dennis",
-      "Jane Alderson"
     ],
     "votes": 112
   },
@@ -56992,7 +55972,7 @@ window.CINECLASH_CATALOG =
     "duration": "100 min",
     "genre": "Comedy, Drama",
     "rating": 5.7,
-    "description": "Casti and Trébois, two friends who are workers at the same factory, have developed a common passion for flying. They dream of starting an aviation club. In the meantime they spend all their... See full summary »",
+    "description": "Casti and Trébois, two friends who are workers at the same factory, have developed a common passion for flying. They dream of starting an aviation club. In the meantime they spend all their",
     "stars": [
       "Yves Deniaud",
       "Paul Frankeur",
@@ -57062,7 +56042,7 @@ window.CINECLASH_CATALOG =
     "duration": "60 min",
     "genre": "Comedy, Fantasy, Romance",
     "rating": 7.2,
-    "description": "An ordinary girl named LOVE helps saving an injured unicorn and is granted a wish in return. She asks for a true love, hopefully from VIER, the 2 times Great Men Academy's greatest. Instead... See full summary »",
+    "description": "An ordinary girl named LOVE helps saving an injured unicorn and is granted a wish in return. She asks for a true love, hopefully from VIER, the 2 times Great Men Academy's greatest. Instead",
     "stars": [
       "Teeradon Supapunpinyo",
       "Kritsanapoom Pibulsonggram",
@@ -57246,7 +56226,7 @@ window.CINECLASH_CATALOG =
     "duration": "99 min",
     "genre": "Comedy, Drama",
     "rating": 3.2,
-    "description": "A poor guy called Salem works as street vendor and takes care of his sister after the death of their parents. Close people call him Salem Abu Ukhtuh (Salem, his sister's father). After the ... See full summary »",
+    "description": "A poor guy called Salem works as street vendor and takes care of his sister after the death of their parents. Close people call him Salem Abu Ukhtuh (Salem, his sister's father). After the",
     "stars": [
       "Hasan Abdulfattah",
       "Qadri Abul-Hol",
@@ -57261,25 +56241,12 @@ window.CINECLASH_CATALOG =
     "duration": "69 min",
     "genre": "Documentary",
     "rating": 7.8,
-    "description": "27-year-old American-born Omi Vaidya, a struggling actor in L.A., miraculously lands a dream role in the Bollywood film \"3 Idiots\". Curious to better understand the world of Bollywood, four... See full summary »",
+    "description": "27-year-old American-born Omi Vaidya, a struggling actor in L.A., miraculously lands a dream role in the Bollywood film \"3 Idiots\". Curious to better understand the world of Bollywood, four",
     "stars": [
       "Omi Vaidya",
       "Vidhu Vinod Chopra",
       "Kevin Desmond",
       "Rajkumar Hirani"
-    ],
-    "votes": 105
-  },
-  {
-    "title": "Behind the Scenes with Jane Campion",
-    "year": 2022,
-    "duration": "17 min",
-    "genre": "Documentary, Short",
-    "rating": 6.5,
-    "description": "A rare glimpse into the creative process of Academy Award-winning filmmaker Jane Campion as she shares her memories of making \"The Power of the Dog.\"",
-    "stars": [
-      "Prisca Bouchet",
-      "Nick Mayow"
     ],
     "votes": 105
   },
@@ -57355,7 +56322,7 @@ window.CINECLASH_CATALOG =
     "duration": "97 min",
     "genre": "Drama",
     "rating": 4.3,
-    "description": "A young girl from the Brooklyn housing projects goes from the subway to the runway becoming one of the most sought after models in the fashion industry. But in the high stakes world of ... See full summary »",
+    "description": "A young girl from the Brooklyn housing projects goes from the subway to the runway becoming one of the most sought after models in the fashion industry. But in the high stakes world of",
     "stars": [
       "Datari Turner",
       "Sessilee Lopez",
@@ -57472,7 +56439,7 @@ window.CINECLASH_CATALOG =
     "duration": "97 min",
     "genre": "Drama",
     "rating": 6.5,
-    "description": "As each member of the Holloway family works to solve their problems, they prepare for Mopelola's party, which will clearly become the year's biggest society event. But the buzz about the ... See full summary »",
+    "description": "As each member of the Holloway family works to solve their problems, they prepare for Mopelola's party, which will clearly become the year's biggest society event. But the buzz about the",
     "stars": [
       "Gbenga Titiloye",
       "Elvina Ibru",
@@ -57493,21 +56460,6 @@ window.CINECLASH_CATALOG =
       "Brixhilda Shqalsi",
       "Antonio Andrisani",
       "Alessandro Castriota Scanderbeg"
-    ],
-    "votes": 97
-  },
-  {
-    "title": "2006 Independent Spirit Awards",
-    "year": 2006,
-    "duration": "109 min",
-    "genre": "",
-    "rating": 6.5,
-    "description": "Add a Plot",
-    "stars": [
-      "Sarah Silverman",
-      "Hany Abu-Assad",
-      "Amy Adams",
-      "Shohreh Aghdashloo"
     ],
     "votes": 97
   },
@@ -57638,7 +56590,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Comedy",
     "rating": 7.8,
-    "description": "Tamio Suda is an ordinary salaryman. He experiences various stress throughout his daily life. His only pleasure is to set out on trips to find \"Zetsumeshi.\" Zetsumeshi refers to endangered ... See full summary »",
+    "description": "Tamio Suda is an ordinary salaryman. He experiences various stress throughout his daily life. His only pleasure is to set out on trips to find \"Zetsumeshi.\" Zetsumeshi refers to endangered",
     "stars": [
       "Kôji Yamamoto",
       "Takayuki Hamatsu",
@@ -57646,21 +56598,6 @@ window.CINECLASH_CATALOG =
       "Masayasu Kitayama"
     ],
     "votes": 95
-  },
-  {
-    "title": "Ugly Duckling Series: Don't",
-    "year": 2015,
-    "duration": "50 min",
-    "genre": "Drama, Romance",
-    "rating": 8.1,
-    "description": "After confessing her love in elementary school to her crush, Maewnam is literally crushed when he rejects her in front of all his friends. He calls her ugly and it's at that moment that she... See full summary »",
-    "stars": [
-      "Korapat Kirdpan",
-      "Puttichai Kasetsin",
-      "Jirakit Thawornwong",
-      "Wiraporn Jiravechsoontornkul"
-    ],
-    "votes": 94
   },
   {
     "title": "Wendell & Wild",
@@ -57698,21 +56635,9 @@ window.CINECLASH_CATALOG =
     "duration": "141 min",
     "genre": "Music",
     "rating": 8.3,
-    "description": "If there was anyone you could call a true queen of J-pop, it's most definitely Utada Hikaru. She's one of the best selling artists in Japan of all time, with her debut album hitting almost ... See full summary »",
+    "description": "If there was anyone you could call a true queen of J-pop, it's most definitely Utada Hikaru. She's one of the best selling artists in Japan of all time, with her debut album hitting almost",
     "stars": [
       "Hikaru Utada"
-    ],
-    "votes": 93
-  },
-  {
-    "title": "Wet Hot American Summer: First Day of Camp - Featurette",
-    "year": 2015,
-    "duration": "",
-    "genre": "Documentary, Short",
-    "rating": 7.9,
-    "description": "Add a Plot",
-    "stars": [
-      "Josh Oreck"
     ],
     "votes": 93
   },
@@ -57746,21 +56671,6 @@ window.CINECLASH_CATALOG =
     "votes": 92
   },
   {
-    "title": "The 21st Annual Screen Actors Guild Awards",
-    "year": 2015,
-    "duration": "",
-    "genre": "News",
-    "rating": 6.6,
-    "description": "Add a Plot",
-    "stars": [
-      "Robert Duvall",
-      "Mahershala Ali",
-      "Uzo Aduba",
-      "Jennifer Aniston"
-    ],
-    "votes": 92
-  },
-  {
     "title": "Good Luck",
     "year": 2012,
     "duration": "102 min",
@@ -57780,7 +56690,7 @@ window.CINECLASH_CATALOG =
     "duration": "98 min",
     "genre": "Drama",
     "rating": 7.6,
-    "description": "Gary \"Blue\" Meekins struggles against unusually high obstacles to turn his hopeless life into that of the American dream. As an adolescent growing up in the crime riddled streets of Harlem ... See full summary »",
+    "description": "Gary \"Blue\" Meekins struggles against unusually high obstacles to turn his hopeless life into that of the American dream. As an adolescent growing up in the crime riddled streets of Harlem",
     "stars": [
       "Don Wallace",
       "Keith David",
@@ -57795,7 +56705,7 @@ window.CINECLASH_CATALOG =
     "duration": "84 min",
     "genre": "Documentary, Music",
     "rating": 7.4,
-    "description": "Half a million people descend upon a tiny Serbian village for the 50th anniversary of the world's largest trumpet festival. Brasslands chronicles the cultural and musical collisions through... See full summary »",
+    "description": "Half a million people descend upon a tiny Serbian village for the 50th anniversary of the world's largest trumpet festival. Brasslands chronicles the cultural and musical collisions through",
     "stars": [
       "Emerson Hawley",
       "Dejan Petrovic"
@@ -57823,7 +56733,7 @@ window.CINECLASH_CATALOG =
     "duration": "93 min",
     "genre": "Drama, Sport",
     "rating": 5.8,
-    "description": "Raymundo, a Mexican ex-fighter forms an unlikely bond with a disgruntled man, whose life and relationship with his daughter are unraveling. The two men join forces to win a fight that could... See full summary »",
+    "description": "Raymundo, a Mexican ex-fighter forms an unlikely bond with a disgruntled man, whose life and relationship with his daughter are unraveling. The two men join forces to win a fight that could",
     "stars": [
       "Edy Ganem",
       "Erinn Westbrook",
@@ -57865,7 +56775,7 @@ window.CINECLASH_CATALOG =
     "duration": "98 min",
     "genre": "Biography",
     "rating": 7.1,
-    "description": "In the mid-1940s, Pau Casals is considered the best musician of the moment. Exiled in Prades, France, he promises not to play in public until the end of Franco's dictatorship, and tries to ... See full summary »",
+    "description": "In the mid-1940s, Pau Casals is considered the best musician of the moment. Exiled in Prades, France, he promises not to play in public until the end of Franco's dictatorship, and tries to",
     "stars": [
       "Joan Pera",
       "Nao Albet",
@@ -57893,7 +56803,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Action, Drama",
     "rating": 5.6,
-    "description": "Ray's life is turned upside down when he is jailed for the accidental vehicular homicide. Life behind bars is bitter and violent. Over crowding, male rape, and drug abuse are the order of ... See full summary »",
+    "description": "Ray's life is turned upside down when he is jailed for the accidental vehicular homicide. Life behind bars is bitter and violent. Over crowding, male rape, and drug abuse are the order of",
     "stars": [
       "Chalad Na Songkhla",
       "Stop",
@@ -57938,7 +56848,7 @@ window.CINECLASH_CATALOG =
     "duration": "109 min",
     "genre": "Documentary, Drama",
     "rating": 7.1,
-    "description": "Vanessa Beecroft is obsessively determined to adopt Sudanese twin orphans. Her consuming passion drives her marriage to a breaking point and fuels her controversial art, raising troubling ... See full summary »",
+    "description": "Vanessa Beecroft is obsessively determined to adopt Sudanese twin orphans. Her consuming passion drives her marriage to a breaking point and fuels her controversial art, raising troubling",
     "stars": [
       "Matthu Placek",
       "Vanessa Beecroft",
@@ -57973,21 +56883,6 @@ window.CINECLASH_CATALOG =
       "Gina Yashere"
     ],
     "votes": 87
-  },
-  {
-    "title": "SunGanges",
-    "year": 2019,
-    "duration": "75 min",
-    "genre": "Documentary, Adventure, News",
-    "rating": 7.8,
-    "description": "A panoptic film on water, energy and climate, SunGanges (SuryaGanga) is a wild and intense ride three filmmakers take across the vast Indian landscape in an attempt to connect the dots ... See full summary »",
-    "stars": [
-      "Naseeruddin Shah",
-      "Himanshu Thakkar",
-      "Parineeta Dandekar",
-      "Shripad Dharmadhikary"
-    ],
-    "votes": 86
   },
   {
     "title": "Dry",
@@ -58129,21 +57024,6 @@ window.CINECLASH_CATALOG =
     "votes": 83
   },
   {
-    "title": "Fate: The Winx Saga - The Afterparty",
-    "year": 2021,
-    "duration": "",
-    "genre": "Comedy, Fantasy, Reality-TV",
-    "rating": 6.2,
-    "description": "Join the stars of Netflix's hit series \"Fate: : The Winx Saga\" as they discuss the show's magic, play trivia and eat hot wings.",
-    "stars": [
-      "David Spade",
-      "Fortune Feimster",
-      "London Hughes",
-      "Abigail Cowen"
-    ],
-    "votes": 83
-  },
-  {
     "title": "Evicted",
     "year": 1999,
     "duration": "99 min",
@@ -58179,7 +57059,7 @@ window.CINECLASH_CATALOG =
     "duration": "120 min",
     "genre": "Thriller",
     "rating": 7.2,
-    "description": "The Plan - youth centric, high energy, prison break, suspense thriller, social and political film treated on world cinema treatment. The film is portrayed on a canvas of a prison amidst of ... See full summary »",
+    "description": "The Plan - youth centric, high energy, prison break, suspense thriller, social and political film treated on world cinema treatment. The film is portrayed on a canvas of a prison amidst of",
     "stars": [
       "Ramesh Bhat",
       "Gowthami Gowda",
@@ -58264,7 +57144,7 @@ window.CINECLASH_CATALOG =
     "duration": "24 min",
     "genre": "Mystery, Thriller",
     "rating": 4.6,
-    "description": "Teichi Gakuen is an advanced school in Tokyo with a high rate of students going on to the University of Tokyo. The 3rd year \"D\" group of students has an excellent academic record. However ... See full summary »",
+    "description": "Teichi Gakuen is an advanced school in Tokyo with a high rate of students going on to the University of Tokyo. The 3rd year \"D\" group of students has an excellent academic record. However",
     "stars": [
       "Ikuho Akiya",
       "Riko Kawase",
@@ -58309,7 +57189,7 @@ window.CINECLASH_CATALOG =
     "duration": "110 min",
     "genre": "Documentary",
     "rating": 7,
-    "description": "Directed by filmmaker and scientist Christi Cooper, YOUTH v. GOV is the story of America's youth taking on the world's most powerful government. In 2015, twenty one young plaintiffs, ages 8... See full summary »",
+    "description": "Directed by filmmaker and scientist Christi Cooper, YOUTH v. GOV is the story of America's youth taking on the world's most powerful government. In 2015, twenty one young plaintiffs, ages 8",
     "stars": [
       "James Hansen",
       "Julia Olson"
@@ -58322,7 +57202,7 @@ window.CINECLASH_CATALOG =
     "duration": "54 min",
     "genre": "Drama",
     "rating": 6.5,
-    "description": "Ryosuke Narumi works at a trading company and he is pretty good at his job. He dates Satoko Matsubara. The trading company has a business relationship with a private high school ... See full summary »",
+    "description": "Ryosuke Narumi works at a trading company and he is pretty good at his job. He dates Satoko Matsubara. The trading company has a business relationship with a private high school",
     "stars": [
       "Shô Sakurai",
       "Yû Aoi",
@@ -58337,7 +57217,7 @@ window.CINECLASH_CATALOG =
     "duration": "86 min",
     "genre": "Mystery, Sci-Fi, Thriller",
     "rating": 5,
-    "description": "A superstar reporter goes mad after his daughter disappears on a field mission in Iraq. After being released form a mental institution seven years later, he must mend his marriage and get ... See full summary »",
+    "description": "A superstar reporter goes mad after his daughter disappears on a field mission in Iraq. After being released form a mental institution seven years later, he must mend his marriage and get",
     "stars": [
       "Leonora Balcarce",
       "Carlos Belloso",
@@ -58352,7 +57232,7 @@ window.CINECLASH_CATALOG =
     "duration": "129 min",
     "genre": "Action, Thriller",
     "rating": 5.7,
-    "description": "In-separable childhood friends, Raju and Guddi are separated when Guddi's dad, Ramlal is arrested by the police for theft. Years later Guddi is now a cabaret dancer and singer, Seema, while... See full summary »",
+    "description": "In-separable childhood friends, Raju and Guddi are separated when Guddi's dad, Ramlal is arrested by the police for theft. Years later Guddi is now a cabaret dancer and singer, Seema, while",
     "stars": [
       "Shashi Kapoor",
       "Sulakshana Pandit",
@@ -58394,7 +57274,7 @@ window.CINECLASH_CATALOG =
     "duration": "71 min",
     "genre": "Horror",
     "rating": 7.3,
-    "description": "Florian Sirko and his one-time love, Macy Patterson face a problem. A curse was originally cast from the attack of Haidamark Cossacks on Nemirov Poland, 1648, spawning a mythological ... See full summary »",
+    "description": "Florian Sirko and his one-time love, Macy Patterson face a problem. A curse was originally cast from the attack of Haidamark Cossacks on Nemirov Poland, 1648, spawning a mythological",
     "stars": [
       "Martin Patterson",
       "Valerie Gatto",
@@ -58424,7 +57304,7 @@ window.CINECLASH_CATALOG =
     "duration": "48 min",
     "genre": "Documentary, Drama",
     "rating": 6.3,
-    "description": "Chocolate is the most popular candy in the world. Every year, three billion pounds of it are sold and consumed in the United States alone. It's one of our great indulgences. It's at once ... See full summary »",
+    "description": "Chocolate is the most popular candy in the world. Every year, three billion pounds of it are sold and consumed in the United States alone. It's one of our great indulgences. It's at once",
     "stars": [
       "Michael Allcock"
     ],
@@ -58520,7 +57400,7 @@ window.CINECLASH_CATALOG =
     "duration": "96 min",
     "genre": "Adventure, Drama, History",
     "rating": 9.4,
-    "description": "Inspired by true life events, in the Oyo Empire in the 1940's, Elesin Oba, the king's chief horseman, succumbs to the lure of beauty and sexual desire on the very evening he is set to die ... See full summary »",
+    "description": "Inspired by true life events, in the Oyo Empire in the 1940's, Elesin Oba, the king's chief horseman, succumbs to the lure of beauty and sexual desire on the very evening he is set to die",
     "stars": [
       "Odunlade Adekola",
       "Shaffy Bello",
@@ -58711,7 +57591,7 @@ window.CINECLASH_CATALOG =
     "duration": "103 min",
     "genre": "Biography, Drama, Sport",
     "rating": 6.8,
-    "description": "This biopic follows pro golfer Ariya Jutanugarn's journey to the LPGA tour, from child prodigy to her number-one ranking in the world. (Source: Netflix) Ariya Jutanugarn is a Thai ... See full summary »",
+    "description": "This biopic follows pro golfer Ariya Jutanugarn's journey to the LPGA tour, from child prodigy to her number-one ranking in the world. (Source: Netflix) Ariya Jutanugarn is a Thai",
     "stars": [
       "Marinda Halpin",
       "Krissiri Sukhsvasti",
@@ -58725,7 +57605,7 @@ window.CINECLASH_CATALOG =
     "duration": "115 min",
     "genre": "Action, Comedy",
     "rating": 6.4,
-    "description": "Things have changed for the charming foursome, the Merry Men. They've hung the boots on robbing the rich to give to the poor and focus squarely on running their businesses. AYO ALESINLOYE, ... See full synopsis »",
+    "description": "Things have changed for the charming foursome, the Merry Men. They've hung the boots on robbing the rich to give to the poor and focus squarely on running their businesses. AYO ALESINLOYE,",
     "stars": [
       "Damilola Adegbite",
       "Alex Asogwa",
@@ -58836,7 +57716,7 @@ window.CINECLASH_CATALOG =
     "duration": "89 min",
     "genre": "Documentary",
     "rating": 7.7,
-    "description": "Six bold people navigate the dangerous waters of Pakistan's current crisis to discover a new tomorrow: a cricket star starts a progressive political party, a female journalist goes behind ... See full summary »",
+    "description": "Six bold people navigate the dangerous waters of Pakistan's current crisis to discover a new tomorrow: a cricket star starts a progressive political party, a female journalist goes behind",
     "stars": [
       "Vaneeza Ahmad",
       "Arieb Azhar",
@@ -58876,7 +57756,7 @@ window.CINECLASH_CATALOG =
     "duration": "124 min",
     "genre": "Drama, History, War",
     "rating": 6.2,
-    "description": "The heart of this dramatic story based on the novel by Leopold Lahola is the search for the principle of humanism. The story plays in a single day towards the end of World War II in a rough... See full summary »",
+    "description": "The heart of this dramatic story based on the novel by Leopold Lahola is the search for the principle of humanism. The story plays in a single day towards the end of World War II in a rough",
     "stars": [
       "Boris Farkas",
       "Marko Igonda",
@@ -58988,7 +57868,7 @@ window.CINECLASH_CATALOG =
     "duration": "171 min",
     "genre": "Action, Comedy, Drama",
     "rating": 4.9,
-    "description": "An honest Hindu pandit (priest) is framed for embezzlement and rape, and not only dismissed from employment, but also arrested and imprisoned, leaving behind his family in destitution. On ... See full summary »",
+    "description": "An honest Hindu pandit (priest) is framed for embezzlement and rape, and not only dismissed from employment, but also arrested and imprisoned, leaving behind his family in destitution. On",
     "stars": [
       "Raaj Kumar",
       "Rakhee Gulzar",
@@ -59028,7 +57908,7 @@ window.CINECLASH_CATALOG =
     "duration": "120 min",
     "genre": "Documentary, Sport",
     "rating": 5.6,
-    "description": "The Nfinity Champions League is a group of 30 teams that represent the best of the best in competitive cheerleading. These teams were chosen based on their established records of excellence... See full summary »",
+    "description": "The Nfinity Champions League is a group of 30 teams that represent the best of the best in competitive cheerleading. These teams were chosen based on their established records of excellence",
     "stars": [
       "Tate Chalk",
       "Tyler Burdick",
@@ -59043,7 +57923,7 @@ window.CINECLASH_CATALOG =
     "duration": "80 min",
     "genre": "Drama",
     "rating": 4.9,
-    "description": "Firu Dorileanu, 30 unemployed, lives alone in his deceased parents' apartment. To pass his financial problems, he tries to sell his mother's contrabass. So, with this occasion, he discovers... See full summary »",
+    "description": "Firu Dorileanu, 30 unemployed, lives alone in his deceased parents' apartment. To pass his financial problems, he tries to sell his mother's contrabass. So, with this occasion, he discovers",
     "stars": [
       "Natalia Cebanu",
       "Constantin Florescu",
@@ -59070,7 +57950,7 @@ window.CINECLASH_CATALOG =
     "duration": "96 min",
     "genre": "Documentary",
     "rating": 8.6,
-    "description": "Today, the world knows restaurateur Ella Brennan as the matriarch of a Creole-flavored dining dynasty dating back over half a century. She has become a household name in the restaurant ... See full summary »",
+    "description": "Today, the world knows restaurateur Ella Brennan as the matriarch of a Creole-flavored dining dynasty dating back over half a century. She has become a household name in the restaurant",
     "stars": [
       "Meg Bickford",
       "Marcelle Bienvenu",
@@ -59274,7 +58154,7 @@ window.CINECLASH_CATALOG =
     "duration": "101 min",
     "genre": "",
     "rating": 7.7,
-    "description": "\"This is the summer of love, confusion, and the smell of fresh cut grass,\" says drifting protagonist Zac Peace (David Wike), an accomplished recent graduate. Zac arrives at his Long Island ... See full summary »",
+    "description": "\"This is the summer of love, confusion, and the smell of fresh cut grass,\" says drifting protagonist Zac Peace (David Wike), an accomplished recent graduate. Zac arrives at his Long Island",
     "stars": [
       "David Wike",
       "P.J. Heslin",
@@ -59397,7 +58277,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Comedy",
     "rating": 6.4,
-    "description": "\"Moms at War\" is about two mothers who live in the same neighborhood, but hate each other. One felt that the other was a village girl who just got into money and is not fit to be in society... See full summary »",
+    "description": "\"Moms at War\" is about two mothers who live in the same neighborhood, but hate each other. One felt that the other was a village girl who just got into money and is not fit to be in society",
     "stars": [
       "Tomi Adeoye",
       "Lilian Afegbai",
@@ -59446,21 +58326,6 @@ window.CINECLASH_CATALOG =
     "votes": 55
   },
   {
-    "title": "Ugly Duckling Series: Perfect Match",
-    "year": 2015,
-    "duration": "50 min",
-    "genre": "Drama, Romance",
-    "rating": 7.4,
-    "description": "Junita, nicknamed Junior, did plastic surgery because people said her face was fat. Without knowing that she was allergic to chemicals, it ruined her face by causing acne everywhere. It ... See full summary »",
-    "stars": [
-      "Onnicha Akkharasewaya",
-      "Worranit Thawornwong",
-      "Sonia Couling",
-      "Nicole Theriault"
-    ],
-    "votes": 54
-  },
-  {
     "title": "Saverio Raimondo: Il satiro parlante",
     "year": 2019,
     "duration": "53 min",
@@ -59478,7 +58343,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Drama",
     "rating": 7.2,
-    "description": "Poong Sang took care of his 4 younger siblings and supported them financially because his parents did not support them. His younger siblings are first younger brother Jin Sang, first ... See full summary »",
+    "description": "Poong Sang took care of his 4 younger siblings and supported them financially because his parents did not support them. His younger siblings are first younger brother Jin Sang, first",
     "stars": [
       "Joon-Sang Yoo",
       "Ji-Ho Oh",
@@ -59493,7 +58358,7 @@ window.CINECLASH_CATALOG =
     "duration": "47 min",
     "genre": "Animation",
     "rating": 5.1,
-    "description": "Tayo the Little Bus is the best kids animation where kids learn about vehicles and friendship. Tayo, the blue kid bus, drives around the town and meets various other vehicles and learn ... See full summary »",
+    "description": "Tayo the Little Bus is the best kids animation where kids learn about vehicles and friendship. Tayo, the blue kid bus, drives around the town and meets various other vehicles and learn",
     "stars": [
       "Matt Anipen",
       "Anna Desmarais",
@@ -59523,7 +58388,7 @@ window.CINECLASH_CATALOG =
     "duration": "95 min",
     "genre": "Comedy",
     "rating": 6.1,
-    "description": "CASPER and PHILIP two friends in their mid twenties, share a flat and spend most of their time chasing after girls. They chat girls up together, then flip a coin about who gets to pursue ... See full summary »",
+    "description": "CASPER and PHILIP two friends in their mid twenties, share a flat and spend most of their time chasing after girls. They chat girls up together, then flip a coin about who gets to pursue",
     "stars": [
       "Max Fraser",
       "Eglantine Rembauville-Nicolle",
@@ -59578,7 +58443,7 @@ window.CINECLASH_CATALOG =
     "duration": "71 min",
     "genre": "Documentary",
     "rating": 6.9,
-    "description": "An extension of Renae Bluitt's In Her Shoes blog, \"She Did That.\" offers an intimate peek inside the lives of four Black women who continuously raise the glass ceiling for future ... See full summary »",
+    "description": "An extension of Renae Bluitt's In Her Shoes blog, \"She Did That.\" offers an intimate peek inside the lives of four Black women who continuously raise the glass ceiling for future",
     "stars": [
       "Luvvie Ajayi Jones",
       "Fifi Bell",
@@ -59593,7 +58458,7 @@ window.CINECLASH_CATALOG =
     "duration": "100 min",
     "genre": "Drama, Romance",
     "rating": 6.1,
-    "description": "A young man at odds with his father returns home when his younger brother runs away. But his father is a criminal mastermind and his home town is a complicated place. Will he escape the ... See full summary »",
+    "description": "A young man at odds with his father returns home when his younger brother runs away. But his father is a criminal mastermind and his home town is a complicated place. Will he escape the",
     "stars": [
       "Berk Oktay",
       "Pelin Akil",
@@ -59650,7 +58515,7 @@ window.CINECLASH_CATALOG =
     "duration": "58 min",
     "genre": "Documentary",
     "rating": 6.1,
-    "description": "How is it we know so little about something so widespread? None of us are more than a family member or neighbor away from autism. Sounding the Alarm follows autism families as they ... See full summary »",
+    "description": "How is it we know so little about something so widespread? None of us are more than a family member or neighbor away from autism. Sounding the Alarm follows autism families as they",
     "stars": [
       "Stephen Kanne",
       "James Lankford",
@@ -59677,7 +58542,7 @@ window.CINECLASH_CATALOG =
     "duration": "43 min",
     "genre": "Action, History",
     "rating": 7,
-    "description": "Can a young woman prove her loyalty to her country and her family? Lan Yan Zhi (Zhao Li Ying) is a privileged banker's daughter in Shanghai and a student activist who mistakenly comes into ... See full summary »",
+    "description": "Can a young woman prove her loyalty to her country and her family? Lan Yan Zhi (Zhao Li Ying) is a privileged banker's daughter in Shanghai and a student activist who mistakenly comes into",
     "stars": [
       "Zanilia Zhao",
       "Yi Lu",
@@ -59707,7 +58572,7 @@ window.CINECLASH_CATALOG =
     "duration": "82 min",
     "genre": "Comedy",
     "rating": 5.1,
-    "description": "Four actors of high hopes decide to enroll in an acting course that could guarantee them a role in the film of an important director, Guido Faliér. The course, however, turns out to be a ... See full summary »",
+    "description": "Four actors of high hopes decide to enroll in an acting course that could guarantee them a role in the film of an important director, Guido Faliér. The course, however, turns out to be a",
     "stars": [
       "Dany Greggio",
       "Francesco Parisi",
@@ -59734,7 +58599,7 @@ window.CINECLASH_CATALOG =
     "duration": "72 min",
     "genre": "Documentary, Adventure, Drama",
     "rating": 6.3,
-    "description": "A fresh look on HIV/AIDS through the lens of Millennials. What happened to an 'AIDS free generation'? Award-winning filmmaker Andrew Jenks embarks on a global journey, traveling to South ... See full summary »",
+    "description": "A fresh look on HIV/AIDS through the lens of Millennials. What happened to an 'AIDS free generation'? Award-winning filmmaker Andrew Jenks embarks on a global journey, traveling to South",
     "stars": [
       "Paige Rawl",
       "Lucky Mufundisi",
@@ -59764,7 +58629,7 @@ window.CINECLASH_CATALOG =
     "duration": "108 min",
     "genre": "Thriller",
     "rating": 4.9,
-    "description": "dr Jati, who just serves in Pagar Alas Village, turns out to be a cold-blooded killer who is obsessed with human hearts. He accidentally meets Sukma, a Lengger dancer. Sukma's dance makes ... See full summary »",
+    "description": "dr Jati, who just serves in Pagar Alas Village, turns out to be a cold-blooded killer who is obsessed with human hearts. He accidentally meets Sukma, a Lengger dancer. Sukma's dance makes",
     "stars": [
       "Della Dartyan",
       "Refal Hady",
@@ -59821,7 +58686,7 @@ window.CINECLASH_CATALOG =
     "duration": "80 min",
     "genre": "Drama",
     "rating": 6.3,
-    "description": "Three inner-city teens find themselves stranded in a secluded beach house. In this strange and magical setting, Ray, his brother Spider and the pregnant Maria, set up housekeeping for the ... See full summary »",
+    "description": "Three inner-city teens find themselves stranded in a secluded beach house. In this strange and magical setting, Ray, his brother Spider and the pregnant Maria, set up housekeeping for the",
     "stars": [
       "Ray Santiago",
       "Marilyn Soto Santiago",
@@ -59950,7 +58815,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Comedy, Romance",
     "rating": 7.5,
-    "description": "Smart, young forest ranger marries handsome, flaky, artist dude, way too quickly. Their happy-giddy start degrades through a surreal roller-coaster ride whipped to a frenzy with neurotic ... See full summary »",
+    "description": "Smart, young forest ranger marries handsome, flaky, artist dude, way too quickly. Their happy-giddy start degrades through a surreal roller-coaster ride whipped to a frenzy with neurotic",
     "stars": [
       "Monica Snow",
       "Jonathan Aube",
@@ -60008,7 +58873,7 @@ window.CINECLASH_CATALOG =
     "duration": "47 min",
     "genre": "Comedy",
     "rating": 3.5,
-    "description": "An online wedding, a one-night stand turned three-week standoff, difficult choices and hope pushing through in a smile--a lot can happen when everyone stays at home. Home Stories is an ... See full summary »",
+    "description": "An online wedding, a one-night stand turned three-week standoff, difficult choices and hope pushing through in a smile--a lot can happen when everyone stays at home. Home Stories is an",
     "stars": [
       "Arjun Mathur",
       "Apoorva Arora",
@@ -60016,16 +58881,6 @@ window.CINECLASH_CATALOG =
       "Tanmay Dhanania"
     ],
     "votes": 45
-  },
-  {
-    "title": "The Mosque Next Door",
-    "year": 2017,
-    "duration": "",
-    "genre": "Reality-TV",
-    "rating": 7.7,
-    "description": "For many non-Muslim Australians, the mosque is a symbol of growing fears that Islam is antithetical to the Australian way of life, even dangerous. But many Australians have never stepped ... See full summary »",
-    "stars": [],
-    "votes": 44
   },
   {
     "title": "Zum zum zum n° 2",
@@ -60088,7 +58943,7 @@ window.CINECLASH_CATALOG =
     "duration": "105 min",
     "genre": "Musical, Thriller",
     "rating": 4.3,
-    "description": "The story is a psycho-drama full of turns of events right from the opening scene and well after the credits. Icaro, a man in his late thirties with a wife and a child he loves and a safe ... See full summary »",
+    "description": "The story is a psycho-drama full of turns of events right from the opening scene and well after the credits. Icaro, a man in his late thirties with a wife and a child he loves and a safe",
     "stars": [
       "Gianni Caminiti",
       "Daniela Monico",
@@ -60103,7 +58958,7 @@ window.CINECLASH_CATALOG =
     "duration": "84 min",
     "genre": "Drama",
     "rating": 6.8,
-    "description": "A teenager in Arkansas searches for identity in the headscarf and a motorcycle in the aftermath of her father's imprisonment. Set in 2006, the film explores the results of Arab and Muslim ... See full summary »",
+    "description": "A teenager in Arkansas searches for identity in the headscarf and a motorcycle in the aftermath of her father's imprisonment. Set in 2006, the film explores the results of Arab and Muslim",
     "stars": [
       "Dominic Rains",
       "Clara Khoury",
@@ -60120,21 +58975,6 @@ window.CINECLASH_CATALOG =
     "rating": 6.6,
     "description": "Blaming a crooked media mogul for the death of his journalist sister, a surgeon enlists the help of a beautiful psychologist to get revenge.",
     "stars": [],
-    "votes": 43
-  },
-  {
-    "title": "The 2014 Film Independent Spirit Awards",
-    "year": 2014,
-    "duration": "",
-    "genre": "",
-    "rating": 5.9,
-    "description": "Add a Plot",
-    "stars": [
-      "Patton Oswalt",
-      "Matthew McConaughey",
-      "Reese Witherspoon",
-      "Lake Bell"
-    ],
     "votes": 43
   },
   {
@@ -60171,7 +59011,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Romance",
     "rating": 5.1,
-    "description": "Tall, attractive Anajli, in the company of two female friends in a convertible are stranded with a flat tire. Unable to change the tire, they wait for someone to help them. It is then they ... See full summary »",
+    "description": "Tall, attractive Anajli, in the company of two female friends in a convertible are stranded with a flat tire. Unable to change the tire, they wait for someone to help them. It is then they",
     "stars": [
       "Sumit Nijhawan",
       "Nethra Raghuraman",
@@ -60431,7 +59271,7 @@ window.CINECLASH_CATALOG =
     "duration": "94 min",
     "genre": "Action, Thriller",
     "rating": 5.2,
-    "description": "THE ISLAND Is a film created primarily to showcase the best of Nigerian culture and to give viewers an in-depth, enjoyable cultural experience whilst celebrating the efforts of the Nigerian... See full summary »",
+    "description": "THE ISLAND Is a film created primarily to showcase the best of Nigerian culture and to give viewers an in-depth, enjoyable cultural experience whilst celebrating the efforts of the Nigerian",
     "stars": [
       "Femi Adebayo",
       "Segun Arinze",
@@ -60461,7 +59301,7 @@ window.CINECLASH_CATALOG =
     "duration": "102 min",
     "genre": "Comedy, Horror",
     "rating": 3.4,
-    "description": "When Elena Castaño was a child, she was able to communicate with the spirits of the dead - but that ability disappeared when she grew up. Now, Elena and her sister Ursula survive making ... See full summary »",
+    "description": "When Elena Castaño was a child, she was able to communicate with the spirits of the dead - but that ability disappeared when she grew up. Now, Elena and her sister Ursula survive making",
     "stars": [
       "Ruxandra Oancea",
       "Alba Messa",
@@ -60506,7 +59346,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Documentary",
     "rating": 7.3,
-    "description": "When the slave boats docked in the Americas, Cuba and the Caribbean, hundreds of cultures and religions came with the Africans but only one survived the plantations. To date, the most ... See full summary »",
+    "description": "When the slave boats docked in the Americas, Cuba and the Caribbean, hundreds of cultures and religions came with the Africans but only one survived the plantations. To date, the most",
     "stars": [
       "Gary Shaw",
       "Iyanifa Ajisebo Abimbola",
@@ -60566,7 +59406,7 @@ window.CINECLASH_CATALOG =
     "duration": "96 min",
     "genre": "Comedy, Drama",
     "rating": 3.1,
-    "description": "Cartoonist Hesham provides for his family and works in a newspaper. He uses his drawings in the face of all kinds of corruption, but he is surprised by the issuance of a decision by the ... See full summary »",
+    "description": "Cartoonist Hesham provides for his family and works in a newspaper. He uses his drawings in the face of all kinds of corruption, but he is surprised by the issuance of a decision by the",
     "stars": [
       "Mahmood Al-Husaini",
       "Esam Alamuddin",
@@ -60677,7 +59517,7 @@ window.CINECLASH_CATALOG =
     "duration": "75 min",
     "genre": "Documentary",
     "rating": 7.5,
-    "description": "\"Little Town of Bethlehem\" shares the gripping story of three men, born into violence, willing to risk everything to bring an end to violence in their lifetime. A Christian, a Muslim, and a... See full summary »",
+    "description": "\"Little Town of Bethlehem\" shares the gripping story of three men, born into violence, willing to risk everything to bring an end to violence in their lifetime. A Christian, a Muslim, and a",
     "stars": [
       "Sami Awad",
       "Azzeh, \""
@@ -60720,7 +59560,7 @@ window.CINECLASH_CATALOG =
     "duration": "115 min",
     "genre": "Action, Drama",
     "rating": 5.2,
-    "description": "A homeless teenage mother, who gets herself trapped in prostitution and drug trafficking for seven years in order to secure a good life for her son, decides to quit but her boss, a ruthless... See full summary »",
+    "description": "A homeless teenage mother, who gets herself trapped in prostitution and drug trafficking for seven years in order to secure a good life for her son, decides to quit but her boss, a ruthless",
     "stars": [
       "Ivie Okujaye",
       "Sambasa Nzeribe",
@@ -60745,7 +59585,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Drama, Fantasy, History",
     "rating": 8.2,
-    "description": "In ancient Thailand a war breaks out between the Thais and the Burmese. When defeat became imminent for the Thais, a warrior kills his wife and curses her soul to be the protector of all ... See full summary »",
+    "description": "In ancient Thailand a war breaks out between the Thais and the Burmese. When defeat became imminent for the Thais, a warrior kills his wife and curses her soul to be the protector of all",
     "stars": [
       "Nawat Kulrattanarak",
       "Woranuch BhiromBhakdi",
@@ -60759,7 +59599,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Romance",
     "rating": 7.6,
-    "description": "Khun Hawk is a grumpy graduate from the Faculty of Engineering, majoring in aviation. He is cold and rarely expresses any emotion. When he attends the job interview at Palmer Airlines, the ... See full summary »",
+    "description": "Khun Hawk is a grumpy graduate from the Faculty of Engineering, majoring in aviation. He is cold and rarely expresses any emotion. When he attends the job interview at Palmer Airlines, the",
     "stars": [
       "Jirakit Thawornwong",
       "Zuvapit Traipornworakit",
@@ -60855,7 +59695,7 @@ window.CINECLASH_CATALOG =
     "duration": "49 min",
     "genre": "Documentary, Short, History",
     "rating": 6.2,
-    "description": "They say it's over 2000 years old, and more than 4,000 miles long. But even today nobody really knows for sure. The Great Wall of China is one of the world's famous buildings but it is ... See full summary »",
+    "description": "They say it's over 2000 years old, and more than 4,000 miles long. But even today nobody really knows for sure. The Great Wall of China is one of the world's famous buildings but it is",
     "stars": [
       "William Lindesay",
       "Paul Rabiger"
@@ -60908,24 +59748,12 @@ window.CINECLASH_CATALOG =
     "votes": 32
   },
   {
-    "title": "Virunga: Gorillas in Peril",
-    "year": 2015,
-    "duration": "28 min",
-    "genre": "Documentary",
-    "rating": 6.5,
-    "description": "A behind the scenes look at the Academy Award nominated original documentary, Virunga, from Executive Producer Leonardo DiCaprio. Hosted by Soledad O'Brien, go inside the incredible, true ... See full summary »",
-    "stars": [
-      "Brien, \""
-    ],
-    "votes": 32
-  },
-  {
     "title": "The Daniel Project",
     "year": 2011,
     "duration": "85 min",
     "genre": "Documentary, History, Mystery",
     "rating": 5.7,
-    "description": "Ancient documents are unlocked by scholars that reveal an astounding panorama of future events that will touch the lives of every living creature on planet earth - yet they claim that only ... See full summary »",
+    "description": "Ancient documents are unlocked by scholars that reveal an astounding panorama of future events that will touch the lives of every living creature on planet earth - yet they claim that only",
     "stars": [
       "Phil Booth",
       "Jeremy Hitchen",
@@ -60967,7 +59795,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Family",
     "rating": 8,
-    "description": "Oh Yuck is a fast-paced, fact-laden, laugh out loud, narrative comedy series for 11-13 year old kids that mixes live action with animation to explore the science behind all things ooey, ... See full summary »",
+    "description": "Oh Yuck is a fast-paced, fact-laden, laugh out loud, narrative comedy series for 11-13 year old kids that mixes live action with animation to explore the science behind all things ooey,",
     "stars": [
       "Kayne Tremills",
       "Nia Roam",
@@ -61027,7 +59855,7 @@ window.CINECLASH_CATALOG =
     "duration": "93 min",
     "genre": "Documentary",
     "rating": 6.7,
-    "description": "Filmmaker Sterlin Harjo follows Native artists for a year as they navigate their careers in the US and abroad. The film explores the immense complexities each artist faces in regards to ... See full summary »",
+    "description": "Filmmaker Sterlin Harjo follows Native artists for a year as they navigate their careers in the US and abroad. The film explores the immense complexities each artist faces in regards to",
     "stars": [
       "Micah P. Hinson",
       "Julia Keefe"
@@ -61096,7 +59924,7 @@ window.CINECLASH_CATALOG =
     "duration": "46 min",
     "genre": "Drama",
     "rating": 7,
-    "description": "A young man whose life revolves around basketball must give up what he loves the most to repent for a horrible tragedy. Tuan Chen-Feng (Hsing-shu Yen), a talented high school basketball ... See full summary »",
+    "description": "A young man whose life revolves around basketball must give up what he loves the most to repent for a horrible tragedy. Tuan Chen-Feng (Hsing-shu Yen), a talented high school basketball",
     "stars": [
       "Hsing-shu Yen",
       "Angela Shao-Han Chang",
@@ -61126,7 +59954,7 @@ window.CINECLASH_CATALOG =
     "duration": "4 min",
     "genre": "Music",
     "rating": 6.6,
-    "description": "\"Just Look Up\" is a collaboration between Ariana Grande and Kid Cudi released on on December 3rd, 2021 for the film Don't Look Up, in which both artists are also part of the cast. This ... See full summary »",
+    "description": "\"Just Look Up\" is a collaboration between Ariana Grande and Kid Cudi released on on December 3rd, 2021 for the film Don't Look Up, in which both artists are also part of the cast. This",
     "stars": [
       "Ariana Grande",
       "Kid Cudi"
@@ -61166,7 +59994,7 @@ window.CINECLASH_CATALOG =
     "duration": "116 min",
     "genre": "Drama",
     "rating": 7.9,
-    "description": "Sila-Sila is a ghost story about a man whose breakups tend to be messy and traumatic not only for him but also for the receiving end. When he encounters his ex-boyfriend again, he finds ... See full summary »",
+    "description": "Sila-Sila is a ghost story about a man whose breakups tend to be messy and traumatic not only for him but also for the receiving end. When he encounters his ex-boyfriend again, he finds",
     "stars": [
       "Gio Gahol",
       "Topper Fabregas",
@@ -61181,7 +60009,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Documentary, Drama, Family",
     "rating": 7,
-    "description": "In Georgetown, Guyana, Muscle and his mother Mary each struggle to break free of something, bringing them into conflict with each other. Mary (74) wanders on the road, begs for money to get... See full summary »",
+    "description": "In Georgetown, Guyana, Muscle and his mother Mary each struggle to break free of something, bringing them into conflict with each other. Mary (74) wanders on the road, begs for money to get",
     "stars": [
       "Christy Garland"
     ],
@@ -61203,7 +60031,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Documentary",
     "rating": 6.9,
-    "description": "London has never attracted so many Italians as in the last few years. In a period when European immigration is continuously debated in politics, INFLUX, through the perspective of ... See full summary »",
+    "description": "London has never attracted so many Italians as in the last few years. In a period when European immigration is continuously debated in politics, INFLUX, through the perspective of",
     "stars": [
       "Luca Vullo"
     ],
@@ -61227,7 +60055,7 @@ window.CINECLASH_CATALOG =
     "duration": "98 min",
     "genre": "Documentary",
     "rating": 7.7,
-    "description": "Every day, 93 million single-use straws are used in Indonesia. Together with other plastic waste, they end up in the ocean, break down into microplastics, are eaten by marine life, and end ... See full summary »",
+    "description": "Every day, 93 million single-use straws are used in Indonesia. Together with other plastic waste, they end up in the ocean, break down into microplastics, are eaten by marine life, and end",
     "stars": [
       "Dandhy Dwi Laksono",
       "Rahung Nasution"
@@ -61240,7 +60068,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Comedy, Drama, Romance",
     "rating": 7.2,
-    "description": "Thesis, a second-year student at the Faculty of Veterinary. One rainy day he meets Swy Si, a girl who is afraid of rain. They became great friends, but due to Swy Si fear of the rain, ... See full summary »",
+    "description": "Thesis, a second-year student at the Faculty of Veterinary. One rainy day he meets Swy Si, a girl who is afraid of rain. They became great friends, but due to Swy Si fear of the rain,",
     "stars": [
       "Sutatta Udomsilp",
       "Achirawich Saliwattana",
@@ -61255,7 +60083,7 @@ window.CINECLASH_CATALOG =
     "duration": "92 min",
     "genre": "Documentary, Biography, History",
     "rating": 7,
-    "description": "The Belgian filmmaker Manu Bonmariage, known as the spiritual father of the Striptease show, now has Alzheimer's at 76. Although his memory plays tricks on him, his daughter Emmanuelle goes... See full summary »",
+    "description": "The Belgian filmmaker Manu Bonmariage, known as the spiritual father of the Striptease show, now has Alzheimer's at 76. Although his memory plays tricks on him, his daughter Emmanuelle goes",
     "stars": [
       "Manu Bonmariage"
     ],
@@ -61312,7 +60140,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Romance",
     "rating": 7.9,
-    "description": "T-Rex is majoring in Geology at the Faculty of Science. He is known for being a huge fan of dinosaurs. One day he falls in love with a girl and decides to persistently pursue her, ... See full summary »",
+    "description": "T-Rex is majoring in Geology at the Faculty of Science. He is known for being a huge fan of dinosaurs. One day he falls in love with a girl and decides to persistently pursue her,",
     "stars": [
       "Kacha Nontanan Anchuleepradit",
       "Korawit Boonsri",
@@ -61332,21 +60160,6 @@ window.CINECLASH_CATALOG =
       "Nikita Willy",
       "Jessica Mila",
       "Kimberly Ryder"
-    ],
-    "votes": 26
-  },
-  {
-    "title": "Model",
-    "year": 2020,
-    "duration": "",
-    "genre": "Reality-TV",
-    "rating": 5.9,
-    "description": "MODEL, is a 10 part series that delves into the world of the fashion industry. Talented models and wild cards from around SA audition in this year's competition to try and cement their ... See full summary »",
-    "stars": [
-      "Christia Visser",
-      "Pieter Black",
-      "Coenraad de Mol",
-      "Kholofelo Mabusela"
     ],
     "votes": 26
   },
@@ -61398,7 +60211,7 @@ window.CINECLASH_CATALOG =
     "duration": "52 min",
     "genre": "Documentary",
     "rating": 6.5,
-    "description": "Since the invention of the light bulb, natural darkness is increasingly invaded by artificial light. Once, light was considered unconditionally as an entirely positive element: the more ... See full summary »",
+    "description": "Since the invention of the light bulb, natural darkness is increasingly invaded by artificial light. Once, light was considered unconditionally as an entirely positive element: the more",
     "stars": [
       "Anja Freyhoff",
       "Thomas Uhlmann"
@@ -61438,7 +60251,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Romance",
     "rating": 8.6,
-    "description": "Sung dreams of making Kiran, from the comm-arts department, her boyfriend. Until one day, Sung was hit by a tricycle and made a promise with the god of death. The god of death sent her back... See full summary »",
+    "description": "Sung dreams of making Kiran, from the comm-arts department, her boyfriend. Until one day, Sung was hit by a tricycle and made a promise with the god of death. The god of death sent her back",
     "stars": [
       "Korawit Boonsri",
       "Nawat Phumphothingam",
@@ -61462,24 +60275,12 @@ window.CINECLASH_CATALOG =
     "votes": 24
   },
   {
-    "title": "Fuller House Featurette",
-    "year": 2016,
-    "duration": "",
-    "genre": "Short",
-    "rating": 8.3,
-    "description": "Add a Plot",
-    "stars": [
-      "Twain Taylor"
-    ],
-    "votes": 24
-  },
-  {
     "title": "Iyore",
     "year": 2015,
     "duration": "140 min",
     "genre": "Drama",
     "rating": 7.5,
-    "description": "Iyore (The Return) or as I like to call it \"Playing with Reincarnation\" is a twisted tale of love transcending from one lifetime to another and growing stronger each time it is reenacted. ... See full summary »",
+    "description": "Iyore (The Return) or as I like to call it \"Playing with Reincarnation\" is a twisted tale of love transcending from one lifetime to another and growing stronger each time it is reenacted.",
     "stars": [
       "Rita Dominic",
       "Joseph Benjamin",
@@ -61523,7 +60324,7 @@ window.CINECLASH_CATALOG =
     "duration": "78 min",
     "genre": "Documentary",
     "rating": 5.5,
-    "description": "Their arrival in Germany is not exactly a warm welcome: Asylum seekers in Brandenburg are first brought to the initial registration center in Eisenhüttenstadt. Also Wasim from Syria, Mathew... See full summary »",
+    "description": "Their arrival in Germany is not exactly a warm welcome: Asylum seekers in Brandenburg are first brought to the initial registration center in Eisenhüttenstadt. Also Wasim from Syria, Mathew",
     "stars": [
       "Benjamin Kahlmeyer"
     ],
@@ -61535,7 +60336,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Comedy",
     "rating": 3.7,
-    "description": "She is confident, innately kind, privileged, misinformed, graceful, unapologetic, well dressed and glamorous. Her style is on point, money beyond belief. You must be wondering if it's even ... See full summary »",
+    "description": "She is confident, innately kind, privileged, misinformed, graceful, unapologetic, well dressed and glamorous. Her style is on point, money beyond belief. You must be wondering if it's even",
     "stars": [
       "Radhika Apte",
       "Vicky Kaushal",
@@ -61543,21 +60344,6 @@ window.CINECLASH_CATALOG =
       "Mallika Dua"
     ],
     "votes": 24
-  },
-  {
-    "title": "La Tarotista",
-    "year": 2021,
-    "duration": "",
-    "genre": "Short, Comedy, Talk-Show",
-    "rating": 7.6,
-    "description": "A humored Netflix special sketch starring Yolanda Ramos playing a tarot reader who predicts the upcoming attractions from the streaming platform, presenting the new TV shows and miniseries ... See full summary »",
-    "stars": [
-      "Yolanda Ramos",
-      "Omar Ayuso",
-      "Martina Cariddi",
-      "Mario Casas"
-    ],
-    "votes": 23
   },
   {
     "title": "U-Prince: The Badass Baker",
@@ -61579,7 +60365,7 @@ window.CINECLASH_CATALOG =
     "duration": "87 min",
     "genre": "Documentary",
     "rating": 7.5,
-    "description": "A Manhattan restaurateur makes the bold decision to boost his struggling eatery's business by putting up the iconic zebra wallpaper made world-famous by the recently shuttered Upper East ... See full summary »",
+    "description": "A Manhattan restaurateur makes the bold decision to boost his struggling eatery's business by putting up the iconic zebra wallpaper made world-famous by the recently shuttered Upper East",
     "stars": [
       "Dale Anderson",
       "Doug Anderson",
@@ -61658,27 +60444,12 @@ window.CINECLASH_CATALOG =
     "duration": "94 min",
     "genre": "Comedy, Drama",
     "rating": 7.6,
-    "description": "Romantic Christian comedy about navigating relationships - from being single looking for Mr. Right in all the wrong places and blended families navigating the challenges of becoming one ... See full summary »",
+    "description": "Romantic Christian comedy about navigating relationships - from being single looking for Mr. Right in all the wrong places and blended families navigating the challenges of becoming one",
     "stars": [
       "Jabriah Anderson",
       "Calvin Collins",
       "Tikki Collins",
       "Donna Griggs"
-    ],
-    "votes": 22
-  },
-  {
-    "title": "Ugly Duckling Series: Boy's Paradise",
-    "year": 2015,
-    "duration": "60 min",
-    "genre": "Drama, Romance",
-    "rating": 7.2,
-    "description": "Happily living alone in her family's pension, Mami vows to die before dating a man, after her mother catches on to her secret girl crush. So her mother rents out the house to three guys in ... See full summary »",
-    "stars": [
-      "Esther Supreeleela",
-      "Korn Khunatipapisiri",
-      "Kitkasem McFadden",
-      "Sean Jindachot"
     ],
     "votes": 22
   },
@@ -61797,7 +60568,7 @@ window.CINECLASH_CATALOG =
     "duration": "84 min",
     "genre": "Comedy",
     "rating": 7.5,
-    "description": "The fun-loving, easy-going, 60- to 75-year-old Senior Softball team \"Kids At Heart\" suddenly decide to go for their secret dream -- win the World Series (BEFORE IT'S TOO LATE!) Renaming ... See full summary »",
+    "description": "The fun-loving, easy-going, 60- to 75-year-old Senior Softball team \"Kids At Heart\" suddenly decide to go for their secret dream -- win the World Series (BEFORE IT'S TOO LATE!) Renaming",
     "stars": [
       "Barry Primus",
       "Mel Novak",
@@ -61812,7 +60583,7 @@ window.CINECLASH_CATALOG =
     "duration": "51 min",
     "genre": "Comedy",
     "rating": 7.4,
-    "description": "Country legend Mel Tillis, \"Green Acres\" alum Tom Lester and silly man supreme Tim Conway provide a crash course in how not to hunt in this hilarious send up of the sporting life that lands... See full summary »",
+    "description": "Country legend Mel Tillis, \"Green Acres\" alum Tom Lester and silly man supreme Tim Conway provide a crash course in how not to hunt in this hilarious send up of the sporting life that lands",
     "stars": [
       "Tom Lester",
       "Mel Tillis",
@@ -61850,27 +60621,12 @@ window.CINECLASH_CATALOG =
     "votes": 21
   },
   {
-    "title": "Ugly Duckling Series: Pity Girl",
-    "year": 2015,
-    "duration": "50 min",
-    "genre": "Drama, Romance",
-    "rating": 6.4,
-    "description": "After falling from a tree 6 months ago Alice now suffers having \"goldfish memory\". She's in fact so forgetful that she doesn't even remember her boyfriend breaking up with her 14 times ... See full summary »",
-    "stars": [
-      "Onnicha Akkharasewaya",
-      "Sonia Couling",
-      "Nicole Theriault",
-      "Niti Chaichitatorn"
-    ],
-    "votes": 21
-  },
-  {
     "title": "Shadow Trade",
     "year": 2016,
     "duration": "50 min",
     "genre": "Documentary",
     "rating": 7.6,
-    "description": "Thailand, one of the most beautiful and peaceful nations in the world, houses a deadly secret. A savage and harrowing trade reaches across the entire country yet is somehow hidden from most... See full summary »",
+    "description": "Thailand, one of the most beautiful and peaceful nations in the world, houses a deadly secret. A savage and harrowing trade reaches across the entire country yet is somehow hidden from most",
     "stars": [
       "John Keeble"
     ],
@@ -61954,7 +60710,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Crime, Thriller",
     "rating": 2.5,
-    "description": "Homicide cop Ray Maldonado has found a third dead hooker in as many days. The realization that he's got a serial killer on his hands hits him. Wanting to stop the string of murders, ... See full summary »",
+    "description": "Homicide cop Ray Maldonado has found a third dead hooker in as many days. The realization that he's got a serial killer on his hands hits him. Wanting to stop the string of murders,",
     "stars": [
       "Pat Asanti",
       "Leah Ann Cevoli",
@@ -62039,7 +60795,7 @@ window.CINECLASH_CATALOG =
     "duration": "50 min",
     "genre": "Documentary",
     "rating": 6.5,
-    "description": "In Sicily, a small farming village survived in the area of Marineo, just 30 kilometres from Palermo. Over the course of the four seasons, life and traditions adapt to the changing crops and... See full summary »",
+    "description": "In Sicily, a small farming village survived in the area of Marineo, just 30 kilometres from Palermo. Over the course of the four seasons, life and traditions adapt to the changing crops and",
     "stars": [
       "Olivella Foresta"
     ],
@@ -62081,7 +60837,7 @@ window.CINECLASH_CATALOG =
     "duration": "139 min",
     "genre": "Music, Musical",
     "rating": 6.5,
-    "description": "A film adaptation of the \"Takizawa Kabuki\" series, a super Japanese entertainment starring Hideaki Takizawa since 2006. After Takizawa announced his retirement in 2018, he was reborn as \"... See full summary »",
+    "description": "A film adaptation of the \"Takizawa Kabuki\" series, a super Japanese entertainment starring Hideaki Takizawa since 2006. After Takizawa announced his retirement in 2018, he was reborn as \"",
     "stars": [],
     "votes": 17
   },
@@ -62115,7 +60871,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Drama, History",
     "rating": 8.6,
-    "description": "San Francisco, 1980. As 72-year-old Guo Xue Hu reminisces about his hometown, Dadaocheng, a young man walks towards him from afar. It is Xing Xiong, Yi An's son. He has brought a letter ... See full summary »",
+    "description": "San Francisco, 1980. As 72-year-old Guo Xue Hu reminisces about his hometown, Dadaocheng, a young man walks towards him from afar. It is Xing Xiong, Yi An's son. He has brought a letter",
     "stars": [
       "Eli Shih",
       "Chia-Yen Ko",
@@ -62130,7 +60886,7 @@ window.CINECLASH_CATALOG =
     "duration": "64 min",
     "genre": "Documentary",
     "rating": 7.7,
-    "description": "Saveart - Recycling Art, tells the story of the artistic movement SAVEART ,from his origin in 2003 to the present, trough the voice of his founder Maria Teresa Illuminato,and the art ... See full summary »",
+    "description": "Saveart - Recycling Art, tells the story of the artistic movement SAVEART ,from his origin in 2003 to the present, trough the voice of his founder Maria Teresa Illuminato,and the art",
     "stars": [
       "Rolando Bellini",
       "Giobbe Covatta",
@@ -62145,7 +60901,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Romance",
     "rating": 6.8,
-    "description": "Teddy, a man who does not want to spend money and lonely. He meets Sophie, who attempts to steal his money. But as time passes, he begins to feel something in his heart - At that time, he ... See full summary »",
+    "description": "Teddy, a man who does not want to spend money and lonely. He meets Sophie, who attempts to steal his money. But as time passes, he begins to feel something in his heart - At that time, he",
     "stars": [
       "Korawit Boonsri",
       "Hunz Isariy",
@@ -62214,7 +60970,7 @@ window.CINECLASH_CATALOG =
     "duration": "46 min",
     "genre": "Documentary, Crime",
     "rating": 5.4,
-    "description": "Murder on the Social Network looks at how social networks like Facebook sometimes play a role in crimes like murder. It examines the murder of newlywed Vicky Wynn-Jones by her unfaithful ... See full summary »",
+    "description": "Murder on the Social Network looks at how social networks like Facebook sometimes play a role in crimes like murder. It examines the murder of newlywed Vicky Wynn-Jones by her unfaithful",
     "stars": [
       "Paul Loughran",
       "Mike Berry",
@@ -62229,7 +60985,7 @@ window.CINECLASH_CATALOG =
     "duration": "60 min",
     "genre": "Biography",
     "rating": 5.4,
-    "description": "Get to know the real Zac Efron with this documentary that journeys to the star's real-life school and hometown, where longtime friends share their insights on the hunky High School Musical ... See full summary »",
+    "description": "Get to know the real Zac Efron with this documentary that journeys to the star's real-life school and hometown, where longtime friends share their insights on the hunky High School Musical",
     "stars": [
       "Jeff Ballard",
       "Zac Efron",
@@ -62326,21 +61082,6 @@ window.CINECLASH_CATALOG =
     "votes": 15
   },
   {
-    "title": "Tudum",
-    "year": 2021,
-    "duration": "",
-    "genre": "Talk-Show",
-    "rating": 7.6,
-    "description": "Netflix first-ever global fan event to entertain and honor fans from around the world.",
-    "stars": [
-      "Jennifer Aniston",
-      "Radhika Apte",
-      "Jonathan Bailey",
-      "Jason Bateman"
-    ],
-    "votes": 15
-  },
-  {
     "title": "Räumkommando Riesenratte - Spürnasen auf Minensuche",
     "year": 2008,
     "duration": "45 min",
@@ -62385,7 +61126,7 @@ window.CINECLASH_CATALOG =
     "duration": "96 min",
     "genre": "Drama, Romance",
     "rating": 6.2,
-    "description": "Failed to move on. That reality is faced by Laura (Pamela Bowie), a radio broadcaster who lives in Melbourne, when she finds her first love Max (Morgan Oey), appears before her. The memory ... See full summary »",
+    "description": "Failed to move on. That reality is faced by Laura (Pamela Bowie), a radio broadcaster who lives in Melbourne, when she finds her first love Max (Morgan Oey), appears before her. The memory",
     "stars": [
       "Morgan Oey",
       "Pamela Bowie",
@@ -62400,7 +61141,7 @@ window.CINECLASH_CATALOG =
     "duration": "61 min",
     "genre": "",
     "rating": 5.6,
-    "description": "Celebrating the best in the year's independent films, the Gotham Awards are the official kick-off to the film awards season. Written, directed and produced by Mario Diaz, this one-hour ... See full summary »",
+    "description": "Celebrating the best in the year's independent films, the Gotham Awards are the official kick-off to the film awards season. Written, directed and produced by Mario Diaz, this one-hour",
     "stars": [
       "Lydia Dean Pilcher",
       "Jonathan Demme",
@@ -62466,7 +61207,7 @@ window.CINECLASH_CATALOG =
     "duration": "125 min",
     "genre": "Comedy",
     "rating": 6.1,
-    "description": "Giants of podcasting take the stage in New York City for this variety show sent live via satellite to movie theaters nationwide. Featuring Radiolab, Invisibilia, Reply All, The Truth, and ... See full summary »",
+    "description": "Giants of podcasting take the stage in New York City for this variety show sent live via satellite to movie theaters nationwide. Featuring Radiolab, Invisibilia, Reply All, The Truth, and",
     "stars": [
       "Jeremy Bent",
       "Lily Du",
@@ -62481,7 +61222,7 @@ window.CINECLASH_CATALOG =
     "duration": "93 min",
     "genre": "Drama",
     "rating": 5.7,
-    "description": "Shintaro Ando (Alan Shirahama) has become Noble Dori after various confrontations. Now, the noble group, who are led by Shintaro Ando, has battles over the title of Legend (\"Densetsu\") ... See full summary »",
+    "description": "Shintaro Ando (Alan Shirahama) has become Noble Dori after various confrontations. Now, the noble group, who are led by Shintaro Ando, has battles over the title of Legend (\"Densetsu\")",
     "stars": [
       "Yoshihiko Aramaki",
       "Daigo",
@@ -62609,7 +61350,7 @@ window.CINECLASH_CATALOG =
     "duration": "89 min",
     "genre": "Documentary, Crime, Drama",
     "rating": 6.8,
-    "description": "When Hurricane Katrina shredded the levees in New Orleans, the flood waters took lives, homes and part of the city's soul. But when the water receded, it exposed the problems of the past, ... See full summary »",
+    "description": "When Hurricane Katrina shredded the levees in New Orleans, the flood waters took lives, homes and part of the city's soul. But when the water receded, it exposed the problems of the past,",
     "stars": [
       "Kathleen Blanco",
       "Douglas Brinkley",
@@ -62658,7 +61399,7 @@ window.CINECLASH_CATALOG =
     "duration": "24 min",
     "genre": "Comedy",
     "rating": 6.1,
-    "description": "A sitcom about the Ojo family, a newly-rich family that moves into a classy Lagos neighborhood. Each episode revolves around the hilarious antics of Mrs. Ojo and her obsession with keeping ... See full summary »",
+    "description": "A sitcom about the Ojo family, a newly-rich family that moves into a classy Lagos neighborhood. Each episode revolves around the hilarious antics of Mrs. Ojo and her obsession with keeping",
     "stars": [
       "Najite Dede",
       "Jude Chukwuka",
@@ -62683,7 +61424,7 @@ window.CINECLASH_CATALOG =
     "duration": "188 min",
     "genre": "Documentary",
     "rating": 5,
-    "description": "Zecharia Sitchin presents his theory that the Anunnaki of Sumerian myth and the Nephilim of the Old Testament were a technologically advanced human-like extraterrestrial race. He argues ... See full summary »",
+    "description": "Zecharia Sitchin presents his theory that the Anunnaki of Sumerian myth and the Nephilim of the Old Testament were a technologically advanced human-like extraterrestrial race. He argues",
     "stars": [
       "Pat Marcattilio",
       "Zecharia Sitchin"
@@ -62792,20 +61533,6 @@ window.CINECLASH_CATALOG =
     "votes": 10
   },
   {
-    "title": "Unbreakable Kimmy Schmidt: Season 2 for Your Consideration Featurette",
-    "year": 2016,
-    "duration": "",
-    "genre": "",
-    "rating": 5.8,
-    "description": "Add a Plot",
-    "stars": [
-      "Drew Beasley",
-      "Sammy Voit",
-      "Alberto Vazquez"
-    ],
-    "votes": 10
-  },
-  {
     "title": "Santa Clarita Diet: I Love Bodies",
     "year": 2018,
     "duration": "1 min",
@@ -62838,7 +61565,7 @@ window.CINECLASH_CATALOG =
     "duration": "8 min",
     "genre": "Short, Sci-Fi",
     "rating": 6.1,
-    "description": "Roy is a robot mechanic holed away in a rundown barn, surrounded by rustic antiques melded with futuristic sensibilities. He is a man forgotten by society and spends his days tinkering at ... See full summary »",
+    "description": "Roy is a robot mechanic holed away in a rundown barn, surrounded by rustic antiques melded with futuristic sensibilities. He is a man forgotten by society and spends his days tinkering at",
     "stars": [
       "Katerina Kovalchyk",
       "Jonathan Sperling"
@@ -62888,7 +61615,7 @@ window.CINECLASH_CATALOG =
     "duration": "112 min",
     "genre": "Documentary",
     "rating": 7.8,
-    "description": "Starting from the premise that New Mexico holds a unique place in the annals of UFO history, journalist Anthony DellaFlora and documentary filmmaker James Lujan delve into the state's ... See full summary »",
+    "description": "Starting from the premise that New Mexico holds a unique place in the annals of UFO history, journalist Anthony DellaFlora and documentary filmmaker James Lujan delve into the state's",
     "stars": [
       "James Lujan"
     ],
@@ -62915,7 +61642,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Drama, Mystery",
     "rating": 6.7,
-    "description": "The year is 1999. In a cold sleepy town in the Philippine mountains, Officer Sonny Cruz begins receiving mysterious voyeuristic videotapes of a missing woman who vanished three years prior.... See full summary »",
+    "description": "The year is 1999. In a cold sleepy town in the Philippine mountains, Officer Sonny Cruz begins receiving mysterious voyeuristic videotapes of a missing woman who vanished three years prior.",
     "stars": [
       "Sam Milby",
       "Yassi Pressman",
@@ -62930,7 +61657,7 @@ window.CINECLASH_CATALOG =
     "duration": "71 min",
     "genre": "Documentary, Drama, History",
     "rating": 6.5,
-    "description": "The temple of the bohemians in Barcelona closes down on November the 1st, 2013. This evening, guests attend the bar 'Segundo Acto' located in the heart of the Gothic Quarter. Emilio is the ... See full summary »",
+    "description": "The temple of the bohemians in Barcelona closes down on November the 1st, 2013. This evening, guests attend the bar 'Segundo Acto' located in the heart of the Gothic Quarter. Emilio is the",
     "stars": [
       "Anna Cervera"
     ],
@@ -62986,7 +61713,7 @@ window.CINECLASH_CATALOG =
     "duration": "65 min",
     "genre": "Documentary, Sport",
     "rating": 5,
-    "description": "The first doc-movie about women's basketball world and its protagonists, touching topics as combination of sport and femininity, the economic crisis of clubs, the 'homosexuality, the ... See full summary »",
+    "description": "The first doc-movie about women's basketball world and its protagonists, touching topics as combination of sport and femininity, the economic crisis of clubs, the 'homosexuality, the",
     "stars": [
       "Antonio Cabrini",
       "Valentina Vignali",
@@ -63037,21 +61764,6 @@ window.CINECLASH_CATALOG =
       "Boris Bokir",
       "Muhadkly Acho",
       "Lolox"
-    ],
-    "votes": 6
-  },
-  {
-    "title": "Sergio over de grens",
-    "year": 2022,
-    "duration": "",
-    "genre": "Reality-TV",
-    "rating": 7.2,
-    "description": "Add a Plot",
-    "stars": [
-      "Sergio Herman",
-      "Ella Leyers",
-      "Kürt Rogiers",
-      "Axel Daeseleire"
     ],
     "votes": 6
   },
@@ -63408,7 +62120,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Adventure, Drama, Sci-Fi",
     "rating": 0,
-    "description": "London, 2040 - rising house prices, computerized labour and eradication of the Welfare State has turned the city into a billionaire's playground, pushing the lower classes to provincial ... See full summary »",
+    "description": "London, 2040 - rising house prices, computerized labour and eradication of the Welfare State has turned the city into a billionaire's playground, pushing the lower classes to provincial",
     "stars": [
       "Kano",
       "Henry Lawfull",
@@ -63483,7 +62195,7 @@ window.CINECLASH_CATALOG =
     "duration": "103 min",
     "genre": "Animation, Short, Adventure",
     "rating": 0,
-    "description": "the perspective of a self-involved cat (Pud) or a loving, hyperactive dog (Ham), who wake up one day to find that their human and ALL humans have disappeared from Earth. Desperate to find ... See full summary »",
+    "description": "the perspective of a self-involved cat (Pud) or a loving, hyperactive dog (Ham), who wake up one day to find that their human and ALL humans have disappeared from Earth. Desperate to find",
     "stars": [
       "Ayo Edebiri",
       "Ben Schwartz",
@@ -63543,7 +62255,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Horror, Sci-Fi",
     "rating": 0,
-    "description": "After a mysterious force decimates the world's population by causing all who see it to take their lives, Sebastian and his young daughter Anna must navigate their own journey of survival ... See full summary »",
+    "description": "After a mysterious force decimates the world's population by causing all who see it to take their lives, Sebastian and his young daughter Anna must navigate their own journey of survival",
     "stars": [
       "Georgina Campbell",
       "Diego Calva",
@@ -63573,7 +62285,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Biography, Drama",
     "rating": 0,
-    "description": "Which we follow in Lucio's footsteps as part of the European anarchist movement, from his humble beginnings as a bricklayer turned bank robber, to taking the lead in one of the most ... See full summary »",
+    "description": "Which we follow in Lucio's footsteps as part of the European anarchist movement, from his humble beginnings as a bricklayer turned bank robber, to taking the lead in one of the most",
     "stars": [
       "Juan José Ballesta",
       "Luis Callejo",
@@ -63587,7 +62299,7 @@ window.CINECLASH_CATALOG =
     "duration": "79 min",
     "genre": "Documentary",
     "rating": 0,
-    "description": "Does infinity exist? Can we experience the Infinite? In an animated film (created by artists from 10 countries) the world's most cutting-edge scientists and mathematicians go in search of ... See full summary »",
+    "description": "Does infinity exist? Can we experience the Infinite? In an animated film (created by artists from 10 countries) the world's most cutting-edge scientists and mathematicians go in search of",
     "stars": [
       "Anthony Aguirre",
       "Stephon Alexander",
@@ -63606,16 +62318,6 @@ window.CINECLASH_CATALOG =
     "stars": [
       "Adib Alkhalidey"
     ],
-    "votes": 0
-  },
-  {
-    "title": "Aftershock: Everest and the Nepal Earthquake",
-    "year": 2022,
-    "duration": "",
-    "genre": "Documentary",
-    "rating": 0,
-    "description": "Survivors' firsthand accounts and actual footage fuel this emotional docuseries about the deadly 2015 earthquake that shook Nepal.",
-    "stars": [],
     "votes": 0
   },
   {
@@ -63710,7 +62412,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Documentary, Crime",
     "rating": 0,
-    "description": "When mysterious lab results link a series of deaths at a local hospital, a heroic nurse teams up with two small-town detectives to go undercover and help capture fellow nurse and friend ... See full summary »",
+    "description": "When mysterious lab results link a series of deaths at a local hospital, a heroic nurse teams up with two small-town detectives to go undercover and help capture fellow nurse and friend",
     "stars": [
       "Tim Travers Hawkins"
     ],
@@ -63722,22 +62424,9 @@ window.CINECLASH_CATALOG =
     "duration": "18 min",
     "genre": "Documentary, Short, War",
     "rating": 0,
-    "description": "Medieval-fortification expert Michael Fulton looks at nine fortress defense scenes from popular TV shows and movies and rates them based on realism. He looks at \"Outlaw King\" (2018), \"... See full summary »",
+    "description": "Medieval-fortification expert Michael Fulton looks at nine fortress defense scenes from popular TV shows and movies and rates them based on realism. He looks at \"Outlaw King\" (2018), \"",
     "stars": [
       "Michael Fulton"
-    ],
-    "votes": 0
-  },
-  {
-    "title": "CheNetflix: El podcast",
-    "year": 2022,
-    "duration": "",
-    "genre": "Talk-Show",
-    "rating": 0,
-    "description": "Add a Plot",
-    "stars": [
-      "Agustin Eme",
-      "Papryka"
     ],
     "votes": 0
   },
@@ -63815,7 +62504,7 @@ window.CINECLASH_CATALOG =
     "duration": "18 min",
     "genre": "Documentary, Short, War",
     "rating": 0,
-    "description": "Former Royal Marines Commando Gareth Timmins looks at eight desert warfare scenes from movies and rates them based on realism. He looks at \"Three Kings\" (1999), \"Jarhead\" (2005), \"Rambo III... See full summary »",
+    "description": "Former Royal Marines Commando Gareth Timmins looks at eight desert warfare scenes from movies and rates them based on realism. He looks at \"Three Kings\" (1999), \"Jarhead\" (2005), \"Rambo III",
     "stars": [
       "Gareth Timmins"
     ],
@@ -63867,7 +62556,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Crime",
     "rating": 0,
-    "description": "It takes us to May 2017. The body of a man appears charred inside a car in the Foix reservoir, in Barcelona. This is Pedro (José Manuel Poga), a police officer. The event quickly arouses ... See full summary »",
+    "description": "It takes us to May 2017. The body of a man appears charred inside a car in the Foix reservoir, in Barcelona. This is Pedro (José Manuel Poga), a police officer. The event quickly arouses",
     "stars": [
       "Úrsula Corberó",
       "Quim Gutiérrez",
@@ -63912,7 +62601,7 @@ window.CINECLASH_CATALOG =
     "duration": "18 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Emergency room doctor Jamie Lee looks at 10 emergency medical scenes from movies and TV and rates them based on realism. She looks at \"Squid Game\" S1E10 (2021), \"Cast Away\" (2000), \"... See full summary »",
+    "description": "Emergency room doctor Jamie Lee looks at 10 emergency medical scenes from movies and TV and rates them based on realism. She looks at \"Squid Game\" S1E10 (2021), \"Cast Away\" (2000), \"",
     "stars": [
       "Jamie Lee"
     ],
@@ -63957,21 +62646,6 @@ window.CINECLASH_CATALOG =
       "Fran Cantos",
       "Emilio Gutiérrez Caba",
       "Miren Ibarguren"
-    ],
-    "votes": 0
-  },
-  {
-    "title": "Film School Friday: Pushing the Boundaries in Production",
-    "year": 2022,
-    "duration": "49 min",
-    "genre": "Talk-Show",
-    "rating": 0,
-    "description": "Add a Plot",
-    "stars": [
-      "Charles Rivkin",
-      "Vans Stevenson",
-      "Tobias Anderberg",
-      "Ryan Reagan"
     ],
     "votes": 0
   },
@@ -64047,7 +62721,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Action, Thriller",
     "rating": 0,
-    "description": "The story is set after a drug deal gone wrong, when a bruised detective must fight his way through a criminal underworld to rescue a politician's estranged son, while unraveling a deep web ... See full summary »",
+    "description": "The story is set after a drug deal gone wrong, when a bruised detective must fight his way through a criminal underworld to rescue a politician's estranged son, while unraveling a deep web",
     "stars": [
       "Tom Hardy",
       "Timothy Olyphant",
@@ -64062,7 +62736,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Horror",
     "rating": 0,
-    "description": "n a monastery cut off from the world, the monks run a clinic for the possessed. One day, a young policeman Marek comes to the convent. Posing as a clergyman, he penetrates monastic life and... See full summary »",
+    "description": "n a monastery cut off from the world, the monks run a clinic for the possessed. One day, a young policeman Marek comes to the convent. Posing as a clergyman, he penetrates monastic life and",
     "stars": [
       "Olaf Lubaszenko",
       "Sebastian Stankiewicz",
@@ -64088,7 +62762,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Adventure, Drama, Mystery",
     "rating": 0,
-    "description": "In a world shaken by an epidemic of madness that spreads through language and speech, a former linguist Murat Siyavus who has been at a long lasting hideout, is the only person mysteriously... See full summary »",
+    "description": "In a world shaken by an epidemic of madness that spreads through language and speech, a former linguist Murat Siyavus who has been at a long lasting hideout, is the only person mysteriously",
     "stars": [
       "Güney Coska",
       "Uzay Gökhan Irmak",
@@ -64118,7 +62792,7 @@ window.CINECLASH_CATALOG =
     "duration": "9 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Prop makers frequently have to make props that aren't just handled, but consumed by an actor. Food stylists like Melissa McSorley have to replicate an object's true properties while making ... See full summary »",
+    "description": "Prop makers frequently have to make props that aren't just handled, but consumed by an actor. Food stylists like Melissa McSorley have to replicate an object's true properties while making",
     "stars": [
       "Joe Avella",
       "Melissa McSorley"
@@ -64131,7 +62805,7 @@ window.CINECLASH_CATALOG =
     "duration": "10 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "\"Fast and Furious 9,\" set for a 2021 release, is the 10th installment in a franchise known for pushing the boundaries of car chases. But there has been a lot of technological innovation ... See full summary »",
+    "description": "\"Fast and Furious 9,\" set for a 2021 release, is the 10th installment in a franchise known for pushing the boundaries of car chases. But there has been a lot of technological innovation",
     "stars": [
       "Abby Tang"
     ],
@@ -64143,22 +62817,10 @@ window.CINECLASH_CATALOG =
     "duration": "11 min",
     "genre": "Documentary, Short, Action",
     "rating": 0,
-    "description": "Professional stunt performers show us how they execute the falls we've seen in movies over and over again. Lead performer, Stephen Koepfer has worked on movies like \"John Wick 3\" and shows ... See full summary »",
+    "description": "Professional stunt performers show us how they execute the falls we've seen in movies over and over again. Lead performer, Stephen Koepfer has worked on movies like \"John Wick 3\" and shows",
     "stars": [
       "Abby Tang",
       "Stephen Koepfer"
-    ],
-    "votes": 0
-  },
-  {
-    "title": "Human Playground",
-    "year": 2022,
-    "duration": "",
-    "genre": "Documentary",
-    "rating": 0,
-    "description": "This docuseries explores the origins and evolution of play across the globe, from age-old rituals to billion-dollar businesses.",
-    "stars": [
-      "Idris Elba"
     ],
     "votes": 0
   },
@@ -64198,7 +62860,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Horror, Thriller",
     "rating": 0,
-    "description": "After being complicit in a costume joke that ends in a fatal accident and a pact of silence, a group of young people will be threatened by an anonymous writer who wants to reveal his dark ... See full summary »",
+    "description": "After being complicit in a costume joke that ends in a fatal accident and a pact of silence, a group of young people will be threatened by an anonymous writer who wants to reveal his dark",
     "stars": [
       "Veki Velilla",
       "Iván Pellicer",
@@ -64455,7 +63117,7 @@ window.CINECLASH_CATALOG =
     "duration": "19 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Parkour athlete and stunt performer Lorena Abreu rates nine parkour stunts in movies and TV, such as \"The Bourne Ultimatum\" and \"Casino Royale,\" for realism. Abreu breaks down the ... See full summary »",
+    "description": "Parkour athlete and stunt performer Lorena Abreu rates nine parkour stunts in movies and TV, such as \"The Bourne Ultimatum\" and \"Casino Royale,\" for realism. Abreu breaks down the",
     "stars": [
       "Lorena Abreu"
     ],
@@ -64526,7 +63188,7 @@ window.CINECLASH_CATALOG =
     "duration": "16 min",
     "genre": "Documentary, Short, Action",
     "rating": 0,
-    "description": "Pole weapons expert Matt Easton rates nine polearm fight scenes in movies and TV, such as \"Troy\" and \"Aquaman,\" for realism. Easton discusses the accuracy of polearm scenes in \"Troy\" (2004)... See full summary »",
+    "description": "Pole weapons expert Matt Easton rates nine polearm fight scenes in movies and TV, such as \"Troy\" and \"Aquaman,\" for realism. Easton discusses the accuracy of polearm scenes in \"Troy\" (2004)",
     "stars": [
       "Matt Easton"
     ],
@@ -64762,16 +63424,6 @@ window.CINECLASH_CATALOG =
     "votes": 0
   },
   {
-    "title": "The Last Movie Ever Made: The Don't Look Up podcast",
-    "year": 2022,
-    "duration": "",
-    "genre": "Talk-Show",
-    "rating": 0,
-    "description": "In early 2020, Adam McKay set out to make a comedy. It was called Don't Look Up, and it was meant to make fun of, and point to, the forces stopping people from saving themselves from climate change. 2020, of course, had other plans.",
-    "stars": [],
-    "votes": 0
-  },
-  {
     "title": "The Mother",
     "year": 2022,
     "duration": "",
@@ -64792,7 +63444,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Adventure, Drama, Family",
     "rating": 0,
-    "description": "The sci-fi adventure follows Sara Morse (Berry) one year since her husband mysteriously vanished from their rural farm. When she discovers a strange, extraterrestrial object underneath ... See full summary »",
+    "description": "The sci-fi adventure follows Sara Morse (Berry) one year since her husband mysteriously vanished from their rural farm. When she discovers a strange, extraterrestrial object underneath",
     "stars": [
       "Halle Berry",
       "Molly Parker",
@@ -64897,7 +63549,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Animation, Action, Adventure",
     "rating": 0,
-    "description": "Tristan inherits the power of the Goddess Clan and can heal people's wounds and injuries, but he often ends up hurting others due to his inability to control his Demon Clan power. To ... See full summary »",
+    "description": "Tristan inherits the power of the Goddess Clan and can heal people's wounds and injuries, but he often ends up hurting others due to his inability to control his Demon Clan power. To",
     "stars": [
       "Yûki Kaji",
       "Ayumu Murase",
@@ -65049,21 +63701,9 @@ window.CINECLASH_CATALOG =
     "duration": "20 min",
     "genre": "Short, Crime",
     "rating": 0,
-    "description": "UFC middleweight fighter Uriah Hall - ranked No. 9 in the UFC middleweight rankings as of November 2021 - rates nine mixed-martial-arts scenes in movies and television, such as \"Warrior\" ... See full summary »",
+    "description": "UFC middleweight fighter Uriah Hall - ranked No. 9 in the UFC middleweight rankings as of November 2021 - rates nine mixed-martial-arts scenes in movies and television, such as \"Warrior\"",
     "stars": [
       "Uriah Hall"
-    ],
-    "votes": 0
-  },
-  {
-    "title": "Un domingo de Ramos. Un podcast de Netflix",
-    "year": 2022,
-    "duration": "",
-    "genre": "Talk-Show",
-    "rating": 0,
-    "description": "Add a Plot",
-    "stars": [
-      "Yolanda Ramos"
     ],
     "votes": 0
   },
@@ -65127,7 +63767,7 @@ window.CINECLASH_CATALOG =
     "duration": "16 min",
     "genre": "Documentary, Short, Action",
     "rating": 0,
-    "description": "Wing Chun master and martial-arts instructor Master Wong rates eight Wing Chun fights in movies, such as \"Ip Man\" and \"Shang-Chi and the Legend of the Ten Rings,\" for realism. Wong breaks ... See full summary »",
+    "description": "Wing Chun master and martial-arts instructor Master Wong rates eight Wing Chun fights in movies, such as \"Ip Man\" and \"Shang-Chi and the Legend of the Ten Rings,\" for realism. Wong breaks",
     "stars": [
       "Master Wong"
     ],
@@ -65154,7 +63794,7 @@ window.CINECLASH_CATALOG =
     "duration": "14 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "From people who harvest giant blocks of marble to master Lego builders to people who can make babies cry in movies, there are a lot of fascinating and unexpected jobs out there. But just ... See full summary »",
+    "description": "From people who harvest giant blocks of marble to master Lego builders to people who can make babies cry in movies, there are a lot of fascinating and unexpected jobs out there. But just",
     "stars": [
       "Abby Tang",
       "Chiako Yamamoto",
@@ -65169,7 +63809,7 @@ window.CINECLASH_CATALOG =
     "duration": "11 min",
     "genre": "Documentary, Short, Action",
     "rating": 0,
-    "description": "Hollywood has many tricks to make impossible and dangerous stunts into a reality. Movies like \"Scott Pilgrim vs. the World,\" \"Baby Driver,\" and \"Elf\" used a Texas switch to allow an actor ... See full summary »",
+    "description": "Hollywood has many tricks to make impossible and dangerous stunts into a reality. Movies like \"Scott Pilgrim vs. the World,\" \"Baby Driver,\" and \"Elf\" used a Texas switch to allow an actor",
     "stars": [
       "Abby Tang",
       "Daniel Hargrave",
@@ -65196,7 +63836,7 @@ window.CINECLASH_CATALOG =
     "duration": "21 min",
     "genre": "Documentary, Short, War",
     "rating": 0,
-    "description": "Roel Konijnendijk, who has a doctorate in ancient history and is a lecturer at the University of Oxford's New College, rates 10 ancient-warfare scenes in movies and shows for realism in ... See full summary »",
+    "description": "Roel Konijnendijk, who has a doctorate in ancient history and is a lecturer at the University of Oxford's New College, rates 10 ancient-warfare scenes in movies and shows for realism in",
     "stars": [
       "Roel Konijnendijk"
     ],
@@ -65227,27 +63867,12 @@ window.CINECLASH_CATALOG =
     "votes": 0
   },
   {
-    "title": "Celebrating Greatness: Canada's Walk of Fame Special",
-    "year": 2021,
-    "duration": "",
-    "genre": "News",
-    "rating": 0,
-    "description": "Honoring exceptional Canadians with distinctive accomplishments in philanthropy, advocacy, and contributions towards the greater good.",
-    "stars": [
-      "Eric McCormack",
-      "Traci Melchor",
-      "Salome Bey",
-      "Jully Black"
-    ],
-    "votes": 0
-  },
-  {
     "title": "Chess Grandmaster Rates 7 Chess Scenes in Movies and TV",
     "year": 2021,
     "duration": "15 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Chess Grandmaster Susan Polgar reacts to seven memorable movie and TV scenes featuring chess games and rates them based on their technical accuracy. She looks at various scenes from \"The ... See full summary »",
+    "description": "Chess Grandmaster Susan Polgar reacts to seven memorable movie and TV scenes featuring chess games and rates them based on their technical accuracy. She looks at various scenes from \"The",
     "stars": [
       "Susan Polgar"
     ],
@@ -65284,7 +63909,7 @@ window.CINECLASH_CATALOG =
     "duration": "18 min",
     "genre": "Documentary, Short, Crime",
     "rating": 0,
-    "description": "Former burglar Octave \"Oky\" Durham and art detective Arthur Brand look at seven jewel-theft scenes from popular TV shows and movies and rate them based on realism. They look at \"Ocean's ... See full summary »",
+    "description": "Former burglar Octave \"Oky\" Durham and art detective Arthur Brand look at seven jewel-theft scenes from popular TV shows and movies and rate them based on realism. They look at \"Ocean's",
     "stars": [
       "Octave Durham",
       "Arthur Brand"
@@ -65297,7 +63922,7 @@ window.CINECLASH_CATALOG =
     "duration": "16 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Gymnast Katelyn Ohashi rates 10 gymnastics scenes in movies and television shows for realism. Ohashi is a former UCLA gymnast, four-time junior national team member, and six-time ... See full summary »",
+    "description": "Gymnast Katelyn Ohashi rates 10 gymnastics scenes in movies and television shows for realism. Ohashi is a former UCLA gymnast, four-time junior national team member, and six-time",
     "stars": [
       "Katelyn Ohashi"
     ],
@@ -65309,7 +63934,7 @@ window.CINECLASH_CATALOG =
     "duration": "25 min",
     "genre": "Documentary, Short, Crime",
     "rating": 0,
-    "description": "An internationally recognized security analyst, researcher, author, and speaker who works with leading security firms, government organizations, and Fortune 500 companies looks at 12 ... See full summary »",
+    "description": "An internationally recognized security analyst, researcher, author, and speaker who works with leading security firms, government organizations, and Fortune 500 companies looks at 12",
     "stars": [
       "Keren Elazari"
     ],
@@ -65336,7 +63961,7 @@ window.CINECLASH_CATALOG =
     "duration": "8 min",
     "genre": "Documentary, Animation, Short",
     "rating": 0,
-    "description": "Animated films can be 2D or 3D, but oftentimes they're actually a bit of both. Animators use \"2.5D\" animation techniques to make flat images appear 3D and even mix 2D and 3D elements within... See full summary »",
+    "description": "Animated films can be 2D or 3D, but oftentimes they're actually a bit of both. Animators use \"2.5D\" animation techniques to make flat images appear 3D and even mix 2D and 3D elements within",
     "stars": [
       "Abby Tang",
       "Eimhin McNamara"
@@ -65349,7 +63974,7 @@ window.CINECLASH_CATALOG =
     "duration": "8 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Creating truly convincing fake IDs for film and TV requires an obsessive attention to detail - and things can get thorny with the law. Ross MacDonald, a graphic prop artist in Connecticut, ... See full summary »",
+    "description": "Creating truly convincing fake IDs for film and TV requires an obsessive attention to detail - and things can get thorny with the law. Ross MacDonald, a graphic prop artist in Connecticut,",
     "stars": [
       "Abby Tang",
       "Ross Macdonald",
@@ -65363,7 +63988,7 @@ window.CINECLASH_CATALOG =
     "duration": "7 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Some objects, like paper bags, ice cubes, and pool balls, make an unexpected amount of noise. This can be a big problem on set, as any of these unwanted sounds can get in the way of ... See full summary »",
+    "description": "Some objects, like paper bags, ice cubes, and pool balls, make an unexpected amount of noise. This can be a big problem on set, as any of these unwanted sounds can get in the way of",
     "stars": [
       "Abby Tang",
       "Tim Schultz",
@@ -65377,7 +64002,7 @@ window.CINECLASH_CATALOG =
     "duration": "12 min",
     "genre": "Documentary, Animation, Short",
     "rating": 0,
-    "description": "In 2018, Rebecca Sugar's \"Steven Universe\" featured both the first LGBTQ wedding and the first LGBTQ marriage proposal in a kids' animated TV show. And in 2020, Benson from \"Kipo and the ... See full summary »",
+    "description": "In 2018, Rebecca Sugar's \"Steven Universe\" featured both the first LGBTQ wedding and the first LGBTQ marriage proposal in a kids' animated TV show. And in 2020, Benson from \"Kipo and the",
     "stars": [
       "Kuwilileni Hauwanga",
       "Rebecca Sugar",
@@ -65406,21 +64031,6 @@ window.CINECLASH_CATALOG =
     "description": "Elisa Au, a three-time World Karate Federation world karate champion, rates 11 karate scenes in movies and shows for realism of kicks, punches and throws, along with stance, movement, and tactics.",
     "stars": [
       "Elisa Au"
-    ],
-    "votes": 0
-  },
-  {
-    "title": "Kate: Stunts Social Featurette",
-    "year": 2021,
-    "duration": "",
-    "genre": "Documentary, Short",
-    "rating": 0,
-    "description": "Add a Plot",
-    "stars": [
-      "Jonathan Eusebio",
-      "Miku Patricia Martineau",
-      "Miyavi",
-      "Cedric Nicolas-Troyan"
     ],
     "votes": 0
   },
@@ -65473,7 +64083,7 @@ window.CINECLASH_CATALOG =
     "duration": "16 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Professional pickpocket Lee Thompson looks at 12 pickpocketing scenes from popular TV shows and movies and rates them based on realism. He looks at \"Birds of Prey\" (2020), \"The Take\" (2016)... See full summary »",
+    "description": "Professional pickpocket Lee Thompson looks at 12 pickpocketing scenes from popular TV shows and movies and rates them based on realism. He looks at \"Birds of Prey\" (2020), \"The Take\" (2016)",
     "stars": [
       "Lee Thompson"
     ],
@@ -65485,7 +64095,7 @@ window.CINECLASH_CATALOG =
     "duration": "19 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Safe technician Charlie Santore, the owner of Santore and Son Lock and Safe in Los Angeles. looks at 10 safecracking scenes from popular TV shows and movies and rates them based on realism.... See full summary »",
+    "description": "Safe technician Charlie Santore, the owner of Santore and Son Lock and Safe in Los Angeles. looks at 10 safecracking scenes from popular TV shows and movies and rates them based on realism.",
     "stars": [
       "Charlie Santore"
     ],
@@ -65509,7 +64119,7 @@ window.CINECLASH_CATALOG =
     "duration": "17 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Retired FBI investigator Jerri Williams looks at eight money-laundering scams from popular TV shows and movies and rates them based on realism. She looks at \"Ozark\" S1E4 (2017), \"The Wolf ... See full summary »",
+    "description": "Retired FBI investigator Jerri Williams looks at eight money-laundering scams from popular TV shows and movies and rates them based on realism. She looks at \"Ozark\" S1E4 (2017), \"The Wolf",
     "stars": [
       "Jerri Williams"
     ],
@@ -65521,7 +64131,7 @@ window.CINECLASH_CATALOG =
     "duration": "18 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Mortician Evie Vargas looks at 10 dead-body scenes from popular TV shows and movies and rates them based on realism. She looks at \"Six Feet Under\" (2001-2005), \"American Horror Story: Coven... See full summary »",
+    "description": "Mortician Evie Vargas looks at 10 dead-body scenes from popular TV shows and movies and rates them based on realism. She looks at \"Six Feet Under\" (2001-2005), \"American Horror Story: Coven",
     "stars": [
       "Evie Vargas"
     ],
@@ -65547,7 +64157,7 @@ window.CINECLASH_CATALOG =
     "duration": "18 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Explorer Dwayne Fields looks at nine polar-exploration scenes from popular TV shows and movies and rates them based on realism. He looks at \"The Day After Tomorrow\" (2004), \"Eight Below\" (... See full summary »",
+    "description": "Explorer Dwayne Fields looks at nine polar-exploration scenes from popular TV shows and movies and rates them based on realism. He looks at \"The Day After Tomorrow\" (2004), \"Eight Below\" (",
     "stars": [
       "Dwayne Fields"
     ],
@@ -65633,7 +64243,7 @@ window.CINECLASH_CATALOG =
     "duration": "18 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Sushi master Endo Kazutoshi looks at nine sushi scenes from popular TV shows and movies and rates them based on realism. He looks at \"John Wick: Chapter 3 - Parabellum\" (2019), \"The ... See full summary »",
+    "description": "Sushi master Endo Kazutoshi looks at nine sushi scenes from popular TV shows and movies and rates them based on realism. He looks at \"John Wick: Chapter 3 - Parabellum\" (2019), \"The",
     "stars": [
       "Endo Kazutoshi"
     ],
@@ -65645,7 +64255,7 @@ window.CINECLASH_CATALOG =
     "duration": "12 min",
     "genre": "Short, Action, Drama",
     "rating": 0,
-    "description": "On the morning of NASA's first expedition to a Mars base, battle-worn Black activists Addie, Osiris, and Tobias attempt to fight their way onto the shuttle. While Osiris and Tobias work to ... See full summary »",
+    "description": "On the morning of NASA's first expedition to a Mars base, battle-worn Black activists Addie, Osiris, and Tobias attempt to fight their way onto the shuttle. While Osiris and Tobias work to",
     "stars": [
       "Tai Brown",
       "Myles Grier",
@@ -65726,7 +64336,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Documentary",
     "rating": 0,
-    "description": "Visions of Us is a four-part digital documentary series that celebrates, uplifts and highlights some of the most groundbreaking queer Latinx characters and scenes in TV and Film, and the ... See full summary »",
+    "description": "Visions of Us is a four-part digital documentary series that celebrates, uplifts and highlights some of the most groundbreaking queer Latinx characters and scenes in TV and Film, and the",
     "stars": [
       "Steven Canals",
       "Tanya Saracho",
@@ -65736,46 +64346,16 @@ window.CINECLASH_CATALOG =
     "votes": 0
   },
   {
-    "title": "What 16 Movies Looked Like Behind the Scenes in 2021",
-    "year": 2021,
-    "duration": "15 min",
-    "genre": "Documentary, Short",
-    "rating": 0,
-    "description": "2021 began with a lot of uncertainty about delayed releases and how we would be able to consume blockbuster movies. Regardless of whether you watched at the theaters or from the comfort of ... See full summary »",
-    "stars": [
-      "Abby Tang",
-      "Andy Gill",
-      "Emma Stone",
-      "Jenny Beavan"
-    ],
-    "votes": 0
-  },
-  {
     "title": "Why Championship Chess Sets Are So Expensive",
     "year": 2021,
     "duration": "8 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "An inexpensive chess set can sell for $20, but a handcrafted wooden set certified for the World Chess Championship costs $500. Much of the set's value lies in just one piece: the knight. ... See full summary »",
+    "description": "An inexpensive chess set can sell for $20, but a handcrafted wooden set certified for the World Chess Championship costs $500. Much of the set's value lies in just one piece: the knight.",
     "stars": [
       "Taryn Varricchio",
       "Baljeet Singh",
       "Aditya Chopra"
-    ],
-    "votes": 0
-  },
-  {
-    "title": "Året der gik",
-    "year": 2020,
-    "duration": "134 min",
-    "genre": "History, Music, Talk-Show",
-    "rating": 0,
-    "description": "Add a Plot",
-    "stars": [
-      "Stéphanie Surrugue",
-      "Kåre Hjøllund Quist",
-      "Søren Brostrøm",
-      "Mette Frederiksen"
     ],
     "votes": 0
   },
@@ -65815,7 +64395,7 @@ window.CINECLASH_CATALOG =
     "duration": "21 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Kenneth Bombace, the CEO of security firm Global Threat Solutions, reacts to 10 memorable bodyguard scenes from movies and TV and rates them based on their accuracy. Bombace looks at ... See full summary »",
+    "description": "Kenneth Bombace, the CEO of security firm Global Threat Solutions, reacts to 10 memorable bodyguard scenes from movies and TV and rates them based on their accuracy. Bombace looks at",
     "stars": [
       "Kenneth Bombace"
     ],
@@ -65885,21 +64465,6 @@ window.CINECLASH_CATALOG =
     "votes": 0
   },
   {
-    "title": "Film School Friday: Creating for an Authentic Future",
-    "year": 2020,
-    "duration": "60 min",
-    "genre": "Talk-Show",
-    "rating": 0,
-    "description": "Add a Plot",
-    "stars": [
-      "Charles Rivkin",
-      "David Cicilline",
-      "John Gibson",
-      "Laverne Cox"
-    ],
-    "votes": 0
-  },
-  {
     "title": "Hiring Women",
     "year": 2020,
     "duration": "6 min",
@@ -65920,21 +64485,9 @@ window.CINECLASH_CATALOG =
     "duration": "7 min",
     "genre": "Documentary, Animation, Short",
     "rating": 0,
-    "description": "\"Klaus,\" Netflix's first animated film, is an origin story of Santa Claus. Because the Oscar-nominated movie appeals to nostalgia, director Sergio Pablos and his team at The SPA Studios in ... See full summary »",
+    "description": "\"Klaus,\" Netflix's first animated film, is an origin story of Santa Claus. Because the Oscar-nominated movie appeals to nostalgia, director Sergio Pablos and his team at The SPA Studios in",
     "stars": [
       "Sergio Pablos"
-    ],
-    "votes": 0
-  },
-  {
-    "title": "Know It All",
-    "year": 2020,
-    "duration": "",
-    "genre": "Talk-Show",
-    "rating": 0,
-    "description": "Know It All is the Netflix podcast hosted by OnlyJayus. Every Friday, Jayus will look for the answers to all the questions that come up while watching Netflix shows.",
-    "stars": [
-      "Bella Avila"
     ],
     "votes": 0
   },
@@ -65944,7 +64497,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Documentary",
     "rating": 0,
-    "description": "Last days in the life of the John A. Hegarty, a 46 years old family guy who is diagnosed whit terminal cancer. A journey through the unknown, a trip through Europe. A reflection of his ... See full summary »",
+    "description": "Last days in the life of the John A. Hegarty, a 46 years old family guy who is diagnosed whit terminal cancer. A journey through the unknown, a trip through Europe. A reflection of his",
     "stars": [
       "Germán de la Fuente"
     ],
@@ -65968,24 +64521,9 @@ window.CINECLASH_CATALOG =
     "duration": "22 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Toby Capwell, the curator of arms and armor at The Wallace Collection in London, reacts to 11 memorable scenes featuring medieval weapons and armor and rates them based on their historical ... See full summary »",
+    "description": "Toby Capwell, the curator of arms and armor at The Wallace Collection in London, reacts to 11 memorable scenes featuring medieval weapons and armor and rates them based on their historical",
     "stars": [
       "Tobias Capwell"
-    ],
-    "votes": 0
-  },
-  {
-    "title": "New York State Multicultural Creativity Summit - Tuesday, November 17, 2020",
-    "year": 2020,
-    "duration": "181 min",
-    "genre": "Talk-Show",
-    "rating": 0,
-    "description": "Add a Plot",
-    "stars": [
-      "John Gibson",
-      "Charles Rivkin",
-      "Eric Gertler",
-      "Brett King"
     ],
     "votes": 0
   },
@@ -66001,19 +64539,6 @@ window.CINECLASH_CATALOG =
       "Mo Heart",
       "Dani Kay",
       "Sang-Young Shin"
-    ],
-    "votes": 0
-  },
-  {
-    "title": "Okay, Now Listen",
-    "year": 2020,
-    "duration": "",
-    "genre": "Talk-Show",
-    "rating": 0,
-    "description": "Okay, Now Listen is a bi-weekly podcast hosted by Scottie Beam and Sylvia Obell. They share what's on their minds, what they're binging and what's blowing up their timelines.",
-    "stars": [
-      "Scottie Beam",
-      "Sylvia Obell"
     ],
     "votes": 0
   },
@@ -66043,20 +64568,6 @@ window.CINECLASH_CATALOG =
     "votes": 0
   },
   {
-    "title": "Revolution by Design",
-    "year": 2020,
-    "duration": "10 min",
-    "genre": "Documentary, Short",
-    "rating": 0,
-    "description": "Spike Lee gives an unprecedented look behind the scenes at creating the movie posters for his latest joint, Da 5 Bloods. This short documentary features Kenny Gravillis, art director for ... See full summary »",
-    "stars": [
-      "Emory Douglas",
-      "Kenny Gravillis",
-      "Spike Lee"
-    ],
-    "votes": 0
-  },
-  {
     "title": "Sincerely Daisy",
     "year": 2020,
     "duration": "87 min",
@@ -66077,7 +64588,7 @@ window.CINECLASH_CATALOG =
     "duration": "22 min",
     "genre": "Documentary, Short, Action",
     "rating": 0,
-    "description": "Bomb disposal expert Lloyd Davies rates the realism of bomb-disposal scenes in popular movies and TV shows. Davies addresses land mines in the TV show \"SEAL Team\" (2018) and other ... See full summary »",
+    "description": "Bomb disposal expert Lloyd Davies rates the realism of bomb-disposal scenes in popular movies and TV shows. Davies addresses land mines in the TV show \"SEAL Team\" (2018) and other",
     "stars": [
       "Lloyd Davies"
     ],
@@ -66116,7 +64627,7 @@ window.CINECLASH_CATALOG =
     "duration": "26 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "The final season of The Rain feels like the end of an era. Lucas Lynggaard Tønnesen, Alba August, Mikkel Boe Følsgaard and the rest of the cast reflect on their formative years on set and ... See full summary »",
+    "description": "The final season of The Rain feels like the end of an era. Lucas Lynggaard Tønnesen, Alba August, Mikkel Boe Følsgaard and the rest of the cast reflect on their formative years on set and",
     "stars": [
       "Lucas Lynggaard Tønnesen",
       "Alba August",
@@ -66247,49 +64758,12 @@ window.CINECLASH_CATALOG =
     "votes": 0
   },
   {
-    "title": "Strong Black Legends",
-    "year": 2019,
-    "duration": "",
-    "genre": "Talk-Show",
-    "rating": 0,
-    "description": "Strong Black Legends is a weekly show that honors the best of black Hollywood. Host Tracy Clayton sits down with the legends that paved the way for black representation both on and off screen.",
-    "stars": [
-      "Tracy Clayton"
-    ],
-    "votes": 0
-  },
-  {
-    "title": "The Crown: The Official Podcast",
-    "year": 2019,
-    "duration": "",
-    "genre": "",
-    "rating": 0,
-    "description": "Hosted by Edith Bowman, the podcast follows the show episode by episode, diving deep into the stories and taking listeners behind the scenes with insights from many of the people involved in making the show.",
-    "stars": [
-      "Edith Bowman"
-    ],
-    "votes": 0
-  },
-  {
-    "title": "The Geeked Podcast",
-    "year": 2019,
-    "duration": "",
-    "genre": "Talk-Show",
-    "rating": 0,
-    "description": "Are you a self proclaimed geek looking for a safe haven? Look no more. Hosts and total superfans Princess Weekes and Tessa Netting give you your weekly energy boost of the worlds, fandoms and stories you love.",
-    "stars": [
-      "Tessa Netting",
-      "Princess Weekes"
-    ],
-    "votes": 0
-  },
-  {
     "title": "Troll-A-Long with a Rent-A-Cop: A Thug Life Tour Guide to the Reno City Zoo",
     "year": 2019,
     "duration": "91 min",
     "genre": "Documentary, Animation, Comedy",
     "rating": 0,
-    "description": "During the Donald J. Trump Presidency, Agent Beacon, a Russian born U.S. Department of Justice recruit, goes undercover as a security officer to investigate organized crime in a small ... See full summary »",
+    "description": "During the Donald J. Trump Presidency, Agent Beacon, a Russian born U.S. Department of Justice recruit, goes undercover as a security officer to investigate organized crime in a small",
     "stars": [
       "Anton Iagounov"
     ],
@@ -66362,7 +64836,7 @@ window.CINECLASH_CATALOG =
     "duration": "12 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "An up-to-date look at Youth Suicide with an examination of the warning signs, statistics and causes, along with possible ways teachers and parents can use to help their child overcome this ... See full summary »",
+    "description": "An up-to-date look at Youth Suicide with an examination of the warning signs, statistics and causes, along with possible ways teachers and parents can use to help their child overcome this",
     "stars": [
       "John Halligan",
       "Heather Cleary",
@@ -66427,36 +64901,6 @@ window.CINECLASH_CATALOG =
     "votes": 0
   },
   {
-    "title": "Yass, Australia!",
-    "year": 2018,
-    "duration": "20 min",
-    "genre": "Short, Reality-TV",
-    "rating": 0,
-    "description": "Add a Plot",
-    "stars": [
-      "Bobby Berk",
-      "Karamo Brown",
-      "Tan France",
-      "Antoni Porowski"
-    ],
-    "votes": 0
-  },
-  {
-    "title": "You Can't Make This Up",
-    "year": 2018,
-    "duration": "",
-    "genre": "Talk-Show",
-    "rating": 0,
-    "description": "You Can't Make This Up is branded film and television podcast that digs into the real stories behind Netflix Original true stories. The program is hosted by Rebecca Lavoie who discusses how... See full summary »",
-    "stars": [
-      "Rebecca Lavoie",
-      "Chapman Way",
-      "Maclain Way",
-      "Lindsey Weber"
-    ],
-    "votes": 0
-  },
-  {
     "title": "Bruno Motta: Melhor que os Outros Stand Ups que Eu Já Fiz em 15 Anos de Carreira",
     "year": 2017,
     "duration": "66 min",
@@ -66484,16 +64928,6 @@ window.CINECLASH_CATALOG =
       "Lilly Dennis",
       "Calsey Langton"
     ],
-    "votes": 0
-  },
-  {
-    "title": "GLOW Featurette",
-    "year": 2017,
-    "duration": "",
-    "genre": "Comedy",
-    "rating": 0,
-    "description": "Add a Plot",
-    "stars": [],
     "votes": 0
   },
   {
@@ -66563,7 +64997,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Documentary",
     "rating": 0,
-    "description": "Retracing the life of a very intelligent man. Who life was cut short. Before the world could take advantage of his true comedic genius..His Brilliant writing talents...Only to be stifled by... See full summary »",
+    "description": "Retracing the life of a very intelligent man. Who life was cut short. Before the world could take advantage of his true comedic genius..His Brilliant writing talents...Only to be stifled by",
     "stars": [
       "Miss Black",
       "Dean Edwards",
@@ -66600,27 +65034,12 @@ window.CINECLASH_CATALOG =
     "votes": 0
   },
   {
-    "title": "Unbreakable Kimmy Schmidt Season 3 Featurette",
-    "year": 2017,
-    "duration": "2 min",
-    "genre": "Short, Comedy",
-    "rating": 0,
-    "description": "Add a Plot",
-    "stars": [
-      "Tituss Burgess",
-      "Carol Kane",
-      "Ellie Kemper",
-      "Jane Krakowski"
-    ],
-    "votes": 0
-  },
-  {
     "title": "Buds",
     "year": 2016,
     "duration": "",
     "genre": "Comedy",
     "rating": 0,
-    "description": "A group of friends, on their last Christmas break home together before college, attempts to prank their small town, while the local police chief, suffering from chronic back pain, struggles... See full summary »",
+    "description": "A group of friends, on their last Christmas break home together before college, attempts to prank their small town, while the local police chief, suffering from chronic back pain, struggles",
     "stars": [
       "Steven Lu",
       "Daniel Simpson",
@@ -66635,41 +65054,11 @@ window.CINECLASH_CATALOG =
     "duration": "17 min",
     "genre": "Short, Comedy",
     "rating": 0,
-    "description": "Netflix presents the new version of the New Years Eve classic \"Dinner for one\". Miss Sophie is celebrating her 90th birthday and is spending her entire day by watching Netflix. And for her ... See full summary »",
+    "description": "Netflix presents the new version of the New Years Eve classic \"Dinner for one\". Miss Sophie is celebrating her 90th birthday and is spending her entire day by watching Netflix. And for her",
     "stars": [
       "Maureen Beattie",
       "Matt Costain"
     ],
-    "votes": 0
-  },
-  {
-    "title": "Fuller House Season 2 Electronic Press Kit",
-    "year": 2016,
-    "duration": "",
-    "genre": "Short",
-    "rating": 0,
-    "description": "Add a Plot",
-    "stars": [],
-    "votes": 0
-  },
-  {
-    "title": "Fuller House Season 2: Behind the Scenes with New Kids on the Block",
-    "year": 2016,
-    "duration": "",
-    "genre": "Short",
-    "rating": 0,
-    "description": "Add a Plot",
-    "stars": [],
-    "votes": 0
-  },
-  {
-    "title": "Gilmore Girls: A Year in the Life Electronic Press Kit",
-    "year": 2016,
-    "duration": "",
-    "genre": "Short",
-    "rating": 0,
-    "description": "Add a Plot",
-    "stars": [],
     "votes": 0
   },
   {
@@ -66680,18 +65069,6 @@ window.CINECLASH_CATALOG =
     "rating": 0,
     "description": "Add a Plot",
     "stars": [],
-    "votes": 0
-  },
-  {
-    "title": "Netflix: The Making of 'Mr Bear: Then & Now'",
-    "year": 2016,
-    "duration": "",
-    "genre": "Short",
-    "rating": 0,
-    "description": "This 'behind the scenes' film follows the team at Netflix who have created an open source connected device for the holidays, in time for Fuller House's second season.",
-    "stars": [
-      "Ryan Collier-Woodford"
-    ],
     "votes": 0
   },
   {
@@ -66709,37 +65086,12 @@ window.CINECLASH_CATALOG =
     "votes": 0
   },
   {
-    "title": "The Little Prince Animation Featurette",
-    "year": 2016,
-    "duration": "",
-    "genre": "Animation, Short",
-    "rating": 0,
-    "description": "Add a Plot",
-    "stars": [],
-    "votes": 0
-  },
-  {
-    "title": "House of Cards: Season 3 - Behind the Scenes",
-    "year": 2015,
-    "duration": "",
-    "genre": "Documentary",
-    "rating": 0,
-    "description": "Add a Plot",
-    "stars": [
-      "Steve Beauchamp",
-      "Marta Bota",
-      "Jason Delgado",
-      "Andrea Leigh"
-    ],
-    "votes": 0
-  },
-  {
     "title": "The Battle for Bedtime Starring Batdad!",
     "year": 2015,
     "duration": "",
     "genre": "Short, Comedy",
     "rating": 0,
-    "description": "Every parent knows the struggle: Come nightfall, kids suddenly have a whole list of urgent reasons to delay bedtime, and they'll stop at nothing to make it happen. But wait! There's a handy... See full summary »",
+    "description": "Every parent knows the struggle: Come nightfall, kids suddenly have a whole list of urgent reasons to delay bedtime, and they'll stop at nothing to make it happen. But wait! There's a handy",
     "stars": [
       "Batdad"
     ],
@@ -66751,7 +65103,7 @@ window.CINECLASH_CATALOG =
     "duration": "65 min",
     "genre": "Documentary",
     "rating": 0,
-    "description": "The Sahara desert present two facets: the beauty of the dunes, telling us of ancient and beautiful cultures and landscapes, transmitting great serenity and well being. We then have the ... See full summary »",
+    "description": "The Sahara desert present two facets: the beauty of the dunes, telling us of ancient and beautiful cultures and landscapes, transmitting great serenity and well being. We then have the",
     "stars": [
       "Amos Alohan",
       "Doukassy Boubale",
@@ -66781,7 +65133,7 @@ window.CINECLASH_CATALOG =
     "duration": "94 min",
     "genre": "Family",
     "rating": 0,
-    "description": "Ricky & Melinda inhabit a world that is distinctly American and Latino. The film's main characters have a hard time fitting in. Ricky & Melinda are rejects, alone or misunderstood and exist... See full summary »",
+    "description": "Ricky & Melinda inhabit a world that is distinctly American and Latino. The film's main characters have a hard time fitting in. Ricky & Melinda are rejects, alone or misunderstood and exist",
     "stars": [
       "Maurice Compte",
       "Yelyna De Leon",
@@ -66830,7 +65182,7 @@ window.CINECLASH_CATALOG =
     "duration": "135 min",
     "genre": "Adventure",
     "rating": 0,
-    "description": "In his freshman year of college, Kyle Hanson seems to have everything - he's popular, cool and the hottest girl at school has her sights set on him. But things weren't always this way... As... See full summary »",
+    "description": "In his freshman year of college, Kyle Hanson seems to have everything - he's popular, cool and the hottest girl at school has her sights set on him. But things weren't always this way... As",
     "stars": [
       "Jon Zuber",
       "Heather Ashley",
@@ -66946,7 +65298,7 @@ window.CINECLASH_CATALOG =
     "duration": "",
     "genre": "Drama, Thriller",
     "rating": 0,
-    "description": "Still devastated over his ex-fiancee's murder, Jay goes on a weekend camping trip with his new girlfriend, his brother and his brother's girlfriend. Now away from the distractions of the ... See full summary »",
+    "description": "Still devastated over his ex-fiancee's murder, Jay goes on a weekend camping trip with his new girlfriend, his brother and his brother's girlfriend. Now away from the distractions of the",
     "stars": [
       "Serena Varghese",
       "Indi Wijay"
@@ -66959,7 +65311,7 @@ window.CINECLASH_CATALOG =
     "duration": "72 min",
     "genre": "Documentary, Family",
     "rating": 0,
-    "description": "The Oscar Lose Story (A Dog's Life) - A new feature length documentary about a small dog, his show business life and owner Dr. M. Phyllis Lose. After serving as one of America's first ... See full summary »",
+    "description": "The Oscar Lose Story (A Dog's Life) - A new feature length documentary about a small dog, his show business life and owner Dr. M. Phyllis Lose. After serving as one of America's first",
     "stars": [
       "Scott duPont",
       "Shirley Fox",
@@ -67111,7 +65463,7 @@ window.CINECLASH_CATALOG =
     "duration": "90 min",
     "genre": "Sport",
     "rating": 0,
-    "description": "The action never stops in this DVD filled with pure surfing stoke: Kevin Connelly's amazing footwork winning him the MSA Club Classic contest at Malibu; one of the best days ever at Swami's... See full summary »",
+    "description": "The action never stops in this DVD filled with pure surfing stoke: Kevin Connelly's amazing footwork winning him the MSA Club Classic contest at Malibu; one of the best days ever at Swami's",
     "stars": [
       "Kevin Connelly",
       "Jimmy Gamboa",
@@ -67138,7 +65490,7 @@ window.CINECLASH_CATALOG =
     "duration": "30 min",
     "genre": "Short, Family",
     "rating": 0,
-    "description": "Buddy Bear is afraid of attending his first day of pre-school, but with a little encouragement from Daddy Bear, he is soon off to his new school, meeting fabulous new friends and teachers ... See full summary »",
+    "description": "Buddy Bear is afraid of attending his first day of pre-school, but with a little encouragement from Daddy Bear, he is soon off to his new school, meeting fabulous new friends and teachers",
     "stars": [
       "Arturo Gil",
       "Michael Munoz",
@@ -67153,7 +65505,7 @@ window.CINECLASH_CATALOG =
     "duration": "43 min",
     "genre": "Documentary, Short",
     "rating": 0,
-    "description": "Shao Fang and her late husband, Sheng Pao, were invited to apprentice with Frank Lloyd Wright in the late 1940s. Later, in Williams Town, West Virginia, this Chinese couple designed and ... See full summary »",
+    "description": "Shao Fang and her late husband, Sheng Pao, were invited to apprentice with Frank Lloyd Wright in the late 1940s. Later, in Williams Town, West Virginia, this Chinese couple designed and",
     "stars": [
       "Weimin Zhang"
     ],
@@ -67180,7 +65532,7 @@ window.CINECLASH_CATALOG =
     "duration": "60 min",
     "genre": "Family",
     "rating": 0,
-    "description": "Magic 4 Morons teaches the viewer 10 amazing magic tricks that can be done with ordinary items found around the home. Professional magician, Lyndel performs the effects live in front of a ... See full summary »",
+    "description": "Magic 4 Morons teaches the viewer 10 amazing magic tricks that can be done with ordinary items found around the home. Professional magician, Lyndel performs the effects live in front of a",
     "stars": [
       "Eric Miles",
       "Tim Scarbrough",

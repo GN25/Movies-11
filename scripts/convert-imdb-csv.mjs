@@ -44,7 +44,7 @@ async function run() {
     const duration = cleanCell(row[indexByColumn.get("duration")]);
     const genre = normalizeGenre(cleanCell(row[indexByColumn.get("genre")]));
     const rating = parseRating(cleanCell(row[indexByColumn.get("rating")]));
-    const description = cleanCell(row[indexByColumn.get("description")]);
+    const description = normalizeDescription(cleanCell(row[indexByColumn.get("description")]));
     const stars = parseStars(cleanCell(row[indexByColumn.get("stars")]));
     const votes = parseVotes(cleanCell(row[indexByColumn.get("votes")]));
 
@@ -61,7 +61,7 @@ async function run() {
 
     works.push({
       record,
-      isTvShow: detectTvShow(yearRaw, certificate, duration, description)
+      isTvShow: detectTvShow(title, yearRaw, certificate, duration, genre, description)
     });
   }
 
@@ -95,7 +95,7 @@ async function run() {
     generatedAt,
     format: "csv-to-json",
     outputColumns: ["title", "year", "duration", "genre", "rating", "description", "stars", "votes"],
-    tvSeriesRule: "Series if year has a range OR (TV certificate AND episodic runtime/keywords).",
+    tvSeriesRule: "Series/special if award-event/news markers OR year range OR (TV certificate AND episodic runtime/keywords).",
     crossTypeConflictsRemovedFromMovies: moviesRaw.length - moviesRawWithoutSeriesKeys.length,
     moviesCount: movies.length,
     tvShowsCount: tvShows.length,
@@ -168,6 +168,11 @@ function cleanCell(value) {
   return String(value || "").replace(/\s+/g, " ").trim();
 }
 
+function normalizeDescription(value) {
+  const text = cleanCell(value);
+  return text.replace(/\s*(?:\.{3}|…)?\s*see\s+full\s+(?:summary|synopsis)\s*»?\s*$/i, "").trim();
+}
+
 function parseFirstYear(rawYear) {
   const value = String(rawYear || "");
   const match = value.match(/(\d{4})/);
@@ -221,7 +226,9 @@ function parseStars(rawStars) {
   return normalizeStars(values);
 }
 
-function detectTvShow(rawYear, certificate, duration, description) {
+function detectTvShow(title, rawYear, certificate, duration, genre, description) {
+  if (isLikelyNonMovieSpecial(title, genre, description)) return true;
+
   const yearText = String(rawYear || "").replace(/[()]/g, "").trim();
   const cert = String(certificate || "").toUpperCase();
   if (/\d{4}\s*[–-]\s*(\d{4}|$)/.test(yearText)) return true;
@@ -232,6 +239,37 @@ function detectTvShow(rawYear, certificate, duration, description) {
 
   const text = String(description || "").toLowerCase();
   if (/\b(series|episodes?|season|seasons|miniseries|sitcom|anthology)\b/.test(text)) return true;
+
+  return false;
+}
+
+function isLikelyNonMovieSpecial(title, genre, description) {
+  const titleText = String(title || "").toLowerCase();
+  const descText = String(description || "").toLowerCase();
+  const genreTokens = String(genre || "")
+    .split(",")
+    .map((item) => normalizeKey(item))
+    .filter(Boolean);
+
+  if (genreTokens.some((value) => ["news", "talk show", "game show", "reality tv"].includes(value))) {
+    return true;
+  }
+
+  if (/\b(?:season\s*\d+|episode\s*\d+)\b/i.test(titleText)) return true;
+  if (/\bthe oscars\b/i.test(titleText)) return true;
+  if (/\bseries\b[:\s-]/i.test(titleText)) return true;
+
+  const awardPattern =
+    /\b(?:\d{1,3}(?:st|nd|rd|th)\s+)?(?:annual\s+)?(?:golden globe|primetime emmy|screen actors guild|academy awards?|grammy|bafta|independent spirit awards?)\b/i;
+  if (awardPattern.test(titleText)) return true;
+  if (/\bawards?\b/i.test(titleText) && /\b(golden globe|emmy|screen actors guild|academy|grammy|bafta|spirit awards?)\b/i.test(titleText)) {
+    return true;
+  }
+  if (/\baward ceremony\b/i.test(`${titleText} ${descText}`)) return true;
+  if (/\b(featurette|electronic press kit|behind the scenes|date announcement commercial|for your consideration)\b/i.test(`${titleText} ${descText}`)) {
+    return true;
+  }
+  if (/\b(docuseries|miniseries)\b/i.test(descText)) return true;
 
   return false;
 }

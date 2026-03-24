@@ -1386,7 +1386,14 @@
         if (status) button.classList.add(status);
         button.disabled = state.status !== "playing";
 
-        button.addEventListener("click", () => onMoviedleKeyPress(key));
+        button.addEventListener("click", (event) => {
+          event.preventDefault();
+          event.stopPropagation();
+          onMoviedleKeyPress(key);
+          if (event.currentTarget && typeof event.currentTarget.blur === "function") {
+            event.currentTarget.blur();
+          }
+        });
         row.appendChild(button);
       });
 
@@ -1432,7 +1439,6 @@
 
     setMoviedleDraft(moviedleDraft + key);
     renderMoviedle();
-    focusMoviedleCapture();
   }
 
   function renderImpostor() {
@@ -2120,20 +2126,7 @@
         }
       });
     }
-    if (dom.moviedleBoard) {
-      dom.moviedleBoard.addEventListener("click", focusMoviedleCapture);
-    }
-    if (dom.moviedleSection) {
-      dom.moviedleSection.addEventListener("click", focusMoviedleCapture);
-    }
-    if (dom.moviedleCapture) {
-      dom.moviedleCapture.addEventListener("input", onMoviedleCaptureInput);
-      dom.moviedleCapture.addEventListener("keydown", onMoviedleCaptureKeydown);
-    }
     document.addEventListener("keydown", onMoviedleGlobalKeydown);
-    if (page === "moviedle" && shouldUseMoviedleCaptureFocus()) {
-      window.setTimeout(focusMoviedleCapture, 0);
-    }
 
     if (dom.impostorCheckBtn) {
       dom.impostorCheckBtn.addEventListener("click", submitImpostor);
@@ -2576,37 +2569,59 @@
   }
 
   function buildDailyConnectionsPuzzle(movieCatalog, dayHash) {
-    const primaryGenreBuckets = new Map();
-    movieCatalog.forEach((movie) => {
-      const primaryGenre = movie.genres[0];
-      if (!primaryGenre) return;
-      if (!primaryGenreBuckets.has(primaryGenre)) {
-        primaryGenreBuckets.set(primaryGenre, []);
+    const voteThresholds = [50000, 30000, 20000, 10000, 5000];
+    const blockedPrimaryGenres = new Set(["documentary", "news", "talk show", "game show", "reality tv", "short", "music"]);
+
+    for (const minVotes of voteThresholds) {
+      const primaryGenreBuckets = new Map();
+      movieCatalog
+        .filter((movie) => parseVotesValue(movie?.votes) >= minVotes)
+        .filter((movie) => Array.isArray(movie?.cast) && movie.cast.length >= 2)
+        .filter((movie) => !isLikelyNonMovieSpecial(movie?.title, movie?.genres, movie?.description))
+        .forEach((movie) => {
+          const primaryGenre = movie.genres[0];
+          if (blockedPrimaryGenres.has(normalize(primaryGenre))) return;
+          if (!primaryGenre) return;
+          if (!primaryGenreBuckets.has(primaryGenre)) {
+            primaryGenreBuckets.set(primaryGenre, []);
+          }
+          primaryGenreBuckets.get(primaryGenre).push(movie.title);
+        });
+
+      const genreEntries = [...primaryGenreBuckets.entries()].filter(([, titles]) => new Set(titles.map(normalize)).size >= 4);
+      if (genreEntries.length < 4) continue;
+
+      const rng = rngFromSeed(`${dayHash}-connections-dynamic-${minVotes}`);
+      const shuffledGenres = shuffle(genreEntries, rng);
+      const groups = [];
+      const usedTitles = new Set();
+
+      for (const [genre, titles] of shuffledGenres) {
+        const uniqueTitles = [...new Set(titles)].filter((title) => !usedTitles.has(normalize(title)));
+        if (uniqueTitles.length < 4) continue;
+
+        const ranked = uniqueTitles
+          .map((title) => movieMap.get(normalize(title)))
+          .filter(Boolean)
+          .sort(compareMoviesByRank)
+          .slice(0, Math.min(24, uniqueTitles.length))
+          .map((movie) => movie.title);
+
+        if (ranked.length < 4) continue;
+
+        const picked = shuffle(ranked, rng).slice(0, 4);
+        picked.forEach((title) => usedTitles.add(normalize(title)));
+        groups.push({ name: `${genre} Titles`, items: picked });
+
+        if (groups.length === 4) break;
       }
-      primaryGenreBuckets.get(primaryGenre).push(movie.title);
-    });
 
-    const genreEntries = [...primaryGenreBuckets.entries()].filter(([, titles]) => new Set(titles.map(normalize)).size >= 4);
-    if (genreEntries.length < 4) return null;
-
-    const rng = rngFromSeed(`${dayHash}-connections-dynamic`);
-    const shuffledGenres = shuffle(genreEntries, rng);
-    const groups = [];
-    const usedTitles = new Set();
-
-    for (const [genre, titles] of shuffledGenres) {
-      const uniqueTitles = [...new Set(titles)].filter((title) => !usedTitles.has(normalize(title)));
-      if (uniqueTitles.length < 4) continue;
-
-      const picked = shuffle(uniqueTitles, rng).slice(0, 4);
-      picked.forEach((title) => usedTitles.add(normalize(title)));
-      groups.push({ name: `${genre} Titles`, items: picked });
-
-      if (groups.length === 4) break;
+      if (groups.length === 4) {
+        return { title: "Genre Mix", groups };
+      }
     }
 
-    if (groups.length < 4) return null;
-    return { title: "Genre Mix", groups };
+    return null;
   }
 
   function buildDailyImpostorPuzzle(movieCatalog, dayHash) {
@@ -2733,8 +2748,10 @@
     const duration = typeof record.duration === "string" ? record.duration.trim() : "";
     const safeRating = parseRatingValue(record.rating);
     const safeVotes = parseVotesValue(record.votes);
-    const description =
+    const rawDescription =
       typeof record.description === "string" ? record.description.trim() : typeof record.clue === "string" ? record.clue.trim() : "";
+    const description = normalizeDescriptionText(rawDescription);
+    if (isLikelyNonMovieSpecial(title, genres, description)) return null;
 
     const popularity = Number(record.popularity);
     const safePopularity = Number.isFinite(popularity)
@@ -2819,6 +2836,39 @@
     const numeric = Number(String(value || "").replace(",", "."));
     if (!Number.isFinite(numeric)) return 0;
     return Math.max(0, Math.min(10, Number(numeric.toFixed(1))));
+  }
+
+  function normalizeDescriptionText(value) {
+    const text = String(value || "").replace(/\s+/g, " ").trim();
+    return text.replace(/\s*(?:\.{3}|…)?\s*see\s+full\s+(?:summary|synopsis)\s*»?\s*$/i, "").trim();
+  }
+
+  function isLikelyNonMovieSpecial(title, genres, description) {
+    const titleText = String(title || "").toLowerCase();
+    const descText = String(description || "").toLowerCase();
+    const genreTokens = (Array.isArray(genres) ? genres : []).map((genre) => normalize(String(genre || "")));
+
+    if (genreTokens.some((genre) => ["news", "talk show", "game show", "reality tv"].includes(genre))) {
+      return true;
+    }
+
+    if (/\b(?:season\s*\d+|episode\s*\d+)\b/i.test(titleText)) return true;
+    if (/\bthe oscars\b/i.test(titleText)) return true;
+    if (/\bseries\b[:\s-]/i.test(titleText)) return true;
+
+    const awardPattern =
+      /\b(?:\d{1,3}(?:st|nd|rd|th)\s+)?(?:annual\s+)?(?:golden globe|primetime emmy|screen actors guild|academy awards?|grammy|bafta|independent spirit awards?)\b/i;
+    if (awardPattern.test(titleText)) return true;
+    if (/\bawards?\b/i.test(titleText) && /\b(golden globe|emmy|screen actors guild|academy|grammy|bafta|spirit awards?)\b/i.test(titleText)) {
+      return true;
+    }
+    if (/\baward ceremony\b/i.test(`${titleText} ${descText}`)) return true;
+    if (/\b(featurette|electronic press kit|behind the scenes|date announcement commercial|for your consideration)\b/i.test(`${titleText} ${descText}`)) {
+      return true;
+    }
+    if (/\b(docuseries|miniseries)\b/i.test(descText)) return true;
+
+    return false;
   }
 
   function parseVotesValue(value) {

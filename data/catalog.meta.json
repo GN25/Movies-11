@@ -1,6 +1,6 @@
 {
   "source": "IMBD.csv",
-  "generatedAt": "2026-03-24T11:51:59.205Z",
+  "generatedAt": "2026-03-24T12:16:34.141Z",
   "format": "csv-to-json",
   "outputColumns": [
     "title",
@@ -12,9 +12,9 @@
     "stars",
     "votes"
   ],
-  "tvSeriesRule": "Series if year has a range OR (TV certificate AND episodic runtime/keywords).",
-  "crossTypeConflictsRemovedFromMovies": 103,
-  "moviesCount": 4611,
-  "tvShowsCount": 2792,
-  "uniqueMovieStars": 12714
+  "tvSeriesRule": "Series/special if award-event/news markers OR year range OR (TV certificate AND episodic runtime/keywords).",
+  "crossTypeConflictsRemovedFromMovies": 107,
+  "moviesCount": 4493,
+  "tvShowsCount": 2910,
+  "uniqueMovieStars": 12457
 }
