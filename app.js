@@ -89,12 +89,6 @@
   const currentGameKey = pageToGameKey(page);
   const gameDifficultyStoreKey = `cineclash-game-difficulty-v1-${todayKey}`;
   const gameDifficultyState = loadGameDifficultyState(gameDifficultyStoreKey);
-  const requestedDifficulty = parseDifficulty(urlParams.get("difficulty"));
-  const lockedGameDifficulty = currentGameKey ? parseDifficulty(gameDifficultyState[currentGameKey]) : "";
-  if (currentGameKey && !lockedGameDifficulty && requestedDifficulty) {
-    gameDifficultyState[currentGameKey] = requestedDifficulty;
-    persistGameDifficultyState(gameDifficultyStoreKey, gameDifficultyState);
-  }
   const selectedGameDifficulty = currentGameKey ? parseDifficulty(gameDifficultyState[currentGameKey]) : "";
   const needsDifficultySelection = Boolean(currentGameKey && !selectedGameDifficulty);
   const difficulty = selectedGameDifficulty || "medium";
@@ -585,12 +579,11 @@
       <div class="difficulty-gate-card" role="dialog" aria-modal="true" aria-labelledby="difficulty-gate-title">
         <h3 id="difficulty-gate-title">Choose Difficulty</h3>
         <p id="difficulty-gate-text"></p>
-        <label class="difficulty-gate-label" for="difficulty-gate-select">Difficulty</label>
-        <select id="difficulty-gate-select" class="difficulty-gate-select">
-          <option value="easy">Easy - Top 400</option>
-          <option value="medium">Medium - Top 1000</option>
-          <option value="hard">Hard - All Movies</option>
-        </select>
+        <div class="difficulty-gate-options" role="group" aria-label="Difficulty options">
+          <button type="button" class="difficulty-gate-option" data-difficulty="easy">Easy<br><span>Top 400</span></button>
+          <button type="button" class="difficulty-gate-option active" data-difficulty="medium">Medium<br><span>Top 1000</span></button>
+          <button type="button" class="difficulty-gate-option" data-difficulty="hard">Hard<br><span>All Movies</span></button>
+        </div>
         <div class="difficulty-gate-actions">
           <button type="button" class="btn btn-primary difficulty-gate-ok">OK</button>
         </div>
@@ -598,51 +591,53 @@
     `;
 
     const textNode = overlay.querySelector("#difficulty-gate-text");
-    const selectNode = overlay.querySelector("#difficulty-gate-select");
     const okBtn = overlay.querySelector(".difficulty-gate-ok");
+    const optionNodes = [...overlay.querySelectorAll(".difficulty-gate-option")];
+    let pickedDifficulty = "medium";
 
-    if (okBtn && selectNode) {
+    const setPickedDifficulty = (next) => {
+      pickedDifficulty = parseDifficulty(next) || "medium";
+      optionNodes.forEach((node) => {
+        const isActive = String(node.dataset.difficulty || "") === pickedDifficulty;
+        node.classList.toggle("active", isActive);
+        node.setAttribute("aria-pressed", isActive ? "true" : "false");
+      });
+    };
+
+    optionNodes.forEach((node) => {
+      node.addEventListener("click", () => {
+        setPickedDifficulty(node.dataset.difficulty);
+      });
+    });
+
+    if (okBtn) {
       okBtn.addEventListener("click", () => {
         if (!currentGameKey) return;
-        if (needsDifficultySelection) {
-          const nextDifficulty = parseDifficulty(selectNode.value) || "medium";
-          gameDifficultyState[currentGameKey] = nextDifficulty;
-          persistGameDifficultyState(gameDifficultyStoreKey, gameDifficultyState);
+        gameDifficultyState[currentGameKey] = pickedDifficulty;
+        persistGameDifficultyState(gameDifficultyStoreKey, gameDifficultyState);
 
-          const nextUrl = new URL(window.location.href);
-          nextUrl.searchParams.set("difficulty", nextDifficulty);
-          window.location.replace(nextUrl.toString());
-          return;
-        }
-        overlay.classList.remove("show");
+        const nextUrl = new URL(window.location.href);
+        nextUrl.searchParams.delete("difficulty");
+        window.location.replace(nextUrl.toString());
       });
     }
 
+    setPickedDifficulty("medium");
     document.body.appendChild(overlay);
-    difficultyGateModal = { overlay, textNode, selectNode, okBtn };
+    difficultyGateModal = { overlay, textNode, okBtn, setPickedDifficulty };
     return difficultyGateModal;
   }
 
   function showDifficultySelectionGate() {
-    if (!currentGameKey) return;
+    if (!currentGameKey || !needsDifficultySelection) return;
 
     const modal = ensureDifficultyGateModal();
     if (modal.textNode) {
-      modal.textNode.textContent = needsDifficultySelection
-        ? "Pick your challenge for this game. It stays locked here until tomorrow."
-        : `Today's difficulty is locked to ${difficulty.toUpperCase()} for this game.`;
+      modal.textNode.textContent = "Pick your challenge for this game. It stays locked here until tomorrow.";
     }
-    if (modal.selectNode) {
-      modal.selectNode.disabled = !needsDifficultySelection;
-      modal.selectNode.value = needsDifficultySelection ? "medium" : difficulty;
-      if (typeof modal.selectNode.focus === "function") {
-        modal.selectNode.focus({ preventScroll: true });
-      }
-    }
-    if (modal.okBtn) {
-      modal.okBtn.textContent = needsDifficultySelection ? "OK" : "Play";
-    }
+    if (typeof modal.setPickedDifficulty === "function") modal.setPickedDifficulty("medium");
     modal.overlay.classList.add("show");
+    if (modal.okBtn && typeof modal.okBtn.focus === "function") modal.okBtn.focus({ preventScroll: true });
   }
 
   function renderHome() {
