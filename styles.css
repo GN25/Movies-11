@@ -32,6 +32,7 @@ body {
   font-family: "Space Grotesk", sans-serif;
   font-size: 18px;
   line-height: 1.45;
+  overflow-x: hidden;
 }
 
 a {
@@ -79,7 +80,7 @@ a {
   top: 0;
   z-index: 30;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 24px;
   padding: 24px 5vw;
@@ -88,11 +89,22 @@ a {
   border-bottom: 1px solid var(--line);
 }
 
+.brand-home {
+  display: inline-flex;
+  align-items: center;
+  transition: opacity 0.16s ease;
+}
+
+.brand-home:hover {
+  opacity: 0.9;
+}
+
 .page-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
+  min-width: 0;
 }
 
 .nav-link {
@@ -105,6 +117,7 @@ a {
   letter-spacing: 0.06em;
   background: rgba(255, 255, 255, 0.05);
   transition: border-color 0.15s ease, background 0.15s ease;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
@@ -136,6 +149,15 @@ a {
   font-family: "Bebas Neue", sans-serif;
   font-size: clamp(56px, 7vw, 78px);
   letter-spacing: 0.05em;
+}
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+}
+
+.topbar-actions .btn {
+  white-space: nowrap;
 }
 
 .layout {
@@ -391,6 +413,8 @@ a {
   text-align: center;
   font-size: clamp(14px, 1.5vw, 20px);
   line-height: 1.2;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .grid-header {
@@ -535,6 +559,8 @@ input:focus {
   cursor: pointer;
   transition: border-color 0.15s ease, background 0.15s ease, transform 0.24s ease, opacity 0.24s ease;
   will-change: transform;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .conn-item.selected {
@@ -669,6 +695,8 @@ input:focus {
   padding: 12px;
   cursor: pointer;
   transition: border-color 0.16s ease, background 0.16s ease, transform 0.16s ease;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .impostor-option:hover {
@@ -731,6 +759,8 @@ input:focus {
   padding: 12px;
   cursor: pointer;
   transition: border-color 0.16s ease, background 0.16s ease, transform 0.16s ease;
+  overflow-wrap: anywhere;
+  word-break: break-word;
 }
 
 .impostor-cast-option:hover {
@@ -865,13 +895,16 @@ input:focus {
 }
 
 .moviedle-hidden-input {
-  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 1px;
   height: 1px;
   opacity: 0;
   pointer-events: none;
   border: 0;
   padding: 0;
+  transform: translate(-200vw, -200vh);
 }
 
 .moviedle-keyboard {
@@ -1106,12 +1139,36 @@ input:focus {
     padding: 20px 4vw;
   }
 
+  .brand {
+    font-size: clamp(44px, 7vw, 62px);
+  }
+
+  .page-nav {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    margin-bottom: -6px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+  }
+
+  .page-nav::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .page-nav::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.24);
+    border-radius: 999px;
+  }
+
   .hero {
     grid-template-columns: 1fr;
   }
 
   .hub-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .single-game {
@@ -1138,19 +1195,27 @@ input:focus {
   }
 
   .topbar {
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 14px;
   }
 
   .page-nav {
     width: 100%;
     justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    margin-bottom: -6px;
   }
 
   .nav-link {
     font-size: 12px;
     padding: 9px 13px;
+  }
+
+  .brand {
+    font-size: clamp(36px, 12vw, 52px);
   }
 
   .hub-grid {
@@ -1182,6 +1247,10 @@ input:focus {
   #live-feed,
   .clue-box p {
     font-size: 16px;
+  }
+
+  .stat-value {
+    font-size: clamp(24px, 8vw, 30px);
   }
 
   .guess-row,
@@ -1250,5 +1319,71 @@ input:focus {
 
   .hub-card {
     min-height: 0;
+  }
+
+  .hub-card p {
+    min-height: 0;
+  }
+}
+
+@media (max-width: 560px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+
+  .layout,
+  .footer {
+    width: min(1520px, 96vw);
+  }
+
+  .topbar {
+    padding: 14px 3vw;
+  }
+
+  .hero {
+    gap: 18px;
+  }
+
+  .hero-actions,
+  .share-actions,
+  .guess-actions {
+    gap: 10px;
+  }
+
+  .grid-header,
+  .grid-cell,
+  .conn-item,
+  .impostor-option,
+  .impostor-cast-option {
+    min-height: 62px;
+    font-size: 12px;
+    padding: 7px;
+  }
+
+  .moviedle-tile {
+    min-height: 52px;
+    font-size: 18px;
+  }
+
+  .moviedle-keyboard {
+    gap: 6px;
+  }
+
+  .moviedle-keyboard-row {
+    gap: 6px;
+  }
+
+  .moviedle-key {
+    font-size: 14px;
+    padding: 9px 5px;
+  }
+
+  .connections-reveal-row strong {
+    font-size: clamp(24px, 8vw, 30px);
+  }
+
+  .connections-reveal-row p {
+    font-size: 14px;
   }
 }

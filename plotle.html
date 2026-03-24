@@ -18,22 +18,12 @@
     <div class="ambient ambient-b"></div>
 
     <header class="topbar">
-      <div class="brand-wrap">
-        <p class="eyebrow">Daily Challenge</p>
-        <h1 class="brand">CineClash</h1>
-      </div>
-      <nav class="page-nav">
-        <a class="nav-link" href="./index.html">Home</a>
-        <a class="nav-link" href="./movie-grid.html">Movie Grid</a>
-        <a class="nav-link" href="./cast-connections.html">Connections</a>
-        <a class="nav-link active" href="./plotle.html">Plotle</a>
-        <a class="nav-link" href="./moviedle.html">Moviedle</a>
-        <a class="nav-link" href="./impostor.html">Spotlight</a>
-        <a class="nav-link" href="./impostor-cast.html">Impostor</a>
-      </nav>
-      <div class="topbar-actions">
-        <button id="copy-link-btn" class="btn btn-ghost">Copy Invite Link</button>
-      </div>
+      <a class="brand-home" href="./index.html" aria-label="Go to home">
+        <div class="brand-wrap">
+          <p class="eyebrow">Daily Challenge</p>
+          <h1 class="brand">CineClash</h1>
+        </div>
+      </a>
     </header>
 
     <main class="layout">
@@ -41,7 +31,7 @@
         <div class="hero-main">
           <p class="hero-kicker">Game 3 of 6</p>
           <h2>Plotle</h2>
-          <p class="hero-sub">Guess the daily movie or series in 6 tries with new clues after each miss.</p>
+          <p class="hero-sub">Guess the daily movie in 6 tries with new clues after each miss.</p>
           <div class="hero-actions">
             <a href="./moviedle.html" class="btn btn-secondary">Next: Moviedle</a>
           </div>
@@ -79,7 +69,7 @@
         <div id="plotle-clues" class="clue-box"></div>
         <div class="panel">
           <div class="guess-row">
-            <input id="plotle-input" list="movie-options" autocomplete="off" placeholder="Guess the movie or series" />
+            <input id="plotle-input" list="movie-options" autocomplete="off" placeholder="Guess the movie" />
             <button id="plotle-submit-btn" class="btn btn-primary">Guess</button>
           </div>
           <datalist id="movie-options"></datalist>
@@ -99,7 +89,7 @@
     </main>
 
     <footer class="footer">
-      <p>Built for movie and series fans who keep receipts.</p>
+      <p>Built for movie fans who keep receipts.</p>
     </footer>
 
     <div id="toast" class="toast"></div>

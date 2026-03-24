@@ -605,7 +605,7 @@
     const state = daily.grid;
     dom.gridBoard.innerHTML = "";
     if (dom.gridInput) {
-      dom.gridInput.placeholder = gridPuzzle.answerType === "actor" ? "Type an actor name" : "Type a movie or series title";
+      dom.gridInput.placeholder = gridPuzzle.answerType === "actor" ? "Type an actor name" : "Type a movie title";
     }
 
     dom.gridBoard.appendChild(createGridNode("grid-header grid-corner", gridPuzzle.cornerLabel));
@@ -1263,7 +1263,7 @@
 
     const letterMatches = movies
       .filter((movie) => titleLetters(movie.title) === letters)
-      .sort((a, b) => b.popularity - a.popularity);
+      .sort(compareMoviesByRank);
 
     return letterMatches[0] || null;
   }
@@ -1283,10 +1283,17 @@
 
   function focusMoviedleCapture() {
     if (page !== "moviedle" || !dom.moviedleCapture || daily.moviedle.status !== "playing") return;
+    if (!shouldUseMoviedleCaptureFocus() && document.activeElement !== dom.moviedleCapture) return;
+
+    const prevX = window.scrollX;
+    const prevY = window.scrollY;
     dom.moviedleCapture.focus({ preventScroll: true });
     const caret = moviedleDraft.length;
     if (typeof dom.moviedleCapture.setSelectionRange === "function") {
       dom.moviedleCapture.setSelectionRange(caret, caret);
+    }
+    if (window.scrollX !== prevX || window.scrollY !== prevY) {
+      window.scrollTo(prevX, prevY);
     }
   }
 
@@ -1344,6 +1351,10 @@
     event.preventDefault();
     setMoviedleDraft(moviedleDraft + event.key);
     renderMoviedle();
+  }
+
+  function shouldUseMoviedleCaptureFocus() {
+    return typeof window !== "undefined" && typeof window.matchMedia === "function" && window.matchMedia("(pointer: coarse)").matches;
   }
 
   function renderMoviedleKeyboard() {
@@ -2120,7 +2131,7 @@
       dom.moviedleCapture.addEventListener("keydown", onMoviedleCaptureKeydown);
     }
     document.addEventListener("keydown", onMoviedleGlobalKeydown);
-    if (page === "moviedle") {
+    if (page === "moviedle" && shouldUseMoviedleCaptureFocus()) {
       window.setTimeout(focusMoviedleCapture, 0);
     }
 
@@ -2434,16 +2445,24 @@
       }
     });
 
-    titleCandidates.forEach((title) => {
+    const maxTitleCandidates = 520;
+    const rankedTitleCandidates = [...new Set(titleCandidates)]
+      .map((title) => movieMap.get(normalize(title)))
+      .filter(Boolean)
+      .sort(compareMoviesByRank)
+      .slice(0, maxTitleCandidates)
+      .map((movie) => movie.title);
+
+    rankedTitleCandidates.forEach((title) => {
       titleCoTitleMap.set(title, new Set());
     });
 
-    titleCandidates.forEach((titleA) => {
+    rankedTitleCandidates.forEach((titleA) => {
       const movieA = movieMap.get(normalize(titleA));
       if (!movieA) return;
       const castA = new Set(movieA.cast.map((name) => normalize(name)));
 
-      titleCandidates.forEach((titleB) => {
+      rankedTitleCandidates.forEach((titleB) => {
         if (normalize(titleA) === normalize(titleB)) return;
         const movieB = movieMap.get(normalize(titleB));
         if (!movieB) return;
@@ -2458,12 +2477,14 @@
 
     const actorCandidates = [...actorMovieCount.entries()]
       .filter(([, count]) => count >= 3)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 2000)
       .map(([actor]) => actor);
 
     const rng = rngFromSeed(`${dayHash}-grid-template`);
     const genreOrder = shuffle(genreCandidates, rng);
     const actorOrder = shuffle(actorCandidates, rng);
-    const titleOrder = shuffle(titleCandidates.slice(), rng);
+    const titleOrder = shuffle(rankedTitleCandidates.slice(), rng);
 
     const tryActorGenreTemplate = () => {
       for (let attempt = 0; attempt < 24; attempt += 1) {
@@ -2686,11 +2707,13 @@
   }
 
   function resolveCatalogMovies(fallbackCatalog, runtimeCatalog) {
-    const runtime = Array.isArray(runtimeCatalog) ? runtimeCatalog.map(sanitizeMovieRecord).filter(Boolean) : [];
+    const runtime = Array.isArray(runtimeCatalog)
+      ? dedupeCatalogByTitle(runtimeCatalog.map(sanitizeMovieRecord).filter(Boolean))
+      : [];
     if (runtime.length >= 40 && hasViableGrid(runtime) && hasViableConnections(runtime)) {
       return runtime;
     }
-    return fallbackCatalog.map(sanitizeMovieRecord).filter(Boolean);
+    return dedupeCatalogByTitle(fallbackCatalog.map(sanitizeMovieRecord).filter(Boolean));
   }
 
   function sanitizeMovieRecord(record) {
@@ -2699,22 +2722,26 @@
     const title = record.title.trim();
     if (!title) return null;
 
-    const year = Number(record.year);
+    const year = Number(parseYearValue(record.year));
     const safeYear = Number.isFinite(year) ? Math.max(1900, Math.min(2100, Math.round(year))) : 2000;
 
-    const genres = Array.isArray(record.genres)
-      ? [...new Set(record.genres.map((genre) => String(genre || "").trim()).filter(Boolean))]
-      : [];
-    const cast = Array.isArray(record.cast)
-      ? [...new Set(record.cast.map((name) => String(name || "").trim()).filter(Boolean))]
-      : [];
+    const genres = parseGenreList(record.genre ?? record.genres);
+    const cast = parseStarsList(record.stars ?? record.cast);
 
     if (!genres.length || !cast.length) return null;
 
-    const popularity = Number(record.popularity);
-    const safePopularity = Number.isFinite(popularity) ? Math.max(1, Math.min(100, Math.round(popularity))) : 60;
+    const duration = typeof record.duration === "string" ? record.duration.trim() : "";
+    const safeRating = parseRatingValue(record.rating);
+    const safeVotes = parseVotesValue(record.votes);
+    const description =
+      typeof record.description === "string" ? record.description.trim() : typeof record.clue === "string" ? record.clue.trim() : "";
 
-    let clue = typeof record.clue === "string" ? record.clue.trim() : "";
+    const popularity = Number(record.popularity);
+    const safePopularity = Number.isFinite(popularity)
+      ? Math.max(1, Math.min(100, Math.round(popularity)))
+      : scorePopularityFromRatingVotes(safeRating, safeVotes);
+
+    let clue = description;
     if (!clue) {
       clue = `${title} is a ${genres[0]} title released in ${safeYear}.`;
     }
@@ -2722,11 +2749,141 @@
     return {
       title,
       year: safeYear,
+      duration,
+      genre: genres.join(", "),
+      rating: safeRating,
+      description: description || clue,
+      stars: cast.slice(0, 6),
+      votes: safeVotes,
       genres: genres.slice(0, 4),
       cast: cast.slice(0, 6),
       popularity: safePopularity,
       clue
     };
+  }
+
+  function parseYearValue(value) {
+    const raw = String(value || "");
+    const match = raw.match(/(\d{4})/);
+    return match ? Number(match[1]) : Number(raw);
+  }
+
+  function parseGenreList(input) {
+    if (Array.isArray(input)) {
+      return [...new Set(input.map((genre) => String(genre || "").trim()).filter(Boolean))];
+    }
+
+    return [...new Set(
+      String(input || "")
+        .split(",")
+        .map((genre) => String(genre || "").trim())
+        .filter(Boolean)
+    )];
+  }
+
+  function parseStarsList(input) {
+    if (Array.isArray(input)) {
+      return [...new Set(input.map((name) => String(name || "").trim()).filter(Boolean))];
+    }
+
+    const raw = String(input || "").trim();
+    if (!raw) return [];
+
+    const out = [];
+    const regex = /'((?:\\'|[^'])*)'/g;
+    let match = regex.exec(raw);
+    while (match) {
+      const name = String(match[1] || "")
+        .replace(/\\'/g, "'")
+        .replace(/,\s*$/, "")
+        .trim();
+      if (name) out.push(name);
+      match = regex.exec(raw);
+    }
+
+    if (out.length) {
+      return normalizeStarsList(out);
+    }
+
+    return normalizeStarsList(
+      raw
+        .replace(/^\[/, "")
+        .replace(/\]$/, "")
+        .split(",")
+        .map((name) => String(name || "").replace(/^['"]|['"]$/g, "").trim())
+        .filter(Boolean)
+    );
+  }
+
+  function parseRatingValue(value) {
+    const numeric = Number(String(value || "").replace(",", "."));
+    if (!Number.isFinite(numeric)) return 0;
+    return Math.max(0, Math.min(10, Number(numeric.toFixed(1))));
+  }
+
+  function parseVotesValue(value) {
+    if (Number.isFinite(Number(value))) return Math.max(0, Math.round(Number(value)));
+    const digits = String(value || "").replace(/[^0-9]/g, "");
+    const numeric = Number(digits);
+    if (!Number.isFinite(numeric)) return 0;
+    return Math.max(0, Math.round(numeric));
+  }
+
+  function scorePopularityFromRatingVotes(rating, votes) {
+    const voteScore = Math.min(100, Math.round((Math.log10(Math.max(1, votes) + 1) / 6) * 100));
+    const ratingScore = Math.min(100, Math.max(0, Math.round((rating / 10) * 100)));
+    return Math.max(1, Math.min(100, Math.round(voteScore * 0.7 + ratingScore * 0.3)));
+  }
+
+  function compareMoviesByRank(a, b) {
+    const votesA = parseVotesValue(a?.votes);
+    const votesB = parseVotesValue(b?.votes);
+    if (votesB !== votesA) return votesB - votesA;
+
+    const ratingA = parseRatingValue(a?.rating);
+    const ratingB = parseRatingValue(b?.rating);
+    if (ratingB !== ratingA) return ratingB - ratingA;
+
+    const popularityA = Number(a?.popularity) || 0;
+    const popularityB = Number(b?.popularity) || 0;
+    if (popularityB !== popularityA) return popularityB - popularityA;
+
+    const yearA = Number(a?.year) || 0;
+    const yearB = Number(b?.year) || 0;
+    if (yearB !== yearA) return yearB - yearA;
+
+    return String(a?.title || "").localeCompare(String(b?.title || ""));
+  }
+
+  function normalizeStarsList(stars) {
+    const list = Array.isArray(stars) ? stars.map((name) => String(name || "").trim()).filter(Boolean) : [];
+    const splitIndex = list.lastIndexOf("|");
+    const candidateList = splitIndex >= 0 ? list.slice(splitIndex + 1) : list;
+
+    return [...new Set(
+      candidateList.filter((value) => {
+        const lower = String(value || "").toLowerCase().replace(/:$/, "");
+        if (!value || value === "|") return false;
+        if (lower === "star" || lower === "stars" || lower === "director" || lower === "directors") return false;
+        return true;
+      })
+    )];
+  }
+
+  function dedupeCatalogByTitle(movieCatalog) {
+    const bestByTitle = new Map();
+
+    movieCatalog.forEach((movie) => {
+      const key = normalize(movie?.title);
+      if (!key) return;
+
+      const current = bestByTitle.get(key);
+      if (!current || compareMoviesByRank(movie, current) < 0) {
+        bestByTitle.set(key, movie);
+      }
+    });
+
+    return [...bestByTitle.values()];
   }
 
   function hasViableGrid(movieCatalog) {

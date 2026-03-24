@@ -16,13 +16,13 @@ const OUTPUT_META = path.resolve("data/catalog.meta.json");
 const minYear = clampInt(process.env.WIKIDATA_MIN_YEAR, 1975, 1900, 2100);
 const maxYear = clampInt(process.env.WIKIDATA_MAX_YEAR, new Date().getFullYear(), 1900, 2100);
 const minSitelinks = clampInt(process.env.WIKIDATA_MIN_SITELINKS, 12, 0, 1000);
-const queryLimit = clampInt(process.env.WIKIDATA_QUERY_LIMIT, 90, 20, 300);
-const maxMovies = clampInt(process.env.WIKIDATA_MAX_MOVIES, 240, 80, 2000);
+const queryLimit = clampInt(process.env.WIKIDATA_QUERY_LIMIT, 90, 20, 600);
+const maxMovies = clampInt(process.env.WIKIDATA_MAX_MOVIES, 240, 80, 6000);
 const minActorReuse = clampInt(process.env.WIKIDATA_MIN_ACTOR_REUSE, 2, 1, 10);
 const yearStep = clampInt(process.env.WIKIDATA_YEAR_STEP, 5, 1, 25);
 const maxRetries = clampInt(process.env.WIKIDATA_MAX_RETRIES, 7, 1, 12);
 const requestDelayMs = clampInt(process.env.WIKIDATA_REQUEST_DELAY_MS, 220, 0, 3000);
-const includeSeries = parseBool(process.env.WIKIDATA_INCLUDE_SERIES, true);
+const includeSeries = false;
 const claimsBatchSize = clampInt(
   process.env.WIKIDATA_CLAIMS_BATCH_SIZE ?? process.env.WIKIDATA_BATCH_SIZE,
   40,
@@ -36,12 +36,13 @@ const labelsBatchSize = clampInt(
   50
 );
 const timeoutMs = clampInt(process.env.WIKIDATA_TIMEOUT_MS, 28000, 5000, 120000);
-const poolFactor = clampInt(process.env.WIKIDATA_POOL_FACTOR, 3, 1, 6);
+const poolFactor = clampInt(process.env.WIKIDATA_POOL_FACTOR, 3, 1, 10);
+const prefilterMultiplier = clampFloat(process.env.WIKIDATA_PREFILTER_MULTIPLIER, 2, 1.05, 3);
+const prefilterMinExtra = clampInt(process.env.WIKIDATA_PREFILTER_MIN_EXTRA, 120, 20, 1000);
 const apiMinIntervalMs = clampInt(process.env.WIKIDATA_API_MIN_INTERVAL_MS, 900, 100, 10000);
 
 const endpoints = parseEndpoints(process.env.WIKIDATA_ENDPOINTS, DEFAULT_ENDPOINTS);
 const entityTypes = [{ qid: "Q11424", label: "movie" }];
-if (includeSeries) entityTypes.push({ qid: "Q5398426", label: "series" });
 let nextApiAllowedAt = 0;
 
 run().catch((error) => {
@@ -69,7 +70,7 @@ async function run() {
       const context = `${entityType.label} ${range.from}-${range.to}`;
       console.log(`- ${context} (limit ${queryLimit})`);
       const data = await fetchSparqlWithRetry(query, context);
-      const chunk = parseWorks(data, entityType.label);
+      const chunk = parseWorks(data);
       console.log(`  -> ${chunk.length} candidates`);
       works.push(...chunk);
 
@@ -101,7 +102,6 @@ async function run() {
         id: work.id,
         year: work.year,
         sitelinks: work.sitelinks,
-        mediaType: work.mediaType,
         genreIds,
         castIds
       };
@@ -122,7 +122,7 @@ async function run() {
     }))
     .filter((item) => item.castIds.length >= 2)
     .sort((a, b) => b.sitelinks - a.sitelinks)
-    .slice(0, Math.max(maxMovies * 2, maxMovies + 120));
+    .slice(0, Math.max(Math.ceil(maxMovies * prefilterMultiplier), maxMovies + prefilterMinExtra));
 
   const labelIds = new Set();
   prefiltered.forEach((item) => {
@@ -134,7 +134,7 @@ async function run() {
   console.log(`Resolving labels for ${labelIds.size} entities in batches of ${labelsBatchSize}...`);
   const labelMap = await fetchLabels([...labelIds]);
 
-  const filtered = prefiltered
+  const filteredCandidates = prefiltered
     .map((item) => {
       const title = cleanText(labelMap.get(item.id));
       if (!title) return null;
@@ -145,7 +145,6 @@ async function run() {
         title,
         year: item.year,
         sitelinks: item.sitelinks,
-        mediaType: item.mediaType,
         genres: [...new Set(genres)].slice(0, 4),
         cast: [...new Set(cast)].slice(0, 8)
       };
@@ -154,8 +153,9 @@ async function run() {
     .filter((item) => {
       const len = titleLetters(item.title).length;
       return len >= 4 && len <= 24;
-    })
-    .slice(0, maxMovies);
+    });
+
+  const filtered = dedupeByNormalizedTitle(filteredCandidates).slice(0, maxMovies);
 
   if (filtered.length < 80) {
     throw new Error(
@@ -206,6 +206,8 @@ async function run() {
     labelsBatchSize,
     timeoutMs,
     poolFactor,
+    prefilterMultiplier,
+    prefilterMinExtra,
     apiMinIntervalMs,
     entityTypes: entityTypes.map((item) => item.label),
     movieCount: catalog.length,
@@ -454,7 +456,7 @@ async function fetchSparql(endpoint, query) {
   }
 }
 
-function parseWorks(data, mediaType) {
+function parseWorks(data) {
   const rows = data?.results?.bindings || [];
   return rows
     .map((row) => {
@@ -462,7 +464,7 @@ function parseWorks(data, mediaType) {
       const year = Number(row?.year?.value);
       const sitelinks = Number(row?.sitelinks?.value);
       if (!id || !Number.isFinite(year) || !Number.isFinite(sitelinks)) return null;
-      return { id, year, sitelinks, mediaType };
+      return { id, year, sitelinks };
     })
     .filter(Boolean);
 }
@@ -482,6 +484,20 @@ function dedupeById(records) {
   return [...best.values()];
 }
 
+function dedupeByNormalizedTitle(records) {
+  const out = [];
+  const seen = new Set();
+
+  records.forEach((record) => {
+    const key = titleLetters(record?.title || "");
+    if (!key || seen.has(key)) return;
+    seen.add(key);
+    out.push(record);
+  });
+
+  return out;
+}
+
 function qidFromUri(uri) {
   const raw = String(uri || "");
   const match = raw.match(/Q\d+$/);
@@ -495,8 +511,7 @@ function scorePopularity(sitelinks, maxSitelinksValue) {
 
 function buildClue(entry) {
   const leadCast = entry.cast.slice(0, 2).join(" and ");
-  const label = entry.mediaType === "series" ? "series" : "movie";
-  return `Released in ${entry.year}. This ${label} includes genres ${entry.genres.slice(0, 2).join(" / ")} and cast such as ${leadCast}.`;
+  return `Released in ${entry.year}. This movie includes genres ${entry.genres.slice(0, 2).join(" / ")} and cast such as ${leadCast}.`;
 }
 
 function parseEndpoints(raw, fallback) {
@@ -541,6 +556,12 @@ function clampInt(input, fallback, min, max) {
   const value = Number(input);
   if (!Number.isFinite(value)) return fallback;
   return Math.max(min, Math.min(max, Math.round(value)));
+}
+
+function clampFloat(input, fallback, min, max) {
+  const value = Number(input);
+  if (!Number.isFinite(value)) return fallback;
+  return Math.max(min, Math.min(max, value));
 }
 
 function parseBool(value, fallback) {

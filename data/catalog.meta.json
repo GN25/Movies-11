@@ -1,30 +1,20 @@
 {
-  "source": "Wikidata",
-  "generatedAt": "2026-03-24T08:26:47.383Z",
-  "endpoints": [
-    "https://query.wikidata.org/sparql",
-    "https://qlever.dev/api/wikidata"
+  "source": "IMBD.csv",
+  "generatedAt": "2026-03-24T11:51:59.205Z",
+  "format": "csv-to-json",
+  "outputColumns": [
+    "title",
+    "year",
+    "duration",
+    "genre",
+    "rating",
+    "description",
+    "stars",
+    "votes"
   ],
-  "wikidataApiUrl": "https://www.wikidata.org/w/api.php",
-  "minYear": 1950,
-  "maxYear": 2026,
-  "minSitelinks": 6,
-  "queryLimit": 100,
-  "maxMovies": 700,
-  "minActorReuse": 1,
-  "yearStep": 3,
-  "maxRetries": 12,
-  "requestDelayMs": 350,
-  "includeSeries": true,
-  "claimsBatchSize": 30,
-  "labelsBatchSize": 50,
-  "timeoutMs": 28000,
-  "poolFactor": 4,
-  "apiMinIntervalMs": 1300,
-  "entityTypes": [
-    "movie",
-    "series"
-  ],
-  "movieCount": 700,
-  "uniqueActors": 3043
+  "tvSeriesRule": "Series if year has a range OR (TV certificate AND episodic runtime/keywords).",
+  "crossTypeConflictsRemovedFromMovies": 103,
+  "moviesCount": 4611,
+  "tvShowsCount": 2792,
+  "uniqueMovieStars": 12714
 }
