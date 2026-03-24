@@ -582,7 +582,7 @@
         <h3 id="difficulty-gate-title">Choose Difficulty</h3>
         <p id="difficulty-gate-text"></p>
         <div class="difficulty-gate-options" role="group" aria-label="Difficulty options">
-          <button type="button" class="difficulty-gate-option" data-difficulty="easy">Easy<br><span>Curated 320</span></button>
+          <button type="button" class="difficulty-gate-option" data-difficulty="easy">Easy<br><span>Curated 300</span></button>
           <button type="button" class="difficulty-gate-option active" data-difficulty="medium">Medium<br><span>Top 500</span></button>
           <button type="button" class="difficulty-gate-option" data-difficulty="hard">Hard<br><span>All Movies</span></button>
         </div>
@@ -2834,10 +2834,15 @@
       .map(([genre]) => genre);
 
     const minActorFrequency = isEasyGrid ? 6 : 3;
-    const actorCandidates = [...actorMovieCount.entries()]
+    const baseActorCandidates = [...actorMovieCount.entries()]
       .filter(([, count]) => count >= minActorFrequency)
-      .sort((a, b) => b[1] - a[1])
+      .sort((a, b) => b[1] - a[1]);
+    let actorCandidates = baseActorCandidates
+      .filter(([actor]) => !isEasyGrid || isKnownEasyGridActor(actor))
       .map(([actor]) => actor);
+    if (isEasyGrid && actorCandidates.length < 20) {
+      actorCandidates = baseActorCandidates.slice(0, Math.min(80, baseActorCandidates.length)).map(([actor]) => actor);
+    }
 
     const rng = rngFromSeed(`${dayHash}-grid-template`);
     const genreSeedPool = isEasyGrid
@@ -2941,7 +2946,7 @@
       return null;
     };
 
-    const modeOrder = [tryActorActorTemplate];
+    const modeOrder = [tryActorActorTemplate, tryGenreActorTemplate];
 
     for (const buildTemplate of modeOrder) {
       const candidate = buildTemplate();
@@ -2949,9 +2954,9 @@
     }
 
     const fallbackPool = fallbackTemplates.map((template) => ({
-      rows: template.rows.slice(0, 3),
+      rows: template.cols.slice(0, 3),
       cols: template.rows.slice(0, 3),
-      rowType: "actor",
+      rowType: "genre",
       colType: "actor",
       answerType: "title"
     }));
@@ -3625,6 +3630,120 @@
     return getEasyBlockbusterTitleExclusions.cache;
   }
 
+  function getEasyGridActorAllowSet() {
+    if (getEasyGridActorAllowSet.cache) return getEasyGridActorAllowSet.cache;
+    getEasyGridActorAllowSet.cache = new Set(
+      [
+        "Leonardo DiCaprio",
+        "Brad Pitt",
+        "Tom Hanks",
+        "Meryl Streep",
+        "Robert De Niro",
+        "Al Pacino",
+        "Morgan Freeman",
+        "Denzel Washington",
+        "Matt Damon",
+        "Ben Affleck",
+        "Christian Bale",
+        "Anne Hathaway",
+        "Scarlett Johansson",
+        "Ryan Gosling",
+        "Ryan Reynolds",
+        "Emma Stone",
+        "Jennifer Lawrence",
+        "Sandra Bullock",
+        "Keanu Reeves",
+        "Will Smith",
+        "Angelina Jolie",
+        "Johnny Depp",
+        "Natalie Portman",
+        "Samuel L. Jackson",
+        "Mark Ruffalo",
+        "Chris Hemsworth",
+        "Chris Evans",
+        "Robert Downey Jr.",
+        "Tom Holland",
+        "Zendaya",
+        "Joaquin Phoenix",
+        "Harrison Ford",
+        "Carrie Fisher",
+        "Ewan McGregor",
+        "Daniel Craig",
+        "Pierce Brosnan",
+        "Sean Connery",
+        "Sylvester Stallone",
+        "Arnold Schwarzenegger",
+        "Bruce Willis",
+        "Sigourney Weaver",
+        "George Clooney",
+        "Julia Roberts",
+        "Jim Carrey",
+        "Steve Carell",
+        "Will Ferrell",
+        "Benedict Cumberbatch",
+        "Hugh Jackman",
+        "Russell Crowe",
+        "Cate Blanchett",
+        "Orlando Bloom",
+        "Ian McKellen",
+        "Viggo Mortensen",
+        "Elijah Wood",
+        "Daniel Radcliffe",
+        "Emma Watson",
+        "Rupert Grint",
+        "Michael Caine",
+        "Gary Oldman",
+        "Heath Ledger",
+        "Jesse Eisenberg",
+        "Andrew Garfield",
+        "Tobey Maguire",
+        "Vin Diesel",
+        "Paul Walker",
+        "Michelle Rodriguez",
+        "Gal Gadot",
+        "Jason Momoa",
+        "Margot Robbie",
+        "Cillian Murphy",
+        "Florence Pugh",
+        "Timothee Chalamet",
+        "Anya Taylor-Joy",
+        "Viola Davis",
+        "Robin Williams",
+        "Hugh Grant",
+        "Colin Firth",
+        "Rachel McAdams",
+        "Amy Adams",
+        "Emily Blunt",
+        "Chris Pratt",
+        "Zoe Saldana",
+        "Kristen Stewart",
+        "Robert Pattinson",
+        "Jack Nicholson",
+        "Dustin Hoffman",
+        "Edward Norton",
+        "Mark Wahlberg",
+        "Charlize Theron",
+        "Rosamund Pike",
+        "Jessica Chastain",
+        "Tom Cruise",
+        "Henry Cavill",
+        "Nicolas Cage",
+        "Kevin Costner",
+        "Jodie Foster",
+        "Alicia Vikander",
+        "Chris Pine",
+        "Jake Gyllenhaal",
+        "Jeremy Renner",
+        "Benicio del Toro"
+      ].map((name) => normalize(name))
+    );
+    return getEasyGridActorAllowSet.cache;
+  }
+
+  function isKnownEasyGridActor(actorName) {
+    return getEasyGridActorAllowSet().has(normalize(actorName));
+  }
+
   function isLikelyNicheEasyTitle(title, description, genres) {
     const key = normalize(title);
     if (getEasyBlockbusterTitleExclusions().has(key)) return true;
@@ -3762,7 +3881,7 @@
 
     const knownRanked = source.slice().sort(compareMoviesByKnownness);
 
-    const cap = difficulty === "easy" ? 320 : 500;
+    const cap = difficulty === "easy" ? 300 : 500;
     const actorFrequency = new Map();
     source.forEach((movie) => {
       if (!movie || !Array.isArray(movie.cast)) return;
@@ -3786,6 +3905,11 @@
         if (isLikelyNicheEasyTitle(movie.title, movie.description || movie.clue, movie.genres)) return false;
         return true;
       });
+
+      const strictManualPool = takeUniqueMoviesByTitle(manualEasy, Math.min(cap, source.length));
+      if (strictManualPool.length >= 250 && hasViableGrid(strictManualPool) && hasViableConnections(strictManualPool)) {
+        return strictManualPool;
+      }
 
       const mainstreamFill = knownRanked.filter((movie) => {
         if (isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres)) return false;
