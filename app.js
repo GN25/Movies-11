@@ -580,7 +580,7 @@
         <h3 id="difficulty-gate-title">Choose Difficulty</h3>
         <p id="difficulty-gate-text"></p>
         <div class="difficulty-gate-options" role="group" aria-label="Difficulty options">
-          <button type="button" class="difficulty-gate-option" data-difficulty="easy">Easy<br><span>Top 400</span></button>
+          <button type="button" class="difficulty-gate-option" data-difficulty="easy">Easy<br><span>Blockbusters (~350)</span></button>
           <button type="button" class="difficulty-gate-option active" data-difficulty="medium">Medium<br><span>Top 1000</span></button>
           <button type="button" class="difficulty-gate-option" data-difficulty="hard">Hard<br><span>All Movies</span></button>
         </div>
@@ -3611,7 +3611,7 @@
       return source;
     }
 
-    const cap = difficulty === "easy" ? 400 : 1000;
+    const cap = difficulty === "easy" ? 360 : 1000;
     const knownRanked = source.slice().sort(compareMoviesByKnownness);
     const actorFrequency = new Map();
     source.forEach((movie) => {
@@ -3630,7 +3630,7 @@
 
     const config =
       difficulty === "easy"
-        ? { minKnownness: 62, minRating: 7.1, minVotes: 12000000, minKnownCast: 2, castFrequencyFloor: 4 }
+        ? { minKnownness: 90, minRating: 6.5, minVotes: 120000000, minKnownCast: 2, castFrequencyFloor: 5 }
         : { minKnownness: 48, minRating: 6.8, minVotes: 5000000, minKnownCast: 1, castFrequencyFloor: 3 };
 
     const primary = knownRanked.filter((movie) => {
@@ -3638,11 +3638,13 @@
       const rating = parseRatingValue(movie.rating);
       const votes = parseVotesValue(movie.votes);
       const castScore = knownCastCount(movie, config.castFrequencyFloor);
+      const isBlockbusterHit = difficulty !== "easy" || (knownness >= 90 && votes >= 120000000);
       return (
         knownness >= config.minKnownness &&
         rating >= config.minRating &&
         votes >= config.minVotes &&
         !isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres) &&
+        isBlockbusterHit &&
         castScore >= config.minKnownCast
       );
     });
@@ -3652,6 +3654,16 @@
       const rating = parseRatingValue(movie.rating);
       const votes = parseVotesValue(movie.votes);
       const castScore = knownCastCount(movie, Math.max(2, config.castFrequencyFloor - 1));
+      if (difficulty === "easy") {
+        return (
+          knownness >= config.minKnownness - 3 &&
+          rating >= config.minRating - 0.2 &&
+          votes >= Math.round(config.minVotes * 0.85) &&
+          !isLikelyAdultTitle(movie.title, movie.description || movie.clue, movie.genres) &&
+          castScore >= config.minKnownCast
+        );
+      }
+
       return (
         knownness >= config.minKnownness - 8 &&
         rating >= config.minRating - 0.4 &&
