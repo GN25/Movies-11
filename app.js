@@ -1,6 +1,8 @@
 (() => {
   "use strict";
 
+  initVercelAnalytics();
+
   const page = document.body.dataset.page || "home";
 
   const defaultMovies = [
@@ -3802,5 +3804,41 @@
     if (node) {
       node.textContent = value;
     }
+  }
+
+  function initVercelAnalytics() {
+    if (typeof window === "undefined" || typeof document === "undefined") return;
+    if (window.__cineclashVercelAnalyticsLoaded) return;
+    window.__cineclashVercelAnalyticsLoaded = true;
+
+    window.va =
+      window.va ||
+      function queueVercelAnalytics() {
+        (window.vaq = window.vaq || []).push(arguments);
+      };
+
+    const script = document.createElement("script");
+    script.defer = true;
+    script.dataset.analytics = "vercel";
+    script.src = resolveVercelAnalyticsScriptSrc();
+    document.head.appendChild(script);
+  }
+
+  function resolveVercelAnalyticsScriptSrc() {
+    const defaultSrc = "/_vercel/insights/script.js";
+    const rawConfig = window.VERCEL_OBSERVABILITY_CLIENT_CONFIG || window.__VERCEL_OBSERVABILITY_CLIENT_CONFIG;
+    if (!rawConfig) return defaultSrc;
+
+    let parsed = rawConfig;
+    if (typeof rawConfig === "string") {
+      try {
+        parsed = JSON.parse(rawConfig);
+      } catch (_error) {
+        return defaultSrc;
+      }
+    }
+
+    const scriptSrc = parsed?.analytics?.scriptSrc;
+    return typeof scriptSrc === "string" && scriptSrc ? scriptSrc : defaultSrc;
   }
 })();
