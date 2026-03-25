@@ -476,6 +476,7 @@ a {
 .guess-row input {
   flex: 1 1 320px;
   width: auto;
+  min-width: 0;
 }
 
 input {
@@ -1351,6 +1352,11 @@ input:focus {
     grid-template-columns: 1fr;
   }
 
+  .hero > .stat-card {
+    width: min(100%, 460px);
+    justify-self: center;
+  }
+
   .hub-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1444,9 +1450,24 @@ input:focus {
     flex-direction: column;
   }
 
+  .guess-row input {
+    flex: 0 1 auto;
+    width: 100%;
+  }
+
   .grid-board,
   .connections-board {
     gap: 8px;
+  }
+
+  .single-game .grid-board,
+  .single-game .panel {
+    width: min(100%, 560px);
+    margin-inline: auto;
+  }
+
+  .hero > .stat-card {
+    width: min(100%, 420px);
   }
 
   .impostor-options {
@@ -1543,6 +1564,24 @@ input:focus {
     min-height: 62px;
     font-size: 12px;
     padding: 7px;
+  }
+
+  .single-game .grid-board,
+  .single-game .panel {
+    width: min(100%, 420px);
+  }
+
+  body[data-page="grid"] .grid-header,
+  body[data-page="grid"] .grid-cell {
+    min-height: 0;
+    aspect-ratio: 1 / 1;
+    font-size: 11px;
+    line-height: 1.1;
+    padding: 6px;
+  }
+
+  .hero > .stat-card {
+    width: min(100%, 380px);
   }
 
   .moviedle-tile {
