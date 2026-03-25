@@ -748,7 +748,7 @@
         if (state.wrongPulse === idx) button.classList.add("wrong");
         if (state.status !== "playing" && !state.answers[idx]) {
           button.disabled = true;
-          button.textContent = describeGridCellRequirement(rowValue, colValue, gridPuzzle);
+          button.textContent = describeGridCellRequirement(rowValue, colValue, gridPuzzle, rowIdx, colIdx);
         }
 
         button.addEventListener("click", onGridCellClick);
@@ -800,14 +800,23 @@
     return `${rowActor} + ${colValue}`;
   }
 
-  function describeGridCellRequirement(rowValue, colValue, puzzle) {
+  function describeGridCellRequirement(rowValue, colValue, puzzle, rowIdx = 0, colIdx = 0) {
+    const rowAxisType = puzzle.rowTypes?.[rowIdx] || puzzle.rowType || "actor";
+    const colAxisType = puzzle.colTypes?.[colIdx] || puzzle.colType || "actor";
+
     if (puzzle.answerType === "actor") {
       return `Any actor in "${rowValue}" and "${colValue}"`;
     }
-    if (puzzle.colType === "actor") {
+    if (rowAxisType === "actor" && colAxisType === "actor") {
       return `Any title with ${rowValue} and ${colValue}`;
     }
-    return `Any ${colValue} title with ${rowValue}`;
+    if (rowAxisType === "actor" && colAxisType === "genre") {
+      return `Any ${colValue} title with ${rowValue}`;
+    }
+    if (rowAxisType === "genre" && colAxisType === "actor") {
+      return `Any ${rowValue} title with ${colValue}`;
+    }
+    return `Any title matching ${rowValue} and ${colValue}`;
   }
 
   function onGridCellClick(event) {
@@ -2958,22 +2967,36 @@
     return Math.max(0, Math.round(value));
   }
 
+  function resolveGridAxisType(axisType, fallback = "actor") {
+    const value = normalize(String(axisType || ""));
+    if (value === "actor" || value === "genre" || value === "title") return value;
+    return fallback;
+  }
+
+  function resolveGridAnswerType(answerType) {
+    return normalize(answerType) === "actor" ? "actor" : "title";
+  }
+
   function buildGridPuzzle(template) {
-    const rows = template.rows.slice();
-    const cols = template.cols.slice();
-    const rowType = template.rowType || "actor";
-    const colType = template.colType || "genre";
-    const answerType = template.answerType || "title";
+    const rows = Array.isArray(template?.rows) ? template.rows.slice(0, 3) : [];
+    const cols = Array.isArray(template?.cols) ? template.cols.slice(0, 3) : [];
+    const defaultRowType = resolveGridAxisType(template?.rowType, "actor");
+    const defaultColType = resolveGridAxisType(template?.colType, "genre");
+    const answerType = resolveGridAnswerType(template?.answerType || "title");
+    const rowTypes = rows.map((_, idx) => resolveGridAxisType(template?.rowTypes?.[idx], defaultRowType));
+    const colTypes = cols.map((_, idx) => resolveGridAxisType(template?.colTypes?.[idx], defaultColType));
     const intersections = [];
 
     for (let row = 0; row < 3; row += 1) {
       for (let col = 0; col < 3; col += 1) {
         const rowValue = rows[row];
         const columnValue = cols[col];
+        const rowAxisType = rowTypes[row] || defaultRowType;
+        const colAxisType = colTypes[col] || defaultColType;
         const valid = buildGridCellOptions({
-          rowType,
+          rowType: rowAxisType,
           rowValue,
-          colType,
+          colType: colAxisType,
           colValue: columnValue,
           answerType
         });
@@ -2981,16 +3004,20 @@
       }
     }
 
-    const hasRepeatedActorAxis =
-      rowType === "actor" &&
-      colType === "actor" &&
-      rows.some((rowActor) => cols.some((colActor) => normalize(rowActor) === normalize(colActor)));
-    const valid = !hasRepeatedActorAxis && intersections.every((entry) => entry.length > 0);
+    const hasRepeatedActorAxis = rows.some((rowActor, rowIdx) => {
+      if (rowTypes[rowIdx] !== "actor") return false;
+      return cols.some((colActor, colIdx) => colTypes[colIdx] === "actor" && normalize(rowActor) === normalize(colActor));
+    });
+    const rowType = rowTypes.every((axis) => axis === rowTypes[0]) ? rowTypes[0] : "mixed";
+    const colType = colTypes.every((axis) => axis === colTypes[0]) ? colTypes[0] : "mixed";
+    const valid = rows.length === 3 && cols.length === 3 && !hasRepeatedActorAxis && intersections.every((entry) => entry.length > 0);
 
     return {
       valid,
       rows,
       cols,
+      rowTypes,
+      colTypes,
       rowType,
       colType,
       answerType,
@@ -3000,12 +3027,15 @@
   }
 
   function buildGridSignature(puzzle) {
+    const rowTypePart = (puzzle.rowTypes || []).join(",");
+    const colTypePart = (puzzle.colTypes || []).join(",");
     const rowPart = puzzle.rows.map((value) => normalize(value)).join(",");
     const colPart = puzzle.cols.map((value) => normalize(value)).join(",");
-    return [puzzle.rowType, puzzle.colType, puzzle.answerType, rowPart, colPart].join("|");
+    return [puzzle.rowType, puzzle.colType, puzzle.answerType, rowTypePart, colTypePart, rowPart, colPart].join("|");
   }
 
   function gridAxisLabel(axisType) {
+    if (axisType === "mixed") return "Mixed";
     if (axisType === "genre") return "Genre";
     if (axisType === "title") return "Title";
     return "Actor";
@@ -3059,10 +3089,12 @@
 
   function isGridExcludedMovie(movie) {
     if (!movie || !Array.isArray(movie.genres)) return false;
-    return movie.genres.some((genre) => {
-      const token = normalizeGenreToken(genre);
-      return token === "animation" || token === "anime" || token === "cartoon";
-    });
+    return movie.genres.some((genre) => isAnimationGenreLabel(genre));
+  }
+
+  function isAnimationGenreLabel(genre) {
+    const token = normalizeGenreToken(genre);
+    return token === "animation" || token === "anime" || token === "cartoon";
   }
 
   function actorPopularityScore(actorName) {
@@ -3095,43 +3127,59 @@
   }
 
   function buildEmergencyGridTemplate(movieCatalog) {
-    const source = movieCatalog
+    const source = (Array.isArray(movieCatalog) ? movieCatalog : [])
       .filter((movie) => !isGridExcludedMovie(movie))
-      .filter((movie) => Array.isArray(movie.cast) && movie.cast.length >= 6)
+      .filter((movie) => Array.isArray(movie.cast) && movie.cast.length >= 5)
+      .filter((movie) => Array.isArray(movie.genres) && movie.genres.some((genre) => !isAnimationGenreLabel(genre)))
       .sort(compareMoviesByRank);
-    if (source.length < 1) return null;
 
-    // Guaranteed non-repeated actor intersections: split a single ensemble cast into 3 row actors and 3 distinct column actors.
-    const seedMovie = source[0];
-    const actors = [...new Set(seedMovie.cast)];
-    if (actors.length < 6) return null;
+    for (const seedMovie of source.slice(0, 80)) {
+      const actors = [...new Set(seedMovie.cast)].filter(Boolean);
+      const genres = [...new Set(seedMovie.genres)].filter((genre) => !isAnimationGenreLabel(genre));
+      if (actors.length < 5 || genres.length < 1) continue;
 
-    return {
-      rows: actors.slice(0, 3),
-      cols: actors.slice(3, 6),
-      rowType: "actor",
-      colType: "actor",
-      answerType: "title"
-    };
+      for (const genre of genres) {
+        for (let i = 3; i < actors.length - 1; i += 1) {
+          for (let j = i + 1; j < actors.length; j += 1) {
+            const template = {
+              rows: actors.slice(0, 3),
+              cols: [actors[i], genre, actors[j]],
+              rowType: "actor",
+              colType: "mixed",
+              colTypes: ["actor", "genre", "actor"],
+              answerType: "title"
+            };
+            if (buildGridPuzzle(template).valid) return template;
+          }
+        }
+      }
+    }
+
+    return null;
   }
 
   function buildDailyGridTemplate(movieCatalog, dayHash, fallbackTemplates, difficultyLevel = "medium") {
     const isEasyGrid = difficultyLevel === "easy";
-    const gridCatalogBase = movieCatalog.filter((movie) => !isGridExcludedMovie(movie));
-    const gridCatalog = gridCatalogBase.length >= 24 ? gridCatalogBase : movieCatalog;
+    const catalog = Array.isArray(movieCatalog) ? movieCatalog : [];
+    const gridCatalogBase = catalog.filter((movie) => !isGridExcludedMovie(movie));
+    const gridCatalog = gridCatalogBase.length >= 24
+      ? gridCatalogBase
+      : catalog.filter((movie) => Array.isArray(movie?.cast) && movie.cast.length >= 2);
+    const sourceCatalog = gridCatalog.length ? gridCatalog : catalog;
     const actorGenreMap = new Map();
     const actorCoactorMap = new Map();
-    const titleCoTitleMap = new Map();
-    const actorTitleMap = new Map();
     const actorMovieCount = new Map();
     const actorKnownMovieCount = new Map();
     const actorKnownnessSum = new Map();
     const genreCount = new Map();
-    const titleCandidates = [];
 
-    gridCatalog.forEach((movie) => {
-      const uniqueActors = [...new Set(movie.cast)];
-      const uniqueGenres = [...new Set(movie.genres)];
+    sourceCatalog.forEach((movie) => {
+      const uniqueActors = [...new Set(Array.isArray(movie.cast) ? movie.cast : [])].filter(Boolean);
+      const uniqueGenres = [...new Set(Array.isArray(movie.genres) ? movie.genres : [])]
+        .filter(Boolean)
+        .filter((genre) => !isAnimationGenreLabel(genre));
+      if (uniqueActors.length < 2 || uniqueGenres.length < 1) return;
+
       const movieKnownness = resolveMovieKnownness(movie);
       const movieIsBlockbuster = movie.easyTier === true || movieKnownness >= 70 || parseVotesValue(movie.votes) >= 250000;
 
@@ -3152,10 +3200,6 @@
           actorCoactorMap.set(actor, new Set());
         }
         uniqueGenres.forEach((genre) => actorGenreMap.get(actor).add(genre));
-
-        const actorKey = normalize(actor);
-        if (!actorTitleMap.has(actorKey)) actorTitleMap.set(actorKey, new Set());
-        actorTitleMap.get(actorKey).add(movie.title);
       });
 
       uniqueActors.forEach((actor) => {
@@ -3164,50 +3208,34 @@
           actorCoactorMap.get(actor)?.add(coactor);
         });
       });
-
-      if (uniqueActors.length >= 2) {
-        titleCandidates.push(movie.title);
-      }
-    });
-
-    let rankedTitleCandidates = [...new Set(titleCandidates)]
-      .map((title) => movieMap.get(normalize(title)))
-      .filter(Boolean)
-      .sort(compareMoviesByRank)
-      .map((movie) => movie.title);
-
-    if (isEasyGrid) {
-      rankedTitleCandidates = rankedTitleCandidates.slice(0, Math.min(260, rankedTitleCandidates.length));
-    }
-
-    const rankedTitleSet = new Set(rankedTitleCandidates.map((title) => normalize(title)));
-    rankedTitleCandidates.forEach((title) => titleCoTitleMap.set(title, new Set()));
-
-    actorTitleMap.forEach((titles) => {
-      const candidateTitles = [...titles].filter((title) => rankedTitleSet.has(normalize(title)));
-      if (candidateTitles.length < 2) return;
-
-      for (let i = 0; i < candidateTitles.length - 1; i += 1) {
-        const titleA = candidateTitles[i];
-        for (let j = i + 1; j < candidateTitles.length; j += 1) {
-          const titleB = candidateTitles[j];
-          if (normalize(titleA) === normalize(titleB)) continue;
-          titleCoTitleMap.get(titleA)?.add(titleB);
-          titleCoTitleMap.get(titleB)?.add(titleA);
-        }
-      }
     });
 
     const minGenreFrequency = isEasyGrid ? 10 : 6;
-    const genreCandidates = [...genreCount.entries()]
+    let genreCandidates = [...genreCount.entries()]
       .filter(([, count]) => count >= minGenreFrequency)
+      .filter(([genre]) => !isAnimationGenreLabel(genre))
       .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
       .map(([genre]) => genre);
+    if (genreCandidates.length < 1) {
+      genreCandidates = [...genreCount.entries()]
+        .filter(([genre]) => !isAnimationGenreLabel(genre))
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+        .map(([genre]) => genre);
+    }
 
     const minActorFrequency = isEasyGrid ? 6 : 3;
     const baseActorCandidates = [...actorMovieCount.entries()]
       .filter(([, count]) => count >= minActorFrequency)
       .sort((a, b) => b[1] - a[1]);
+    if (baseActorCandidates.length < 6) {
+      [...actorMovieCount.entries()]
+        .sort((a, b) => b[1] - a[1])
+        .forEach((entry) => {
+          if (!baseActorCandidates.some((item) => item[0] === entry[0])) {
+            baseActorCandidates.push(entry);
+          }
+        });
+    }
 
     const easyActorScore = (actor) => {
       const appearances = actorMovieCount.get(actor) || 0;
@@ -3277,133 +3305,79 @@
     const actorSeedPool = isEasyGrid
       ? actorCandidates.slice(0, Math.min(120, actorCandidates.length))
       : actorCandidates.slice();
-    const titleSeedPool = isEasyGrid
-      ? rankedTitleCandidates.slice(0, Math.min(220, rankedTitleCandidates.length))
-      : rankedTitleCandidates.slice();
 
     const genreOrder = shuffle(genreSeedPool, rng);
     const actorOrder = isEasyGrid ? actorSeedPool.slice() : shuffle(actorSeedPool, rng);
-    const titleOrder = shuffle(titleSeedPool, rng);
 
-    const tryGenreActorTemplate = () => {
-      for (let attempt = 0; attempt < 24; attempt += 1) {
-        const rows = shuffle(genreOrder.slice(), rng).slice(0, 3);
-        if (rows.length < 3) continue;
+    const buildActorGenreActorTemplate = (rows) => {
+      if (!Array.isArray(rows) || rows.length < 3) return null;
+      const rowSet = new Set(rows.map((name) => normalize(name)));
+      const compatibleActorCols = actorOrder
+        .filter((actor) => !rowSet.has(normalize(actor)))
+        .filter((actor) => rows.every((rowActor) => actorCoactorMap.get(rowActor)?.has(actor)));
+      if (compatibleActorCols.length < 2) return null;
 
-        const compatibleActors = actorOrder.filter((actor) => rows.every((genre) => actorGenreMap.get(actor)?.has(genre)));
-        if (compatibleActors.length < 3) continue;
+      const commonGenres = genreOrder
+        .filter((genre) => !isAnimationGenreLabel(genre))
+        .filter((genre) => rows.every((rowActor) => actorGenreMap.get(rowActor)?.has(genre)));
+      if (commonGenres.length < 1) return null;
 
-        const rankedCompatibleActors = compatibleActors
-          .slice()
-          .sort((a, b) => (actorMovieCount.get(b) || 0) - (actorMovieCount.get(a) || 0) || a.localeCompare(b));
-        const cols = (isEasyGrid ? rankedCompatibleActors : compatibleActors).slice(0, 3);
-        const template = { rows, cols, rowType: "genre", colType: "actor" };
-        if (buildGridPuzzle(template).valid) {
-          return template;
+      const actorColPool = (isEasyGrid
+        ? compatibleActorCols.slice().sort((a, b) => easyActorScore(b) - easyActorScore(a) || a.localeCompare(b))
+        : shuffle(compatibleActorCols.slice(), rng)
+      ).slice(0, Math.min(24, compatibleActorCols.length));
+
+      const genrePool = (isEasyGrid
+        ? commonGenres.slice().sort((a, b) => (genreCount.get(b) || 0) - (genreCount.get(a) || 0) || a.localeCompare(b))
+        : shuffle(commonGenres.slice(), rng)
+      ).slice(0, Math.min(12, commonGenres.length));
+
+      for (const genre of genrePool) {
+        for (let i = 0; i < actorColPool.length - 1; i += 1) {
+          for (let j = i + 1; j < actorColPool.length; j += 1) {
+            const template = {
+              rows: rows.slice(0, 3),
+              cols: [actorColPool[i], genre, actorColPool[j]],
+              rowType: "actor",
+              colType: "mixed",
+              colTypes: ["actor", "genre", "actor"],
+              answerType: "title"
+            };
+            if (buildGridPuzzle(template).valid) return template;
+          }
         }
       }
+
       return null;
     };
 
-    const tryActorActorTemplate = () => {
+    const tryActorGenreActorTemplate = () => {
       if (isEasyGrid) {
-        const rowPool = actorOrder.slice(0, Math.min(12, actorOrder.length));
-        const colPool = actorOrder.slice(0, Math.min(24, actorOrder.length));
-        if (rowPool.length >= 3) {
-          for (let i = 0; i < rowPool.length - 2; i += 1) {
-            for (let j = i + 1; j < rowPool.length - 1; j += 1) {
-              for (let k = j + 1; k < rowPool.length; k += 1) {
-                const rows = [rowPool[i], rowPool[j], rowPool[k]];
-                const rowSet = new Set(rows.map((name) => normalize(name)));
-                const compatibleCols = colPool
-                  .filter((actor) => !rowSet.has(normalize(actor)))
-                  .filter((actor) => rows.every((rowActor) => actorCoactorMap.get(rowActor)?.has(actor)))
-                  .sort((a, b) => easyActorScore(b) - easyActorScore(a) || a.localeCompare(b));
-                if (compatibleCols.length < 3) continue;
-
-                const template = {
-                  rows,
-                  cols: compatibleCols.slice(0, 3),
-                  rowType: "actor",
-                  colType: "actor"
-                };
-
-                if (buildGridPuzzle(template).valid) {
-                  return template;
-                }
-              }
+        const rowPool = actorOrder.slice(0, Math.min(20, actorOrder.length));
+        for (let i = 0; i < rowPool.length - 2; i += 1) {
+          for (let j = i + 1; j < rowPool.length - 1; j += 1) {
+            for (let k = j + 1; k < rowPool.length; k += 1) {
+              const candidate = buildActorGenreActorTemplate([rowPool[i], rowPool[j], rowPool[k]]);
+              if (candidate) return candidate;
             }
           }
         }
       }
 
-      for (let attempt = 0; attempt < 30; attempt += 1) {
-        const rowPool = isEasyGrid
-          ? actorOrder.slice(0, Math.min(18, actorOrder.length))
-          : actorOrder.slice();
-        const rows = shuffle(rowPool, rng).slice(0, 3);
+      const rowPool = isEasyGrid
+        ? actorOrder.slice(0, Math.min(32, actorOrder.length))
+        : actorOrder.slice();
+      for (let attempt = 0; attempt < 70; attempt += 1) {
+        const rows = shuffle(rowPool.slice(), rng).slice(0, 3);
         if (rows.length < 3) continue;
-
-        const rowSet = new Set(rows.map((name) => normalize(name)));
-        const compatibleCols = actorOrder.filter((actor) => {
-          if (rowSet.has(normalize(actor))) return false;
-          return rows.every((rowActor) => actorCoactorMap.get(rowActor)?.has(actor));
-        });
-
-        if (compatibleCols.length < 3) continue;
-        const cols = isEasyGrid
-          ? compatibleCols
-              .slice()
-              .sort((a, b) => easyActorScore(b) - easyActorScore(a) || a.localeCompare(b))
-              .slice(0, 3)
-          : shuffle(compatibleCols.slice(), rng).slice(0, 3);
-
-        const template = {
-          rows,
-          cols,
-          rowType: "actor",
-          colType: "actor"
-        };
-
-        if (buildGridPuzzle(template).valid) {
-          return template;
-        }
+        const candidate = buildActorGenreActorTemplate(rows);
+        if (candidate) return candidate;
       }
+
       return null;
     };
 
-    const tryTitleTitleTemplate = () => {
-      const titleSearchPool = isEasyGrid
-        ? titleOrder.slice(0, Math.min(120, titleOrder.length))
-        : titleOrder;
-      for (let attempt = 0; attempt < 40; attempt += 1) {
-        const rows = shuffle(titleSearchPool.slice(), rng).slice(0, 3);
-        if (rows.length < 3) continue;
-
-        const rowSet = new Set(rows.map((title) => normalize(title)));
-        const cols = titleSearchPool.filter((title) => {
-          if (rowSet.has(normalize(title))) return false;
-          return rows.every((rowTitle) => titleCoTitleMap.get(rowTitle)?.has(title));
-        });
-
-        if (cols.length < 3) continue;
-
-        const template = {
-          rows,
-          cols: shuffle(cols.slice(), rng).slice(0, 3),
-          rowType: "title",
-          colType: "title",
-          answerType: "actor"
-        };
-
-        if (buildGridPuzzle(template).valid) {
-          return template;
-        }
-      }
-      return null;
-    };
-
-    const modeOrder = [tryActorActorTemplate];
+    const modeOrder = [tryActorGenreActorTemplate];
 
     for (const buildTemplate of modeOrder) {
       const candidate = buildTemplate();
@@ -3414,36 +3388,33 @@
       .map((template) => {
         const rows = (template.rows || []).slice(0, 3).filter((name) => actorMovieCount.has(name));
         if (rows.length < 3) return null;
-
-        const rowSet = new Set(rows.map((name) => normalize(name)));
-        const compatibleCols = actorOrder
-          .filter((actor) => !rowSet.has(normalize(actor)))
-          .filter((actor) => rows.every((rowActor) => actorCoactorMap.get(rowActor)?.has(actor)))
-          .sort((a, b) => (actorMovieCount.get(b) || 0) - (actorMovieCount.get(a) || 0) || a.localeCompare(b))
-          .slice(0, 3);
-
-        if (compatibleCols.length < 3) return null;
-        return {
-          rows,
-          cols: compatibleCols,
-          rowType: "actor",
-          colType: "actor",
-          answerType: "title"
-        };
+        return buildActorGenreActorTemplate(rows);
       })
       .filter(Boolean);
 
     const fallback = fallbackPool.find((template) => buildGridPuzzle(template).valid);
     if (fallback) return fallback;
 
-    const emergency = buildEmergencyGridTemplate(gridCatalog.length ? gridCatalog : movieCatalog);
+    const emergency = buildEmergencyGridTemplate(sourceCatalog);
     if (emergency && buildGridPuzzle(emergency).valid) return emergency;
 
-    return {
-      rows: actorOrder.slice(0, 3),
-      cols: actorOrder.slice(3, 6),
+    const defaultEmergency = buildEmergencyGridTemplate(defaultMovies);
+    if (defaultEmergency && buildGridPuzzle(defaultEmergency).valid) return defaultEmergency;
+
+    const broadRowPool = actorOrder.slice(0, Math.min(48, actorOrder.length));
+    for (let attempt = 0; attempt < 120; attempt += 1) {
+      const rows = shuffle(broadRowPool.slice(), rng).slice(0, 3);
+      if (rows.length < 3) continue;
+      const candidate = buildActorGenreActorTemplate(rows);
+      if (candidate) return candidate;
+    }
+
+    return buildEmergencyGridTemplate(answerMovies) || {
+      rows: ["Tom Hanks", "Leonardo DiCaprio", "Brad Pitt"],
+      cols: ["Meryl Streep", "Drama", "Matt Damon"],
       rowType: "actor",
-      colType: "actor",
+      colType: "mixed",
+      colTypes: ["actor", "genre", "actor"],
       answerType: "title"
     };
   }
