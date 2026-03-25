@@ -610,31 +610,45 @@ input:focus {
 .connections-health {
   display: flex;
   align-items: center;
-  gap: 8px;
+  justify-content: space-between;
+  gap: 12px;
   margin: 0 0 14px;
+  padding: 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(8, 15, 30, 0.6);
+}
+
+.connections-health-label {
+  color: var(--muted);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.connections-health-track {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .connections-heart {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  font-size: 26px;
-  line-height: 1;
-  color: #ff5e5e;
-  text-shadow:
-    1px 0 0 #4a0f0f,
-    -1px 0 0 #4a0f0f,
-    0 1px 0 #4a0f0f,
-    0 -1px 0 #4a0f0f;
+  width: 22px;
+  height: 12px;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 143, 92, 0.72);
+  background: linear-gradient(120deg, #ff6b35, #ff8f5c);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
   transition: opacity 0.2s ease, transform 0.2s ease, filter 0.2s ease;
 }
 
 .connections-heart.lost {
-  opacity: 0.15;
-  transform: scale(0.72);
+  opacity: 0.26;
+  transform: scale(0.94);
   filter: saturate(0);
+  background: rgba(115, 128, 160, 0.4);
+  border-color: rgba(140, 152, 180, 0.34);
 }
 
 .solved-list {
@@ -1383,9 +1397,9 @@ input:focus {
   }
 
   .hero > .stat-card {
-    width: min(100%, 420px);
+    width: min(100%, 380px);
     justify-self: center;
-    padding: 20px;
+    padding: 16px;
   }
 
   .hub-grid {
@@ -1454,11 +1468,16 @@ input:focus {
     border-radius: 18px;
   }
 
+  .hero {
+    gap: 14px;
+    padding: 14px;
+  }
+
   .hero h2,
   .share h3,
   .game-head h3,
   .hub-card h3 {
-    font-size: clamp(40px, 11vw, 58px);
+    font-size: clamp(34px, 9.5vw, 46px);
   }
 
   .hero-sub,
@@ -1467,7 +1486,7 @@ input:focus {
   .share p,
   #live-feed,
   .clue-box p {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .stat-value {
@@ -1498,34 +1517,68 @@ input:focus {
   }
 
   .hero > .stat-card {
-    width: min(100%, 340px);
-    padding: 14px;
-    border-radius: 14px;
+    width: min(100%, 300px);
+    padding: 10px;
+    border-radius: 12px;
   }
 
   .hero > .stat-card .stat-main {
-    font-size: 20px;
-    margin-bottom: 8px;
+    font-size: 14px;
+    margin: 0 0 6px;
+    font-weight: 600;
   }
 
   .hero > .stat-card .stat-grid {
-    margin-top: 10px;
-    gap: 10px;
+    margin-top: 6px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 6px;
   }
 
   .hero > .stat-card .stat-label {
-    font-size: 11px;
-    letter-spacing: 0.04em;
+    font-size: 9px;
+    letter-spacing: 0.03em;
+    line-height: 1.05;
   }
 
   .hero > .stat-card .stat-value {
-    font-size: 22px;
+    margin-top: 3px;
+    font-size: 16px;
   }
 
   .hero > .stat-card .tier-badge {
-    margin-top: 12px;
-    padding: 6px 12px;
+    display: none;
+  }
+
+  body:not([data-page="home"]) .hero .hero-kicker {
     font-size: 11px;
+  }
+
+  body:not([data-page="home"]) .hero .hero-sub {
+    display: none;
+  }
+
+  body:not([data-page="home"]) .hero .hero-actions {
+    margin-top: 8px;
+  }
+
+  body:not([data-page="home"]) .hero .hero-actions .btn {
+    font-size: 13px;
+    padding: 10px 12px;
+    border-radius: 10px;
+  }
+
+  body[data-page="grid"] .guess-row,
+  body[data-page="connections"] .guess-actions,
+  body[data-page="plotle"] .guess-row,
+  body[data-page="impostor-cast"] .guess-actions {
+    position: sticky;
+    bottom: calc(env(safe-area-inset-bottom) + 8px);
+    z-index: 10;
+    background: rgba(7, 12, 24, 0.88);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 12px;
+    padding: 8px;
+    backdrop-filter: blur(8px);
   }
 
   .impostor-options {
@@ -1554,14 +1607,21 @@ input:focus {
   }
 
   .connections-health {
-    gap: 6px;
+    padding: 8px 10px;
     margin-bottom: 10px;
   }
 
+  .connections-health-label {
+    font-size: 10px;
+  }
+
+  .connections-health-track {
+    gap: 5px;
+  }
+
   .connections-heart {
-    width: 28px;
-    height: 28px;
-    font-size: 22px;
+    width: 18px;
+    height: 10px;
   }
 
   input,
@@ -1616,7 +1676,8 @@ input:focus {
   }
 
   .hero {
-    gap: 18px;
+    gap: 12px;
+    padding: 12px;
   }
 
   .hero-actions,
@@ -1636,9 +1697,8 @@ input:focus {
   }
 
   .connections-heart {
-    width: 24px;
-    height: 24px;
-    font-size: 20px;
+    width: 16px;
+    height: 9px;
   }
 
   .single-game .grid-board,
@@ -1656,20 +1716,24 @@ input:focus {
   }
 
   .hero > .stat-card {
-    width: min(100%, 300px);
-    padding: 12px;
+    width: min(100%, 280px);
+    padding: 8px;
   }
 
   .hero > .stat-card .stat-main {
-    font-size: 18px;
+    font-size: 13px;
   }
 
   .hero > .stat-card .stat-grid {
-    gap: 8px;
+    gap: 5px;
   }
 
   .hero > .stat-card .stat-value {
-    font-size: 20px;
+    font-size: 14px;
+  }
+
+  .hero > .stat-card .stat-label {
+    font-size: 8px;
   }
 
   .hero > .stat-card .tier-badge {

@@ -1066,13 +1066,21 @@
       const heartsLeft = Math.max(0, maxHearts - state.mistakes);
       dom.connectionsHealth.setAttribute("aria-label", `Mistakes remaining: ${heartsLeft} of ${maxHearts}`);
       dom.connectionsHealth.innerHTML = "";
+      const label = document.createElement("span");
+      label.className = "connections-health-label";
+      label.textContent = "Mistakes";
+      dom.connectionsHealth.appendChild(label);
+
+      const track = document.createElement("div");
+      track.className = "connections-health-track";
       for (let i = 0; i < maxHearts; i += 1) {
         const heart = document.createElement("span");
         heart.className = "connections-heart";
         if (i >= heartsLeft) heart.classList.add("lost");
-        heart.textContent = "❤";
-        dom.connectionsHealth.appendChild(heart);
+        heart.setAttribute("aria-hidden", "true");
+        track.appendChild(heart);
       }
+      dom.connectionsHealth.appendChild(track);
     }
 
     if (state.status === "won") {
