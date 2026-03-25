@@ -2786,12 +2786,16 @@
     const titleCoTitleMap = new Map();
     const actorTitleMap = new Map();
     const actorMovieCount = new Map();
+    const actorKnownMovieCount = new Map();
+    const actorKnownnessSum = new Map();
     const genreCount = new Map();
     const titleCandidates = [];
 
     gridCatalog.forEach((movie) => {
       const uniqueActors = [...new Set(movie.cast)];
       const uniqueGenres = [...new Set(movie.genres)];
+      const movieKnownness = resolveMovieKnownness(movie);
+      const movieIsBlockbuster = movie.easyTier === true || movieKnownness >= 70 || parseVotesValue(movie.votes) >= 250000;
 
       uniqueGenres.forEach((genre) => {
         genreCount.set(genre, (genreCount.get(genre) || 0) + 1);
@@ -2799,6 +2803,10 @@
 
       uniqueActors.forEach((actor) => {
         actorMovieCount.set(actor, (actorMovieCount.get(actor) || 0) + 1);
+        actorKnownnessSum.set(actor, (actorKnownnessSum.get(actor) || 0) + movieKnownness);
+        if (movieIsBlockbuster) {
+          actorKnownMovieCount.set(actor, (actorKnownMovieCount.get(actor) || 0) + 1);
+        }
         if (!actorGenreMap.has(actor)) {
           actorGenreMap.set(actor, new Set());
         }
@@ -2862,11 +2870,66 @@
     const baseActorCandidates = [...actorMovieCount.entries()]
       .filter(([, count]) => count >= minActorFrequency)
       .sort((a, b) => b[1] - a[1]);
-    let actorCandidates = baseActorCandidates
-      .filter(([actor]) => !isEasyGrid || isKnownEasyGridActor(actor))
-      .map(([actor]) => actor);
-    if (isEasyGrid && actorCandidates.length < 20) {
-      actorCandidates = baseActorCandidates.slice(0, Math.min(80, baseActorCandidates.length)).map(([actor]) => actor);
+
+    const easyActorScore = (actor) => {
+      const appearances = actorMovieCount.get(actor) || 0;
+      const blockbusterCount = actorKnownMovieCount.get(actor) || 0;
+      const knownness = actorKnownnessSum.get(actor) || 0;
+      const coactors = actorCoactorMap.get(actor)?.size || 0;
+      const allowBonus = isKnownEasyGridActor(actor) ? 1200 : 0;
+      return allowBonus + blockbusterCount * 90 + appearances * 24 + knownness * 0.2 + Math.min(180, coactors * 8);
+    };
+
+    let actorCandidates;
+    if (isEasyGrid) {
+      const strictEasyActors = baseActorCandidates
+        .map(([actor]) => actor)
+        .filter((actor) => {
+          const appearances = actorMovieCount.get(actor) || 0;
+          const blockbusterCount = actorKnownMovieCount.get(actor) || 0;
+          const coactors = actorCoactorMap.get(actor)?.size || 0;
+          return isKnownEasyGridActor(actor) && appearances >= 2 && blockbusterCount >= 1 && coactors >= 4;
+        });
+
+      const blockbusterFallbackActors = baseActorCandidates
+        .map(([actor]) => actor)
+        .filter((actor) => {
+          const appearances = actorMovieCount.get(actor) || 0;
+          const blockbusterCount = actorKnownMovieCount.get(actor) || 0;
+          const coactors = actorCoactorMap.get(actor)?.size || 0;
+          return appearances >= 3 && blockbusterCount >= 2 && coactors >= 5;
+        });
+
+      const mergedEasyActors = [...new Set([...strictEasyActors, ...blockbusterFallbackActors])]
+        .sort((a, b) => easyActorScore(b) - easyActorScore(a) || a.localeCompare(b));
+
+      const templateRowActors = [...new Set(
+        fallbackTemplates
+          .flatMap((template) => (Array.isArray(template?.rows) ? template.rows : []))
+          .filter((actor) => actorMovieCount.has(actor))
+          .filter((actor) => isKnownEasyGridActor(actor))
+      )];
+
+      const allowListFallbackActors = baseActorCandidates
+        .map(([actor]) => actor)
+        .filter((actor) => isKnownEasyGridActor(actor))
+        .filter((actor) => {
+          const appearances = actorMovieCount.get(actor) || 0;
+          const coactors = actorCoactorMap.get(actor)?.size || 0;
+          return appearances >= 1 && coactors >= 2;
+        })
+        .sort((a, b) => easyActorScore(b) - easyActorScore(a) || a.localeCompare(b));
+
+      actorCandidates = [...new Set([...mergedEasyActors, ...templateRowActors, ...allowListFallbackActors])];
+      if (actorCandidates.length < 6) {
+        const genericSafetyFallback = baseActorCandidates
+          .map(([actor]) => actor)
+          .filter((actor) => !actorCandidates.includes(actor))
+          .slice(0, 24);
+        actorCandidates = [...actorCandidates, ...genericSafetyFallback];
+      }
+    } else {
+      actorCandidates = baseActorCandidates.map(([actor]) => actor);
     }
 
     const rng = rngFromSeed(`${dayHash}-grid-template`);
@@ -2881,7 +2944,7 @@
       : rankedTitleCandidates.slice();
 
     const genreOrder = shuffle(genreSeedPool, rng);
-    const actorOrder = shuffle(actorSeedPool, rng);
+    const actorOrder = isEasyGrid ? actorSeedPool.slice() : shuffle(actorSeedPool, rng);
     const titleOrder = shuffle(titleSeedPool, rng);
 
     const tryGenreActorTemplate = () => {
@@ -2905,9 +2968,40 @@
     };
 
     const tryActorActorTemplate = () => {
+      if (isEasyGrid) {
+        const rowPool = actorOrder.slice(0, Math.min(12, actorOrder.length));
+        const colPool = actorOrder.slice(0, Math.min(24, actorOrder.length));
+        if (rowPool.length >= 3) {
+          for (let i = 0; i < rowPool.length - 2; i += 1) {
+            for (let j = i + 1; j < rowPool.length - 1; j += 1) {
+              for (let k = j + 1; k < rowPool.length; k += 1) {
+                const rows = [rowPool[i], rowPool[j], rowPool[k]];
+                const rowSet = new Set(rows.map((name) => normalize(name)));
+                const compatibleCols = colPool
+                  .filter((actor) => !rowSet.has(normalize(actor)))
+                  .filter((actor) => rows.every((rowActor) => actorCoactorMap.get(rowActor)?.has(actor)))
+                  .sort((a, b) => easyActorScore(b) - easyActorScore(a) || a.localeCompare(b));
+                if (compatibleCols.length < 3) continue;
+
+                const template = {
+                  rows,
+                  cols: compatibleCols.slice(0, 3),
+                  rowType: "actor",
+                  colType: "actor"
+                };
+
+                if (buildGridPuzzle(template).valid) {
+                  return template;
+                }
+              }
+            }
+          }
+        }
+      }
+
       for (let attempt = 0; attempt < 30; attempt += 1) {
         const rowPool = isEasyGrid
-          ? actorOrder.slice(0, Math.min(24, actorOrder.length))
+          ? actorOrder.slice(0, Math.min(18, actorOrder.length))
           : actorOrder.slice();
         const rows = shuffle(rowPool, rng).slice(0, 3);
         if (rows.length < 3) continue;
@@ -2922,7 +3016,7 @@
         const cols = isEasyGrid
           ? compatibleCols
               .slice()
-              .sort((a, b) => (actorMovieCount.get(b) || 0) - (actorMovieCount.get(a) || 0) || a.localeCompare(b))
+              .sort((a, b) => easyActorScore(b) - easyActorScore(a) || a.localeCompare(b))
               .slice(0, 3)
           : shuffle(compatibleCols.slice(), rng).slice(0, 3);
 
