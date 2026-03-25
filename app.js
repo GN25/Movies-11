@@ -839,15 +839,10 @@
     }
 
     const intersection = gridPuzzle.intersections[state.selectedIndex];
-    const alreadyUsed = state.answers.some((value) => normalize(value) === normalize(guess.value));
     const allowed = intersection.some((entry) => normalize(entry.value) === normalize(guess.value));
 
-    if (!allowed || alreadyUsed) {
-      registerGridMiss(
-        alreadyUsed
-          ? `You already used that ${gridPuzzle.answerType}.`
-          : `That ${gridPuzzle.answerType} does not match this square.`
-      );
+    if (!allowed) {
+      registerGridMiss(`That ${gridPuzzle.answerType} does not match this square.`);
       return;
     }
 
@@ -2680,18 +2675,14 @@
   function resolveAutocompleteSource(mode) {
     if (mode === "grid") {
       if (gridPuzzle.answerType === "actor") {
-        const usedActors = new Set(daily.grid.answers.map((name) => normalize(name)).filter(Boolean));
         return actorAutocompleteAll
-          .filter((entry) => !usedActors.has(entry.normalized))
           .map((entry) => ({
             ...entry,
             meta: `${Math.max(1, actorFrequency.get(entry.normalized) || 1)} films`
           }));
       }
 
-      const usedTitles = new Set(daily.grid.answers.map((title) => normalize(title)).filter(Boolean));
       return titleAutocompleteGrid
-        .filter((entry) => !usedTitles.has(entry.normalized))
         .map((entry) => ({
           ...entry,
           meta: entry.year ? String(entry.year) : ""
