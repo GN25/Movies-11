@@ -499,6 +499,7 @@
     connectionsSubmitBtn: q("connections-submit-btn"),
     connectionsClearBtn: q("connections-clear-btn"),
     connectionsSurrenderBtn: q("connections-surrender-btn"),
+    connectionsHealth: q("connections-health"),
     connectionsMeta: q("connections-meta"),
     connectionsSolved: q("connections-solved"),
     plotleClues: q("plotle-clues"),
@@ -1060,6 +1061,20 @@
 
     const mistakesLeft = 4 - state.mistakes;
     const solvedCount = state.solvedGroupIds.length;
+    if (dom.connectionsHealth) {
+      const maxHearts = 4;
+      const heartsLeft = Math.max(0, maxHearts - state.mistakes);
+      dom.connectionsHealth.setAttribute("aria-label", `Mistakes remaining: ${heartsLeft} of ${maxHearts}`);
+      dom.connectionsHealth.innerHTML = "";
+      for (let i = 0; i < maxHearts; i += 1) {
+        const heart = document.createElement("span");
+        heart.className = "connections-heart";
+        if (i >= heartsLeft) heart.classList.add("lost");
+        heart.textContent = "❤";
+        dom.connectionsHealth.appendChild(heart);
+      }
+    }
+
     if (state.status === "won") {
       dom.connectionsMeta.textContent = `Solved 4/4 | Mistakes used ${state.mistakes} | Score ${state.score}`;
     } else if (state.status === "lost") {
@@ -1205,8 +1220,13 @@
         burst("#connections-section");
       }
     } else {
+      const groupCounts = new Map();
+      groupIds.forEach((groupId) => {
+        groupCounts.set(groupId, (groupCounts.get(groupId) || 0) + 1);
+      });
+      const bestCount = Math.max(...groupCounts.values());
       state.mistakes += 1;
-      showToast("Not a valid group.");
+      showToast(bestCount === 3 ? "3 out of 4 correct." : "Not a valid group.");
       if (state.mistakes >= 4) {
         state.status = "lost";
         state.score = Math.max(10, state.solvedGroupIds.length * 18);

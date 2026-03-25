@@ -607,6 +607,36 @@ input:focus {
   flex-wrap: wrap;
 }
 
+.connections-health {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+}
+
+.connections-heart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  font-size: 26px;
+  line-height: 1;
+  color: #ff5e5e;
+  text-shadow:
+    1px 0 0 #4a0f0f,
+    -1px 0 0 #4a0f0f,
+    0 1px 0 #4a0f0f,
+    0 -1px 0 #4a0f0f;
+  transition: opacity 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+}
+
+.connections-heart.lost {
+  opacity: 0.15;
+  transform: scale(0.72);
+  filter: saturate(0);
+}
+
 .solved-list {
   margin: 14px 0 0;
   padding: 0;
@@ -1353,8 +1383,9 @@ input:focus {
   }
 
   .hero > .stat-card {
-    width: min(100%, 460px);
+    width: min(100%, 420px);
     justify-self: center;
+    padding: 20px;
   }
 
   .hub-grid {
@@ -1467,7 +1498,34 @@ input:focus {
   }
 
   .hero > .stat-card {
-    width: min(100%, 420px);
+    width: min(100%, 340px);
+    padding: 14px;
+    border-radius: 14px;
+  }
+
+  .hero > .stat-card .stat-main {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .hero > .stat-card .stat-grid {
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .hero > .stat-card .stat-label {
+    font-size: 11px;
+    letter-spacing: 0.04em;
+  }
+
+  .hero > .stat-card .stat-value {
+    font-size: 22px;
+  }
+
+  .hero > .stat-card .tier-badge {
+    margin-top: 12px;
+    padding: 6px 12px;
+    font-size: 11px;
   }
 
   .impostor-options {
@@ -1493,6 +1551,17 @@ input:focus {
     font-size: 13px;
     border-radius: 10px;
     padding: 8px;
+  }
+
+  .connections-health {
+    gap: 6px;
+    margin-bottom: 10px;
+  }
+
+  .connections-heart {
+    width: 28px;
+    height: 28px;
+    font-size: 22px;
   }
 
   input,
@@ -1566,6 +1635,12 @@ input:focus {
     padding: 7px;
   }
 
+  .connections-heart {
+    width: 24px;
+    height: 24px;
+    font-size: 20px;
+  }
+
   .single-game .grid-board,
   .single-game .panel {
     width: min(100%, 420px);
@@ -1581,7 +1656,25 @@ input:focus {
   }
 
   .hero > .stat-card {
-    width: min(100%, 380px);
+    width: min(100%, 300px);
+    padding: 12px;
+  }
+
+  .hero > .stat-card .stat-main {
+    font-size: 18px;
+  }
+
+  .hero > .stat-card .stat-grid {
+    gap: 8px;
+  }
+
+  .hero > .stat-card .stat-value {
+    font-size: 20px;
+  }
+
+  .hero > .stat-card .tier-badge {
+    font-size: 10px;
+    padding: 5px 10px;
   }
 
   .moviedle-tile {
