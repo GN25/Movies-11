@@ -1512,24 +1512,18 @@
 
     const typedLetters = titleLetters(raw);
     if (typedLetters.length !== moviedleTargetLetters.length) {
-      showToast(`Use a ${moviedleTargetLetters.length}-letter title.`);
+      showToast(`Use a ${moviedleTargetLetters.length}-letter guess.`);
       return;
     }
 
-    const movie = resolveMoviedleGuess(raw, typedLetters);
-    if (!movie) {
-      showToast("That title is not in the catalog.");
-      return;
-    }
-
-    const guessLetters = titleLetters(movie.title);
-    if (state.guesses.some((entry) => normalize(entry.title) === normalize(movie.title))) {
-      showToast("You already guessed that one.");
+    const guessLetters = typedLetters;
+    if (state.guesses.some((entry) => entry.letters === guessLetters)) {
+      showToast("You already tried that guess.");
       return;
     }
 
     const feedback = evaluateMoviedleGuess(guessLetters, moviedleTargetLetters);
-    state.guesses.push({ title: movie.title, letters: guessLetters, feedback });
+    state.guesses.push({ title: raw.toUpperCase(), letters: guessLetters, feedback });
     moviedleDraft = "";
     if (dom.moviedleInput) dom.moviedleInput.value = "";
     syncMoviedleCapture();
@@ -1585,19 +1579,6 @@
       letters,
       feedback: Array(letters.length).fill("exact")
     };
-  }
-
-  function resolveMoviedleGuess(raw, letters) {
-    const directMatch = answerMovieMap.get(normalize(raw));
-    if (directMatch && titleLetters(directMatch.title) === letters) {
-      return directMatch;
-    }
-
-    const letterMatches = answerMovies
-      .filter((movie) => titleLetters(movie.title) === letters)
-      .sort(compareMoviesByRank);
-
-    return letterMatches[0] || null;
   }
 
   function syncMoviedleCapture() {
