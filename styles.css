@@ -505,6 +505,18 @@ a {
   isolation: isolate;
 }
 
+body[data-page="grid"] #grid-section,
+body[data-page="plotle"] #plotle-section {
+  position: relative;
+  z-index: 8;
+}
+
+#grid-suggest,
+#plotle-suggest {
+  z-index: 80;
+  background-color: #0a1326;
+}
+
 .typeahead-item {
   width: 100%;
   border: 1px solid transparent;
