@@ -280,8 +280,10 @@
     referrals: [],
     streak: 0,
     longestStreak: 0,
+    lastStreakDate: "",
     lastCompleteDate: "",
-    gameStats: {}
+    gameStats: {},
+    updatedAtMs: 0
   };
 
   const defaultDaily = {
@@ -345,10 +347,21 @@
   if (!profile.referralCode || typeof profile.referralCode !== "string") {
     profile.referralCode = buildReferralCode(daySeed);
   }
+  profile.xp = Number.isFinite(Number(profile.xp)) ? Math.max(0, Math.round(Number(profile.xp))) : 0;
+  profile.streak = Number.isFinite(Number(profile.streak)) ? Math.max(0, Math.round(Number(profile.streak))) : 0;
+  profile.longestStreak = Number.isFinite(Number(profile.longestStreak))
+    ? Math.max(0, Math.round(Number(profile.longestStreak)))
+    : profile.streak;
+  profile.lastStreakDate = typeof profile.lastStreakDate === "string" ? profile.lastStreakDate : "";
+  if (!profile.lastStreakDate && typeof profile.lastCompleteDate === "string") {
+    profile.lastStreakDate = profile.lastCompleteDate;
+  }
+  profile.updatedAtMs = Number.isFinite(Number(profile.updatedAtMs)) ? Math.max(0, Math.round(Number(profile.updatedAtMs))) : 0;
   profile.gameStats = normalizeGameStats(profile.gameStats);
   if (!Array.isArray(profile.referrals)) {
     profile.referrals = [];
   }
+  profile.referrals = [...new Set(profile.referrals.map((code) => String(code || "").trim().toUpperCase()).filter(Boolean))];
   if (!Array.isArray(daily.grid.answers) || daily.grid.answers.length !== 9) {
     daily.grid.answers = Array(9).fill("");
   }
@@ -568,6 +581,7 @@
   let impostorAdvanceTimer = null;
   const autocompleteByInputId = new Map();
 
+  resetProfileStreakForGaps();
   if (daily.gamesCompleted.length >= totalGameCount) {
     finalizeDailyRewards();
   }
@@ -2272,29 +2286,19 @@
 
   function finalizeDailyRewards() {
     const score = totalDailyScore();
+    let changed = false;
     if (!daily.rewardsGiven) {
       profile.xp += score;
       daily.rewardsGiven = true;
-    }
-
-    if (!daily.streakCredited) {
-      const prev = profile.lastCompleteDate;
-      const yesterday = formatDateKey(new Date(today.getTime() - 24 * 60 * 60 * 1000));
-      if (prev === todayKey) {
-        // no-op
-      } else if (prev === yesterday) {
-        profile.streak = (profile.streak || 0) + 1;
-      } else {
-        profile.streak = 1;
-      }
-      profile.longestStreak = Math.max(profile.longestStreak || 0, profile.streak || 0);
       profile.lastCompleteDate = todayKey;
-      daily.streakCredited = true;
-      showToast(`Daily run complete. Streak ${profile.streak}.`);
+      showToast(`Daily run complete. +${score} XP.`);
+      changed = true;
     }
 
-    persistProfile();
-    persistDaily();
+    if (changed) {
+      persistProfile();
+      persistDaily();
+    }
   }
 
   function normalizeGameStats(stats) {
@@ -2332,6 +2336,7 @@
     stats.longest = Math.max(stats.longest || 0, stats.streak || 0);
     stats.lastWonDate = todayKey;
     persistProfile();
+    creditDailyStreakFromWin();
     return stats.streak;
   }
 
@@ -2349,6 +2354,52 @@
     stats.lastLostDate = todayKey;
     persistProfile();
     return stats.streak;
+  }
+
+  function creditDailyStreakFromWin() {
+    if (daily.streakCredited) return;
+
+    const yesterday = formatDateKey(new Date(today.getTime() - 24 * 60 * 60 * 1000));
+    const previous = profile.lastStreakDate || profile.lastCompleteDate || "";
+
+    if (previous === todayKey) {
+      daily.streakCredited = true;
+      persistDaily();
+      return;
+    }
+
+    if (previous === yesterday) {
+      profile.streak = Math.max(0, Math.round(Number(profile.streak) || 0)) + 1;
+    } else {
+      profile.streak = 1;
+    }
+    profile.longestStreak = Math.max(profile.longestStreak || 0, profile.streak || 0);
+    profile.lastStreakDate = todayKey;
+    daily.streakCredited = true;
+
+    persistProfile();
+    persistDaily();
+  }
+
+  function resetProfileStreakForGaps() {
+    const lastKey = parseDayOverride(profile.lastStreakDate || profile.lastCompleteDate);
+    if (!lastKey) {
+      profile.lastStreakDate = "";
+      if (profile.streak !== 0) {
+        profile.streak = 0;
+        persistProfile();
+      }
+      return;
+    }
+
+    const yesterday = formatDateKey(new Date(today.getTime() - 24 * 60 * 60 * 1000));
+    if (lastKey === todayKey || lastKey === yesterday) return;
+
+    profile.lastStreakDate = lastKey;
+    if (profile.streak !== 0) {
+      profile.streak = 0;
+      persistProfile();
+    }
   }
 
   function ensureWinModal() {
@@ -4650,6 +4701,7 @@
   }
 
   function persistProfile() {
+    profile.updatedAtMs = Date.now();
     localStorage.setItem(profileKey, JSON.stringify(profile));
   }
 
