@@ -104,7 +104,19 @@
         <div id="plotle-clues" class="clue-box"></div>
         <div class="panel">
           <div class="guess-row">
-            <input id="plotle-input" list="movie-options" autocomplete="off" placeholder="Guess the movie" />
+            <div class="input-shell">
+              <input
+                id="plotle-input"
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false"
+                placeholder="Guess the movie"
+                aria-autocomplete="list"
+                aria-expanded="false"
+                aria-controls="plotle-suggest"
+              />
+              <div id="plotle-suggest" class="typeahead-menu" role="listbox" hidden></div>
+            </div>
             <button id="plotle-submit-btn" class="btn btn-primary">Guess</button>
             <button id="plotle-surrender-btn" class="btn btn-surrender">Surrender</button>
           </div>

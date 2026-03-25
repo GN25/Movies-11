@@ -187,6 +187,30 @@
   });
 
   const actorOptions = [...actorNameMap.values()].sort((a, b) => a.localeCompare(b));
+  const recentTitleStoreKey = "cineclash-recent-title-searches-v1";
+  let recentTitleHistory = loadRecentTitleHistory();
+  const titleAutocompleteAll = answerMovies
+    .map((movie) => ({
+      value: movie.title,
+      normalized: normalize(movie.title),
+      year: Number(movie.year) || 0,
+      popularity: Number(movie.popularity) || 0,
+      type: "title"
+    }))
+    .filter((entry) => entry.normalized)
+    .sort((a, b) => b.popularity - a.popularity || b.year - a.year || a.value.localeCompare(b.value));
+  const titleAutocompleteGrid = titleAutocompleteAll.filter((entry) => {
+    const movie = answerMovieMap.get(entry.normalized);
+    return movie && !isGridExcludedMovie(movie);
+  });
+  const actorAutocompleteAll = actorOptions.map((actor) => ({
+    value: actor,
+    normalized: normalize(actor),
+    popularity: actorPopularityScore(actor),
+    type: "actor"
+  }))
+    .sort((a, b) => b.popularity - a.popularity || a.value.localeCompare(b.value));
+
   const seedBase = `${todayKey}|${difficulty}`;
   const seedKey = variantOverride ? `${seedBase}|${variantOverride}` : seedBase;
   const prettyDateBase = today.toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" });
@@ -502,8 +526,10 @@
     connectionsHealth: q("connections-health"),
     connectionsMeta: q("connections-meta"),
     connectionsSolved: q("connections-solved"),
+    gridSuggest: q("grid-suggest"),
     plotleClues: q("plotle-clues"),
     plotleInput: q("plotle-input"),
+    plotleSuggest: q("plotle-suggest"),
     plotleSubmitBtn: q("plotle-submit-btn"),
     plotleSurrenderBtn: q("plotle-surrender-btn"),
     plotleMeta: q("plotle-meta"),
@@ -540,6 +566,7 @@
   let difficultyGateModal = null;
   let previousConnectionsRevealSet = new Set(daily.connections?.revealedGroupIds || daily.connections?.solvedGroupIds || []);
   let impostorAdvanceTimer = null;
+  const autocompleteByInputId = new Map();
 
   if (daily.gamesCompleted.length >= totalGameCount) {
     finalizeDailyRewards();
@@ -547,6 +574,7 @@
 
   applyReferralBonus();
   hydrateDatalist();
+  setupAutocompleteInputs();
   wireEvents();
   tickLiveFeed();
   renderAll();
@@ -802,6 +830,7 @@
 
     const raw = dom.gridInput.value.trim();
     if (!raw) return;
+    closeAutocompleteForInput(dom.gridInput);
 
     const guess = resolveGridGuess(raw, gridPuzzle.answerType);
     if (!guess) {
@@ -826,6 +855,9 @@
     state.selectedIndex = -1;
     const gain = scoreGridGuess(guess, gridPuzzle.answerType);
     state.score += gain;
+    if (guess.type === "title") {
+      rememberRecentTitle(guess.value);
+    }
     dom.gridInput.value = "";
 
     if (state.answers.every(Boolean)) {
@@ -1328,6 +1360,7 @@
     if (state.status !== "playing") return;
     const raw = dom.plotleInput.value.trim();
     if (!raw) return;
+    closeAutocompleteForInput(dom.plotleInput);
 
     const movie = answerMovieMap.get(normalize(raw));
     if (!movie) {
@@ -1342,6 +1375,7 @@
 
     const tags = evaluatePlotleGuess(movie, plotleTarget);
     state.guesses.push({ title: movie.title, tags });
+    rememberRecentTitle(movie.title);
     dom.plotleInput.value = "";
 
     if (normalize(movie.title) === normalize(plotleTarget.title)) {
@@ -2444,6 +2478,289 @@
     dom.movieOptions.innerHTML = options.map((item) => `<option value="${escapeHtml(item)}"></option>`).join("");
   }
 
+  function setupAutocompleteInputs() {
+    if (dom.gridInput && dom.gridSuggest) {
+      registerAutocompleteInput(dom.gridInput, dom.gridSuggest, "grid");
+    }
+    if (dom.plotleInput && dom.plotleSuggest) {
+      registerAutocompleteInput(dom.plotleInput, dom.plotleSuggest, "plotle");
+    }
+
+    document.addEventListener("pointerdown", (event) => {
+      autocompleteByInputId.forEach((state) => {
+        if (!state.open) return;
+        const target = event.target;
+        if (state.input.contains(target) || state.menu.contains(target)) return;
+        closeAutocomplete(state);
+      });
+    });
+  }
+
+  function registerAutocompleteInput(input, menu, mode) {
+    if (!input || !menu || !input.id) return;
+    const state = {
+      mode,
+      input,
+      menu,
+      open: false,
+      activeIndex: -1,
+      matches: []
+    };
+
+    autocompleteByInputId.set(input.id, state);
+
+    input.addEventListener("focus", () => {
+      updateAutocomplete(state);
+    });
+    input.addEventListener("input", () => {
+      updateAutocomplete(state);
+    });
+    input.addEventListener("blur", () => {
+      window.setTimeout(() => {
+        closeAutocomplete(state);
+      }, 120);
+    });
+  }
+
+  function handleAutocompleteKeydown(event, input) {
+    if (!input || !input.id) return false;
+    const state = autocompleteByInputId.get(input.id);
+    if (!state || !state.open || !state.matches.length) return false;
+
+    if (event.key === "ArrowDown") {
+      event.preventDefault();
+      state.activeIndex = Math.min(state.matches.length - 1, state.activeIndex + 1);
+      renderAutocompleteMenu(state);
+      return true;
+    }
+
+    if (event.key === "ArrowUp") {
+      event.preventDefault();
+      state.activeIndex = Math.max(0, state.activeIndex - 1);
+      renderAutocompleteMenu(state);
+      return true;
+    }
+
+    if (event.key === "Escape") {
+      event.preventDefault();
+      closeAutocomplete(state);
+      return true;
+    }
+
+    if (event.key === "Enter") {
+      const selectedIndex = state.activeIndex >= 0 ? state.activeIndex : 0;
+      const selected = state.matches[selectedIndex];
+      const typed = normalize(state.input.value);
+      if (selected && typed && typed === normalize(selected.value)) {
+        closeAutocomplete(state);
+        return false;
+      }
+      event.preventDefault();
+      applyAutocompleteChoice(state, selectedIndex);
+      return true;
+    }
+
+    return false;
+  }
+
+  function closeAutocompleteForInput(input) {
+    if (!input || !input.id) return;
+    const state = autocompleteByInputId.get(input.id);
+    if (state) closeAutocomplete(state);
+  }
+
+  function updateAutocomplete(state) {
+    const query = state.input.value.trim();
+    const matches = resolveAutocompleteMatches(state.mode, query);
+    if (!matches.length) {
+      closeAutocomplete(state);
+      return;
+    }
+
+    state.matches = matches;
+    state.activeIndex = 0;
+    state.open = true;
+    state.menu.hidden = false;
+    state.input.setAttribute("aria-expanded", "true");
+    renderAutocompleteMenu(state);
+  }
+
+  function closeAutocomplete(state) {
+    state.open = false;
+    state.activeIndex = -1;
+    state.matches = [];
+    state.menu.innerHTML = "";
+    state.menu.hidden = true;
+    state.input.setAttribute("aria-expanded", "false");
+  }
+
+  function renderAutocompleteMenu(state) {
+    state.menu.innerHTML = "";
+    state.matches.forEach((entry, idx) => {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "typeahead-item";
+      button.setAttribute("role", "option");
+      button.setAttribute("aria-selected", idx === state.activeIndex ? "true" : "false");
+      if (idx === state.activeIndex) button.classList.add("active");
+
+      const title = document.createElement("span");
+      title.className = "typeahead-title";
+      title.textContent = entry.value;
+      button.appendChild(title);
+
+      if (entry.meta) {
+        const meta = document.createElement("span");
+        meta.className = "typeahead-meta";
+        meta.textContent = entry.meta;
+        button.appendChild(meta);
+      }
+
+      button.addEventListener("mousedown", (event) => {
+        event.preventDefault();
+      });
+      button.addEventListener("click", () => {
+        applyAutocompleteChoice(state, idx);
+      });
+
+      state.menu.appendChild(button);
+    });
+  }
+
+  function applyAutocompleteChoice(state, idx) {
+    const selected = state.matches[idx];
+    if (!selected) return;
+    state.input.value = selected.value;
+    closeAutocomplete(state);
+    state.input.focus({ preventScroll: true });
+  }
+
+  function resolveAutocompleteMatches(mode, rawQuery) {
+    const query = normalize(rawQuery);
+    const source = resolveAutocompleteSource(mode);
+    if (!source.length) return [];
+
+    const limit = window.innerWidth <= 760 ? 7 : 10;
+    const recentIndex = new Map(recentTitleHistory.map((item, idx) => [item, idx]));
+
+    if (!query) {
+      const out = [];
+      const used = new Set();
+
+      recentTitleHistory.forEach((recentKey) => {
+        const hit = source.find((entry) => entry.normalized === recentKey);
+        if (!hit || used.has(hit.normalized)) return;
+        out.push(hit);
+        used.add(hit.normalized);
+      });
+
+      for (const entry of source) {
+        if (out.length >= limit) break;
+        if (used.has(entry.normalized)) continue;
+        out.push(entry);
+        used.add(entry.normalized);
+      }
+
+      return out.slice(0, limit);
+    }
+
+    const scored = source
+      .map((entry) => {
+        const score = scoreAutocompleteEntry(entry, query, recentIndex);
+        return { entry, score };
+      })
+      .filter((item) => item.score > 0)
+      .sort((a, b) => b.score - a.score || a.entry.value.localeCompare(b.entry.value))
+      .slice(0, limit)
+      .map((item) => item.entry);
+
+    return scored;
+  }
+
+  function resolveAutocompleteSource(mode) {
+    if (mode === "grid") {
+      if (gridPuzzle.answerType === "actor") {
+        const usedActors = new Set(daily.grid.answers.map((name) => normalize(name)).filter(Boolean));
+        return actorAutocompleteAll
+          .filter((entry) => !usedActors.has(entry.normalized))
+          .map((entry) => ({
+            ...entry,
+            meta: `${Math.max(1, actorFrequency.get(entry.normalized) || 1)} films`
+          }));
+      }
+
+      const usedTitles = new Set(daily.grid.answers.map((title) => normalize(title)).filter(Boolean));
+      return titleAutocompleteGrid
+        .filter((entry) => !usedTitles.has(entry.normalized))
+        .map((entry) => ({
+          ...entry,
+          meta: entry.year ? String(entry.year) : ""
+        }));
+    }
+
+    if (mode === "plotle") {
+      const guessed = new Set((daily.plotle.guesses || []).map((guess) => normalize(guess.title)).filter(Boolean));
+      return titleAutocompleteAll
+        .filter((entry) => !guessed.has(entry.normalized))
+        .map((entry) => ({
+          ...entry,
+          meta: entry.year ? String(entry.year) : ""
+        }));
+    }
+
+    return [];
+  }
+
+  function scoreAutocompleteEntry(entry, query, recentIndex) {
+    const recentPos = recentIndex.get(entry.normalized);
+    const recentBoost = Number.isInteger(recentPos) ? Math.max(0, 300 - recentPos * 24) : 0;
+    const popularityBoost = Math.min(130, Number(entry.popularity) || 0);
+
+    if (!query) {
+      return 100 + recentBoost + popularityBoost;
+    }
+
+    const value = entry.normalized;
+    if (!value || !value.includes(query)) return 0;
+
+    if (value === query) return 2200 + recentBoost + popularityBoost;
+    if (value.startsWith(query)) return 1700 + recentBoost + popularityBoost;
+
+    const words = value.split(" ");
+    if (words.some((word) => word.startsWith(query))) {
+      return 1300 + recentBoost + popularityBoost;
+    }
+
+    const index = value.indexOf(query);
+    return 800 + Math.max(0, 180 - index * 8) + recentBoost + popularityBoost;
+  }
+
+  function loadRecentTitleHistory() {
+    try {
+      const raw = localStorage.getItem(recentTitleStoreKey);
+      const parsed = JSON.parse(raw || "[]");
+      if (!Array.isArray(parsed)) return [];
+      return parsed.map((item) => normalize(item)).filter(Boolean).slice(0, 20);
+    } catch (_error) {
+      return [];
+    }
+  }
+
+  function persistRecentTitleHistory() {
+    try {
+      localStorage.setItem(recentTitleStoreKey, JSON.stringify(recentTitleHistory));
+    } catch (_error) {
+      // Ignore write failures (private mode / quota).
+    }
+  }
+
+  function rememberRecentTitle(title) {
+    const key = normalize(title);
+    if (!key) return;
+    recentTitleHistory = [key, ...recentTitleHistory.filter((item) => item !== key)].slice(0, 20);
+    persistRecentTitleHistory();
+  }
+
   function wireEvents() {
     if (dom.gridSubmitBtn) {
       dom.gridSubmitBtn.addEventListener("click", submitGridGuess);
@@ -2453,6 +2770,7 @@
     }
     if (dom.gridInput) {
       dom.gridInput.addEventListener("keydown", (event) => {
+        if (handleAutocompleteKeydown(event, dom.gridInput)) return;
         if (event.key === "Enter") {
           event.preventDefault();
           submitGridGuess();
@@ -2478,6 +2796,7 @@
     }
     if (dom.plotleInput) {
       dom.plotleInput.addEventListener("keydown", (event) => {
+        if (handleAutocompleteKeydown(event, dom.plotleInput)) return;
         if (event.key === "Enter") {
           event.preventDefault();
           submitPlotle();
@@ -3582,10 +3901,10 @@
       genre: genres.join(", "),
       rating: safeRating,
       description: description || clue,
-      stars: cast.slice(0, 6),
+      stars: cast,
       votes: safeVotes,
       genres: genres.slice(0, 4),
-      cast: cast.slice(0, 6),
+      cast,
       popularity: safePopularity,
       knownness: safeKnownness,
       easyTier: record.easy === true || record.easy === 1 || String(record.easy || "").toLowerCase() === "true",

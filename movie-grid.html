@@ -108,7 +108,19 @@
         <div class="panel">
           <p id="grid-selected" class="mini">Select a square to guess</p>
           <div class="guess-row">
-            <input id="grid-input" list="movie-options" autocomplete="off" placeholder="Type a movie title" />
+            <div class="input-shell">
+              <input
+                id="grid-input"
+                autocomplete="off"
+                autocapitalize="off"
+                spellcheck="false"
+                placeholder="Type a movie title"
+                aria-autocomplete="list"
+                aria-expanded="false"
+                aria-controls="grid-suggest"
+              />
+              <div id="grid-suggest" class="typeahead-menu" role="listbox" hidden></div>
+            </div>
             <button id="grid-submit-btn" class="btn btn-primary">Submit</button>
             <button id="grid-surrender-btn" class="btn btn-surrender">Surrender</button>
           </div>

@@ -471,12 +471,65 @@ a {
   gap: 12px;
   flex-wrap: wrap;
   align-items: center;
+  position: relative;
+}
+
+.input-shell {
+  position: relative;
+  flex: 1 1 320px;
+  min-width: 0;
 }
 
 .guess-row input {
-  flex: 1 1 320px;
-  width: auto;
+  width: 100%;
   min-width: 0;
+}
+
+.typeahead-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  z-index: 45;
+  background: rgba(7, 12, 24, 0.98);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 6px;
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.45);
+  max-height: min(48vh, 360px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.typeahead-item {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--text);
+  text-align: left;
+  padding: 10px 12px;
+  display: grid;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.typeahead-item:hover,
+.typeahead-item.active {
+  background: rgba(30, 203, 225, 0.14);
+  border-color: rgba(30, 203, 225, 0.35);
+}
+
+.typeahead-title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.typeahead-meta {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.15;
 }
 
 input {
@@ -1505,6 +1558,11 @@ input:focus {
     width: 100%;
   }
 
+  .input-shell {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+
   .grid-board,
   .connections-board {
     gap: 8px;
@@ -1581,6 +1639,13 @@ input:focus {
     backdrop-filter: blur(8px);
   }
 
+  body[data-page="grid"] .guess-row .typeahead-menu,
+  body[data-page="plotle"] .guess-row .typeahead-menu {
+    top: auto;
+    bottom: calc(100% + 8px);
+    max-height: min(46vh, 320px);
+  }
+
   .impostor-options {
     grid-template-columns: 1fr;
     gap: 8px;
@@ -1622,6 +1687,19 @@ input:focus {
   .connections-heart {
     width: 18px;
     height: 10px;
+  }
+
+  .typeahead-item {
+    min-height: 50px;
+    padding: 12px 12px;
+  }
+
+  .typeahead-title {
+    font-size: 15px;
+  }
+
+  .typeahead-meta {
+    font-size: 11px;
   }
 
   input,
@@ -1699,6 +1777,19 @@ input:focus {
   .connections-heart {
     width: 16px;
     height: 9px;
+  }
+
+  .typeahead-menu {
+    max-height: min(44vh, 280px);
+  }
+
+  .typeahead-item {
+    min-height: 48px;
+    padding: 11px 10px;
+  }
+
+  .typeahead-title {
+    font-size: 14px;
   }
 
   .single-game .grid-board,
